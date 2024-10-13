@@ -6,7 +6,7 @@ import numpy as np
 
 def UNIT2_1():
     st.title("O*NET")
-    st.markdown(
+    st.write(
         "[O*NET Online](https://www.onetonline.org/) is a comprehensive tool for career exploration and job analysis. "
         "It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs, "
         "making it an invaluable resource for job seekers, workforce development professionals, and HR specialists. "
@@ -106,9 +106,22 @@ def UNIT2_4():
         except ValueError:
             st.error("Invalid input. Please enter only numbers separated by commas.")
 
+def UNIT2_5():
+    st.write(
+        "Job evaluation is a systematic process used to assess the relative worth of jobs within an organization. "
+        "This assessment considers various job characteristics, such as responsibilities, required skills, and "
+        "the complexity of the work activities involved. By conducting a job evaluation, organizations can "
+        "establish equitable compensation structures and identify training and development needs."
+    )
+
+    st.write(
+        "As an example of job evaluation, job complexity serves as a key metric in understanding the intricacies "
+        "involved in different roles. Job complexity reflects the degree of difficulty associated with work "
+        "activities and the range of skills necessary to perform them effectively. To quantify job complexity, "
+        "we calculate the total skill requirements by summing all elements in the job matrix $J_i$:"
+    )
     
-    matrix_latex = r"\begin{pmatrix}" + r"\\ ".join(" & ".join(map(str, row)) for row in matrix) + r"\end{pmatrix}"
-    st.markdown(f"Matrix $J_i = {matrix_latex}$", unsafe_allow_html=True)
+
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
 
@@ -133,4 +146,6 @@ elif selected == "Basic Skills":
     UNIT2_3()
 elif selected == "Jobs":
     UNIT2_4()
+elif selected == "Job Evaluation":
+    UNIT2_5()
 
