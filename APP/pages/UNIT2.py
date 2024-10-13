@@ -31,7 +31,7 @@ def UNIT2_2():
     "A₄: Selling and Influencing Others"
     ]
 
-    selected_activity = st.selectbox("Select a Work Activity:", activities))
+    selected_activity = st.selectbox("Select a Work Activity:", activities)
 
 def UNIT2_3():
     st.title('Basic Skills')
@@ -41,16 +41,16 @@ def UNIT2_3():
     Here, we focus on basic skills as defined by O*NET. Basic skills are developed capacities that facilitate learning and the rapid acquisition of knowledge.
     """)
 
-    skills = {
-    "S1": "S₁: Active listening",
-    "S2": "S₂: Mathematics",
-    "S3": "S₃: Reading comprehension",
-    "S4": "S₄: Science",
-    "S5": "S₅: Speaking",
-    "S6": "S₆: Writing",
-    }
+    skills = [
+    "S₁: Active listening",
+    "S₂: Mathematics",
+    "S₃: Reading comprehension",
+    "S₄: Science",
+    "S₅: Speaking",
+    "S₆: Writing",
+    ]
 
-    selected_skill = st.selectbox("Select a Basic Skill:", list(skills.values()))
+    selected_skill = st.selectbox("Select a Basic Skill:", skills)
 
 def UNIT2_4():
     st.title('Jobs')
