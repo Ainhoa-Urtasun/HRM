@@ -31,7 +31,7 @@ def UNIT2_2():
     "A4": "A₄: Selling and Influencing Others"
     }
 
-    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
+    selected_activity = st.selectbox("Select a Work Activity:", list(activities.values()))
 
 def UNIT2_3():
     st.title('Basic Skills')
@@ -50,7 +50,7 @@ def UNIT2_3():
     "S6": "S₆: Writing",
     }
 
-    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
+    selected_skill = st.selectbox("Select a Basic Skill:", list(skills.values()))
 
 st.set_page_config(page_title="UNIT2", layout="wide")
 
