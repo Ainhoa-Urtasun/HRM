@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -163,10 +164,13 @@ def UNIT1_5():
 # Set page configuration
 st.set_page_config(page_title="UNIT1", layout="wide")
 
-# Create a sidebar selectbox for navigation
-selected = st.sidebar.selectbox(
-    "Select a section:",
-    ["Industries and Occupations", "Notation for the Course", "Earnings Before Interests and Taxes (EBIT)", "Cost of Employees", "EBIT Optimization"]
+selected = option_menu(
+    menu_title="Main Menu",  # required
+    options=["Unit 1.1", "Unit 1.2", "Unit 1.3", "Unit 1.4", "Unit 1.5"],  # required
+    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    menu_icon="cast",  # optional
+    default_index=0,  # optional
+    orientation="vertical",
 )
 
 # Call the selected section
