@@ -80,6 +80,23 @@ def UNIT2_4():
     "A job may not require all 10 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
+    user_inputs = []
+
+    for i, activity in enumerate(activities, 1):
+        input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
+        user_inputs.append(input_str)
+
+    if st.button("Submit"):
+        try:
+            matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
+            if all(len(row) == 6 for row in matrix) and len(matrix) == 4:
+                matrix_np = np.array(matrix)
+                st.write("Here is your 4x6 matrix:")
+                st.write(matrix_np)
+            else:
+                st.error("Please ensure each input contains exactly 6 comma-separated numbers.")
+        except ValueError:
+            st.error("Invalid input. Please enter only numbers separated by commas.")
 
 st.set_page_config(page_title="UNIT2", layout="wide")
 
