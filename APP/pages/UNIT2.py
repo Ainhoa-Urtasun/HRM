@@ -86,11 +86,13 @@ def UNIT2_4():
     "A₃: Controlling machines and processes",
     "A₄: Selling and Influencing Others"
     }
+    
     user_inputs = []
-
-    for activity in activities:
+    for i, activity in enumerate(activities):
         input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
         user_inputs.append(input_str)
+
+    matrix = np.zeros((4, 6))
 
     if st.button("Submit"):
         try:
