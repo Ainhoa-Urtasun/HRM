@@ -1,9 +1,7 @@
 import streamlit as st
 
-def main():
-    st.title("Career Exploration and Job Analysis")
-
-    # Link to O*NET Online
+def UNIT2_1():
+    st.title("O*NET")
     st.markdown(
         "[O*NET Online](https://www.onetonline.org/) is a comprehensive tool for career exploration and job analysis. "
         "It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs, "
