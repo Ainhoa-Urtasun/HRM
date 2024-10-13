@@ -56,7 +56,7 @@ def UNIT2_3():
     )
 
     basic_skills_data = {
-        "Code": [$S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$],
+        "Code": [S_1, S_2, S_3, S_4, S_5, S_6],
         "Skill": [
             "Active listening",
             "Mathematics",
