@@ -81,12 +81,11 @@ def UNIT2_4():
     )
 
     activities = {
-    "A₁: Making decisions and solving problems",
-    "A₂: Thinking creatively",
-    "A₃: Controlling machines and processes",
-    "A₄: Selling and Influencing Others"
+    "A1": "A₁: Making decisions and solving problems",
+    "A2": "A₂: Thinking creatively",
+    "A3": "A₃: Controlling machines and processes",
+    "A4": "A₄: Selling and Influencing Others"
     }
-    
     user_inputs = []
     for i, activity in enumerate(activities):
         input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
