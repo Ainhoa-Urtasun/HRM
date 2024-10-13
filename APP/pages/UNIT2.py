@@ -21,7 +21,7 @@ def UNIT2_2():
         "Jobs are collections of work activities. Every firm transforms inputs into outputs (goods and services). "
         "The nature of these outputs determines both the industry classification of the firm and the work activities its employees must perform. "
         "This highlights the importance of understanding industry classifications. O*NET identifies 41 distinct work activities, "
-        "but for simplicity, we focus on 4 working activities (A):"
+        "but for simplicity, we focus on 4 working activities:"
     )
 
     activities = {
@@ -32,6 +32,14 @@ def UNIT2_2():
     }
 
     selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
+
+def UNIT2_3():
+    st.title('Basic Skills')
+    st.write("""
+    **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
+    Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
+    Here, we focus on basic skills as defined by O*NET. Basic skills are developed capacities that facilitate learning and the rapid acquisition of knowledge.
+    """)
 
 st.set_page_config(page_title="UNIT1", layout="wide")
 
