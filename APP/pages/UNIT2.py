@@ -41,7 +41,18 @@ def UNIT2_3():
     Here, we focus on basic skills as defined by O*NET. Basic skills are developed capacities that facilitate learning and the rapid acquisition of knowledge.
     """)
 
-st.set_page_config(page_title="UNIT1", layout="wide")
+    skills = {
+    "S1": "S₁: Active listening",
+    "S2": "S₂: "Mathematics",
+    "S3": "S₃: Reading comprehension",
+    "S4": "S₄: Science",
+    "S5": "S₅: Speaking",
+    "S6": "S₆: Writing",
+    }
+
+    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
+
+st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
