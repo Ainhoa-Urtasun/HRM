@@ -28,7 +28,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Industries and Occupations", "Notation for the Course", "Earnings Before Interests and Taxes (EBIT)", "Cost of Employees", "EBIT Optimization"],  # required
+    options=["O*NET", "Work Activities (A)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -36,14 +36,9 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Industries and Occupations":
-    UNIT1_1()
-elif selected == "Notation for the Course":
-    UNIT1_2()
-elif selected == "Earnings Before Interests and Taxes (EBIT)":
-    UNIT1_3()
-elif selected == "Cost of Employees":
-    UNIT1_4()
-elif selected == "EBIT Optimization":
-    UNIT1_5()
+if selected == "O*NET":
+    UNIT2_1()
+elif selected == "Work Activities (A)":
+    UNIT2_2()
+
 
