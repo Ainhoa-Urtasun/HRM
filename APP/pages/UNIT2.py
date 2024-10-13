@@ -81,14 +81,14 @@ def UNIT2_4():
     )
 
     activities = {
-    "A1": "A₁: Making decisions and solving problems",
-    "A2": "A₂: Thinking creatively",
-    "A3": "A₃: Controlling machines and processes",
-    "A4": "A₄: Selling and Influencing Others"
+    "A₁: Making decisions and solving problems",
+    "A₂: Thinking creatively",
+    "A₃: Controlling machines and processes",
+    "A₄: Selling and Influencing Others"
     }
     user_inputs = []
 
-    for i, activity in enumerate(activities, 1):
+    for activity in activities:
         input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
         user_inputs.append(input_str)
 
@@ -103,6 +103,10 @@ def UNIT2_4():
                 st.error("Please ensure each input contains exactly 6 comma-separated numbers.")
         except ValueError:
             st.error("Invalid input. Please enter only numbers separated by commas.")
+
+    job_complexity = np.sum(matrix)
+    st.write(f"Job Complexity: {job_complexity}")
+
 
 st.set_page_config(page_title="UNIT2", layout="wide")
 
