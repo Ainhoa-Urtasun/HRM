@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Define each section as a function
 def UNIT1_1():
     st.title("Industries and Occupations")
     st.write(
