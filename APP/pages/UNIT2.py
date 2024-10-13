@@ -52,6 +52,34 @@ def UNIT2_3():
 
     selected_skill = st.selectbox("Select a Basic Skill:", list(skills.values()))
 
+
+    st.write(
+    "In the context of job analysis and design, it is useful to represent a job as a matrix of work activities (rows) and basic skills (columns):"
+    )
+
+    st.latex(r"""
+    J_i = 
+    \begin{pmatrix}
+    s_{11} & s_{12} & s_{13} & s_{14} & s_{15} & s_{16} \\
+    s_{21} & s_{22} & s_{23} & s_{24} & s_{25} & s_{26} \\
+    s_{31} & s_{32} & s_{33} & s_{34} & s_{35} & s_{36} \\
+    s_{41} & s_{42} & s_{43} & s_{44} & s_{45} & s_{46} \\
+    \end{pmatrix}
+    """)
+
+    st.write(
+    "Each element \( s_{ij} \) of the matrix indicates the extent to which basic skill \( j \) is required for work activity \( i \):"
+    )
+
+    st.latex(r"""
+    0 \leq s_{ij} \leq 100
+    """)
+
+    st.write(
+    "A job may not require all 10 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
+    )
+
+
 st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
