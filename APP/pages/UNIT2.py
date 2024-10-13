@@ -26,9 +26,9 @@ def UNIT2_2():
 
     activities = {
     "A1": "A₁: Making decisions and solving problems",
-    "A2": "A₁: Thinking creatively",
-    "A3": "A₁: Controlling machines and processes",
-    "A4": "A₁: Selling and Influencing Others"
+    "A2": "A₂: Thinking creatively",
+    "A3": "A₃: Controlling machines and processes",
+    "A4": "A₄: Selling and Influencing Others"
     }
 
     selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
