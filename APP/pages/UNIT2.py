@@ -24,8 +24,26 @@ def UNIT2_2():
         "but for simplicity, we focus on 4 working activities (A):"
     )
 
-    
-    st.latex(r'''
-    \|\text{WA}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
-    ''')
+st.set_page_config(page_title="UNIT1", layout="wide")
+
+selected = option_menu(
+    menu_title="Main Menu",  # required
+    options=["Industries and Occupations", "Notation for the Course", "Earnings Before Interests and Taxes (EBIT)", "Cost of Employees", "EBIT Optimization"],  # required
+    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    menu_icon="cast",  # optional
+    default_index=0,  # optional
+    orientation="vertical",
+)
+
+# Call the selected section
+if selected == "Industries and Occupations":
+    UNIT1_1()
+elif selected == "Notation for the Course":
+    UNIT1_2()
+elif selected == "Earnings Before Interests and Taxes (EBIT)":
+    UNIT1_3()
+elif selected == "Cost of Employees":
+    UNIT1_4()
+elif selected == "EBIT Optimization":
+    UNIT1_5()
 
