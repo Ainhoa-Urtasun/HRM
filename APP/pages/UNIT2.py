@@ -24,14 +24,14 @@ def UNIT2_2():
         "but for simplicity, we focus on 4 working activities:"
     )
 
-    activities = {
-    "A1": "A₁: Making decisions and solving problems",
-    "A2": "A₂: Thinking creatively",
-    "A3": "A₃: Controlling machines and processes",
-    "A4": "A₄: Selling and Influencing Others"
-    }
+    activities = [
+    "A₁: Making decisions and solving problems",
+    "A₂: Thinking creatively",
+    "A₃: Controlling machines and processes",
+    "A₄: Selling and Influencing Others"
+    ]
 
-    selected_activity = st.selectbox("Select a Work Activity:", list(activities.values()))
+    selected_activity = st.selectbox("Select a Work Activity:", activities))
 
 def UNIT2_3():
     st.title('Basic Skills')
@@ -80,14 +80,15 @@ def UNIT2_4():
     "A job may not require all 10 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
-    activities = {
-    "A1": "A₁: Making decisions and solving problems",
-    "A2": "A₂: Thinking creatively",
-    "A3": "A₃: Controlling machines and processes",
-    "A4": "A₄: Selling and Influencing Others"
-    }
+    activities = [
+    "A₁: Making decisions and solving problems",
+    "A₂: Thinking creatively",
+    "A₃: Controlling machines and processes",
+    "A₄: Selling and Influencing Others"
+    ]
+    
     user_inputs = []
-    for i, activity in enumerate(activities):
+    for activity in activities:
         input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
         user_inputs.append(input_str)
 
