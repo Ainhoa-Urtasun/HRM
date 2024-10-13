@@ -166,7 +166,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Unit 1.1", "Unit 1.2", "Unit 1.3", "Unit 1.4", "Unit 1.5"],  # required
+    options=["Industries and Occupations", "Notation for the Course", "Earnings Before Interests and Taxes (EBIT)", "Cost of Employees", "EBIT Optimization"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
