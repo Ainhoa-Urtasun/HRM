@@ -1,9 +1,9 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Define each section as a function
 def UNIT1_1():
     st.title("Industries and Occupations")
     st.write(
@@ -21,7 +21,7 @@ def UNIT1_1():
 
     occupations = ["11. Managers", "17. Engineers", "51. Operators"]
     selected_occupation = st.selectbox("2-digit SOC:", occupations)
-    
+
 def UNIT1_2():
     st.title('Notation for the course')
     st.markdown("""
@@ -163,18 +163,13 @@ def UNIT1_5():
 # Set page configuration
 st.set_page_config(page_title="UNIT1", layout="wide")
 
-# Create a horizontal menu
-selected = option_menu(
-    menu_title=None,
-    options=["Industries and Occupations", "Notation for the Course",
-             "Earnings Before Interests and Taxes (EBIT)","Cost of Employees",
-             "EBIT Optimization"],
-    icons=["house", "gear", "clipboard"],
-    menu_icon="cast",
-    default_index=0,
-    orientation="vertical"
+# Create a sidebar selectbox for navigation
+selected = st.sidebar.selectbox(
+    "Select a section:",
+    ["Industries and Occupations", "Notation for the Course", "Earnings Before Interests and Taxes (EBIT)", "Cost of Employees", "EBIT Optimization"]
 )
 
+# Call the selected section
 if selected == "Industries and Occupations":
     UNIT1_1()
 elif selected == "Notation for the Course":
