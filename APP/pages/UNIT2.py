@@ -15,20 +15,33 @@ def UNIT2_1():
     )
 
 def UNIT2_2():
-    st.title("Work Activities (A)")
+    st.title("Work Activities")
     st.write(
-        "A **work activity** (A) is an action performed by an individual that results in a specific output. "
+        "A **work activity** is an action performed by an individual that results in a specific output. "
         "Jobs are collections of work activities. Every firm transforms inputs into outputs (goods and services). "
         "The nature of these outputs determines both the industry classification of the firm and the work activities its employees must perform. "
         "This highlights the importance of understanding industry classifications. O*NET identifies 41 distinct work activities, "
         "but for simplicity, we focus on 4 working activities (A):"
     )
 
+    activities = {
+        "A_1": "Making decisions and solving problems",
+        "A_2": "Thinking creatively",
+        "A_3": "Controlling machines and processes",
+        "A_4": "Selling and Influencing Others"
+    }
+
+    # Selectbox for work activities
+    selected_activity = st.selectbox("Select a Work Activity:", list(activities.values()))
+
+    # Display selected activity
+    st.write("You selected:", selected_activity)
+
 st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities (A)"],  # required
+    options=["O*NET", "Work Activities"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -38,7 +51,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "O*NET":
     UNIT2_1()
-elif selected == "Work Activities (A)":
+elif selected == "Work Activities":
     UNIT2_2()
 
 
