@@ -10,18 +10,18 @@ def UNIT2_1():
         "helping users understand the specific demands and characteristics of different occupations."
     )
 
-    st.subheader("Work Activities (WA)")
+def UNIT2_2()
+    st.title("Work Activities (A)")
     st.write(
-        "A **work activity** (WA) is an action performed by an individual that results in a specific output. "
+        "A **work activity** (A) is an action performed by an individual that results in a specific output. "
         "Jobs are collections of work activities. Every firm transforms inputs into outputs (goods and services). "
         "The nature of these outputs determines both the industry classification of the firm and the work activities its employees must perform. "
         "This highlights the importance of understanding industry classifications. O*NET identifies 41 distinct work activities, "
-        "but for simplicity, we focus on 4 working activities (WA):"
+        "but for simplicity, we focus on 4 working activities (A):"
     )
 
-    # Work Activities Table
     work_activities_data = {
-        "Code": ["WA_1", "WA_2", "WA_3", "WA_4"],
+        "Code": [$A_1$, $A_2$, $A_3$, $A_4$],
         "Work Activities": [
             "Making decisions and solving problems",
             "Thinking creatively",
