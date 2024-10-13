@@ -31,7 +31,7 @@ def UNIT2_2():
     "A4": "A₁: Selling and Influencing Others"
     }
 
-    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.items()))
+    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.values()))
 
 st.set_page_config(page_title="UNIT1", layout="wide")
 
