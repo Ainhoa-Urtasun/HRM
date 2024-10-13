@@ -1,4 +1,8 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
 def UNIT2_1():
     st.title("O*NET")
