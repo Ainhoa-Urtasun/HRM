@@ -52,7 +52,8 @@ def UNIT2_3():
 
     selected_skill = st.selectbox("Select a Basic Skill:", list(skills.values()))
 
-
+def UNIT2_4():
+    st.title('Jobs')
     st.write(
     "In the context of job analysis and design, it is useful to represent a job as a matrix of work activities (rows) and basic skills (columns):"
     )
@@ -98,5 +99,6 @@ elif selected == "Work Activities":
     UNIT2_2()
 elif selected == "Basic Skills":
     UNIT2_3()
-
+elif selected == "Jobs":
+    UNIT2_4()
 
