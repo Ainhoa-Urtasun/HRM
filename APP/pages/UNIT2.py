@@ -157,5 +157,3 @@ def UNIT2_3():
     \|\text{WA}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
     ''')
 
-if __name__ == "__main__":
-    main()
