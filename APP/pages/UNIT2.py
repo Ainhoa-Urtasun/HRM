@@ -53,7 +53,7 @@ def UNIT2_3():
     selected_skill = st.selectbox("Select a Basic Skill:", skills)
 
 def UNIT2_4():
-    st.title('Jobs')
+    st.title('Jobs and Job Evaluation')
     st.write(
     "In the context of job analysis and design, it is useful to represent a job as a matrix of work activities (rows) and basic skills (columns):"
     )
@@ -106,7 +106,6 @@ def UNIT2_4():
         except ValueError:
             st.error("Invalid input. Please enter only numbers separated by commas.")
 
-def UNIT2_5():
     st.write(
         "Job evaluation is a systematic process used to assess the relative worth of jobs within an organization. "
         "This assessment considers various job characteristics, such as responsibilities, required skills, and "
@@ -121,7 +120,6 @@ def UNIT2_5():
         "we calculate the total skill requirements by summing all elements in the job matrix $J_i$:"
     )
     
-
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
 
@@ -130,7 +128,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities", "Basic Skills",'Jobs','Job Evaluation'],  # required
+    options=["O*NET", "Work Activities", "Basic Skills",'Jobs and Job Evaluation'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -144,8 +142,6 @@ elif selected == "Work Activities":
     UNIT2_2()
 elif selected == "Basic Skills":
     UNIT2_3()
-elif selected == "Jobs":
+elif selected == "Jobs and Job Evaluation":
     UNIT2_4()
-elif selected == "Job Evaluation":
-    UNIT2_5()
 
