@@ -80,6 +80,12 @@ def UNIT2_4():
     "A job may not require all 10 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
+    activities = {
+    "A1": "A₁: Making decisions and solving problems",
+    "A2": "A₂: Thinking creatively",
+    "A3": "A₃: Controlling machines and processes",
+    "A4": "A₄: Selling and Influencing Others"
+    }
     user_inputs = []
 
     for i, activity in enumerate(activities, 1):
