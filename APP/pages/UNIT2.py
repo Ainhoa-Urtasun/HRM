@@ -20,23 +20,31 @@ def UNIT2_2():
         "but for simplicity, we focus on 4 working activities (A):"
     )
 
-    work_activities_data = {
-        "Code": [$A_1$, $A_2$, $A_3$, $A_4$],
-        "Work Activities": [
-            "Making decisions and solving problems",
-            "Thinking creatively",
-            "Controlling machines and processes",
-            "Selling and Influencing Others"
-        ],
-        "Description": [
-            "Analyzing information and evaluating results to choose the best solution and solve problems.",
-            "Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.",
-            "Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).",
-            "Convincing others to buy merchandise/goods or to otherwise change their minds or actions."
-        ]
+    work_activities = {
+        "WA_1": {
+            "name": "Making decisions and solving problems",
+            "description": "Analyzing information and evaluating results to choose the best solution and solve problems."
+        },
+        "WA_2": {
+            "name": "Thinking creatively",
+            "description": "Developing, designing, or creating new applications, ideas, relationships, systems, or products."
+        },
+        "WA_3": {
+            "name": "Controlling machines and processes",
+            "description": "Using control mechanisms or direct physical activity to operate machines or processes."
+        },
+        "WA_4": {
+            "name": "Selling and Influencing Others",
+            "description": "Convincing others to buy merchandise or change their minds or actions."
+        }
     }
 
-    st.table(work_activities_data)
+    selected_activity = st.selectbox("Select a Work Activity:", list(work_activities.values()))
+
+    st.write("### Selected Work Activity Details:")
+    st.write(f"**Code:** {selected_activity['name']}")
+    st.write(f"**Description:** {selected_activity['description']}")
+
 
 def UNIT2_3():
     st.title("Basic Skills (S)")
