@@ -45,7 +45,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities"],  # required
+    options=["O*NET", "Work Activities", "Basic Skills"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -57,5 +57,7 @@ if selected == "O*NET":
     UNIT2_1()
 elif selected == "Work Activities":
     UNIT2_2()
+elif selected == "Basic Skills":
+    UNIT2_3()
 
 
