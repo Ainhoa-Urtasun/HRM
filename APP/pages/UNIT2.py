@@ -130,7 +130,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities", "Basic Skills",'Jobs'],  # required
+    options=["O*NET", "Work Activities", "Basic Skills",'Jobs','Job Evaluation'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
