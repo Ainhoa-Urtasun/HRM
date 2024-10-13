@@ -10,7 +10,7 @@ def UNIT2_1():
         "helping users understand the specific demands and characteristics of different occupations."
     )
 
-def UNIT2_2()
+def UNIT2_2():
     st.title("Work Activities (A)")
     st.write(
         "A **work activity** (A) is an action performed by an individual that results in a specific output. "
@@ -38,7 +38,8 @@ def UNIT2_2()
 
     st.table(work_activities_data)
 
-    st.subheader("Basic Skills (BS)")
+def UNIT2_3():
+    st.title("Basic Skills (S)")
     st.write(
         "A **skill** is an ability or competence that an individual possesses. "
         "Employees use their skills to effectively perform work activities. Skills themselves do not directly produce output; "
@@ -46,9 +47,8 @@ def UNIT2_2()
         "Basic skills are developed capacities that facilitate learning and the rapid acquisition of knowledge."
     )
 
-    # Basic Skills Table
     basic_skills_data = {
-        "Code": ["BS_1", "BS_2", "BS_3", "BS_4", "BS_5", "BS_6"],
+        "Code": [$S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$],
         "Skill": [
             "Active listening",
             "Mathematics",
