@@ -69,7 +69,7 @@ def UNIT2_4():
     """)
 
     st.write(
-    "Each element \( s_{ij} \) of the matrix indicates the extent to which basic skill \( j \) is required for work activity \( i \):"
+    "Each element $s_{ij}$ of the matrix indicates the extent to which basic skill $j$ is required for work activity $i$:"
     )
 
     st.latex(r"""
