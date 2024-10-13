@@ -106,6 +106,9 @@ def UNIT2_4():
         except ValueError:
             st.error("Invalid input. Please enter only numbers separated by commas.")
 
+    
+    matrix_latex = r"\begin{pmatrix}" + r"\\ ".join(" & ".join(map(str, row)) for row in matrix) + r"\end{pmatrix}"
+    st.markdown(f"Matrix $J_i = {matrix_latex}$", unsafe_allow_html=True)
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
 
