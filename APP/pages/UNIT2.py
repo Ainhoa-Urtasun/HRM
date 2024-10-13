@@ -43,7 +43,7 @@ def UNIT2_3():
 
     skills = {
     "S1": "S₁: Active listening",
-    "S2": "S₂: "Mathematics",
+    "S2": "S₂: Mathematics",
     "S3": "S₃: Reading comprehension",
     "S4": "S₄: Science",
     "S5": "S₅: Speaking",
