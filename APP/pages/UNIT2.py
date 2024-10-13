@@ -25,14 +25,13 @@ def UNIT2_2():
     )
 
     activities = {
-        "A_1": "A_{1}:Making decisions and solving problems",
-        "A_2": "Thinking creatively",
-        "A_3": "Controlling machines and processes",
-        "A_4": "Selling and Influencing Others"
+    "A₁": "Making decisions and solving problems",
+    "A₂": "Thinking creatively",
+    "A₃": "Controlling machines and processes",
+    "A₄": "Selling and Influencing Others"
     }
 
-    # Selectbox for work activities
-    selected_activity = st.selectbox("Select a Work Activity:", list(activities.values()))
+    selected_activity_code = st.selectbox("Select a Work Activity:", list(activities.keys()))
 
 st.set_page_config(page_title="UNIT1", layout="wide")
 
