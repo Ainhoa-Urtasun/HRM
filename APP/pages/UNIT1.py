@@ -69,16 +69,6 @@ def UNIT1_3():
     st.pyplot(fig)
 
 def UNIT1_4():
-    st.title("Cost of Employees")
-    st.write(
-        """Employees contribute to the firm's profits at a cost. The Income Statement records only a portion of all this cost, 
-        under the category of **cost of employees**. The most significant component of the cost of employees is compensation, 
-        but recruitment and training costs may also be included. Another important cost, not recorded in the Income Statement, is the **cost of effort**. 
-        The cost of effort refers to the opportunity cost for the employee to exert effort, which has significant implications for their motivation. HR 
-        managers must carefully manage both types of costs to maintain employee performance and profitability."""
-    )
-
-def UNIT1_5():
     st.title("EBIT Optimization")
     st.latex(r'''
         EBIT = p\left(L_{11}^{e_{11}} \cdot L_{17}^{e_{17}} \cdot L_{51}^{e_{51}} \cdot K^{1-e_{11}+e_{17}-e_{51}}\right) - \left(w_{11} L_{11} + w_{17} L_{17} + w_{51} L_{51}\right) - rK
@@ -154,7 +144,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Industries and Occupations", "Notation for the Course", "Labor Productivity and Unit Labor Cost (ULC)", "Cost of Employees", "EBIT Optimization"],  # required
+    options=["Industries and Occupations", "Notation for the Course", "Labor Productivity and Unit Labor Cost (ULC)", "EBIT Optimization"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -168,8 +158,6 @@ elif selected == "Notation for the Course":
     UNIT1_2()
 elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
     UNIT1_3()
-elif selected == "Cost of Employees":
-    UNIT1_4()
 elif selected == "EBIT Optimization":
-    UNIT1_5()
+    UNIT14()
 
