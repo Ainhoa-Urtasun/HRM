@@ -30,23 +30,22 @@ def UNIT1_2():
 def UNIT1_3():
     st.title('Earnings Before Interests and Taxes (EBIT)')
     st.write("""
-        Earnings Before Interest and Taxes (EBIT) is a measure of a company's profitability 
-        that excludes interest and income tax expenses. It represents the profit generated 
-        from the company's core business operations, providing insight into how effectively 
-        the company is being managed and its ability to generate operating profits. 
-        EBIT is often used to compare the performance of companies within the same industry, 
-        as it removes the effects of financing and tax structures, allowing for a clearer 
-        analysis of operational efficiency."""
+        Earnings Before Interest and Taxes (EBIT), also known as Operating Profit or Loss,
+        is a measure of a company's profitability that excludes interest and income tax expenses. 
+        It represents the profit generated from the company's core business operations, providing insight into how effectively 
+        the company is being managed and its ability to generate operating profits. EBIT is often used to compare the performance 
+        of companies within the same industry, as it removes the effects of financing and tax structures, allowing for a clearer 
+        analysis of operational efficiency. EBIT is shown in the Income Statement and is 
+        calculated by substracting **Operating Expenses** from **Operating Revenue**."""
     )
 
-    st.markdown("""
-    | **Income Statement**                | **Amount** |
-    |:------------------------------------|-----------:|
-    | + Operating Revenue (Turnover)      |    $X,XXX  |
-    | - Operating Expenses                |    $X,XXX  |
-    | **= EBIT (Operating P/L)**          | **$X,XXX** |
-    """)
+    st.write("""
+        We are going to practice calculating EBIT from the Income Statements available in the SABI database at the UPNA library."""
+    )
 
+    st.components.v1.iframe(https://www.unavarra.es/biblioteca?languageId=1, width=800, height=600, scrolling=True)
+
+    
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
     revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
