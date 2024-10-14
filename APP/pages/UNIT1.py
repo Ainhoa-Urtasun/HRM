@@ -11,13 +11,10 @@ def UNIT1_1():
         We refer to the activities that labor (employees) must complete as **work activities**. As part of the **how to produce it** decision, firms also decide how 
         to group these **work activities** into jobs or occupations and how many employees are needed for each occupation. As firms are classified into industries 
         depending on the output they produce, employees are classified into occupations depending on the work activities they perform. 
-        The North American Industry Classification System (NAICS) classifies firms into industries depending on the type of output they produce
-        and the Standard Occupational Classification (SOC) classifies employees into occupations. 
+        [The North American Industry Classification System (NAICS)](https://www.census.gov/naics/?58967?yearbck=2022) classifies firms into industries depending on the type of output they produce
+        and the [Standard Occupational Classification (SOC)](https://www.bls.gov/soc/2018/major_groups.htm) classifies employees into occupations. 
         To streamline our analysis, this course focuses on three occupations.'''
     )
-
-    st.components.v1.iframe("https://www.census.gov/naics/", width=800, height=1000, scrolling=True)
-    st.components.v1.iframe("https://www.bls.gov/soc/2018/", width=800, height=1000, scrolling=True)
     
 def UNIT1_2():
     with st.expander("Show the notation for the course"):
