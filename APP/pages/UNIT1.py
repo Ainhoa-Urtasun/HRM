@@ -79,25 +79,25 @@ def UNIT1_4():
     ''')
     
     st.write("Where:")
-    st.write("$p$ is the price of the output")
-    st.write("$w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}$ is the total cost of employees")
-    st.write("$rK$ is the cost of capital")
+    st.write("- $p$ is the price of the output")
+    st.write("- $w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}$ represents cost of employees")
+    st.write("- $rK$ represents depreciation")
 
     st.write(
-        "The objective is to determine the optimal values of $(L_{11}, L_{17}, L_{51})$ that maximize EBIT. "
+        "The objective is to determine the optimal values of $(L_{1}, L_{2}, L_{3})$ that maximize EBIT. "
         "We can apply gradient ascent to iteratively update the input values, moving in the direction of the gradient. "
         "The gradient indicates the direction that maximizes the objective function:"
     )
     st.latex(r'''
-        (L_{11}, L_{17}, L_{51})_{\text{new}} = (L_{11}, L_{17}, L_{51})_{\text{old}} + \eta \cdot \nabla EBIT
+        (L_{1}, L_{2}, L_{3})_{\text{new}} = (L_{1}, L_{2}, L_{3})_{\text{old}} + \eta \cdot \nabla EBIT
     ''')
 
     st.write("Where:")
     st.write("- $\\eta$ is the learning rate (which determines the size of the steps),")
-    st.write("- $\\nabla EBIT$ is the gradient of the EBIT function with respect to $(L_{11}, L_{17}, L_{51})$, defined as:")
+    st.write("- $\\nabla EBIT$ is the gradient of the EBIT function with respect to $(L_{1}, L_{2}, L_{3})$, defined as:")
 
     st.latex(r'''
-    \nabla EBIT = \left( \frac{\partial EBIT}{\partial L_{11}}, \frac{\partial EBIT}{\partial L_{17}}, \frac{\partial EBIT}{\partial L_{51}} \right)
+    \nabla EBIT = \left( \frac{\partial EBIT}{\partial L_{1}}, \frac{\partial EBIT}{\partial L_{2}}, \frac{\partial EBIT}{\partial L_{3}} \right)
     ''')
 
     st.write("By calculating the gradient and updating the input values iteratively, we aim to find the optimal combination "
