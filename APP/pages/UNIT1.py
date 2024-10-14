@@ -71,17 +71,18 @@ def UNIT1_4():
     st.write(
         """Both labor productivity and unit labor cost (ULC) significantly impact a firm's profitability, 
         particularly in terms of Earnings Before Interest and Taxes (EBIT). Firms often make decisions aimed at maximizing profits, 
-        which is the focus of our modeling in this section
+        which is the focus of this section
         """
     )
     st.latex(r'''
         EBIT = p\left(L_{1}^{e_{1}} \cdot L_{2}^{e_{2}} \cdot L_{3}^{e_{3}} \cdot K^{1-e_{1}+e_{2}-e_{3}}\right) - \left(w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}\right) - rK
     ''')
-    st.write(
-        "where $p$ is the price of the output, "
-        "$w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}$ is the total cost of employees."
-        "$rK$ is the cost of capital."
-    )
+    
+    st.write("Where:")
+    st.write("$p$ is the price of the output")
+    st.write("$w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}$ is the total cost of employees")
+    st.write("$rK$ is the cost of capital")
+
     st.write(
         "The objective is to determine the optimal values of $(L_{11}, L_{17}, L_{51})$ that maximize EBIT. "
         "We can apply gradient ascent to iteratively update the input values, moving in the direction of the gradient. "
