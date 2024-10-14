@@ -28,7 +28,6 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.title('Labor Productivity and Unit Labor Cost (ULC)')
     st.write("""
         Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed: **Operating revenue**, **Cost of employees**. 
         The **Cost of employees**, along with **Depreciation**, is part of **Operating expenses**, that substracted from **Operating revenue** results in 
@@ -69,13 +68,14 @@ def UNIT1_3():
     st.pyplot(fig)
 
 def UNIT1_4():
-    st.title("EBIT Optimization")
+    st.write("Both labor productivity and unit labor cost (ULC) significantly impact a firm's profitability, particularly in terms of Earnings Before Interest and Taxes (EBIT). 
+    Firms often make decisions aimed at maximizing profits, which is the focus of our modeling in this section")
     st.latex(r'''
-        EBIT = p\left(L_{11}^{e_{11}} \cdot L_{17}^{e_{17}} \cdot L_{51}^{e_{51}} \cdot K^{1-e_{11}+e_{17}-e_{51}}\right) - \left(w_{11} L_{11} + w_{17} L_{17} + w_{51} L_{51}\right) - rK
+        EBIT = p\left(L_{1}^{e_{1}} \cdot L_{2}^{e_{2}} \cdot L_{3}^{e_{3}} \cdot K^{1-e_{1}+e_{2}-e_{3}}\right) - \left(w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}\right) - rK
     ''')
     st.write(
         "where $p$ is the price of the output, "
-        "$w_{11} L_{11} + w_{17} L_{17} + w_{51} L_{51}$ is the total cost of employees."
+        "$w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}$ is the total cost of employees."
         "$rK$ is the cost of capital."
     )
     st.write(
@@ -159,5 +159,5 @@ elif selected == "Notation for the Course":
 elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
     UNIT1_3()
 elif selected == "EBIT Optimization":
-    UNIT14()
+    UNIT1_4()
 
