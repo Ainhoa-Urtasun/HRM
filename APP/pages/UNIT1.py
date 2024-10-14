@@ -28,15 +28,11 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the course.")
 
 def UNIT1_3():
-    st.title('Earnings Before Interests and Taxes (EBIT)')
+    st.title('Labor Productivity and Unit Labor Cost')
     st.write("""
-        Earnings Before Interest and Taxes (EBIT), also known as Operating Profit or Loss,
-        is a measure of a company's profitability that excludes interest and income tax expenses. 
-        It represents the profit generated from the company's core business operations, providing insight into how effectively 
-        the company is being managed and its ability to generate operating profits. EBIT is often used to compare the performance 
-        of companies within the same industry, as it removes the effects of financing and tax structures, allowing for a clearer 
-        analysis of operational efficiency. EBIT is shown in the Income Statement and is 
-        calculated by substracting **Operating Expenses** from **Operating Revenue**."""
+        Both metrics are essential for HRM. They are calculated from the **Operating revenue**, **Cost of employees** (both items from the Income Statement of the firm), and 
+        the number of employees. Both the **Cost of employees** and **Depreciation** are **Operating expenses**, that substracted from **Operating revenue** results in 
+        **Earnings Before Interests and Taxes (EBIT)**."""
     )
 
     st.write("""
