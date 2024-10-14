@@ -125,28 +125,26 @@ def UNIT2_4():
     st.write(f"Job Complexity: {job_complexity}")
 
 def UNIT2_5():
-    st.markdown(r"""
-    The cosine similarity between two work activities \( WA_i \) and \( WA_j \) is defined as follows:
+    st.write("The cosine similarity between two work activities $A_i$ and $A_j$ is defined as follows:")
 
-    \[
-    \text{Cosine Similarity}(\text{WA}_i, \text{WA}_j) = \frac{\text{WA}_i \cdot \text{WA}_j}{\|\text{WA}_i\| \|\text{WA}_j\|}
-    \]
+    st.latex(r'''
+    \text{Cosine Similarity}(\text{A}_i, \text{A}_j) = \frac{\text{A}_i \cdot \text{A}_j}{\|\text{A}_i\| \|\text{A}_j\|}
+    ''')
 
-    Where:
-    \begin{itemize}
-    \item \( \text{WA}_i \cdot \text{WA}_j \) represents the dot product of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated as:
-    \[
-    \text{WA}_i \cdot \text{WA}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
-    \]
+    st.write("Where:")
+    st.write("- \( \text{WA}_i \cdot \text{WA}_j \) represents the dot product of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated as:")
 
-    \item \( \|\text{WA}_i\| \) and \( \|\text{WA}_j\| \) denote the magnitudes of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated using:
-    \[
-    \|\text{WA}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
-    \]
-    \end{itemize}
-    """)
+    st.latex(r'''
+    \text{A}_i \cdot \text{A}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
+    ''')
 
+    st.write("- \( \|\text{WA}_i\| \) and \( \|\text{WA}_j\| \) denote the magnitudes of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated using:")
 
+    st.latex(r'''
+    \|\text{A}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
+    ''')
+
+   
 st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
