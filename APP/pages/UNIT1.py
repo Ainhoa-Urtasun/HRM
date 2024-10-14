@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
-    st.title("Industries and Occupations")
     st.write(
         """Any firm, regardless of its size and legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
         Based on the nature of the output, the firm is classified into a particular industry. 
@@ -23,15 +22,17 @@ def UNIT1_1():
     selected_occupation = st.selectbox("2-digit SOC:", occupations)
 
 def UNIT1_2():
-    st.title('Notation for the course')
-    st.markdown("""
-    - $L_{11}$: number of managers in the firm
-    - $L_{17}$: number of engineers in the firm
-    - $L_{51}$: number of operators in the firm
-    - $K$: capital or technology used by the firm
-    - $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees
-    - $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees
-    """)
+    with st.expander("Show Definitions"):
+        st.markdown("""
+        - $L_{11}$: number of managers in the firm
+        - $L_{17}$: number of engineers in the firm
+        - $L_{51}$: number of operators in the firm
+        - $K$: capital or technology used by the firm
+        - $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees
+        - $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees
+        """)
+
+st.write("Use the section above to view the definitions of the variables.")
 
 def UNIT1_3():
     st.title('Earnings Before Interests and Taxes (EBIT)')
