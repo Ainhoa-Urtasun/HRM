@@ -124,12 +124,34 @@ def UNIT2_4():
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
 
+def UNIT2_5():
+    st.markdown(r"""
+    The cosine similarity between two work activities \( WA_i \) and \( WA_j \) is defined as follows:
+
+    \[
+    \text{Cosine Similarity}(\text{WA}_i, \text{WA}_j) = \frac{\text{WA}_i \cdot \text{WA}_j}{\|\text{WA}_i\| \|\text{WA}_j\|}
+    \]
+
+    Where:
+    \begin{itemize}
+    \item \( \text{WA}_i \cdot \text{WA}_j \) represents the dot product of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated as:
+    \[
+    \text{WA}_i \cdot \text{WA}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
+    \]
+
+    \item \( \|\text{WA}_i\| \) and \( \|\text{WA}_j\| \) denote the magnitudes of the skill vectors for work activities \( \text{WA}_i \) and \( \text{WA}_j \), calculated using:
+    \[
+    \|\text{WA}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
+    \]
+    \end{itemize}
+    """)
+
 
 st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities", "Basic Skills",'Jobs and Job Evaluation'],  # required
+    options=["O*NET", "Work Activities", "Basic Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -145,4 +167,6 @@ elif selected == "Basic Skills":
     UNIT2_3()
 elif selected == "Jobs and Job Evaluation":
     UNIT2_4()
+elif selected == "Task Similarity":
+    UNIT2_5()
 
