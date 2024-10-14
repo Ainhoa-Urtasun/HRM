@@ -68,8 +68,12 @@ def UNIT1_3():
     st.pyplot(fig)
 
 def UNIT1_4():
-    st.write("Both labor productivity and unit labor cost (ULC) significantly impact a firm's profitability, particularly in terms of Earnings Before Interest and Taxes (EBIT). 
-    Firms often make decisions aimed at maximizing profits, which is the focus of our modeling in this section")
+    st.write(
+        """Both labor productivity and unit labor cost (ULC) significantly impact a firm's profitability, 
+        particularly in terms of Earnings Before Interest and Taxes (EBIT). Firms often make decisions aimed at maximizing profits, 
+        which is the focus of our modeling in this section
+        """
+    )
     st.latex(r'''
         EBIT = p\left(L_{1}^{e_{1}} \cdot L_{2}^{e_{2}} \cdot L_{3}^{e_{3}} \cdot K^{1-e_{1}+e_{2}-e_{3}}\right) - \left(w_{1} L_{1} + w_{2} L_{2} + w_{3} L_{3}\right) - rK
     ''')
