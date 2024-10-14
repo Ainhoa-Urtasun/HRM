@@ -6,20 +6,17 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        """Any firm, regardless of its size and legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
+        '''Any firm, regardless of its size or legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
         Based on the nature of the output, the firm is classified into a particular industry. 
-        The [NAICS](https://www.census.gov/naics/) provides a standard classification of industries. 
         The type of output determines the set of activities that labor and technology need to perform. 
-        The firm decides how to allocate these activities between labor and technology. 
-        We refer to the activities that labor (employees) must complete **work activities**. 
-        The firm also decides how to group these work activities into jobs and how many employees are needed for each job. 
+        Then the firm decides how to allocate these activities between labor and technology. 
+        We refer to the activities that labor (employees) must complete as **work activities**. 
+        The firm also decides how to group these work activities into occupations and how many employees are needed for each occupation. 
         As firms are classified into industries depending on the output they produce, jobs are classified into occupations depending on the work activities they entail. 
-        The [SOC](https://www.bls.gov/soc/) provides a standard classification of occupations. 
-        To streamline our analysis, this course focuses on three types of occupations."""
+        The North American Industry Classification System (NAICS) classifies firms into industries depending on the type of output they produce
+        and the Standard Occupational Classification (SOC) classifies jobs into occupations. 
+        To streamline our analysis, this course focuses on three occupations.'''
     )
-
-    occupations = ["11. Managers", "17. Engineers", "51. Operators"]
-    selected_occupation = st.selectbox("2-digit SOC:", occupations)
 
 def UNIT1_2():
     with st.expander("Show the notation for the course"):
