@@ -32,7 +32,7 @@ def UNIT1_2():
         - $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees
         """)
 
-st.write("Use the section above to view the definitions of the variables.")
+    st.write("Use the section above to view the definitions of the variables.")
 
 def UNIT1_3():
     st.title('Earnings Before Interests and Taxes (EBIT)')
