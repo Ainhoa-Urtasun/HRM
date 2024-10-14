@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT2_1():
-    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000)
+    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
     
     st.write(
         "O\\*NET Online is a comprehensive tool for career exploration and job analysis. "
