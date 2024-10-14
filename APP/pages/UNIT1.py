@@ -17,7 +17,7 @@ def UNIT1_1():
     )
     
 def UNIT1_2():
-    with st.expander("Show the notation for the course"):
+    with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $L_{1}$ number of employees in occupation 1 at the firm")
         st.write("- $L_{2}$ number of employees in occupation 2 at the firm")
         st.write("- $L_{3}$ number of employees in occupation 3 at the firm")
@@ -25,18 +25,18 @@ def UNIT1_2():
         st.write("- $A_1$, $A_2$, $A_3$, $A_4$ work activities to be performed by employees")
         st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$ skills to be possessed by employees")
 
-    st.write("Use the section above to view the notation for the course.")
+    st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.title('Labor Productivity and Unit Labor Cost')
+    st.title('Labor Productivity and Unit Labor Cost (ULC)')
     st.write("""
-        Both metrics are essential for HRM. They are calculated from the **Operating revenue**, **Cost of employees** (both items from the Income Statement of the firm), and 
-        the number of employees. Both the **Cost of employees** and **Depreciation** are **Operating expenses**, that substracted from **Operating revenue** results in 
+        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed: **Operating revenue**, **Cost of employees**. 
+        The **Cost of employees**, along with **Depreciation**, is part of **Operating expenses**, that substracted from **Operating revenue** results in 
         **Earnings Before Interests and Taxes (EBIT)**."""
     )
 
     st.write("""
-        We are going to practice calculating EBIT from the Income Statements available in the SABI database at the UPNA library."""
+        We are going to practice calculating both labor productivity and unit labor cost (ULC) using the SABI database at the UPNA library."""
     )
 
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
@@ -166,7 +166,7 @@ if selected == "Industries and Occupations":
     UNIT1_1()
 elif selected == "Notation for the Course":
     UNIT1_2()
-elif selected == "Earnings Before Interests and Taxes (EBIT)":
+elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
     UNIT1_3()
 elif selected == "Cost of Employees":
     UNIT1_4()
