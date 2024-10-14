@@ -4,20 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Add custom CSS for colored expander box
-st.markdown(
-    """
-    <style>
-    .streamlit-expanderHeader {
-        background-color: #f0f0f5;
-        border-radius: 5px;
-        padding: 5px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 def UNIT1_1():
     st.write(
         """Any firm, regardless of its size and legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
