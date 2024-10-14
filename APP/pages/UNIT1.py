@@ -16,6 +16,9 @@ def UNIT1_1():
         To streamline our analysis, this course focuses on three occupations.'''
     )
 
+    st.components.v1.iframe("https://www.census.gov/naics/?58967?yearbck=2022", width=800, height=1000, scrolling=True)
+    st.components.v1.iframe("https://www.bls.gov/soc/2018/major_groups.htm", width=800, height=1000, scrolling=True)
+    
 def UNIT1_2():
     with st.expander("Show the notation for the course"):
         st.write("- $L_{11}$: number of managers in the firm")
