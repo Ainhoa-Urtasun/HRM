@@ -6,12 +6,11 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        '''Any firm, regardless of its size or legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
-        Based on the nature of the output, the firm is classified into a particular industry. 
-        The type of output determines the set of activities that labor and technology need to perform. 
-        Then the firm decides how to allocate these activities between labor and technology. 
-        We refer to the activities that labor (employees) must complete as **work activities**. 
-        The firm also decides how to group these work activities into occupations and how many employees are needed for each occupation. 
+        '''Firms make two important decisions, **what to produce** and **how to produce it**. The **what to produce** decision refers to the output (good or service).
+        The **how to produce it** decision, on the other hand, refers to the activities to be performed and who, labor or technology, performs these activities. 
+        We refer to the activities that labor (employees) must complete as **work activities**. Human resource management (HRM) decides how to group these work activities 
+        into jobs or occupations and how many employees are needed for each occupation. 
+        
         As firms are classified into industries depending on the output they produce, jobs are classified into occupations depending on the work activities they entail. 
         The North American Industry Classification System (NAICS) classifies firms into industries depending on the type of output they produce
         and the Standard Occupational Classification (SOC) classifies jobs into occupations. 
