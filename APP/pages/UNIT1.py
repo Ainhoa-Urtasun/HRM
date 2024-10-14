@@ -23,16 +23,20 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show Definitions"):
-        st.markdown("""
-        - $L_{11}$: number of managers in the firm
-        - $L_{17}$: number of engineers in the firm
-        - $L_{51}$: number of operators in the firm
-        - $K$: capital or technology used by the firm
-        - $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees
-        - $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees
-        """)
+        st.write("- $L_{11}$: number of managers in the firm")
+        st.latex(r'L_{11}')
+        st.write("- $L_{17}$: number of engineers in the firm")
+        st.latex(r'L_{17}')
+        st.write("- $L_{51}$: number of operators in the firm")
+        st.latex(r'L_{51}')
+        st.write("- $K$: capital or technology used by the firm")
+        st.latex(r'K')
+        st.write("- $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees")
+        st.latex(r'A_1, A_2, A_3, A_4')
+        st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees")
+        st.latex(r'S_1, S_2, S_3, S_4, S_5, S_6')
 
-    st.write("Use the section above to view the definitions of the variables.")
+        st.write("Use the section above to view the definitions of the variables.")
 
 def UNIT1_3():
     st.title('Earnings Before Interests and Taxes (EBIT)')
