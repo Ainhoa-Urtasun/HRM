@@ -4,6 +4,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Add custom CSS for colored expander box
+st.markdown(
+    """
+    <style>
+    .streamlit-expanderHeader {
+        background-color: #f0f0f5;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def UNIT1_1():
     st.write(
         """Any firm, regardless of its size and legal form of ownership, transforms inputs (labor and technology) into outputs (goods or services). 
@@ -22,21 +36,15 @@ def UNIT1_1():
     selected_occupation = st.selectbox("2-digit SOC:", occupations)
 
 def UNIT1_2():
-    with st.expander("Show Definitions"):
+    with st.expander("Show the notation for the course"):
         st.write("- $L_{11}$: number of managers in the firm")
-        st.latex(r'L_{11}')
         st.write("- $L_{17}$: number of engineers in the firm")
-        st.latex(r'L_{17}')
         st.write("- $L_{51}$: number of operators in the firm")
-        st.latex(r'L_{51}')
         st.write("- $K$: capital or technology used by the firm")
-        st.latex(r'K')
         st.write("- $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees")
-        st.latex(r'A_1, A_2, A_3, A_4')
         st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: basic skills to be possessed by employees")
-        st.latex(r'S_1, S_2, S_3, S_4, S_5, S_6')
 
-        st.write("Use the section above to view the definitions of the variables.")
+    st.write("Use the section above to view the notation for the course.")
 
 def UNIT1_3():
     st.title('Earnings Before Interests and Taxes (EBIT)')
