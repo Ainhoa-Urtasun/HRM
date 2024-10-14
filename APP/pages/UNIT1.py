@@ -18,12 +18,12 @@ def UNIT1_1():
     
 def UNIT1_2():
     with st.expander("Show the notation for the course"):
-        st.write("- $L_{1}$: number of employees in occupation 1 at the firm")
-        st.write("- $L_{2}$: number of employees in occupation 2 at the firm")
-        st.write("- $L_{3}$: number of employees in occupation 3 at the firm")
-        st.write("- $K$: technology at the firm")
-        st.write("- $A_1$, $A_2$, $A_3$, $A_4$: work activities to be performed by employees")
-        st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$: skills to be possessed by employees")
+        st.write("- $L_{1}$ number of employees in occupation 1 at the firm")
+        st.write("- $L_{2}$ number of employees in occupation 2 at the firm")
+        st.write("- $L_{3}$ number of employees in occupation 3 at the firm")
+        st.write("- $K$ technology at the firm")
+        st.write("- $A_1$, $A_2$, $A_3$, $A_4$ work activities to be performed by employees")
+        st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$ skills to be possessed by employees")
 
     st.write("Use the section above to view the notation for the course.")
 
