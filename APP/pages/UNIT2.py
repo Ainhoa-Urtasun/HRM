@@ -8,10 +8,10 @@ def UNIT2_1():
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600)
     
     st.write(
-        r"O*NET Online is a comprehensive tool for career exploration and job analysis. "
+        "O\\*NET Online is a comprehensive tool for career exploration and job analysis. "
         "It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs, "
         "making it an invaluable resource for job seekers, workforce development professionals, and HR specialists. "
-        r"By providing standardized information on various job roles, O*NET Online facilitates job analysis and design, "
+        "By providing standardized information on various job roles, O\\*NET Online facilitates job analysis and design, "
         "helping users understand the specific demands and characteristics of different occupations."
     )
 
