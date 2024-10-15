@@ -62,9 +62,10 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.write("""
-        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed
-        to calculate labor productivity and ULC: **Operating revenue** and **Cost of employees**. 
-        The **Cost of employees**, along with **Depreciation**, are **Operating expenses**, that substracted from **Operating revenue** results in 
+        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed:
+        **Operating revenue** and **Cost of employees**. 
+        The **Cost of employees**, along with **Depreciation**, are part of **Operating expenses**, 
+        that substracted from **Operating revenue** results in 
         **Earnings Before Interests and Taxes (EBIT)**."""
     )
 
