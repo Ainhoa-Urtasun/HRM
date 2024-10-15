@@ -21,8 +21,8 @@ def UNIT1_1():
         - What activities the firm needs to complete to produce the output. This decision will depend on the type of output
         - How to allocate these activities into the factors of production (labor and technology)
 
-        The activities that allocated to labor (employees) are called **working activities** and HRM organizes and motivates
-        employees to perform **working activities** efficiently and effectively.
+        The activities that allocated to labor (employees) are called **work activities** and HRM organizes and motivates
+        employees to perform **work activities** efficiently and effectively.
 
         
         Firms are classified into industries depending on the output they produce and jobs are classified into occupations depending on
@@ -33,7 +33,6 @@ def UNIT1_1():
 
         Next, we use SABI (Iberian Balance Sheet Analysis System), a database 
         with financial information of more than 2,6 million companies in Spain and Portugal, to practice these ideas. 
-        To streamline our analysis, this course focuses on three different jobs: $J_1, J_2, J_3$.
         '''
     )
 
@@ -43,8 +42,22 @@ def UNIT1_1():
     if naics_code and naics_title:
         st.write(f"You entered NAICS code: **{naics_code}**")
         st.write(f"NAICS title: **{naics_title}**")
-        
-    
+
+    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
+    st.write("Please enter 4 work activities ($A_i$) from O*NET:")
+
+    activity1 = st.text_input("$A_1$")
+    activity2 = st.text_input("$A_2$")
+    activity3 = st.text_input("$A_3$")
+    activity4 = st.text_input("$A_4$")
+
+    if activity1 and activity2 and activity3 and activity4:
+        st.write("You have entered the following work activities:")
+        st.write(f"1. {activity1}")
+        st.write(f"2. {activity2}")
+        st.write(f"3. {activity3}")
+        st.write(f"4. {activity4}")
+  
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $L_1$ number of employees in job $J_1$ at the firm")
