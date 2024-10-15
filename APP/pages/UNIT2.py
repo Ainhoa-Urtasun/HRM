@@ -79,13 +79,13 @@ def UNIT2_4():
 
     st.write("Enter 4 work activities ($A_i$) and 6 skills ($S_i$) from O*NET:")
     activity1 = st.text_input("$A_1$")
-    skills1 = st.text_input(f"Enter 6 comma-separated values for skills for {activity1} (e.g., 10,20,30,40,50,60):")
+    skills1 = st.text_input(f"Enter 6 comma-separated values for skills for $A_1$ (e.g., 10,20,30,40,50,60):")
     activity2 = st.text_input("$A_2$")
-    skills2 = st.text_input(f"Enter 6 comma-separated values for skills for {activity2} (e.g., 10,20,30,40,50,60):")
+    skills2 = st.text_input(f"Enter 6 comma-separated values for skills for $A_2$ (e.g., 10,20,30,40,50,60):")
     activity3 = st.text_input("$A_3$")
-    skills3 = st.text_input(f"Enter 6 comma-separated values for skills for {activity3} (e.g., 10,20,30,40,50,60):")
+    skills3 = st.text_input(f"Enter 6 comma-separated values for skills for $A_3$ (e.g., 10,20,30,40,50,60):")
     activity4 = st.text_input("$A_4$")
-    skills4 = st.text_input(f"Enter 6 comma-separated values for skills for {activity4} (e.g., 10,20,30,40,50,60):")
+    skills4 = st.text_input(f"Enter 6 comma-separated values for skills for $A_4$ (e.g., 10,20,30,40,50,60):")
 
     matrix = np.zeros((4, 6))
 
