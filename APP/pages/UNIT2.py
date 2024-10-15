@@ -40,7 +40,7 @@ def UNIT2_3():
 def UNIT2_4():
     st.title('Jobs and Job Evaluation')
     st.write(
-    "In the context of job analysis and design, it is useful to represent a job as a matrix of work activities (rows) and basic skills (columns):"
+    "In the context of job analysis and design, it is useful to represent a job, $J_i$ as a matrix of work activities (rows) and basic skills (columns):"
     )
 
     st.latex(r"""
@@ -62,7 +62,7 @@ def UNIT2_4():
     """)
 
     st.write(
-    "A job may not require all 10 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
+    "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
     activities = [
@@ -133,7 +133,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities", "Basic Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["O*NET", "Work Activities", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -145,7 +145,7 @@ if selected == "O*NET":
     UNIT2_1()
 elif selected == "Work Activities":
     UNIT2_2()
-elif selected == "Basic Skills":
+elif selected == "Skills":
     UNIT2_3()
 elif selected == "Jobs and Job Evaluation":
     UNIT2_4()
