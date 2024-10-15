@@ -7,23 +7,43 @@ import numpy as np
 def UNIT1_1():
     st.write(
         '''
-        Firms make two important decisions, **what to produce** and **how to produce it**. The **what to produce** decision refers to the output (good or service).
-        The **how to produce it** decision, on the other hand, refers to the activities to be performed and who, labor or technology, performs these activities. 
-        We refer to the activities that labor (employees) must complete as **work activities**. As part of the **how to produce it** decision, firms also decide how 
-        to group these **work activities** into jobs (or occupations) and how many employees are needed for each job. As firms are classified into industries 
-        depending on the output they produce, employees are classified into jobs depending on the work activities they perform. 
-        [The North American Industry Classification System (NAICS)](https://www.census.gov/naics/) classifies firms into industries depending on the type of output they produce
-        and the [Standard Occupational Classification (SOC)](https://www.bls.gov/soc/2018/major_groups.htm) classifies employees into jobs. 
+        Human resource management (HRM) takes on the organization and motivation of employees by implementing HRM practices
+        such as job analysis and design, HR planning, recruitment, performance evaluation, training, career development, 
+        and compensation. HRM is implemented at the firm level.
+
+        
+        Any firm, regardless of its size or legal form of ownership, makes two important decisions:
+        - **What to produce**: This decision refers to the output (good or service).
+        - **How to produce it**: This decision refers to how to organize the factors of production (labor and technology) 
+        to produce the output efficiently and effectively.
+        
+        This second decision involves in turn the following specific decisions:
+        - What activities the firm needs to complete to produce the output. This decision will depend on the type of output
+        - How to allocate these activities into the factors of production (labor and technology)
+
+        The activities that allocated to labor (employees) are called **working activities** and HRM organizes and motivates
+        employees to perform **working activities** efficiently and effectively.
+
+        
+        Firms are classified into industries depending on the output they produce and jobs are classified into occupations depending on
+        the work activities they entail. The North American Industry Classification System (NAICS) provides a standard classification
+        of firms into industries depending on the type of output the firm produces and the Standard Occupational Classification (SOC) provides
+        a standard classification of jobs into occupations depending on the work activities the job entails.
+        
+
+        Next, we use SABI (Iberian Balance Sheet Analysis System), a database 
+        with financial information of more than 2,6 million companies in Spain and Portugal, to practice these ideas. 
         To streamline our analysis, this course focuses on three different jobs: $J_1, J_2, J_3$.
         '''
     )
 
-    st.write(
-        '''
-        Note: In this course, we use "job" and "occupation" interchangeably, although each represents a different level. 
-        "Occupation" refers to a broader category of work, while "job" is more specific to roles within a particular firm.
-        '''
-    )
+    st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
+    naics_code = st.text_input("Enter the 2-digit NAICS code:")
+    naics_title = st.text_input("Enter the NAICS title:")
+    if naics_code and naics_title:
+        st.write(f"You entered NAICS code: **{naics_code}**")
+        st.write(f"NAICS title: **{naics_title}**")
+        
     
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
