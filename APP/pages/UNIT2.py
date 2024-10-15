@@ -17,10 +17,11 @@ def UNIT2_1():
 
 def UNIT2_2():
     st.title("Work Activities")
-    st.write(
-        "A **work activity** is an action performed by an employee that results in a specific output. "
-        "Occupations are collections of work activities. O*NET identifies 41 distinct work activities, "
-        "but for simplicity, we focus on 4: $A_1, A_2, A_3, A_4$"
+    st.write("""
+        A **work activity** is an action performed by an employee that results in a specific output.
+        Occupations are collections of work activities. O*NET identifies 41 distinct work activities,
+        but for simplicity, we focus on 4: $A_1, A_2, A_3, A_4$
+        """
     )
 
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
@@ -31,6 +32,8 @@ def UNIT2_3():
     **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
     Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
     Here, for simplicity, we focus on 6 skills: $S_1, S_2, S_3, S_4, S_5, S_6$
+    """
+    )
 
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
