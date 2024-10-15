@@ -112,9 +112,9 @@ def UNIT1_4():
     st.write("By calculating the gradient and updating the input values iteratively, we aim to find the optimal combination "
              "of labor and capital that maximizes EBIT, enhancing overall firm profitability.")
 
-    L1 = st.number_input("Supply of employees in occupation 1 at the firm", value=1, step=1)
-    L2 = st.number_input("Supply of employees in occupation 2 at the firm", value=1, step=1)
-    L3 = st.number_input("Supply of employees in occupation 3 at the firm", value=1, step=1)
+    L1 = st.number_input("Supply of employees in job $J_1$ at the firm", value=1, step=1)
+    L2 = st.number_input("Supply of employees in job $J_2$ at the firm", value=1, step=1)
+    L3 = st.number_input("Supply of employees in job $J_3$ at the firm", value=1, step=1)
 
     def EBIT(L1, L2, L3):
         return 120 * L1**0.2 * L2**0.5 * L3**0.1 - 5 * (L1 + L2 + L3) - 1
@@ -145,9 +145,9 @@ def UNIT1_4():
         else:
             new_value = EBIT(L1_new, L2_new, L3_new)
             result = pd.DataFrame({
-                "Demand of employees in occupation 1 at the firm": [L1_new],
-                "Demand of employees in occupation 2 at the firm": [L2_new],
-                "Demand of employees in occupation 3 at the firm": [L3_new],
+                "Demand of employees in job $J_1$ at the firm": [L1_new],
+                "Demand of employees in job $J_2$ at the firm": [L2_new],
+                "Demand of employees in job $J_3$ at the firm": [L3_new],
                 "EBIT": [new_value]
             })
             st.markdown(f"<h3 style='text-align: center; color: #4CAF50;'>Updated Values After First Iteration</h3>", unsafe_allow_html=True)
