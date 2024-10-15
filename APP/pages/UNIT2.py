@@ -23,7 +23,6 @@ def UNIT2_2():
         but for simplicity, we focus on 4: $A_1, A_2, A_3, A_4$
         """
     )
-
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
 
 def UNIT2_3():
@@ -34,7 +33,6 @@ def UNIT2_3():
     Here, for simplicity, we focus on 6 skills: $S_1, S_2, S_3, S_4, S_5, S_6$
     """
     )
-
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
 def UNIT2_4():
@@ -65,10 +63,14 @@ def UNIT2_4():
     "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
-    activities = [A₁,A₂,A₃,A₄]
+    st.write("Enter 4 work activities ($A_i$) from O*NET:")
+    activity1 = st.text_input("$A_1$")
+    activity2 = st.text_input("$A_2$")
+    activity3 = st.text_input("$A_3$")
+    activity4 = st.text_input("$A_4$")
     
     user_inputs = []
-    for activity in activities:
+    for activity in [activity1, activity2, activity3, activity4]:
         input_str = st.text_input(f"Enter (6 comma-separated) values for skills for {activity} (e.g., 10,20,30,40,50,60):")
         user_inputs.append(input_str)
 
