@@ -182,7 +182,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Industries and Occupations", "Notation for the Course", "Labor Productivity and Unit Labor Cost (ULC)", "EBIT Optimization"],  # required
+    options=["HRM", "Notation for the Course", "Labor Productivity and Unit Labor Cost (ULC)", "EBIT Optimization"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -190,7 +190,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Industries and Occupations":
+if selected == "HRM":
     UNIT1_1()
 elif selected == "Notation for the Course":
     UNIT1_2()
