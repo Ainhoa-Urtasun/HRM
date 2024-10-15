@@ -29,34 +29,27 @@ def UNIT1_1():
         the work activities they entail. The North American Industry Classification System (NAICS) provides a standard classification
         of firms into industries depending on the type of output the firm produces and the Standard Occupational Classification (SOC) provides
         a standard classification of jobs into occupations depending on the work activities the job entails.
-        
-
-        Next, we use SABI (Iberian Balance Sheet Analysis System), a database 
-        with financial information of more than 2,6 million companies in Spain and Portugal, to practice these ideas. 
         '''
     )
 
+    st.write("Enter the name of the firm")
+    st.text_input()
+    st.write("Enter the 2-digit NAICS code and title of the firm from SABI")
+    st.text_input()
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
-    naics_code = st.text_input("Enter the 2-digit NAICS code:")
-    naics_title = st.text_input("Enter the NAICS title:")
-    if naics_code and naics_title:
-        st.write(f"You entered NAICS code: **{naics_code}**")
-        st.write(f"NAICS title: **{naics_title}**")
 
-    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
-    st.write("Please enter 4 work activities ($A_i$) from O*NET:")
-
+    st.write("Enter 4 work activities ($A_i$) from O*NET:")
     activity1 = st.text_input("$A_1$")
     activity2 = st.text_input("$A_2$")
     activity3 = st.text_input("$A_3$")
     activity4 = st.text_input("$A_4$")
-
     if activity1 and activity2 and activity3 and activity4:
         st.write("You have entered the following work activities:")
         st.write(f"1. {activity1}")
         st.write(f"2. {activity2}")
         st.write(f"3. {activity3}")
         st.write(f"4. {activity4}")
+    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
   
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
