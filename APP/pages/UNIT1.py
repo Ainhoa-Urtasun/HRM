@@ -32,7 +32,7 @@ def UNIT1_1():
         '''
     )
 
-    st.text_input("Enter the name of the firm")
+    st.text_input("Enter the name of the firm from SABI")
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
 
@@ -62,18 +62,14 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.write("""
-        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed: **Operating revenue**, **Cost of employees**. 
-        The **Cost of employees**, along with **Depreciation**, is part of **Operating expenses**, that substracted from **Operating revenue** results in 
+        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed
+        to calculate labor productivity and ULC: **Operating revenue** and **Cost of employees**. 
+        The **Cost of employees**, along with **Depreciation**, are **Operating expenses**, that substracted from **Operating revenue** results in 
         **Earnings Before Interests and Taxes (EBIT)**."""
     )
 
-    st.write("""
-        We are going to practice calculating both labor productivity and unit labor cost (ULC) using the SABI database at the UPNA library."""
-    )
-
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
-
-    
+  
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
     revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
@@ -81,30 +77,31 @@ def UNIT1_3():
     costs = np.fromstring(cost_input, sep=',')
     revenues = np.fromstring(revenue_input, sep=',')
     employees = np.fromstring(employees_input, sep=',')
-        
-    unit_labor_cost = costs / revenues
+
     labor_productivity = revenues / employees / 1000  # Convert to thousands
-    
+    unit_labor_cost = costs / revenues
+        
     df = pd.DataFrame({
         "Year": ["2019", "2020", "2021"],
-        "Unit Labor Cost": unit_labor_cost,
         "Labor Productivity (in thousands)": labor_productivity
+        "Unit Labor Cost": unit_labor_cost,
     })
 
     fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')
-    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')    
+    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')
+    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')        
     ax.set_xlabel('Year')
     ax.set_ylabel('Metrics')
-    ax.set_title("Trends in Unit Labor Cost and Labor Productivity")
+    ax.set_title("Trends in HRM metrics")
     ax.legend()
     st.pyplot(fig)
 
 def UNIT1_4():
     st.write(
-        """Both labor productivity and unit labor cost (ULC) significantly impact a firm's profitability, 
-        particularly in terms of Earnings Before Interest and Taxes (EBIT). Firms often make decisions aimed at maximizing profits, 
-        which is the focus of this section
+        """Both labor productivity and ULC significantly impact a firm's profitability, 
+        particularly in terms of Earnings Before Interest and Taxes (EBIT). 
+        Firms often make decisions aimed at maximizing profits, 
+        which is the focus of this section:
         """
     )
     st.latex(r'''
