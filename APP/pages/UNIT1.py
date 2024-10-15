@@ -41,12 +41,6 @@ def UNIT1_1():
     activity2 = st.text_input("$A_2$")
     activity3 = st.text_input("$A_3$")
     activity4 = st.text_input("$A_4$")
-    if activity1 and activity2 and activity3 and activity4:
-        st.write("You have entered the following work activities:")
-        st.write(f"1. {activity1}")
-        st.write(f"2. {activity2}")
-        st.write(f"3. {activity3}")
-        st.write(f"4. {activity4}")
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
   
 def UNIT1_2():
