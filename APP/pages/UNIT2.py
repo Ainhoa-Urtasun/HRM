@@ -33,6 +33,14 @@ def UNIT2_3():
     Here, for simplicity, we focus on 6 skills: $S_1, S_2, S_3, S_4, S_5, S_6$
     """
     )
+
+    st.write("Enter 6 skills ($Si$) from O*NET:")
+    skill1 = st.text_input("$S_1$")
+    skill2 = st.text_input("$S_2$")
+    skill3 = st.text_input("$S_3$")
+    skill4 = st.text_input("$S_4$")
+    skill5 = st.text_input("$S_5$")
+    skill6 = st.text_input("$S_6$")
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
 def UNIT2_4():
@@ -63,17 +71,13 @@ def UNIT2_4():
     "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
-    st.write("Enter 4 work activities ($A_i$) from O*NET:")
+    st.write("Enter 4 work activities ($A_i$) and 6 skills ($S_i$) from O*NET:")
     activity1 = st.text_input("$A_1$")
+    input_str = st.text_intput(f"Enter (6 comma-separated) values for skills for {activity1} (e.g., 10,20,30,40,50,60):")
     activity2 = st.text_input("$A_2$")
     activity3 = st.text_input("$A_3$")
     activity4 = st.text_input("$A_4$")
     
-    user_inputs = []
-    for activity in [activity1, activity2, activity3, activity4]:
-        input_str = st.text_input(f"Enter (6 comma-separated) values for skills for {activity} (e.g., 10,20,30,40,50,60):")
-        user_inputs.append(input_str)
-
     matrix = np.zeros((4, 6))
 
     if st.button("Submit"):
