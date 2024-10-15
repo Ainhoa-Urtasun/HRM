@@ -32,10 +32,8 @@ def UNIT1_1():
         '''
     )
 
-    st.write("Enter the name of the firm")
-    st.text_input("firm")
-    st.write("Enter the 2-digit NAICS code and title of the firm from SABI")
-    st.text_input("industry")
+    st.text_input("Enter the name of the firm")
+    st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI"")
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
 
     st.write("Enter 4 work activities ($A_i$) from O*NET:")
