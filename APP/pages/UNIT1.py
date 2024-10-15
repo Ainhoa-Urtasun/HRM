@@ -83,8 +83,8 @@ def UNIT1_3():
         
     df = pd.DataFrame({
         "Year": ["2019", "2020", "2021"],
-        "Labor Productivity (in thousands)": labor_productivity
-        "Unit Labor Cost": unit_labor_cost,
+        "Labor Productivity (in thousands)": labor_productivity,
+        "Unit Labor Cost": unit_labor_cost
     })
 
     fig, ax = plt.subplots()
