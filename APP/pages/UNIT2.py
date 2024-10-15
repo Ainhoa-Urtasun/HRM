@@ -65,7 +65,7 @@ def UNIT2_4():
     "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
-    activities = [$A_1$,$A_2$,$A_3$,$A_4$]
+    activities = [A₁,A₂,A₃,A₄]
     
     user_inputs = []
     for activity in activities:
