@@ -26,23 +26,13 @@ def UNIT2_2():
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
 
 def UNIT2_3():
-    st.title('Basic Skills')
+    st.title('Skills')
     st.write("""
     **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
     Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
-    Here, we focus on basic skills as defined by O*NET. Basic skills are developed capacities that facilitate learning and the rapid acquisition of knowledge.
-    """)
+    Here, for simplicity, we focus on 6 skills: $S_1, S_2, S_3, S_4, S_5, S_6$
 
-    skills = [
-    "S₁: Active listening",
-    "S₂: Mathematics",
-    "S₃: Reading comprehension",
-    "S₄: Science",
-    "S₅: Speaking",
-    "S₆: Writing",
-    ]
-
-    selected_skill = st.selectbox("Select a Basic Skill:", skills)
+    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
 def UNIT2_4():
     st.title('Jobs and Job Evaluation')
