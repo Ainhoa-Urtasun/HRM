@@ -18,21 +18,12 @@ def UNIT2_1():
 def UNIT2_2():
     st.title("Work Activities")
     st.write(
-        "A **work activity** is an action performed by an individual that results in a specific output. "
-        "Jobs are collections of work activities. Every firm transforms inputs into outputs (goods and services). "
-        "The nature of these outputs determines both the industry classification of the firm and the work activities its employees must perform. "
-        "This highlights the importance of understanding industry classifications. O*NET identifies 41 distinct work activities, "
-        "but for simplicity, we focus on 4 working activities:"
+        "A **work activity** is an action performed by an employee that results in a specific output. "
+        "Occupations are collections of work activities. O*NET identifies 41 distinct work activities, "
+        "but for simplicity, we focus on 4: $A_1, A_2, A_3, A_4$"
     )
 
-    activities = [
-    "A₁: Making decisions and solving problems",
-    "A₂: Thinking creatively",
-    "A₃: Controlling machines and processes",
-    "A₄: Selling and Influencing Others"
-    ]
-
-    selected_activity = st.selectbox("Select a Work Activity:", activities)
+    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
 
 def UNIT2_3():
     st.title('Basic Skills')
