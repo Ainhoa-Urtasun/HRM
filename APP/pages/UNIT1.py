@@ -6,21 +6,30 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        '''Firms make two important decisions, **what to produce** and **how to produce it**. The **what to produce** decision refers to the output (good or service).
+        '''
+        Firms make two important decisions, **what to produce** and **how to produce it**. The **what to produce** decision refers to the output (good or service).
         The **how to produce it** decision, on the other hand, refers to the activities to be performed and who, labor or technology, performs these activities. 
         We refer to the activities that labor (employees) must complete as **work activities**. As part of the **how to produce it** decision, firms also decide how 
-        to group these **work activities** into jobs or occupations and how many employees are needed for each occupation. As firms are classified into industries 
-        depending on the output they produce, employees are classified into occupations depending on the work activities they perform. 
+        to group these **work activities** into jobs (or occupations) and how many employees are needed for each job. As firms are classified into industries 
+        depending on the output they produce, employees are classified into jobs depending on the work activities they perform. 
         [The North American Industry Classification System (NAICS)](https://www.census.gov/naics/) classifies firms into industries depending on the type of output they produce
-        and the [Standard Occupational Classification (SOC)](https://www.bls.gov/soc/2018/major_groups.htm) classifies employees into occupations. 
-        To streamline our analysis, this course focuses on three occupations.'''
+        and the [Standard Occupational Classification (SOC)](https://www.bls.gov/soc/2018/major_groups.htm) classifies employees into jobs. 
+        To streamline our analysis, this course focuses on three different jobs: $J_1, J_2, J_3$.
+        '''
+    )
+
+    st.write(
+        '''
+        Note: In this course, we use "job" and "occupation" interchangeably, although each represents a different level. 
+        "Occupation" refers to a broader category of work, while "job" is more specific to roles within a particular firm.
+        '''
     )
     
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $L_{1}$ number of employees in occupation 1 at the firm")
-        st.write("- $L_{2}$ number of employees in occupation 2 at the firm")
-        st.write("- $L_{3}$ number of employees in occupation 3 at the firm")
+        st.write("- $L_{1}$ number of employees in J_1 at the firm")
+        st.write("- $L_{2}$ number of employees in J_2 at the firm")
+        st.write("- $L_{3}$ number of employees in J_3 at the firm")
         st.write("- $K$ technology at the firm")
         st.write("- $A_1$, $A_2$, $A_3$, $A_4$ work activities to be performed by employees")
         st.write("- $S_1$, $S_2$, $S_3$, $S_4$, $S_5$, $S_6$ skills to be possessed by employees")
