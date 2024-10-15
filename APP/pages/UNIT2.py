@@ -65,16 +65,11 @@ def UNIT2_4():
     "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
     )
 
-    activities = [
-    "A₁: Making decisions and solving problems",
-    "A₂: Thinking creatively",
-    "A₃: Controlling machines and processes",
-    "A₄: Selling and Influencing Others"
-    ]
+    activities = [$A_1$,$A_2$,$A_3$,$A_4$]
     
     user_inputs = []
     for activity in activities:
-        input_str = st.text_input(f"Enter (6 comma-separated) values for basic skills for {activity} (e.g., 10,20,30,40,50,60):")
+        input_str = st.text_input(f"Enter (6 comma-separated) values for skills for {activity} (e.g., 10,20,30,40,50,60):")
         user_inputs.append(input_str)
 
     matrix = np.zeros((4, 6))
