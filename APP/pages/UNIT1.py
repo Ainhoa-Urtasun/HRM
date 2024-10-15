@@ -103,42 +103,42 @@ def UNIT1_4():
     st.write("By calculating the gradient and updating the input values iteratively, we aim to find the optimal combination "
              "of labor and capital that maximizes EBIT, enhancing overall firm profitability.")
 
-    L11 = st.number_input("Supply of managers", value=1, step=1)
-    L17 = st.number_input("Supply of engineers", value=1, step=1)
-    L51 = st.number_input("Supply of operators", value=1, step=1)
+    L1 = st.number_input("Supply of employees in occupation 1 at the firm", value=1, step=1)
+    L2 = st.number_input("Supply of employees in occupation 2 at the firm", value=1, step=1)
+    L3 = st.number_input("Supply of employees in occupation 3 at the firm", value=1, step=1)
 
-    def EBIT(L11, L17, L51):
-        return 120 * L11**0.2 * L17**0.5 * L51**0.1 - 5 * (L11 + L17 + L51) - 1
+    def EBIT(L1, L2, L3):
+        return 120 * L1**0.2 * L2**0.5 * L3**0.1 - 5 * (L1 + L2 + L3) - 1
 
-    def gradient_L11(L11, L17, L51):
-        return 120 * 0.2 * L11**(-0.8) * L17**0.5 * L51**0.1  - 5
+    def gradient_L1(L1, L2, L3):
+        return 120 * 0.2 * L1**(-0.8) * L2**0.5 * L3**0.1  - 5
 
-    def gradient_L17(L11, L17, L51):
-        return 120 * 0.5 * L11**0.2 * L17**(-0.5) * L51**0.1 - 5
+    def gradient_L2(L1, L2, L3):
+        return 120 * 0.5 * L1**0.2 * L2**(-0.5) * L3**0.1 - 5
 
-    def gradient_L51(L11, L17, L51):
-        return 120 * 0.1 * L11**0.2 * L17**0.5 * L51**(-0.9) - 5
+    def gradient_L3(L1, L2, L3):
+        return 120 * 0.1 * L1**0.2 * L2**0.5 * L3**(-0.9) - 5
 
-    initial_EBIT = EBIT(L11, L17, L51)
+    initial_EBIT = EBIT(L1, L2, L3)
     st.markdown(f"<h3 style='text-align: center; color: #FF5733;'>Starting EBIT: {initial_EBIT:.2f}€</h3>", unsafe_allow_html=True)
 
     if st.button("First iteration"):
-        L11_new = L11 + 0.02 * gradient_L11(L11, L17, L51)
-        L17_new = L17 + 0.02 * gradient_L17(L11, L17, L51)
-        L51_new = L51 + 0.02 * gradient_L51(L11, L17, L51)
+        L1_new = L1 + 0.02 * gradient_L1(L1, L2, L3)
+        L2_new = L2 + 0.02 * gradient_L2(L1, L2, L3)
+        L3_new = L3 + 0.02 * gradient_L3(L1, L2, L3)
 
-        L11_new = round(L11_new)
-        L17_new = round(L17_new)
-        L51_new = round(L51_new)
+        L1_new = round(L1_new)
+        L2_new = round(L2_new)
+        L3_new = round(L3_new)
 
-        if L11_new <= 0 or L17_new <= 0 or L51_new <= 0:
-            st.error("The updated values of L11, L17, and L51 must be positive. Please adjust the initial values or the learning rate.")
+        if L1_new <= 0 or L2_new <= 0 or L3_new <= 0:
+            st.error("The updated values of L1, L2, and L3 must be positive. Please adjust the initial values or the learning rate.")
         else:
-            new_value = EBIT(L11_new, L17_new, L51_new)
+            new_value = EBIT(L1_new, L2_new, L3_new)
             result = pd.DataFrame({
-                "Demand of managers": [L11_new],
-                "Demand of engineers": [L17_new],
-                "Demand of operators": [L51_new],
+                "Demand of employees in occupation 1 at the firm": [L1_new],
+                "Demand of employees in occupation 2 at the firm": [L2_new],
+                "Demand of employees in occupation 3 at the firm": [L3_new],
                 "EBIT": [new_value]
             })
             st.markdown(f"<h3 style='text-align: center; color: #4CAF50;'>Updated Values After First Iteration</h3>", unsafe_allow_html=True)
