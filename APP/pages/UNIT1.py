@@ -54,6 +54,16 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
+    st.latex(r'Q = A \cdot L_1^{e_1} \cdot L_2^{e_2} \cdot L_3^{e_3} \cdot K')
+
+    st.write("""
+    Where:
+    - \( Q \) is the total output (production).
+    - \( A \) is multi-factor productivity (TFP), which accounts for all factors of production efficiency other than labor and capital.
+    - \( L_1, L_2, L_3 \) are different types of labor (e.g., unskilled, semi-skilled, skilled workers).
+    - \( e_1, e_2, e_3 \) are the output elasticities of each type of labor.
+    - \( K \) is capital.
+    """)
     
 
 def UNIT1_4():
