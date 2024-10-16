@@ -8,7 +8,9 @@ def UNIT3_1():
     st.write("**Employment**: The total number of people currently working for the firm, including both full-time and part-time employees.")
     st.write("**New Hires**: The number of individuals who have recently been recruited and started working at the firm.")
     st.write("**Job Postings**: Advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.")
+    st.write("**Job Vacancies (or Job Openings)**: The number of available positions at the firm that are not yet filled and for which the firm is actively seeking candidates.")
     st.write("**Separations**: The total number of employees who leave the firm, either voluntarily (quitting, retiring) or involuntarily (layoffs, dismissals).")
+
 
 st.set_page_config(page_title="UNIT3", layout="wide")
 
