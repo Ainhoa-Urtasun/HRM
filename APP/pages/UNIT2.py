@@ -81,8 +81,10 @@ def UNIT2_4():
     """)
 
     st.write(
-    "A job may not require all 4 work activities. If a job does not include a particular work activity, 
-    the corresponding row will be a vector of zeros."
+        '''
+        A job may not require all 4 work activities. If a job does not include a particular work activity, 
+        the corresponding row will be a vector of zeros.
+        '''
     )
 
     st.write(
