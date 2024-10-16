@@ -54,8 +54,10 @@ def UNIT1_3():
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
     st.write(
         '''
-        The output elasticity of high-skill labor shows the percentage change in output associated with a 1% change in high-skill labor. In the same way,
-        the output elasticity of low-skill labor shows the percentage change in output associated with a 1% change in low-skill labor. Therefore, 
+        The output elasticity of high-skill labor shows the percentage change in output associated with a 1% change in high-skill labor, holding
+        other factors constant. In the same way,
+        the output elasticity of low-skill labor shows the percentage change in output associated with a 1% change in low-skill labor, holding other 
+        factors consta. Therefore, 
         these elasticities capture how important each type of labor is to the production process.
         '''
     )
