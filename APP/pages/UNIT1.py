@@ -55,7 +55,7 @@ def UNIT1_3():
     st.write(
         """
         The output elasticities of labor represent the percentage change in output that results from 
-        a 1% change in each input. Specifically, $\alpha$ shows the contribution of high-skill labor to output, and $\beta$
+        a 1% change in each input. Specifically, \( \\alpha \) shows the contribution of high-skill labor to output, and $\beta$
         reflects the contribution of low-skill labor to output. For instance, if $\alpha = 0.3$, 
         a 1% increase in the number of employees in high-skill jobs leads to a 0.3% increase in output, holding other factors constant. 
         This indicates how crucial each type of labor is to the production process.
