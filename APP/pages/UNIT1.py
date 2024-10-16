@@ -50,10 +50,8 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
-    st.latex(r"\text{Output elasticity of employees in high-skill jobs} L_H = \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
-    st.latex(r"\text{Output elasticity of employees in low-skill jobs} L_L = \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
-
-
+    st.latex(r"\text{Output elasticity of employees in high-skill jobs} \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
+    st.latex(r"\text{Output elasticity of employees in low-skill jobs} \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
 
 def UNIT1_4():
     st.write("""
@@ -91,7 +89,6 @@ def UNIT1_4():
     ax.set_title("Trends in HRM metrics")
     ax.legend()
     st.pyplot(fig)
-
 
 # Set page configuration
 st.set_page_config(page_title="UNIT1", layout="wide")
