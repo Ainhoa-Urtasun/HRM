@@ -48,16 +48,18 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.write(r"$Q = L_1^{e_1} L_2^{e_2} L_3^{e_3} K^a$ represents the output produced by the firm (Cobb-Douglas production function).")
     st.write('''
-    The production function above includes three different types of labor, each performing different jobs. The output elasticity for each type of labor indicates the 
+    The production function includes three different types of labor, each performing different jobs. The output elasticity for each type of labor indicates the 
     percentage change in output resulting from a 1% change in that type of labor, holding other inputs constant. These elasticities reflect the contribution of each 
     labor type to the firm's overall production process.
     ''')
 
-    st.latex(r"\text{Output elasticity of labor carrying out job J_1 at the firm} \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
-    st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
-
+    st.write('The output elasticity of labor carrying out job $J_1$:')
+    st.latex(r" \frac{\partial Q}{\partial L_1} \cdot \frac{L_1}{Q} = e_1")
+    st.write('The output elasticity of labor carrying out job $J_2$:')
+    st.latex(r" \frac{\partial Q}{\partial L_2} \cdot \frac{L_2}{Q} = e_2")
+    st.write('The output elasticity of labor carrying out job $J_3$:')
+    st.latex(r" \frac{\partial Q}{\partial L_3} \cdot \frac{L_3{Q} = e_3")
 
 def UNIT1_4():
     st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
