@@ -50,13 +50,13 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
-    st.latex(r"\text{Output elasticity of employees in high-skill jobs } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
-    st.latex(r"\text{Output elasticity of employees in low-skill jobs } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
+    st.latex(r"\text{Output elasticity of high-skill labor } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
+    st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
     st.write(
         """
-        The output elasticities for employees in high-skill jobs and for employees in low-skill jobs represent the percentage change in output that results from 
-        a 1% change in each input. Specifically, $alpha$ shows the contribution of employees in high-skill jobs to output, and $beta$
-        reflects the contribution of employees in low-skill jobs. For instance, if $alpha = 0.3$, 
+        The output elasticities of labor represent the percentage change in output that results from 
+        a 1% change in each input. Specifically, $\alpha$ shows the contribution of high-skill labor to output, and $\beta$
+        reflects the contribution of low-skill labor to output. For instance, if $\alpha = 0.3$, 
         a 1% increase in the number of employees in high-skill jobs leads to a 0.3% increase in output, holding other factors constant. 
         This indicates how crucial each type of labor is to the production process.
         """
