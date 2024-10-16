@@ -50,20 +50,9 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.latex(r'Q = A \cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
+    st.latex(r"\text{Elasticity of High-skill labor } L_H = \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
+    st.latex(r"\text{Elasticity of Low-skill labor } L_L = \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
 
-    st.write("""
-    Where:
-
-    """)
-
-    st.write("""
-    The output elasticities of each type of job ($e_1$, $e_2$, $e_3$) represent the contribution of each job type to the overall performance of the firm. 
-    These elasticities measure how much output changes in response to a 1% change in the number of employees in each job type, holding other factors constant. 
-    Jobs with higher output elasticities contribute more to the firm's production. 
-
-    Output elasticities are closely linked to labor productivity because they reflect how effectively labor in each job type is transformed into output. 
-    Therefore, they are also related to the effort exerted by employees, as more effort can increase the productivity of labor in each job, amplifying its contribution to the firm’s success.
-    """)
 
 
 def UNIT1_4():
