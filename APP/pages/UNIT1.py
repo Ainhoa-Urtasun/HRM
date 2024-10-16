@@ -52,7 +52,13 @@ def UNIT1_3():
     st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
     st.latex(r"\text{Output elasticity of high-skill labor } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
-    st.latex(r'\text{The output elasticity for high-skill labor is represented by } \alpha.')
+    st.write(
+        '''
+        The output elasticity of high-skill labor shows the percentage change in output associated with a 1% change in high-skill labor. In the same way,
+        the output elasticity of low-skill labor shows the percentage change in output associated with a 1% change in low-skill labor. Therefore, 
+        these elasticities capture how important each type of labor is to the production process.
+        '''
+    )
 
 def UNIT1_4():
     st.write("""
