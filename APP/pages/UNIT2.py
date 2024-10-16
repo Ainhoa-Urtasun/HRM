@@ -65,8 +65,8 @@ def UNIT2_4():
              
     st.write(
         '''
-        Since a job is a bundle of work activities, 
-        we can represent it as a matrix where each row corresponds to the skill vector required for a particular work activity.
+        A job is a bundle of work activities. Therefore, 
+        we can represent any job as a matrix where each row corresponds to the skill vector required for a particular work activity.
         '''
     )
              
@@ -81,14 +81,14 @@ def UNIT2_4():
 
     st.write(
         '''
-        A job may not require all 4 work activities. If a job does not include a particular work activity, 
+        If a job doesn't entail a particular work activity, 
         the corresponding row will be a vector of zeros.
         '''
     )
 
     st.write(
         '''
-        Job evaluation is a systematic process used to assess the relative worth of jobs within an organization.
+        Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
         This assessment considers various job characteristics, such as responsibilities, required skills, and 
         the complexity of the work activities involved. By conducting a job evaluation, organizations can 
         establish equitable compensation structures and identify training and development needs. The following formula shows
