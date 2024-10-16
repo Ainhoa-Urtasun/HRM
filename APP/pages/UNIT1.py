@@ -37,9 +37,9 @@ def UNIT1_1():
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ represents the output produced by the firm (Cobb-Douglas production function)")
-        st.write("- $L_1$ number of workers in occupation 1 at the firm")
-        st.write("- $L_2$ number of workers in occupation 2 at the firm")
-        st.write("- $L_3$ number of workers in occupation 3 at the firm")
+        st.write("- $L_1$ number of workers in job 1 at the firm")
+        st.write("- $L_2$ number of workers in job 2 at the firm")
+        st.write("- $L_3$ number of workers in job 3 at the firm")
         st.write("- $L = L_1 + L_2 + L_3$ total number of employees at the firm")
         st.write("- $K$ technology")
         st.write("- $A_1, A_2, A_3, A_4$ work activities performed by employees")
@@ -49,16 +49,16 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.write('''
-    The production function includes three different types of labor, each associated with a different occupation. The output elasticity for each type of labor indicates the 
+    The production function includes three different types of labor, each performing a different job. The output elasticity for each type of labor indicates the 
     percentage change in output resulting from a 1% change in that type of labor, holding other inputs constant. These elasticities reflect the contribution of each 
     labor type to the firm's overall production process.
     ''')
 
-    st.write('The output elasticity of labor in occupation 1 at the firm:')
+    st.write('The output elasticity of labor in job 1 at the firm:')
     st.latex(r" \frac{\partial Q}{\partial L_1} \cdot \frac{L_1}{Q} = e_1")
-    st.write('The output elasticity of labor in occupation 2 at the firm:')
+    st.write('The output elasticity of labor in job 2 at the firm:')
     st.latex(r" \frac{\partial Q}{\partial L_2} \cdot \frac{L_2}{Q} = e_2")
-    st.write('The output elasticity of labor in occupation 3 at the firm:')
+    st.write('The output elasticity of labor in job 3 at the firm:')
     st.latex(r" \frac{\partial Q}{\partial L_3} \cdot \frac{L_3}{Q} = e_3")
 
 def UNIT1_4():
