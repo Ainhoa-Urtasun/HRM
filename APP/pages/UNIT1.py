@@ -64,7 +64,16 @@ def UNIT1_3():
     - $e_1, e_2, e_3$ are the output elasticities of each job
     - $K$ is technology
     """)
-    
+
+    st.write("""
+    The output elasticities of each type of job ($e_1$, $e_2$, $e_3$) represent the contribution of each job type to the overall performance of the firm. 
+    These elasticities measure how much output changes in response to a 1% change in the number of employees in each job type, holding other factors constant. 
+    Jobs with higher output elasticities contribute more to the firm's production. 
+
+    Output elasticities are closely linked to labor productivity because they reflect how effectively labor in each job type is transformed into output. 
+    Therefore, they are also related to the effort exerted by employees, as more effort can increase the productivity of labor in each job, amplifying its contribution to the firm’s success.
+    """)
+
 
 def UNIT1_4():
     st.write("""
