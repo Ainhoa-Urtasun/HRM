@@ -36,7 +36,7 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
+        st.latex(r'Q = A(e_1,e_2,...,e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
         st.write("- $Q$ total output produced by the firm modeled as a Cobb-Douglas production function")
         st.write("- $A$ total factor productivity (TFP), which depends on the effort exerted by each employee at the firm")
         st.write("- $L_H$ high-skill labor")
