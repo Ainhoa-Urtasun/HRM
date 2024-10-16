@@ -139,7 +139,7 @@ def UNIT2_5():
     \text{A}_i \cdot \text{A}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
     ''')
 
-    st.write("And the denominator contains the product of the magnitudes of the skill vectors for work activities $A_i$ and $A_j$, calculated as:"))
+    st.write("And the denominator contains the product of the magnitudes of the skill vectors for work activities $A_i$ and $A_j$, calculated as:")
 
     st.latex(r'''
     \|\text{A}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
