@@ -43,7 +43,7 @@ def UNIT1_2():
         st.write("- $L_L$ low-skill labor")
         st.write("- $L = L_H + L_L$ total number of employees at the firm")
         st.write("- $K$ technology")
-        st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
+        st.write("- $A_1, A_2, A_3, A_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
