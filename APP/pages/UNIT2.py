@@ -62,8 +62,12 @@ def UNIT2_4():
     0 \leq s_{ij} \leq 100
     """)
              
-    st.write('Since a job is a bundle of work activities, 
-    we can represent it as a matrix where each row corresponds to the skill vector required for a particular work activity.')
+    st.write(
+        '''
+        Since a job is a bundle of work activities, 
+        we can represent it as a matrix where each row corresponds to the skill vector required for a particular work activity.
+        '''
+    )
              
     st.latex(r"""
     J_i = 
