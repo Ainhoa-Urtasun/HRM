@@ -43,13 +43,14 @@ def UNIT1_1():
   
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $L_1$ number of employees in job $J_1$ at the firm")
-        st.write("- $L_2$ number of employees in job $J_2$ at the firm")
-        st.write("- $L_3$ number of employees in job $J_3$ at the firm")
-        st.write("- $K$ technology at the firm")
         st.write("- $Q = AL_1^{e_1}L_2^{e_2}L_3^{e_3}K$ Cobb-Douglas production function of the firm")
-        st.write("- $W_1, W_2, W_3, W_4$ work activities to be performed by employees")
-        st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills to be possessed by employees")
+        st.write(" - $Q$ total output produced by the firm")
+        st.write(" - $A$ multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology")
+        st.write("- $L_1, L_2, L_3$ number of employees in 3 different jobs at the firm")
+        st.write("- $e_1, e_2, e_3$ output elasticities for each job")
+        st.write("- $K$ technology")
+        st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
+        st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
@@ -58,11 +59,7 @@ def UNIT1_3():
 
     st.write("""
     Where:
-    - $Q$ is the total output
-    - $A$ is multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology
-    - $L_1, L_2, L_3$ are number of employees in 3 different jobs at the firm
-    - $e_1, e_2, e_3$ are the output elasticities of each job
-    - $K$ is technology
+
     """)
 
     st.write("""
