@@ -87,10 +87,13 @@ def UNIT2_4():
     )
 
     st.write(
-        "Job evaluation is a systematic process used to assess the relative worth of jobs within an organization. "
-        "This assessment considers various job characteristics, such as responsibilities, required skills, and "
-        "the complexity of the work activities involved. By conducting a job evaluation, organizations can "
-        "establish equitable compensation structures and identify training and development needs."
+        '''
+        Job evaluation is a systematic process used to assess the relative worth of jobs within an organization.
+        This assessment considers various job characteristics, such as responsibilities, required skills, and 
+        the complexity of the work activities involved. By conducting a job evaluation, organizations can 
+        establish equitable compensation structures and identify training and development needs. Next we show how to
+        quantify job complexity as an example of job evaluation.
+        '''
     )
 
     st.latex(r'\text{Job complexity: }\sum_{i=1}^{4} \sum_{j=1}^{6} s_{ij}')
@@ -119,13 +122,6 @@ def UNIT2_4():
                 st.write("Please enter exactly 6 values for each activity.")
         except ValueError:
             st.write("Please enter valid numeric values for the skills.")
-
-    st.write(
-        "As an example of job evaluation, job complexity serves as a key metric in understanding the intricacies "
-        "involved in different roles. Job complexity reflects the degree of difficulty associated with work "
-        "activities and the range of skills necessary to perform them effectively. To quantify job complexity, "
-        "we calculate the total skill requirements by summing all elements in the job matrix $J_i$:"
-    )
     
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
