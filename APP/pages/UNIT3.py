@@ -23,8 +23,6 @@ def UNIT3_1():
 
 def UNIT3_2():
 
-import streamlit as st
-
     st.latex(r'''
     \text{CAGR} = \left( \frac{E_{n}}{E_{0}} \right)^{\frac{1}{n}} - 1
     ''')
