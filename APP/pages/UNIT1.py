@@ -34,29 +34,29 @@ def UNIT1_1():
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
 
-    st.write("Enter 4 work activities ($A_i$) from O*NET:")
-    activity1 = st.text_input("$A_1$")
-    activity2 = st.text_input("$A_2$")
-    activity3 = st.text_input("$A_3$")
-    activity4 = st.text_input("$A_4$")
+    st.write("Enter 4 work activities ($W_i$) from O*NET:")
+    workactivity1 = st.text_input("$W_1$")
+    workactivity2 = st.text_input("$W_2$")
+    workactivity3 = st.text_input("$W_3$")
+    workactivity4 = st.text_input("$W_4$")
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
   
-def UNIT1_2():
-    
-
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $L_1$ number of employees in job $J_1$ at the firm")
         st.write("- $L_2$ number of employees in job $J_2$ at the firm")
         st.write("- $L_3$ number of employees in job $J_3$ at the firm")
         st.write("- $K$ technology at the firm")
-        st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K$ Cobb-Douglas production function of the firm")
-        st.write("- $A_1, A_2, A_3, A_4$ work activities to be performed by employees")
+        st.write("- $Q = AL_1^{e_1}L_2^{e_2}L_3^{e_3}K$ Cobb-Douglas production function of the firm")
+        st.write("- $W_1, W_2, W_3, W_4$ work activities to be performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills to be possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
+    
+
+def UNIT1_4():
     st.write("""
         Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed:
         **Operating revenue** and **Cost of employees**. 
@@ -99,7 +99,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM", "Notation for the Course", "Labor Productivity and Unit Labor Cost (ULC)", "EBIT Optimization"],  # required
+    options=["HRM", "Notation for the Course", "Output Elasticity of Labor", "Labor Productivity and Unit Labor Cost (ULC)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -111,8 +111,8 @@ if selected == "HRM":
     UNIT1_1()
 elif selected == "Notation for the Course":
     UNIT1_2()
-elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
+elif selected == "Output Elasticity of Labor":
     UNIT1_3()
-elif selected == "EBIT Optimization":
+elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
     UNIT1_4()
 
