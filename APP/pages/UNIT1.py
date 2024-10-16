@@ -36,11 +36,11 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $Q = AL_1^{e_1}L_2^{e_2}L_3^{e_3}K$ Cobb-Douglas production function of the firm")
+        st.write("- $Q = A\ cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma$ Cobb-Douglas production function of the firm")
         st.write(" - $Q$ total output produced by the firm")
         st.write(" - $A$ multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology")
-        st.write("- $L_1, L_2, L_3$ number of employees in 3 different jobs at the firm")
-        st.write("- $e_1, e_2, e_3$ output elasticities for each job")
+        st.write("- $L_H$ number of employees in high-skill jobs")
+        st.write("- $L_L$ number of employees in low-skill jobs")
         st.write("- $K$ technology")
         st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
