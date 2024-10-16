@@ -66,8 +66,8 @@ def UNIT1_4():
     st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
     st.write(
         '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
-        and $$ is the cost of technology. EBIT is therefore obtained by substracting the cost of employees and depreciation from operating revenue.
-        Next, we practice calculating labor productivity and ULC using these items from the Income Statement
+        and $r$ is the cost of technology. This values can be derived from the Income Statement. Next, we practice how to use them
+        to calculate labor productivity and ULC.
         '''
     )
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
