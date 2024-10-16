@@ -16,7 +16,6 @@ def UNIT2_1():
     )
 
 def UNIT2_2():
-    st.title("Work Activities")
     st.write("""
         A **work activity** is an action performed by an employee that results in a specific output.
         O*NET identifies 41 distinct work activities. We consider, for simplicity, that the firm requires 
@@ -33,7 +32,6 @@ def UNIT2_2():
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
 
 def UNIT2_3():
-    st.title('Skills')
     st.write("""
     **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
     Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
@@ -51,11 +49,22 @@ def UNIT2_3():
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
 def UNIT2_4():
-    st.title('Jobs and Job Evaluation')
     st.write(
-    "In the context of job analysis and design, it is useful to represent a job, $J_i$ as a matrix of work activities (rows) and basic skills (columns):"
+    "In the context of job analysis and design, it is useful to represent a work activity as a vector of skills:"
     )
+    st.latex(A_i = (s_{i1}, s_{i2}, s_{i3}, s_{i4}, s_{i5}, s_{i6})
 
+    st.write(
+    "Each element $s_{ij}$ of the vector indicates the extent to which skill $j$ is required for work activity $i$:"
+    )    
+    
+    st.latex(r"""
+    0 \leq s_{ij} \leq 100
+    """)
+             
+    st.write('Since a job is a bundle of work activities, 
+    we can represent it as a matrix where each row corresponds to the skill vector required for a particular work activity.')
+             
     st.latex(r"""
     J_i = 
     \begin{pmatrix}
@@ -64,14 +73,6 @@ def UNIT2_4():
     s_{31} & s_{32} & s_{33} & s_{34} & s_{35} & s_{36} \\
     s_{41} & s_{42} & s_{43} & s_{44} & s_{45} & s_{46} \\
     \end{pmatrix}
-    """)
-
-    st.write(
-    "Each element $s_{ij}$ of the matrix indicates the extent to which basic skill $j$ is required for work activity $i$:"
-    )
-
-    st.latex(r"""
-    0 \leq s_{ij} \leq 100
     """)
 
     st.write(
