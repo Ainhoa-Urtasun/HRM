@@ -36,22 +36,20 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.latex(r'Q = A \cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
-        st.write(" - $Q$ total output produced by the firm modeled as a Cobb-Douglas production function")
-        st.write(" - $A$ multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology")
+        st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
+        st.write("- $Q$ total output produced by the firm modeled as a Cobb-Douglas production function")
+        st.write("- $A$ total factor productivity (TFP), which depends on the individual effort made by each employee $e_i$")
         st.write("- $L_H$ number of employees in high-skill jobs")
         st.write("- $L_L$ number of employees in low-skill jobs")
-        st.write("- $e_H$ average effort made by employees in high-skill jobs")
-        st.write("- $e_L$ average effort made by employees in low-skill jobs")
+        st.write("- $L = L_S + L_L$ total number of employees at the firm")
         st.write("- $K$ technology")
-        st.write("- $\alpha$")
         st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.latex(r'Q = A \cdot L_1^{e_1} \cdot L_2^{e_2} \cdot L_3^{e_3} \cdot K')
+    st.latex(r'Q = A \cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
 
     st.write("""
     Where:
