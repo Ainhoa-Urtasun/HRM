@@ -19,8 +19,8 @@ def UNIT2_2():
     st.title("Work Activities")
     st.write("""
         A **work activity** is an action performed by an employee that results in a specific output.
-        Occupations are collections of work activities. O*NET identifies 41 distinct work activities,
-        but for simplicity, we focus on 4: $A_1, A_2, A_3, A_4$
+        O*NET identifies 41 distinct work activities. For simplicity, we consider that the firm only needs that
+        its employees carry out 4 work activities: $A_1, A_2, A_3, A_4$.
         """
     )
 
