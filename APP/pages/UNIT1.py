@@ -52,7 +52,7 @@ def UNIT1_3():
     st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
     st.latex(r"\text{Output elasticity of high-skill labor } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
-    st.latex(r'The output elasticity for high-skill labor is represented by \alpha.')
+    st.latex(r'\text{The output elasticity for high-skill labor is represented by } \alpha.')
 
 def UNIT1_4():
     st.write("""
