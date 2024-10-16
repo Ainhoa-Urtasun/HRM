@@ -49,9 +49,9 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.latex(r'Q = A \cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
-    st.latex(r"\text{Elasticity of High-skill labor } L_H = \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
-    st.latex(r"\text{Elasticity of Low-skill labor } L_L = \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
+    st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
+    st.latex(r"\text{Output elasticity of employees in high-skill jobs} L_H = \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
+    st.latex(r"\text{Output elasticity of employees in low-skill jobs} L_L = \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
 
 
 
@@ -98,7 +98,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM", "Notation for the Course", "Output Elasticity of Labor", "Labor Productivity and Unit Labor Cost (ULC)"],  # required
+    options=["HRM", "Notation for the Course", "Output Elasticities of Labor", "Labor Productivity and Unit Labor Cost (ULC)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -110,7 +110,7 @@ if selected == "HRM":
     UNIT1_1()
 elif selected == "Notation for the Course":
     UNIT1_2()
-elif selected == "Output Elasticity of Labor":
+elif selected == "Output Elasticities of Labor":
     UNIT1_3()
 elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
     UNIT1_4()
