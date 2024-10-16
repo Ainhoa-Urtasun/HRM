@@ -41,7 +41,7 @@ def UNIT1_2():
         st.write("- $A$ total factor productivity (TFP), which depends on the individual effort made by each employee $e_i$")
         st.write("- $L_H$ number of employees in high-skill jobs")
         st.write("- $L_L$ number of employees in low-skill jobs")
-        st.write("- $L = L_S + L_L$ total number of employees at the firm")
+        st.write("- $L = L_H + L_L$ total number of employees at the firm")
         st.write("- $K$ technology")
         st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
