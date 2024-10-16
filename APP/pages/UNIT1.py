@@ -36,7 +36,7 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.latex(r'Q = A\ cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
+        st.latex(r'Q = A \cdot (L_H \cdot e_H)^\alpha \cdot (L_L \cdot e_L)^\beta \cdot K^\gamma')
         st.write(" - $Q$ total output produced by the firm")
         st.write(" - $A$ multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology")
         st.write("- $L_H$ number of employees in high-skill jobs")
