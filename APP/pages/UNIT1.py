@@ -63,14 +63,13 @@ def UNIT1_3():
     )
 
 def UNIT1_4():
-    st.write("""
-        Both metrics are essential for HRM. To calculate them the following two items from the Income Statement are needed:
-        **Operating revenue** and **Cost of employees**. 
-        The **Cost of employees**, along with **Depreciation**, are part of **Operating expenses**, 
-        that substracted from **Operating revenue** results in 
-        **Earnings Before Interests and Taxes (EBIT)**."""
+    st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
+    st.write(
+        '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
+        and $$ is the cost of technology. EBIT is therefore obtained by substracting the cost of employees and depreciation from operating revenue.
+        Next, we practice calculating labor productivity and ULC using these items from the Income Statement
+        '''
     )
-
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
