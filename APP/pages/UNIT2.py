@@ -133,13 +133,13 @@ def UNIT2_5():
     \text{Cosine Similarity}(\text{A}_i, \text{A}_j) = \frac{\text{A}_i \cdot \text{A}_j}{\|\text{A}_i\| \|\text{A}_j\|}
     ''')
 
-    st.write("Where the numerator represents the dot product of the skill vectors for work activities $A_i$ and $A_j$, calculated as:")
+    st.write("Where the numerator contains the dot product of the skill vectors:")
    
     st.latex(r'''
     \text{A}_i \cdot \text{A}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
     ''')
 
-    st.write("And the denominator contains the product of the magnitudes of the skill vectors for work activities $A_i$ and $A_j$, calculated as:")
+    st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
 
     st.latex(r'''
     \|\text{A}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
