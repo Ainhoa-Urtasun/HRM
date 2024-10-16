@@ -40,13 +40,16 @@ def UNIT3_2():
     ax.legend()
     st.pyplot(fig)
 
+def UNIT3_3():
+    st.latex(r'L_{(t)} = L_{(t-1)} + h_{(t-1,t)} - s_{(t-1,t)}')
+    st.latex(r'L_{i(t)} = L_{i(t-1)} + h_{i(t-1,t)} - s_{i(t-1,t)}')
 
 
 st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Terminology","Employment"],  # required
+    options=["Terminology","Employment","Employment Across Occupations"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -58,4 +61,6 @@ if selected == "Terminology":
     UNIT3_1()
 if selected == "Employment":
     UNIT3_2()
+if selected == "Employment Across Occupations":
+    UNIT3_3()
 
