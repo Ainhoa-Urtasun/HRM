@@ -22,6 +22,11 @@ def UNIT3_1():
     )
 
 def UNIT3_2():
+
+    st.latex(r'''
+    \text{CAGR} = \left( \frac{L_{t+n}}}{L_t} \right)^{\frac{1}{n}} - 1
+    ''')
+
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
     
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
@@ -36,7 +41,7 @@ def UNIT3_2():
     ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
     ax.set_xlabel('Year')
     ax.set_ylabel('Metrics')
-    ax.set_title("Trends in employment")
+    ax.set_title("Employment Over Time")
     ax.legend()
     st.pyplot(fig)
 
