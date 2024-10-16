@@ -10,6 +10,17 @@ def UNIT3_1():
     st.write("**Job Postings**: Advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.")
     st.write("**Job Vacancies (or Job Openings)**: The number of available positions at the firm that are not yet filled and for which the firm is actively seeking candidates.")
     st.write("**Separations**: The total number of employees who leave the firm, either voluntarily (quitting, retiring) or involuntarily (layoffs, dismissals).")
+    
+    st.write(
+        '''
+        In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
+    This can lead to **adverse selection**, where the firm might hire less qualified candidates because it lacks full information. 
+    To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
+    in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
+    an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
+        '''
+    )
+
 
 
 st.set_page_config(page_title="UNIT3", layout="wide")
