@@ -44,6 +44,7 @@ def UNIT1_2():
         st.write("- $e_H$ average effort made by employees in high-skill jobs")
         st.write("- $e_L$ average effort made by employees in low-skill jobs")
         st.write("- $K$ technology")
+        st.write("- $\alpha$")
         st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
 
