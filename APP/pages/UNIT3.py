@@ -23,9 +23,12 @@ def UNIT3_1():
 
 def UNIT3_2():
 
+import streamlit as st
+
     st.latex(r'''
-    \text{CAGR} = \left( \frac{L_{t+n}}}{L_t} \right)^{\frac{1}{n}} - 1
+    \text{CAGR} = \left( \frac{E_{n}}{E_{0}} \right)^{\frac{1}{n}} - 1
     ''')
+
 
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
     
