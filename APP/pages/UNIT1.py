@@ -57,7 +57,6 @@ def UNIT1_3():
 
     st.latex(r"\text{Output elasticity of labor carrying out job J_1 at the firm} \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
-    st.write(
 
 
 def UNIT1_4():
