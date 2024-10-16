@@ -81,8 +81,17 @@ def UNIT2_4():
     """)
 
     st.write(
-    "A job may not require all 4 work activities. If a job does not include a particular work activity, the corresponding row will be removed."
+    "A job may not require all 4 work activities. If a job does not include a particular work activity, 
+    the corresponding row will be a vector of zeros."
     )
+
+    st.write(
+        '''
+        given this respresentation, we can evaluate the job complexity of a job as follows:
+        '''
+    )
+
+    st.latex(r'\text{Job complexity: }\sum_{i=1}^{4} \sum_{j=1}^{6} s_{ij}')
 
     st.write("Enter 4 work activities ($A_i$) and 6 skills ($S_i$) from O*NET:")
     activity1 = st.text_input("$A_1$")
