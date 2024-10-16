@@ -8,27 +8,25 @@ def UNIT1_1():
     st.write(
         '''
         Human resource management (HRM) takes on the organization and motivation of employees by implementing HRM practices
-        such as job analysis and design, HR planning, recruitment, performance evaluation, training, career development, 
-        and compensation. HRM is implemented at the firm level.
+        such as job analysis and design, recruitment, HR planning, performance evaluation, training, compensation, 
+        and career development. HRM is implemented at the firm level.
 
         
-        Any firm, regardless of its size or legal form of ownership, makes two important decisions:
-        - **What to produce**: This decision refers to the output (good or service).
-        - **How to produce it**: This decision refers to how to organize the factors of production (labor and technology) 
-        to produce the output efficiently and effectively.
+        The essense of any firm, regardless of its size or legal form of ownership, depends on two important decisions:
+        - **What output (good or service) to produce**
+        - **How to produce it**
         
-        This second decision involves in turn the following specific decisions:
-        - What activities the firm needs to complete to produce the output. This decision will depend on the type of output
+        The second decision involves in turn the following specific decisions:
+        - What activities the firm needs to complete to produce the output.
         - How to allocate these activities into the factors of production (labor and technology)
 
-        The activities that allocated to labor (employees) are called **work activities** and HRM organizes and motivates
+        The activities allocated to labor (employees) are called **work activities** and HRM organizes and motivates
         employees to perform **work activities** efficiently and effectively.
 
-        
         Firms are classified into industries depending on the output they produce and jobs are classified into occupations depending on
         the work activities they entail. The North American Industry Classification System (NAICS) provides a standard classification
-        of firms into industries depending on the type of output the firm produces and the Standard Occupational Classification (SOC) provides
-        a standard classification of jobs into occupations depending on the work activities the job entails.
+        of firms into industries and the Standard Occupational Classification (SOC) provides
+        a standard classification of jobs into occupations.
         '''
     )
 
