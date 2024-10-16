@@ -47,7 +47,7 @@ def UNIT1_2():
         st.write("- $L_2$ number of employees in job $J_2$ at the firm")
         st.write("- $L_3$ number of employees in job $J_3$ at the firm")
         st.write("- $K$ technology at the firm")
-        st.write("- $Q = L_1^{e_1}K$"
+        st.write("- $Q = L_1^{e_1}K$")
         st.write("- $A_1, A_2, A_3, A_4$ work activities to be performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills to be possessed by employees")
 
