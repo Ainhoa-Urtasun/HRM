@@ -36,8 +36,7 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.latex(r'Q = \cdot (L_1)^{e_1} \cdot (L_2)^{e_2}\cdot K^\gamma')
-        st.write("- $Q$ total output produced by the firm modeled as a Cobb-Douglas production function")
+        st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ output produced by the firm as a Cobb-Douglas function)
         st.write("- $L_H$ high-skill labor")
         st.write("- $L_L$ low-skill labor")
         st.write("- $L = L_H + L_L$ total number of employees at the firm")
