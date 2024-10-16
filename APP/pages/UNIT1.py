@@ -53,7 +53,7 @@ def UNIT1_3():
     st.latex(r"\text{Output elasticity of high-skill labor } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
     st.write(
-        """
+        r"""
         The output elasticities of labor represent the percentage change in output that results from 
         a 1% change in each input. Specifically, \( \\alpha \) shows the contribution of high-skill labor to output, and $\beta$
         reflects the contribution of low-skill labor to output. For instance, if $\alpha = 0.3$, 
