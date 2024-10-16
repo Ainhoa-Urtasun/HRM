@@ -58,11 +58,11 @@ def UNIT1_3():
 
     st.write("""
     Where:
-    - \( Q \) is the total output (production).
-    - \( A \) is multi-factor productivity (TFP), which accounts for all factors of production efficiency other than labor and capital.
-    - \( L_1, L_2, L_3 \) are different types of labor (e.g., unskilled, semi-skilled, skilled workers).
-    - \( e_1, e_2, e_3 \) are the output elasticities of each type of labor.
-    - \( K \) is capital.
+    - $Q$ is the total output
+    - $A$ is multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology
+    - $L_1, L_2, L_3$ are number of employees in 3 different jobs at the firm
+    - $e_1, e_2, e_3$ are the output elasticities of each job
+    - $K$ is technology
     """)
     
 
