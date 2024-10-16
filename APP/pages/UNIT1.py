@@ -36,7 +36,7 @@ def UNIT1_1():
 
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ output produced by the firm (Cobb-Douglas production function)")
+        st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ represents the output produced by the firm (Cobb-Douglas production function)")
         st.write("- $L_1$ number of workers in job J_1 at the firm")
         st.write("- $L_2$ number of workers in job J_2 at the firm")
         st.write("- $L_3$ number of workers in job J_3 at the firm")
@@ -48,18 +48,17 @@ def UNIT1_2():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_3():
-    st.latex(r'Q = A(e_1,e_2,...e_L) \cdot (L_H)^\alpha \cdot (L_L)^\beta \cdot K^\gamma')
-    st.latex(r"\text{Output elasticity of high-skill labor } \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
+    st.write(r"$Q = L_1^{e_1} L_2^{e_2} L_3^{e_3} K^a$ represents the output produced by the firm (Cobb-Douglas production function).")
+    st.write('''
+    The production function above includes three different types of labor, each performing different jobs. The output elasticity for each type of labor indicates the 
+    percentage change in output resulting from a 1% change in that type of labor, holding other inputs constant. These elasticities reflect the contribution of each 
+    labor type to the firm's overall production process.
+    ''')
+
+    st.latex(r"\text{Output elasticity of labor carrying out job J_1 at the firm} \frac{\partial Q}{\partial L_H} \cdot \frac{L_H}{Q} = \alpha")
     st.latex(r"\text{Output elasticity of low-skill labor } \frac{\partial Q}{\partial L_L} \cdot \frac{L_L}{Q} = \beta")
     st.write(
-        '''
-        The output elasticity of high-skill labor shows the percentage change in output associated with a 1% change in high-skill labor, holding
-        other factors constant. In the same way,
-        the output elasticity of low-skill labor shows the percentage change in output associated with a 1% change in low-skill labor, holding other 
-        factors consta. Therefore, 
-        these elasticities capture how important each type of labor is to the production process.
-        '''
-    )
+
 
 def UNIT1_4():
     st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
