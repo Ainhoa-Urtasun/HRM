@@ -10,37 +10,30 @@ def UNIT1_1():
         Human resource management (HRM) takes on the organization and motivation of employees by implementing HRM practices
         such as job analysis and design, recruitment, HR planning, performance evaluation, training, compensation, 
         and career development. HRM is implemented at the firm level.
-
-        
-        The essense of any firm, regardless of its size or legal form of ownership, depends on two important decisions:
-        - **What output (good or service) to produce**
-        - **How to produce it**
-        
-        The second decision involves in turn the following specific decisions:
-        - What activities the firm needs to complete to produce the output.
-        - How to allocate these activities into the factors of production (labor and technology)
-
-        The activities allocated to labor (employees) are called **work activities** and HRM organizes and motivates
-        employees to perform **work activities** efficiently and effectively.
-
-        Firms are classified into industries depending on the output they produce and jobs are classified into occupations depending on
-        the work activities they entail. The North American Industry Classification System (NAICS) provides a standard classification
-        of firms into industries and the Standard Occupational Classification (SOC) provides
-        a standard classification of jobs into occupations.
         '''
     )
 
     st.text_input("Enter the name of the firm from SABI")
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
+    st.write("Enter the activities this firm needs to perform)
 
-    st.write("Enter 4 work activities ($W_i$) from O*NET:")
-    workactivity1 = st.text_input("$W_1$")
-    workactivity2 = st.text_input("$W_2$")
-    workactivity3 = st.text_input("$W_3$")
-    workactivity4 = st.text_input("$W_4$")
-    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=600, scrolling=True)
-  
+    st.write(
+        '''
+        The output the firm produces determines the set of activities it needs to perform. Firms are classified 
+        into industries depending on the output they produce. The North American Industry Classification System (NAICS) provides
+        a standard classification of firms into industries.
+        '''
+    )
+
+    st.write(
+        '''
+        The firm allocates (organizes) these activities across labor and technology. The activities that labor needs to
+        carry out are called **work activities** and HRM is responsible for organizing and motivating employees to carry out
+        these work activities efficiently and effectively.
+        '''
+    )
+
 def UNIT1_2():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $Q = AL_1^{e_1}L_2^{e_2}L_3^{e_3}K$ Cobb-Douglas production function of the firm")
