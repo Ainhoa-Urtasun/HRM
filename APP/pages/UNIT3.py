@@ -49,7 +49,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Terminology","Employment","Employment Across Occupations"],  # required
+    options=["Terminology","Employment","Employment Across Jobs"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -61,6 +61,6 @@ if selected == "Terminology":
     UNIT3_1()
 if selected == "Employment":
     UNIT3_2()
-if selected == "Employment Across Occupations":
+if selected == "Employment Across Jobs":
     UNIT3_3()
 
