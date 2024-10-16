@@ -30,7 +30,7 @@ def UNIT1_1():
         '''
         The firm allocates (organizes) these activities across labor and technology. The activities that labor needs to
         carry out are called **work activities** and HRM is responsible for organizing and motivating employees to carry out
-        these work activities efficiently and effectively.
+        these **work activities** efficiently and effectively.
         '''
     )
 
