@@ -22,11 +22,6 @@ def UNIT3_1():
     )
 
 def UNIT3_2():
-    st.write(
-        '''. Next, we practice how to use them
-        to calculate labor productivity and ULC.
-        '''
-    )
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
     
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
