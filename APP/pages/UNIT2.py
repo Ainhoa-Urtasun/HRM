@@ -87,9 +87,10 @@ def UNIT2_4():
     )
 
     st.write(
-        '''
-        given this respresentation, we can evaluate the job complexity of a job as follows:
-        '''
+        "Job evaluation is a systematic process used to assess the relative worth of jobs within an organization. "
+        "This assessment considers various job characteristics, such as responsibilities, required skills, and "
+        "the complexity of the work activities involved. By conducting a job evaluation, organizations can "
+        "establish equitable compensation structures and identify training and development needs."
     )
 
     st.latex(r'\text{Job complexity: }\sum_{i=1}^{4} \sum_{j=1}^{6} s_{ij}')
@@ -118,13 +119,6 @@ def UNIT2_4():
                 st.write("Please enter exactly 6 values for each activity.")
         except ValueError:
             st.write("Please enter valid numeric values for the skills.")
-
-    st.write(
-        "Job evaluation is a systematic process used to assess the relative worth of jobs within an organization. "
-        "This assessment considers various job characteristics, such as responsibilities, required skills, and "
-        "the complexity of the work activities involved. By conducting a job evaluation, organizations can "
-        "establish equitable compensation structures and identify training and development needs."
-    )
 
     st.write(
         "As an example of job evaluation, job complexity serves as a key metric in understanding the intricacies "
