@@ -41,6 +41,8 @@ def UNIT1_2():
         st.write(" - $A$ multi-factor productivity (TFP), which accounts for all factors of production efficiency other than employees and technology")
         st.write("- $L_H$ number of employees in high-skill jobs")
         st.write("- $L_L$ number of employees in low-skill jobs")
+        st.write("- $e_H$ average effort made by employees in high-skill jobs")
+        st.write("- $e_L$ average effort made by employees in low-skill jobs")
         st.write("- $K$ technology")
         st.write("- $W_1, W_2, W_3, W_4$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
