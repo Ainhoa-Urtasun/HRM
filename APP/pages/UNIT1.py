@@ -59,7 +59,7 @@ def UNIT1_3():
     st.write('The output elasticity of labor carrying out job 2 at the firm:')
     st.latex(r" \frac{\partial Q}{\partial L_2} \cdot \frac{L_2}{Q} = e_2")
     st.write('The output elasticity of labor carrying out job 3 at the firm:')
-    st.latex(r" \frac{\partial Q}{\partial L_3} \cdot \frac{L_3{Q} = e_3")
+    st.latex(r" \frac{\partial Q}{\partial L_3} \cdot \frac{L_3}{Q} = e_3")
 
 def UNIT1_4():
     st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
