@@ -91,8 +91,8 @@ def UNIT2_4():
         Job evaluation is a systematic process used to assess the relative worth of jobs within an organization.
         This assessment considers various job characteristics, such as responsibilities, required skills, and 
         the complexity of the work activities involved. By conducting a job evaluation, organizations can 
-        establish equitable compensation structures and identify training and development needs. Next we show how to
-        quantify job complexity as an example of job evaluation.
+        establish equitable compensation structures and identify training and development needs. The following formula shows
+        how to measure job complexity as an example of job evaluation.
         '''
     )
 
