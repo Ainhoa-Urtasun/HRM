@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def UNIT2_1():
+def UNIT3_1():
     st.write("**Employment**: The total number of people currently working for the firm, including both full-time and part-time employees.")
     st.write("**New Hires**: The number of individuals who have recently been recruited and started working at the firm.")
     st.write("**Job Postings**: Advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.")
