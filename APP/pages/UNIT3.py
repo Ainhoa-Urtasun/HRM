@@ -32,12 +32,19 @@ def UNIT3_1():
     st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}')
     st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
     
-    st.write("**Employment**: The total number of people currently working for the firm, including both full-time and part-time employees.")
-    st.write("**New Hires**: The number of individuals who have recently been recruited and started working at the firm.")
-    st.write("**Job Postings**: Advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.")
-    st.write("**Job Vacancies (or Job Openings)**: The number of available positions at the firm that are not yet filled and for which the firm is actively seeking candidates.")
-    st.write("**Separations**: The total number of employees who leave the firm, either voluntarily (quitting, retiring) or involuntarily (layoffs, dismissals).")
-    
+    st.write(
+        '''
+        **Employment** refers to the number of employees, including both full-time and part-time workers. 
+        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
+        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
+        or involuntarily (layoffs, dismissals). In addition to **employment**, **new hires**, and **separations**, 
+        there are other critical aspects that affect recruitment in a firm: job vacancies (or job openings) and job postings (or job advertisements, or job ads). 
+        **Job vacancies (job openings)** represent the number of available positions at the firm for which the firm is actively seeking candidates. 
+        **Job postings (job advertisements, job ads)** are advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.
+        '''
+    )
+
+
     st.write(
         '''
         In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
