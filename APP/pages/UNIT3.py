@@ -107,7 +107,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "Transition Matrix":
     UNIT3_1()
-if selected == "Trends in Employment":
+if selected == "Employment Trends":
     UNIT3_2()
 if selected == "Asymmetric Information":
     UNIT3_3()
