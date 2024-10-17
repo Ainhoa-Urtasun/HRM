@@ -21,7 +21,16 @@ def UNIT3_1():
     \end{pmatrix}
     """)
 
+    st.write(
+        '''
+        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; and $s$ represents separations. 
+        From row-wise summations of $M$, we get the employment in a particular job at $(t-1)$ at the firm.
+        And from column-wise summations of $M$, we get the employment in a particular job at $t at the firm$:
+        '''
+    )
 
+    st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}
+    st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}
     
     st.write("**Employment**: The total number of people currently working for the firm, including both full-time and part-time employees.")
     st.write("**New Hires**: The number of individuals who have recently been recruited and started working at the firm.")
@@ -73,7 +82,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Terminology","Employment","Employment Across Jobs"],  # required
+    options=["Transition Matrix","Employment","Employment Across Jobs"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
