@@ -5,6 +5,24 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT3_1():
+    st.write(
+        '''
+        The transition matrix of a firm, $M$, represents employee mobility both wihin the firm, between different jobs, and from the
+        firm to the external market.
+        '''
+    )
+             
+    st.latex(r"""M = 
+    \begin{pmatrix}
+    m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
+    m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
+    m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
+    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & -
+    \end{pmatrix}
+    """)
+
+
+    
     st.write("**Employment**: The total number of people currently working for the firm, including both full-time and part-time employees.")
     st.write("**New Hires**: The number of individuals who have recently been recruited and started working at the firm.")
     st.write("**Job Postings**: Advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.")
