@@ -44,16 +44,17 @@ def UNIT3_1():
         '''
     )
 
-
     st.write(
         '''
-        In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
-    This can lead to **adverse selection**, where the firm might hire less qualified candidates because it lacks full information. 
-    To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
-    in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
-    an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
+        From the transition matrix $M$ we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
+        its retention and turnover rates, which are critical HRM metrics.
         '''
     )
+
+    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
+    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
+    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
+    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
 
 def UNIT3_2():
 
@@ -81,15 +82,22 @@ def UNIT3_2():
     st.pyplot(fig)
 
 def UNIT3_3():
-    st.latex(r'L_{(t)} = L_{(t-1)} + h_{(t-1,t)} - s_{(t-1,t)}')
-    st.latex(r'L_{i(t)} = L_{i(t-1)} + h_{i(t-1,t)} - s_{i(t-1,t)}')
+    st.write(
+        '''
+        In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
+    This can lead to **adverse selection**, where the firm might hire less qualified candidates because it lacks full information. 
+    To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
+    in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
+    an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
+        '''
+    )
 
 
 st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Transition Matrix","Employment","Employment Across Jobs"],  # required
+    options=["Transition Matrix","Employment Trends","Asymmetric Information"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -99,8 +107,8 @@ selected = option_menu(
 # Call the selected section
 if selected == "Transition Matrix":
     UNIT3_1()
-if selected == "Employment":
+if selected == "Trends in Employment":
     UNIT3_2()
-if selected == "Employment Across Jobs":
+if selected == "Asymmetric Information":
     UNIT3_3()
 
