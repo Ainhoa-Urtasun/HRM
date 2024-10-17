@@ -25,7 +25,7 @@ def UNIT3_1():
         '''
         Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; and $s$ represents separations. 
         From row-wise summations of $M$, we get the employment in a particular job at $(t-1)$ at the firm.
-        And from column-wise summations of $M$, we get the employment in a particular job at $t at the firm$:
+        And from column-wise summations of $M$, we get the employment in a particular job at $t$ at the firm:
         '''
     )
 
