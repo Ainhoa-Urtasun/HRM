@@ -90,7 +90,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Terminology":
+if selected == "Transition Matrix":
     UNIT3_1()
 if selected == "Employment":
     UNIT3_2()
