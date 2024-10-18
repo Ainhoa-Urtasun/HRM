@@ -7,9 +7,15 @@ import numpy as np
 def UNIT1_1():
     st.write(
         '''
-        Human resource management (HRM) takes on the organization and motivation of employees by implementing HRM practices
-        such as job analysis and design, HR planning, recruiting, performance evaluation, training, career development, and 
-        compensation. HRM is implemented at the firm level.
+        Human resource management (HRM) takes on the **organization** and **motivation** of employees by implementing HRM practices
+        such as 
+        - **Job analysis and design**
+        - **HR planning**
+        - **Recruiting**
+        - **Performance evaluation**
+        - **Training
+        - **Career development**
+        - **Compensation
         '''
     )
 
@@ -17,7 +23,7 @@ def UNIT1_1():
         '''
         Firms make two important decisions:
 
-        1. **What to produce:** This decision determines the output (product or service) and the activities that need to be
+        1. **What to produce:** This decision determines the output (product or service) and, in turn, the activities that need to be
         completed. Firms are classified into industries depending on that. See [NACE](https://ec.europa.eu/eurostat/web/nace)
             
         '''
