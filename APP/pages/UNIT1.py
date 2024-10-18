@@ -46,14 +46,11 @@ def UNIT1_2():
 
 def UNIT1_3():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ represents the output produced by the firm (Cobb-Douglas production function)")
-        st.write("- $L_1$ number of workers in job 1 at the firm")
-        st.write("- $L_2$ number of workers in job 2 at the firm")
-        st.write("- $L_3$ number of workers in job 3 at the firm")
-        st.write("- $L = L_1 + L_2 + L_3$ total number of employees at the firm")
-        st.write("- $K$ technology")
-        st.write("- $A_1, A_2, A_3, A_4$ work activities performed by employees")
-        st.write("- $S_1, S_2, S_3, S_4, S_5, S_6$ skills possessed by employees")
+        st.write("- $L$ number of employees at the firm")
+        st.write("- $e_1, e_2, e_3,...,e_L$ effort exerted by each employee at the firm")
+        st.write("- $Q(e_1, e_2, e_3,...,e_L)$ production function of the firm")
+        st.write("- $WA_1, WA_2, ..., WA_4$ work activities performed by employees")
+        st.write("- $S_1, S_2, S_3, S_4$ skills possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
