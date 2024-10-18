@@ -40,13 +40,9 @@ def UNIT1_2():
         '''
     )
     
-    st.text_input("Enter the name of the firm from SABI")
-    st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
-    st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
-    st.text_input("Enter the activities this firm needs to perform")
-
-
-
+    st.text_input("For a specific industry from [NACE](https://ec.europa.eu/eurostat/web/nace), enter the activities that need to be completed")
+    st.text_input("Use O*NET to decide the work activities for a firm in that industry")
+    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
 def UNIT1_3():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
