@@ -51,7 +51,7 @@ def UNIT1_2():
         '''
     )
 
-def UNIT1_2():
+def UNIT1_3():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $Q = L_1^{e_1}L_2^{e_2}L_3^{e_3}K^a$ represents the output produced by the firm (Cobb-Douglas production function)")
         st.write("- $L_1$ number of workers in job 1 at the firm")
@@ -64,7 +64,7 @@ def UNIT1_2():
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
-def UNIT1_3():
+def UNIT1_5():
     st.write('''
     The production function includes three different types of labor, each performing a different job. The output elasticity for each type of labor indicates the 
     percentage change in output resulting from a 1% change in that type of labor, holding other inputs constant. These elasticities reflect the contribution of each 
