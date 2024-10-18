@@ -13,9 +13,9 @@ def UNIT1_1():
         - **HR planning**
         - **Recruiting**
         - **Performance evaluation**
-        - **Training
+        - **Training**
         - **Career development**
-        - **Compensation
+        - **Compensation**
         '''
     )
 
