@@ -18,13 +18,11 @@ def UNIT1_1():
         Firms make two important decisions:
 
         1. **What to produce:** This decision determines the output (product or service) and the activities that need to be
-        completed. Firms are classified into industries depending on that. 
+        completed. Firms are classified into industries depending on that. See [NACE](https://ec.europa.eu/eurostat/web/nace)
             
         '''
     )
     
-    st.components.v1.iframe("https://showvoc.op.europa.eu/#/datasets/ESTAT_Statistical_Classification_of_Economic_Activities_in_the_European_Community_Rev._2.1._%28NACE_2.1%29/data", width=800, height=600, scrolling=True)
-
     st.text_input("Enter the name of the firm from SABI")
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
