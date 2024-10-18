@@ -8,10 +8,21 @@ def UNIT1_1():
     st.write(
         '''
         Human resource management (HRM) takes on the organization and motivation of employees by implementing HRM practices
-        such as job analysis and design, recruitment, HR planning, performance evaluation, training, compensation, 
-        and career development. HRM is implemented at the firm level.
+        such as job analysis and design, HR planning, recruiting, performance evaluation, training, career development, and 
+        compensation. HRM is implemented at the firm level.
         '''
     )
+
+    st.write(
+        '''
+        Firms make two important decisions:
+
+        1. **What to produce:** This decision determines the output (product or service) and the activities that need to be
+        completed. Firms are classified into industries depending on that. 
+            
+        '''
+    )
+        st.components.v1.iframe("https://showvoc.op.europa.eu/#/datasets/ESTAT_Statistical_Classification_of_Economic_Activities_in_the_European_Community_Rev._2.1._%28NACE_2.1%29/data", width=800, height=600, scrolling=True)
 
     st.text_input("Enter the name of the firm from SABI")
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
