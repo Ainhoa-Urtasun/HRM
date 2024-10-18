@@ -49,7 +49,7 @@ def UNIT1_3():
         st.write("- $L$ number of employees at the firm")
         st.write("- $e_1, e_2, e_3,...,e_L$ effort exerted by each employee at the firm")
         st.write("- $Q(e_1, e_2, e_3,...,e_L)$ production function of the firm")
-        st.write("- $W_1, W_2, ..., W_4$ work activities performed by employees")
+        st.write("- $W_1, W_2, W_3, W_4, W_5, W_6$ work activities performed by employees")
         st.write("- $S_1, S_2, S_3, S_4$ skills possessed by employees")
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
