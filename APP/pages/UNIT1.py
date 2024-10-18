@@ -54,22 +54,8 @@ def UNIT1_3():
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
-def UNIT1_5():
-    st.write('''
-    The production function includes three different types of labor, each performing a different job. The output elasticity for each type of labor indicates the 
-    percentage change in output resulting from a 1% change in that type of labor, holding other inputs constant. These elasticities reflect the contribution of each 
-    labor type to the firm's overall production process.
-    ''')
-
-    st.write('The output elasticity of labor in job 1 at the firm:')
-    st.latex(r" \frac{\partial Q}{\partial L_1} \cdot \frac{L_1}{Q} = e_1")
-    st.write('The output elasticity of labor in job 2 at the firm:')
-    st.latex(r" \frac{\partial Q}{\partial L_2} \cdot \frac{L_2}{Q} = e_2")
-    st.write('The output elasticity of labor in job 3 at the firm:')
-    st.latex(r" \frac{\partial Q}{\partial L_3} \cdot \frac{L_3}{Q} = e_3")
-
 def UNIT1_4():
-    st.latex(r'EBIT = pQ - w(L_H+L_L) -rK')
+    st.latex(r'EBIT = pQ(e_1,e_2,...,e_L) - wL -rK')
     st.write(
         '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
         and $r$ is the cost of technology. This values can be derived from the Income Statement. Next, we practice how to use them
