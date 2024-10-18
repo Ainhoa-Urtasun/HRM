@@ -22,7 +22,8 @@ def UNIT1_1():
             
         '''
     )
-        st.components.v1.iframe("https://showvoc.op.europa.eu/#/datasets/ESTAT_Statistical_Classification_of_Economic_Activities_in_the_European_Community_Rev._2.1._%28NACE_2.1%29/data", width=800, height=600, scrolling=True)
+    
+    st.components.v1.iframe("https://showvoc.op.europa.eu/#/datasets/ESTAT_Statistical_Classification_of_Economic_Activities_in_the_European_Community_Rev._2.1._%28NACE_2.1%29/data", width=800, height=600, scrolling=True)
 
     st.text_input("Enter the name of the firm from SABI")
     st.text_input("Enter the 2-digit NAICS code and title of the firm from SABI")
