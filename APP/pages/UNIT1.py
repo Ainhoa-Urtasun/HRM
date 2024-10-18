@@ -24,9 +24,19 @@ def UNIT1_2():
         '''
         Firms make two important decisions:
 
-        1. **What to produce:** This decision determines the output (product or service) and, in turn, the activities that need to be
-        completed. Firms are classified into industries depending on that. See [NACE](https://ec.europa.eu/eurostat/web/nace)
+        1. **What to produce:** This decision determines the output (product or service) and, in turn, the tasks that need to be
+        completed. Firms are classified into industries depending on this decision. See [NACE](https://ec.europa.eu/eurostat/web/nace)
+
+        2. **How to produce it:** This involves deciding which technology to use and how to allocate tasks between labor and technology
             
+        '''
+    )
+
+    st.write(
+        '''
+        The activities that labor needs to
+        carry out are called **work activities** and HRM is responsible for organizing and motivating employees to carry out
+        these **work activities** efficiently and effectively.
         '''
     )
     
@@ -35,21 +45,8 @@ def UNIT1_2():
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
     st.text_input("Enter the activities this firm needs to perform")
 
-    st.write(
-        '''
-        The output the firm produces determines the set of activities it needs to perform. Firms are classified 
-        into industries depending on the output they produce. The North American Industry Classification System (NAICS) provides
-        a standard classification of firms into industries.
-        '''
-    )
 
-    st.write(
-        '''
-        The firm allocates (organizes) these activities across labor and technology. The activities that labor needs to
-        carry out are called **work activities** and HRM is responsible for organizing and motivating employees to carry out
-        these **work activities** efficiently and effectively.
-        '''
-    )
+
 
 def UNIT1_3():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
