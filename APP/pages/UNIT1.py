@@ -19,6 +19,7 @@ def UNIT1_1():
         '''
     )
 
+def UNIT1_2():
     st.write(
         '''
         Firms make two important decisions:
@@ -118,7 +119,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM", "Notation for the Course", "Output Elasticities of Labor", "Labor Productivity and Unit Labor Cost (ULC)"],  # required
+    options=["HRM", "HRM in context", "Notation for the course", "Labor productivity and unit labor cost (ULC)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -128,10 +129,10 @@ selected = option_menu(
 # Call the selected section
 if selected == "HRM":
     UNIT1_1()
-elif selected == "Notation for the Course":
+elif selected == "HRM in context":
     UNIT1_2()
-elif selected == "Output Elasticities of Labor":
+elif selected == "Notation for the course":
     UNIT1_3()
-elif selected == "Labor Productivity and Unit Labor Cost (ULC)":
+elif selected == "Labor productivity and unit labor cost (ULC)":
     UNIT1_4()
 
