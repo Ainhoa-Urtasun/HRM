@@ -115,7 +115,7 @@ def UNIT2_4():
     activity6 = st.text_input("$W_6$")
     skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
-    matrix = np.zeros((6, 4))
+    #matrix = np.zeros((6, 4))
 
     if st.button("Submit"):
         try:
@@ -124,7 +124,6 @@ def UNIT2_4():
 
             # Check if all rows have exactly 4 values and there are 6 rows
             if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
-                print('Yes')
                 matrix_np = np.array(matrix)
                 st.write("Here is your 6X4 matrix:")
                 st.write(matrix_np)
@@ -132,8 +131,7 @@ def UNIT2_4():
                 st.write("Please enter exactly 4 numeric values for each skill input.")
         except ValueError:
             st.write("Please enter valid numeric values for the skills.")
-
-    
+            
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
 
@@ -156,7 +154,14 @@ def UNIT2_5():
     \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
-   
+st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
+    activity1 = st.text_input("$W_1$")
+    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
+    activity2 = st.text_input("$W_2$")
+    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
+
+
+
 st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
