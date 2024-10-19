@@ -37,17 +37,15 @@ def UNIT2_3():
     st.write("""
     **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
     Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
-    Here, for simplicity, we focus on 6 skills: $S_1, S_2, S_3, S_4, S_5, S_6$
+    Here, for simplicity, we focus on 4 skills: $S_1, S_2, S_3, S_4$
     """
     )
 
-    st.write("Enter 6 skills ($S_i$) from O*NET:")
+    st.write("Enter 4 skills ($S_i$) from O*NET:")
     st.text_input("$S_1$")
     st.text_input("$S_2$")
     st.text_input("$S_3$")
     st.text_input("$S_4$")
-    st.text_input("$S_5$")
-    st.text_input("$S_6$")
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
 
 def UNIT2_4():
