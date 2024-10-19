@@ -99,7 +99,7 @@ def UNIT2_4():
 
     st.latex(r'\text{Job complexity: }\sum_{i=1}^{6} \sum_{j=1}^{4} s_{ij}')
 
-    st.write('From O\\*NET, type 6 different work activities and its corresponding sill vector:")
+    st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
     activity1 = st.text_input("$W_1$")
     skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
     activity2 = st.text_input("$W_2$")
