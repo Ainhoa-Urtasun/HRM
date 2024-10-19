@@ -121,14 +121,17 @@ def UNIT2_4():
         try:
             user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
             matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
+
+            # Check if all rows have exactly 4 values and there are 6 rows
             if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
                 matrix_np = np.array(matrix)
                 st.write("Here is your 6X4 matrix:")
                 st.write(matrix_np)
             else:
-                st.write("Please enter exactly 6 values for each activity.")
+                st.write("Please enter exactly 4 numeric values for each skill input.")
         except ValueError:
             st.write("Please enter valid numeric values for the skills.")
+
     
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
