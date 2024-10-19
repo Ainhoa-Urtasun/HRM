@@ -178,9 +178,6 @@ def UNIT2_5():
             # Check if all rows have exactly 4 values and there are 6 rows
             if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
                 matrix_np = np.array(matrix)
-                st.write("Here is your 6X4 matrix:")
-                st.write(matrix_np)
-            
                 # Add button for cosine similarity calculation
                 if st.button("Calculate Cosine Similarity"):
                     st.write("Select two skill vectors to calculate their cosine similarity.")
