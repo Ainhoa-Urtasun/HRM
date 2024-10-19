@@ -159,27 +159,31 @@ def UNIT2_5():
 
     if st.button("Calculate Cosine Similarity"):
         try:
-            # Convert input strings into lists of floats
-            vector1 = list(map(float, skills1.split(',')))
-            vector2 = list(map(float, skills2.split(',')))
-
-            # Ensure both vectors have exactly 4 values
-            if len(vector1) == 4 and len(vector2) == 4:
-                # Check for zero norm to avoid division by zero
-                if norm(vector1) == 0 or norm(vector2) == 0:
-                    st.write("One of the vectors is zero, cannot calculate cosine similarity.")
-                else:
-                # Calculate cosine similarity
-                    cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-                    st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
+            # Ensure inputs are provided
+            if not skills1 or not skills2:
+                st.write("Please provide values for both vectors.")
             else:
-                st.write("Please enter exactly 4 numeric values for each vector.")
+                # Convert input strings into lists of floats
+                vector1 = list(map(float, skills1.split(',')))
+                vector2 = list(map(float, skills2.split(',')))
+
+                # Ensure both vectors have exactly 4 values
+                if len(vector1) == 4 and len(vector2) == 4:
+                    # Check for zero norm to avoid division by zero
+                    if norm(vector1) == 0 or norm(vector2) == 0:
+                        st.write("One of the vectors is zero, cannot calculate cosine similarity.")
+                    else:
+                        # Calculate cosine similarity
+                        cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
+                        st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
+                else:
+                    st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
             st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
-st.set_page_config(page_title="UNIT2", layout="wide")
 
-selected = option_menu(
+
+    
     menu_title="Main Menu",  # required
     options=["O*NET", "Work Activities", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
