@@ -154,7 +154,7 @@ def UNIT2_5():
     \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
-st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
+    st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
     activity1 = st.text_input("$W_1$")
     skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
     activity2 = st.text_input("$W_2$")
