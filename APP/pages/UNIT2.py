@@ -115,7 +115,7 @@ def UNIT2_4():
     activity6 = st.text_input("$W_6$")
     skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
-    #matrix = np.zeros((6, 4))
+    matrix = np.zeros((6, 4))
 
     if st.button("Submit"):
         try:
