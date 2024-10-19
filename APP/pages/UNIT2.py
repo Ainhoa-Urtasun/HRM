@@ -65,8 +65,7 @@ def UNIT2_4():
              
     st.write(
         '''
-        A job is a bundle of work activities. Therefore, 
-        we can represent any job as a matrix where each row corresponds to the skill vector required for a particular work activity.
+        A job is a matrix of work activities where each row corresponds to the skill vector of a particular work activity.
         '''
     )
              
@@ -98,18 +97,24 @@ def UNIT2_4():
         '''
     )
 
-    st.latex(r'\text{Job complexity: }\sum_{i=1}^{6} \sum_{j=1}^{5} s_{ij}')
+    st.latex(r'\text{Job complexity: }\sum_{i=1}^{6} \sum_{j=1}^{4} s_{ij}')
 
-    st.write("Enter 4 work activities ($A_i$) and 6 skills ($S_i$) from O*NET:")
-    activity1 = st.text_input("$A_1$")
-    skills1 = st.text_input(f"Enter the importance (0-100) of the 6 skills for $A_1$ (e.g., 10,20,30,40,50,60):")
-    activity2 = st.text_input("$A_2$")
-    skills2 = st.text_input(f"Enter the importance (0-100) of the 6 skills for $A_2$ (e.g., 10,20,30,40,50,60):")
+    st.write('From O*NET, type 6 different work activities and its corresponding sill vector:)
+    activity1 = st.text_input("$W_1$")
+    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
+    activity2 = st.text_input("$W_2$")
+    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
     activity3 = st.text_input("$A_3$")
-    skills3 = st.text_input(f"Enter the importance (0-100) of the 6 skills for $A_3$ (e.g., 10,20,30,40,50,60):")
+    skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
     activity4 = st.text_input("$A_4$")
-    skills4 = st.text_input(f"Enter the importance (0-100) of the 6 skills for $A_4$ (e.g., 10,20,30,40,50,60):")
+    skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
+    activity4 = st.text_input("$A_5$")
+    skills4 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
+    activity4 = st.text_input("$A_6$")
+    skills4 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
+    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
+    
     matrix = np.zeros((4, 6))
 
     if st.button("Submit"):
