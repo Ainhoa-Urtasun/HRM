@@ -169,15 +169,13 @@ def UNIT2_5():
                 if norm(vector1) == 0 or norm(vector2) == 0:
                     st.write("One of the vectors is zero, cannot calculate cosine similarity.")
                 else:
-                    # Calculate cosine similarity
+                # Calculate cosine similarity
                     cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
                     st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
             else:
                 st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
             st.write("Please ensure all inputs are valid numeric values, separated by commas.")
-
-
 
 st.set_page_config(page_title="UNIT2", layout="wide")
 
