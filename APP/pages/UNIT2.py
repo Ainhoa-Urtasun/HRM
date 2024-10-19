@@ -108,22 +108,22 @@ def UNIT2_4():
     skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
     activity4 = st.text_input("$W_4$")
     skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
-    activity4 = st.text_input("$W_5$")
-    skills4 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
-    activity4 = st.text_input("$W_6$")
-    skills4 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+    activity5 = st.text_input("$W_5$")
+    skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
+    activity5 = st.text_input("$W_6$")
+    skills5 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
     
-    matrix = np.zeros((4, 6))
+    matrix = np.zeros((6, 4))
 
     if st.button("Submit"):
         try:
-            user_inputs = [skills1, skills2, skills3, skills4]
+            user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
             matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
-            if all(len(row) == 6 for row in matrix) and len(matrix) == 4:
+            if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
                 matrix_np = np.array(matrix)
-                st.write("Here is your 4x6 matrix:")
+                st.write("Here is your 6X4 matrix:")
                 st.write(matrix_np)
             else:
                 st.write("Please enter exactly 6 values for each activity.")
