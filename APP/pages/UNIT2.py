@@ -99,6 +99,8 @@ def UNIT2_4():
 
     st.latex(r'\text{Job complexity: }\sum_{i=1}^{6} \sum_{j=1}^{4} s_{ij}')
 
+    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
+
     st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
     activity1 = st.text_input("$W_1$")
     skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
@@ -113,8 +115,6 @@ def UNIT2_4():
     activity6 = st.text_input("$W_6$")
     skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
-    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
-    
     matrix = np.zeros((6, 4))
 
     if st.button("Submit"):
@@ -124,6 +124,7 @@ def UNIT2_4():
 
             # Check if all rows have exactly 4 values and there are 6 rows
             if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
+                print('Yes')
                 matrix_np = np.array(matrix)
                 st.write("Here is your 6X4 matrix:")
                 st.write(matrix_np)
