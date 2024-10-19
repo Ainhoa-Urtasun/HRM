@@ -154,6 +154,22 @@ def UNIT2_5():
     \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
+ st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
+    activity1 = st.text_input("$W_1$")
+    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
+    activity2 = st.text_input("$W_2$")
+    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
+    activity3 = st.text_input("$W_3$")
+    skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
+    activity4 = st.text_input("$W_4$")
+    skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
+    activity5 = st.text_input("$W_5$")
+    skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
+    activity6 = st.text_input("$W_6$")
+    skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+
+matrix = np.zeros((6, 4))
+
 if st.button("Submit"):
     try:
         user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
