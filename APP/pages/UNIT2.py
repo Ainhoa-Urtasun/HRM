@@ -154,56 +154,29 @@ def UNIT2_5():
     \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
-    st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
-    activity1 = st.text_input("$W_1$")
-    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
-    activity2 = st.text_input("$W_2$")
-    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
-    activity3 = st.text_input("$W_3$")
-    skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
-    activity4 = st.text_input("$W_4$")
-    skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
-    activity5 = st.text_input("$W_5$")
-    skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
-    activity6 = st.text_input("$W_6$")
-    skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+    skills1 = st.text_input("Enter 4 numeric values for Skill Vector 1 (comma-separated):")
+    skills2 = st.text_input("Enter 4 numeric values for Skill Vector 2 (comma-separated):")
 
-    matrix = np.zeros((6, 4))
-    if 'matrix_np' not in st.session_state:
-        st.session_state.matrix_np = None
-
-    if st.button("Submit"):
+    if st.button("Calculate Cosine Similarity"):
         try:
-            user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
-            matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
+            # Convert input strings into lists of floats
+            vector1 = list(map(float, skills1.split(',')))
+            vector2 = list(map(float, skills2.split(',')))
 
-            # Check if all rows have exactly 4 values and there are 6 rows
-            if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
-                st.session_state.matrix_np = np.array(matrix)
-                st.write("Here is your 6X4 matrix:")
-                st.write(st.session_state.matrix_np)
+            # Ensure both vectors have exactly 4 values
+            if len(vector1) == 4 and len(vector2) == 4:
+                # Check for zero norm to avoid division by zero
+                if norm(vector1) == 0 or norm(vector2) == 0:
+                    st.write("One of the vectors is zero, cannot calculate cosine similarity.")
+                else:
+                    # Calculate cosine similarity
+                    cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
+                    st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
             else:
-                st.write("Please enter exactly 4 numeric values for each skill input.")
+                st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
-            st.write("Please enter valid numeric values for the skills.")
+            st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
-    # Check if the matrix has been submitted before showing cosine similarity options
-    if st.session_state.matrix_np is not None:
-        st.write("Select two skill vectors to calculate their cosine similarity.")
-    
-        # Select two vectors
-        vector1_index = st.selectbox("Select first vector (1-6):", list(range(1, 7))) - 1
-        vector2_index = st.selectbox("Select second vector (1-6):", list(range(1, 7))) - 1
-    
-        # Add button for cosine similarity calculation
-        if st.button("Calculate Cosine Similarity"):
-            # Get the two selected vectors
-            vector1 = st.session_state.matrix_np[vector1_index]
-            vector2 = st.session_state.matrix_np[vector2_index]
-
-            # Calculate cosine similarity
-            cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-            st.write(f"Cosine similarity between vector {vector1_index + 1} and vector {vector2_index + 1} is: {cosine_similarity:.4f}")
 
 
 st.set_page_config(page_title="UNIT2", layout="wide")
