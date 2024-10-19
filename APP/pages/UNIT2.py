@@ -182,8 +182,7 @@ def UNIT2_5():
             st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
 
-
-    
+selected = option_menu(
     menu_title="Main Menu",  # required
     options=["O*NET", "Work Activities", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
