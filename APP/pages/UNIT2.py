@@ -169,6 +169,8 @@ def UNIT2_5():
     skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
     matrix = np.zeros((6, 4))
+    if 'matrix_np' not in st.session_state:
+        st.session_state.matrix_np = None
 
     if st.button("Submit"):
         try:
@@ -177,28 +179,31 @@ def UNIT2_5():
 
             # Check if all rows have exactly 4 values and there are 6 rows
             if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
-                matrix_np = np.array(matrix)
-                # Add button for cosine similarity calculation
-                if st.button("Calculate Cosine Similarity"):
-                    st.write("Select two skill vectors to calculate their cosine similarity.")
-                
-                    # Select two vectors
-                    vector1_index = st.selectbox("Select first vector (1-6):", list(range(1, 7))) - 1
-                    vector2_index = st.selectbox("Select second vector (1-6):", list(range(1, 7))) - 1
-                
-                    # Get the two selected vectors
-                    vector1 = matrix_np[vector1_index]
-                    vector2 = matrix_np[vector2_index]
-                
-                    # Calculate cosine similarity
-                    cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-                    st.write(f"Cosine similarity between vector {vector1_index + 1} and vector {vector2_index + 1} is: {cosine_similarity:.4f}")
+                st.session_state.matrix_np = np.array(matrix)
+                st.write("Here is your 6X4 matrix:")
+                st.write(st.session_state.matrix_np)
             else:
                 st.write("Please enter exactly 4 numeric values for each skill input.")
         except ValueError:
             st.write("Please enter valid numeric values for the skills.")
 
+    # Check if the matrix has been submitted before showing cosine similarity options
+    if st.session_state.matrix_np is not None:
+        st.write("Select two skill vectors to calculate their cosine similarity.")
+    
+        # Select two vectors
+        vector1_index = st.selectbox("Select first vector (1-6):", list(range(1, 7))) - 1
+        vector2_index = st.selectbox("Select second vector (1-6):", list(range(1, 7))) - 1
+    
+        # Add button for cosine similarity calculation
+        if st.button("Calculate Cosine Similarity"):
+            # Get the two selected vectors
+            vector1 = st.session_state.matrix_np[vector1_index]
+            vector2 = st.session_state.matrix_np[vector2_index]
 
+            # Calculate cosine similarity
+            cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
+            st.write(f"Cosine similarity between vector {vector1_index + 1} and vector {vector2_index + 1} is: {cosine_similarity:.4f}")
 
 
 st.set_page_config(page_title="UNIT2", layout="wide")
