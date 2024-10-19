@@ -134,22 +134,22 @@ def UNIT2_4():
     st.write(f"Job Complexity: {job_complexity}")
 
 def UNIT2_5():
-    st.write("The cosine similarity between two work activities $A_i$ and $A_j$ is defined as follows:")
+    st.write("The cosine similarity between two work activities $W_i$ and $W_j$ is defined as follows:")
 
     st.latex(r'''
-    \text{Cosine Similarity}(\text{A}_i, \text{A}_j) = \frac{\text{A}_i \cdot \text{A}_j}{\|\text{A}_i\| \|\text{A}_j\|}
+    \text{Cosine Similarity}(\text{W}_i, \text{W}_j) = \frac{\text{W}_i \cdot \text{W}_j}{\|\text{W}_i\| \|\text{W}_j\|}
     ''')
 
     st.write("Where the numerator contains the dot product of the skill vectors:")
    
     st.latex(r'''
-    \text{A}_i \cdot \text{A}_j = \sum_{k=1}^{6} s_{ik} s_{jk}
+    \text{W}_i \cdot \text{W}_j = s_{i1} s_{j1} + s_{i2} s_{j2} + s_{i3} s_{j3} + s_{i4} s_{j4}
     ''')
 
     st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
 
     st.latex(r'''
-    \|\text{A}_i\| = \sqrt{\sum_{k=1}^{6} s_{ik}^2}
+    \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
    
