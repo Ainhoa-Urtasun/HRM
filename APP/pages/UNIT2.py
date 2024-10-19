@@ -53,7 +53,7 @@ def UNIT2_4():
     "In the context of job analysis and design, it is useful to represent a work activity as a vector of skills:"
     )
     
-    st.latex(r'A_i = (s_{i1}, s_{i2}, s_{i3}, s_{i4}, s_{i5}, s_{i6})')
+    st.latex(r'W_i = (s_{i1}, s_{i2}, s_{i3}, s_{i4})')
 
     st.write(
     "Each element $s_{ij}$ of the vector indicates the extent to which skill $j$ is required for work activity $i$:"
@@ -72,10 +72,12 @@ def UNIT2_4():
              
     st.latex(r"""
     \begin{pmatrix}
-    s_{11} & s_{12} & s_{13} & s_{14} & s_{15} & s_{16} \\
-    s_{21} & s_{22} & s_{23} & s_{24} & s_{25} & s_{26} \\
-    s_{31} & s_{32} & s_{33} & s_{34} & s_{35} & s_{36} \\
-    s_{41} & s_{42} & s_{43} & s_{44} & s_{45} & s_{46} \\
+    s_{11} & s_{12} & s_{13} & s_{14} \\
+    s_{21} & s_{22} & s_{23} & s_{24} \\
+    s_{31} & s_{32} & s_{33} & s_{34} \\
+    s_{41} & s_{42} & s_{43} & s_{44} \\
+    s_{51} & s_{52} & s_{53} & s_{54} \\
+    s_{61} & s_{62} & s_{63} & s_{64} \\
     \end{pmatrix}
     """)
 
@@ -96,7 +98,7 @@ def UNIT2_4():
         '''
     )
 
-    st.latex(r'\text{Job complexity: }\sum_{i=1}^{4} \sum_{j=1}^{6} s_{ij}')
+    st.latex(r'\text{Job complexity: }\sum_{i=1}^{6} \sum_{j=1}^{5} s_{ij}')
 
     st.write("Enter 4 work activities ($A_i$) and 6 skills ($S_i$) from O*NET:")
     activity1 = st.text_input("$A_1$")
