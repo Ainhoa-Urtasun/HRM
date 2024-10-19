@@ -110,8 +110,8 @@ def UNIT2_4():
     skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
     activity5 = st.text_input("$W_5$")
     skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
-    activity5 = st.text_input("$W_6$")
-    skills5 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+    activity6 = st.text_input("$W_6$")
+    skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
     
