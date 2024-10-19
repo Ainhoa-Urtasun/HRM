@@ -55,6 +55,11 @@ def UNIT1_3():
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_4():
+    st.write(
+        '''
+        Employees significantly influence the firm's performance and profitability. 
+        '''
+    )
     st.latex(r'EBIT = pQ(e_1,e_2,...,e_L) - wL -rK')
     st.write(
         '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
