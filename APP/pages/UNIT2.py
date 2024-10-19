@@ -154,52 +154,52 @@ def UNIT2_5():
     \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
- st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
-    activity1 = st.text_input("$W_1$")
-    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
-    activity2 = st.text_input("$W_2$")
-    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
-    activity3 = st.text_input("$W_3$")
-    skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
-    activity4 = st.text_input("$W_4$")
-    skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
-    activity5 = st.text_input("$W_5$")
-    skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
-    activity6 = st.text_input("$W_6$")
-    skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+    st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
+        activity1 = st.text_input("$W_1$")
+        skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
+        activity2 = st.text_input("$W_2$")
+        skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
+        activity3 = st.text_input("$W_3$")
+        skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
+        activity4 = st.text_input("$W_4$")
+        skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
+        activity5 = st.text_input("$W_5$")
+        skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
+        activity6 = st.text_input("$W_6$")
+        skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
 
-matrix = np.zeros((6, 4))
+    matrix = np.zeros((6, 4))
 
-if st.button("Submit"):
-    try:
-        user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
-        matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
+    if st.button("Submit"):
+        try:
+            user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
+            matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
 
-        # Check if all rows have exactly 4 values and there are 6 rows
-        if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
-            matrix_np = np.array(matrix)
-            st.write("Here is your 6X4 matrix:")
-            st.write(matrix_np)
+            # Check if all rows have exactly 4 values and there are 6 rows
+            if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
+                matrix_np = np.array(matrix)
+                st.write("Here is your 6X4 matrix:")
+                st.write(matrix_np)
             
-            # Add button for cosine similarity calculation
-            if st.button("Calculate Cosine Similarity"):
-                st.write("Select two skill vectors to calculate their cosine similarity.")
+                # Add button for cosine similarity calculation
+                if st.button("Calculate Cosine Similarity"):
+                    st.write("Select two skill vectors to calculate their cosine similarity.")
                 
-                # Select two vectors
-                vector1_index = st.selectbox("Select first vector (1-6):", list(range(1, 7))) - 1
-                vector2_index = st.selectbox("Select second vector (1-6):", list(range(1, 7))) - 1
+                    # Select two vectors
+                    vector1_index = st.selectbox("Select first vector (1-6):", list(range(1, 7))) - 1
+                    vector2_index = st.selectbox("Select second vector (1-6):", list(range(1, 7))) - 1
                 
-                # Get the two selected vectors
-                vector1 = matrix_np[vector1_index]
-                vector2 = matrix_np[vector2_index]
+                    # Get the two selected vectors
+                    vector1 = matrix_np[vector1_index]
+                    vector2 = matrix_np[vector2_index]
                 
-                # Calculate cosine similarity
-                cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-                st.write(f"Cosine similarity between vector {vector1_index + 1} and vector {vector2_index + 1} is: {cosine_similarity:.4f}")
-        else:
-            st.write("Please enter exactly 4 numeric values for each skill input.")
-    except ValueError:
-        st.write("Please enter valid numeric values for the skills.")
+                    # Calculate cosine similarity
+                    cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
+                    st.write(f"Cosine similarity between vector {vector1_index + 1} and vector {vector2_index + 1} is: {cosine_similarity:.4f}")
+            else:
+                st.write("Please enter exactly 4 numeric values for each skill input.")
+        except ValueError:
+            st.write("Please enter valid numeric values for the skills.")
 
 
 
