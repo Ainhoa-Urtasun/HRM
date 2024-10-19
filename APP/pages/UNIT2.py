@@ -19,16 +19,18 @@ def UNIT2_2():
     st.write("""
         A **work activity** is an action performed by an employee that results in a specific output.
         O*NET identifies 41 distinct work activities. We consider, for simplicity, that the firm requires 
-        its employees to perform 4 work activities: $A_1, A_2, A_3, A_4$. 
+        its employees to perform 6 work activities: $W_1, W_2, W_3, W_4, W_5, W_6$. 
         In reality, of course, the number of work activities is much larger.
         """
     )
 
-    st.write("Enter 4 work activities ($A_i$) from O*NET:")
-    st.text_input("$A_1$")
-    st.text_input("$A_2$")
-    st.text_input("$A_3$")
-    st.text_input("$A_4$")
+    st.write("Enter 6 work activities ($W_i$) from O*NET:")
+    st.text_input("$W_1$")
+    st.text_input("$W_2$")
+    st.text_input("$W_3$")
+    st.text_input("$W_4$")
+    st.text_input("$W_5$")
+    st.text_input("$W_6$")
     st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
 
 def UNIT2_3():
