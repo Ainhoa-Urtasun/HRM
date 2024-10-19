@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from numpy.linalg import norm
 
 def UNIT2_1():
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
