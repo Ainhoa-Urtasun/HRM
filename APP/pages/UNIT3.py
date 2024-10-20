@@ -10,7 +10,7 @@ def UNIT3_1():
         HR planning involves forecasting potential skill shortages or surpluses within the firm. 
         A useful tool for HR planning is the firm's transition matrix, $M$,
         which represents employee mobility both within the firm (between different jobs) 
-        and from the firm to the external labor market.
+        and from the firm to the external labor market. In the case of a 3-job firm, $M$ is $4 \times 4$:
         '''
     )
              
