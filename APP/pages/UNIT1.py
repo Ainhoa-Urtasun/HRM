@@ -44,7 +44,7 @@ def UNIT1_1():
     )
 
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
-    st.text_input("Use O*NET to decide which of activities above are **work activities**)
+    st.text_input("Use O*NET to decide which of activities above are **work activities**")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
