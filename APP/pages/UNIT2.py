@@ -128,7 +128,7 @@ def UNIT2_4():
         r2c3 = st.number_input("Row 2, Col 3", key="r2c3")
         r3c3 = st.number_input("Row 3, Col 3", key="r3c3")
         r4c3 = st.number_input("Row 4, Col 3", key="r4c3")
-     with W4:
+    with W4:
         r1c4 = st.number_input("Row 1, Col 4", key="r1c4")
         r2c4 = st.number_input("Row 2, Col 4", key="r2c4")
         r3c4 = st.number_input("Row 3, Col 4", key="r3c4")
