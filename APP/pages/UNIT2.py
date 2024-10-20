@@ -77,7 +77,8 @@ def UNIT2_4():
              
     st.write(
         '''
-        A job is a matrix of work activities where each row corresponds to the skill vector of a particular work activity.
+        A job can be represented as a matrix of work activities where each column-vector
+        corresponds to a different work activity.
         '''
     )
              
