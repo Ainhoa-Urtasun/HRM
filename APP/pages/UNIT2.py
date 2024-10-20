@@ -112,30 +112,18 @@ def UNIT2_4():
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
 
-    st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
-    st.text_input("Use O*NET to type $W_1$")
-    st.write('Enter the skill column-vector of $W_1$')
-    value1 = st.number_input("Value 1")
-    value2 = st.number_input("Value 2")
-    value3 = st.number_input("Value 3")
-    value4 = st.number_input("Value 4")
-    st.write(f"[{value1}]")
-    st.write(f"[{value2}]")
-    st.write(f"[{value3}]")
-    st.write(f"[{value4}]")
 
+    st.write("Enter the values for the 2x4 matrix:")
+    matrix = [
+    [st.number_input(f"Row 1, Col 1", key="r1c1"), st.number_input(f"Row 1, Col 2", key="r1c2")],
+    [st.number_input(f"Row 2, Col 1", key="r2c1"), st.number_input(f"Row 2, Col 2", key="r2c2")],
+    [st.number_input(f"Row 3, Col 1", key="r3c1"), st.number_input(f"Row 3, Col 2", key="r3c2")],
+    [st.number_input(f"Row 4, Col 1", key="r4c1"), st.number_input(f"Row 4, Col 2", key="r4c2")]
+    ]
 
-    
-    activity2 = st.text_input("$W_2$")
-    skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
-    activity3 = st.text_input("$W_3$")
-    skills3 = st.text_input(f"Enter the 4-skill vector of $A_3$ (e.g., 10,20,30,40):")
-    activity4 = st.text_input("$W_4$")
-    skills4 = st.text_input(f"Enter the 4-skill vector of $A_4$ (e.g., 10,20,30,40):")
-    activity5 = st.text_input("$W_5$")
-    skills5 = st.text_input(f"Enter the 4-skill vector of $A_5$ (e.g., 10,20,30,40):")
-    activity6 = st.text_input("$W_6$")
-    skills6 = st.text_input(f"Enter the 4-skill vector of $A_6$ (e.g., 10,20,30,40):")
+    st.write("Matrix:")
+    for row in matrix:
+        st.write(row)
 
     matrix = np.zeros((6, 4))
 
