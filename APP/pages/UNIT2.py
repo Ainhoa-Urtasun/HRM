@@ -63,7 +63,7 @@ def UNIT2_4():
         S_{2i} \\ 
         S_{3i} \\ 
         S_{4i} \\
-        \end{matrix}
+        \end{pmatrix}
         '''
     )
     
