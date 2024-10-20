@@ -112,18 +112,29 @@ def UNIT2_4():
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
 
+# Use columns to align the inputs in a table-like manner
+    col1, col2 = st.columns(2)
 
-    st.write("Enter the values for the 2x4 matrix:")
-    matrix = [
-    [st.number_input(f"Row 1, Col 1", key="r1c1"), st.number_input(f"Row 1, Col 2", key="r1c2")],
-    [st.number_input(f"Row 2, Col 1", key="r2c1"), st.number_input(f"Row 2, Col 2", key="r2c2")],
-    [st.number_input(f"Row 3, Col 1", key="r3c1"), st.number_input(f"Row 3, Col 2", key="r3c2")],
-    [st.number_input(f"Row 4, Col 1", key="r4c1"), st.number_input(f"Row 4, Col 2", key="r4c2")]
-    ]
+# First column inputs
+    with col1:
+        r1c1 = st.number_input("Row 1, Col 1", key="r1c1")
+        r2c1 = st.number_input("Row 2, Col 1", key="r2c1")
+        r3c1 = st.number_input("Row 3, Col 1", key="r3c1")
+        r4c1 = st.number_input("Row 4, Col 1", key="r4c1")
 
+# Second column inputs
+    with col2:
+        r1c2 = st.number_input("Row 1, Col 2", key="r1c2")
+        r2c2 = st.number_input("Row 2, Col 2", key="r2c2")
+        r3c2 = st.number_input("Row 3, Col 2", key="r3c2")
+        r4c2 = st.number_input("Row 4, Col 2", key="r4c2")
+
+    # Display the matrix as a table-like structure
     st.write("Matrix:")
-    for row in matrix:
-        st.write(row)
+    st.table([[r1c1, r1c2],
+          [r2c1, r2c2],
+          [r3c1, r3c2],
+          [r4c1, r4c2]])
 
     matrix = np.zeros((6, 4))
 
