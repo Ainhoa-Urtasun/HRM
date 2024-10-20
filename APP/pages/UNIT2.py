@@ -6,16 +6,17 @@ import numpy as np
 from numpy.linalg import norm
 
 def UNIT2_1():
+    st.write(
+        '''
+        O\\*NET Online is a comprehensive tool for career exploration and job analysis.
+        It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs,
+        making it an invaluable resource for job seekers, workforce development professionals, and HR specialists.
+        By providing standardized information on various job roles, O\\*NET Online facilitates job analysis and design,
+        helping users understand the specific demands and characteristics of different occupations.
+        '''
+    )
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
     
-    st.write(
-        "O\\*NET Online is a comprehensive tool for career exploration and job analysis. "
-        "It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs, "
-        "making it an invaluable resource for job seekers, workforce development professionals, and HR specialists. "
-        "By providing standardized information on various job roles, O\\*NET Online facilitates job analysis and design, "
-        "helping users understand the specific demands and characteristics of different occupations."
-    )
-
 def UNIT2_2():
     st.write("""
         A **work activity** is an action performed by an employee that results in a specific output.
