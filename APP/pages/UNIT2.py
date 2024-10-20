@@ -112,29 +112,38 @@ def UNIT2_4():
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
 
-# Use columns to align the inputs in a table-like manner
-    col1, col2 = st.columns(2)
-
-# First column inputs
-    with col1:
+    W1, W2, W3, W4, W5, W6 = st.columns(6)
+    with W1:
         r1c1 = st.number_input("Row 1, Col 1", key="r1c1")
         r2c1 = st.number_input("Row 2, Col 1", key="r2c1")
         r3c1 = st.number_input("Row 3, Col 1", key="r3c1")
         r4c1 = st.number_input("Row 4, Col 1", key="r4c1")
-
-# Second column inputs
-    with col2:
+    with W2:
         r1c2 = st.number_input("Row 1, Col 2", key="r1c2")
         r2c2 = st.number_input("Row 2, Col 2", key="r2c2")
         r3c2 = st.number_input("Row 3, Col 2", key="r3c2")
         r4c2 = st.number_input("Row 4, Col 2", key="r4c2")
+    with W3:
+        r1c3 = st.number_input("Row 1, Col 3", key="r1c3")
+        r2c3 = st.number_input("Row 2, Col 3", key="r2c3")
+        r3c3 = st.number_input("Row 3, Col 3", key="r3c3")
+        r4c3 = st.number_input("Row 4, Col 3", key="r4c3")
+     with W4:
+        r1c4 = st.number_input("Row 1, Col 4", key="r1c4")
+        r2c4 = st.number_input("Row 2, Col 4", key="r2c4")
+        r3c4 = st.number_input("Row 3, Col 4", key="r3c4")
+        r4c4 = st.number_input("Row 4, Col 4", key="r4c4")
+    with W5:
+        r1c5 = st.number_input("Row 1, Col 5", key="r1c5")
+        r2c5 = st.number_input("Row 2, Col 5", key="r2c5")
+        r3c5 = st.number_input("Row 3, Col 5", key="r3c5")
+        r4c5 = st.number_input("Row 4, Col 5", key="r4c5")
+    with W6:
+        r1c6 = st.number_input("Row 1, Col 6", key="r1c6")
+        r2c6 = st.number_input("Row 2, Col 6", key="r2c6")
+        r3c6 = st.number_input("Row 3, Col 6", key="r3c6")
+        r4c6 = st.number_input("Row 4, Col 6", key="r4c6")
 
-    # Display the matrix as a table-like structure
-    st.write("Matrix:")
-    st.table([[r1c1, r1c2],
-          [r2c1, r2c2],
-          [r3c1, r3c2],
-          [r4c1, r4c2]])
 
     matrix = np.zeros((6, 4))
 
