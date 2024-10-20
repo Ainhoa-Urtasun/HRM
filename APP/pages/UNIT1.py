@@ -111,7 +111,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-elif selected == "HRM in context":
+if selected == "HRM in context":
     UNIT1_2()
 elif selected == "Notation for the course":
     UNIT1_3()
