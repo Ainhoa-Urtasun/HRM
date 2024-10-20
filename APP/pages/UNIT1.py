@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-der UNIT1_1():
+def UNIT1_1():
     st.latex(r"""
     Y = \left[ \alpha(K \cdot L_r)^\rho + (1 - \alpha)L_{nr}^\rho \right]^{\frac{1}{\rho}}
     """)
