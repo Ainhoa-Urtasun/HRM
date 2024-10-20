@@ -11,13 +11,12 @@ def UNIT1_1():
     They are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
-    - Tasks that are performed by capital (typically routine tasks)
-    - Tasks that depend exclusively on labor (typically non-routine tasks)
+    - Tasks that are performed by capital (usually routine tasks)
+    - Tasks that depend exclusively on labor (usually non-routine tasks)
 
-    The production function, based on a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
+    We represent the production function of a firm as a Constant Elasticity of Substitution (CES) production function as in Cnossen (2024):
     '''
     )
-
 
     st.latex(r"""
     q = \left[ a^\rho + wa^\rho \right]^{\frac{1}{\rho}}
