@@ -113,8 +113,19 @@ def UNIT2_4():
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
 
     st.write("From O\\*NET, type 6 different work activities and its corresponding sill vector:")
-    activity1 = st.text_input("$W_1$")
-    skills1 = st.text_input(f"Enter the 4-skill vector of $A_1$ (e.g., 10,20,30,40):")
+    st.text_input("Use O*NET to type $W_1$")
+    st.write('Enter the skill column-vector of $W_1$')
+    value1 = st.number_input("Value 1")
+    value2 = st.number_input("Value 2")
+    value3 = st.number_input("Value 3")
+    value4 = st.number_input("Value 4")
+    st.write(f"[{value1}]")
+    st.write(f"[{value2}]")
+    st.write(f"[{value3}]")
+    st.write(f"[{value4}]")
+
+
+    
     activity2 = st.text_input("$W_2$")
     skills2 = st.text_input(f"Enter the 4-skill vector of $A_2$ (e.g., 10,20,30,40):")
     activity3 = st.text_input("$W_3$")
