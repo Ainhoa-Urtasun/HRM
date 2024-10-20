@@ -111,10 +111,10 @@ def UNIT2_4():
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{6} (S_{1j} + S_{2j} + S_{3j} + S_{4j})')
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
-
+    st.write('Use O*NET to represent a job with 4 work activities and 6 skills')
     W1, W2, W3, W4, W5, W6 = st.columns(6)
     with W1:
-        r1c1 = st.number_input("Row 1, Col 1", key="r1c1")
+        r1c1 = st.number_input("$S_{11}$", key="r1c1")
         r2c1 = st.number_input("Row 2, Col 1", key="r2c1")
         r3c1 = st.number_input("Row 3, Col 1", key="r3c1")
         r4c1 = st.number_input("Row 4, Col 1", key="r4c1")
