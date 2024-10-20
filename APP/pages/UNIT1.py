@@ -5,6 +5,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
+    st.write(
+        ''' Each firm generates a unique product (good or service), using a mix of routine and nonroutine tasks. Routine tasks
+        are executable by both capital $K$ and routine labor $L_r$, while nonroutine tasks exclusively rely on nonroutine labor $L_{nr}$.
+        The production function, following a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
+        '''
+    )
+
     st.latex(r"""
     Y = \left[ \alpha(K \cdot L_r)^\rho + (1 - \alpha)L_{nr}^\rho \right]^{\frac{1}{\rho}}
     """)
