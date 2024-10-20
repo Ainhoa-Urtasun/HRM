@@ -10,11 +10,12 @@ def UNIT3_1():
         HR planning involves forecasting potential skill shortages or surpluses within the firm. 
         A useful tool for HR planning is the firm's transition matrix, $M$,
         which represents employee mobility both within the firm (between different jobs) 
-        and from the firm to the external labor market. F a 3-job firm, $M$ is $4x4$:
+        and from the firm to the external labor market. The transition matrix of a firm with
+        3 jobs has 4 rows and 4 columns:
         '''
     )
              
-    st.latex(r"""M = 
+    st.latex(r"""M (4 \times 4) = 
     \begin{pmatrix}
     m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
     m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
