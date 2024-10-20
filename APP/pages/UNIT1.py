@@ -13,7 +13,16 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    Y = \left[ \alpha(K \cdot L_r)^\rho + (1 - \alpha)L_{nr}^\rho \right]^{\frac{1}{\rho}}
+    Y = \left[ (K \cdot L_r)^\rho + L_{nr}^\rho \right]^{\frac{1}{\rho}}
+    """)
+
+    st.write(
+        ''' where the firm-specific elasticity of substitution is:
+        '''
+    )
+
+    st.latex(r"""
+    \sigma = \frac{1}{1 - \rho}
     """)
 
     st.write(
