@@ -115,9 +115,9 @@ def UNIT2_4():
     W1, W2, W3, W4, W5, W6 = st.columns(6)
     with W1:
         S11 = st.number_input("$S_{11}$", key="S11")
-        S21 = st.number_input(""$S_{21}$"", key="S21")
-        S31 = st.number_input(""$S_{31}$"", key="S31")
-        S41 = st.number_input(""$S_{41}$"", key="S41")
+        S21 = st.number_input("$S_{21}$", key="S21")
+        S31 = st.number_input("$S_{31}$", key="S31")
+        S41 = st.number_input("$S_{41}$", key="S41")
     with W2:
         S12 = st.number_input("$S_{12}$", key="S12")
         S22 = st.number_input("$S_{22}$", key="S22")
