@@ -6,14 +6,14 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        ''' Each firm generates a unique product (good or service), using a mix of routine and nonroutine tasks. Routine tasks $RT$
-        are executable by both capital and labor, while nonroutine tasks $NRT$ exclusively rely on labor.
+        ''' Each firm generates a unique product (good or service), using a mix of routine and nonroutine tasks. Routine tasks $T_r$
+        are executable by both capital and labor, while nonroutine tasks $T_{nr}$ exclusively rely on labor.
         The production function, following a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
         '''
     )
 
     st.latex(r"""
-    Y = \left[ (RT)^\rho + NRT^\rho \right]^{\frac{1}{\rho}}
+    Y = \left[ (T_r)^\rho + T_{nr}^\rho \right]^{\frac{1}{\rho}}
     """)
 
     st.write(
