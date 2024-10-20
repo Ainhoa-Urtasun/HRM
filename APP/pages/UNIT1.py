@@ -6,8 +6,8 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        ''' Each firm generates a unique product (good or service), using a mix of routine and nonroutine tasks. Routine tasks $T_r$
-        are executable by both capital and labor, while nonroutine tasks $T_{nr}$ exclusively rely on labor.
+        ''' Each firm generates a unique product (good or service) using a mix of different tasks (task-based production approach). We differentiate between 
+        tasks that both capital and labor can execute (usually routine tasks) and tasks that exclusively rely on labor (usually nonroutine tasks).
         The production function, following a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
         '''
     )
