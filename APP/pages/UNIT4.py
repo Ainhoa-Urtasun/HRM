@@ -35,7 +35,7 @@ def UNIT4_2():
     )
 
 
-st.set_page_config(page_title="UNIT3", layout="wide")
+st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
