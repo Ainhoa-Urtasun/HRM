@@ -13,7 +13,7 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    Y = \left[ A^\rho + \text{WA}^\rho \right]^{\frac{1}{\rho}}
+    Y = \left[ a^\rho + wa^\rho \right]^{\frac{1}{\rho}}
     """)
 
     st.write(
