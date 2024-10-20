@@ -6,16 +6,18 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        '''Firms produce goods or services by combining various tasks. 
-        They are classified into industries based on their output, which determines the specific tasks required for production.
-        We distinguish between two types of tasks:
-        
-        - Tasks that are performed by capital (typically routine tasks)
-        - Tasks that depend exclusively on labor (typically non-routine tasks). 
-        
-        The production function, based on a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
-        '''
+    '''
+    Firms produce goods or services by combining various tasks. 
+    They are classified into industries based on their output, which determines the specific tasks required for production.
+    We distinguish between two types of tasks:
+
+    - Tasks that are performed by capital (typically routine tasks)
+    - Tasks that depend exclusively on labor (typically non-routine tasks)
+
+    The production function, based on a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
+    '''
     )
+
 
     st.latex(r"""
     q = \left[ a^\rho + wa^\rho \right]^{\frac{1}{\rho}}
