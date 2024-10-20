@@ -48,6 +48,16 @@ def UNIT1_1():
         '''
     )
 
+    st.write(
+        '''
+        **Work activities** result from the contribution or effort each employee in the firm exerts:
+        '''
+    )
+
+    st.latex(r"""
+    wa = f(e_1, e_2, \dots, e_L)
+    """)
+
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
     st.text_input("Use O*NET to decide which of activities above are **work activities**")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
