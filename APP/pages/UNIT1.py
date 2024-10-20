@@ -43,12 +43,8 @@ def UNIT1_1():
         '''
     )
 
-    st.write(
-        '''
-        Firms are classified into industries depending on the product they generate, 
-        which in turn determines the set of activities to be completed between capital and labor.
-    st.text_input("For a specific industry from [NACE](https://ec.europa.eu/eurostat/web/nace), enter the activities that need to be completed")
-    st.text_input("Use O*NET to decide the work activities for a firm in that industry")
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
+    st.text_input("Use O*NET to decide which of activities above are **work activities**)
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
