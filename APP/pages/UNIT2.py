@@ -78,7 +78,7 @@ def UNIT2_4():
     st.write(
         '''
         A job can be represented as a matrix of work activities where each column-vector
-        corresponds to a different work activity.
+        corresponds to a different work activity:
         '''
     )
              
