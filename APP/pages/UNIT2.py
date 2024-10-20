@@ -57,22 +57,22 @@ def UNIT2_4():
     
     st.latex(
         r'''
-        W_i  = 
+        W_j  = 
         \begin{pmatrix}
-        S_{1i} \\
-        S_{2i} \\ 
-        S_{3i} \\ 
-        S_{4i} \\
+        S_{1j} \\
+        S_{2j} \\ 
+        S_{3j} \\ 
+        S_{4j} \\
         \end{pmatrix}
         '''
     )
     
     st.write(
-    "Each element $s_{ij}$ of the vector indicates the extent to which skill $j$ is required for work activity $i$:"
+    "Each element $S_{ij}$ of the column vector indicates the extent to which skill $i$ is required for work activity $j$:"
     )    
     
     st.latex(r"""
-    0 \leq s_{ij} \leq 100
+    0 \leq S_{ij} \leq 100
     """)
              
     st.write(
@@ -83,12 +83,10 @@ def UNIT2_4():
              
     st.latex(r"""
     \begin{pmatrix}
-    s_{11} & s_{12} & s_{13} & s_{14} \\
-    s_{21} & s_{22} & s_{23} & s_{24} \\
-    s_{31} & s_{32} & s_{33} & s_{34} \\
-    s_{41} & s_{42} & s_{43} & s_{44} \\
-    s_{51} & s_{52} & s_{53} & s_{54} \\
-    s_{61} & s_{62} & s_{63} & s_{64} \\
+    S_{11} & S_{12} & S_{13} & S_{14} & S_{15} & S_{16} \\
+    S_{21} & S_{22} & S_{23} & S_{24} & S_{25} & S_{26} \\
+    S_{31} & S_{32} & S_{33} & S_{34} & S_{35} & S_{36} \\
+    S_{41} & S_{42} & S_{43} & S_{44} & S_{45} & S_{46} \\
     \end{pmatrix}
     """)
 
