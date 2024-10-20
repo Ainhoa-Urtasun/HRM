@@ -6,9 +6,9 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        ''' Each firm generates a unique product (good or service) using a mix of different tasks (task-based production approach). We differentiate between 
-        tasks that both capital and labor can execute (usually routine tasks) and tasks that exclusively rely on labor (usually nonroutine tasks).
-        The production function, following a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
+        '''Each firm produces a unique product (good or service) using a mix of different tasks, following a task-based production approach. 
+        We distinguish between tasks that both capital and labor can perform (typically routine tasks) and tasks that depend exclusively on labor (typically non-routine tasks). 
+        The production function, based on a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
         '''
     )
 
@@ -18,7 +18,7 @@ def UNIT1_1():
 
     st.write(
         ''' 
-        where $a$ represents activities that both capital and labor can execute and $wa$ represents work activities, exclusively carried out by labor.
+        where $a$ represents activities that both capital and labor can perform and $wa$ represents **work activities**, activities exclusively carried out by labor.
         The firm-specific elasticity of substitution is:
         '''
     )
