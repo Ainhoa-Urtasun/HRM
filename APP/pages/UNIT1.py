@@ -50,7 +50,7 @@ def UNIT1_1():
 
     st.write(
         '''
-        **Work activities** result from the contribution or effort each employee in the firm exerts:
+        **Work activities** require each employee to exert effort, where $e_i$ represents the effort exerted for employee $i$:
         '''
     )
 
