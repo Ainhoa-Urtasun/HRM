@@ -7,7 +7,8 @@ import numpy as np
 def UNIT3_1():
     st.write(
         '''
-        The transition matrix of a firm, $M$, represents employee mobility both wihin the firm, between different jobs, and from the
+        HR planning forecasts skill shortages or surpluses within the firm. A useful tool for HR planning is th
+        transition matrix of the firm, $M$. The transition matrix of the firm, $M$, represents employee mobility both wihin the firm, between different jobs, and from the
         firm to the external market.
         '''
     )
