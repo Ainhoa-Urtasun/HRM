@@ -114,53 +114,41 @@ def UNIT2_4():
     st.write('Use O*NET to represent a job with 4 work activities and 6 skills')
     W1, W2, W3, W4, W5, W6 = st.columns(6)
     with W1:
-        r1c1 = st.number_input("$S_{11}$", key="r1c1")
-        r2c1 = st.number_input("Row 2, Col 1", key="r2c1")
-        r3c1 = st.number_input("Row 3, Col 1", key="r3c1")
-        r4c1 = st.number_input("Row 4, Col 1", key="r4c1")
+        S11 = st.number_input("$S_{11}$", key="S11")
+        S21 = st.number_input(""$S_{21}$"", key="S21")
+        S31 = st.number_input(""$S_{31}$"", key="S31")
+        S41 = st.number_input(""$S_{41}$"", key="S41")
     with W2:
-        r1c2 = st.number_input("Row 1, Col 2", key="r1c2")
-        r2c2 = st.number_input("Row 2, Col 2", key="r2c2")
-        r3c2 = st.number_input("Row 3, Col 2", key="r3c2")
-        r4c2 = st.number_input("Row 4, Col 2", key="r4c2")
+        S12 = st.number_input("$S_{12}$", key="S12")
+        S22 = st.number_input("$S_{22}$", key="S22")
+        S32 = st.number_input("$S_{32}$", key="S32")
+        S42 = st.number_input("$S_{42}$", key="S42")
     with W3:
-        r1c3 = st.number_input("Row 1, Col 3", key="r1c3")
-        r2c3 = st.number_input("Row 2, Col 3", key="r2c3")
-        r3c3 = st.number_input("Row 3, Col 3", key="r3c3")
-        r4c3 = st.number_input("Row 4, Col 3", key="r4c3")
+        S13 = st.number_input("$S_{13}$", key="S13")
+        S23 = st.number_input("$S_{23}$", key="S23")
+        S33 = st.number_input("$S_{33}$", key="S33")
+        S43 = st.number_input("$S_{43}$", key="S43")
     with W4:
-        r1c4 = st.number_input("Row 1, Col 4", key="r1c4")
-        r2c4 = st.number_input("Row 2, Col 4", key="r2c4")
-        r3c4 = st.number_input("Row 3, Col 4", key="r3c4")
-        r4c4 = st.number_input("Row 4, Col 4", key="r4c4")
+        S14 = st.number_input("$S_{13}$", key="S14")
+        S24 = st.number_input("$S_{24}$", key="S24")
+        S34 = st.number_input("$S_{34}$", key="S34")
+        S44 = st.number_input("$S_{44}$", key="S44")
     with W5:
-        r1c5 = st.number_input("Row 1, Col 5", key="r1c5")
-        r2c5 = st.number_input("Row 2, Col 5", key="r2c5")
-        r3c5 = st.number_input("Row 3, Col 5", key="r3c5")
-        r4c5 = st.number_input("Row 4, Col 5", key="r4c5")
+        S15 = st.number_input("$S_{15}$", key="S15")
+        S25 = st.number_input("$S_{25}$", key="S25")
+        S35 = st.number_input("$S_{35}$", key="S35")
+        S45 = st.number_input("$S_{45}$", key="S45")
     with W6:
-        r1c6 = st.number_input("Row 1, Col 6", key="r1c6")
-        r2c6 = st.number_input("Row 2, Col 6", key="r2c6")
-        r3c6 = st.number_input("Row 3, Col 6", key="r3c6")
-        r4c6 = st.number_input("Row 4, Col 6", key="r4c6")
-
-
-    matrix = np.zeros((6, 4))
-
+        S16 = st.number_input("$S_{16}$", key="S16")
+        S26 = st.number_input("$S_{26}$", key="S26")
+        S36 = st.number_input("$S_{36}$", key="S36")
+        S46 = st.number_input("$S_{46}$", key="S46")
+    
     if st.button("Submit"):
-        try:
-            user_inputs = [skills1, skills2, skills3, skills4, skills5, skills6]
-            matrix = [list(map(float, input_str.split(','))) for input_str in user_inputs]
-
-            # Check if all rows have exactly 4 values and there are 6 rows
-            if all(len(row) == 4 for row in matrix) and len(matrix) == 6:
-                matrix_np = np.array(matrix)
-                st.write("Here is your 6X4 matrix:")
-                st.write(matrix_np)
-            else:
-                st.write("Please enter exactly 4 numeric values for each skill input.")
-        except ValueError:
-            st.write("Please enter valid numeric values for the skills.")
+        matrix = np.array[[S11 S12 S13 S14 S15 S16],
+        [],
+        [],
+        []]
             
     job_complexity = np.sum(matrix)
     st.write(f"Job Complexity: {job_complexity}")
