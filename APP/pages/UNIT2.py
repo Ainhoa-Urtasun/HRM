@@ -145,13 +145,15 @@ def UNIT2_4():
         S46 = st.number_input("$S_{46}$", key="S46")
     
     if st.button("Submit"):
-        matrix = np.array[[S11, S12, S13, S14, S15, S16],
-        [S21, S22, S23, S24, S25, S26],
-        [S31, S32, S33, S34, S35, S36],
-        [S41, S42, S43, S44, S45, S46]]
-            
-    job_complexity = np.sum(matrix)
-    st.write(f"Job Complexity: {job_complexity}")
+        matrix = np.array([
+            [S11, S12, S13, S14, S15, S16],
+            [S21, S22, S23, S24, S25, S26],
+            [S31, S32, S33, S34, S35, S36],
+            [S41, S42, S43, S44, S45, S46]
+        ])
+    
+        job_complexity = np.sum(matrix)
+        st.write(f"Job Complexity: {job_complexity}")
 
 def UNIT2_5():
     st.write("The cosine similarity between two work activities $W_i$ and $W_j$ is defined as follows:")
