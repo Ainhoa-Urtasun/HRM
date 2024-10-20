@@ -13,17 +13,25 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    Y = \left[ (T_r)^\rho + T_{nr}^\rho \right]^{\frac{1}{\rho}}
+    Y = \left[ A^\rho + WA^\rho \right]^{\frac{1}{\rho}}
     """)
 
     st.write(
-        ''' where the firm-specific elasticity of substitution is:
+        ''' 
+        where the firm-specific elasticity of substitution is:
         '''
     )
 
     st.latex(r"""
     \sigma = \frac{1}{1 - \rho}
     """)
+
+    st.write(
+        '''
+        In this course we focus on how HRM applies to nonroutine tasks $T_nr$ that employees carry out. We use O*NET terminology
+        to refer to these nonroutine tasks as **work activities** and model them as join production function:
+        '''
+    )
 
     st.write(
         '''
