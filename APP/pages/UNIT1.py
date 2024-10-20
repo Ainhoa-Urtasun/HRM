@@ -37,7 +37,7 @@ def UNIT1_1():
         '''
         Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
         by implementing HRM practices
-        such as 
+        such as: 
         - **Job analysis and design**
         - **HR planning**
         - **Recruiting**
@@ -59,17 +59,8 @@ def UNIT1_1():
     """)
 
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
-    st.text_input("Use O*NET to decide which of activities above are **work activities**")
+    st.text_input("Use O*NET to identify **work activities** from the activities listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
-
-    with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
-        st.write("- $L$ number of employees at the firm")
-        st.write("- $e_1, e_2, e_3,...,e_L$ effort exerted by each employee at the firm")
-        st.write("- $Q(e_1, e_2, e_3,...,e_L)$ production function of the firm")
-        st.write("- $W_1, W_2, W_3, W_4, W_5, W_6$ work activities performed by employees")
-        st.write("- $S_1, S_2, S_3, S_4$ skills possessed by employees")
-
-    st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
 def UNIT1_2():
     st.write(
