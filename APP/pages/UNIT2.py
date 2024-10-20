@@ -55,16 +55,17 @@ def UNIT2_4():
     "In the context of job analysis and design, it is useful to represent a work activity as a column-vector of skills:"
     )
     
-    st.latex(r
-             '''
-             W_i  = 
-             \begin{pmatrix}
-             S_{1i} \\
-             S_{2i} \\ 
-             S_{3i} \\ 
-             S_{4i} \\
-             \end{matrix}
-            '''
+    st.latex(
+        r'''
+        W_i  = 
+        \begin{pmatrix}
+        S_{1i} \\
+        S_{2i} \\ 
+        S_{3i} \\ 
+        S_{4i} \\
+        \end{matrix}
+        '''
+    )
     
     st.write(
     "Each element $s_{ij}$ of the vector indicates the extent to which skill $j$ is required for work activity $i$:"
