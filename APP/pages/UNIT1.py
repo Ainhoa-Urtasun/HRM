@@ -4,7 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def UNIT1_1():
+der UNIT1_1():
+    st.latex(r"""
+    Y = \left[ \alpha(K \cdot L_r)^\rho + (1 - \alpha)L_{nr}^\rho \right]^{\frac{1}{\rho}}
+    """)
+
     st.write(
         '''
         Human resource management (HRM) takes on the **organization** and **motivation** of employees by implementing HRM practices
@@ -19,7 +23,6 @@ def UNIT1_1():
         '''
     )
 
-def UNIT1_2():
     st.write(
         '''
         Firms make two important decisions:
@@ -100,7 +103,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM", "HRM in context", "Notation for the course", "Labor productivity and unit labor cost (ULC)"],  # required
+    options=["HRM in context", "Notation for the course", "Labor productivity and unit labor cost (ULC)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -108,8 +111,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "HRM":
-    UNIT1_1()
 elif selected == "HRM in context":
     UNIT1_2()
 elif selected == "Notation for the course":
