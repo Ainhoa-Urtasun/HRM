@@ -6,7 +6,8 @@ import numpy as np
 
 def UNIT1_1():
     st.write(
-        '''Each firm produces a unique product (good or service) using a mix of different tasks, following a task-based production approach. 
+        '''Firms produce a product (good or service) using a mix of different tasks. They are classified into industries depending on the output which in turn 
+        determines the set of tasks to be completed.
         We distinguish between tasks that are performed by capital (typically routine tasks) and tasks that depend exclusively on labor (typically non-routine tasks). 
         The production function, based on a CES (Constant Elasticity of Substitution) structure, is expressed as (Cnossen, 2024):
         '''
@@ -42,6 +43,10 @@ def UNIT1_1():
         '''
     )
 
+    st.write(
+        '''
+        Firms are classified into industries depending on the product they generate, 
+        which in turn determines the set of activities to be completed between capital and labor.
     st.text_input("For a specific industry from [NACE](https://ec.europa.eu/eurostat/web/nace), enter the activities that need to be completed")
     st.text_input("Use O*NET to decide the work activities for a firm in that industry")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
