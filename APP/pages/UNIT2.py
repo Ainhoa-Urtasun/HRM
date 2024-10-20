@@ -108,7 +108,7 @@ def UNIT2_4():
         '''
     )
 
-    st.latex(r'\text{Job complexity = } \sum_{j=1}^{6} S_{1j} + S_{2j} + S_{3j} + S_{4j}')
+    st.latex(r'\text{Job complexity = } \sum_{j=1}^{6} (S_{1j} + S_{2j} + S_{3j} + S_{4j})')
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
 
