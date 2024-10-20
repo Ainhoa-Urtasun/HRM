@@ -18,7 +18,8 @@ def UNIT1_1():
 
     st.write(
         ''' 
-        where the firm-specific elasticity of substitution is:
+        where $a$ represents activities that both capital and labor can execute and $wa$ represents work activities, exclusively carried out by labor.
+        The firm-specific elasticity of substitution is:
         '''
     )
 
