@@ -29,14 +29,8 @@ def UNIT1_1():
 
     st.write(
         '''
-        In this course we focus on how HRM applies to nonroutine tasks $T_nr$ that employees carry out. We use O*NET terminology
-        to refer to these nonroutine tasks as **work activities** and model them as join production function:
-        '''
-    )
-
-    st.write(
-        '''
-        Human resource management (HRM) takes on the **organization** and **motivation** of employees by implementing HRM practices
+        Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
+        by implementing HRM practices
         such as 
         - **Job analysis and design**
         - **HR planning**
@@ -48,26 +42,6 @@ def UNIT1_1():
         '''
     )
 
-    st.write(
-        '''
-        Firms make two important decisions:
-
-        1. **What to produce:** This decision determines the output (product or service) and, in turn, the tasks that need to be
-        completed. Firms are classified into industries depending on this decision. See [NACE](https://ec.europa.eu/eurostat/web/nace)
-
-        2. **How to produce it:** This involves deciding which technology to use and how to allocate tasks between labor and technology
-            
-        '''
-    )
-
-    st.write(
-        '''
-        The activities that labor needs to
-        carry out are called **work activities** and HRM is responsible for organizing and motivating employees to carry out
-        these **work activities** efficiently and effectively.
-        '''
-    )
-    
     st.text_input("For a specific industry from [NACE](https://ec.europa.eu/eurostat/web/nace), enter the activities that need to be completed")
     st.text_input("Use O*NET to decide the work activities for a firm in that industry")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
