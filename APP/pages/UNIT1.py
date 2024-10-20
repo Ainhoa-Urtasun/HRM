@@ -47,7 +47,6 @@ def UNIT1_1():
     st.text_input("Use O*NET to decide the work activities for a firm in that industry")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
-def UNIT1_3():
     with st.expander("Show the notation for the **Human Resource Management (HRM)** course"):
         st.write("- $L$ number of employees at the firm")
         st.write("- $e_1, e_2, e_3,...,e_L$ effort exerted by each employee at the firm")
@@ -57,7 +56,7 @@ def UNIT1_3():
 
     st.write("Use the section above to view the notation for the **Human Resource Management (HRM)** course.")
 
-def UNIT1_4():
+def UNIT1_2():
     st.write(
         '''
         Employees significantly influence the firm's performance and profitability. 
@@ -103,7 +102,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM in context", "Notation for the course", "Labor productivity and unit labor cost (ULC)"],  # required
+    options=["HRM in context", "Labor productivity and unit labor cost (ULC)"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -112,9 +111,7 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "HRM in context":
-    UNIT1_2()
-elif selected == "Notation for the course":
-    UNIT1_3()
+    UNIT1_1()
 elif selected == "Labor productivity and unit labor cost (ULC)":
-    UNIT1_4()
+    UNIT1_2()
 
