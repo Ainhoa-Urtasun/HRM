@@ -7,28 +7,28 @@ import numpy as np
 def UNIT1_1():
     st.write(
     '''
-    Firms produce output (goods or service)s by combining various activities.
-    They are classified into industries based on the output, which determines the specific tasks required for production.
+    Firms produce output (goods or services) by combining various activities.
+    They are classified into industries based on their output, which determines the specific activities required for production.
     We distinguish between two types of activities:
 
-    - $a$ activities that are performed by technology (usually routine activities)
-    - $wa$ **work activities** that depend exclusively on labor (usually non-routine activities)
+    - $A$ activities that are performed by technology (usually routine activities)
+    - $W$ **work activities** that depend exclusively on labor (usually non-routine activities)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    q = min (a, wa)
+    Q = min (A, W)
     """)
 
     st.write(
         ''' 
         where:
 
-        - $q$ is the output
-        - $a$ activities that capital performs
-        - $wa$ **work activities**, activities exclusively carried out by labor
+        - $A$ is the output
+        - $A$ activities that capital performs
+        - $W$ **work activities**, activities exclusively carried out by labor
         
         We assume that activities performed by capital $a$ and **work activities** $wa$ are perfect complements,
         meaning they are both necessary for the firm to produce.
