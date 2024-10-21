@@ -12,14 +12,14 @@ def UNIT1_1():
     We distinguish between two types of activities:
 
     - $A$ activities that are performed by technology (usually routine activities)
-    - $W$ **work activities** that depend exclusively on labor (usually non-routine activities)
+    - $WA$ **work activities** that depend exclusively on labor (usually non-routine activities)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    Q = min (A, W)
+    Q = min (a \times A, wa \times WA)
     """)
 
     st.write(
