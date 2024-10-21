@@ -42,6 +42,11 @@ def UNIT1_1():
     \sigma = \frac{1}{1 - \rho}
     """)
 
+    st.latex(r"""
+    \sigma = \frac{\%\ \text{change in the ratio of inputs}}{\%\ \text{change in the relative price of inputs}}
+    """)
+
+
     st.write(
         '''
         We assume an elasticity of substitution less than 1, indicating that the 
