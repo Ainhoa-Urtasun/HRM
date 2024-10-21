@@ -11,15 +11,15 @@ def UNIT1_1():
     They are classified into industries based on their output, which determines the specific activities required for production.
     We distinguish between two types of activities:
 
-    - $A$ activities that are performed by technology (usually routine activities)
-    - $WA$ **work activities** that depend exclusively on labor (usually non-routine activities)
+    - $T$ activities that are performed by technology (usually routine activities)
+    - $E$ **work activities** that depend exclusively on employees (usually non-routine activities)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    Q = min (a \times A, wa \times WA)
+    Q = min (a \times T, b \times E)
     """)
 
     st.write(
