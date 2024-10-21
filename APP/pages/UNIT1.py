@@ -7,12 +7,12 @@ import numpy as np
 def UNIT1_1():
     st.write(
     '''
-    Firms produce output (goods or services) by combining various activities.
-    They are classified into industries based on their output, which determines the specific activities required for production.
-    We distinguish between two types of activities:
+    Firms produce output (goods or services) by combining various tasks or activities.
+    Firms are classified into industries based on their output, which determines the specific tasks required for production.
+    We distinguish between two types of tasks:
 
-    - $T$ activities that are performed by technology (usually routine activities)
-    - $E$ **work activities** that depend exclusively on employees (usually non-routine activities)
+    - $T$ technology-tasks that are performed by technology (usually routine activities)
+    - $E$ employee-tasks that depend exclusively on employees (usually non-routine activities)
 
     We represent production as a Leontieff production function:
     '''
@@ -27,13 +27,15 @@ def UNIT1_1():
         where:
 
         - $Q$ is the output
-        - $A$ activities that capital performs
-        - $W$ **work activities**, activities exclusively carried out by labor
+        - $T$ technology-tasks, or tasks that technology performs
+        - $a$ proportion of technology-tasks
+        - $E$ employee-tasks, or tasks exclusively carried out by employees
+        - $b$ proportion of employee-tasks
         
-        We assume that the activities that capital performs $A$ and the **work activities** $W$ are perfect complements,
+        We assume that technology-tasks $T$ and employee-tasks $E$ are perfect complements,
         meaning they are both necessary for production.
         
-        Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
+        Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing employee-tasks $E$
         by implementing HRM practices
         such as: 
         - **Job analysis and design**
@@ -44,13 +46,13 @@ def UNIT1_1():
         - **Career development**
         - **Compensation**
         
-        **Work activities** require each employee to exert effort:
+        Employee-tasks require each employee to exert effort:
         
         '''
     )
 
     st.latex(r"""
-    W = f(e_1, e_2, \dots, e_L)
+    E = f(e_1, e_2, \dots, e_L)
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
@@ -58,16 +60,15 @@ def UNIT1_1():
     st.text_input("Use O*NET to identify **work activities** from the activities listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
-
-    a = st.sidebar.number_input('Proportion of activities (A):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
-    w = st.sidebar.number_input('Proportion of work activities (W):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    a = st.sidebar.number_input('Proportion of technology-tasks (T):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    w = st.sidebar.number_input('Proportion of employee-tasks (E):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
         plt.plot([a * q, a * q], [w * q, w * 10], color='b')  # vertical line (fixed A)
         plt.plot([a * q, a * 10], [w * q, w * q], color='b')  # horizontal line (fixed W)
-        plt.xlabel("Activities (A)")
-    plt.ylabel("Work activities (W)")
+        plt.xlabel("Technology-tasks (T)")
+    plt.ylabel("Employee-tasks (E)")
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
     st.pyplot(fig)
