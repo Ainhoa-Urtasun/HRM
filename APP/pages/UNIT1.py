@@ -59,19 +59,24 @@ def UNIT1_1():
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
     a = st.sidebar.text_input('Proportion of activities:',)
+    a, w = st.columns(2)
+    with a:
+        a1 = st.number_input("activity proportion", key="a1")
+    with b:
+        b1 = st.number_input("work activity proportion", key="b1")
     A = np.linspace(0, 10, 100)
     W = np.linspace(0, 10, 100)
     isoquant_levels = [1, 2, 3, 4, 5]
-    plt.figure(figsize=(6, 6))
+    fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
-        plt.plot([q, q], [q, 10], color='b')  # vertical line (fixed capital)
-        plt.plot([q, 10], [q, q], color='b')  # horizontal line (fixed labor)
+        plt.plot([a*q, a*q], [b*q, b*10], color='b')  # vertical line (fixed capital)
+        plt.plot([a*q, a*10], [b*q, b*q], color='b')  # horizontal line (fixed labor)
 
     plt.xlabel("Activities (A)")
     plt.ylabel("Work activities (W)")
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
-    plt.show()
+    st.pyplot(fig)
 
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
     revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
