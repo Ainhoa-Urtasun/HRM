@@ -56,8 +56,8 @@ def UNIT1_1():
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
-    st.text_input("Use O*NET to identify **work activities** from the activities listed above")
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activitiesthat need to be completed")
+    st.text_input("Use O*NET to identify employee-tasks from the tasks listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
     a = st.sidebar.number_input('Proportion of technology-tasks (T):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
