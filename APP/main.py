@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.markdown("# Main page 🎈")
-st.sidebar.markdown("# Main page 🎈")
+st.markdown("# HUMAN RESOURCE MANAGEMENT (HRM) ✓")
+st.sidebar.markdown("# Professor: Ainhoa Urtasun\n Spring 2025")
 
