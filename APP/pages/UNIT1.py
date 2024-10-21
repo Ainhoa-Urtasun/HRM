@@ -26,12 +26,12 @@ def UNIT1_1():
         ''' 
         where:
 
-        - $A$ is the output
+        - $Q$ is the output
         - $A$ activities that capital performs
         - $W$ **work activities**, activities exclusively carried out by labor
         
-        We assume that activities performed by capital $a$ and **work activities** $wa$ are perfect complements,
-        meaning they are both necessary for the firm to produce.
+        We assume that the activities that capital performs $A$ and the **work activities** $W$ are perfect complements,
+        meaning they are both necessary for production.
         
         Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
         by implementing HRM practices
@@ -49,9 +49,10 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    wa = f(e_1, e_2, \dots, e_L)
+    W = f(e_1, e_2, \dots, e_L)
     """)
 
+    st.write('where $L$ is the number of employees.')
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the activities that need to be completed")
     st.text_input("Use O*NET to identify **work activities** from the activities listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
@@ -62,7 +63,7 @@ def UNIT1_2():
         Employees significantly influence the firm's performance and profitability. 
         '''
     )
-    st.latex(r'EBIT = pq - wL -rK')
+    st.latex(r'EBIT = pQ - wL -rK')
     st.write(
         '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
         and $r$ is the cost of technology. This values can be derived from the Income Statement. Let's see how we can use them 
