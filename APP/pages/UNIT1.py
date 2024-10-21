@@ -11,8 +11,8 @@ def UNIT1_1():
     Firms are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
-    - $T$ technology-tasks that are performed by technology (usually routine activities)
-    - $E$ employee-tasks that depend exclusively on employees (usually non-routine activities)
+    - $T$ technology-tasks that are performed by technology (usually routine tasks)
+    - $E$ employee-tasks that depend exclusively on employees (usually non-routine tasks)
 
     We represent production as a Leontieff production function:
     '''
@@ -56,7 +56,7 @@ def UNIT1_1():
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activitiesthat need to be completed")
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activities that need to be completed")
     st.text_input("Use O*NET to identify employee-tasks from the tasks listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
