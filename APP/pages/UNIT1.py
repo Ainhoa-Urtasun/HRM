@@ -14,7 +14,8 @@ def UNIT1_1():
     - Tasks that are performed by technology (usually routine tasks)
     - Tasks that depend exclusively on labor (usually non-routine tasks)
 
-    We represent the production function of a firm as a Constant Elasticity of Substitution (CES) production function as in Cnossen (2024):
+    We follow the task-based approach torepresent the production function of a firm as 
+    a Constant Elasticity of Substitution (CES) production function (Cnossen, 2024):
     '''
     )
 
