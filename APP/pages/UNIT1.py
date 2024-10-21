@@ -19,7 +19,7 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    q = A \left[ a^\rho + w a^\rho \right]^{\frac{1}{\rho}}
+    q = A \left[ \alpha a^\rho + (1 - \alpha) w a^\rho \right]^{\frac{1}{\rho}}
     """)
 
     st.write(
