@@ -29,8 +29,8 @@ def UNIT1_1():
         - $q$ is the output
         - $A$ is the total factor productivity (a scaling parameter)
         - $a$ and $wa$ are the inputs, with $a$ activities that capital performs and $wa$ **work activities**, activities exclusively carried out by labor.
-        - $$\alpha$$ is the distribution parameter
-        - $$\rho$$ determines the degree of substitution between the inputs
+        - $\\alpha$ is the distribution parameter
+        - $\\rho$ determines the degree of substitution between the inputs
         
         The firm-specific elasticity of substitution is:
         '''
