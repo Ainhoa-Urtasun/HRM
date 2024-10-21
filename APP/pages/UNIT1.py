@@ -62,8 +62,8 @@ def UNIT1_1():
     a, w = st.columns(2)
     with a:
         a1 = st.number_input("activity proportion", key="a1")
-    with b:
-        b1 = st.number_input("work activity proportion", key="b1")
+    with w:
+        w1 = st.number_input("work activity proportion", key="w1")
     A = np.linspace(0, 10, 100)
     W = np.linspace(0, 10, 100)
     isoquant_levels = [1, 2, 3, 4, 5]
