@@ -44,7 +44,8 @@ def UNIT1_1():
         - **Career development**
         - **Compensation**
         
-        **Work activities** require each employee to exert effort, where $e_i$ represents the effort exerted for employee $i$:
+        **Work activities** require each employee to exert effort:
+        
         '''
     )
 
