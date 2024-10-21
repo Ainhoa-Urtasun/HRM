@@ -58,6 +58,43 @@ def UNIT1_1():
     st.text_input("Use O*NET to identify **work activities** from the activities listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
+    a = st.sidebar.text_input('Proportion of activities:',)
+    A = np.linspace(0, 10, 100)
+    W = np.linspace(0, 10, 100)
+    isoquant_levels = [1, 2, 3, 4, 5]
+    plt.figure(figsize=(6, 6))
+    for q in isoquant_levels:
+        plt.plot([q, q], [q, 10], color='b')  # vertical line (fixed capital)
+        plt.plot([q, 10], [q, q], color='b')  # horizontal line (fixed labor)
+
+    plt.xlabel("Activities (A)")
+    plt.ylabel("Work activities (W)")
+    plt.title("Leontief Production Function (L-shaped Isoquants)")
+    plt.grid(True)
+    plt.show()
+
+    cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
+    revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
+    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
+    costs = np.fromstring(cost_input, sep=',')
+    revenues = np.fromstring(revenue_input, sep=',')
+    employees = np.fromstring(employees_input, sep=',')
+    labor_productivity = revenues / employees / 1000  # Convert to thousands
+    unit_labor_cost = costs / revenues       
+    df = pd.DataFrame({
+        "Year": ["2019", "2020", "2021"],
+        "Labor Productivity (in thousands)": labor_productivity,
+        "Unit Labor Cost": unit_labor_cost
+    })
+    fig, ax = plt.subplots()
+    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')
+    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')        
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Metrics')
+    ax.set_title("Trends in HRM metrics")
+    ax.legend()
+    st.pyplot(fig)
+
 def UNIT1_2():
     st.write(
         '''
