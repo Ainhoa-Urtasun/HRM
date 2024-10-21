@@ -11,7 +11,7 @@ def UNIT1_1():
     They are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
-    - Tasks that are performed by capital (usually routine tasks)
+    - Tasks that are performed by technology (usually routine tasks)
     - Tasks that depend exclusively on labor (usually non-routine tasks)
 
     We represent the production function of a firm as a Constant Elasticity of Substitution (CES) production function as in Cnossen (2024):
@@ -28,7 +28,8 @@ def UNIT1_1():
 
         - $q$ is the output
         - $A$ is the total factor productivity (a scaling parameter)
-        - $a$ and $wa$ are the inputs, with $a$ activities that capital performs and $wa$ **work activities**, activities exclusively carried out by labor.
+        - $a$ activities that capital performs
+        - $wa$ **work activities**, activities exclusively carried out by labor
         - $\\alpha$ is the distribution parameter
         - $\\rho$ determines the degree of substitution between the inputs
         
@@ -43,10 +44,11 @@ def UNIT1_1():
     st.write(
         '''
         We assume an elasticity of substitution less than 1, indicating that the 
-        two inputs are very poor substitutes for each other. 
-        This means that both inputs are essential in the production process, 
+        the activities that technology performs and the activities that labor performs,
+        **work activities** are very poor substitutes for each other. 
+        This means that both types of activities are essential in the production process, 
         and even if the price of one input decreases, it cannot be easily replaced by the other. 
-        As a result, both inputs are required together to maintain the same level of production, 
+        As a result, both inputs, labor and technology, are required together to maintain the same level of production, 
         highlighting their strong complementarity.
         '''
     )
