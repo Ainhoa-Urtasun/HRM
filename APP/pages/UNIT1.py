@@ -58,21 +58,15 @@ def UNIT1_1():
     st.text_input("Use O*NET to identify **work activities** from the activities listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
-    a = st.sidebar.text_input('Proportion of activities:',)
-    a, w = st.columns(2)
-    with a:
-        a1 = st.number_input("activity proportion", key="a1")
-    with w:
-        w1 = st.number_input("work activity proportion", key="w1")
-    A = np.linspace(0, 10, 100)
-    W = np.linspace(0, 10, 100)
+
+    a = st.sidebar.number_input('Proportion of activities (A):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    w = st.sidebar.number_input('Proportion of work activities (W):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
-        plt.plot([a*q, a*q], [b*q, b*10], color='b')  # vertical line (fixed capital)
-        plt.plot([a*q, a*10], [b*q, b*q], color='b')  # horizontal line (fixed labor)
-
-    plt.xlabel("Activities (A)")
+        plt.plot([a * q, a * q], [w * q, w * 10], color='b')  # vertical line (fixed A)
+        plt.plot([a * q, a * 10], [w * q, w * q], color='b')  # horizontal line (fixed W)
+        plt.xlabel("Activities (A)")
     plt.ylabel("Work activities (W)")
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
