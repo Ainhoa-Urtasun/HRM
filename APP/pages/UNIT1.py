@@ -42,6 +42,17 @@ def UNIT1_1():
 
     st.write(
         '''
+        We assume an elasticity of substitution less than 1, indicating that the 
+        two inputs are very poor substitutes for each other. 
+        This means that both inputs are essential in the production process, 
+        and even if the price of one input decreases, it cannot be easily replaced by the other. 
+        As a result, both inputs are required together to maintain the same level of production, 
+        highlighting their strong complementarity.
+        '''
+    )
+
+    st.write(
+        '''
         Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
         by implementing HRM practices
         such as: 
