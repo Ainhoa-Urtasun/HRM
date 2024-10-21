@@ -30,15 +30,9 @@ def UNIT1_1():
         - $a$ activities that capital performs
         - $wa$ **work activities**, activities exclusively carried out by labor
         
-    st.write(
-        '''
         We assume that activities performed by capital $a$ and **work activities** $wa$ are perfect complements,
         meaning they are both necessary for the firm to produce.
-        '''
-    )
-
-    st.write(
-        '''
+        
         Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing **work activities**
         by implementing HRM practices
         such as: 
@@ -50,10 +44,7 @@ def UNIT1_1():
         - **Career development**
         - **Compensation**
         '''
-    )
-
-    st.write(
-        '''
+        
         **Work activities** require each employee to exert effort, where $e_i$ represents the effort exerted for employee $i$:
         '''
     )
