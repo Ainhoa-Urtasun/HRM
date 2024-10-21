@@ -7,20 +7,19 @@ import numpy as np
 def UNIT1_1():
     st.write(
     '''
-    Firms produce output (goods or service)s by combining various tasks. 
-    They are classified into industries based on their output, which determines the specific tasks required for production.
-    We distinguish between two types of tasks:
+    Firms produce output (goods or service)s by combining various activities.
+    They are classified into industries based on the output, which determines the specific tasks required for production.
+    We distinguish between two types of activities:
 
-    - Tasks that are performed by technology (usually routine tasks)
-    - Tasks that depend exclusively on labor (usually non-routine tasks)
+    - $a$ activities that are performed by technology (usually routine activities)
+    - $wa$ **work activities** that depend exclusively on labor (usually non-routine activities)
 
-    We follow the task-based approach torepresent the production function of a firm as 
-    a Constant Elasticity of Substitution (CES) production function (Cnossen, 2024):
+    We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    q = A \left[ \alpha a^\rho + (1 - \alpha) w a^\rho \right]^{\frac{1}{\rho}}
+    q = min (a, wa)
     """)
 
     st.write(
@@ -28,34 +27,13 @@ def UNIT1_1():
         where:
 
         - $q$ is the output
-        - $A$ is the total factor productivity (a scaling parameter)
         - $a$ activities that capital performs
         - $wa$ **work activities**, activities exclusively carried out by labor
-        - $\\alpha$ is the distribution parameter
-        - $\\rho$ determines the degree of substitution between the inputs
         
-        The firm-specific elasticity of substitution is:
-        '''
-    )
-
-    st.latex(r"""
-    \sigma = \frac{1}{1 - \rho}
-    """)
-
-    st.latex(r"""
-    \sigma = \frac{\%\ \text{change in the ratio of inputs}}{\%\ \text{change in the relative price of inputs}}
-    """)
-
-
     st.write(
         '''
-        We assume an elasticity of substitution less than 1, indicating that the 
-        the activities that technology performs and the activities that labor performs,
-        **work activities** are very poor substitutes for each other. 
-        This means that both types of activities are essential in the production process, 
-        and even if the price of one input decreases, it cannot be easily replaced by the other. 
-        As a result, both inputs, labor and technology, are required together to maintain the same level of production, 
-        highlighting their strong complementarity.
+        We assume that activities performed by capital $a$ and **work activities** $wa$ are perfect complements,
+        meaning they are both necessary for the firm to produce.
         '''
     )
 
