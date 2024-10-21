@@ -7,7 +7,7 @@ import numpy as np
 def UNIT1_1():
     st.write(
     '''
-    Firms produce goods or services by combining various tasks. 
+    Firms produce output (goods or service)s by combining various tasks. 
     They are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
@@ -19,12 +19,19 @@ def UNIT1_1():
     )
 
     st.latex(r"""
-    q = \left[ a^\rho + wa^\rho \right]^{\frac{1}{\rho}}
+    q = \left A[ a^\rho + wa^\rho \right]^{\frac{1}{\rho}}
     """)
 
     st.write(
         ''' 
-        where $a$ represents activities that capital performs and $wa$ represents **work activities**, activities exclusively carried out by labor.
+        where:
+
+        - $q$ is the output
+        - $A$ is the total factor productivity (a scaling parameter)
+        - $a$ and $wa$ are the inputs, with $a$ activities that capital performs and $wa$ **work activities**, activities exclusively carried out by labor.
+        - $\alpha$ is the distribution parameter
+        - $\rho$ determines the degree of substitution between the inputs
+        
         The firm-specific elasticity of substitution is:
         '''
     )
