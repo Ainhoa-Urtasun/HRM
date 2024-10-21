@@ -60,8 +60,8 @@ def UNIT1_1():
     st.text_input("Use O*NET to identify employee-tasks from the tasks listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
-    a = st.sidebar.number_input('Proportion of technology-tasks (T):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
-    w = st.sidebar.number_input('Proportion of employee-tasks (E):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    a = st.sidebar.number_input('Proportion of technology-tasks (a):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    w = st.sidebar.number_input('Proportion of employee-tasks (b):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
