@@ -12,17 +12,14 @@ def UNIT1_1():
 
     - **What output (good or service) to produce**: This decision determines the set of tasks the firm needs to complete 
     using both technology and employees, as well as the industry in which the firm is classified.
-    - **How to produce it**: This involves (1) choosing which technology to use, (2) deciding how to assign 
-    tasks to either technology or employees—determining which tasks to automate (automated tasks) and which 
-    tasks employees will carry out (job tasks), and (3) selecting the HRM strategy to implement.
-
-    There are two main HRM strategies:
-
-    - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
-    skills development, and fostering innovation, aiming for long-term productivity, employee engagement, 
-    and sustainable growth.
-    - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
-    and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
+    - **How to produce it**:
+        1. Which technology to use
+        2. Which tasks to automate (automated-tasks) and which tasks employees will carry out (job-tasks)
+        3. Which HRM strategy to implement. There are two main HRM strategies:
+            - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
+            skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
+            - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
+            and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
 
     This course teaches how to implement HRM practices—such as job analysis and design, HR planning, recruitment, performance 
     evaluation, training, career development, and compensation—to job tasks, assuming the firm has already decided what output to produce, 
