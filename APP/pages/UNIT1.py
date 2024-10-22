@@ -28,7 +28,7 @@ def UNIT1_1():
     )
 
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and list the tasks a firm in that industry needs to complete using both technology and employees.")
-    st.text_input("Select 6 job-tasks for employees in that industry from [O*NET](https://www.onetcenter.org/database.html#act) that will be carried out by workers (job tasks).")
+    st.text_input("Select 6 job-tasks for employees at a firm in that industry from [O*NET](https://www.onetcenter.org/database.html#act).")
  
 def UNIT1_2():
 
