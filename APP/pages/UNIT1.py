@@ -14,7 +14,7 @@ def UNIT1_1():
     the industry in which the firm is classified.
     - **How to produce it**:
         1. Which technology to use
-        2. How to assign the set of activities to technology (**Automated-Tasks**) and/or to employees (**Tasks**)
+        2. Which activities to assign to technology (**Automated-Tasks**) and which ones to employees (**Tasks**)
         3. Which HRM strategy to implement. There are two main HRM strategies:
             - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
             skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
