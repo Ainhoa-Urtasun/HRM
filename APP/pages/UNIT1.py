@@ -5,6 +5,36 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
+
+    st.write(
+    '''
+    Firms make two key decisions:
+
+    - **What output (good or service) to produce**: This decision determines the set of tasks the firm needs to complete 
+    using both technology and employees, as well as the industry in which the firm is classified.
+    - **How to produce it**: This involves (1) choosing which technology to use, (2) deciding how to assign 
+    tasks to either technology or employees—determining which tasks to automate (automated tasks) and which 
+    tasks employees will carry out (job tasks), and (3) selecting the HRM strategy to implement.
+
+    There are two main HRM strategies:
+
+    - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
+    skills development, and fostering innovation, aiming for long-term productivity, employee engagement, 
+    and sustainable growth.
+    - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
+    and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
+
+    This course teaches how to implement HRM practices—such as job analysis and design, HR planning, recruitment, performance 
+    evaluation, training, career development, and compensation—to job tasks, assuming the firm has already decided what output to produce, 
+    which technology to use, and which tasks to automate, while following a high-road HRM strategy.
+    '''
+    )
+    
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activities that need to be completed")
+    st.text_input("Pick up 6 job-tasks from [O*NET]()")
+
+def UNIT1_2():
+
     st.write(
     '''
     Firms produce output (goods or services) by combining various tasks or activities.
@@ -35,31 +65,6 @@ def UNIT1_1():
         We assume that automated-tasks $A$ and job-tasks $B$ are perfect complements,
         meaning they are both necessary for production.
         
-        Human resource management (HRM) takes on the **organization** and **motivation** of 
-        employees in performing job-tasks $B$
-        by implementing HRM practices
-        such as: 
-        - **Job analysis and design**
-        - **HR planning**
-        - **Recruiting**
-        - **Performance evaluation**
-        - **Training**
-        - **Career development**
-        - **Compensation**
-
-        There are two HRM strategies:
-
-        - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
-        skills development, and fostering innovation, aiming for long-term productivity, employee engagement, 
-        and sustainable growth.
-        - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
-        and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
-
-        How firms implement HRM practices will depend on their chosen HRM strategy. 
-        A high-road HRM strategy will focus on practices such as providing comprehensive employee training, 
-        offering competitive compensation, and promoting career development. In contrast, a low-road HRM strategy 
-        will prioritize practices aimed at minimizing costs, such as reducing training opportunities, 
-        offering lower wages, and focusing on short-term labor efficiency over long-term employee development
 
         Job-tasks $B$ require each employee to exert effort:
         
@@ -71,9 +76,7 @@ def UNIT1_1():
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activities that need to be completed")
-    st.text_input("Use O*NET to identify employee-tasks from the tasks listed above")
-    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
+   
 
     a = st.sidebar.number_input('Proportion of automated-tasks (a):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     b = st.sidebar.number_input('Proportion of job-tasks (b):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
@@ -110,7 +113,7 @@ def UNIT1_1():
     ax.legend()
     st.pyplot(fig)
 
-def UNIT1_2():
+def UNIT1_3():
     st.write(
         '''
         Employees significantly influence the firm's performance and profitability. 
@@ -156,7 +159,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HRM in context", "Labor productivity and unit labor cost (ULC)"],  # required
+    options=['Human Resource Management (HRM)','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -164,8 +167,10 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "HRM in context":
+if selected == 'Human Resource Management(HRM)':
     UNIT1_1()
-elif selected == "Labor productivity and unit labor cost (ULC)":
+elif selected == 'Notation for the course':
     UNIT1_2()
+elif selected == 'Labor productivity and unit labor cost (ULC)':
+    UNIT1_3()
 
