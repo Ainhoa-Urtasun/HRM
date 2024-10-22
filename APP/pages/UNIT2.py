@@ -8,14 +8,14 @@ from numpy.linalg import norm
 def UNIT2_1():
     st.write(
         '''
-       Cedefop (European Centre for the Development of Vocational Training) is a useful resource for 
+       [Skills Intelligence by Cedefop (European Centre for the Development of Vocational Training)]
+       ('https://www.cedefop.europa.eu/en/tools/skills-intelligence') is a useful resource for 
        job analysis and design in Europe. In combination with ESCO (European Skills, Competences, 
        Qualifications, and Occupations), they are making progress toward becoming the European equivalent 
        of O*NET (Occupational Information Network), which is the U.S. system that provides detailed 
        information on job tasks, skills, and qualifications across various occupations.
         '''
     )
-    st.components.v1.iframe("https://www.cedefop.europa.eu/en/tools/skills-intelligence", width=800, height=1000, scrolling=True)
     
 def UNIT2_2():
     st.write("""
