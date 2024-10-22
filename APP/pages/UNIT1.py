@@ -44,8 +44,9 @@ def UNIT1_2():
         - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
         - $e_i$ effort employee $i$ exerts at the firm
         - $L$ number of employees at the firm
-        - $T_1, T_2, T_3, T$ tasks employees carry out
-        - $S_1, S_2, $ skills employees have      
+        - $EBIT = pQ - wL - rK$ Earnings Before Interest and Taxes (EBIT) of the firm
+        - $T_1, T_2, T_3, T_4, T_5$ tasks employees carry out
+        - $S_1, S_2, S_3, S_4, S_5, S_6, S_7, S_8, S_9$ skills employees have      
         '''
     )
 
