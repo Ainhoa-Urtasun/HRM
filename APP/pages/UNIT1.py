@@ -8,8 +8,8 @@ def UNIT1_1():
 
     st.write(
     '''
-    Firms are grouped into sectors based on their economic activity. To perform this activity, 
-    firms must decide which technology to adopt and which occupations to employ. 
+    Firms are grouped into sectors based on their economic activities. To perform these economic activities, 
+    firms decide which technology to adopt and which occupations to employ. 
     An occupation refers to a group of jobs that involve similar tasks and duties, as well as the 
     same qualifications and skills requirements. Economic activities and occupations are classified using standard systems, 
     such as NACE (Nomenclature of Economic Activities) for industries and 
