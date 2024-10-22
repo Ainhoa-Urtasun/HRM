@@ -167,7 +167,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'Human Resource Management(HRM)':
+if selected == 'Human Resource Management (HRM)':
     UNIT1_1()
 elif selected == 'Notation for the course':
     UNIT1_2()
