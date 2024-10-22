@@ -72,7 +72,6 @@ def UNIT1_2():
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
    
-
     a = st.sidebar.number_input('Proportion of Automated-Tasks (x):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     b = st.sidebar.number_input('Proportion of Job-Tasks (y):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
@@ -85,29 +84,7 @@ def UNIT1_2():
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
     st.pyplot(fig)
-
-    cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
-    revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    costs = np.fromstring(cost_input, sep=',')
-    revenues = np.fromstring(revenue_input, sep=',')
-    employees = np.fromstring(employees_input, sep=',')
-    labor_productivity = revenues / employees / 1000  # Convert to thousands
-    unit_labor_cost = costs / revenues       
-    df = pd.DataFrame({
-        "Year": ["2019", "2020", "2021"],
-        "Labor Productivity (in thousands)": labor_productivity,
-        "Unit Labor Cost": unit_labor_cost
-    })
-    fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')
-    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')        
-    ax.set_xlabel('Year')
-    ax.set_ylabel('Metrics')
-    ax.set_title("Trends in HRM metrics")
-    ax.legend()
-    st.pyplot(fig)
-
+    
 def UNIT1_3():
     st.write(
         '''
