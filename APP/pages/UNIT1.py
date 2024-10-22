@@ -12,7 +12,7 @@ def UNIT1_1():
     We distinguish between two types of tasks:
 
     - $A$ automated-tasks (carried out by technology)
-    - $J$ job-tasks (carried out by employees)
+    - $B$ job-tasks (carried out by employees)
 
     We represent production as a Leontieff production function:
     '''
@@ -35,7 +35,8 @@ def UNIT1_1():
         We assume that automated-tasks $A$ and job-tasks $B$ are perfect complements,
         meaning they are both necessary for production.
         
-        Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing employee-tasks $E$
+        Human resource management (HRM) takes on the **organization** and **motivation** of 
+        employees in performing job-tasks $B$
         by implementing HRM practices
         such as: 
         - **Job analysis and design**
