@@ -19,26 +19,30 @@ def UNIT2_1():
     
 def UNIT2_2():
     st.write("""
-        A **Job-Task** is an action performed by an employee that results in a specific output.
-        O*NET identifies many distinct Job-Tasks. For simplicity, we consider just that the firm requires 
-        its employees to perform 6 different Job-Tasks: $T_1, T_2, T_3, T_4, T_5, T_6$.
+        A **task** is an action performed by an employee that results in a specific output.
+        [Skill intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+        identifies 5 pillar tasks: 
+        
+    - $T_1$ Intellectual
+    - $T_2$ Physical
+    - $T_3$ Social
+    - $T_4$ Use of methods
+    - $T_5$ Use of technology
         """
     )
 
-    st.write("Enter 6 work activities ($W_i$) from O*NET:")
-    st.text_input("$W_1$")
-    st.text_input("$W_2$")
-    st.text_input("$W_3$")
-    st.text_input("$W_4$")
-    st.text_input("$W_5$")
-    st.text_input("$W_6$")
-    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/4.A", width=800, height=1000, scrolling=True)
-
 def UNIT2_3():
     st.write("""
-    **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform work activities. 
-    Skills themselves do not directly produce output; rather, they enable the completion of tasks. There are various classifications of skills. 
-    Here, for simplicity, we focus on 4 skills: $S_1, S_2, S_3, S_4$
+    **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
+    tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
+    [Skill intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/trend-focus/skills-online-job-advertisements?year=2023&country=EU27_2020#3)
+    identifies 9 transversal skills and competences as the most requested skills in online job ads in EU27:
+
+    - $T_1$ Intellectual
+    - $T_2$ Physical
+    - $T_3$ Social
+    - $T_4$ Use of methods
+    - $T_5$ Use of technology
     """
     )
 
