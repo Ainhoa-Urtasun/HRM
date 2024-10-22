@@ -15,7 +15,7 @@ def UNIT2_1():
        information on job tasks, skills, and qualifications across various occupations.
         '''
     )
-    st.components.v1.iframe("https://www.cedefop.europa.eu/en", width=800, height=1000, scrolling=True)
+    st.components.v1.iframe("https://www.cedefop.europa.eu/en/tools/skills-intelligence", width=800, height=1000, scrolling=True)
     
 def UNIT2_2():
     st.write("""
