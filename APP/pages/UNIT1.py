@@ -49,14 +49,14 @@ def UNIT1_2():
     We distinguish between two types of tasks:
 
     - **Automated-Tasks** (carried out by technology)
-    - **Job-Tasks** (carried out by employees)
+    - **Tasks** (carried out by employees)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    Q = min [x(\text{Automated-Tasks}), y(\text{Job-Tasks})]
+    Q = min [x(\text{Automated-Tasks}), y(\text{Tasks})]
     """)
 
     st.write(
@@ -65,32 +65,32 @@ def UNIT1_2():
 
         - $Q$ is the output
         - $x$ proportion of Automated-Tasks
-        - $y$ proportion of Job-Tasks
+        - $y$ proportion of Tasks (carried out by employees)
         
-        We assume that Automated-Tasks and Job-Tasks are perfect complements,
+        We assume that Automated-Tasks and Tasks (carried out by employees) are perfect complements,
         meaning they are both necessary for production.
         
 
-        Job-Tasks require each employee to exert effort:
+        Tasks require each employee to exert effort:
         
         '''
     )
 
     st.latex(r"""
-    \text{Job-Tasks} = f(e_1, e_2, \dots, e_L)
+    \text{Tasks} = f(e_1, e_2, \dots, e_L)
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
    
-    a = st.sidebar.number_input('Proportion of Automated-Tasks (x):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
-    b = st.sidebar.number_input('Proportion of Job-Tasks (y):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    x = st.sidebar.number_input('Proportion of Automated-Tasks (x):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    y = st.sidebar.number_input('Proportion of Job-Tasks (y):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
-        plt.plot([a * q, a * q], [b * q, b * 10], color='b')  # vertical line
-        plt.plot([a * q, a * 10], [b * q, b * q], color='b')  # horizontal line
-        plt.xlabel("Automated-tasks (A)")
-    plt.ylabel("Job-tasks (B)")
+        plt.plot([x * q, x * q], [y * q, y * 10], color='b')  # vertical line
+        plt.plot([x * q, x * 10], [y * q, y * q], color='b')  # horizontal line
+        plt.xlabel("Automated-tasks")
+    plt.ylabel("Tasks")
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
     st.pyplot(fig)
