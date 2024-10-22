@@ -8,10 +8,10 @@ from numpy.linalg import norm
 def UNIT2_1():
     st.write(
         '''
-       [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) is a useful resource for 
-       job analysis and design in Europe. Skills intelligence is produced by Cedefop 
-       (European Centre for the Development of Vocational Training), which, in combination with ESCO 
-       (European Skills, Competences, Qualifications, and Occupations), is making progress toward
+       [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) by CEDEFOP is a useful resource for 
+       job analysis and design in Europe. CEDEFOP 
+       (European Centre for the Development of Vocational Training) and ESCO 
+       (European Skills, Competences, Qualifications, and Occupations) are making progress toward
        becoming the European equivalent of O*NET (Occupational Information Network), 
        the U.S. system that provides detailed information on job tasks, skills, and qualifications across various occupations.
         '''
@@ -203,7 +203,7 @@ def UNIT2_5():
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["Skills intelligence by CEDEFOP", "Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -211,7 +211,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "O*NET":
+if selected == "Skills intelligence by CEDEFOP":
     UNIT2_1()
 elif selected == "Tasks":
     UNIT2_2()
