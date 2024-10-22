@@ -8,14 +8,14 @@ from numpy.linalg import norm
 def UNIT2_1():
     st.write(
         '''
-        O\\*NET Online is a comprehensive tool for career exploration and job analysis.
-        It offers detailed descriptions of the tasks, skills, and other attributes required for more than 1,000 jobs,
-        making it an invaluable resource for job seekers, workforce development professionals, and HR specialists.
-        By providing standardized information on various job roles, O\\*NET Online facilitates job analysis and design,
-        helping users understand the specific demands and characteristics of different occupations.
+       Cedefop (European Centre for the Development of Vocational Training) is a useful resource for 
+       job analysis and design in Europe. In combination with ESCO (European Skills, Competences, 
+       Qualifications, and Occupations), they are making progress toward becoming the European equivalent 
+       of O*NET (Occupational Information Network), which is the U.S. system that provides detailed 
+       information on job tasks, skills, and qualifications across various occupations.
         '''
     )
-    st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
+    st.components.v1.iframe("https://www.cedefop.europa.eu/en", width=800, height=1000, scrolling=True)
     
 def UNIT2_2():
     st.write("""
