@@ -19,10 +19,9 @@ def UNIT2_1():
     
 def UNIT2_2():
     st.write("""
-        A **work activity** is an action performed by an employee that results in a specific output.
-        O*NET identifies 41 distinct work activities. We consider, for simplicity, that the firm requires 
-        its employees to perform 6 work activities: $W_1, W_2, W_3, W_4, W_5, W_6$. 
-        In reality, of course, the number of work activities is much larger.
+        A **Job-Task** is an action performed by an employee that results in a specific output.
+        O*NET identifies many distinct Job-Tasks. For simplicity, we consider just that the firm requires 
+        its employees to perform 6 different Job-Tasks: $T_1, T_2, T_3, T_4, T_5, T_6$.
         """
     )
 
@@ -204,7 +203,7 @@ def UNIT2_5():
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Work Activities", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["O*NET", "Job-Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -214,7 +213,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "O*NET":
     UNIT2_1()
-elif selected == "Work Activities":
+elif selected == "Job-Tasks":
     UNIT2_2()
 elif selected == "Skills":
     UNIT2_3()
