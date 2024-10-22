@@ -26,10 +26,10 @@ def UNIT1_1():
     which technology to use, and which tasks to automate, while following a high-road HRM strategy.
     '''
     )
-    
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks any firm in that industry needs to complete")
-    st.text_input("For employees in a firm in that industry, pick up 6 job-tasks from [O*NET](https://github.com/Ainhoa-Urtasun/HRM/blob/main/APP/Task%20Statements.xlsx)")
 
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and list the tasks a firm in that industry needs to complete using both technology and employees.")
+    st.text_input("Select 6 job-tasks for employees in that industry from [O*NET](https://www.onetcenter.org/database.html#act) that will be carried out by workers (job tasks).")
+ 
 def UNIT1_2():
 
     st.write(
