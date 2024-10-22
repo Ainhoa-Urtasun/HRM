@@ -14,7 +14,7 @@ def UNIT1_1():
     using both technology and employees, as well as the industry in which the firm is classified.
     - **How to produce it**:
         1. Which technology to use
-        2. Which tasks to automate (automated-tasks) and which tasks employees will carry out (job-tasks)
+        2. Which tasks to automate (**automated-tasks**) and which tasks employees will carry out (**job-tasks**)
         3. Which HRM strategy to implement. There are two main HRM strategies:
             - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
             skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
@@ -22,13 +22,13 @@ def UNIT1_1():
             and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
 
     This course teaches how to implement HRM practices—such as job analysis and design, HR planning, recruitment, performance 
-    evaluation, training, career development, and compensation—to job tasks, assuming the firm has already decided what output to produce, 
+    evaluation, training, career development, and compensation—to **job-tasks**, assuming the firm has already decided what output to produce, 
     which technology to use, and which tasks to automate, while following a high-road HRM strategy.
     '''
     )
     
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activities that need to be completed")
-    st.text_input("Pick up 6 job-tasks from [O*NET](https://github.com/Ainhoa-Urtasun/HRM/blob/main/APP/Task%20Statements.xlsx)")
+    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks any firm in that industry needs to complete")
+    st.text_input("For employees in a firm in that industry, pick up 6 job-tasks from [O*NET](https://github.com/Ainhoa-Urtasun/HRM/blob/main/APP/Task%20Statements.xlsx)")
 
 def UNIT1_2():
 
