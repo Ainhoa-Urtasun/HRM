@@ -11,15 +11,15 @@ def UNIT1_1():
     Firms are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
-    - $T$ technology-tasks that are performed by technology (usually routine tasks)
-    - $E$ employee-tasks that depend exclusively on employees (usually non-routine tasks)
+    - $A$ automated-tasks (carried out by technology)
+    - $J$ job-tasks (carried out by employees)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    Q = min (a \times T, b \times E)
+    Q = min (a \times A, b \times B)
     """)
 
     st.write(
@@ -27,12 +27,12 @@ def UNIT1_1():
         where:
 
         - $Q$ is the output
-        - $T$ technology-tasks, or tasks that technology performs
-        - $a$ proportion of technology-tasks
-        - $E$ employee-tasks, or tasks exclusively carried out by employees
-        - $b$ proportion of employee-tasks
+        - $A$ automated-tasks 
+        - $a$ proportion of automated-tasks
+        - $B$ job-tasks
+        - $b$ proportion of job-tasks
         
-        We assume that technology-tasks $T$ and employee-tasks $E$ are perfect complements,
+        We assume that automated-tasks $A$ and job-tasks $B$ are perfect complements,
         meaning they are both necessary for production.
         
         Human resource management (HRM) takes on the **organization** and **motivation** of employees in performing employee-tasks $E$
@@ -45,14 +45,28 @@ def UNIT1_1():
         - **Training**
         - **Career development**
         - **Compensation**
-        
-        Employee-tasks require each employee to exert effort:
+
+        There are two HRM strategies:
+
+        - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
+        skills development, and fostering innovation, aiming for long-term productivity, employee engagement, 
+        and sustainable growth.
+        - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
+        and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
+
+        How firms implement HRM practices will depend on their chosen HRM strategy. 
+        A high-road HRM strategy will focus on practices such as providing comprehensive employee training, 
+        offering competitive compensation, and promoting career development. In contrast, a low-road HRM strategy 
+        will prioritize practices aimed at minimizing costs, such as reducing training opportunities, 
+        offering lower wages, and focusing on short-term labor efficiency over long-term employee development
+
+        Job-tasks $B$ require each employee to exert effort:
         
         '''
     )
 
     st.latex(r"""
-    E = f(e_1, e_2, \dots, e_L)
+    B = f(e_1, e_2, \dots, e_L)
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
@@ -60,15 +74,15 @@ def UNIT1_1():
     st.text_input("Use O*NET to identify employee-tasks from the tasks listed above")
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=600, scrolling=True)
 
-    a = st.sidebar.number_input('Proportion of technology-tasks (a):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
-    w = st.sidebar.number_input('Proportion of employee-tasks (b):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    a = st.sidebar.number_input('Proportion of automated-tasks (a):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    b = st.sidebar.number_input('Proportion of job-tasks (b):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
-        plt.plot([a * q, a * q], [w * q, w * 10], color='b')  # vertical line (fixed A)
-        plt.plot([a * q, a * 10], [w * q, w * q], color='b')  # horizontal line (fixed W)
-        plt.xlabel("Technology-tasks (T)")
-    plt.ylabel("Employee-tasks (E)")
+        plt.plot([a * q, a * q], [b * q, b * 10], color='b')  # vertical line
+        plt.plot([a * q, a * 10], [b * q, b * q], color='b')  # horizontal line
+        plt.xlabel("Automated-tasks (A)")
+    plt.ylabel("Job-tasks (B)")
     plt.title("Leontief Production Function (L-shaped Isoquants)")
     plt.grid(True)
     st.pyplot(fig)
