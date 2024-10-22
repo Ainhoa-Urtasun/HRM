@@ -8,11 +8,12 @@ from numpy.linalg import norm
 def UNIT2_1():
     st.write(
         '''
-       [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) is a useful resource for 
-       job analysis and design in Europe. In combination with ESCO (European Skills, Competences, 
-       Qualifications, and Occupations), they are making progress toward becoming the European equivalent 
-       of O*NET (Occupational Information Network), which is the U.S. system that provides detailed 
-       information on job tasks, skills, and qualifications across various occupations.
+       [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) is a useful resource for 
+       job analysis and design in Europe. Skills intelligence is produced by Cedefop 
+       (European Centre for the Development of Vocational Training), which, in combination with ESCO 
+       (European Skills, Competences, Qualifications, and Occupations), is making progress toward
+       becoming the European equivalent of O*NET (Occupational Information Network), 
+       the U.S. system that provides detailed information on job tasks, skills, and qualifications across various occupations.
         '''
     )
     
