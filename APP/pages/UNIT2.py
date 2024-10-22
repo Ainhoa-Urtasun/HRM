@@ -38,40 +38,42 @@ def UNIT2_3():
     [Skill intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/trend-focus/skills-online-job-advertisements?year=2023&country=EU27_2020#3)
     identifies 9 transversal skills and competences as the most requested skills in online job ads in EU27:
 
-    - $T_1$ Intellectual
-    - $T_2$ Physical
-    - $T_3$ Social
-    - $T_4$ Use of methods
-    - $T_5$ Use of technology
+    - $S_1$ Demonstrating willigness to learn
+    - $S_2$ Collaborating in teams and networks
+    - $S_3$ Working efficiently
+    - $S_4$ Taking a proactive approach
+    - $S_5$ Supporting others
+    - $S_6$ Thinking creatively and innovatively
+    - $S_7$ Leading others
+    - $S_8$ Maintaining a positive attitude
+    - $S_9$ Processing information, ideas and concepts
     """
     )
 
-    st.write("Enter 4 skills ($S_i$) from O*NET:")
-    st.text_input("$S_1$")
-    st.text_input("$S_2$")
-    st.text_input("$S_3$")
-    st.text_input("$S_4$")
-    st.components.v1.iframe("https://www.onetonline.org/find/descriptor/browse/2.B", width=800, height=1000, scrolling=True)
-
 def UNIT2_4():
     st.write(
-    "In the context of job analysis and design, it is useful to represent a work activity as a column-vector of skills:"
+    "In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:"
     )
     
     st.latex(
         r'''
-        W_j  = 
+        T_j  = 
         \begin{pmatrix}
         S_{1j} \\
         S_{2j} \\ 
         S_{3j} \\ 
         S_{4j} \\
+        S_{5j} \\
+        S_{6j} \\
+        S_{7j} \\
+        S_{8j} \\
+        S_{9j} \\
         \end{pmatrix}
         '''
     )
     
     st.write(
-    "Each element $S_{ij}$ of the column vector indicates the extent to which skill $i$ is required for work activity $j$:"
+    "Each element $S_{ij}$ of the column vector indicates the extent to which skill $S_i$ is required for task $T_j$:"
     )    
     
     st.latex(r"""
@@ -80,17 +82,22 @@ def UNIT2_4():
              
     st.write(
         '''
-        A job can be represented as a matrix of work activities where each column-vector
-        corresponds to a different work activity:
+        A job can be represented as a matrix of tasks where each column-vector
+        corresponds to a different task:
         '''
     )
              
     st.latex(r"""
     \begin{pmatrix}
-    S_{11} & S_{12} & S_{13} & S_{14} & S_{15} & S_{16} \\
-    S_{21} & S_{22} & S_{23} & S_{24} & S_{25} & S_{26} \\
-    S_{31} & S_{32} & S_{33} & S_{34} & S_{35} & S_{36} \\
-    S_{41} & S_{42} & S_{43} & S_{44} & S_{45} & S_{46} \\
+    S_{11} & S_{12} & S_{13} & S_{14} & S_{15} \\
+    S_{21} & S_{22} & S_{23} & S_{24} & S_{25} \\
+    S_{31} & S_{32} & S_{33} & S_{34} & S_{35} \\
+    S_{41} & S_{42} & S_{43} & S_{44} & S_{45} \\
+    S_{51} & S_{52} & S_{53} & S_{54} & S_{55} \\
+    S_{61} & S_{62} & S_{63} & S_{64} & S_{65} \\
+    S_{71} & S_{72} & S_{73} & S_{74} & S_{75} \\
+    S_{81} & S_{82} & S_{83} & S_{84} & S_{85} \\
+    S_{91} & S_{92} & S_{93} & S_{94} & S_{95} \\
     \end{pmatrix}
     """)
 
@@ -111,7 +118,7 @@ def UNIT2_4():
         '''
     )
 
-    st.latex(r'\text{Job complexity = } \sum_{j=1}^{6} (S_{1j} + S_{2j} + S_{3j} + S_{4j})')
+    st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (S_{1j} + S_{2j} + S_{3j} + S_{4j} + S_{5j} + S_{6j} + S_{7j} + S_{8j} + S_{9j})')
 
     st.components.v1.iframe("https://www.onetonline.org/", width=800, height=1000, scrolling=True)
     st.write('Use O*NET to represent a job with 4 work activities and 6 skills')
