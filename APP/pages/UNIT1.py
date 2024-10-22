@@ -46,7 +46,7 @@ def UNIT1_2():
     )
 
     st.latex(r"""
-    Q = min (x \times \text{Automated-Tasks}, y \times \text{Job-Tasks})
+    Q = min [x(\text{Automated-Tasks}), y(\text{Job-Tasks})]
     """)
 
     st.write(
