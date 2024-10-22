@@ -35,8 +35,8 @@ def UNIT1_1():
     '''
     )
 
-    st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and list the activities a firm in that industry needs to complete using both technology and employees.")
-    st.text_input("Select 6 **Tasks** for employees at a firm in that industry to carry out from [O*NET](https://www.onetcenter.org/database.html#act).")
+    st.text_input("Select an industry from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and list the economic activities a firm in that industry would carry out.")
+    st.text_input("Select which occupations you will hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41.")
  
 def UNIT1_2():
 
