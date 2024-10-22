@@ -8,22 +8,20 @@ def UNIT1_1():
 
     st.write(
     '''
-    Firms make two key decisions:
+    Firms are grouped into sectors based on their economic activity. To perform this activity, 
+    firms must decide which technology to adopt and which occupations to employ. 
+    An occupation refers to a group of jobs that involve similar tasks and duties, as well as the 
+    same qualifications and skills requirements. Economic activities and occupations are classified using standard systems, 
+    such as NACE (Nomenclature of Economic Activities) for industries and 
+    ISCO (International Standard Classification of Occupations) for occupations.
 
-    - **What output (good or service) to produce**: This decision determines the set of activities the firm needs to complete and
-    the industry in which the firm is classified.
-    - **How to produce it**:
-        1. Which technology to use
-        2. Which activities to assign to technology (**Automated-Tasks**) and which ones to employees (**Tasks**)
-        3. Which HRM strategy to implement. There are two main HRM strategies:
-            - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
-            skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
-            - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
-            and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
+    There are two main Human Resource Management (HRM) strategies:
+    - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
+    skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
+    - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
+    and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
 
-    This course teaches how to apply HRM practices to **Tasks** (activities that employees at a firm need to carry out), 
-    assuming the firm has already decided what output to produce, 
-    which technology to use, and which activities to automate, while following a high-road HRM strategy.
+    This course teaches how to apply HRM practices to employees at the firm, while following a high-road HRM strategy.
 
     HRM practices include:
     - **Job analysis and design**
