@@ -31,7 +31,7 @@ def UNIT1_1():
     )
     
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and enter the tasks or activities that need to be completed")
-    st.text_input("Pick up 6 job-tasks from [O*NET]()")
+    st.text_input("Pick up 6 job-tasks from [O*NET](https://github.com/Ainhoa-Urtasun/HRM/blob/main/APP/Task%20Statements.xlsx)")
 
 def UNIT1_2():
 
