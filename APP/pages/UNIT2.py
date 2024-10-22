@@ -203,7 +203,7 @@ def UNIT2_5():
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["O*NET", "Job-Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["O*NET", "Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -213,7 +213,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "O*NET":
     UNIT2_1()
-elif selected == "Job-Tasks":
+elif selected == "Tasks":
     UNIT2_2()
 elif selected == "Skills":
     UNIT2_3()
