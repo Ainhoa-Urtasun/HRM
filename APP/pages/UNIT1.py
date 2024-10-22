@@ -14,7 +14,7 @@ def UNIT1_1():
     using both technology and employees, as well as the industry in which the firm is classified.
     - **How to produce it**:
         1. Which technology to use
-        2. Which tasks to automate (**automated-tasks**) and which tasks employees will carry out (**job-tasks**)
+        2. Which tasks to automate (**Automated-Tasks**) and which tasks employees will carry out (**Job-Tasks**)
         3. Which HRM strategy to implement. There are two main HRM strategies:
             - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
             skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
@@ -22,31 +22,31 @@ def UNIT1_1():
             and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
 
     This course teaches how to implement HRM practices—such as job analysis and design, HR planning, recruitment, performance 
-    evaluation, training, career development, and compensation—to **job-tasks**, assuming the firm has already decided what output to produce, 
+    evaluation, training, career development, and compensation—to **Job-Tasks**, assuming the firm has already decided what output to produce, 
     which technology to use, and which tasks to automate, while following a high-road HRM strategy.
     '''
     )
 
     st.text_input("Choose an industry from [NACE](https://ec.europa.eu/eurostat/web/nace) and list the tasks a firm in that industry needs to complete using both technology and employees.")
-    st.text_input("Select 6 job-tasks for employees at a firm in that industry from [O*NET](https://www.onetcenter.org/database.html#act).")
+    st.text_input("Select 6 **Job-Tasks** for employees at a firm in that industry from [O*NET](https://www.onetcenter.org/database.html#act).")
  
 def UNIT1_2():
 
     st.write(
     '''
-    Firms produce output (goods or services) by combining various tasks or activities.
+    Firms produce output (goods or services) by combining various tasks.
     Firms are classified into industries based on their output, which determines the specific tasks required for production.
     We distinguish between two types of tasks:
 
-    - $A$ automated-tasks (carried out by technology)
-    - $B$ job-tasks (carried out by employees)
+    - **Automated-Tasks** (carried out by technology)
+    - **Job-Tasks** (carried out by employees)
 
     We represent production as a Leontieff production function:
     '''
     )
 
     st.latex(r"""
-    Q = min (a \times A, b \times B)
+    Q = min (x \times \text{Automated-Tasks}, y \times \text{Job-Tasks})
     """)
 
     st.write(
@@ -54,29 +54,27 @@ def UNIT1_2():
         where:
 
         - $Q$ is the output
-        - $A$ automated-tasks 
-        - $a$ proportion of automated-tasks
-        - $B$ job-tasks
-        - $b$ proportion of job-tasks
+        - $x$ proportion of Automated-Tasks
+        - $y$ proportion of Job-Tasks
         
-        We assume that automated-tasks $A$ and job-tasks $B$ are perfect complements,
+        We assume that Automated-Tasks and Job-Tasks are perfect complements,
         meaning they are both necessary for production.
         
 
-        Job-tasks $B$ require each employee to exert effort:
+        Job-Tasks require each employee to exert effort:
         
         '''
     )
 
     st.latex(r"""
-    B = f(e_1, e_2, \dots, e_L)
+    \text{Job-Tasks} = f(e_1, e_2, \dots, e_L)
     """)
 
     st.write('where $e_i$ represents the effort exerted by employee $i$ and $L$ is the number of employees.')
    
 
-    a = st.sidebar.number_input('Proportion of automated-tasks (a):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
-    b = st.sidebar.number_input('Proportion of job-tasks (b):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    a = st.sidebar.number_input('Proportion of Automated-Tasks (x):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
+    b = st.sidebar.number_input('Proportion of Job-Tasks (y):', min_value=0.01, max_value=10.0, value=1.0, step=0.01)
     isoquant_levels = [1, 2, 3, 4, 5]
     fig = plt.figure(figsize=(6, 6))
     for q in isoquant_levels:
