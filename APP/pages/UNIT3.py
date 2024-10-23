@@ -11,7 +11,7 @@ def UNIT3_1():
         A useful tool for HR planning is the firm's transition matrix, $T$,
         which represents employee mobility both within the firm (between different jobs) 
         and from the firm to the external labor market. The transition matrix of a firm with
-        3 jobs has 4 rows and 4 columns:
+        3 jobs looks as follows:
         '''
     )
              
@@ -27,63 +27,33 @@ def UNIT3_1():
     st.write(
         '''
         Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; and $s$ represents separations. 
-        From row-wise summations of $M$, we get the employment in a particular job at $(t-1)$ at the firm.
-        And from column-wise summations of $M$, we get the employment in a particular job at $t$ at the firm:
+        From row-wise summations of $T$, we get the employment in a particular job at $(t-1)$ at the firm.
+        And from column-wise summations of $T$, we get the employment in a particular job at $t$ at the firm:
         '''
     )
 
     st.write('Complete the transition matrix $T$ of a firm')
     L1, L2, L3, L4 = st.columns(4)
     with L1:
-        S11 = st.number_input("$S_{11}$", key="S11")
-        S21 = st.number_input("$S_{21}$", key="S21")
-        S31 = st.number_input("$S_{31}$", key="S31")
-        S41 = st.number_input("$S_{41}$", key="S41")
-        S51 = st.number_input("$S_{51}$", key="S51")
-        S61 = st.number_input("$S_{61}$", key="S61")
-        S71 = st.number_input("$S_{71}$", key="S71")
-        S81 = st.number_input("$S_{81}$", key="S81")
-        S91 = st.number_input("$S_{91}$", key="S91")
-    with W2:
-        S12 = st.number_input("$S_{12}$", key="S12")
-        S22 = st.number_input("$S_{22}$", key="S22")
-        S32 = st.number_input("$S_{32}$", key="S32")
-        S42 = st.number_input("$S_{42}$", key="S42")
-        S52 = st.number_input("$S_{52}$", key="S52")
-        S62 = st.number_input("$S_{62}$", key="S62")
-        S72 = st.number_input("$S_{72}$", key="S72")
-        S82 = st.number_input("$S_{82}$", key="S82")
-        S92 = st.number_input("$S_{92}$", key="S92")
-    with W3:
-        S13 = st.number_input("$S_{13}$", key="S13")
-        S23 = st.number_input("$S_{23}$", key="S23")
-        S33 = st.number_input("$S_{33}$", key="S33")
-        S43 = st.number_input("$S_{43}$", key="S43")
-        S53 = st.number_input("$S_{53}$", key="S53")
-        S63 = st.number_input("$S_{63}$", key="S63")
-        S73 = st.number_input("$S_{73}$", key="S73")
-        S83 = st.number_input("$S_{83}$", key="S83")
-        S93 = st.number_input("$S_{93}$", key="S93")
-    with W4:
-        S14 = st.number_input("$S_{13}$", key="S14")
-        S24 = st.number_input("$S_{24}$", key="S24")
-        S34 = st.number_input("$S_{34}$", key="S34")
-        S44 = st.number_input("$S_{44}$", key="S44")
-        S54 = st.number_input("$S_{54}$", key="S54")
-        S64 = st.number_input("$S_{64}$", key="S64")
-        S74 = st.number_input("$S_{74}$", key="S74")
-        S84 = st.number_input("$S_{84}$", key="S84")
-        S94 = st.number_input("$S_{94}$", key="S94")
-    with W5:
-        S15 = st.number_input("$S_{15}$", key="S15")
-        S25 = st.number_input("$S_{25}$", key="S25")
-        S35 = st.number_input("$S_{35}$", key="S35")
-        S45 = st.number_input("$S_{45}$", key="S45")
-        S55 = st.number_input("$S_{55}$", key="S55")
-        S65 = st.number_input("$S_{65}$", key="S65")
-        S75 = st.number_input("$S_{75}$", key="S75")
-        S85 = st.number_input("$S_{85}$", key="S85")
-        S95 = st.number_input("$S_{95}$", key="S95")
+        m11 = st.number_input("$m_{11}$", key="m11")
+        m21 = st.number_input("$m_{21}$", key="m21")
+        m31 = st.number_input("$m_{31}$", key="m31")
+        h1 = st.number_input("$h_{1}$", key="h1")
+    with L2:
+        m12 = st.number_input("$m_{12}$", key="m12")
+        m22 = st.number_input("$m_{22}$", key="m22")
+        m32 = st.number_input("$m_{32}$", key="m32")
+        h2 = st.number_input("$h_{2}$", key="h2")
+    with L3:
+        m13 = st.number_input("$m_{13}$", key="m13")
+        m23 = st.number_input("$m_{23}$", key="m23")
+        m33 = st.number_input("$m_{33}$", key="m33")
+        h3 = st.number_input("$h_{3}$", key="h3")
+    with L4:
+        m14 = st.number_input("$m_{13}$", key="m14")
+        m24 = st.number_input("$m_{24}$", key="m24")
+        m34 = st.number_input("$m_{34}$", key="m34")
+        h4 = st.number_input("$h_{4}$", key="h4")
     
     if st.button("Submit"):
         matrix = np.array([
