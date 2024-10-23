@@ -8,8 +8,7 @@ def UNIT3_1():
     st.write(
         '''
         HR planning involves forecasting potential skill shortages or surpluses within the firm. 
-        A useful tool for HR planning is the firm's transition matrix, $T$. The following table shows
-        employee mobility both within the firm (between 3 different jobs) 
+        The following table shows employee mobility both within the firm (between 3 different jobs) 
         and from the firm to the external labor market:
         '''
     )
@@ -234,7 +233,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Transition matrix",'Making predictions'],  # required
+    options=["Employee mobility",'Making predictions using the transition matrix'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -242,8 +241,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Transition matrix":
+if selected == "Employee mobility":
     UNIT3_1()
-elif selected == 'Making predictions':
+elif selected == 'Making prediction using the transition matrix':
     UNIT3_2()
 
