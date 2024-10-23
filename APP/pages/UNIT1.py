@@ -15,7 +15,7 @@ def UNIT1_1():
     such as NACE (Nomenclature of Economic Activities) for industries and 
     ISCO (International Standard Classification of Occupations) for occupations.
 
-    This course teaches an analytical approach to human resource management (HRM) practices
+    This course takes an analytical approach to human resource management (HRM) practices
     such as job analysis and design, human resource (HR) planning, recruitment, performance evaluation, training, career development,
     and compensation designed to maximize employee engagement, productivity, and satisfaction.
 
