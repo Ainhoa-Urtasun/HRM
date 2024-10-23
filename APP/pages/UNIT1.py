@@ -51,13 +51,13 @@ def UNIT1_3():
         '''
     )
 
-    st.latex(r'Labor \ Productivity = \frac{pQ}{L}')
+    st.latex(r'Labor \ productivity = \frac{pQ}{L}')
     st.latex(r'ULC = \frac{wL}{pQ}')
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
-    cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
-    revenue_input = st.sidebar.text_input("Operating Revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
+    cost_input = st.sidebar.text_input("Cost of employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
+    revenue_input = st.sidebar.text_input("Operating revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
+    employees_input = st.sidebar.text_input("Number of employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
 
     costs = np.fromstring(cost_input, sep=',')
     revenues = np.fromstring(revenue_input, sep=',')
@@ -68,8 +68,8 @@ def UNIT1_3():
         
     df = pd.DataFrame({
         "Year": ["2019", "2020", "2021"],
-        "Labor Productivity (in thousands)": labor_productivity,
-        "Unit Labor Cost": unit_labor_cost
+        "Labor productivity (in thousands)": labor_productivity,
+        "ULC": unit_labor_cost
     })
 
     fig, ax = plt.subplots()
