@@ -124,6 +124,14 @@ def UNIT3_1():
     st.latex(r'\text{Turnover} = 100 - \text{Retention}')
 
 def UNIT3_2():
+    st.write(
+        '''
+        HR planning relies on the transition matrix $T$ to make predictions of the future availability of employees at 
+        $t+1$ in each different job at the firm (internal supply of labor) by doing the following matrix multiplication:
+        '''
+    )
+
+    
 
 st.set_page_config(page_title="UNIT3", layout="wide")
 
