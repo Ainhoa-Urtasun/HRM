@@ -15,22 +15,9 @@ def UNIT1_1():
     such as NACE (Nomenclature of Economic Activities) for industries and 
     ISCO (International Standard Classification of Occupations) for occupations.
 
-    There are two main Human Resource Management (HRM) strategies:
-    - **High-road HRM strategy**: Focuses on investing in employees through higher wages, 
-    skills development, and fostering innovation, aiming for long-term productivity, employee engagement, and sustainable growth.
-    - **Low-road HRM strategy**: Prioritizes cost-cutting by minimizing wages, reducing training, 
-    and relying on low-skilled labor, often at the expense of long-term growth and employee well-being.
-
-    This course teaches how to apply HRM practices to employees at the firm, while following a high-road HRM strategy.
-
-    HRM practices include:
-    - **Job analysis and design**
-    - **HR planning**
-    - **Recruitment**
-    - **Performance evaluation**
-    - **Training**
-    - **Career development**
-    - **Compensation**
+    This course teaches an analytical approach to human resource management (HRM) practices
+    such as job analysis and design, human resource (HR) planning, recruitment, performance evaluation, training, career development,
+    and compensation designed to maximize employee engagement, productivity, and satisfaction.
 
     '''
     )
