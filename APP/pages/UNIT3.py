@@ -20,15 +20,15 @@ def UNIT3_1():
     m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
     m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
     m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
-    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & - \\
+    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & 0 \\
     \end{pmatrix}
     """)
 
     st.write(
         '''
-        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; and $s$ represents separations. 
-        From row-wise summations of $T$, we get the employment in a particular job at $(t-1)$ at the firm.
-        And from column-wise summations of $T$, we get the employment in a particular job at $t$ at the firm:
+        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; 
+        and $s$ represents separations. 
+
         '''
     )
 
@@ -54,25 +54,26 @@ def UNIT3_1():
         m24 = st.number_input("$m_{24}$", key="m24")
         m34 = st.number_input("$m_{34}$", key="m34")
         h4 = st.number_input("$h_{4}$", key="h4")
-    
-    if st.button("Submit"):
-        matrix = np.array([
-            [S11, S12, S13, S14, S15],
-            [S21, S22, S23, S24, S25],
-            [S31, S32, S33, S34, S35],
-            [S41, S42, S43, S44, S45],
-            [S51, S52, S53, S54, S55],
-            [S61, S62, S63, S64, S65],
-            [S71, S72, S73, S74, S75],
-            [S81, S82, S83, S84, S85],
-            [S91, S92, S93, S94, S95]
-        ])
-    
-        job_complexity = np.sum(matrix)
-        st.write(f"Job Complexity: {job_complexity}")
+
+    st.write(
+        '''
+        From row-wise summation of each of the three first rows of $T$, we get the employment in a particular 
+        job at $(t-1)$ at the firm.
+        And from column-wise summation of each of three first columns of $T$, 
+        we get the employment in a particular job at $t$ at the firm:
+        '''
+    )
 
     st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}')
     st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
+    
+    if st.button("$L_1$"):
+        L1 = np.array([m11, m12, m13])
+    
+        L1 = np.sum(L1)
+        st.write(f"Employment in job 1 at $t$: {L1}")
+
+
     
     st.write(
         '''
