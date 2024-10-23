@@ -107,16 +107,13 @@ def UNIT3_1():
         **Employment** refers to the number of employees, including both full-time and part-time workers. 
         **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
         **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals). In addition to **employment**, **new hires**, and **separations**, 
-        there are other critical aspects that affect recruitment in a firm: job vacancies (or job openings) and job postings (or job advertisements, or job ads). 
-        **Job vacancies (job openings)** represent the number of available positions at the firm for which the firm is actively seeking candidates. 
-        **Job postings (job advertisements, job ads)** are advertisements made by the firm to fill open positions, specifying required qualifications and job responsibilities.
+        or involuntarily (layoffs, dismissals).
         '''
     )
 
     st.write(
         '''
-        From the transition matrix $T$ we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
+        From the transition matrix $T$, we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
         its retention and turnover rates, which are critical HRM metrics.
         '''
     )
@@ -126,11 +123,13 @@ def UNIT3_1():
     st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
     st.latex(r'\text{Turnover} = 100 - \text{Retention}')
 
+def UNIT3_2():
+
 st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Transition Matrix"],  # required
+    options=["Transition matrix",'Making predictions'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -138,6 +137,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Transition Matrix":
+if selected == "Transition matrix":
     UNIT3_1()
+elif selected == 'Making predictions':
+    UNIT3_2()
 
