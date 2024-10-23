@@ -20,7 +20,7 @@ def UNIT3_1():
     m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
     m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
     m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
-    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & NaN \\
+    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \text{NaN} \\
     \end{pmatrix}
     """)
 
@@ -53,7 +53,7 @@ def UNIT3_1():
         s1 = st.number_input("$s_{1}$", key="s1")
         s2 = st.number_input("$s_{2}$", key="s2")
         s3 = st.number_input("$s_{3}$", key="s3")
-        s4 = st.number_input("$NaN$", key="NaN")
+        s4 = st.number_input("NaN", key="NaN")
 
     st.write(
         '''
@@ -137,8 +137,8 @@ def UNIT3_2():
         m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
         m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
         m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
-        h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & NaN \\
-        \end{pmatrix}
+        h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \text{NaN} \\
+        \end{pmatrix} \right)^'
         \begin{pmatrix}
         L_{1(t)} \\
         L_{2(t)} \\
