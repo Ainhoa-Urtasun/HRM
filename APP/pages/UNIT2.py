@@ -190,16 +190,17 @@ def UNIT2_4():
         st.write(f"Job Complexity: {job_complexity}")
 
 def UNIT2_5():
-    st.write("The cosine similarity between two work activities $W_i$ and $W_j$ is defined as follows:")
+    st.write("The cosine similarity between two tasls $T_i$ and $T_j$ is defined as follows:")
 
     st.latex(r'''
-    \text{Cosine Similarity}(\text{W}_i, \text{W}_j) = \frac{\text{W}_i \cdot \text{W}_j}{\|\text{W}_i\| \|\text{W}_j\|}
+    \text{Cosine Similarity}(\text{T}_i, \text{T}_j) = \frac{\text{T}_i \cdot \text{T}_j}{\|\text{T}_i\| \|\text{T}_j\|}
     ''')
 
     st.write("Where the numerator contains the dot product of the skill vectors:")
    
     st.latex(r'''
-    \text{W}_i \cdot \text{W}_j = s_{i1} s_{j1} + s_{i2} s_{j2} + s_{i3} s_{j3} + s_{i4} s_{j4}
+    \text{T}_i \cdot \text{T}_j = S_{i1} S_{j1} + S_{i2} S_{j2} + S_{i3} S_{j3} + S_{i4} S_{j4} + S_{i5} S_{j5} +S_{i6} S_{j6}
+    + S_{i7} S_{j7} + S_{i8} S_{j8} + S_{i9} S_{j9}
     ''')
 
     st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
