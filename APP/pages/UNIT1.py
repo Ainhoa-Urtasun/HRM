@@ -43,13 +43,16 @@ def UNIT1_3():
         Employees significantly influence the firm's performance and profitability. 
         '''
     )
-    st.latex(r'EBIT = pQ - wL -rK')
+    st.latex(r'EBIT = pQ - wL - dM - rK')
     st.write(
-        '''where $p$ is the price of the output the firm produces, $w$ is the average salary paid by the firm to its employees, 
-        and $r$ is the cost of technology. This values can be derived from the Income Statement. Let's see how we can use them 
-        to use them to calculate **labor productivity** and **ULC**.
+        '''where $p$ is the price of the output the firm produces; $pQ$ represents operating revenue; $w$ is the average salary 
+        paid by the firm to its employees; $wL$ is cost of employees; $d$ is the unit cost of materials; $dM$ are material costs;
+        $r$ is the cost of technology; $rK$ is depreciation. These values are recorded in the Income Statement. 
         '''
     )
+
+    st.latex(r'Labor \ Productivity = \frac{pQ}{L}')
+    st.latex(r'Labor \ Productivity = \frac{pQ}{L}')
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
