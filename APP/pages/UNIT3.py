@@ -89,7 +89,7 @@ def UNIT3_1():
         if st.button("$L_{1(t)}$"):
             L11 = np.array([m11, m21, m23, h1])
             L11 = np.sum(L11)
-            st.write(f"Employment in job 1 at $t$: {L1}")
+            st.write(f"Employment in job 1 at $t$: {L11}")
     with col2:
         if st.button("$L_{2(t)}$"):
             L21 = np.array([m12, m22, m32, h2])
@@ -99,7 +99,7 @@ def UNIT3_1():
         if st.button("$L_{3(t)}$"):
             L31 = np.array([m13, m23, m33, h3])
             L31 = np.sum(L31)
-            st.write(f"Employment in job 3 at $t$: {L3}")
+            st.write(f"Employment in job 3 at $t$: {L31}")
 
     
     st.write(
