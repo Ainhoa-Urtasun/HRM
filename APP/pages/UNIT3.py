@@ -137,13 +137,11 @@ def UNIT3_2():
         \hat{L}_{1(t+1)} \\
         \hat{L}_{2(t+1)} \\
         \hat{L}_{3(t+1)} \\
-        \text{NaN}
     \end{pmatrix} = 
     \begin{pmatrix} 
-        m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\ 
-        m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\ 
-        m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\ 
-        h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \text{NaN} 
+        \frac{m_{11(t-1,t)}}{L_{1(t-1)}} & m_{12(t-1,t)} & m_{13(t-1,t)} \\ 
+        m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} \\ 
+        m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} \\  
     \end{pmatrix}^T
     \begin{pmatrix} 
         L_{1(t)} \\ 
@@ -243,6 +241,6 @@ selected = option_menu(
 # Call the selected section
 if selected == "Employee mobility":
     UNIT3_1()
-elif selected == 'Making prediction using the transition matrix':
+elif selected == 'Making predictions using the transition matrix':
     UNIT3_2()
 
