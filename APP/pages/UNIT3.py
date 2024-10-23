@@ -43,7 +43,7 @@ def UNIT3_1():
         m12 = st.number_input("$m_{12}$", key="m12", step=1, format="%.0f")
         m22 = st.number_input("$m_{22}$", key="m22", step=1, format="%.0f")
         m32 = st.number_input("$m_{32}$", key="m32", step=1, format="%.0f")
-        h2 = st.number_input("$h_{2}$", key="h2, step=1, format="%.0f")
+        h2 = st.number_input("$h_{2}$", key="h2", step=1, format="%.0f")
     with L3:
         m13 = st.number_input("$m_{13}$", key="m13", step=1, format="%.0f")
         m23 = st.number_input("$m_{23}$", key="m23", step=1, format="%.0f")
