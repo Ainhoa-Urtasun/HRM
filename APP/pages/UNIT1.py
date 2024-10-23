@@ -52,7 +52,7 @@ def UNIT1_3():
     )
 
     st.latex(r'Labor \ Productivity = \frac{pQ}{L}')
-    st.latex(r'Labor \ Productivity = \frac{pQ}{L}')
+    st.latex(r'ULC = \frac{wL}{pQ}')
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
     cost_input = st.sidebar.text_input("Cost of Employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
