@@ -121,8 +121,8 @@ def UNIT2_4():
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (S_{1j} + S_{2j} + S_{3j} + S_{4j} + S_{5j} + S_{6j} + S_{7j} + S_{8j} + S_{9j})')
     
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job as a matrix of tasks and skill requirements')
-    W1, W2, W3, W4, W5 = st.columns(5)
-    with W1:
+    T1, T2, T3, T4, T5 = st.columns(5)
+    with T1:
         S11 = st.number_input("$S_{11}$", key="S11")
         S21 = st.number_input("$S_{21}$", key="S21")
         S31 = st.number_input("$S_{31}$", key="S31")
@@ -132,7 +132,7 @@ def UNIT2_4():
         S71 = st.number_input("$S_{71}$", key="S71")
         S81 = st.number_input("$S_{81}$", key="S81")
         S91 = st.number_input("$S_{91}$", key="S91")
-    with W2:
+    with T2:
         S12 = st.number_input("$S_{12}$", key="S12")
         S22 = st.number_input("$S_{22}$", key="S22")
         S32 = st.number_input("$S_{32}$", key="S32")
@@ -142,7 +142,7 @@ def UNIT2_4():
         S72 = st.number_input("$S_{72}$", key="S72")
         S82 = st.number_input("$S_{82}$", key="S82")
         S92 = st.number_input("$S_{92}$", key="S92")
-    with W3:
+    with T3:
         S13 = st.number_input("$S_{13}$", key="S13")
         S23 = st.number_input("$S_{23}$", key="S23")
         S33 = st.number_input("$S_{33}$", key="S33")
@@ -152,7 +152,7 @@ def UNIT2_4():
         S73 = st.number_input("$S_{73}$", key="S73")
         S83 = st.number_input("$S_{83}$", key="S83")
         S93 = st.number_input("$S_{93}$", key="S93")
-    with W4:
+    with t4:
         S14 = st.number_input("$S_{13}$", key="S14")
         S24 = st.number_input("$S_{24}$", key="S24")
         S34 = st.number_input("$S_{34}$", key="S34")
@@ -162,7 +162,7 @@ def UNIT2_4():
         S74 = st.number_input("$S_{74}$", key="S74")
         S84 = st.number_input("$S_{84}$", key="S84")
         S94 = st.number_input("$S_{94}$", key="S94")
-    with W5:
+    with T5:
         S15 = st.number_input("$S_{15}$", key="S15")
         S25 = st.number_input("$S_{25}$", key="S25")
         S35 = st.number_input("$S_{35}$", key="S35")
