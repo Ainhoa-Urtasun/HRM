@@ -182,14 +182,14 @@ def UNIT3_2():
             [m11, m12, m13, s1],
             [m21, m22, m23, s2],
             [m31, m32, m33, s3],
-            [h1, h2, h3, np.nan]
+            [h1, h2, h3, 0]
         ])
 
         L = np.array([
             [m11+m21+m31+h1],
             [m12+m22+m32+h2],
             [m13+m23+m33+h3],
-            [np.nan]
+            [0]
         ])
     
         predictions = T.T @ L
