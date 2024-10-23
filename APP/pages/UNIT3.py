@@ -113,12 +113,8 @@ def UNIT3_1():
         **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
         **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
         or involuntarily (layoffs, dismissals).
-        '''
-    )
 
-    st.write(
-        '''
-        From the transition matrix $T$, we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
+        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
         its retention and turnover rates, which are critical HRM metrics.
         '''
     )
