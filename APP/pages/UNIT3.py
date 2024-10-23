@@ -23,7 +23,7 @@ def UNIT3_1():
     \hline
     m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
     \hline
-    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \text{NaN} \\
+    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \\
     \hline
     \end{array}
     """)
@@ -37,7 +37,7 @@ def UNIT3_1():
         '''
     )
 
-    st.write('Complete the transition matrix $T$ of a firm')
+    st.write('Complete the table')
     L1, L2, L3, O = st.columns(4)
     with L1:
         m11 = st.number_input("$m_{11}$", key="m11", step=1)
