@@ -206,11 +206,11 @@ def UNIT2_5():
     st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
 
     st.latex(r'''
-    \|\text{W}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
+    \|\text{T}_i\| = \sqrt{S_{i1}^2 + S_{i2}^2 + S_{i3}^2 + S_{i4}^2 + S_{i5}^2 + S_{i6}^2 + S_{i7}^2 + S_{i8}^2 + S_{i9}^2 +}
     ''')
 
-    skills1 = st.text_input("Enter 4 numeric values for Skill Vector 1 (comma-separated):")
-    skills2 = st.text_input("Enter 4 numeric values for Skill Vector 2 (comma-separated):")
+    skills1 = st.text_input("Enter 9 numeric values for Task i (comma-separated):")
+    skills2 = st.text_input("Enter 9 numeric values for Task j (comma-separated):")
 
     if st.button("Calculate Cosine Similarity"):
         try:
