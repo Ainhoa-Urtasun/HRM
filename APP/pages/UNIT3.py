@@ -127,10 +127,20 @@ def UNIT3_2():
     st.write(
         '''
         HR planning relies on the transition matrix $T$ to make predictions of the future availability of employees at 
-        $t+1$ in each different job at the firm (internal supply of labor) by doing the following matrix multiplication:
+        $t+1$ in each different job at the firm (internal supply of labor). This is done through
+        the following matrix multiplication:
         '''
     )
 
+    st.latex(r'''\hat{L}_{t+1} = 
+        \begin{pmatrix}
+        m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
+        m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
+        m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
+        h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & - \\
+        \end{pmatrix}
+        '''
+    )
     
 
 st.set_page_config(page_title="UNIT3", layout="wide")
