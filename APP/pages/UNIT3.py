@@ -132,7 +132,7 @@ def UNIT3_2():
         '''
     )
 
-    st.latex(\hat{L}_{t+1} = 
+    st.latex(r'''\hat{L}_{t+1} = 
     \begin{pmatrix} 
         m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\ 
         m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\ 
@@ -145,6 +145,7 @@ def UNIT3_2():
         L_{3(t)} \\ 
         \text{NaN} 
     \end{pmatrix}
+    '''
     )
 
 st.set_page_config(page_title="UNIT3", layout="wide")
