@@ -209,8 +209,8 @@ def UNIT2_5():
     \|\text{T}_i\| = \sqrt{S_{i1}^2 + S_{i2}^2 + S_{i3}^2 + S_{i4}^2 + S_{i5}^2 + S_{i6}^2 + S_{i7}^2 + S_{i8}^2 + S_{i9}^2 +}
     ''')
 
-    skills1 = st.text_input("Enter 9 numeric values for Task i (comma-separated):")
-    skills2 = st.text_input("Enter 9 numeric values for Task j (comma-separated):")
+    skills1 = st.text_input("Enter 9 numeric values for $T_i$ (comma-separated):")
+    skills2 = st.text_input("Enter 9 numeric values for $T_j$ (comma-separated):")
 
     if st.button("Calculate Cosine Similarity"):
         try:
