@@ -134,9 +134,9 @@ def UNIT3_2():
 
     st.latex(r'''
     \begin{pmatrix}
-        hat{L}_{1(t+1)} \\
-        hat{L}_{2(t+1)} \\
-        hat{L}_{3(t+1)} \\
+        \hat{L}_{1(t+1)} \\
+        \hat{L}_{2(t+1)} \\
+        \hat{L}_{3(t+1)} \\
         \text{NaN}
     \end{pmatrix} = 
     \begin{pmatrix} 
