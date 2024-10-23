@@ -49,11 +49,11 @@ def UNIT3_1():
         m23 = st.number_input("$m_{23}$", key="m23")
         m33 = st.number_input("$m_{33}$", key="m33")
         h3 = st.number_input("$h_{3}$", key="h3")
-    with L4:
-        m14 = st.number_input("$m_{13}$", key="m14")
-        m24 = st.number_input("$m_{24}$", key="m24")
-        m34 = st.number_input("$m_{34}$", key="m34")
-        h4 = st.number_input("$h_{4}$", key="h4")
+    with O:
+        s1 = st.number_input("$s_{1}$", key="s1")
+        s2 = st.number_input("$s_{2}$", key="s2")
+        s3 = st.number_input("$s_{3}$", key="s3")
+        0 = st.number_input("$-$", key="-")
 
     st.write(
         '''
@@ -67,12 +67,18 @@ def UNIT3_1():
     st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}')
     st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
     
-    if st.button("$L_1$"):
-        L1 = np.array([m11, m12, m13])
+    if st.button("$L_{1(t-1)}$"):
+        L10 = np.array([m11, m12, m13, s1])
+        L10 = np.sum(L10)
+        st.write(f"Employment in job 1 at $t-1$: {L10}")
     
-        L1 = np.sum(L1)
-        st.write(f"Employment in job 1 at $t$: {L1}")
-
+    if st.button("$L_{2(t-1)}$"):
+        L20 = np.array([m21, m22, m23, s2])
+        L20 = np.sum(L20)
+        st.write(f"Employment in job 2 at $t-1$: {L20}")
+    
+        L10 = np.sum(L10)
+        st.write(f"Employment in job 1 at $t-1$: {L10}")
 
     
     st.write(
