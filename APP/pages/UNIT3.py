@@ -8,14 +8,14 @@ def UNIT3_1():
     st.write(
         '''
         HR planning involves forecasting potential skill shortages or surpluses within the firm. 
-        A useful tool for HR planning is the firm's transition matrix, $M$,
+        A useful tool for HR planning is the firm's transition matrix, $T$,
         which represents employee mobility both within the firm (between different jobs) 
         and from the firm to the external labor market. The transition matrix of a firm with
         3 jobs has 4 rows and 4 columns:
         '''
     )
              
-    st.latex(r"""M (4 \times 4) = 
+    st.latex(r"""T (4 \times 4) = 
     \begin{pmatrix}
     m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
     m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
@@ -49,7 +49,7 @@ def UNIT3_1():
 
     st.write(
         '''
-        From the transition matrix $M$ we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
+        From the transition matrix $T$ we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
         its retention and turnover rates, which are critical HRM metrics.
         '''
     )
