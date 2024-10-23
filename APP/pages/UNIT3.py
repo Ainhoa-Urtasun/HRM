@@ -139,9 +139,9 @@ def UNIT3_2():
         \hat{L}_{3(t+1)} \\
     \end{pmatrix} = 
     \begin{pmatrix} 
-        \frac{m_{11(t-1,t)}}{L_{1(t-1)}} & \frac{m_{12(t-1,t)}}{L_{2(t-1)}} & \frac{m_{13(t-1,t)}}{L_{3(t-1)}} \\ 
-        \frac{m_{21(t-1,t)}}{L_{1(t-1)}} & \frac{m_{22(t-1,t)}}{L_{2(t-1)}} & \frac{m_{23(t-1,t)}}{L_{3(t-1)}} \\ 
-        m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} \\  
+        \frac{m_{11(t-1,t)}}{L_{1(t-1)}} & \frac{m_{12(t-1,t)}}{L_{1(t-1)}} & \frac{m_{13(t-1,t)}}{L_{1(t-1)}} \\ 
+        \frac{m_{21(t-1,t)}}{L_{2(t-1)}} & \frac{m_{22(t-1,t)}}{L_{2(t-1)}} & \frac{m_{23(t-1,t)}}{L_{2(t-1)}} \\ 
+        \frac{m_{31(t-1,t)}}{L_{3(t-1)}} & \frac{m_{32(t-1,t)}}{L_{3(t-1)}} & \frac{s_{33(t-1,t)}}{L_{3(t-1)}} \\  
     \end{pmatrix}^T
     \begin{pmatrix} 
         L_{1(t)} \\ 
