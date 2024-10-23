@@ -33,7 +33,7 @@ def UNIT3_1():
     )
 
     st.write('Complete the transition matrix $T$ of a firm')
-    L1, L2, L3, L4 = st.columns(4)
+    L1, L2, L3, 0 = st.columns(4)
     with L1:
         m11 = st.number_input("$m_{11}$", key="m11")
         m21 = st.number_input("$m_{21}$", key="m21")
