@@ -34,10 +34,10 @@ def UNIT3_1():
         Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; 
         and $s$ represents separations. 
 
+        Complete the table:
         '''
     )
-
-    st.write('Complete the table')
+    
     L1, L2, L3, O = st.columns(4)
     with L1:
         m11 = st.number_input("$m_{11}$", key="m11", step=1)
@@ -62,9 +62,9 @@ def UNIT3_1():
 
     st.write(
         '''
-        From row-wise summation of each of the three first rows of $T$, we get the employment in a particular 
+        From row-wise summation of each of the three first rows of the table, we get the employment in a particular 
         job at $(t-1)$ at the firm.
-        And from column-wise summation of each of three first columns of $T$, 
+        And from column-wise summation of each of three first columns of the table, 
         we get the employment in a particular job at $t$ at the firm:
         '''
     )
