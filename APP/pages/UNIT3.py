@@ -177,6 +177,24 @@ def UNIT3_2():
         s3 = st.number_input("$s_{3}$", key="s3", step=1)
         s4 = st.number_input("NaN", key="NaN", step=1)
 
+    if st.button("Submit"):
+        T = np.array([
+            [m11, m12, m13, s1],
+            [m21, m22, m23, s2],
+            [m31, m32, m33, s3],
+            [h1, h2, h3, 'nan']
+        ])
+
+        L = np.array([
+            [m11+m21+m31+h1],
+            [m12+m22+m32+h2],
+            [m13+m23+m33+h3],
+            ['nan']
+        ])
+    
+        predictions = T'@L
+        st.write(f"Predictions: {predictions}")
+
     st.write(
     """
     ### Strategies for Predicted Skill Shortage:
