@@ -53,7 +53,7 @@ def UNIT3_1():
         s1 = st.number_input("$s_{1}$", key="s1")
         s2 = st.number_input("$s_{2}$", key="s2")
         s3 = st.number_input("$s_{3}$", key="s3")
-        NaN = st.number_input("$NaN$", key="NaN")
+        s4 = st.number_input("$NaN$", key="NaN")
 
     st.write(
         '''
