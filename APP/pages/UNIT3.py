@@ -138,12 +138,12 @@ def UNIT3_2():
         m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
         m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
         h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \text{NaN} \\
-        \end{pmatrix} \right)^'
+        \end{pmatrix} \right)^T
         \begin{pmatrix}
         L_{1(t)} \\
         L_{2(t)} \\
         L_{3(t)} \\
-        NaN \\
+        text{NaN} \\
         \end{pmatrix}
         '''
     )
