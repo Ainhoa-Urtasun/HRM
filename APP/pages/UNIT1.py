@@ -85,8 +85,7 @@ def UNIT1_3():
     )
     st.latex(r'EBIT = pQ - wL - dM - rK')
     st.write(
-        '''where:
-        
+        '''
         - $p$ is the price of the output the firm produces
         - $pQ$ represents operating revenue
         - $w$ is the average salary paid by the firm to its employees
