@@ -8,31 +8,6 @@ def UNIT1_1():
 
     st.write(
     '''
-    Any firm, regardless of its size, structure, or legal form of ownership, 
-    produces an output (good or service) and engages in **economic activities** 
-    to achieve this. Firms are classified into sectors (industries) based on the output 
-    they produce and the associated economic activities. 
-
-    To execute these economic activities, firms decide which technologies to adopt
-    and which jobs to post in the labor market.
-    
-    A job consists of a bundle of tasks and just as firms are classified into sectors (industries), 
-    jobs are classified into occupations based on the tasks they entail. 
-    
-    There are standard classifications for firms into sectors, 
-    such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
-    such as ISCO (International Standard Classification of Occupations).
-
-    '''
-    )
-
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
-    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
-    st.text_input("Select the occupation(s) you wish to hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
-    st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
-
-    st.write(
-    '''
     This course takes an analytical approach to human resource management (HRM) practices, including:
 
     - **Job analysis and design**
@@ -46,6 +21,33 @@ def UNIT1_1():
     These practices are designed to maximize employee engagement, productivity, and job satisfaction.
     '''
     )
+
+    st.write(
+    '''
+    Any firm, regardless of its size, structure, or legal form of ownership, 
+    produces an output (good or service) and engages in **economic activities** 
+    to achieve this. Firms are classified into sectors (industries) based on the output 
+    they produce and the associated economic activities. 
+
+    To execute these economic activities, firms decide which technologies to adopt
+    and which jobs to post in the labor market.
+    
+    A job consists of a bundle of tasks and just as firms are classified into sectors (industries), 
+    jobs are classified into occupations based on the tasks they entail. A job is therefore not the same
+    as an occupation, an occupation is more general than a job. Occupations are standardized while
+    jobs are more flexible. Firms decide which jobs they wish to hire from the labor market.
+    
+    There are standard classifications for firms into sectors, 
+    such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
+    such as ISCO (International Standard Classification of Occupations).
+
+    '''
+    )
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
+    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
+    st.text_input("Select the occupation(s) you wish to hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
+    st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
     
 def UNIT1_2():
     st.write(
