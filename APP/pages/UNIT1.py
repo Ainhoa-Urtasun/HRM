@@ -58,6 +58,11 @@ def UNIT1_2():
         '''
     )
 
+    st.latex(r'''
+    \varepsilon_{e_i} = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
+    ''')
+
+
 def UNIT1_3():
     st.write(
         '''
