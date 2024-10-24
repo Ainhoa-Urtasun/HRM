@@ -61,10 +61,10 @@ def UNIT1_2():
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: select your firm </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from [NACE rev2.](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
-    st.text_input("Select the occupation(s) you wish to hire from [ISCO-08](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
-    st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
+    st.text_input("Select the occupation(s) for which you wish to post jobs from [ISCO-08](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
+    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: in the sector selected above and having fewer than 25 employees. Write the name of your firm here:")
     
 def UNIT1_3():
     st.write(
