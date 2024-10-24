@@ -27,9 +27,8 @@ def UNIT1_1():
     '''
     )
 
-    st.title("Hands-on Exercise: Your Firm")
-
-    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and list the economic activities it would carry out")
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Build Your Firm: A Hands-on Activity</h3>", unsafe_allow_html=True)
+    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and outline its key economic activities")
     st.text_input("Select which occupations you will hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41)")
  
 def UNIT1_2():
