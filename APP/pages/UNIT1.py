@@ -141,8 +141,8 @@ def UNIT1_4():
     })
 
     fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')
-    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')        
+    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor productivity')
+    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='ULC')        
     ax.set_xlabel('Year')
     ax.legend()
     st.pyplot(fig)
