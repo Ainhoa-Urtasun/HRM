@@ -120,13 +120,6 @@ def UNIT2_4():
 
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (S_{1j} + S_{2j} + S_{3j} + S_{4j} + S_{5j} + S_{6j} + S_{7j} + S_{8j} + S_{9j})')
 
-    st.write(
-        '''
-        Clarification: a job is not the same as an occupation. An occupation is broader or more general than a job. Occupations
-        are standardized in classifications such as ISCO. Jobs are decided and designed by firms, and therefore they are more 
-        flexible. Firms post jobs that are classified into occupations.
-        '''
-    )
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Evaluate a job at your firm </h3>", unsafe_allow_html=True)
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job as a matrix of tasks and skill requirements')
     T1, T2, T3, T4, T5 = st.columns(5)
