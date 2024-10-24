@@ -22,6 +22,20 @@ def UNIT1_1():
     '''
     )
 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+
+    st.write(
+        '''
+        We use these 2 online resources: 
+        
+        - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
+        Development of Vocational Training)
+        - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
+        '''
+    )
+
+def UNIT1_2():
+
     st.write(
     '''
     Any firm, regardless of its size, structure, or legal form of ownership, 
@@ -44,24 +58,12 @@ def UNIT1_1():
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-
-    st.write(
-        '''
-        In this course, we use two online resources: 
-        
-        - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
-        Development of Vocational Training)
-        - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
-        '''
-    )
-
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
     st.text_input("Select the occupation(s) you wish to hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
     st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
     
-def UNIT1_2():
+def UNIT1_3():
     st.write(
         ''' 
         - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
@@ -92,7 +94,7 @@ def UNIT1_2():
     )
 
 
-def UNIT1_3():
+def UNIT1_4():
     st.write(
         '''
         From the Income Statement of a firm: 
@@ -147,7 +149,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Human Resource Management (HRM)','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
+    options=['Human Resource Management (HRM)','HRM in context','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -157,8 +159,10 @@ selected = option_menu(
 # Call the selected section
 if selected == 'Human Resource Management (HRM)':
     UNIT1_1()
-elif selected == 'Notation for the course':
+elif selected == 'HRM in context':
     UNIT1_2()
-elif selected == 'Labor productivity and unit labor cost (ULC)':
+elif selected == 'Notation for the course':
     UNIT1_3()
+elif selected == 'Labor productivity and unit labor cost (ULC)':
+    UNIT1_4()
 
