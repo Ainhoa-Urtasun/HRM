@@ -153,7 +153,7 @@ def UNIT2_4():
         S73 = st.number_input("$S_{73}$", key="S73")
         S83 = st.number_input("$S_{83}$", key="S83")
         S93 = st.number_input("$S_{93}$", key="S93")
-    with t4:
+    with T4:
         S14 = st.number_input("$S_{13}$", key="S14")
         S24 = st.number_input("$S_{24}$", key="S24")
         S34 = st.number_input("$S_{34}$", key="S34")
