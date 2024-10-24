@@ -9,12 +9,16 @@ def UNIT1_1():
     st.write(
     '''
     Any firm, regardless of its size, structure, or legal form of ownership, 
-    engages in economic activities to produce output (goods or services). 
-    Firms are classified into sectors (industries) based on the output they produce and, consequently, 
-    the economic activities they carry out. To perform these activities, 
-    firms decide which technologies to adopt and which jobs to hire for. 
-    A job consists of a bundle of tasks. Just as firms are classified into sectors, 
+    produces an output (good or service) and engages in **economic activities** 
+    to achieve this. Firms are classified into sectors (industries) based on the output 
+    they produce and the associated economic activities. 
+
+    To execute these economic activities, firms decide which technologies to adopt
+    and which jobs to post in the labor market.
+    
+    A job consists of a bundle of tasks and just as firms are classified into sectors (industries), 
     jobs are classified into occupations based on the tasks they entail. 
+    
     There are standard classifications for firms into industries, 
     such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
     such as ISCO (International Standard Classification of Occupations).
