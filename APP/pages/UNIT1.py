@@ -8,19 +8,16 @@ def UNIT1_1():
 
     st.write(
     '''
-    Any firm, regardless of its size, structure, or legal form of ownership
-    carries out economic activities to produce an output (good or service). 
-    Firms are classified into sectors (industries)
-    depending on the output they produce and therefore the economic activities they
-    carry out. 
-    To carry out these economic activities, 
-    firms decide which technology to adopt and which jobs to hire for. 
-    A job is a bundle of tasks. As firms are classified into sectors jobs
-    are classified into occupations 
-    depending on the skills they require to carry out these tasks.
-    There are standard classifications for firms into sectors 
-    such as NACE (Nomenclature of Economic Activities) and standard classifications for jobs
-    into occupations such as ISCO (International Standard Classification of Occupations).
+    Any firm, regardless of its size, structure, or legal form of ownership, 
+    engages in economic activities to produce output (goods or services). 
+    Firms are classified into sectors (industries) based on the output they produce and, consequently, 
+    the economic activities they carry out. To perform these activities, 
+    firms decide which technologies to adopt and which jobs to hire for. 
+    A job consists of a bundle of tasks. Just as firms are classified into sectors, 
+    jobs are classified into occupations based on the tasks they entail. 
+    There are standard classifications for firms into industries, 
+    such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
+    such as ISCO (International Standard Classification of Occupations).
 
     This course takes an analytical approach to human resource management (HRM) practices
     such as job analysis and design, human resource (HR) planning, recruitment, 
