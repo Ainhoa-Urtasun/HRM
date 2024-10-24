@@ -43,6 +43,8 @@ def UNIT1_1():
     - **Compensation**
     
     These practices are designed to maximize employee engagement, productivity, and job satisfaction.
+    '''
+    )
     
 def UNIT1_2():
     st.write(
