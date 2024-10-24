@@ -120,8 +120,8 @@ def UNIT2_4():
 
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (S_{1j} + S_{2j} + S_{3j} + S_{4j} + S_{5j} + S_{6j} + S_{7j} + S_{8j} + S_{9j})')
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Evaluate a job at your firm </h3>", unsafe_allow_html=True)
-    st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job as a matrix of tasks and skill requirements')
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
     T1, T2, T3, T4, T5 = st.columns(5)
     with T1:
         S11 = st.number_input("$S_{11}$", key="S11")
