@@ -31,10 +31,10 @@ def UNIT1_1():
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Applying Concepts to Real Firm Data </h3>", unsafe_allow_html=True)
-    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and outline its key economic activities")
-    st.text_input("Select which occupations you will hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41)")
- 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Applying Concepts to a Real Firm </h3>", unsafe_allow_html=True)
+    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and describe the key economic activities it engages in.")
+    st.text_input("Select the occupations for which you will post jobs from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41).")
+
 def UNIT1_2():
     st.write(
         ''' 
