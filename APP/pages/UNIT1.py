@@ -120,7 +120,12 @@ def UNIT1_4():
     st.latex(r'ULC = \frac{wL}{pQ}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
+    st.write(
+        '''
+        From SABI(https://www.unavarra.es/biblioteca?languageId=1) 
+        and for your firm visualize labor productivity and ULC
+        '''
+    )
   
     cost_input = st.sidebar.text_input("Cost of employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
     revenue_input = st.sidebar.text_input("Operating revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
