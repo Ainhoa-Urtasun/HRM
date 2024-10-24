@@ -52,15 +52,18 @@ def UNIT1_2():
      while jobs are more flexible because they are defined by firms. Firms decide which jobs to post.
     
     There are standard classifications for firms into sectors, 
-    such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
-    such as ISCO (International Standard Classification of Occupations).
+    such as [NACE rev.2](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05), 
+    and for jobs into occupations, 
+    such as [ISCO-08](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41).
 
+    NACE is the European Classification of Economic Activities and ISCO stands for International Standard Classification 
+    of Occupations.
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
-    st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
-    st.text_input("Select the occupation(s) you wish to hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: select your firm </h3>", unsafe_allow_html=True)
+    st.text_input("Select a sector for your firm from [NACE rev2.](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
+    st.text_input("Select the occupation(s) you wish to hire from [ISCO-08](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
     st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
     
 def UNIT1_3():
