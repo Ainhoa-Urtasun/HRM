@@ -44,9 +44,11 @@ def UNIT1_1():
     '''
     )
 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: </h3>", unsafe_allow_html=True)
+
     st.write(
         '''
-        For HRM analytics, this course uses two online resources: 
+        For HRM Analytics, this course uses two online resources: 
         
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
         Development of Vocational Training)
