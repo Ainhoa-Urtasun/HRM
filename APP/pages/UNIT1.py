@@ -52,7 +52,7 @@ def UNIT1_2():
         - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
         - $e_i$ effort employee $i$ exerts at the firm
         - $L$ number of employees at the firm
-        - $EBIT = pQ - wL - rK$ Earnings Before Interest and Taxes (EBIT) of the firm
+        - $EBIT = pQ - wL - dM - rK$ Earnings Before Interest and Taxes (EBIT) of the firm
         - $T_1, T_2, T_3, T_4, T_5$ tasks employees carry out
         - $S_1, S_2, S_3, S_4, S_5, S_6, S_7, S_8, S_9$ skills employees have      
         '''
@@ -80,19 +80,28 @@ def UNIT1_2():
 def UNIT1_3():
     st.write(
         '''
-        Employees significantly influence the firm's performance and profitability. 
+        From the Income Statement of a firm: 
         '''
     )
     st.latex(r'EBIT = pQ - wL - dM - rK')
     st.write(
-        '''where $p$ is the price of the output the firm produces; $pQ$ represents operating revenue; $w$ is the average salary 
-        paid by the firm to its employees; $wL$ is cost of employees; $d$ is the unit cost of materials; $dM$ are material costs;
-        $r$ is the cost of technology; $rK$ is depreciation. These values are recorded in the Income Statement. 
+        '''where:
+        
+        - $p$ is the price of the output the firm produces
+        - $pQ$ represents operating revenue
+        - $w$ is the average salary paid by the firm to its employees
+        - $wL$ is cost of employees
+        - $d$ is the unit cost of materials
+        - $dM$ are material costs
+        - $r$ is the cost of technology
+        - $rK$ is depreciation
         '''
     )
 
     st.latex(r'Labor \ productivity = \frac{pQ}{L}')
     st.latex(r'ULC = \frac{wL}{pQ}')
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Applying Concepts to a Real Firm </h3>", unsafe_allow_html=True)
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
     cost_input = st.sidebar.text_input("Cost of employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
