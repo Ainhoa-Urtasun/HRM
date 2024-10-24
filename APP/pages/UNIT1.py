@@ -124,8 +124,6 @@ def UNIT1_3():
     ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor Productivity')
     ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='Unit Labor Cost')        
     ax.set_xlabel('Year')
-    ax.set_ylabel('Metrics')
-    ax.set_title("Trends in HRM metrics")
     ax.legend()
     st.pyplot(fig)
 
