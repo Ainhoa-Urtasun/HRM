@@ -29,7 +29,7 @@ def UNIT1_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Firm selection </h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and describe the key economic activities it engages in")
     st.text_input("Select the occupations for which you will post jobs from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41)")
-    st.text_input("Select the firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)". IMPORTANT: NACE as above and with fewer than 25 employees )
+    st.text_input("Select the firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1). CRITERIA: NACE as above and with fewer than 25 employees")
 
     st.write(
     '''
