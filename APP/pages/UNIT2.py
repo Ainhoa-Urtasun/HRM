@@ -20,7 +20,7 @@ def UNIT2_1():
 def UNIT2_2():
     st.write("""
         A **task** is an action performed by an employee that results in a specific output.
-        [Skill intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
         identifies 5 pillar tasks: 
         
     - $T_1$ Intellectual
@@ -35,7 +35,7 @@ def UNIT2_3():
     st.write("""
     **Skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
     tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-    [Skill intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/trend-focus/skills-online-job-advertisements?year=2023&country=EU27_2020#3)
+    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/trend-focus/skills-online-job-advertisements?year=2023&country=EU27_2020#3)
     identifies 9 transversal skills and competences as the most requested skills in online job ads in EU27:
 
     - $S_1$ Demonstrating willigness to learn
