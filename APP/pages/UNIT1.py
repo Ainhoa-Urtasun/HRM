@@ -58,6 +58,13 @@ def UNIT1_2():
         '''
     )
 
+    st.write(
+        '''
+        As a measure of the contribution of each employee to the firm, we can calculate the output elasticity of the effort
+        exerted by each employee as follows:
+        '''
+    )
+
     st.latex(r'''
     \varepsilon_{e_i} = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
     ''')
