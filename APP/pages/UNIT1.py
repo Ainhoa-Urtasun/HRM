@@ -23,11 +23,6 @@ def UNIT1_1():
     such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
     such as ISCO (International Standard Classification of Occupations).
 
-    This course takes an analytical approach to human resource management (HRM) practices
-    such as job analysis and design, human resource (HR) planning, recruitment, 
-    performance evaluation, training, career development,
-    and compensation designed to maximize employee engagement, productivity, and satisfaction.
-
     '''
     )
 
@@ -35,6 +30,20 @@ def UNIT1_1():
     st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and describe the key economic activities it engages in")
     st.text_input("Select the occupations for which you will post jobs from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41)")
 
+    st.write(
+    '''
+    This course takes an analytical approach to human resource management (HRM) practices, including:
+
+    - **Job analysis and design**
+    - **Human resource (HR) planning**
+    - **Recruitment**
+    - **Performance evaluation**
+    - **Training**
+    - **Career development**
+    - **Compensation**
+    
+    These practices are designed to maximize employee engagement, productivity, and job satisfaction.
+    
 def UNIT1_2():
     st.write(
         ''' 
