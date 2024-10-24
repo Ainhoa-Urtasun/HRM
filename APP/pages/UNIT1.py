@@ -32,16 +32,26 @@ def UNIT1_1():
     To execute these economic activities, firms decide which technologies to adopt
     and which jobs to post in the labor market.
     
-    A job consists of a bundle of tasks and just as firms are classified into sectors (industries), 
-    jobs are classified into occupations based on the tasks they entail. A job is therefore not the same
-    as an occupation, an occupation is more general than a job. Occupations are standardized while
-    jobs are more flexible. Firms decide which jobs they wish to hire from the labor market.
+     A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
+     jobs are classified into occupations based on the tasks they entail. 
+     A job is not the same as an occupation—an occupation is more general. Occupations are standardized, 
+     while jobs are more flexible because they are defined by firms. Firms decide which jobs to post.
     
     There are standard classifications for firms into sectors, 
     such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
     such as ISCO (International Standard Classification of Occupations).
 
     '''
+    )
+
+    st.write(
+        '''
+        For HRM analytics, this course uses two online resources: 
+        
+        - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
+        Development of Vocational Training)
+        - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
+        '''
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
