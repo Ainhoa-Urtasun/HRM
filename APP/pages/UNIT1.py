@@ -26,7 +26,7 @@ def UNIT1_1():
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Firm selection </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Selection of your firm </h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and write the name of the industry and its economic activities here:")
     st.text_input("Select the occupation(s) you wish to hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41) and write their titles here:")
     st.text_input("Select your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying two criteria: the sector based on NACE (as above) and having fewer than 25 employees. Write the name of your company here:")
@@ -101,7 +101,7 @@ def UNIT1_3():
     st.latex(r'Labor \ productivity = \frac{pQ}{L}')
     st.latex(r'ULC = \frac{wL}{pQ}')
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Applying Concepts to a Real Firm </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Visualizing labor productivity and ULC of your firm </h3>", unsafe_allow_html=True)
     st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
   
     cost_input = st.sidebar.text_input("Cost of employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
