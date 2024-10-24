@@ -39,7 +39,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Transition Matrix","Employment Trends","Asymmetric Information"],  # required
+    options=["Employment","Asymmetric Information"],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -47,7 +47,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Employment Trends":
+if selected == "Employment":
     UNIT4_1()
 if selected == "Asymmetric Information":
     UNIT4_2()
