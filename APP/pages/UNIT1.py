@@ -8,15 +8,23 @@ def UNIT1_1():
 
     st.write(
     '''
-    Firms are grouped into sectors based on their economic activities. To perform these economic activities, 
-    firms decide which technology to adopt and which occupations to employ. 
-    An occupation refers to a group of jobs that involve similar tasks and duties, as well as the 
-    same qualifications and skills requirements. Economic activities and occupations are classified using standard systems, 
-    such as NACE (Nomenclature of Economic Activities) for industries and 
-    ISCO (International Standard Classification of Occupations) for occupations.
+    Any firm, regardless of its size, structure, or legal form of ownership
+    carries out economic activities to produce an output (good or service). 
+    Firms are classified into sectors (industries)
+    depending on the output they produce and therefore the economic activities they
+    carry out. 
+    To carry out these economic activities, 
+    firms decide which technology to adopt and which jobs to hire for. 
+    A job is a bundle of tasks. As firms are classified into sectors jobs
+    are classified into occupations 
+    depending on the skills they require to carry out these tasks.
+    There are standard classifications for firms into sectors 
+    such as NACE (Nomenclature of Economic Activities) and standard classifications for jobs
+    into occupations such as ISCO (International Standard Classification of Occupations).
 
     This course takes an analytical approach to human resource management (HRM) practices
-    such as job analysis and design, human resource (HR) planning, recruitment, performance evaluation, training, career development,
+    such as job analysis and design, human resource (HR) planning, recruitment, 
+    performance evaluation, training, career development,
     and compensation designed to maximize employee engagement, productivity, and satisfaction.
 
     '''
