@@ -19,7 +19,7 @@ def UNIT1_1():
     A job consists of a bundle of tasks and just as firms are classified into sectors (industries), 
     jobs are classified into occupations based on the tasks they entail. 
     
-    There are standard classifications for firms into industries, 
+    There are standard classifications for firms into sectors, 
     such as NACE (Nomenclature of Economic Activities), and for jobs into occupations, 
     such as ISCO (International Standard Classification of Occupations).
 
@@ -31,7 +31,7 @@ def UNIT1_1():
     '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Build Your Firm: A Hands-on Activity</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics: Applying Concepts to Real Firm Data"</h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from [NACE](https://www.cedefop.europa.eu/en/tools/skills-intelligence/sectors?sector=05) and outline its key economic activities")
     st.text_input("Select which occupations you will hire from [ISCO](https://www.cedefop.europa.eu/en/tools/skills-intelligence/occupations?occupation=4.41)")
  
