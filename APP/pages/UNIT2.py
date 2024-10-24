@@ -103,17 +103,17 @@ def UNIT2_4():
 
     st.write(
         '''
-        If a job doesn't entail a particular work activity, 
-        the corresponding row will be a vector of zeros.
+        Jobs don't entail all tasks. If a job doesn't entail a particular task, 
+        its corresponding column will be a vector of zeros.
         '''
     )
 
     st.write(
         '''
         Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
-        This assessment considers various job characteristics, such as responsibilities, required skills, and 
-        the complexity of the work activities involved. By conducting a job evaluation, organizations can 
-        establish equitable compensation structures and identify training and development needs. The following formula shows
+        By evaluating jobs, organizations can 
+        establish equitable compensation structures and identify training and development needs. 
+        The following formula shows
         how to measure job complexity as an example of job evaluation.
         '''
     )
