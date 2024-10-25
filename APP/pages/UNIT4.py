@@ -60,7 +60,7 @@ def UNIT4_3():
 
 def UNIT4_4():
     
-        st.write(
+    st.write(
         '''
         To reach a **separating equilibrium**, where the employer can differentiate between 
         the two types of candidates, they may rely on **signaling**. 
@@ -95,10 +95,10 @@ selected = option_menu(
 # Call the selected section
 if selected == "Employment":
     UNIT4_1()
-if selected == "Asymmetric information":
+elif selected == "Asymmetric information":
     UNIT4_2()
-if selected == "Adverse selection":
+elif selected == "Adverse selection":
     UNIT4_3()
-if selected == "Signaling":
+elif selected == "Signaling":
     UNIT4_4()
 
