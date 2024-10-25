@@ -55,6 +55,8 @@ def UNIT4_3():
         a unique salary based on the **average effort** of both types of candidates. 
         As a result, only the 'wrong' candidates accept the offer, creating a **pooling equilibrium** 
         where low-effort workers dominate.
+        '''
+    )
 
     def UNIT2_4():
     
