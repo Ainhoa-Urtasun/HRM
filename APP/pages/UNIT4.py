@@ -47,12 +47,12 @@ def UNIT4_3():
         """
         When a company posts a job online, two types of candidates apply: 
         'right' (high-effort) candidates and 'wrong' (low-effort) candidates. 
-        Let's denote the effort levels of these candidates as eR (right candidates) and eW (wrong candidates), 
-        with eR > eW. However, due to **asymmetric information**, the employer 
+        Let's denote the effort levels of these candidates as $e_R$ (right candidates) and $e_W$ (wrong candidates), 
+        with $e_R > e_W$. However, due to **asymmetric information**, the employer 
         cannot distinguish between these two types of candidates initially.
-        The employer knows that there is a probability **p** that the candidate is the 'right' one, 
-        and a probability **1-p** that the candidate is 'wrong'. To deal with this uncertainty, 
-        the employer may offer a salary based on the **average effort** of both types of candidates. 
+        The employer knows that there is a probability $p$ that the candidate is the 'right' one, 
+        and a probability $1-p$ that the candidate is 'wrong'. Due to uncertainty, the employer has to offer
+        a unique salary based on the **average effort** of both types of candidates. 
         As a result, only the 'wrong' candidates accept the offer, creating a **pooling equilibrium** 
         where low-effort workers dominate.
 
