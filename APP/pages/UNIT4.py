@@ -63,7 +63,7 @@ def UNIT4_3():
         '''
     )
 
-    st.latex(r'\bar w = pe_R + (1-p)e_L')
+    st.latex(r'\bar w = p \times e_R + (1-p) \times e_L')
         
     st.write(
         '''
