@@ -51,9 +51,10 @@ def UNIT1_2():
      jobs are classified into occupations based on the tasks they entail. 
      A job is not the same as an occupation—an occupation is more general. Occupations are standardized, 
      while jobs are more flexible because they are defined by firms. Firms decide which jobs to post.
+     Job postings are automatically classified into occupations.
     
     There are standard classifications for firms into sectors, 
-    such as NACE is the European Classification of Economic Activities
+    such as NACE which is the European Classification of Economic Activities
     and for jobs into occupations, 
     such as ISCO that stands for International Standard Classification 
     of Occupations.
