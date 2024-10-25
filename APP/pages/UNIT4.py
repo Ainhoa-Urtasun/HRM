@@ -48,11 +48,25 @@ def UNIT4_3():
         When a company posts a job online, two types of candidates apply: 
         right (high-effort) candidates and wrong (low-effort) candidates. 
         Let's denote the effort levels of these candidates as $e_R$ (right candidates) and $e_W$ (wrong candidates), 
-        with $e_R > e_W$. However, due to **asymmetric information**, the employer 
+        with:
+        '''
+    )
+    st.latex(r'e_R > e_W')
+    
+    st.write(
+        '''
+        However, due to **asymmetric information**, the employer 
         cannot distinguish between these two types of candidates initially.
         The employer knows that there is a probability $p$ that the candidate is the right one, 
         and a probability $1-p$ that the candidate is wrong. Due to uncertainty, the employer has to offer
-        a unique salary based on the **average effort** of both types of candidates. 
+        a unique salary based on the **average effort** of both types of candidates:
+        '''
+    )
+
+    st.latex(r'\bar w = pe_R + (1-p)e_L')
+        
+    st.write(
+        '''
         As a result, only the wrong candidates accept the offer, creating a **pooling equilibrium** 
         where low-effort workers dominate.
         '''
