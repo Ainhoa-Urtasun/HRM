@@ -67,32 +67,11 @@ def UNIT4_2():
 
         This signaling helps the employer distinguish between the two types of candidates, 
         leading to a more efficient recruitment process.
+
+        These conditions ensure that wrong candidates do not find it worthwhile to obtain ECTS, while right candidates do. 
+        Therefore, signaling through ECTS helps employers differentiate candidates based on their effort levels.
         """
     )
-
-st.write("""
-#### Formulation
-
-Let:
-- **S_0** be the salary offered without ECTS
-- **S_1** be the salary offered with ECTS
-- **C_w** be the cost of obtaining ECTS for a wrong candidate
-- **C_r** be the cost of obtaining ECTS for a right candidate
-
-The two conditions are:
-1. Wrong candidate:  
-   \[
-   S_0 > S_1 - C_w
-   \]
-2. Right candidate:  
-   \[
-   S_1 - C_r > S_0
-   \]
-
-These conditions ensure that wrong candidates do not find it worthwhile to obtain ECTS, while right candidates do. Therefore, signaling through ECTS helps employers differentiate candidates based on their effort levels.
-""")
-
-
 
 st.set_page_config(page_title="UNIT4", layout="wide")
 
