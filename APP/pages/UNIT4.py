@@ -40,6 +40,59 @@ def UNIT4_2():
         '''
     )
 
+    st.write(
+        """
+        When a company posts a job online, two types of candidates apply: 
+        'right' (high-effort) candidates and 'wrong' (low-effort) candidates. 
+        Let's denote the effort levels of these candidates as eR (right candidates) and eW (wrong candidates), 
+        with eR > eW. However, due to **asymmetric information**, the employer 
+        cannot distinguish between these two types of candidates initially.
+        The employer knows that there is a probability **p** that the candidate is the 'right' one, 
+        and a probability **1-p** that the candidate is 'wrong'. To deal with this uncertainty, 
+        the employer may offer a salary based on the **average effort** of both types of candidates. 
+        As a result, only the 'wrong' candidates accept the offer, creating a **pooling equilibrium** 
+        where low-effort workers dominate.
+
+
+        To reach a **separating equilibrium**, where the employer can differentiate between 
+        the two types of candidates, they may rely on **signaling**. 
+        In this context, candidates can signal their ability through obtaining **ECTS credits** aligned with the job. 
+        Although both right and wrong candidates can obtain ECTS, it is more costly for the wrong candidates.
+        
+        This leads to the following conditions:
+        1. For the wrong candidate, the salary they earn without ECTS must be greater 
+        than the salary they would earn with ECTS, minus the cost of obtaining ECTS.
+        2. For the right candidate, the salary with ECTS, minus the cost of obtaining ECTS, 
+        must be greater than the salary without ECTS.
+
+        This signaling helps the employer distinguish between the two types of candidates, 
+        leading to a more efficient recruitment process.
+        """
+    )
+
+st.write("""
+#### Formulation
+
+Let:
+- **S_0** be the salary offered without ECTS
+- **S_1** be the salary offered with ECTS
+- **C_w** be the cost of obtaining ECTS for a wrong candidate
+- **C_r** be the cost of obtaining ECTS for a right candidate
+
+The two conditions are:
+1. Wrong candidate:  
+   \[
+   S_0 > S_1 - C_w
+   \]
+2. Right candidate:  
+   \[
+   S_1 - C_r > S_0
+   \]
+
+These conditions ensure that wrong candidates do not find it worthwhile to obtain ECTS, while right candidates do. Therefore, signaling through ECTS helps employers differentiate candidates based on their effort levels.
+""")
+
+
 
 st.set_page_config(page_title="UNIT4", layout="wide")
 
