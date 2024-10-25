@@ -9,8 +9,8 @@ def UNIT2_1():
     st.write(
         '''
        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) by CEDEFOP is a useful resource for 
-       job analysis and design in Europe. CEDEFOP 
-       (European Centre for the Development of Vocational Training) and ESCO 
+       job analysis and design in Europe. Both CEDEFOP 
+       (European Centre for the Development of Vocational Training) and [ESCO](https://esco.ec.europa.eu/en) 
        (European Skills, Competences, Qualifications, and Occupations) are making progress toward
        becoming the European equivalent of O*NET (Occupational Information Network), 
        the U.S. system that provides detailed information on job tasks, skills, and qualifications across various occupations.
