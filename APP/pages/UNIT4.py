@@ -34,10 +34,10 @@ def UNIT4_2():
     st.write(
         '''
         In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
-    This can lead to **adverse selection**, where the firm might hire less qualified candidates because it lacks full information. 
-    To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
-    in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
-    an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
+        This can lead to **adverse selection**, where the firm might hire less qualified candidates because it lacks full information. 
+        To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
+        in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
+        an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
         '''
     )
 
@@ -46,14 +46,14 @@ def UNIT4_3():
     st.write(
         '''
         When a company posts a job online, two types of candidates apply: 
-        'right' (high-effort) candidates and 'wrong' (low-effort) candidates. 
+        right (high-effort) candidates and wrong (low-effort) candidates. 
         Let's denote the effort levels of these candidates as $e_R$ (right candidates) and $e_W$ (wrong candidates), 
         with $e_R > e_W$. However, due to **asymmetric information**, the employer 
         cannot distinguish between these two types of candidates initially.
-        The employer knows that there is a probability $p$ that the candidate is the 'right' one, 
-        and a probability $1-p$ that the candidate is 'wrong'. Due to uncertainty, the employer has to offer
+        The employer knows that there is a probability $p$ that the candidate is the right one, 
+        and a probability $1-p$ that the candidate is wrong. Due to uncertainty, the employer has to offer
         a unique salary based on the **average effort** of both types of candidates. 
-        As a result, only the 'wrong' candidates accept the offer, creating a **pooling equilibrium** 
+        As a result, only the wrong candidates accept the offer, creating a **pooling equilibrium** 
         where low-effort workers dominate.
         '''
     )
@@ -78,7 +78,7 @@ def UNIT4_4():
 
         These conditions ensure that wrong candidates do not find it worthwhile to obtain ECTS, while right candidates do. 
         Therefore, signaling through ECTS helps employers differentiate candidates based on their effort levels.
-        """
+        '''
     )
 
 st.set_page_config(page_title="UNIT4", layout="wide")
