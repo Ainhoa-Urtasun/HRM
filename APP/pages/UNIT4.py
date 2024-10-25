@@ -30,6 +30,7 @@ def UNIT4_1():
     st.pyplot(fig)
 
 def UNIT4_2():
+    
     st.write(
         '''
         In recruiting, **asymmetric information** arises when candidates know more about their abilities than the firm. 
@@ -39,6 +40,8 @@ def UNIT4_2():
     an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
         '''
     )
+
+def UNIT4_3():
 
     st.write(
         """
@@ -53,7 +56,10 @@ def UNIT4_2():
         As a result, only the 'wrong' candidates accept the offer, creating a **pooling equilibrium** 
         where low-effort workers dominate.
 
-
+    def UNIT2_4():
+    
+        st.write(
+        '''
         To reach a **separating equilibrium**, where the employer can differentiate between 
         the two types of candidates, they may rely on **signaling**. 
         In this context, candidates can signal their ability through obtaining **ECTS credits** aligned with the job. 
@@ -77,7 +83,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric Information"],  # required
+    options=["Employment","Asymmetric information",'Adverse selection','Signaling'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -87,6 +93,10 @@ selected = option_menu(
 # Call the selected section
 if selected == "Employment":
     UNIT4_1()
-if selected == "Asymmetric Information":
+if selected == "Asymmetric information":
     UNIT4_2()
+if selected == "Adverse selection":
+    UNIT4_3()
+if selected == "Signaling":
+    UNIT4_4()
 
