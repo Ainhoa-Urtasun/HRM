@@ -37,7 +37,7 @@ def UNIT3_1():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Fill in data for 3 jobs at your firm (use made-up data)')
+    st.write('Fill in data for 3 jobs at your firm (use made-up data):')
     
     L1, L2, L3, O = st.columns(4)
     with L1:
@@ -59,7 +59,6 @@ def UNIT3_1():
         s1 = st.number_input("$s_{1}$", key="s1", step=1)
         s2 = st.number_input("$s_{2}$", key="s2", step=1)
         s3 = st.number_input("$s_{3}$", key="s3", step=1)
-        s4 = st.number_input("NaN", key="NaN", step=1)
 
     st.write(
         '''
