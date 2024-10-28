@@ -63,7 +63,7 @@ def UNIT4_2():
 def UNIT4_3():
 
     st.write('Suppose $L$ employees at a firm contribute as follows:')
-    st.latex(r'Q = e_1^{\alpha_1} \times e_1^{\alpha_1}')
+    st.latex(r'Q = e_1^{\alpha_1} \times e_2^{\alpha_2} \times \cdots \times \times e_L^{\alpha_L}')
 
     st.latex(r'e_R > e_W')
     
