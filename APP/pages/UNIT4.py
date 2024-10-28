@@ -79,16 +79,17 @@ def UNIT4_3():
         '''
     )
 
-    st.latex(r'w = \mathbb{E}(\alpha) = \sum_{i=1}^{L} p_i \alpha_i')
+    st.write("The expected contribution of the candidate pool is given by:")
+    st.latex(r'\mathbb{E}(\alpha) = \sum_{i=1}^{L} p_i \alpha_i')
+    st.write("- Expected contribution from a candidate in the labor market:")
+    st.latex(r'\mathbb{E}(\alpha)')
+    st.write("- Total number of different candidate types in the labor market:")
+    st.latex(r'L')
+    st.write("- Probability of selecting a candidate of type \\( i \\), representing the likelihood of encountering that type:")
+    st.latex(r'p_i')
+    st.write("- Contribution (output elasticity) associated with candidate type \\( i \\), representing the value this type would contribute:")
+    st.latex(r'\alpha_i')
 
-    st.write(
-        '''
-        - \\( \mathbb{E}(\alpha) \\): Expected contribution from a candidate in the labor market.
-        - \\( L \\): Total number of different candidate types in the labor market.
-        - \\( p_i \\): Probability of selecting a candidate of type \\( i \\), representing the likelihood of encountering that type.
-        - \\( \alpha_i \\): Contribution (output elasticity) associated with candidate type \\( i \\), representing the value this type would contribute.
-        '''
-    )
   
     st.write(
         '''
