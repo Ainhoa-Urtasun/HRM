@@ -10,7 +10,7 @@ def UNIT4_1():
         '''
         Employment refers to the number of employees, including both full-time and part-time workers. 
         If we have information of employment in a firm at the job level, 
-        we can calculate the total employment of the firm at $(t-1)$ and at $(t) as follows,
+        we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as follows,
         assuming $N$ jobs both at $t-1$ and $t$:
         '''
     )
