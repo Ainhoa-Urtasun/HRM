@@ -79,13 +79,6 @@ def UNIT4_3():
         '''
     )
 
-        cannot distinguish between these two types of candidates initially.
-        The employer knows that there is a probability $p$ that the candidate is the right one, 
-        and a probability $1-p$ that the candidate is wrong. Due to uncertainty, the employer has to offer
-        a unique salary based on the **average effort** of both types of candidates:
-        '''
-    )
-
     st.latex(r'\bar w = p \times e_R + (1-p) \times e_L')
         
     st.write(
