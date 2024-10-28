@@ -9,7 +9,7 @@ def UNIT3_1():
         '''
         HR planning involves predicting potential employee shortages or surpluses within the firm.
         In this unit, we will learn a method for making these predictions using a transition matrix. 
-        The table below provides the raw information we need to build the transition matrix, 
+        The table below provides the base data we need to build the transition matrix, 
         specifically for three different jobs within a firm.
         '''
     )
@@ -229,7 +229,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employee mobility",'Making predictions using the transition matrix'],  # required
+    options=["Data for transition matrix construction",'Making predictions using the transition matrix'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -237,7 +237,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Employee mobility":
+if selected == "Data for transition matrix construction":
     UNIT3_1()
 elif selected == 'Making predictions using the transition matrix':
     UNIT3_2()
