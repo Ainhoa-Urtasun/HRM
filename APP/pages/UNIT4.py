@@ -29,7 +29,8 @@ def UNIT4_1():
     \text{CAGR} = \left( \frac{L_{t+k}}{L_{t}} \right)^{\frac{1}{k}} - 1
     ''')
 
-
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('From SABI and for your firm, visualize employment:')
     
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
     employees = np.fromstring(employees_input, sep=',')
