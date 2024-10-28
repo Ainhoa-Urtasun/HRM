@@ -7,9 +7,10 @@ import numpy as np
 def UNIT3_1():
     st.write(
         '''
-        HR planning involves forecasting potential skill shortages or surpluses within the firm. 
-        The following table shows employee mobility both within the firm (between 3 different jobs) 
-        and from the firm to the external labor market:
+        HR planning involves predicting potential employee shortages or surpluses within the firm.
+        In this unit, we will learn a method for making these predictions using a transition matrix. 
+        The table below provides the raw information we need to build the transition matrix, 
+        specifically for three different jobs within a firm.
         '''
     )
              
