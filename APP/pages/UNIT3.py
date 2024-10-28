@@ -115,24 +115,6 @@ def UNIT3_1():
             L31 = np.sum(L31)
             st.write(f"Employment in job 3 at $t$: {L31}")
 
-    
-    st.write(
-        '''
-        **Employment** refers to the number of employees, including both full-time and part-time workers. 
-        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
-        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals).
-
-        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
-        its retention and turnover rates, which are critical HRM metrics.
-        '''
-    )
-
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
-    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
-    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
-    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
-
 def UNIT3_2():
     st.write(
         '''
