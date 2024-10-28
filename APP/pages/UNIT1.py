@@ -72,6 +72,7 @@ def UNIT1_3():
         - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
         - $e_i$ effort employee $i$ exerts at the firm
         - $L$ number of employees at the firm
+        - $N$ number of jobs at the firm
         - $EBIT = pQ - wL - dM - rK$ Earnings Before Interest and Taxes (EBIT) of the firm
         - $T_1, T_2, T_3, T_4, T_5$ tasks employees carry out
         - $S_1, S_2, S_3, S_4, S_5, S_6, S_7, S_8, S_9$ skills employees have      
@@ -80,13 +81,12 @@ def UNIT1_3():
 
     st.write(
         '''
-        As a measure of the contribution of each employee to the firm, we can calculate the output elasticity of the effort
-        exerted by each employee as follows:
+        As a measure of the contribution of each employee to the firm, we can calculate the output elasticity of employee $i$ as follows:
         '''
     )
 
     st.latex(r'''
-    \varepsilon_{e_i} = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
+    \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
     ''')
 
     st.write(
