@@ -8,11 +8,7 @@ def UNIT4_1():
 
     st.write(
         '''
-        **Employment** refers to the number of employees, including both full-time and part-time workers. 
-        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
-        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals).
-
+        Employment refers to the number of employees, including both full-time and part-time workers. 
         If we have information of employment in a firm at the job level, 
         we can calculate the total employment of the firm at $(t-1)$ and at $(t) as follows,
         assuming $N$ jobs both at $t-1$ and $t$:
