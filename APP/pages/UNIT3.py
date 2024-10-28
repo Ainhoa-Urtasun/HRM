@@ -62,14 +62,20 @@ def UNIT3_1():
 
     st.write(
         '''
-        From row-wise summation of each of the three first rows of the table, we get the employment in a particular 
-        job at $(t-1)$ at the firm.
-        And from column-wise summation of each of three first columns of the table, 
-        we get the employment in a particular job at $t$ at the firm:
+        By adding up the values of each of the three first rows of the table, we get the employment in a particular 
+        job at $(t-1)$ at the firm:
         '''
     )
 
     st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}')
+
+    st.write(
+        '''
+        And by adding up the values of each of three first columns of the table, 
+        we get the employment in a particular job at $t$ at the firm:
+        '''
+    )
+    
     st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
 
     col1, col2, col3 = st.columns(3)
