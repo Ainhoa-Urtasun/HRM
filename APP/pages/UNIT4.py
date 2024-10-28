@@ -15,15 +15,21 @@ def UNIT4_1():
         '''
     )
 
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + ... + L{N(t-1)}')
+    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + ... + L_{N(t-1)}')
     st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + ...+ L_{N(t-1)}')
 
+    st.write(
+        '''
+        Then if we have information of yearly employment in a firm we can calculate the 
+        compound annual growth rate of employment as follows:
+        '''
+    )
+
     st.latex(r'''
-    \text{CAGR} = \left( \frac{E_{n}}{E_{0}} \right)^{\frac{1}{n}} - 1
+    \text{CAGR} = \left( \frac{L_{t+k}}{L_{t}} \right)^{\frac{1}{k}} - 1
     ''')
 
 
-    st.components.v1.iframe("https://www.unavarra.es/biblioteca?languageId=1", width=800, height=600, scrolling=True)
     
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
     employees = np.fromstring(employees_input, sep=',')
