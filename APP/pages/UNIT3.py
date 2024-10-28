@@ -37,6 +37,9 @@ def UNIT3_1():
         Complete the table:
         '''
     )
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('Complete for 3 jobs at your firm')
     
     L1, L2, L3, O = st.columns(4)
     with L1:
