@@ -31,8 +31,10 @@ def UNIT3_1():
 
     st.write(
         '''
-        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; 
-        and $s$ represents separations. 
+        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires or 
+        number of employees who have recently been recruited and started working at the firm; 
+        and $s$ represents separations or number of employees who leave the firm, either voluntarily (quitting or retiring)
+        or involuntarily (layoffs, dismissals). 
         '''
     )
 
