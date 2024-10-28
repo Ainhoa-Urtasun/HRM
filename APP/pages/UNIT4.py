@@ -61,15 +61,24 @@ def UNIT4_2():
     )
 
 def UNIT4_3():
-
-    st.write('Suppose $L$ employees at a firm contribute as follows:')
-    st.latex(r'Q = e_1^{\alpha_1} \times e_2^{\alpha_2} \times \cdots \times \times e_L^{\alpha_L}')
-
-    st.latex(r'e_R > e_W')
-    
+    st.write('Suppose $L$ employees at a firm contribute to output as follows:')
+    st.latex(r'Q = e_1^{\alpha_1} \times e_2^{\alpha_2} \times \cdots \times e_L^{\alpha_L}')
+    st.write('The output elasticity of each employee follows this order:')
+    st.latex(r'\alpha_1 > \alpha_2 > \cdots > \alpha_L')
     st.write(
         '''
-        However, due to **asymmetric information**, the employer 
+        The firm is about to hire a new employee from the labor market. Suppose the firm wishes to hire 
+        an employee who contributes the maximum possible, that is, one whose output elasticity is the highest. 
+        However, due to **asymmetric information**, the employer doesn't know the exact contribution of each candidate 
+        to the firm’s value. To attract candidates, the employer needs to offer a salary. 
+    
+        The employer could offer a high salary to attract good candidates who are expected to contribute significantly. 
+        However, if the employer offers a salary equal to the highest contribution, anyone might apply, pretending 
+        to be the best candidate. Given this asymmetric information, the firm decides to offer a salary that is equal 
+        to the expected contribution of the candidate pool.
+        '''
+    )
+
         cannot distinguish between these two types of candidates initially.
         The employer knows that there is a probability $p$ that the candidate is the right one, 
         and a probability $1-p$ that the candidate is wrong. Due to uncertainty, the employer has to offer
