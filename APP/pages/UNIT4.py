@@ -62,14 +62,9 @@ def UNIT4_2():
 
 def UNIT4_3():
 
-    st.write(
-        '''
-        Suppose \(Q = e_1^\alpha\) When a company posts a job online, two types of candidates apply: 
-        right (high-effort) candidates and wrong (low-effort) candidates. 
-        Let's denote the effort levels of these candidates as $e_R$ (right candidates) and $e_W$ (wrong candidates), 
-        with:
-        '''
-    )
+    st.write('Suppose $L$ employees at a firm contribute as follows:')
+    st.latex('Q = e_1^\alpha_1 \times e_1^\alpha_1)
+
     st.latex(r'e_R > e_W')
     
     st.write(
