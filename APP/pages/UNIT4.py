@@ -75,22 +75,11 @@ def UNIT4_3():
         The employer could offer a high salary to attract good candidates who are expected to contribute significantly. 
         However, if the employer offers a salary equal to the highest contribution, anyone might apply, pretending 
         to be the best candidate. Given this asymmetric information, the firm decides to offer a salary that is equal 
-        to the expected contribution of the candidate pool.
+        to the expected contribution of the candidate pool:
         '''
     )
-
-    st.write("The expected contribution of the candidate pool is given by:")
-    st.latex(r'\mathbb{E}(\alpha) = \sum_{i=1}^{L} p_i \alpha_i')
-    st.write("- Expected contribution from a candidate in the labor market:")
-    st.latex(r'\mathbb{E}(\alpha)')
-    st.write("- Total number of different candidate types in the labor market:")
-    st.latex(r'L')
-    st.write("- Probability of selecting a candidate of type \\( i \\), representing the likelihood of encountering that type:")
-    st.latex(r'p_i')
-    st.write("- Contribution (output elasticity) associated with candidate type \\( i \\), representing the value this type would contribute:")
-    st.latex(r'\alpha_i')
-
-  
+    
+    st.latex(r'w = \mathbb{E}(\alpha) = \sum_{i=1}^{L} p_i \alpha_i')
     st.write(
         '''
         As a result, only the wrong candidates accept the offer, creating a **pooling equilibrium** 
