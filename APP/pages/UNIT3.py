@@ -78,6 +78,9 @@ def UNIT3_1():
     
     st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('Employment in each job at the firm:')
+
     col1, col2, col3 = st.columns(3)
     with col1:
         if st.button("$L_{1(t-1)}$"):
