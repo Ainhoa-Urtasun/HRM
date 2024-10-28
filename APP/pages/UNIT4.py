@@ -82,8 +82,8 @@ def UNIT4_3():
     st.latex(r'w = \mathbb{E}(\alpha) = \sum_{i=1}^{L} p_i \alpha_i')
     st.write(
         '''
-        As a result, only the wrong candidates accept the offer, creating a **pooling equilibrium** 
-        where low-effort workers dominate.
+        As a result, only candidates with lower contributions (the "wrong" candidates) accept the offer, 
+        creating a **pooling equilibrium** where lower-contribution candidates dominate.
         '''
     )
 
