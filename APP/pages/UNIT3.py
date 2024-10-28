@@ -33,13 +33,11 @@ def UNIT3_1():
         '''
         Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires; 
         and $s$ represents separations. 
-
-        Complete the table:
         '''
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Complete for 3 jobs at your firm')
+    st.write('Fill in data for 3 jobs at your firm (use made-up data)')
     
     L1, L2, L3, O = st.columns(4)
     with L1:
