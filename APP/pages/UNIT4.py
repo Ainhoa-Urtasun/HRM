@@ -73,7 +73,7 @@ def UNIT4_2():
 
     st.write(
         '''
-        where S_i represents the most requested transversal skill in online job ads within the EU27: 
+        where $S_i$ represents the most requested transversal skill in online job ads within the EU27: 
         'Demonstrating willingness to learn.'
         '''
     )
@@ -87,6 +87,58 @@ def UNIT4_2():
     st.write(
         '''
         Thus, the lower the willingness to learn, the higher the employee's cost of effort.
+        '''
+    )
+
+    st.write(
+        '''
+        we can analyze its properties by calculating its derivatives. Since \( C(e_i) \) depends on the square of effort, it exhibits certain characteristics related to convexity.
+        
+        Taking the first derivative with respect to effort \( e_i \):
+        '''
+    )
+
+    st.latex(
+        r'''
+        C'(e_i) = \frac{d}{de_i} \left[(100 - S_i)e_i^2\right] = 2(100 - S_i)e_i
+        '''
+    )
+
+    st.write(
+        '''
+        This first derivative shows the marginal cost of effort. Since \( 100 - S_i \) is a positive constant, 
+        the marginal cost of effort increases linearly with \( e_i \).
+
+        The second derivative with respect to \( e_i \) is:
+        '''
+    )
+
+    st.latex(
+        r'''
+        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - S_i)e_i^2\right] = 2(100 - S_i)
+        '''
+    )
+
+    st.write(
+        '''
+        Since \( 2(100 - S_i) > 0 \), the second derivative is positive, which means that the cost function \( C(e_i) \) is convex, or "concave-up". This convexity indicates that the cost of effort increases at an increasing rate as effort \( e_i \) rises.
+    
+        Jensen's inequality tells us that for a convex function \( C \), the expected cost of effort is at least the cost of the expected effort. Mathematically:
+        '''
+    )
+
+    st.latex(
+        r'''
+        E[C(e_i)] \geq C(E[e_i])
+        '''
+    )
+
+    st.write(
+        '''
+        This inequality implies that, due to the convex nature of \( C(e_i) \), 
+        any variability in effort will lead to a higher average cost compared to a 
+        scenario where effort is consistent. Thus, encouraging consistent effort across employees 
+        minimizes the cost impact due to the convexity of the function.
         '''
     )
 
