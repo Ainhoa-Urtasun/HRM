@@ -12,63 +12,24 @@ def UNIT4_1():
         Performance can be evaluated on average or for each specific employee, with the latter being more challenging 
         but also more meaningful.
 
-        A typical average performance evaluation metric is labor productivity.
+        A typical average performance metric is labor productivity.
         '''
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.text_input("Write here the labor productivity for your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
-
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + ... + L_{N(t-1)}')
-    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + ...+ L_{N(t-1)}')
-
-    st.write(
-        '''
-        Then if we have information of yearly employment in a firm we can calculate the 
-        compound annual growth rate of employment as follows:
-        '''
-    )
-
-    st.latex(r'''
-    \text{CAGR} = \left( \frac{L_{t+k}}{L_{t}} \right)^{\frac{1}{k}} - 1
-    ''')
-
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
-    
-    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees = np.fromstring(employees_input, sep=',')
-        
-    df = pd.DataFrame({
-        "Year": ["2019", "2020", "2021"],
-        "Employment": employees,
-    })
-
-    fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
-    ax.set_xlabel('Year')
-    ax.set_ylabel('Metrics')
-    ax.set_title("Employment Over Time")
-    ax.legend()
-    st.pyplot(fig)
+    st.text_input("Write here the labor productivity of your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
 
 def UNIT4_2():
     
     st.write(
         '''
-        In recruiting, **asymmetric information** arises because job candidates 
-        know more about their skills than the firm does. This can lead to **adverse selection**, 
-        where the firm may end up hiring less qualified candidates due to this information gap. 
-        Here’s how adverse selection occurs: to attract a pool of candidates, 
-        the firm posts a job ad specifying the tasks, required skills, credentials, 
-        and salary for the role. Due to limited information about each candidate’s true abilities, 
-        the employer offers an average salary for the position. 
-        This attracts candidates who meet the listed credentials, but these credentials, 
-        while signaling a certain level of qualification, do not fully reveal each candidate's suitability.
-    
-        However, this average salary might be too low for the 'good' candidates 
-        while still appealing to 'wrong' ones, 
-        resulting in adverse selection where primarily 'wrong' candidates apply.
+        A more meaningful but also more challenging way to evaluate performance is to assess 
+        how well each employee performs within the firm. If done properly, 
+        this allows the firm to understand each employee's contribution to its value 
+        and to motivate them to improve their performance.
+
+        Here, we present several alternative metrics for evaluating employee performance. Given our production function's 
+        dependence on the individual effort exerted by each employee, one such metric could be the output elasticity of effort.
 
         '''
     )
