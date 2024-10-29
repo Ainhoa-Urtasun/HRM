@@ -47,6 +47,16 @@ def UNIT4_2():
         '''
     )
 
+    st.write(
+        '''
+        In any case, employee effort is challenging to assess. To explain why, we first need to clarify 
+        what it means. By effort, we refer to an employee's willingness to make meaningful 
+        contributions to the firm. While it could include the number of working hours, it also encompasses 
+        possessing the necessary skills and motivation to perform tasks effectively. 
+        One proxy for employee effort could be absenteeism. For each employee, we can calculate 
+        absenteeism as the ratio of the number of days absent from work to the total number of workdays.
+        '''
+
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
     st.text_input('For that job posting, offer a salary equal to the median monthly gross income in EUR for that occupation as reported in [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):')
