@@ -133,7 +133,7 @@ def UNIT5_4():
         
         Under this salary and effort expectation, a high-skill candidate is willing to exert the 
         required effort.
-        In contrast, a low-skill candidate would face a prohibitive cost of $C(e) = 100 \times 100^2 = 1,000,000$
+        In contrast, a low-skill candidate would face a prohibitive cost
         and thus would not apply.
         '''
     )
