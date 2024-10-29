@@ -107,8 +107,8 @@ def UNIT5_4():
 
     st.write(
         '''
-        Assuming two job candidates 1 and 2, $S_1 = 99$, indicating a high-skill candidate, 
-        then their cost of effort becomes:
+        Assuming two job candidates 1 and 2, $S_1 = 99$ and $S_2 = 0$ indicating a high-skill candidate, 
+        and a low-skill candidate. The cost of effort of the high-skill candidate is:
         '''
     )
     
@@ -118,7 +118,7 @@ def UNIT5_4():
         This lower cost reflects that the high-skill candidate possesses the necessary skill abundantly, 
         making effort less costly for them.
 
-        For a low-skill candidate, assuming $S = 0$, the cost of effort is:
+        For a low-skill candidate, the cost of effort is:
         '''
     )
     
@@ -129,11 +129,11 @@ def UNIT5_4():
         This higher cost implies that it would be more expensive for the low-skill candidate to 
         exert the same level of effort as the high-skill candidate.
         
-        The company offers a salary of 4,000, expecting a target effort level of $e^* = 200$.
+        The company offers a monthly salary of €10,000, expecting a target effort level of $e^* = 100$.
         
         Under this salary and effort expectation, a high-skill candidate $S_1 = 99$ is willing to exert the 
-        required effort, as their cost of effort $C(e) = e^2 = 200^2 = 40,000$ is feasible.
-        In contrast, a low-skill candidate $S = 0$ would face a prohibitive cost of $C(e) = 100 \times 200^2 = 4,000,000$
+        required effort, as their cost of effort $C(e) = e^2 = 100^2 = 10,000$ is feasible.
+        In contrast, a low-skill candidate $S = 0$ would face a prohibitive cost of $C(e) = 100 \times 100^2 = 1,000,000$
         and thus would not apply. The challenge remains: how to measure and control for the actual effort exerted 
         by candidates to ensure that the required skill level aligns with job expectations.
         '''
