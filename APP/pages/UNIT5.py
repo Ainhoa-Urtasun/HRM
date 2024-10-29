@@ -99,24 +99,25 @@ def UNIT5_3():
 
 def UNIT5_4():
     st.write(r"The cost of effort for each employee or job candidate is defined as:")
-    st.write(r"$$C(e) = (100 - S)e^2$$")
-    st.write(r"where:")
-    st.write(r" - \( C(e) \) is the total cost of effort,")
-    st.write(r" - \( e \) represents the level of effort exerted,")
-    st.write(r" - \( S \) denotes the skill or credential level required to apply for the job.")
+    st.write(r"$$C(e_i) = (100 - S_i)e_i^2$$")
 
-    st.write(r"Assuming \( S = 99 \), indicating a high-skill candidate, then their cost of effort becomes:")
-    st.write(r"$$C(e) = e^2$$")
-    st.write(r"This lower cost reflects that the high-skill candidate possesses the necessary skill abundantly, making effort less costly for them.")
+    st.write(r"Assuming two job candidates 1 and 2, $S_1 = 99$, indicating a high-skill candidate, then their cost of effort becomes:")
+    st.write(r"$$C(e_1) = e_1^2$$")
+    st.write(r"This lower cost reflects that the high-skill candidate possesses the necessary skill abundantly, 
+    making effort less costly for them.")
 
-    st.write(r"For a low-skill candidate, assuming \( S = 0 \), the cost of effort is:")
-    st.write(r"$$C(e) = 100 e^2$$")
-    st.write(r"This higher cost implies that it would be more expensive for the low-skill candidate to exert the same level of effort as the high-skill candidate.")
+    st.write(r"For a low-skill candidate, assuming $S = 0$, the cost of effort is:")
+    st.write(r"$$C(e_2) = 100 e_2^2$$")
+    st.write(r"This higher cost implies that it would be more expensive for the low-skill candidate to 
+    exert the same level of effort as the high-skill candidate.")
 
-    st.write(r"The company offers a salary of 4,000, expecting a target effort level of \( e = 200 \).")
-    st.write(r"Under this salary and effort expectation, a high-skill candidate (\( S = 99 \)) is willing to exert the required effort, as their cost of effort \( C(e) = e^2 = 200^2 = 40,000 \) is feasible.")
-    st.write(r"In contrast, a low-skill candidate (\( S = 0 \)) would face a prohibitive cost of \( C(e) = 100 \times 200^2 = 4,000,000 \) and thus would not apply.")
-    st.write(r"The challenge remains: how to measure and control for the actual effort exerted by candidates to ensure that the required skill level aligns with job expectations.")
+    st.write(r"The company offers a salary of 4,000, expecting a target effort level of $e^* = 200$.")
+    st.write(r"Under this salary and effort expectation, a high-skill candidate $S_1 = 99$ is willing to exert the 
+    required effort, as their cost of effort $C(e) = e^2 = 200^2 = 40,000$ is feasible.")
+    st.write(r"In contrast, a low-skill candidate $S = 0$ would face a prohibitive cost of $C(e) = 100 \times 200^2 = 4,000,000$
+    and thus would not apply.")
+    st.write(r"The challenge remains: how to measure and control for the actual effort exerted 
+    by candidates to ensure that the required skill level aligns with job expectations.")
 
 st.set_page_config(page_title="UNIT5", layout="wide")
 
