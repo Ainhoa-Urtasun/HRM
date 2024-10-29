@@ -67,9 +67,15 @@ def UNIT4_2():
 
     st.latex(
             r'''
-            C(e_i) = (1-S_i)e_i^2
+            C(e_i) = (100-S_i)e_i^2
             '''
         )
+
+    st.write(
+        '''
+        where S_i represents the most requested transversal skill in online job ads in EU27: 'Demonstrating willingness to learn.'
+        '''
+    )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
