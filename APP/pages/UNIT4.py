@@ -73,7 +73,8 @@ def UNIT4_2():
 
     st.write(
         '''
-        where S_i represents the most requested transversal skill in online job ads in EU27: 'Demonstrating willingness to learn.'
+        where S_i represents the most requested transversal skill in online job ads within the EU27: 
+        'Demonstrating willingness to learn.'
         '''
     )
 
@@ -81,6 +82,12 @@ def UNIT4_2():
         r"""
         0 \leq S_{i} \leq 100
         """
+    )
+
+    st.write(
+        '''
+        Thus, the lower the willingness to learn, the higher the employee's cost of effort.
+        '''
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
