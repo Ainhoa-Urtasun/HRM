@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT4_1():
+def UNIT5_1():
 
     st.write(
         '''
@@ -48,7 +48,7 @@ def UNIT4_1():
     ax.legend()
     st.pyplot(fig)
 
-def UNIT4_2():
+def UNIT5_2():
     
     st.write(
         '''
@@ -74,7 +74,7 @@ def UNIT4_2():
     st.text_input('For that job posting, offer a salary equal to the median monthly gross income in EUR for that occupation as reported in [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):')
     st.text_input('Explain why you might end up recruiting the wrong job candidates:')
 
-def UNIT4_3():
+def UNIT5_3():
     st.write(r"The cost of effort for each employee or job candidate is defined as:")
     st.write(r"$$C(e) = (100 - S)e^2$$")
     st.write(r"where:")
@@ -95,34 +95,11 @@ def UNIT4_3():
     st.write(r"In contrast, a low-skill candidate (\( S = 0 \)) would face a prohibitive cost of \( C(e) = 100 \times 200^2 = 4,000,000 \) and thus would not apply.")
     st.write(r"The challenge remains: how to measure and control for the actual effort exerted by candidates to ensure that the required skill level aligns with job expectations.")
 
-def UNIT4_4():
-    
-    st.write(
-        '''
-        To reach a **separating equilibrium**, where the employer can differentiate between 
-        the two types of candidates, they may rely on **signaling**. 
-        In this context, candidates can signal their ability through obtaining **ECTS credits** aligned with the job. 
-        Although both right and wrong candidates can obtain ECTS, it is more costly for the wrong candidates.
-        
-        This leads to the following conditions:
-        1. For the wrong candidate, the salary they earn without ECTS must be greater 
-        than the salary they would earn with ECTS, minus the cost of obtaining ECTS.
-        2. For the right candidate, the salary with ECTS, minus the cost of obtaining ECTS, 
-        must be greater than the salary without ECTS.
-
-        This signaling helps the employer distinguish between the two types of candidates, 
-        leading to a more efficient recruitment process.
-
-        These conditions ensure that wrong candidates do not find it worthwhile to obtain ECTS, while right candidates do. 
-        Therefore, signaling through ECTS helps employers differentiate candidates based on their effort levels.
-        '''
-    )
-
-st.set_page_config(page_title="UNIT4", layout="wide")
+st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection','Signaling'],  # required
+    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -131,11 +108,9 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Employment":
-    UNIT4_1()
+    UNIT5_1()
 elif selected == "Asymmetric information and adverse selection":
-    UNIT4_2()
+    UNIT5_2()
 elif selected == "Ways to mitigate adverse selection":
-    UNIT4_3()
-elif selected == "Signaling":
-    UNIT4_4()
+    UNIT5_3()
 
