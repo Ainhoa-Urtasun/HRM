@@ -75,6 +75,29 @@ def UNIT5_2():
     st.text_input('Explain why you might end up recruiting the wrong job candidates:')
 
 def UNIT5_3():
+    st.write(
+    """
+    1. **Structured Screening and Testing**: Use tests that assess specific skills, cognitive abilities, or personality traits relevant to the job. Well-designed tests can reveal true abilities and motivations, reducing reliance on self-reported skills.
+    
+    2. **Probation Periods**: Offer new hires a trial period where they work temporarily before being offered a full-time position. This allows employers to assess actual performance and alignment with the role.
+    
+    3. **Referral Programs**: Encourage employee referrals, as current employees are likely to recommend qualified candidates who match the company culture. Referrals generally have lower adverse selection risks.
+    
+    4. **Transparent Job Descriptions**: Create clear, detailed job descriptions outlining key responsibilities, expectations, and required skills. This transparency helps attract candidates with relevant qualifications, filtering out unsuitable applicants.
+    
+    5. **Signaling Mechanisms**: Use educational or certification requirements as signals. Candidates with certifications or degrees in relevant fields are more likely to have the necessary skills and commitment.
+    
+    6. **Performance-based Compensation**: Implement pay structures tied to performance metrics. Performance-based incentives can help attract candidates who are confident in their ability to meet expectations, reducing adverse selection.
+    
+    7. **Background Checks**: Conduct thorough background and reference checks to validate candidates' past performance, reliability, and honesty, helping identify those likely to underperform.
+    
+    8. **Job Previews**: Offer realistic job previews during recruitment, showing candidates the challenges and requirements of the role. This helps align expectations and dissuades unsuitable candidates.
+
+    Each of these strategies helps reduce information asymmetry, allowing employers to make more informed decisions and select candidates who are better fits for the organization.
+    """
+)
+
+def UNIT5_4():
     st.write(r"The cost of effort for each employee or job candidate is defined as:")
     st.write(r"$$C(e) = (100 - S)e^2$$")
     st.write(r"where:")
@@ -99,7 +122,7 @@ st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection'],  # required
+    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection','Transparent job descriptions'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -113,4 +136,5 @@ elif selected == "Asymmetric information and adverse selection":
     UNIT5_2()
 elif selected == "Ways to mitigate adverse selection":
     UNIT5_3()
-
+elif selected == 'Transparent job descriptions'
+    UNIT5_4()
