@@ -23,9 +23,8 @@ def UNIT6_2():
 
     st.write(
         """
-        Employees receive on-the-job training to improve their performance. 
-        Training programs are designed to enhance employees' skills. By focusing on skill development, 
-        HR managers ensure that employees acquire the necessary competencies to perform their tasks more efficiently 
+        Training programs are designed to enhance employees' skills. Training aims at providing employees with
+        the necessary skills to perform their tasks more efficiently 
         and contribute to the overall success of the organization.
         
         Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
