@@ -145,7 +145,7 @@ st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection','Transparent job descriptions'],  # required
+    options=["Employment","Asymmetric information and adverse selection",'Ways to mitigate adverse selection','Demonstrating willigness to learn'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -159,5 +159,5 @@ elif selected == "Asymmetric information and adverse selection":
     UNIT5_2()
 elif selected == "Ways to mitigate adverse selection":
     UNIT5_3()
-elif selected == 'Transparent job descriptions':
+elif selected == 'Demonstrating willigness to learn':
     UNIT5_4()
