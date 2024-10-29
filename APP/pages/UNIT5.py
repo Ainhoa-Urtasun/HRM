@@ -83,7 +83,7 @@ def UNIT5_3():
     
     3. **Referral Programs**: Encourage employee referrals, as current employees are likely to recommend qualified candidates who match the company culture. Referrals generally have lower adverse selection risks.
     
-    4. **Transparent Job Descriptions**: Create clear, detailed job descriptions outlining key responsibilities, expectations, and required skills. This transparency helps attract candidates with relevant qualifications, filtering out unsuitable applicants.
+    4. **Transparent Job Postings**: Create clear, detailed job descriptions outlining key responsibilities, expectations, and required skills. This transparency helps attract candidates with relevant qualifications, filtering out unsuitable applicants.
     
     5. **Signaling Mechanisms**: Use educational or certification requirements as signals. Candidates with certifications or degrees in relevant fields are more likely to have the necessary skills and commitment.
     
