@@ -72,6 +72,7 @@ def UNIT4_2():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
     st.text_input('For that job posting, offer a salary equal to the median monthly gross income in EUR for that occupation as reported in [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):')
+    st.text_input('Explain why you might end up recruiting the wrong job candidates:')
 
 def UNIT4_3():
     st.write('Suppose $L$ employees at a firm contribute to output as follows:')
