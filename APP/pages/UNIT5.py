@@ -105,8 +105,13 @@ def UNIT5_4():
         '''
     )
 
-    st.write(r"Assuming two job candidates 1 and 2, $S_1 = 99$, indicating a high-skill candidate, 
-    then their cost of effort becomes:")
+    st.write(
+        '''
+        Assuming two job candidates 1 and 2, $S_1 = 99$, indicating a high-skill candidate, 
+        then their cost of effort becomes:
+        '''
+    )
+    
     st.latex(r"C(e_1) = e_1^2")
     st.write(
         '''
