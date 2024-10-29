@@ -58,14 +58,14 @@ def UNIT4_2():
         '''
     )
 
-        st.write(
+    st.write(
         '''
         Another proxy for evaluating employee's effort is the employee cost of effort function. We consider the following
         cost of effort function:
         '''
     )
 
-        st.latex(
+    st.latex(
             r'''
             C(e_i) = (1-S_i)e_i^2
             '''
