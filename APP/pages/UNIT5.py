@@ -136,5 +136,5 @@ elif selected == "Asymmetric information and adverse selection":
     UNIT5_2()
 elif selected == "Ways to mitigate adverse selection":
     UNIT5_3()
-elif selected == 'Transparent job descriptions'
+elif selected == 'Transparent job descriptions':
     UNIT5_4()
