@@ -92,9 +92,8 @@ def UNIT4_2():
 
     st.write(
         '''
-        we can analyze its properties by calculating its derivatives. Since \( C(e_i) \) depends on the square of effort, it exhibits certain characteristics related to convexity.
-        
-        Taking the first derivative with respect to effort \( e_i \):
+        We can analyze its properties by calculating its derivatives. Taking the first derivative with 
+        respect to effort $e_i$:
         '''
     )
 
@@ -106,10 +105,10 @@ def UNIT4_2():
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since \( 100 - S_i \) is a positive constant, 
-        the marginal cost of effort increases linearly with \( e_i \).
+        This first derivative shows the marginal cost of effort. Since $(100 - S_i)$ is a positive constant, 
+        the marginal cost of effort increases linearly with $e_i$.
 
-        The second derivative with respect to \( e_i \) is:
+        The second derivative with respect to $e_i$ is:
         '''
     )
 
@@ -121,9 +120,12 @@ def UNIT4_2():
 
     st.write(
         '''
-        Since \( 2(100 - S_i) > 0 \), the second derivative is positive, which means that the cost function \( C(e_i) \) is convex, or "concave-up". This convexity indicates that the cost of effort increases at an increasing rate as effort \( e_i \) rises.
+        Since $2(100 - S_i) > 0$, the second derivative is positive, which means that the cost function
+        $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
+        increases at an increasing rate as effort $e_i$ rises.
     
-        Jensen's inequality tells us that for a convex function \( C \), the expected cost of effort is at least the cost of the expected effort. Mathematically:
+        Jensen's inequality tells us that for a convex function such as $C(e_i)$, the expected cost of 
+        effort is at least the cost of the expected effort. Mathematically:
         '''
     )
 
