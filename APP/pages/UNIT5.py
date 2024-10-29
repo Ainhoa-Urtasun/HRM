@@ -123,7 +123,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information",'Adverse selection','Signaling'],  # required
+    options=["Employment","Asymmetric information and adverse selection",'Adverse selection','Signaling'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -133,7 +133,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "Employment":
     UNIT4_1()
-elif selected == "Asymmetric information":
+elif selected == "Asymmetric information and adverse selection":
     UNIT4_2()
 elif selected == "Adverse selection":
     UNIT4_3()
