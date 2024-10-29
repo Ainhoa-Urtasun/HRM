@@ -138,6 +138,8 @@ def UNIT5_4():
         '''
     )
 
+    st.text_input('Which strategy will put into practice this model')
+
 st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
