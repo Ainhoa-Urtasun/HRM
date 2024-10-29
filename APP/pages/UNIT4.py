@@ -56,6 +56,7 @@ def UNIT4_2():
         One proxy for employee effort could be absenteeism. For each employee, we can calculate 
         absenteeism as the ratio of the number of days absent from work to the total number of workdays.
         '''
+    )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
