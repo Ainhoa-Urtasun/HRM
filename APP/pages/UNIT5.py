@@ -52,19 +52,20 @@ def UNIT4_2():
     
     st.write(
         '''
-   In recruiting, asymmetric information arises because job candidates know more about their skills than the firm does. 
-   This can lead to adverse selection, where the firm may end up hiring less qualified candidates due to limited information. 
-   As a consequence of this information gap, the employer offers an average salary for the role, which attracts candidates 
-   with relevant credentials, such as university degrees, master’s degrees, or vocational training certificates. 
-   While these credentials signal some level of qualification, they do not fully reveal the candidate's suitability for the job. 
-   As a result, the applicant pool includes both 'right' and 'wrong' candidates. With an average salary on offer, 
-   any candidate meeting the basic credential requirements might be drawn to apply. 
-   However, this salary may be insufficient for 'good' candidates and overly attractive to 'wrong' ones, 
-   leading to adverse selection where primarily 'wrong' candidates apply.
-        
-        To mitigate this, candidates use **signaling** (e.g., qualifications, experience) to indicate their abilities, while firms engage 
-        in **screening** (e.g., interviews, tests) to gather more information. Additionally, firms often use **probation periods** to assess 
-        an employee’s true performance before making long-term commitments, reducing the risks of hiring based on incomplete information.
+        In recruiting, **asymmetric information** arises because job candidates 
+        know more about their skills than the firm does. This can lead to **adverse selection**, 
+        where the firm may end up hiring less qualified candidates due to this information gap. 
+        Here’s how adverse selection occurs: to attract a pool of candidates, 
+        the firm posts a job ad specifying the tasks, required skills, credentials, 
+        and salary for the role. Due to limited information about each candidate’s true abilities, 
+        the employer offers an average salary for the position. 
+        This attracts candidates who meet the listed credentials, but these credentials, 
+        while signaling a certain level of qualification, do not fully reveal each candidate's suitability.
+    
+        However, this average salary might be too low for the 'good' candidates 
+        while still appealing to 'wrong' ones, 
+        resulting in adverse selection where primarily 'wrong' candidates apply.
+
         '''
     )
 
