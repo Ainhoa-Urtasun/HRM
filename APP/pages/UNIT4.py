@@ -77,11 +77,11 @@ def UNIT4_2():
         '''
     )
 
-        st.latex(
-            r"""
-            0 \leq S_{i} \leq 100
-            """
-        )
+    st.latex(
+        r"""
+        0 \leq S_{i} \leq 100
+        """
+    )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
