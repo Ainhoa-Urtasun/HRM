@@ -17,7 +17,7 @@ def UNIT4_1():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.text_input("Calculate labor productivity for your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
+    st.text_input("Write here the labor productivity for your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
 
     st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + ... + L_{N(t-1)}')
     st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + ...+ L_{N(t-1)}')
