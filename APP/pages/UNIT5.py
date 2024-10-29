@@ -138,7 +138,8 @@ def UNIT5_4():
         '''
     )
 
-    st.text_input('Which strategy will put into practice this model')
+    st.text_input('Identify the strategy that you believe will best facilitate the successful 
+    implementation of this final model.')
 
 st.set_page_config(page_title="UNIT5", layout="wide")
 
