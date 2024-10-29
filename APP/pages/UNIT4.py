@@ -137,7 +137,7 @@ def UNIT4_2():
 
     st.write(
         '''
-        This inequality implies that, due to the convex nature of \( C(e_i) \), 
+        This inequality implies that, due to the convex nature of $C(e_i)$, 
         any variability in effort will lead to a higher average cost compared to a 
         scenario where effort is consistent. Thus, encouraging consistent effort across employees 
         minimizes the cost impact due to the convexity of the function.
