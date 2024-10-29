@@ -8,10 +8,11 @@ def UNIT4_1():
 
     st.write(
         '''
-        Employment refers to the number of employees, including both full-time and part-time workers. 
-        If we have information of employment in a firm at the job level, 
-        we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as follows,
-        assuming $N$ jobs both at $t-1$ and $t$:
+        Performance evaluation refers to assessing how well employees perform within the firm. 
+        Performance can be evaluated on average or for each specific employee, with the latter being more challenging 
+        but also more meaningful.
+
+        A typical average performance evaluation metric is labor productivity.
         '''
     )
 
