@@ -131,11 +131,10 @@ def UNIT5_4():
         
         The company offers a monthly salary of €10,000, expecting a target effort level of $e^* = 100$.
         
-        Under this salary and effort expectation, a high-skill candidate $S_1 = 99$ is willing to exert the 
-        required effort, as their cost of effort $C(e) = e^2 = 100^2 = 10,000$ is feasible.
-        In contrast, a low-skill candidate $S = 0$ would face a prohibitive cost of $C(e) = 100 \times 100^2 = 1,000,000$
-        and thus would not apply. The challenge remains: how to measure and control for the actual effort exerted 
-        by candidates to ensure that the required skill level aligns with job expectations.
+        Under this salary and effort expectation, a high-skill candidate is willing to exert the 
+        required effort.
+        In contrast, a low-skill candidate would face a prohibitive cost of $C(e) = 100 \times 100^2 = 1,000,000$
+        and thus would not apply.
         '''
     )
 
