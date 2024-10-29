@@ -49,7 +49,7 @@ def UNIT4_2():
 
     st.write(
         '''
-        In any case, employee effort is challenging to assess. To explain why, we first need to clarify 
+        In any case, employee's effort is challenging to assess. To explain why, we first need to clarify 
         what it means. By effort, we refer to an employee's willingness to make meaningful 
         contributions to the firm. While it could include the number of working hours, it also encompasses 
         possessing the necessary skills and motivation to perform tasks effectively. 
@@ -57,6 +57,19 @@ def UNIT4_2():
         absenteeism as the ratio of the number of days absent from work to the total number of workdays.
         '''
     )
+
+        st.write(
+        '''
+        Another proxy for evaluating employee's effort is the employee cost of effort function. We consider the following
+        cost of effort function:
+        '''
+    )
+
+        st.latex(
+            r'''
+            C(e_i) = (1-S_i)e_i^2
+            '''
+        )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input('From [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) choose one occupation for which you wish to post a job:')
