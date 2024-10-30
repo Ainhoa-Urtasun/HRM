@@ -40,7 +40,7 @@ def UNIT3_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Fill in data for 3 jobs at your firm (use made-up data):')
     
-    L1, L2, L3, O = st.columns(4)
+    L1, L2, L3, D = st.columns(4)
     with L1:
         m11 = st.number_input("$m_{11}$", key="m11", step=1)
         m21 = st.number_input("$m_{21}$", key="m21", step=1)
@@ -56,19 +56,19 @@ def UNIT3_1():
         m23 = st.number_input("$m_{23}$", key="m23", step=1)
         m33 = st.number_input("$m_{33}$", key="m33", step=1)
         h3 = st.number_input("$h_{3}$", key="h3", step=1)
-    with O:
-        s1 = st.number_input("$s_{1}$", key="s1", step=1)
-        s2 = st.number_input("$s_{2}$", key="s2", step=1)
-        s3 = st.number_input("$s_{3}$", key="s3", step=1)
+    with D:
+        d1 = st.number_input("$d_{1}$", key="d1", step=1)
+        d2 = st.number_input("$d_{2}$", key="d2", step=1)
+        d3 = st.number_input("$d_{3}$", key="d3", step=1)
 
     st.write(
         '''
         By adding up the values of each of the three first rows of the table, we get the employment in a particular 
-        job at $(t-1)$ at the firm:
+        job at $t=-1$ at the firm:
         '''
     )
 
-    st.latex(r'L_{i(t-1)} = m_{i1(t-1,t)} + m_{i2(t-1,t)} + m_{i3(t-1,t)} + s_{i(t-1,t)}')
+    st.latex(r'L_{i(-1)} = m_{i1(-1,0)} + m_{i2(-1,0)} + m_{i3(-1,0)} + d_{i(-1,0)}')
 
     st.write(
         '''
