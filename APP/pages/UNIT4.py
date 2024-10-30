@@ -41,7 +41,7 @@ def UNIT4_3():
         $i$ exerts 1% more effort.
     
     st.latex(
-         r'''
+        r'''
         Q = f(e_1, e_2, \dots, e_i, \dots, e_L)
         e_i \geq 0
         \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
