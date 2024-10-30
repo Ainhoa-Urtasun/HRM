@@ -89,13 +89,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = \frac{d}{de_i} \left[(100 - s_{(k)i)e_i^2\right] = 2(100 - s_{(k)i)e_i
+        C'(e_i) = \frac{d}{de_i} \left[(100 - s_{(k)i}e_i^2)\right] = 2(100 - s_{(k)i})e_i
         '''
     )
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $(100 - s_{(k)i)$ is a positive constant, 
+        This first derivative shows the marginal cost of effort. Since $(100 - s_{(k)i})$ is a positive constant, 
         the marginal cost of effort increases linearly with $e_i$.
 
         The second derivative with respect to $e_i$ is:
@@ -104,7 +104,7 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_{(k)i)e_i^2\right] = 2(100 - s_{(k)i)
+        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_{(k)i}e_i^2)\right)] = 2(100 - s_{(k)i})
         '''
     )
 
