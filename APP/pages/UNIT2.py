@@ -28,18 +28,18 @@ def UNIT2_1():
         - $s_3$ Taking a proactive approach
         - $s_4$ Working efficiently
 
-        In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
+        In the context of job analysis and design, it is useful to represent a task $t_j$ as a column-vector of skills:
         """
     )
     
     st.latex(
         r'''
-        t_i  = 
+        t_j  = 
         \begin{pmatrix}
-        s_{1i} \\
-        s_{2i} \\ 
-        s_{3i} \\ 
-        s_{4i} \\
+        s_{1j} \\
+        s_{2j} \\ 
+        s_{3j} \\ 
+        s_{4j} \\
         \end{pmatrix}
         '''
     )
@@ -47,14 +47,14 @@ def UNIT2_1():
     st.write(
         '''
         Each element $s_{ij}$ of the column vector indicates the extent 
-        to which skill $s_j$ is required for task $t_i$:
+        to which skill $s_i$ is required for task $t_j$:
         '''
     )    
     
 def UNIT2_2():
     st.write(
         '''
-        A job can be represented as a matrix of tasks where each column-vector
+        As a bundle of tasks, a job can be represented as a matrix of tasks where each column-vector
         corresponds to a different task:
         '''
     )
@@ -66,7 +66,9 @@ def UNIT2_2():
         s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
         s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
         s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
-        \end{pmatrix}
+        \end{pmatrix} \\[10pt]
+
+        0 \leq \sum s_{ij} \leq 100 
         """
     )
 
