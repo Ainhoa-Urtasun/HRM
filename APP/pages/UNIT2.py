@@ -74,9 +74,6 @@ def UNIT2_2():
 
     st.write(
         '''
-        Each row of the matrix
-    st.write(
-        '''
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
         its corresponding column will be a vector of zeros.
         '''
