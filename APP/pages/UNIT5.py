@@ -26,7 +26,7 @@ def UNIT5_1():
     )
 
     st.latex(r'''
-    \text{CAGR} = \left( \frac{L_{t+k}}{L_{t}} \right)^{\frac{1}{k}} - 1
+    \text{CAGR} = \left( \frac{L^n}{L_{t}} \right)^{\frac{1}{k}} - 1
     ''')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
