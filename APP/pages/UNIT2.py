@@ -103,7 +103,9 @@ def UNIT2_3():
     st.write(
         '''
         Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to 
-        represent one of the 3 jobs of your firm as matrix of tasks and skill requirements')
+        represent one of the 3 jobs in your firm as matrix of tasks and skill requirements:
+        '''
+    )
     
     t1, t2, t3, t4, t5 = st.columns(5)
     with t1:
@@ -132,7 +134,7 @@ def UNIT2_3():
         s35 = st.number_input("$s_{35}$", key="s35")
         s45 = st.number_input("$s_{45}$", key="s45")
     
-    if st.button("Submit"):
+    if st.button("Job evaluation"):
         matrix = np.array([
             [s11, s12, s13, s14, s15],
             [s21, s22, s23, s24, s25],
@@ -140,8 +142,8 @@ def UNIT2_3():
             [s41, s42, s43, s44, s45]
         ])
     
-        job_complexity = np.sum(matrix)
-        st.write(f"Job Complexity: {job_complexity}")
+        job = np.sum(matrix)
+        st.write(f"Job evaluation: {job}")
 
 def UNIT2_4():
     st.write("The cosine similarity between two tasks $t_i$ and $t_j$ is defined as follows:")
