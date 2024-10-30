@@ -10,13 +10,12 @@ def UNIT5_1():
         '''
         Employment refers to the number of employees, including both full-time and part-time workers. 
         If we have information of employment in a firm at the job level, 
-        we can calculate the total employment of the firm at $(t-1)$ and at $(t)$ as follows,
-        assuming $N$ jobs both at $t-1$ and $t$:
+        we can calculate the total employment of the firm at -1 and at 0 as follows:
         '''
     )
 
-    st.latex(r'L^{-1} = L_{(1)}^{-1} + L_{(2)}^{-1} + L_{(3)}^{-1}')
-    st.latex(r'L^0 = L_{(1)}^0 + L_{(2)}^0 + L_{(3)}^0')
+    st.latex(r'L_{-1} = L_{(1,-1)} + L_{(2,-1)} + L_{(3,-1)}')
+    st.latex(r'L_0 = L_{(1,0)} + L_{(2,0)} + L_{(3,0)}')
 
     st.write(
         '''
