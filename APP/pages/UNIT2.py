@@ -21,7 +21,8 @@ def UNIT2_1():
         A **skill** $s_i$ is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
         There are many classifications of skills. 
-        Here we consider **self-management skills and competences**:
+        Here we consider the top 4 transversal skills and competences in 2023 in online job ads in the EU27 
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
 
         - $s_1$ Demonstrating willingness to learn
         - $s_2$ Maintaining a positive attitude
