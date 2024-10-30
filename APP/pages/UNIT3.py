@@ -40,7 +40,7 @@ def UNIT3_1():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Fill in data for 3 jobs at your firm (use made-up data):')
+    st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
     
     L1, L2, L3, D = st.columns(4)
     with L1:
@@ -65,12 +65,12 @@ def UNIT3_1():
 
     st.write(
         '''
-        By adding up the values of each of the three first rows of the table, we get the employment in job $J_{(k)}$
-        at $t=-1$ within the firm:
+        By adding up the values row-wise, we get the employment in job $J_{(k)}$
+        at $-1$ within the firm:
         '''
     )
 
-    st.latex(r'L_{(k)(-1)} = m_{k1(-1,0)} + m_{k2(-1,0)} + m_{k3(-1,0)} + d_{k(-1,0)}')
+    st.latex(r'L_{(k)-1} = m_{k1(-1,0)} + m_{k2(-1,0)} + m_{k3(-1,0)} + d_{k(-1,0)}')
 
     st.write(
         '''
