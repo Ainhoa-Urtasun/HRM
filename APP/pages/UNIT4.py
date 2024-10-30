@@ -60,23 +60,22 @@ def UNIT4_4():
 
     st.write(
         '''
-        Let's consider the following cost of effort function:
+        Consider the following cost of effort function:
         '''
     )
 
     st.latex(
             r'''
-            C(e_i) = (100-S_i)e_i^2 \\[10pt]
+            C(e_i) = (100-s_{(k)i})e_i^2 \\[10pt]
             0 \leq S_i \leq 100
             '''
         )
 
     st.write(
         '''
-        where $S_i$ represents a skill or combination of skills the employee needs to have
-        to perform tasks effectively. For example, let's consider $S_i$ represents the most requested 
-        transversal skill in online job ads within the EU27, **Demonstrating willingness to learn**.
-        Then, the lower the willingness to learn, the higher the employee's cost of effort.
+        where $s_(k)i$ represents the skills employee $i$ has
+        to perform the tasks that the job she carries out $J_{(k)}$ entails.
+        Then, the higher $$s_(k)i$$, the lower the employee $i$'s cost of effort.
         '''
     )
 
