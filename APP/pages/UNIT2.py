@@ -28,34 +28,11 @@ def UNIT2_1():
         - $s_2$: Maintaining a positive attitude
         - $s_3$: Taking a proactive approach
         - $s_4$: Working efficiently
-
-        To complete any task $t_j$, employees require to possess multiple skills. Therefore, we represent 
-        each task $t_j$ as a column-vector of skills:
         """
     )
     
-    st.latex(
-        r'''
-        t_j  = 
-        \begin{pmatrix}
-        s_{1j} \\
-        s_{2j} \\ 
-        s_{3j} \\ 
-        s_{4j} \\
-        \end{pmatrix} \\[10pt]
-
-   
-        '''
-    )
-    
-    st.write(
-        '''
-        Each element $s_{ij}$ of the column vector indicates the extent 
-        to which skill $s_i$ is required for task $t_j$:
-        '''
-    )    
-    
 def UNIT2_2():
+
     st.write(
         '''
         A job $J_{(k)}$ is a bundle of tasks. Each task requires an employee to posess
@@ -74,23 +51,24 @@ def UNIT2_2():
         s_{31(k)} & s_{32(k)} & s_{33(k)} & s_{34(k)} & s_{35(k)} \\
         s_{41(k)} & s_{42(k)} & s_{43(k)} & s_{44(k)} & s_{45(k)} \\
         \end{pmatrix} \\[10pt]
-
-        0 \leq s_{ij} \leq 45
         """
     )
 
     st.write(
         '''
-        Each column represents a task. A job doesn't necessarily entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ represents a
-        specific skill. By adding up the values in a given row, we can determine the extent to which
-        that skills is required to successfully perform $J_{(k)}$, with values restricted to:
+        Each element of the matrix $s_{ij}$ represents the extent to which skill $s_i$ is required
+        to perform $t_j$. We restrict $s_{ij}$ to the following values:
         '''
     )
 
-    st.latex(
+    st.latex(r'0 \leq s_{ij} \leq 45')
+
+    st.write(
         '''
-        0 \leq s_{i(k)} = \sum_j^5 s_{ij(k)} \leq 100 
+        Each column of the matrix represents a task. A job doesn't necessarily entail all tasks. 
+        If a job doesn't entail a particular task, 
+        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ represents a
+        specific skill.
         '''
     )
 
