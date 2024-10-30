@@ -138,8 +138,8 @@ def UNIT2_3():
         ])
     
         # Calculate the Euclidean norm for each row
-        row_norms = np.linalg.norm(matrix, axis=1)
-        st.write(f"Job evaluation: {row_norms.T}")
+        row_norms = np.linalg.norm(matrix, axis=1).reshape(-1,1)
+        st.write(f"Job evaluation: {row_norms}")
 
 def UNIT2_4():
     st.write(
