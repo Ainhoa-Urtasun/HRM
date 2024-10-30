@@ -61,7 +61,7 @@ def UNIT2_2():
              
     st.latex(
         r"""
-        J_k = \begin{pmatrix}
+        J_{(k)} = \begin{pmatrix}
         s_{11(k)} & s_{12(k)} & s_{13(k)} & s_{14(k)} & s_{15(k)} \\
         s_{21(k)} & s_{22(k)} & s_{23(k)} & s_{24(k)} & s_{25(k)} \\
         s_{31(k)} & s_{32(k)} & s_{33(k)} & s_{34(k)} & s_{35(k)} \\
