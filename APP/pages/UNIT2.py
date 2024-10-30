@@ -12,11 +12,11 @@ def UNIT2_1():
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
         identifies 5 pillar tasks: 
         
-        - $t_1$ Intellectual
-        - $t_2$ Physical
-        - $t_3$ Social
-        - $t_4$ Use of methods
-        - $t_5$ Use of technology
+        - $t_1$: Intellectual
+        - $t_2$: Physical
+        - $t_3$: Social
+        - $t_4$: Use of methods
+        - $t_5$: Use of technology
         
         A **skill** $s_i$ is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
@@ -24,12 +24,13 @@ def UNIT2_1():
         Here we consider the top 4 transversal skills and competences in 2023 in online job ads in the EU27 
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
 
-        - $s_1$ Demonstrating willingness to learn
-        - $s_2$ Maintaining a positive attitude
-        - $s_3$ Taking a proactive approach
-        - $s_4$ Working efficiently
+        - $s_1$: Demonstrating willingness to learn
+        - $s_2$: Maintaining a positive attitude
+        - $s_3$: Taking a proactive approach
+        - $s_4$: Working efficiently
 
-        In the context of job analysis and design, it is useful to represent a task $t_j$ as a skill-vector:
+        To complete any task $t_j$, employees require to possess multiple skills. Therefore, we represent 
+        each task $t_j$ as a skill-vector:
         """
     )
     
