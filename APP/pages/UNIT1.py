@@ -56,16 +56,9 @@ def UNIT1_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
-    st.text_input(
-        '''
-        Select the sector into which you want your firm to be classified using NACE at 
-        [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence).
-        Write here the industry name and economic activities:
-        '''
-    )
+    st.text_input('Select the sector into which you want your firm to be classified using NACE at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the industry name and economic activities:')
     st.markdown(
-    '''
-    Select 3 jobs for your firm using ISCO occupations at 
+    '''Select 3 jobs for your firm using ISCO occupations at 
     [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence).
     '''
     )
