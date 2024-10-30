@@ -31,7 +31,7 @@ def UNIT6_1():
         '''
         Where $e_i$ is the effort exerted by employee $i$ and $s_i$ represents the skills
         employee $i$ possesses. Training will target the 
-        development of $S_i$.
+        development of $s_i$.
 
         Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
         willingness, involvement, and character. 
@@ -47,7 +47,7 @@ def UNIT6_2():
     st.write(
         """
         We use the **difference-in-differences (DiD) method** to evaluate the impact of training on the
-        development of skill $S$.
+        development of skill $s$.
         """
     )
 
