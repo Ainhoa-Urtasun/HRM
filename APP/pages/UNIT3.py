@@ -30,13 +30,12 @@ def UNIT3_1():
 
     st.write(
         '''
-        Where $m_{(i)(j)}$ represents employee mobility from job $J_{(i)}$ to job $J_{(j)}$ 
-        within the firm from $t=-1$ to 
-        $t=0$ where $t=0$ represents the present moment; $h_{(k)}$ represents new hires or 
-        number of employees who have been recruited and started working in job $J_{(i)}$ 
-        within the firm from from $t=-1$ to 
-        $t=0$; and $d$ represents departures or number of employees who have left the firm from $t=-1$ to 
-        $t=0$, either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
+        Where $m_{(i)(j)}$ represents employee mobility from $J_{(i)}$ to $J_{(j)}$ 
+        within the firm during the period $(-1,0)$ where $0$ represents the present moment; $h_{(k)}$ 
+        represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
+        within the firm during the period from $(-1,0)$; and $d$ represents departures or 
+        number of employees who have left the firm during the period $(-1,0)$,
+        either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
         '''
     )
 
