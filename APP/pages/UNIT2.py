@@ -146,10 +146,16 @@ def UNIT2_3():
         st.write(f"Job evaluation: {job}")
 
 def UNIT2_4():
-    st.write("The cosine similarity between two tasks $t_i$ and $t_j$ is defined as follows:")
+    st.write(
+        '''
+        The similarity between two tasks can be a useful HRM metric to design jobs. The similarity between 
+        tasks $t_i$ and $t_j$ can be calculated using the cosine 
+        similarity between two vectors:
+        '''
+    )
 
     st.latex(r'''
-    \text{Cosine Similarity}(\text{t}_i, \text{t}_j) = \frac{\text{t}_i \cdot \text{t}_j}{\|\text{t}_i\| \|\text{t}_j\|}
+    (\text{t}_i, \text{t}_j) = \frac{\text{t}_i \cdot \text{t}_j}{\|\text{t}_i\| \cdot \|\text{t}_j\|}
     ''')
 
     st.write("Where the numerator contains the dot product of the skill vectors:")
