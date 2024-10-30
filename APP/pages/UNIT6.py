@@ -16,7 +16,7 @@ def UNIT6_1():
         Upskilling may be necesary to adopt new technologies, such as 
         robots and artificial intelligence (AI).
 
-        Here we focus on on-the-job training, specifically on evaluating its effectiveness.
+        Here we focus on on-the-job training.
         Given the cost of effort for each employee:
         '''
     )
@@ -76,7 +76,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CC} = e_{+1}^{\text{non-trained}} - e_{-1}^{\text{non-trained}}
+        \text{CC} = S_{+1}^{\text{non-trained}} - S_{-1}^{\text{non-trained}}
         """
     )
 
@@ -89,7 +89,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CE} = e_{-1}^{\text{trained}} + (e_{+1}^{\text{non-trained}} - e_{-1}^{\text{non-trained}})
+        \text{CE} = S_{-1}^{\text{trained}} + (S_{+1}^{\text{non-trained}} - S_{-1}^{\text{non-trained}})
         """
     )
 
