@@ -58,21 +58,23 @@ def UNIT4_4():
 
     st.write(
         '''
-        Another proxy for evaluating employee's effort is the employee cost of effort function. We consider the following
-        cost of effort function:
+        Let's consider the following cost of effort function:
         '''
     )
 
     st.latex(
             r'''
-            C(e_i) = (100-S_i)e_i^2
+            C(e_i) = (100-S_i)e_i^2 \\[10pt]
+            0 \leq S_i \leq 100
             '''
         )
 
     st.write(
         '''
-        where $S_i$ represents the most requested transversal skill in online job ads within the EU27: 
-        'Demonstrating willingness to learn.'
+        where $S_i$ represents a skill or combination of skills the employee needs to have
+        to perform tasks effectively. For example, let's consider $S_i$ represents the most requested 
+        transversal skill in online job ads within the EU27, **Demonstrating willingness to learn**.
+        Then, the lower the willingness to learn, the higher the employee's cost of effort.
         '''
     )
 
@@ -84,13 +86,8 @@ def UNIT4_4():
 
     st.write(
         '''
-        Thus, the lower the willingness to learn, the higher the employee's cost of effort.
-        '''
-    )
-
-    st.write(
-        '''
-        We can analyze its properties by calculating its derivatives. Taking the first derivative with 
+        We can analyze the properties of the cost of effort function
+        by calculating its derivatives. Taking the first derivative with 
         respect to effort $e_i$:
         '''
     )
