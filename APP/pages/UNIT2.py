@@ -93,7 +93,7 @@ def UNIT2_3():
         By evaluating jobs, organizations can 
         establish equitable compensation structures and identify training and development needs. 
         One approach to job evaluation is to add up all the skills required to successfully perform the
-        tasks that the job entails. In other words, job $J_(k)$ can be evaluated as follows:
+        tasks that the job entails. In other words, job $J_{(k)}$ can be evaluated as follows:
         '''
     )
 
