@@ -63,15 +63,16 @@ def UNIT1_2():
     Occupations are standardized, while jobs are more flexible because they are designed by firms. 
     '''
     )
-    st.text_input(
+    st.markdown(
     '''
-    Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1). 
-    Qualification criteria  applying 2 criteria: 
-    (1) The firm has to be classified in the sector selected above and 
-    (2) The firm has to have fewer than 25 employees. 
+    Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1).  
+    Qualification criteria:  
+    (1) The firm has to be classified in the sector selected above, and  
+    (2) The firm must have fewer than 25 employees.  
     Write the name of your firm here:
     '''
     )
+    firm_name = st.text_input("Firm Name")
     
 def UNIT1_3():
     st.write(
