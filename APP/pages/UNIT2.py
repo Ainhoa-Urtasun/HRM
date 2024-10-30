@@ -140,7 +140,7 @@ def UNIT2_3():
         job_complexity = np.sum(matrix)
         st.write(f"Job Complexity: {job_complexity}")
 
-def UNIT2_3():
+def UNIT2_4():
     st.write("The cosine similarity between two tasks $t_i$ and $t_j$ is defined as follows:")
 
     st.latex(r'''
