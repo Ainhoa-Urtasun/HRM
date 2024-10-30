@@ -19,8 +19,7 @@ def UNIT5_1():
 
     st.write(
         '''
-        Then if we have information of yearly employment in a firm we can calculate the 
-        compound annual growth rate of employment as follows:
+        We can calculate the compound annual growth rate (CAGR) of employment during $t$ years as follows:
         '''
     )
 
