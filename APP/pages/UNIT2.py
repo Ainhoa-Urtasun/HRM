@@ -137,9 +137,11 @@ def UNIT2_3():
             [s41, s42, s43, s44, s45]
         ])
     
-        # Calculate the Euclidean norm for each row
-        row_norms = np.linalg.norm(matrix, axis=1).reshape(-1,1)
-        st.write(f"Job evaluation: {row_norms}")
+    row_norms = np.linalg.norm(matrix, axis=1)
+    norms_as_latex = r"\begin{pmatrix}" + \
+                     r" \\ ".join([f"{norm:.2f}" for norm in row_norms]) + \
+                     r"\end{pmatrix}"
+    st.latex(f"\\text{{Job evaluation: }} {norms_as_latex}")
 
 def UNIT2_4():
     st.write(
