@@ -61,8 +61,8 @@ def UNIT2_2():
              
     st.latex(
         r"""
-        \begin{pmatrix}
-        s_{11} & s_{12} & s_{13} & s_{14} & s_{15} \\
+        J_i = \begin{pmatrix}
+        s_{11}^1 & s_{12} & s_{13} & s_{14} & s_{15} \\
         s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
         s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
         s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
@@ -72,6 +72,9 @@ def UNIT2_2():
         """
     )
 
+    st.write(
+        '''
+        Each row of the matrix
     st.write(
         '''
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
