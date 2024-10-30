@@ -23,13 +23,15 @@ def UNIT4_2():
     
     st.write(
         '''
-        A more meaningful but also more challenging way to evaluate performance is to assess 
-        how well each employee performs within the firm. If done properly, 
-        this allows the firm to understand each employee's contribution to its value 
-        and to motivate them to improve their performance.
+        A more meaningful yet challenging approach to performance evaluation is assessing 
+        the effort each employee exerts. Effort here is not just working hours; it reflects 
+        the employee's willingness to make meaningful contributions to the firm. This includes 
+        not only hours worked but also the skills and motivation required to perform tasks effectively.
 
-        Nex, we present several alternative metrics for evaluating employee performance. 
+        When employee effort is assessed properly, it allows the firm to understand each employee's 
+        contribution to its overall value and motivates them to improve their performance.
 
+        Next, we present several alternative metrics for evaluating employee effort.
         '''
     )
 
@@ -50,16 +52,7 @@ def UNIT4_3():
         '''
     )
 
-    st.write(
-        '''
-        In any case, employee's effort is challenging to assess. To explain why, we first need to clarify 
-        what it means. By effort, we refer to an employee's willingness to make meaningful 
-        contributions to the firm. While it could include the number of working hours, it also encompasses 
-        possessing the necessary skills and motivation to perform tasks effectively. 
-        One proxy for employee effort could be absenteeism. For each employee, we can calculate 
-        absenteeism as the ratio of the number of days absent from work to the total number of workdays.
-        '''
-    )
+def UNIT4_4():
 
     st.write(
         '''
@@ -151,7 +144,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Average performance evaluation",'Employee performance evaluation'],  # required
+    options=["Average performance evaluation",'Employee performance evaluation','Output elasticity of effort','Cost of effort','Abseteeism'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -163,3 +156,9 @@ if selected == "Average performance evaluation":
     UNIT4_1()
 elif selected == "Employee performance evaluation":
     UNIT4_2()
+elif selected == "Output elasticity of effort":
+    UNIT4_3()
+elif selected == "Cost of effort":
+    UNIT4_4()
+elif selected == "Abseteeism":
+    UNIT4_5()
