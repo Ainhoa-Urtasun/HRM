@@ -164,13 +164,9 @@ def UNIT2_4():
             else:
                 vector1 = list(map(float, skills1.split(',')))
                 vector2 = list(map(float, skills2.split(',')))
-
                 if len(vector1) == 4 and len(vector2) == 4:
-                    if norm(vector1) == 0 or norm(vector2) == 0:
-                        st.write("One of the vectors is zero, cannot calculate cosine similarity.")
-                    else:
-                        cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-                        st.write(f"Task similarity: {cosine_similarity:.4f}")
+                    euclidean_distance = np.linalg.norm(vector_a - vector_b)
+                    st.write(f"Task difference: {euclidean_distance:.4f}")
                 else:
                     st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
