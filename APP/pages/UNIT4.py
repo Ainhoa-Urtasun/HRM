@@ -28,22 +28,23 @@ def UNIT4_2():
         this allows the firm to understand each employee's contribution to its value 
         and to motivate them to improve their performance.
 
-        Here, we present several alternative metrics for evaluating employee performance. Given our production function's 
-        dependence on the individual effort exerted by each employee, one such metric could be the output elasticity of effort.
+        Nex, we present several alternative metrics for evaluating employee performance. 
 
         '''
     )
 
-    st.latex(
-         r'''
-        \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
-        '''
-    )
+def UNIT4_3():
 
     st.write(
         '''
-        This output elascticity indicates the percentage change in the output
-        the firm produces when employee $i$ exerts 1% more effort.
+        **Output elasticity of effort** indicates the percentage change in the output the firm produces when employee
+        $i$ exerts 1% more effort.
+    
+    st.latex(
+         r'''
+        Q = f(e_1, e_2, \dots, e_i, \dots, e_L)
+        e_i \geq 0
+        \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
         '''
     )
 
