@@ -144,27 +144,15 @@ def UNIT2_3():
 def UNIT2_4():
     st.write(
         '''
-        The similarity between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
-        helping the firm decide how to allocate tasks across jobs. This similarity can be measured 
-        by calculating the cosine similarity of the skill-vectors for each task:
+        The difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
+        helping the firm decide how to allocate tasks across jobs. This difference can be measured 
+        by calculating the Euclidean distance of the skill-vectors for each task:
         '''
     )
 
-    st.latex(r'''
-    (\text{t}_i, \text{t}_j) = \frac{\text{t}_i \cdot \text{t}_j}{\|\text{t}_i\| \cdot \|\text{t}_j\|}
-    ''')
-
-    st.write("Where the numerator represents the dot product of the skill-vectors for each task:")
-   
-    st.latex(r'''
-    \text{t}_i \cdot \text{t}_j = s_{i1} s_{j1} + s_{i2} s_{j2} + s_{i3} s_{j3} + s_{i4} s_{j4}
-    ''')
-
-    st.write("And the denominator represents the product of the magnitudes of the skill-vectors for each task:")
-
-    st.latex(r'''
-    \|\text{t}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
-    ''')
+    st.latex(r"""
+    d(\mathbf{t}_i, \mathbf{t}_j) = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
+    """)
 
     skills1 = st.text_input("Enter 4 numeric values for $t_i$ (comma-separated):")
     skills2 = st.text_input("Enter 4 numeric values for $t_j$ (comma-separated):")
@@ -193,7 +181,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks and skills",'Jobs','Job evaluation','Task similarity'],  # required
+    options=["Tasks and skills",'Jobs','Job evaluation','Task difference'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -207,7 +195,7 @@ elif selected == "Jobs":
     UNIT2_2()
 elif selected == 'Job evaluation':
     UNIT2_3()
-elif selected == "Task similarity":
+elif selected == "Task difference":
     UNIT2_4()
 
 
