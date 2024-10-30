@@ -52,9 +52,6 @@ def UNIT2_1():
     r"""
     0 \leq s_{ij} \leq 100
     """)
-    
-    """
-    )
 
 def UNIT2_3():
     st.write(
