@@ -72,20 +72,20 @@ def UNIT2_2():
     )
 
     st.write(
-        '''
-        Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros.
-        '''
+    '''
+    Jobs don't entail all tasks. If a job doesn't entail a particular task, 
+    its corresponding column will be a vector of zeros.
+    '''
     )
 
     st.write(
-        '''
-        Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
-        By evaluating jobs, organizations can 
-        establish equitable compensation structures and identify training and development needs. 
-        The following formula shows
-        how to measure job complexity as an example of job evaluation.
-        '''
+    '''
+    Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
+    By evaluating jobs, organizations can 
+    establish equitable compensation structures and identify training and development needs. 
+    The following formula shows
+    how to measure job complexity as an example of job evaluation.
+    '''
     )
 
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (s_{1j} + s_{2j} + s_{3j} + s_{4j})')
