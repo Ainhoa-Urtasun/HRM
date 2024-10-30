@@ -44,7 +44,7 @@ def UNIT3_1():
     
     L1, L2, L3, D = st.columns(4)
     with L1:
-        m11 = st.number_input("$m_{11}$", key="m11", step=1)
+        m11 = st.number_input("$m_{(1)(1)}$", key="m11", step=1)
         m21 = st.number_input("$m_{21}$", key="m21", step=1)
         m31 = st.number_input("$m_{31}$", key="m31", step=1)
         h1 = st.number_input("$h_{1}$", key="h1", step=1)
