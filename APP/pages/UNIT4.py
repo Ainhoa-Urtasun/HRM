@@ -73,9 +73,9 @@ def UNIT4_4():
 
     st.write(
         '''
-        where $s_(k)i$ represents the skills employee $i$ has
-        to perform the tasks that the job she carries out $J_{(k)}$ entails.
-        Then, the higher $$s_(k)i$$, the lower the employee $i$'s cost of effort.
+        where $s_{(k)i}$ represents the skills employee $i$ possesses
+        to perform job $J_{(k)}$. The higher the value of $s_(k)i$, the lower 
+        cost of effort for the employee $i$.
         '''
     )
 
