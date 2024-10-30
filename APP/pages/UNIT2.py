@@ -7,91 +7,91 @@ from numpy.linalg import norm
 
 def UNIT2_1():
     st.write(
-    """
-    A **task** is an action performed by an employee that results in a specific output.
-    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
-    identifies 5 pillar tasks: 
+        """
+        A **task** is an action performed by an employee that results in a specific output.
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+        identifies 5 pillar tasks: 
         
-    - $t_1$ Intellectual
-    - $t_2$ Physical
-    - $t_3$ Social
-    - $t_4$ Use of methods
-    - $t_5$ Use of technology
+        - $t_1$ Intellectual
+        - $t_2$ Physical
+        - $t_3$ Social
+        - $t_4$ Use of methods
+        - $t_5$ Use of technology
         
-    A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
-    tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-    There are many classifications of skills. 
-    Here we consider **self-management skills and competences**:
+        A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
+        tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
+        There are many classifications of skills. 
+        Here we consider **self-management skills and competences**:
 
-    - $s_1$ Demonstrating willingness to learn
-    - $s_2$ Maintaining a positive attitude
-    - $s_3$ Taking a proactive approach
-    - $s_4$ Working efficiently
+        - $s_1$ Demonstrating willingness to learn
+        - $s_2$ Maintaining a positive attitude
+        - $s_3$ Taking a proactive approach
+        - $s_4$ Working efficiently
 
-    In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
-    '''
+        In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
+        """
     )
     
     st.latex(
-    r'''
-    t_i  = 
-    \begin{pmatrix}
-    s_{1i} \\
-    s_{2i} \\ 
-    s_{3i} \\ 
-    s_{4i} \\
-    \end{pmatrix}
-    '''
+        r'''
+        t_i  = 
+        \begin{pmatrix}
+        s_{1i} \\
+        s_{2i} \\ 
+        s_{3i} \\ 
+        s_{4i} \\
+        \end{pmatrix}
+        '''
     )
     
     st.write(
-    '''
-    Each element $s_{ij}$ of the column vector indicates the extent 
-    to which skill $s_j$ is required for task $t_i$:
-    '''
+        '''
+        Each element $s_{ij}$ of the column vector indicates the extent 
+        to which skill $s_j$ is required for task $t_i$:
+        '''
     )    
     
 def UNIT2_2():
-      
     st.write(
-    '''
-    A job can be represented as a matrix of tasks where each column-vector
-    corresponds to a different task:
-    '''
+        '''
+        A job can be represented as a matrix of tasks where each column-vector
+        corresponds to a different task:
+        '''
     )
              
     st.latex(
-    r"""
-    \begin{pmatrix}
-    s_{11} & s_{12} & s_{13} & s_{14} & s_{15} \\
-    s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
-    s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
-    s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
-    \end{pmatrix}
-    """
+        r"""
+        \begin{pmatrix}
+        s_{11} & s_{12} & s_{13} & s_{14} & s_{15} \\
+        s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
+        s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
+        s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
+        \end{pmatrix}
+        """
     )
 
     st.write(
-    '''
-    Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-    its corresponding column will be a vector of zeros.
-    '''
+        '''
+        Jobs don't entail all tasks. If a job doesn't entail a particular task, 
+        its corresponding column will be a vector of zeros.
+        '''
     )
 
     st.write(
-    '''
-    Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
-    By evaluating jobs, organizations can 
-    establish equitable compensation structures and identify training and development needs. 
-    The following formula shows
-    how to measure job complexity as an example of job evaluation.
-    '''
+        '''
+        Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
+        By evaluating jobs, organizations can 
+        establish equitable compensation structures and identify training and development needs. 
+        The following formula shows
+        how to measure job complexity as an example of job evaluation.
+        '''
     )
 
     st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (s_{1j} + s_{2j} + s_{3j} + s_{4j})')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
+    
     t1, t2, t3, t4, t5 = st.columns(5)
     with t1:
         s11 = st.number_input("$s_{11}$", key="s11")
@@ -109,7 +109,7 @@ def UNIT2_2():
         s33 = st.number_input("$s_{33}$", key="s33")
         s43 = st.number_input("$s_{43}$", key="s43")
     with t4:
-        s14 = st.number_input("$s_{14}$", key="s14")  # Corrected from s13
+        s14 = st.number_input("$s_{14}$", key="s14")
         s24 = st.number_input("$s_{24}$", key="s24")
         s34 = st.number_input("$s_{34}$", key="s34")
         s44 = st.number_input("$s_{44}$", key="s44")
@@ -190,5 +190,6 @@ elif selected == "Jobs and Job Evaluation":
     UNIT2_2()
 elif selected == "Task Similarity":
     UNIT2_3()
+
 
 
