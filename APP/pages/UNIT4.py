@@ -89,7 +89,7 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = \frac{d}{de_i} \left[(100 - s_{(k)i}e_i^2)\right] = 2(100 - s_{(k)i})e_i
+        C'(e_i) = \frac{d}{de_i} \left[(100 - s_{(k)i})e_i^2\right] = 2(100 - s_{(k)i})e_i
         '''
     )
 
@@ -104,13 +104,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_{(k)i}e_i^2)\right)] = 2(100 - s_{(k)i})
+        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_{(k)i})e_i^2\right)] = 2(100 - s_{(k)i})
         '''
     )
 
     st.write(
         '''
-        Since $2(100 - s_{(k)i) > 0$, the second derivative is positive, which means that the cost function
+        Since $2(100 - s_{(k)i}) > 0$, the second derivative is positive, which means that the cost function
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
