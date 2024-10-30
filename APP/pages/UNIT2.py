@@ -6,31 +6,31 @@ import numpy as np
 from numpy.linalg import norm
 
 def UNIT2_1():
-st.write(
+    st.write(
     """
-A **task** is an action performed by an employee that results in a specific output.
-[Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
-identifies 5 pillar tasks: 
+    A **task** is an action performed by an employee that results in a specific output.
+    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+    identifies 5 pillar tasks: 
         
-- $t_1$ Intellectual
-- $t_2$ Physical
-- $t_3$ Social
-- $t_4$ Use of methods
-- $t_5$ Use of technology
+    - $t_1$ Intellectual
+    - $t_2$ Physical
+    - $t_3$ Social
+    - $t_4$ Use of methods
+    - $t_5$ Use of technology
         
-A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
-tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-There are has many classifications of skills. 
-Here we consider **self-management skills and competences**:
+    A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
+    tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
+    There are has many classifications of skills. 
+    Here we consider **self-management skills and competences**:
 
-- $s_1$ Demonstrating willingness to learn
-- $s_2$ Maintaining a positive attitude
-- $s_3$ Taking a proactive approach
-- $s_4$ Working efficiently
+    - $s_1$ Demonstrating willingness to learn
+    - $s_2$ Maintaining a positive attitude
+    - $s_3$ Taking a proactive approach
+    - $s_4$ Working efficiently
 
-In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
-'''
-)
+    In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
+    '''
+    )
     
     st.latex(
     r'''
