@@ -75,7 +75,7 @@ def UNIT2_2():
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
         its corresponding column will be a vector of zeros. Each row in $J_k$ correspond to 
         a particular skill so if we add up the values of a particular row, we get how much of
-        a particular skill is required to successfully perform J_k, that we restrict to:
+        a particular skill is required to successfully perform $J_k$, that we restrict to:
         '''
     )
 
@@ -85,17 +85,19 @@ def UNIT2_2():
         '''
     )
 
+def UNIT2_3():
+
     st.write(
         '''
         Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
         By evaluating jobs, organizations can 
         establish equitable compensation structures and identify training and development needs. 
         The following formula shows
-        how to measure job complexity as an example of job evaluation.
+        how to evaluate job $J_k$:
         '''
     )
 
-    st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (s_{1j} + s_{2j} + s_{3j} + s_{4j})')
+    st.latex(r'\text{s(k) = } \sum_{i=1}^{4} s_i(k)')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
