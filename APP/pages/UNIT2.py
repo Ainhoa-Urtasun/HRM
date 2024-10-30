@@ -159,12 +159,17 @@ def UNIT2_4():
 
     if st.button("Task similarity"):
         try:
+        # Check if inputs are provided
             if not skills1 or not skills2:
                 st.write("Please provide values for both vectors.")
             else:
-                vector1 = list(map(float, skills1.split(',')))
-                vector2 = list(map(float, skills2.split(',')))
+                # Convert inputs to float lists
+                vector1 = np.array(list(map(float, skills1.split(','))))
+                vector2 = np.array(list(map(float, skills2.split(','))))
+            
+                # Check if both vectors have exactly 4 values
                 if len(vector1) == 4 and len(vector2) == 4:
+                    # Calculate Euclidean distance
                     euclidean_distance = np.linalg.norm(vector1 - vector2)
                     st.write(f"Task difference: {euclidean_distance:.4f}")
                 else:
