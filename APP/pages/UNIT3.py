@@ -123,7 +123,8 @@ def UNIT3_2():
     st.write(
         '''
         HR planning relies on the transition matrix $T$ to make predictions of the future availability of employees at 
-        $t+1$ in each different job at the firm (internal supply of labor). The transition matrix $T$ looks as follows:
+        $t+1$ in each different job at the firm (internal supply of labor). The notation below illustrates
+        the structure of the transition matrix $T$ and the calculations required to to make these predictions:
         '''
     )
 
@@ -131,7 +132,7 @@ def UNIT3_2():
         r'''
         T =
         \begin{pmatrix}
-        \frac{m_{(1)(1)}}{L_{(1)}^{-1}} & \frac{m_{12(t-1,t)}}{L_{1(t-1)}} & \frac{m_{13(t-1,t)}}{L_{1(t-1)}} \\ 
+        \frac{m_{(1)(1)}}{L_{(1)}^{-1}} & \frac{m_{(1)(2)}}{L_{1}^{-1}} & \frac{m_{(1)(3)}}{L_{1}^{-1}} \\ 
         \frac{m_{21(t-1,t)}}{L_{2(t-1)}} & \frac{m_{22(t-1,t)}}{L_{2(t-1)}} & \frac{m_{23(t-1,t)}}{L_{2(t-1)}} \\ 
         \frac{m_{31(t-1,t)}}{L_{3(t-1)}} & \frac{m_{32(t-1,t)}}{L_{3(t-1)}} & \frac{s_{33(t-1,t)}}{L_{3(t-1)}} \\  
 
