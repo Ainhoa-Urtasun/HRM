@@ -52,9 +52,7 @@ def UNIT2_1():
     )    
     
 def UNIT2_3():
-    st.write(
-
-             
+      
     st.write(
         '''
         A job can be represented as a matrix of tasks where each column-vector
