@@ -148,10 +148,9 @@ def UNIT2_3():
 def UNIT2_4():
     st.write(
         '''
-        The similarity between two tasks $t_i$ and $t_j$ can be a useful HRM metric to design jobs, so that 
-        the firm can decide how to allocate tasks to jobs. The similarity between 
-        tasks $t_i$ and $t_j$ can be calculated using the cosine 
-        similarity between the skill-vector of each task:
+        The similarity between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
+        helping the firm decide how to allocate tasks across jobs. This similarity can be measured 
+        using the cosine similarity between the skill-vector of each task:
         '''
     )
 
@@ -159,13 +158,13 @@ def UNIT2_4():
     (\text{t}_i, \text{t}_j) = \frac{\text{t}_i \cdot \text{t}_j}{\|\text{t}_i\| \cdot \|\text{t}_j\|}
     ''')
 
-    st.write("Where the numerator contains the dot product of the skill vectors:")
+    st.write("Where the numerator represents the dot product of the skill-vectors for each task:")
    
     st.latex(r'''
     \text{t}_i \cdot \text{t}_j = s_{i1} s_{j1} + s_{i2} s_{j2} + s_{i3} s_{j3} + s_{i4} s_{j4}
     ''')
 
-    st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
+    st.write("And the denominator represents the product of the magnitudes of the skill-vectors for each task:")
 
     st.latex(r'''
     \|\text{t}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
@@ -198,7 +197,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks and skills",'Jobs','Job evaluation','Task similarity'],  # required
+    options=["Tasks and skills",'Jobs','Job evaluation','Tasks similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -212,7 +211,7 @@ elif selected == "Jobs":
     UNIT2_2()
 elif selected == 'Job evaluation':
     UNIT2_3()
-elif selected == "Task similarity":
+elif selected == "Tasks similarity":
     UNIT2_4()
 
 
