@@ -150,7 +150,7 @@ def UNIT2_4():
         '''
         The similarity between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
         helping the firm decide how to allocate tasks across jobs. This similarity can be measured 
-        using the cosine similarity between the skill-vector of each task:
+        by calculating the cosine similarity of the skill-vectors for each task:
         '''
     )
 
@@ -173,7 +173,7 @@ def UNIT2_4():
     skills1 = st.text_input("Enter 4 numeric values for $t_i$ (comma-separated):")
     skills2 = st.text_input("Enter 4 numeric values for $t_j$ (comma-separated):")
 
-    if st.button("Calculate Cosine Similarity"):
+    if st.button("Task similarity"):
         try:
             if not skills1 or not skills2:
                 st.write("Please provide values for both vectors.")
@@ -186,7 +186,7 @@ def UNIT2_4():
                         st.write("One of the vectors is zero, cannot calculate cosine similarity.")
                     else:
                         cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
-                        st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
+                        st.write(f"Task similarity: {cosine_similarity:.4f}")
                 else:
                     st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
@@ -197,7 +197,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks and skills",'Jobs','Job evaluation','Tasks similarity'],  # required
+    options=["Tasks and skills",'Jobs','Job evaluation','Task similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -211,7 +211,7 @@ elif selected == "Jobs":
     UNIT2_2()
 elif selected == 'Job evaluation':
     UNIT2_3()
-elif selected == "Tasks similarity":
+elif selected == "Task similarity":
     UNIT2_4()
 
 
