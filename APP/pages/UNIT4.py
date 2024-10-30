@@ -144,6 +144,7 @@ def UNIT4_5():
         '''
         Another proxy to evaluate the effort or contribution an employee makes to the firm is by recording their
         absenteeism. In a month, we can calculate the absenteeism of a particular employee as follows:
+        '''
     )
 
     st.latex(
