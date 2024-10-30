@@ -138,19 +138,19 @@ def UNIT3_2():
         \end{pmatrix} \\[10pt]
         
         \begin{pmatrix}
-        \hat{L}_{1(t+1)} \\
-        \hat{L}_{2(t+1)} \\
-        \hat{L}_{3(t+1)} \\
+        \hat{L}_{(1)} \\
+        \hat{L}_{(2)} \\
+        \hat{L}_{(3)} \\
         \end{pmatrix} = 
         \begin{pmatrix}
         \frac{m_{(1)(1)}}{L_{(1)}^{-1}} & \frac{m_{(1)(2)}}{L_{1}^{-1}} & \frac{m_{(1)(3)}}{L_{1}^{-1}} \\ 
         \frac{m_{(2)(1)}}{L_{(2)}^{-1}} & \frac{m_{(2)(2)}}{L_{2}^{-1}} & \frac{m_{(2)(3)}}{L_{2}^{-1}} \\ 
         \frac{m_{(3)(1)}}{L_{(3)}^{-1}} & \frac{m_{(3)(2)}}{L_{3}^{-1}} & \frac{m_{(3)(3)}}{L_{3}^{-1}} \\  
-        \end{pmatrix}^T \\[10pt]
+        \end{pmatrix}^T
         \begin{pmatrix} 
-        L_{1(t)} \\ 
-        L_{2(t)} \\ 
-        L_{3(t)} \\ 
+        L_{(1)}^0 \\ 
+        L_{(2)}^0 \\ 
+        L_{(3)}^0 \\ 
         \end{pmatrix}
         '''
     )
