@@ -9,7 +9,7 @@ def UNIT2_1():
     st.write(
         """
         A **task** $t_j$ is an action performed by an employee that results in a specific output.
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) 
         identifies 5 pillar tasks: 
         
         - $t_1$: Intellectual
@@ -30,7 +30,7 @@ def UNIT2_1():
         - $s_4$: Working efficiently
 
         To complete any task $t_j$, employees require to possess multiple skills. Therefore, we represent 
-        each task $t_j$ as a skill-vector:
+        each task $t_j$ as a column-vector of skills:
         """
     )
     
@@ -42,7 +42,9 @@ def UNIT2_1():
         s_{2j} \\ 
         s_{3j} \\ 
         s_{4j} \\
-        \end{pmatrix}
+        \end{pmatrix} \\[10pt]
+
+        0 \leq s_{ij} \leq 45
         '''
     )
     
