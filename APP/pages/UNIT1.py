@@ -92,16 +92,16 @@ def UNIT1_3():
     - $L$ number of employees at the firm
     - $J_1, J_2, J_3$ jobs within the firm
     - Tasks to be carried out by employees at the firm:
-                - $t_1$: Intellectual
-                - $t_2$: Physical
-                - $t_3$: Social
-                - $t_4$: Use of methods
-                - $t_5$: Use of technology
-    - Skills to be possessed by employees at the firm
-                - $s_1$: Demonstrating willigness to learn
-                - $s_2$: Maintaining a positive attitude
-                - $s_3$: Taking a proactive approach
-                - $s_4$: Working efficiently  
+        - $t_1$: Intellectual
+        - $t_2$: Physical
+        - $t_3$: Social
+        - $t_4$: Use of methods
+        - $t_5$: Use of technology
+    - Skills to be possessed by employees at the firm:
+        - $s_1$: Demonstrating willigness to learn
+        - $s_2$: Maintaining a positive attitude
+        - $s_3$: Taking a proactive approach
+        - $s_4$: Working efficiently  
     '''
     )
 
