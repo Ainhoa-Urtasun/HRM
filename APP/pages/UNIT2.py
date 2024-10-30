@@ -104,30 +104,30 @@ def UNIT2_3():
     
     t1, t2, t3, t4, t5 = st.columns(5)
     with t1:
-        s11 = st.number_input("$s_{11}$", key="s11")
-        s21 = st.number_input("$s_{21}$", key="s21")
-        s31 = st.number_input("$s_{31}$", key="s31")
-        s41 = st.number_input("$s_{41}$", key="s41")
+        s11 = st.number_input("$s_{11}$", key="s11",step=1)
+        s21 = st.number_input("$s_{21}$", key="s21",step=1)
+        s31 = st.number_input("$s_{31}$", key="s31",step=1)
+        s41 = st.number_input("$s_{41}$", key="s41",step=1)
     with t2:
-        s12 = st.number_input("$s_{12}$", key="s12")
-        s22 = st.number_input("$s_{22}$", key="s22")
-        s32 = st.number_input("$s_{32}$", key="s32")
-        s42 = st.number_input("$s_{42}$", key="s42")
+        s12 = st.number_input("$s_{12}$", key="s12",step=1)
+        s22 = st.number_input("$s_{22}$", key="s22",step=1)
+        s32 = st.number_input("$s_{32}$", key="s32",step=1)
+        s42 = st.number_input("$s_{42}$", key="s42",step=1)
     with t3:
-        s13 = st.number_input("$s_{13}$", key="s13")
-        s23 = st.number_input("$s_{23}$", key="s23")
-        s33 = st.number_input("$s_{33}$", key="s33")
-        s43 = st.number_input("$s_{43}$", key="s43")
+        s13 = st.number_input("$s_{13}$", key="s13",step=1)
+        s23 = st.number_input("$s_{23}$", key="s23",step=1)
+        s33 = st.number_input("$s_{33}$", key="s33",step=1)
+        s43 = st.number_input("$s_{43}$", key="s43",step=1)
     with t4:
-        s14 = st.number_input("$s_{14}$", key="s14")
-        s24 = st.number_input("$s_{24}$", key="s24")
-        s34 = st.number_input("$s_{34}$", key="s34")
-        s44 = st.number_input("$s_{44}$", key="s44")
+        s14 = st.number_input("$s_{14}$", key="s14",step=1)
+        s24 = st.number_input("$s_{24}$", key="s24",step=1)
+        s34 = st.number_input("$s_{34}$", key="s34",step=1)
+        s44 = st.number_input("$s_{44}$", key="s44",step=1)
     with t5:
-        s15 = st.number_input("$s_{15}$", key="s15")
-        s25 = st.number_input("$s_{25}$", key="s25")
-        s35 = st.number_input("$s_{35}$", key="s35")
-        s45 = st.number_input("$s_{45}$", key="s45")
+        s15 = st.number_input("$s_{15}$", key="s15",step=1)
+        s25 = st.number_input("$s_{25}$", key="s25",step=1)
+        s35 = st.number_input("$s_{35}$", key="s35",step=1)
+        s45 = st.number_input("$s_{45}$", key="s45",step=1)
     
     if st.button("Job evaluation"):
         matrix = np.array([
