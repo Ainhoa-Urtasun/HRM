@@ -165,7 +165,7 @@ def UNIT2_4():
                 vector1 = list(map(float, skills1.split(',')))
                 vector2 = list(map(float, skills2.split(',')))
                 if len(vector1) == 4 and len(vector2) == 4:
-                    euclidean_distance = np.linalg.norm(vector_a - vector_b)
+                    euclidean_distance = np.linalg.norm(vector1 - vector2)
                     st.write(f"Task difference: {euclidean_distance:.4f}")
                 else:
                     st.write("Please enter exactly 4 numeric values for each vector.")
