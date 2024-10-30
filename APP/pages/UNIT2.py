@@ -182,6 +182,8 @@ def UNIT2_4():
         except ValueError:
             st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
+# Set page configuration
+st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
