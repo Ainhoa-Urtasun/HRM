@@ -69,7 +69,7 @@ def UNIT1_2():
     [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)
     '''
     )
-    st.text_input("Write their titles here:") 
+    st.text_input("Write the titles of the 3 jobs here:", 
     placeholder='''A job is not the same as an occupation. 
     Occupations are standardized, while jobs are more flexible because they are designed by firms. 
     '''
