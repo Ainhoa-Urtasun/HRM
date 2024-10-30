@@ -86,7 +86,12 @@ def UNIT2_3():
     )
 
     st.latex(r"""
-    \mathbf{S}_{J_{(k)}} = \begin{pmatrix} \| \mathbf{s}_{1, \cdot} \| \\ \| \mathbf{s}_{2, \cdot} \| \\ \vdots \\ \| \mathbf{s}_{n, \cdot} \| \end{pmatrix}
+    \mathbf{S}_{J_{(k)}} = \begin{pmatrix} 
+    \sqrt{s_{11(k)}^2 + s_{12(k)}^2 + s_{13(k)}^2 + s_{14(k)}^2 + s_{15(k)}^2} \\[10pt] 
+    \sqrt{s_{21(k)}^2 + s_{22(k)}^2 + s_{23(k)}^2 + s_{24(k)}^2 + s_{25(k)}^2} \\[10pt] 
+    \sqrt{s_{31(k)}^2 + s_{32(k)}^2 + s_{33(k)}^2 + s_{34(k)}^2 + s_{35(k)}^2} \\[10pt] 
+    \sqrt{s_{41(k)}^2 + s_{42(k)}^2 + s_{43(k)}^2 + s_{44(k)}^2 + s_{45(k)}^2} 
+    \end{pmatrix}
     """)
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
