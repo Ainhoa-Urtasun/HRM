@@ -54,18 +54,18 @@ def UNIT2_1():
 def UNIT2_2():
     st.write(
         '''
-        As a bundle of tasks, a job, for example $J_1$ can be represented as a matrix of tasks where each column-vector
+        As a bundle of tasks, any job $J_k$ can be represented as a matrix of tasks where each column-vector
         corresponds to a different task:
         '''
     )
              
     st.latex(
         r"""
-        J_1 = \begin{pmatrix}
-        s_{11}^1 & s_{12}^1 & s_{13}^1 & s_{14}^1 & s_{15}^1 \\
-        s_{21}^1 & s_{22}^1 & s_{23}^1 & s_{24}^1 & s_{25}^1 \\
-        s_{31}^1 & s_{32}^1 & s_{33}^1 & s_{34}^1 & s_{35}^1 \\
-        s_{41}^1 & s_{42}^1 & s_{43}^1 & s_{44}^1 & s_{45}^1 \\
+        J_k = \begin{pmatrix}
+        s_{11(k)} & s_{12(k)} & s_{13(k)} & s_{14(k)} & s_{15(k)} \\
+        s_{21(k)} & s_{22(k)} & s_{23(k)} & s_{24(k)} & s_{25(k)} \\
+        s_{31(k)} & s_{32(k)} & s_{33(k)} & s_{34(k)} & s_{35(k)} \\
+        s_{41(k)} & s_{42(k)} & s_{43(k)} & s_{44(k)} & s_{45(k)} \\
         \end{pmatrix} \\[10pt]
         """
     )
@@ -75,13 +75,13 @@ def UNIT2_2():
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
         its corresponding column will be a vector of zeros. Each rows in $J_1$ correspond to 
         a particular skill, so if add up the values of a particular row, we get how much of
-        a particular skill is required to successfully perform J_1:
+        a particular skill is required to successfully perform J_k:
         '''
     )
 
     st.latex(
         '''
-        0 \leq \sum_i^1 s_{ij} \leq 100 
+        0 \leq \sum_i^4 s_{ij(k)} \leq 100 
         '''
     )
 
