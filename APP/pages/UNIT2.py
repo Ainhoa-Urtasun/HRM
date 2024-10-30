@@ -54,8 +54,8 @@ def UNIT2_1():
 def UNIT2_2():
     st.write(
         '''
-        As a bundle of tasks, any job $J_k$ can be represented as a matrix of tasks where each column-vector
-        corresponds to a different task:
+        A job $J_{(k)}$ is a bundle of tasks. We can be represented such bundle of tasks as a matrix where each column
+        corresponds to a different task as a column-vector of skills:
         '''
     )
              
@@ -73,9 +73,9 @@ def UNIT2_2():
     st.write(
         '''
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros. Each row in $J_k$ correspond to 
-        a particular skill so if we add up the values of a particular row, we get how much of
-        a particular skill is required to successfully perform $J_k$, that we restrict to:
+        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ corresponds
+        a particular skill and if we add up the values of a particular row, we get how much of
+        a particular skill is required to successfully perform $J_{(k)}$, that we restrict to:
         '''
     )
 
@@ -93,7 +93,7 @@ def UNIT2_3():
         By evaluating jobs, organizations can 
         establish equitable compensation structures and identify training and development needs. 
         The following formula shows
-        how to evaluate job $J_k$:
+        how to evaluate job $J_{(k)}$:
         '''
     )
 
