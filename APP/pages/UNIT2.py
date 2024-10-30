@@ -7,67 +7,59 @@ from numpy.linalg import norm
 
 def UNIT2_1():
     st.write(
-        '''
-       [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) by CEDEFOP is a useful resource for 
-       job analysis and design in Europe. Both CEDEFOP 
-       (European Centre for the Development of Vocational Training) and [ESCO](https://esco.ec.europa.eu/en) 
-       (European Skills, Competences, Qualifications, and Occupations) are making progress toward
-       becoming the European equivalent of O*NET (Occupational Information Network), 
-       the U.S. system that provides detailed information on job tasks, skills, and qualifications across various occupations.
-        '''
-    )
-    
-def UNIT2_2():
-    st.write("""
-        A **task** is an action performed by an employee that results in a specific output.
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
-        identifies 5 pillar tasks: 
-        
-    - $T_1$ Intellectual
-    - $T_2$ Physical
-    - $T_3$ Social
-    - $T_4$ Use of methods
-    - $T_5$ Use of technology
         """
-    )
-
-def UNIT2_3():
-    st.write("""
+    A **task** is an action performed by an employee that results in a specific output.
+    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
+    identifies 5 pillar tasks: 
+        
+    - $t_1$ Intellectual
+    - $t_2$ Physical
+    - $t_3$ Social
+    - $t_4$ Use of methods
+    - $t_5$ Use of technology
+    """
+        
     A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
     tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-    [ESCO](https://esco.ec.europa.eu/en) has many classifications of skills. Here we consider **self-management skills and competences**:
+    [ESCO](https://esco.ec.europa.eu/en) has many classifications of skills. 
+    Here we consider **self-management skills and competences**:
 
-    - $S_1$ Demonstrating willingness to learn
-    - $S_2$ Maintaining a positive attitude
-    - $S_3$ Taking a proactive approach
-    - $S_4$ Working efficiently
-    """
-    )
+    - $s_1$ Demonstrating willingness to learn
+    - $s_2$ Maintaining a positive attitude
+    - $s_3$ Taking a proactive approach
+    - $s_4$ Working efficiently
 
-def UNIT2_4():
-    st.write(
-    "In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:"
+    In the context of job analysis and design, it is useful to represent a task as a column-vector of skills:
+    '''
     )
     
     st.latex(
-        r'''
-        T_j  = 
-        \begin{pmatrix}
-        S_{1j} \\
-        S_{2j} \\ 
-        S_{3j} \\ 
-        S_{4j} \\
-        \end{pmatrix}
-        '''
+    r'''
+    t_i  = 
+    \begin{pmatrix}
+    s_{1i} \\
+    s_{2i} \\ 
+    s_{3i} \\ 
+    s_{4i} \\
+    \end{pmatrix}
+    '''
     )
     
     st.write(
-    "Each element $S_{ij}$ of the column vector indicates the extent to which skill $S_i$ is required for task $T_j$:"
+    "Each element $s_{ij}$ of the column vector indicates the extent to which skill $s_j$ is required for task $t_i$:"
     )    
     
-    st.latex(r"""
-    0 \leq S_{ij} \leq 100
+    st.latex(
+    r"""
+    0 \leq s_{ij} \leq 100
     """)
+    
+    """
+    )
+
+def UNIT2_3():
+    st.write(
+
              
     st.write(
         '''
@@ -144,7 +136,7 @@ def UNIT2_4():
         job_complexity = np.sum(matrix)
         st.write(f"Job Complexity: {job_complexity}")
 
-def UNIT2_5():
+def UNIT2_4():
     st.write("The cosine similarity between two tasls $T_i$ and $T_j$ is defined as follows:")
 
     st.latex(r'''
@@ -193,7 +185,7 @@ def UNIT2_5():
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Skills intelligence by CEDEFOP", "Tasks", "Skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["Tasks and skills",'Jobs and Job Evaluation','Task Similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -201,14 +193,10 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Skills intelligence by CEDEFOP":
+if selected == "Tasks and skills":
     UNIT2_1()
-elif selected == "Tasks":
-    UNIT2_2()
-elif selected == "Skills":
-    UNIT2_3()
 elif selected == "Jobs and Job Evaluation":
-    UNIT2_4()
+    UNIT2_2()
 elif selected == "Task Similarity":
-    UNIT2_5()
+    UNIT2_3()
 
