@@ -54,8 +54,8 @@ def UNIT2_1():
 def UNIT2_2():
     st.write(
         '''
-        A job $J_{(k)}$ is a bundle of tasks and can be represented as a matrix where each column
-        corresponds to a different task as a column-vector of skills:
+        A job $J_{(k)}$ is a bundle of tasks and can be represented as a matrix of tasks and skills
+        where each column corresponds to a different task as a column-vector of skills:
         '''
     )
              
@@ -100,7 +100,10 @@ def UNIT2_3():
     st.latex(r's_{(k)} = \sum_{i=1}^{4} s_{i(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
+    st.write(
+        '''
+        Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to 
+        represent one of the 3 jobs of your firm as matrix of tasks and skill requirements')
     
     t1, t2, t3, t4, t5 = st.columns(5)
     with t1:
