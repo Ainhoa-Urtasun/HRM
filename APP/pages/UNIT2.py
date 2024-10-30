@@ -157,7 +157,7 @@ def UNIT2_4():
     skills1 = st.text_input("Enter 4 numeric values for $t_i$ (comma-separated):")
     skills2 = st.text_input("Enter 4 numeric values for $t_j$ (comma-separated):")
 
-    if st.button("Task similarity"):
+    if st.button("Task difference"):
         try:
         # Check if inputs are provided
             if not skills1 or not skills2:
@@ -171,7 +171,7 @@ def UNIT2_4():
                 if len(vector1) == 4 and len(vector2) == 4:
                     # Calculate Euclidean distance
                     euclidean_distance = np.linalg.norm(vector1 - vector2)
-                    st.write(f"Task difference: {euclidean_distance:.4f}")
+                    st.write(f"{euclidean_distance:.4f}")
                 else:
                     st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
