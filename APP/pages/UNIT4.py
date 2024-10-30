@@ -73,7 +73,7 @@ def UNIT4_4():
 
     st.write(
         '''
-        where $s_i$ represents the skills employee $i$ possesses. The higher the value of $s_{(k,i)}$, the lower 
+        where $s_i$ represents the skills employee $i$ possesses. The higher the value of $s_i$, the lower 
         cost of effort for the employee $i$.
         '''
     )
