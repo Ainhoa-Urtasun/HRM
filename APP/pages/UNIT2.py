@@ -137,8 +137,9 @@ def UNIT2_3():
             [s41, s42, s43, s44, s45]
         ])
     
-        job = np.sum(matrix)
-        st.write(f"Job evaluation: {job}")
+        # Calculate the Euclidean norm for each row
+        row_norms = np.linalg.norm(matrix, axis=1)
+        st.write(f"Job evaluation: {row_norms}")
 
 def UNIT2_4():
     st.write(
