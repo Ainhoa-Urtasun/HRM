@@ -23,14 +23,14 @@ def UNIT6_1():
 
     st.latex(
         '''
-        C(e_i) = (100-S_i)e_i^2
+        C(e_i) = (100-s_i)e_i^2
         '''
     )
 
     st.write(
         '''
-        Where $e_i$ is the effort exerted by employee $i$ and $S_i$ represents a skill 
-        or a combination of skills employee needs to possess. Training will target the 
+        Where $e_i$ is the effort exerted by employee $i$ and $s_i$ represents the skills
+        employee $i$ possesses. Training will target the 
         development of $S_i$.
 
         Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
