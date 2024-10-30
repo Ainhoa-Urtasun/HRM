@@ -186,7 +186,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks and skills",'Jobs and Job Evaluation','Task Similarity'],  # required
+    options=["Tasks and skills",'Jobs','Job evaluation','Task similarity'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -196,10 +196,12 @@ selected = option_menu(
 # Call the selected section
 if selected == "Tasks and skills":
     UNIT2_1()
-elif selected == "Jobs and Job Evaluation":
+elif selected == "Jobs":
     UNIT2_2()
-elif selected == "Task Similarity":
+elif selected == 'Job evaluation':
     UNIT2_3()
+elif selected == "Task similarity":
+    UNIT2_4()
 
 
 
