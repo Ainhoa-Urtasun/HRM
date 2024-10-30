@@ -138,7 +138,6 @@ def UNIT2_3():
         ])
     
         row_norms = np.linalg.norm(matrix, axis=1)
-        st.write("Job evaluation:")
         for norm in row_norms:
             st.write(norm)
 
