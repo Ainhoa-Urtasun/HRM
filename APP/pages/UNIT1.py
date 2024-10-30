@@ -25,14 +25,11 @@ def UNIT1_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
 
     st.write(
-        '''
-        We use these 3 online resources: 
-        
-        - [ESCO](https://esco.ec.europa.eu/en) European Skills, Competences, Qualifications and Occupations
-        - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
-        Development of Vocational Training)
-        - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
-        '''
+    '''
+    - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
+    Development of Vocational Training)
+    - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
+    '''
     )
 
 def UNIT1_2():
@@ -49,21 +46,23 @@ def UNIT1_2():
     
      A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
      jobs are classified into occupations based on the tasks they entail. 
-     A job is not the same as an occupation—an occupation is more general. Occupations are standardized, 
-     while jobs are more flexible because they are defined by firms. Firms decide which jobs to post.
-     Job postings are automatically classified into occupations.
-    
+
     There are standard classifications for firms into sectors, 
     such as NACE which is the European Classification of Economic Activities
     and for jobs into occupations, 
     such as ISCO that stands for International Standard Classification 
     of Occupations.
+     A job is not the same as an occupation—an occupation is more general. Occupations are standardized, 
+     while jobs are more flexible because they are defined by firms. Firms decide which jobs to post.
+     Job postings are automatically classified into occupations.
+    
+
     '''
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input("Select a sector for your firm from NACE at [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) and write the name of the industry and its economic activities here:")
-    st.text_input("Select the occupation(s) in which you wish to post jobs from ISCO at [ESCO](https://esco.ec.europa.eu/en) and write their titles here:")
+    st.text_input("Select 3 jobs for your firm from ISCO occupations at [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) and write their titles here:")
     st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1), applying 2 criteria: (1) it has to be classified in the sector selected above and (2) it has to have fewer than 25 employees. Write the name of your firm here:")
     
 def UNIT1_3():
