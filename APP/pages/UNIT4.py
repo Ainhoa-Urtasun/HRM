@@ -110,7 +110,7 @@ def UNIT4_4():
 
     st.write(
         '''
-        Since $2(100 - s_{(k)i}) > 0$, the second derivative is positive, which means that the cost function
+        Since $2(100 - s_{(k,i)}) > 0$, the second derivative is positive, which means that the cost function
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
