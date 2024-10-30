@@ -12,7 +12,7 @@ def UNIT4_1():
         Performance can be evaluated on average or for each specific employee, with the latter being more challenging 
         but also more meaningful.
 
-        A typical average performance metric is labor productivity.
+        A typical average performance metric is labor productivity:
         '''
     )
 
