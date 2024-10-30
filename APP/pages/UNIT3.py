@@ -9,21 +9,20 @@ def UNIT3_1():
         '''
         HR planning involves predicting potential employee shortages or surpluses within the firm.
         In this unit, we will learn a method for making these predictions using a transition matrix. 
-        The table below provides the base data we need to build the transition matrix, 
-        specifically for three different jobs within a firm.
+        The table below provides the base data we need to build the transition matrix:
         '''
     )
              
     st.latex(r"""
     \begin{array}{|c|c|c|c|}
     \hline
-    m_{11(t-1,t)} & m_{12(t-1,t)} & m_{13(t-1,t)} & s_{1(t-1,t)} \\
+    m_{11(-1,0)} & m_{12(-1,0)} & m_{13(-1,0)} & d_{1(-1,0)} \\
     \hline
-    m_{21(t-1,t)} & m_{22(t-1,t)} & m_{23(t-1,t)} & s_{2(t-1,t)} \\
+    m_{21(-1,0)} & m_{22(-1,0)} & m_{23(-1,0)} & d_{2(-1,0)} \\
     \hline
-    m_{31(t-1,t)} & m_{32(t-1,t)} & s_{33(t-1,t)} & s_{3(t-1,t)} \\
+    m_{31(-1,0)} & m_{32(-1,0)} & s_{33(-1,0)} & d_{3(-1,0)} \\
     \hline
-    h_{1(t-1,t)} & h_{2(t-1,t)} & h_{3(t-1,t)} & \\
+    h_{1(-1,0)} & h_{2(-1,0)} & h_{3(-1,0)} & \\
     \hline
     \end{array}
     """)
@@ -33,7 +32,7 @@ def UNIT3_1():
         '''
         Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires or 
         number of employees who have recently been recruited and started working at the firm; 
-        and $s$ represents separations or number of employees who leave the firm, either voluntarily (quitting or retiring)
+        and $d$ represents departures or number of employees who leave the firm, either voluntarily (quitting or retiring)
         or involuntarily (layoffs, dismissals). 
         '''
     )
