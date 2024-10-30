@@ -77,9 +77,9 @@ def UNIT1_3():
         - $t_5$: Use of technology
     - Skills to be possessed by employees at the firm:
         - $s_1$: Demonstrating willigness to learn
-        - $s_2$: Maintaining a positive attitude
-        - $s_3$: Taking a proactive approach
-        - $s_4$: Working efficiently  
+        - $s_2$: Collaborating in teams and networks
+        - $s_3$: Working efficiently
+        - $s_4$: Taking a proactive approach  
     '''
     )
 
