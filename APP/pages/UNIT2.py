@@ -54,20 +54,22 @@ def UNIT2_1():
 def UNIT2_3():
       
     st.write(
-        '''
-        A job can be represented as a matrix of tasks where each column-vector
-        corresponds to a different task:
-        '''
+    '''
+    A job can be represented as a matrix of tasks where each column-vector
+    corresponds to a different task:
+    '''
     )
              
-    st.latex(r"""
+    st.latex(
+    r"""
     \begin{pmatrix}
     S_{11} & S_{12} & S_{13} & S_{14} & S_{15} \\
     S_{21} & S_{22} & S_{23} & S_{24} & S_{25} \\
     S_{31} & S_{32} & S_{33} & S_{34} & S_{35} \\
     S_{41} & S_{42} & S_{43} & S_{44} & S_{45} \\
     \end{pmatrix}
-    """)
+    """
+    )
 
     st.write(
         '''
