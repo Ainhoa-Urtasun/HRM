@@ -121,8 +121,8 @@ def UNIT1_4():
         '''
     )
 
-    st.latex(r'Labor \ productivity = \frac{pQ}{L}')
-    st.latex(r'ULC = \frac{wL}{pQ}')
+    st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
+    st.latex(r'\text{ULC} = \frac{wL}{pQ}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write(
