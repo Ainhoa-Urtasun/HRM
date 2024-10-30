@@ -31,7 +31,8 @@ def UNIT3_1():
     st.write(
         '''
         Where $m_{(i)(j)}$ represents employee mobility from $J_{(i)}$ to $J_{(j)}$ 
-        within the firm during the period $(-1,0)$ where $0$ represents the present moment; $h_{(k)}$ 
+        within the firm during the period $(-1,0)$ where $0$ represents the present moment and -1 
+        represents the past, it could be a month ago or a year ago; $h_{(k)}$ 
         represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
         within the firm during the period from $(-1,0)$; and $d$ represents departures or 
         number of employees who have left the firm during the period $(-1,0)$,
@@ -66,7 +67,7 @@ def UNIT3_1():
     st.write(
         '''
         By adding up the values of the table row-wise, we get the employment in $J_{(k)}$
-        at $-1$ within the firm:
+        a year or a month ago within the firm:
         '''
     )
 
@@ -75,7 +76,7 @@ def UNIT3_1():
     st.write(
         '''
         And by adding up the values of the table column-wise, 
-        we get the employment in $J_{(k)}$ at $t=0$ at the firm:
+        we get the employment in $J_{(k)}$ at the present moment at the firm:
         '''
     )
     
@@ -86,37 +87,37 @@ def UNIT3_1():
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("$L_{1(t-1)}$"):
+        if st.button("$L_{-1(1)}$"):
             L10 = np.array([m11, m12, m13, s1])
             L10 = np.sum(L10)
-            st.write(f"Employment in job 1 at $t-1$: {L10}")
+            st.write(f"Employment in job 1 at -1: {L10}")
     with col2:
-        if st.button("$L_{2(t-1)}$"):
+        if st.button("$L_{-1(2)}$"):
             L20 = np.array([m21, m22, m23, s2])
             L20 = np.sum(L20)
-            st.write(f"Employment in job 2 at $t-1$: {L20}")
+            st.write(f"Employment in job 2 at -1: {L20}")
     with col3:
-        if st.button("$L_{3(t-1)}$"):
+        if st.button("$L_{-1(3)}$"):
             L30 = np.array([m31, m32, m33, s3])
             L30 = np.sum(L30)
-            st.write(f"Employment in job 3 at $t-1$: {L30}")
+            st.write(f"Employment in job 3 at -1: {L30}")
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("$L_{1(t)}$"):
+        if st.button("$L_{0(1)}$"):
             L11 = np.array([m11, m21, m23, h1])
             L11 = np.sum(L11)
-            st.write(f"Employment in job 1 at $t$: {L11}")
+            st.write(f"Employment in job 1 at 0: {L11}")
     with col2:
-        if st.button("$L_{2(t)}$"):
+        if st.button("$L_{0(2)}$"):
             L21 = np.array([m12, m22, m32, h2])
             L21 = np.sum(L21)
-            st.write(f"Employment in job 2 at $t$: {L21}")
+            st.write(f"Employment in job 2 at 0: {L21}")
     with col3:
-        if st.button("$L_{3(t)}$"):
+        if st.button("$L_{0(3)}$"):
             L31 = np.array([m13, m23, m33, h3])
             L31 = np.sum(L31)
-            st.write(f"Employment in job 3 at $t$: {L31}")
+            st.write(f"Employment in job 3 at 0: {L31}")
 
 def UNIT3_2():
     st.write(
