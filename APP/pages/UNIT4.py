@@ -39,6 +39,8 @@ def UNIT4_3():
         '''
         **Output elasticity of effort** indicates the percentage change in the output the firm produces when employee
         $i$ exerts 1% more effort.
+        '''
+    )
     
     st.latex(
         r'''
