@@ -9,7 +9,7 @@ def UNIT3_1():
         '''
         HR planning involves predicting potential employee shortages or surpluses within the firm.
         In this unit, we will learn a method for making these predictions using a transition matrix. 
-        The table below provides the base data we need to build the transition matrix:
+        The table below provides the historical data we need to build the transition matrix:
         '''
     )
              
@@ -30,10 +30,11 @@ def UNIT3_1():
 
     st.write(
         '''
-        Where $m$ represents employee mobility between jobs within the firm; $h$ represents new hires or 
-        number of employees who have recently been recruited and started working at the firm; 
-        and $d$ represents departures or number of employees who leave the firm, either voluntarily (quitting or retiring)
-        or involuntarily (layoffs, dismissals). 
+        Where $m_{(ij)}$ represents employee mobility from job $J_{(i)}$ to job $J_{(j)}$ within the firm from $t=-1$ to 
+        $t=0$ where $t=0$ represents the present moment; $h$ represents new hires or 
+        number of employees who have been recruited and started working at the firm from from $t=-1$ to 
+        $t=0$; and $d$ represents departures or number of employees who have left the firm from $t=-1$ to 
+        $t=0$, either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
         '''
     )
 
