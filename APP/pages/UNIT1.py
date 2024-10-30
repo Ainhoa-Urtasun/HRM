@@ -90,7 +90,7 @@ def UNIT1_3():
     - $e_i$ effort employee $i$ exerts at the firm
     - $Q$ is the output the firm produces
     - $L$ number of employees at the firm
-    - $J_1, J_2, J_3$ jobs within the firm
+    - $J_{(1)}, J_{(2)}, J_{(3)}$ jobs within the firm
     - Tasks to be carried out by employees at the firm:
         - $t_1$: Intellectual
         - $t_2$: Physical
