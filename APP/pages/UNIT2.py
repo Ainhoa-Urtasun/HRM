@@ -171,7 +171,7 @@ def UNIT2_4():
                 if len(vector1) == 4 and len(vector2) == 4:
                     # Calculate Euclidean distance
                     euclidean_distance = np.linalg.norm(vector1 - vector2)
-                    st.write(f"{euclidean_distance:.4f}")
+                    st.write(euclidean_distance)
                 else:
                     st.write("Please enter exactly 4 numeric values for each vector.")
         except ValueError:
