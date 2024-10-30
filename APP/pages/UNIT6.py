@@ -8,14 +8,27 @@ def UNIT6_1():
 
     st.write(
         '''
-        When a firm needs new skills, it has two primary options: 
-        it can acquire them from the labor market by hiring new workers, 
-        or it can provide on-the-job training to its existing employees.
+        Firms have two options for upskilling: hiring new employees or 
+        training their existing workforce. 
+        Upskilling may be necesary to adopt new technologies, such as 
+        robots and artificial intelligence (AI).
 
-        Hiring brings in fresh expertise and potentially diverse perspectives, 
-        while training incumbents can enhance skills without disrupting established 
-        organizational knowledge and culture. Both approaches have trade-offs in cost, 
-        time, and impact on the current workforce.
+        Here we focus on on-the-job training, specifically on evaluating its effectiveness.
+        Given the cost of effort for each employee:
+        '''
+    )
+
+    st.latex(
+        '''
+        C(e_i) = (100-S_i)e_i^2
+        '''
+    )
+
+    st.write(
+        '''
+        Where $e_i$ is the effort exerted by employee $i$ and $S_i$ represents a skill 
+        or a combination of skills employee needs to possess. Training will target the 
+        development of this skill.
         '''
     )
 
