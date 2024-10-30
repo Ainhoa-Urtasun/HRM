@@ -138,10 +138,7 @@ def UNIT2_3():
         ])
     
     row_norms = np.linalg.norm(matrix, axis=1)
-    norms_as_latex = r"\begin{pmatrix}" + \
-                     r" \\ ".join([f"{norm:.2f}" for norm in row_norms]) + \
-                     r"\end{pmatrix}"
-    st.latex(f"\\text{{Job evaluation: }} {norms_as_latex}")
+    st.write("Job evaluation:"row_norms)
 
 def UNIT2_4():
     st.write(
