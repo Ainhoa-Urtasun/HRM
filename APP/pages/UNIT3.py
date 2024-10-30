@@ -71,7 +71,7 @@ def UNIT3_1():
         '''
     )
 
-    st.latex(r'L_{-1(k)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
+    st.latex(r'L_{(k)}^{-1} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
 
     st.write(
         '''
@@ -80,7 +80,7 @@ def UNIT3_1():
         '''
     )
     
-    st.latex(r'L_{0(k)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
+    st.latex(r'L_{(k)}^{0} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Employment in each job at the firm:')
