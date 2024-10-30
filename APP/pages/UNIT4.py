@@ -16,6 +16,8 @@ def UNIT4_1():
         '''
     )
 
+    st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
+
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input("Write here the labor productivity of your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
 
