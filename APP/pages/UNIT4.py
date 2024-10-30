@@ -148,7 +148,7 @@ def UNIT4_5():
     )
 
     st.latex(
-        '''
+        r'''
         A = \frac{\text(Days off)}{\text{Working days}}
         '''
     )
