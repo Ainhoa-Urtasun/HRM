@@ -66,15 +66,14 @@ def UNIT4_4():
 
     st.latex(
             r'''
-            C(e_i) = (100-s_{(k,i)})e_i^2 \\[10pt]
-            0 \leq s_{(k,i)} \leq 100
+            C(e_i) = (100-s_i)e_i^2 \\[10pt]
+            0 \leq s_i \leq 100
             '''
         )
 
     st.write(
         '''
-        where $s_{(k,i)}$ represents the skills employee $i$ possesses
-        to perform job $J_{(k)}$. The higher the value of $s_{(k,i)}$, the lower 
+        where $s_i$ represents the skills employee $i$ possesses. The higher the value of $s_{(k,i)}$, the lower 
         cost of effort for the employee $i$.
         '''
     )
@@ -89,13 +88,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = \frac{d}{de_i} \left[(100 - s_{(k,i)})e_i^2\right] = 2(100 - s_{(k,i)})e_i
+        C'(e_i) = \frac{d}{de_i} \left[(100 - s_i)e_i^2\right] = 2(100 - s_i)e_i
         '''
     )
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $(100 - s_{(k,i)})$ is a positive constant, 
+        This first derivative shows the marginal cost of effort. Since $(100 - s_i)$ is a positive constant, 
         the marginal cost of effort increases linearly with $e_i$.
 
         The second derivative with respect to $e_i$ is:
@@ -104,13 +103,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_{(k,i)})e_i^2\right)] = 2(100 - s_{(k,i)})
+        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_i)e_i^2\right)] = 2(100 - s_i)
         '''
     )
 
     st.write(
         '''
-        Since $2(100 - s_{(k,i)}) > 0$, the second derivative is positive, which means that the cost function
+        Since $2(100 - s_i) > 0$, the second derivative is positive, which means that the cost function
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
