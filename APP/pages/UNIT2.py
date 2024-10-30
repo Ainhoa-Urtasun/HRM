@@ -79,12 +79,15 @@ def UNIT2_3():
         Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
         By evaluating jobs, organizations can 
         establish equitable compensation structures and identify training and development needs. 
-        One approach to job evaluation is to add up all the skills required to successfully perform the
-        tasks that the job entails. In other words, job $J_{(k)}$ can be evaluated as follows:
+        Since a job is a bundle of tasks, and each task requires multiple skills, one approach to job evaluation 
+        is to represent it as a column-vector of skill norms, where each value represents
+        the norm of the corresponding row in the job matrix:
         '''
     )
 
-    st.latex(r's_{(k)} = \sum_{i=1}^{4} s_{i(k)}')
+    st.latex(r"""
+    \mathbf{S}_{J_{(k)}} = \begin{pmatrix} \| \mathbf{s}_{1, \cdot} \| \\ \| \mathbf{s}_{2, \cdot} \| \\ \vdots \\ \| \mathbf{s}_{n, \cdot} \| \end{pmatrix}
+    """)
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write(
