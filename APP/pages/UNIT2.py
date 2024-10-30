@@ -8,7 +8,7 @@ from numpy.linalg import norm
 def UNIT2_1():
     st.write(
         """
-        A **task** is an action performed by an employee that results in a specific output.
+        A **task** $t_j$ is an action performed by an employee that results in a specific output.
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence/tasks-within-occupations?occupation=3.32&pillar=Intellectual#3) 
         identifies 5 pillar tasks: 
         
@@ -18,7 +18,7 @@ def UNIT2_1():
         - $t_4$ Use of methods
         - $t_5$ Use of technology
         
-        A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
+        A **skill** $s_i$ is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
         There are many classifications of skills. 
         Here we consider **self-management skills and competences**:
@@ -54,7 +54,7 @@ def UNIT2_1():
 def UNIT2_2():
     st.write(
         '''
-        A job $J_{(k)}$ is a bundle of tasks. We can be represented such bundle of tasks as a matrix where each column
+        A job $J_{(k)}$ is a bundle of tasks and can be represented as a matrix where each column
         corresponds to a different task as a column-vector of skills:
         '''
     )
@@ -72,10 +72,10 @@ def UNIT2_2():
 
     st.write(
         '''
-        Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ corresponds
-        a particular skill and if we add up the values of a particular row, we get how much of
-        a particular skill is required to successfully perform $J_{(k)}$, that we restrict to:
+        A job doesn't necessarily entail all tasks. If a job doesn't entail a particular task, 
+        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ represents a
+        specific skill. By adding up the values in a given row, we can determine the extent to which
+        that skills is required to successfully perform $J_{(k)}$, with values restricted to:
         '''
     )
 
