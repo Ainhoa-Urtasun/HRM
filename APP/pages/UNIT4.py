@@ -150,6 +150,8 @@ def UNIT4_5():
     st.latex(
         '''
         A = \frac{\text(Days off)}{\text{Working days}}
+        '''
+    )
 
 st.set_page_config(page_title="UNIT4", layout="wide")
 
