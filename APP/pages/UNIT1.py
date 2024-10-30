@@ -85,15 +85,24 @@ def UNIT1_2():
 
 def UNIT1_3():
     st.write(
-        ''' 
-        - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
-        - $e_i$ effort employee $i$ exerts at the firm
-        - $L$ number of employees at the firm
-        - $N$ number of jobs at the firm
-        - $EBIT = pQ - wL - dM - rK$ Earnings Before Interest and Taxes (EBIT) of the firm
-        - $T_1, T_2, T_3, T_4, T_5$ tasks employees carry out
-        - $S_1, S_2, S_3, S_4, S_5, S_6, S_7, S_8, S_9$ skills employees have      
-        '''
+    ''' 
+    - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
+    - $e_i$ effort employee $i$ exerts at the firm
+    - $Q$ is the output the firm produces
+    - $L$ number of employees at the firm
+    - $J_1, J_2, J_3$ jobs within the firm
+    - Tasks to be carried out by employees at the firm:
+                - $t_1$: Intellectual
+                - $t_2$: Physical
+                - $t_3$: Social
+                - $t_4$: Use of methods
+                - $t_5$: Use of technology
+    - Skills to be possessed by employees at the firm
+                - $s_1$: Demonstrating willigness to learn
+                - $s_2$: Maintaining a positive attitude
+                - $s_3$: Taking a proactive approach
+                - $s_4$: Working efficiently  
+    '''
     )
 
     st.write(
