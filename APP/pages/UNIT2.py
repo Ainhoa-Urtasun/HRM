@@ -20,7 +20,7 @@ def UNIT2_1():
         
     A **skill** is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
     tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-    There are has many classifications of skills. 
+    There are many classifications of skills. 
     Here we consider **self-management skills and competences**:
 
     - $s_1$ Demonstrating willingness to learn
@@ -63,10 +63,10 @@ def UNIT2_2():
     st.latex(
     r"""
     \begin{pmatrix}
-    S_{11} & S_{12} & S_{13} & S_{14} & S_{15} \\
-    S_{21} & S_{22} & S_{23} & S_{24} & S_{25} \\
-    S_{31} & S_{32} & S_{33} & S_{34} & S_{35} \\
-    S_{41} & S_{42} & S_{43} & S_{44} & S_{45} \\
+    s_{11} & s_{12} & s_{13} & s_{14} & s_{15} \\
+    s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
+    s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
+    s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
     \end{pmatrix}
     """
     )
@@ -88,87 +88,82 @@ def UNIT2_2():
         '''
     )
 
-    st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (S_{1j} + S_{2j} + S_{3j} + S_{4j})')
+    st.latex(r'\text{Job complexity = } \sum_{j=1}^{5} (s_{1j} + s_{2j} + s_{3j} + s_{4j})')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
-    T1, T2, T3, T4, T5 = st.columns(5)
-    with T1:
-        S11 = st.number_input("$S_{11}$", key="S11")
-        S21 = st.number_input("$S_{21}$", key="S21")
-        S31 = st.number_input("$S_{31}$", key="S31")
-        S41 = st.number_input("$S_{41}$", key="S41")
-    with T2:
-        S12 = st.number_input("$S_{12}$", key="S12")
-        S22 = st.number_input("$S_{22}$", key="S22")
-        S32 = st.number_input("$S_{32}$", key="S32")
-        S42 = st.number_input("$S_{42}$", key="S42")
-    with T3:
-        S13 = st.number_input("$S_{13}$", key="S13")
-        S23 = st.number_input("$S_{23}$", key="S23")
-        S33 = st.number_input("$S_{33}$", key="S33")
-        S43 = st.number_input("$S_{43}$", key="S43")
-    with T4:
-        S14 = st.number_input("$S_{13}$", key="S14")
-        S24 = st.number_input("$S_{24}$", key="S24")
-        S34 = st.number_input("$S_{34}$", key="S34")
-        S44 = st.number_input("$S_{44}$", key="S44")
-    with T5:
-        S15 = st.number_input("$S_{15}$", key="S15")
-        S25 = st.number_input("$S_{25}$", key="S25")
-        S35 = st.number_input("$S_{35}$", key="S35")
-        S45 = st.number_input("$S_{45}$", key="S45")
+    t1, t2, t3, t4, t5 = st.columns(5)
+    with t1:
+        s11 = st.number_input("$s_{11}$", key="s11")
+        s21 = st.number_input("$s_{21}$", key="s21")
+        s31 = st.number_input("$s_{31}$", key="s31")
+        s41 = st.number_input("$s_{41}$", key="s41")
+    with t2:
+        s12 = st.number_input("$s_{12}$", key="s12")
+        s22 = st.number_input("$s_{22}$", key="s22")
+        s32 = st.number_input("$s_{32}$", key="s32")
+        s42 = st.number_input("$s_{42}$", key="s42")
+    with t3:
+        s13 = st.number_input("$s_{13}$", key="s13")
+        s23 = st.number_input("$s_{23}$", key="s23")
+        s33 = st.number_input("$s_{33}$", key="s33")
+        s43 = st.number_input("$s_{43}$", key="s43")
+    with t4:
+        s14 = st.number_input("$s_{14}$", key="s14")  # Corrected from s13
+        s24 = st.number_input("$s_{24}$", key="s24")
+        s34 = st.number_input("$s_{34}$", key="s34")
+        s44 = st.number_input("$s_{44}$", key="s44")
+    with t5:
+        s15 = st.number_input("$s_{15}$", key="s15")
+        s25 = st.number_input("$s_{25}$", key="s25")
+        s35 = st.number_input("$s_{35}$", key="s35")
+        s45 = st.number_input("$s_{45}$", key="s45")
     
     if st.button("Submit"):
         matrix = np.array([
-            [S11, S12, S13, S14, S15],
-            [S21, S22, S23, S24, S25],
-            [S31, S32, S33, S34, S35],
-            [S41, S42, S43, S44, S45]
+            [s11, s12, s13, s14, s15],
+            [s21, s22, s23, s24, s25],
+            [s31, s32, s33, s34, s35],
+            [s41, s42, s43, s44, s45]
         ])
     
         job_complexity = np.sum(matrix)
         st.write(f"Job Complexity: {job_complexity}")
 
 def UNIT2_3():
-    st.write("The cosine similarity between two tasls $T_i$ and $T_j$ is defined as follows:")
+    st.write("The cosine similarity between two tasks $t_i$ and $t_j$ is defined as follows:")
 
     st.latex(r'''
-    \text{Cosine Similarity}(\text{T}_i, \text{T}_j) = \frac{\text{T}_i \cdot \text{T}_j}{\|\text{T}_i\| \|\text{T}_j\|}
+    \text{Cosine Similarity}(\text{t}_i, \text{t}_j) = \frac{\text{t}_i \cdot \text{t}_j}{\|\text{t}_i\| \|\text{t}_j\|}
     ''')
 
     st.write("Where the numerator contains the dot product of the skill vectors:")
    
     st.latex(r'''
-    \text{T}_i \cdot \text{T}_j = S_{i1} S_{j1} + S_{i2} S_{j2} + S_{i3} S_{j3} + S_{i4} S_{j4}
+    \text{t}_i \cdot \text{t}_j = s_{i1} s_{j1} + s_{i2} s_{j2} + s_{i3} s_{j3} + s_{i4} s_{j4}
     ''')
 
     st.write("And the denominator contains the product of the magnitudes of the skill vectors:")
 
     st.latex(r'''
-    \|\text{T}_i\| = \sqrt{S_{i1}^2 + S_{i2}^2 + S_{i3}^2 + S_{i4}^2}
+    \|\text{t}_i\| = \sqrt{s_{i1}^2 + s_{i2}^2 + s_{i3}^2 + s_{i4}^2}
     ''')
 
-    skills1 = st.text_input("Enter 9 numeric values for $T_i$ (comma-separated):")
-    skills2 = st.text_input("Enter 9 numeric values for $T_j$ (comma-separated):")
+    skills1 = st.text_input("Enter 4 numeric values for $t_i$ (comma-separated):")
+    skills2 = st.text_input("Enter 4 numeric values for $t_j$ (comma-separated):")
 
     if st.button("Calculate Cosine Similarity"):
         try:
-            # Ensure inputs are provided
             if not skills1 or not skills2:
                 st.write("Please provide values for both vectors.")
             else:
-                # Convert input strings into lists of floats
                 vector1 = list(map(float, skills1.split(',')))
                 vector2 = list(map(float, skills2.split(',')))
 
-                # Ensure both vectors have exactly 4 values
                 if len(vector1) == 4 and len(vector2) == 4:
-                    # Check for zero norm to avoid division by zero
                     if norm(vector1) == 0 or norm(vector2) == 0:
                         st.write("One of the vectors is zero, cannot calculate cosine similarity.")
                     else:
-                        # Calculate cosine similarity
                         cosine_similarity = np.dot(vector1, vector2) / (norm(vector1) * norm(vector2))
                         st.write(f"Cosine similarity between the two vectors is: {cosine_similarity:.4f}")
                 else:
@@ -195,4 +190,5 @@ elif selected == "Jobs and Job Evaluation":
     UNIT2_2()
 elif selected == "Task Similarity":
     UNIT2_3()
+
 
