@@ -97,7 +97,7 @@ def UNIT2_3():
         '''
     )
 
-    st.latex(r'\text{s(k) = } \sum_{i=1}^{4} s_i(k)')
+    st.latex(r'\text{s(k) = } \sum_{i=1}^{4} s_{i(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to represent a job you wish to post as a matrix of tasks and skill requirements')
