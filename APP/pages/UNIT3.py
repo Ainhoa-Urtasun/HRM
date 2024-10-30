@@ -63,12 +63,12 @@ def UNIT3_1():
 
     st.write(
         '''
-        By adding up the values of each of the three first rows of the table, we get the employment in a particular 
-        job at $t=-1$ at the firm:
+        By adding up the values of each of the three first rows of the table, we get the employment in job $J_{(k)}$
+        at $t=-1$ within the firm:
         '''
     )
 
-    st.latex(r'L_{i(-1)} = m_{i1(-1,0)} + m_{i2(-1,0)} + m_{i3(-1,0)} + d_{i(-1,0)}')
+    st.latex(r'L_{(k)(-1)} = m_{k1(-1,0)} + m_{k2(-1,0)} + m_{k3(-1,0)} + d_{k(-1,0)}')
 
     st.write(
         '''
