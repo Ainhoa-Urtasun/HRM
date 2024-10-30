@@ -45,13 +45,17 @@ def UNIT2_1():
     )
     
     st.write(
-    "Each element $s_{ij}$ of the column vector indicates the extent to which skill $s_j$ is required for task $t_i$:"
+    '''
+    Each element $s_{ij}$ of the column vector indicates the extent 
+    to which skill $s_j$ is required for task $t_i$:
+    '''
     )    
     
     st.latex(
     r"""
     0 \leq s_{ij} \leq 100
-    """)
+    """
+    )
 
 def UNIT2_3():
     st.write(
