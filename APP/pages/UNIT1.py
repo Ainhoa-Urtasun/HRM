@@ -56,23 +56,32 @@ def UNIT1_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.text_input("Select the sector you want your firm to be classified into from NACE at [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) and write the name of the industry and its economic activities here:")
-    st.text_input(
-    "Select 3 jobs for your firm from ISCO occupations at [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) and write their titles here:", 
+    st.markdown(
+    '''
+    Select the sector into which you want your firm to be classified using NACE at 
+    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)
+    '''
+    )
+    st.text_input("Write the name of the industry and its economic activities here:")
+    st.markdown(
+    '''
+    Select 3 jobs for your firm using ISCO occupations at 
+    [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)
+    '''
+    )
+    st.text_input("Write their titles here:") 
     placeholder='''A job is not the same as an occupation. 
     Occupations are standardized, while jobs are more flexible because they are designed by firms. 
     '''
     )
     st.markdown(
     '''
-    Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1).  
-    Qualification criteria:  
+    Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1). Qualification criteria:  
     (1) The firm has to be classified in the sector selected above, and  
     (2) The firm must have fewer than 25 employees.  
-    Write the name of your firm here:
     '''
     )
-    firm_name = st.text_input("Firm Name")
+    st.text_input("Write the name of the firm here:")
     
 def UNIT1_3():
     st.write(
