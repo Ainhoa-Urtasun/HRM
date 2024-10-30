@@ -73,15 +73,15 @@ def UNIT2_2():
     st.write(
         '''
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros. Each rows in $J_1$ correspond to 
-        a particular skill, so if add up the values of a particular row, we get how much of
+        its corresponding column will be a vector of zeros. Each row in $J_k$ correspond to 
+        a particular skill so if we add up the values of a particular row, we get how much of
         a particular skill is required to successfully perform J_k:
         '''
     )
 
     st.latex(
         '''
-        0 \leq \sum_i^4 s_{ij(k)} \leq 100 
+        0 \leq s_i(k) = \sum_j^5 s_{ij(k)} \leq 100 
         '''
     )
 
