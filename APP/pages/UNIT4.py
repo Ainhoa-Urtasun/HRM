@@ -119,7 +119,7 @@ def UNIT4_4():
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
-        Jensen's inequality tells us that for a convex function such as $C(e_i)$, the expected cost of 
+        **Jensen's inequality** tells us that for a convex function such as $C(e_i)$, the expected cost of 
         effort is at least the cost of the expected effort. Mathematically:
         '''
     )
@@ -138,6 +138,17 @@ def UNIT4_4():
         minimizes the cost impact due to the convexity of the function.
         '''
     )
+
+def UNIT4_5():
+    st.write(
+        '''
+        Another proxy to evaluate the effort or contribution an employee makes to the firm is by recording their
+        absenteeism. In a month, we can calculate the absenteeism of a particular employee as follows:
+    )
+
+    st.latex(
+        '''
+        A = \frac{\text(Days off)}{\text{Working days}}
 
 st.set_page_config(page_title="UNIT4", layout="wide")
 
