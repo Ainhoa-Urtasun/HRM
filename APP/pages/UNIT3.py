@@ -73,11 +73,11 @@ def UNIT3_1():
     st.write(
         '''
         And by adding up the values of each of three first columns of the table, 
-        we get the employment in a particular job at $t$ at the firm:
+        we get the employment in a particular job at $t=0$ at the firm:
         '''
     )
     
-    st.latex(r'L_{i(t)} = m_{1i(t-1,t)} + m_{2i(t-1,t)} + m_{3i(t-1,t)} + h_{i(t-1,t)}')
+    st.latex(r'L_{i(0)} = m_{1i(-1,0)} + m_{2i(-1,0)} + m_{3i(-1,0)} + h_{i(-1,0)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Employment in each job at the firm:')
