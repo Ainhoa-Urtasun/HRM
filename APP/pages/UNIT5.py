@@ -96,10 +96,10 @@ def UNIT5_3():
 )
 
 def UNIT5_4():
-    st.write(r"The cost of effort for each employee or job candidate is defined as:")
+    st.write(r"The cost of effort for each job candidate is defined as:")
     st.latex(
         r'''
-        C(e_i) = (100 - S_i)e_i^2
+        C(e_i) = (100 - s_i)e_i^2
         '''
     )
 
