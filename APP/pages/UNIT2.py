@@ -28,7 +28,7 @@ def UNIT2_1():
         - $s_3$ Taking a proactive approach
         - $s_4$ Working efficiently
 
-        In the context of job analysis and design, it is useful to represent a task $t_j$ as a column-vector of skills:
+        In the context of job analysis and design, it is useful to represent a task $t_j$ as a skill-vector:
         """
     )
     
@@ -148,9 +148,10 @@ def UNIT2_3():
 def UNIT2_4():
     st.write(
         '''
-        The similarity between two tasks can be a useful HRM metric to design jobs. The similarity between 
+        The similarity between two tasks $t_i$ and $t_j$ can be a useful HRM metric to design jobs, so that 
+        the firm can decide how to allocate tasks to jobs. The similarity between 
         tasks $t_i$ and $t_j$ can be calculated using the cosine 
-        similarity between two vectors:
+        similarity between the skill-vector of each task:
         '''
     )
 
