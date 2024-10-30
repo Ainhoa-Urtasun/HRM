@@ -28,7 +28,7 @@ def UNIT6_1():
         '''
         Where $e_i$ is the effort exerted by employee $i$ and $S_i$ represents a skill 
         or a combination of skills employee needs to possess. Training will target the 
-        development of this skill.
+        development of this skill. If 
         '''
     )
 
