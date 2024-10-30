@@ -86,7 +86,7 @@ def UNIT2_3():
     )
 
     st.latex(r"""
-    \mathbf{S}_{J_{(k)}} = \begin{pmatrix} 
+    s_{(k)} = \begin{pmatrix} 
     \sqrt{s_{11(k)}^2 + s_{12(k)}^2 + s_{13(k)}^2 + s_{14(k)}^2 + s_{15(k)}^2} \\[10pt] 
     \sqrt{s_{21(k)}^2 + s_{22(k)}^2 + s_{23(k)}^2 + s_{24(k)}^2 + s_{25(k)}^2} \\[10pt] 
     \sqrt{s_{31(k)}^2 + s_{32(k)}^2 + s_{33(k)}^2 + s_{34(k)}^2 + s_{35(k)}^2} \\[10pt] 
