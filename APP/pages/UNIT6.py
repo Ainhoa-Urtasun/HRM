@@ -8,8 +8,11 @@ def UNIT6_1():
 
     st.write(
         '''
-        Firms have two options for upskilling: hiring new employees or 
-        training their existing workforce. 
+        Firms have two options for skill development (or upskilling): 
+        
+        1. Hiring new employees
+        2. Training incumbent employees
+        
         Upskilling may be necesary to adopt new technologies, such as 
         robots and artificial intelligence (AI).
 
@@ -28,7 +31,14 @@ def UNIT6_1():
         '''
         Where $e_i$ is the effort exerted by employee $i$ and $S_i$ represents a skill 
         or a combination of skills employee needs to possess. Training will target the 
-        development of this skill. If 
+        development of $S_i$.
+
+        Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
+        willingness, involvement, and character. 
+        Effort is costly, but on-the-job training aims to provide employees with the necessary 
+        skills and competencies to complete tasks more efficiently, thereby reducing the cost of effort. 
+        This reduction can enhance employee motivation, which in turn aligns with and positively impacts 
+        the firm’s overall objectives.
         '''
     )
 
@@ -36,17 +46,6 @@ def UNIT6_2():
 
     st.write(
         """
-        Training programs are designed to enhance employees' skills. Training aims at providing employees with
-        the necessary skills to perform their tasks more efficiently 
-        and contribute to the overall success of the organization.
-        
-        Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
-        willingness, involvement, and character. 
-        Effort is costly, but on-the-job training aims to provide employees with the necessary 
-        skills and competencies to complete tasks more efficiently, thereby reducing the cost of effort. 
-        This reduction can enhance employee motivation, which in turn aligns with and positively impacts 
-        the firm’s overall objectives.
-    
         We use the **difference-in-differences (DiD) method** to evaluate the impact of training on the
         development of skill $S$.
         """
