@@ -54,7 +54,7 @@ def UNIT2_1():
 def UNIT2_2():
     st.write(
         '''
-        As a bundle of tasks, a job can be represented as a matrix of tasks where each column-vector
+        As a bundle of tasks, a job $i$ can be represented as a matrix of tasks where each column-vector
         corresponds to a different task:
         '''
     )
@@ -62,7 +62,7 @@ def UNIT2_2():
     st.latex(
         r"""
         J_i = \begin{pmatrix}
-        s_{11}^1 & s_{12} & s_{13} & s_{14} & s_{15} \\
+        s_{11}^i & s_{12}^i & s_{13}^i & s_{14} & s_{15} \\
         s_{21} & s_{22} & s_{23} & s_{24} & s_{25} \\
         s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
         s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
