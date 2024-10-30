@@ -113,9 +113,6 @@ def UNIT5_3():
         '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.text_input('Identify the strategy that you believe will best facilitate the successful implementation of the model above:')
-
 st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
