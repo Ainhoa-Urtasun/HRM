@@ -18,11 +18,11 @@ def UNIT3_1():
     \hline
     m_{(1)(1)} & m_{(1)(2)} & m_{(1)(3)} & d_{(1)} \\
     \hline
-    m_{(21)(-1,0)} & m_{(22)(-1,0)} & m_{(23)(-1,0)} & d_{(2)(-1,0)} \\
+    m_{(2)(1)} & m_{(2)(2)} & m_{(2)(3)} & d_{(2)} \\
     \hline
-    m_{(31)(-1,0)} & m_{(32)(-1,0)} & s_{(33)(-1,0)} & d_{(3)(-1,0)} \\
+    m_{(3)(1)} & m_{(3)(2)} & s_{(3)(3)} & d_{(3)} \\
     \hline
-    h_{(1)(-1,0)} & h_{(2)(-1,0)} & h_{(3)(-1,0)} & \\
+    h_{(1)} & h_{(2)} & h_{(3)} & \\
     \hline
     \end{array}
     """)
@@ -30,9 +30,11 @@ def UNIT3_1():
 
     st.write(
         '''
-        Where $m_{(ij)}$ represents employee mobility from job $J_{(i)}$ to job $J_{(j)}$ within the firm from $t=-1$ to 
-        $t=0$ where $t=0$ represents the present moment; $h$ represents new hires or 
-        number of employees who have been recruited and started working at the firm from from $t=-1$ to 
+        Where $m_{(i)(j)}$ represents employee mobility from job $J_{(i)}$ to job $J_{(j)}$ 
+        within the firm from $t=-1$ to 
+        $t=0$ where $t=0$ represents the present moment; $h_{(k)}$ represents new hires or 
+        number of employees who have been recruited and started working in job $J_{(i)}$ 
+        within the firm from from $t=-1$ to 
         $t=0$; and $d$ represents departures or number of employees who have left the firm from $t=-1$ to 
         $t=0$, either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
         '''
