@@ -87,34 +87,34 @@ def UNIT3_1():
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("$L_{(1)}^{-1}$"):
+        if st.button("$L_{(1,-1)}$"):
             L10 = np.array([m11, m12, m13, s1])
             L10 = np.sum(L10)
             st.write(f"Employment in job 1 at -1: {L10}")
     with col2:
-        if st.button("$L_{(2)}^{-1}$"):
+        if st.button("$L_{(2,-1)}$"):
             L20 = np.array([m21, m22, m23, s2])
             L20 = np.sum(L20)
             st.write(f"Employment in job 2 at -1: {L20}")
     with col3:
-        if st.button("$L_{(3)}^{-1}$"):
+        if st.button("$L_{(3,-1)}$"):
             L30 = np.array([m31, m32, m33, s3])
             L30 = np.sum(L30)
             st.write(f"Employment in job 3 at -1: {L30}")
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("$L_{(1)}^0$"):
+        if st.button("$L_{(1,0)}$"):
             L11 = np.array([m11, m21, m23, h1])
             L11 = np.sum(L11)
             st.write(f"Employment in job 1 at 0: {L11}")
     with col2:
-        if st.button("$L_{(2)}^0$"):
+        if st.button("$L_{(2,0)}$"):
             L21 = np.array([m12, m22, m32, h2])
             L21 = np.sum(L21)
             st.write(f"Employment in job 2 at 0: {L21}")
     with col3:
-        if st.button("$L_{(3)}^0$"):
+        if st.button("$L_{(3,0)}$"):
             L31 = np.array([m13, m23, m33, h3])
             L31 = np.sum(L31)
             st.write(f"Employment in job 3 at 0: {L31}")
