@@ -64,18 +64,23 @@ def UNIT2_2():
         J_i = \begin{pmatrix}
         s_{11}^i & s_{12}^i & s_{13}^i & s_{14}^i & s_{15}^i \\
         s_{21}^i & s_{22}^i & s_{23}^i & s_{24}^i & s_{25}^i \\
-        s_{31} & s_{32} & s_{33} & s_{34} & s_{35} \\
-        s_{41} & s_{42} & s_{43} & s_{44} & s_{45} \\
+        s_{31}^i & s_{32}^i & s_{33}^i & s_{34}^i & s_{35}^i \\
+        s_{41}^i & s_{42}^i & s_{43}^i & s_{44}^i & s_{45}^i \\
         \end{pmatrix} \\[10pt]
-
-        0 \leq \sum s_{ij} \leq 100 
         """
     )
 
     st.write(
         '''
         Jobs don't entail all tasks. If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros.
+        its corresponding column will be a vector of zeros. Rows in $J_i$ correspond to 
+        a particular skill, so we establish the following criteria:
+        '''
+    )
+
+    st.latex(
+        '''
+        0 \leq \sum_i s_{ij} \leq 100 
         '''
     )
 
