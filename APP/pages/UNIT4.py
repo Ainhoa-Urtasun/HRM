@@ -67,7 +67,6 @@ def UNIT4_4():
     st.latex(
             r'''
             C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
-            0 \leq s_i \leq 100
             '''
         )
 
