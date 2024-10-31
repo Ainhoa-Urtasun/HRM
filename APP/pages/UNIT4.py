@@ -74,8 +74,8 @@ def UNIT4_4():
     st.write(
         '''
         where $e_i$ represents the effort exerted by employee $i$; $d$ is the Euclidean distance 
-        between $s_{k}$, the vector of skill norms required by the job employee $i$ must perform, and the 
-        vector of skills that employee $i$ actually possesses. The greater the distance, the lower the 
+        between $s_{(k(}$, the vector of skill norms required by the job employee $i$ must perform, and the 
+        vector of skills that employee $i$ actually possesses. The greater the distance, the higher the 
         cost of effort for the employee $i$. Remember, the vector of skill norms is derived from 
         the job evaluation process.
         '''
