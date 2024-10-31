@@ -155,7 +155,7 @@ def UNIT2_3():
             [s41, s42, s43, s44, s45]
         ])
     
-        row_norms = np.linalg.norm(matrix, axis=1)
+        row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
 
