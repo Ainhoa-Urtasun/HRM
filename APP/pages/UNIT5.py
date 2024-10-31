@@ -94,8 +94,8 @@ def UNIT5_3():
         cost of effort for the job candidate $i$. Remember, the vector of skill norms is derived from 
         the job evaluation process.
         
-        Assuming two job candidates, 1 and 2, where \( d_1 = 10 \) and \( d_2 = 90 \), 
-        this indicates a good-matching, high-skill candidate and a poor-matching, low-skill candidate, respectively. 
+        Assuming two job candidates, 1 and 2, where $d_1 = 10$ and $d_2 = 90$, 
+        this indicates a good-matching candidate and a poor-matching candidate, respectively. 
         The cost of effort for the high-skill candidate is:
         '''
     )
