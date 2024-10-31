@@ -81,54 +81,81 @@ def UNIT8_2():
 
     st.write(
         '''
-        Consider two employees, employee 1 and employee 2, competing for a prize $w$. The winner receives $w$, and the loser receives $-w$. 
-        The probability of winning for employee 1 and for employee 2 is given by, respectively:
-        '''
-    )
-    
-    st.latex(
-        r'''
-        p_1 = \frac{e_1}{e_1 + e_2}
+        When an employee receives pay-for-performance with a share of the production output, their utility function includes both their base pay and a portion of the output they help produce.
+        The utility function for an employee $i$ can be represented as:
         '''
     )
 
     st.latex(
         r'''
-        p_2 = \frac{e_2}{e_1 + e_2}
+        u_i = w \times e_i + b \times f(e_1, e_2, \dots) - C(e_i)
+        ''')
+
+    st.write(
+        '''
+        where:
+        - $w$ is the rate of pay per unit of effort,
+        - $e_i$ is the effort exerted by the employee,
+        - $b$ is the employee’s ownership share in the production output,
+        - $f(e_1, e_2, \dots)$ is the production function representing total output as a function of the efforts of all employees,
+        - $C(e_i)$ is the cost of effort, typically $C(e_i) = d_i e_i^2$, where $d_i$ reflects the costliness of exerting effort for the employee.
+
+        To determine the optimal level of effort, the employee maximizes their utility by choosing \( e_i \) such that the derivative of their utility with respect to effort is zero. This derivative gives us the **supply of effort** considering both the pay and ownership share.
         '''
     )
 
     st.write(
         '''
-        The expected utility for each employee depends on their probability of winning, the prize, and the cost of effort. 
-        Let \( C(e_i) = d_i e_i^2 \) represent the cost of effort for each employee.
-
+        Taking the derivative of the utility function with respect to effort $e_i$:
         '''
     )
 
+    st.latex(
+        r'''
+        \frac{\partial u_i}{\partial e_i} = w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - \frac{\partial C(e_i)}{\partial e_i}
+        ''')
+
+    st.write(
+        '''
+        Substituting $C(e_i) = d_i e_i^2$:
+        '''
+    )
 
     st.latex(
         r'''
-        U_1 = \frac{e_1}{e_1 + e_2} w - \frac{e_2}{e_1 + e_2} w - d_1 e_1^2 \\[10pt]
-        U_2 = \frac{e_2}{e_1 + e_2} w - \frac{e_1}{e_1 + e_2} w - d_2 e_2^2
+        \frac{\partial u_i}{\partial e_i} = w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - 2 d_i e_i
         '''
     )
 
     st.write(
         '''
-        Each employee chooses their effort level to maximize their expected utility. We find the optimal effort levels by 
-        taking the first-order conditions of their expected utility functions with respect to their efforts.
+        Setting this derivative equal to zero to maximize utility, we get:
         '''
     )
 
     st.latex(
         r'''
-        \frac{\partial U_1}{\partial e_1} = \frac{\partial}{\partial e_1} \left( \frac{e_1}{e_1 + e_2} w - \frac{e_2}{e_1 + e_2} w - d_1 e_1^2 \right) = 0 \\[10pt]
-        \frac{\partial U_1}{\partial e_1} = \frac{w}{(e_1 + e_2)^2} e_2 - d_1 e_1 = 0 \\[10pt]
-        \frac{\partial U_2}{\partial e_2} = \frac{\partial}{\partial e_2} \left( \frac{e_2}{e_1 + e_2} w - \frac{e_1}{e_1 + e_2} w - d_2 e_2^2 \right) = 0 \\[10pt]
-        \frac{\partial U_2}{\partial e_2} = \frac{w}{(e_1 + e_2)^2} e_1 - d_2 e_2 = 0 \\[10pt]
-        e_1^* = \frac{w}{d_1} \cdot \frac{e_2}{(e_1 + e_2)^2} \\[10pt]
-        e_2^* = \frac{w}{d_2} \cdot \frac{e_1}{(e_1 + e_2)^2}
+        w + \alpha \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - 2 d_i e_i = 0
+        '''
+    )
+
+    st.write(
+        '''
+        Solving for $e_i$, the optimal supply of effort by the employee is:
+        '''
+    )
+
+    st.latex(
+        r'''
+        e_i^* = \frac{w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i}}{2 d_i}
+        '''
+    )
+
+    st.write(
+        '''
+        This expression shows that the employee's optimal effort level $e_i^*$ depends not only on the pay rate $w$ but also on their ownership share $b$ 
+        in the production function, encouraging higher effort levels as the share in output increases. 
+        Conversely, a higher cost of effort $d_i$ discourages effort, balancing the incentives.
         '''
     )
 
