@@ -41,9 +41,11 @@ def UNIT6_1():
         the job evaluation process.
         
         On-the-job training aims to provide employees with the necessary 
-        skills and competencies to complete tasks more efficiently, thereby reducing the cost of effort. 
-        This reduction can enhance employee motivation, which in turn aligns with and positively impacts 
-        the firm’s overall objectives.
+        skills and competencies to complete tasks more efficiently. In other words, on-the-job training
+        aims to improve the match between the employee $i$ and the job they perform. This match is measured by
+        the Euclidean distance $d$, which on-the-job training seeks to reduce.
+        By minimizing $d$, the cost of effort for the employee decreases, which can
+        positively impact their motivation.
         '''
     )
 
