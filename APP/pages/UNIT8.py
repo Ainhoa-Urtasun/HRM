@@ -8,20 +8,74 @@ def UNIT8_1():
 
     st.write(
         '''
-        **Employment** refers to the number of employees, including both full-time and part-time workers. 
-        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
-        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals).
-
-        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
-        its retention and turnover rates, which are critical HRM metrics.
+        When an employee receives pay-for-performance, their utility looks as follows:
         '''
     )
 
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
-    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
-    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
-    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
+    st.latex(r'''
+        u_i = w \times e_i - C(e_i)
+        ''')
+
+    st.write(
+        '''
+        where:
+        - $w$ represents the rate of pay per unit of effort,
+        - $e_i$ is the effort exerted by the employee,
+        - $C(e_i)$ is the cost of effort, typically represented by $C(e_i) = d_i e_i^2$, where $d_i$ is a factor that increases with the difficulty of effort for the employee.
+
+        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$ such that the derivative of their utility with respect to effort is zero. 
+        This derivative gives us the employee's **supply of effort**.
+
+        Taking the derivative of the utility function with respect to effort $e_i$:
+        '''
+    )
+
+    st.latex(
+        r'''
+        \frac{\partial u_i}{\partial e_i} = w - \frac{\partial C(e_i)}{\partial e_i}
+        '''
+    )
+
+    st.write(
+        '''
+        Substituting \( C(e_i) = d_i e_i^2 \):
+        '''
+    )
+
+    st.latex(
+        r'''
+        \frac{\partial u_i}{\partial e_i} = w - 2 d_i e_i
+        ''')
+
+    st.write(
+        '''
+        Setting this derivative equal to zero to maximize utility, we get:
+        '''
+    )
+
+    st.latex(r'''
+        w - 2 d_i e_i = 0
+        ''')
+
+    st.write(
+        '''
+        Solving for $e_i$, the optimal supply of effort by the employee is:
+        '''
+    )
+
+    st.latex(
+        r'''
+        e_i^* = \frac{w}{2 d_i}
+        '''
+    )
+
+    st.write(
+        '''
+        This shows that the employee's optimal effort level \( e_i^* \) increases with the rate of pay \( w \) and decreases with the cost factor \( d_i \). 
+        In other words, a higher pay rate incentivizes more effort, while a higher cost of effort discourages it.
+        '''
+    )
+
     
 def UNIT8_2():
 
