@@ -59,7 +59,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{ATT} = (d_{0}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{0}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
+        \text{ATT} = (d_{+1}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
         """
     )
 
@@ -88,7 +88,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CC} = S_{+1}^{\text{non-trained}} - S_{-1}^{\text{non-trained}}
+        \text{CC} = d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}}
         """
     )
 
@@ -101,7 +101,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CE} = S_{-1}^{\text{trained}} + (S_{+1}^{\text{non-trained}} - S_{-1}^{\text{non-trained}})
+        \text{CE} = d_{-1}^{\text{trained}} + (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
         """
     )
 
