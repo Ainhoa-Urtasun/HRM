@@ -90,47 +90,23 @@ def UNIT5_3():
         '''
         where $e_i$ represents the effort job candidate $i$ would exert if hired; $d(s_{(k)},s_i)$ is the Euclidean distance 
         between $s_{(k)}$, the vector of skill norms required by the job job candidate $i$ would have to perform if hired, and the 
-        vector of skills that job candidate $i$ actually possesses. The greater the distance, the higher the 
+        vector of skills that job candidate $i$ actually possesses. The value of $d$ measures the matching between 
+        the job candidate and the job they are supposed to perform if hired.
+        Well-matched job candidates will show a low $d$ whereas poorly-matched job candidates will show a high $d$.The greater the distance, the higher the 
         cost of effort for the job candidate $i$. Remember, the vector of skill norms is derived from 
         the job evaluation process.
-        
-        Assuming two job candidates, 1 and 2, where $d_1 = 10$ and $d_2 = 90$, 
-        this indicates a good-matching candidate and a poor-matching candidate, respectively. 
-        The cost of effort for the high-skill candidate is:
+
+        To attract well-matched job candidates, the firm can specify in the job posting both the effort required and the 
+        corresponding salary that compensates well-matched job candidates. This approach will deter poorly-matched job candidates, as
+        their high cost of effort would require a significantly higher salary to make the job worthwhile.        
         '''
     )
     
-    st.latex(r"C(e_1) = e_1^2")
-    st.write(
-        '''
-        This lower cost reflects that the high-skill candidate possesses the necessary skill abundantly, 
-        making effort less costly for them.
-
-        For a low-skill candidate, the cost of effort is:
-        '''
-    )
-    
-    st.latex(r"C(e_2) = 100 e_2^2")
-
-    st.write(
-        '''
-        This higher cost implies that it would be more expensive for the low-skill candidate to 
-        exert the same level of effort as the high-skill candidate.
-        
-        The company offers a monthly salary of €10,000, expecting a target effort level of $e^* = 100$.
-        
-        Under this salary and effort expectation, a high-skill candidate is willing to exert the 
-        required effort.
-        In contrast, a low-skill candidate would face a prohibitive cost
-        and thus would not apply.
-        '''
-    )
-
 st.set_page_config(page_title="UNIT5", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information and adverse selection",'Managing asymmetric information'],  # required
+    options=["Employment","Asymmetric information and adverse selection",'Skill matching'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -142,6 +118,6 @@ if selected == "Employment":
     UNIT5_1()
 elif selected == "Asymmetric information and adverse selection":
     UNIT5_2()
-elif selected == "Managing asymmetric information":
+elif selected == "Skill matching":
     UNIT5_3()
 
