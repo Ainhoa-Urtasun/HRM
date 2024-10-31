@@ -56,12 +56,12 @@ def UNIT2_2():
 
     st.write(
         '''
-        Each element of the matrix $s_{ij}$ represents the extent to which skill $s_i$ is required
-        to perform $t_j$. We restrict $s_{ij}$ to the following values:
+        Each element of the matrix $s_{ij(k)}$ represents the extent to which skill $s_i$ is required
+        to perform $t_j$ in job $J_{(k)}$. We restrict $s_{ij(k)}$ to the following values:
         '''
     )
 
-    st.latex(r'0 \leq s_{ij} \leq 45')
+    st.latex(r'0 \leq s_{ij(k)} \leq 45')
 
     st.write(
         '''
@@ -79,20 +79,33 @@ def UNIT2_3():
         Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
         By evaluating jobs, organizations can 
         establish equitable compensation structures and identify training and development needs. 
+        
         Since a job is a bundle of tasks, and each task requires multiple skills, one approach to job evaluation 
-        is to represent it as a column-vector of skill norms, where each value represents
+        is to represent the job as a column-vector of skill norms, where each value represents
         the norm of the corresponding row in the job matrix:
         '''
     )
 
     st.latex(r"""
-    s_{(k)} = \begin{pmatrix} 
+    s_{(k)} = 0.45 \begin{pmatrix} 
     \sqrt{s_{11(k)}^2 + s_{12(k)}^2 + s_{13(k)}^2 + s_{14(k)}^2 + s_{15(k)}^2} \\[10pt] 
     \sqrt{s_{21(k)}^2 + s_{22(k)}^2 + s_{23(k)}^2 + s_{24(k)}^2 + s_{25(k)}^2} \\[10pt] 
     \sqrt{s_{31(k)}^2 + s_{32(k)}^2 + s_{33(k)}^2 + s_{34(k)}^2 + s_{35(k)}^2} \\[10pt] 
     \sqrt{s_{41(k)}^2 + s_{42(k)}^2 + s_{43(k)}^2 + s_{44(k)}^2 + s_{45(k)}^2} 
     \end{pmatrix}
     """)
+
+    st.write(
+        '''
+        We scale down the column-vector of skill norms by 0.45 so that:
+        '''
+    )
+
+    st.latex(
+        '''
+        
+        '''
+    )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write(
