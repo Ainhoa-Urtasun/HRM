@@ -107,17 +107,15 @@ def UNIT1_4():
         From the Income Statement of a firm: 
         '''
     )
-    st.latex(r'EBIT = pQ - wL - dM - rK')
+    st.latex(r'EBIT = pQ - wL - M - K')
     st.write(
         '''
         - $p$ is the price of the output the firm produces
         - $pQ$ represents operating revenue
         - $w$ is the average salary paid by the firm to its employees
         - $wL$ is cost of employees
-        - $d$ is the unit cost of materials
-        - $dM$ are material costs
-        - $r$ is the cost of technology
-        - $rK$ is depreciation
+        - $M$ are material costs
+        - $K$ is depreciation
         '''
     )
 
