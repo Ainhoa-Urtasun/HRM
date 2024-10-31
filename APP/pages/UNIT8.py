@@ -71,7 +71,7 @@ def UNIT8_1():
 
     st.write(
         '''
-        This shows that the employee's optimal effort level \( e_i^* \) increases with the rate of pay \( w \) and decreases with the cost factor \( d_i \). 
+        This shows that the employee's optimal effort level $e_i^*$ increases with the rate of pay $w$ and decreases with the cost factor $d_i$. 
         In other words, a higher pay rate incentivizes more effort, while a higher cost of effort discourages it.
         '''
     )
