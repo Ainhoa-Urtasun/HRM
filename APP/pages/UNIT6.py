@@ -53,14 +53,13 @@ def UNIT6_2():
 
     st.write(
         """
-        We use the **difference-in-differences (DiD) method** to evaluate the impact of training on the
-        development of skill $s$.
+        We use the **difference-in-differences (DiD) method** to evaluate the impact of training on $d$.
         """
     )
 
     st.latex(
         r"""
-        \text{DiD} = (S_{+1}^{\text{trained}} - S_{-1}^{\text{trained}}) - (S_{+1}^{\text{non-trained}} - S_{-1}^{\text{non-trained}})
+        \text{DiD} = (d_{0}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{0}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
         """
     )
 
