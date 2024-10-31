@@ -197,8 +197,8 @@ def UNIT2_4():
             [s3j],
             [s4j]
         ])
-            euclidean_distance = 0.45 * np.linalg.norm(ti - tj)
-            st.write("Please ensure all inputs are valid numeric values, separated by commas.")
+        euclidean_distance = 0.45 * np.linalg.norm(ti - tj)
+        st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
 # Set page configuration
 st.set_page_config(page_title="UNIT2", layout="wide")
