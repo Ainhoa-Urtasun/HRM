@@ -172,7 +172,7 @@ def UNIT2_4():
     d(\mathbf{t}_i, \mathbf{t}_j) = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
     """)
 
-    ti, tj = st.columns(5)
+    ti, tj = st.columns(2)
     with ti:
         s1i = st.number_input("$s_{1i}$", key="s1i",step=1)
         s2i = st.number_input("$s_{2i}$", key="s2i",step=1)
