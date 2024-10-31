@@ -69,28 +69,15 @@ def UNIT7_2():
 
     st.latex(
         r'''
-        \frac{\partial U_1}{\partial e_1} = \frac{\partial}{\partial e_1} \left( \frac{e_1}{e_1 + e_2} w - \frac{e_2}{e_1 + e_2} w - d_1 e_1^2 \right) = 0
+        \frac{\partial U_1}{\partial e_1} = \frac{\partial}{\partial e_1} \left( \frac{e_1}{e_1 + e_2} w - \frac{e_2}{e_1 + e_2} w - d_1 e_1^2 \right) = 0 \\[10pt]
+        \frac{\partial U_1}{\partial e_1} = \frac{w}{(e_1 + e_2)^2} e_2 - d_1 e_1 = 0 \\[10pt]
+        \frac{\partial U_2}{\partial e_2} = \frac{\partial}{\partial e_2} \left( \frac{e_2}{e_1 + e_2} w - \frac{e_1}{e_1 + e_2} w - d_2 e_2^2 \right) = 0 \\[10pt]
+        \frac{\partial U_2}{\partial e_2} = \frac{w}{(e_1 + e_2)^2} e_1 - d_2 e_2 = 0 \\[10pt]
+        e_1^* = \frac{w}{d_1} \cdot \frac{e_2}{(e_1 + e_2)^2} \\[10pt]
+        e_2^* = \frac{w}{d_2} \cdot \frac{e_1}{(e_1 + e_2)^2}
         '''
     )
 
-    st.latex(
-        r'''
-        \frac{\partial U_1}{\partial e_1} = \frac{w}{(e_1 + e_2)^2} e_2 - d_1 e_1 = 0
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial U_2}{\partial e_2} = \frac{\partial}{\partial e_2} \left( \frac{e_2}{e_1 + e_2} w - \frac{e_1}{e_1 + e_2} w - d_2 e_2^2 \right) = 0
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial U_2}{\partial e_2} = \frac{w}{(e_1 + e_2)^2} e_1 - d_2 e_2 = 0
-        '''
-    )
- 
 st.set_page_config(page_title="UNIT7", layout="wide")
 
 selected = option_menu(
