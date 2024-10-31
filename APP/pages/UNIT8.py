@@ -38,7 +38,7 @@ def UNIT8_1():
 
     st.write(
         '''
-        Substituting \( C(e_i) = d_i e_i^2 \):
+        Substituting $C(e_i) = d_i e_i^2$:
         '''
     )
 
