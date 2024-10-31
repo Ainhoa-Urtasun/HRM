@@ -172,27 +172,32 @@ def UNIT2_4():
     d(\mathbf{t}_i, \mathbf{t}_j) = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
     """)
 
-    skills1 = st.text_input("Enter 4 numeric values for $t_i$ (comma-separated):")
-    skills2 = st.text_input("Enter 4 numeric values for $t_j$ (comma-separated):")
-
-    if st.button("Task difference"):
-        try:
-        # Check if inputs are provided
-            if not skills1 or not skills2:
-                st.write("Please provide values for both vectors.")
-            else:
-                # Convert inputs to float lists
-                vector1 = np.array(list(map(float, skills1.split(','))))
-                vector2 = np.array(list(map(float, skills2.split(','))))
-            
-                # Check if both vectors have exactly 4 values
-                if len(vector1) == 4 and len(vector2) == 4:
-                    # Calculate Euclidean distance
-                    euclidean_distance = np.linalg.norm(vector1 - vector2)
-                    st.write(euclidean_distance)
-                else:
-                    st.write("Please enter exactly 4 numeric values for each vector.")
-        except ValueError:
+        ti, tj = st.columns(5)
+    with ti:
+        s1i = st.number_input("$s_{1i}$", key="s1i",step=1)
+        s2i = st.number_input("$s_{2i}$", key="s2i",step=1)
+        s3i = st.number_input("$s_{3i}$", key="s3i",step=1)
+        s4i = st.number_input("$s_{4i}$", key="s4i",step=1)
+    with tj:
+        s1j = st.number_input("$s_{1j}$", key="s1j",step=1)
+        s2j = st.number_input("$s_{2j}$", key="s2j",step=1)
+        s3j = st.number_input("$s_{3j}$", key="s3j",step=1)
+        s4j = st.number_input("$s_{4j}$", key="s4j",step=1)
+    
+    if st.button("Job evaluation"):
+        ti = np.array([
+            [s1i],
+            [s2i],
+            [s3i],
+            [s4i]
+        ])
+        tj = np.array([
+            [s1j],
+            [s2j],
+            [s3j],
+            [s4j]
+        ])
+            euclidean_distance = 0.45 * np.linalg.norm(ti - tj)
             st.write("Please ensure all inputs are valid numeric values, separated by commas.")
 
 # Set page configuration
