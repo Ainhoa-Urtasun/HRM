@@ -74,7 +74,7 @@ def UNIT4_4():
     st.write(
         '''
         where $e_i$ represents the effort exerted by employee $i$; $d$ is the Euclidean distance 
-        between $s_{(k(}$, the vector of skill norms required by the job employee $i$ must perform, and the 
+        between $s_{(k)}$, the vector of skill norms required by the job employee $i$ must perform, and the 
         vector of skills that employee $i$ actually possesses. The greater the distance, the higher the 
         cost of effort for the employee $i$. Remember, the vector of skill norms is derived from 
         the job evaluation process.
@@ -91,13 +91,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = \frac{d}{de_i} \left[(100 - s_i)e_i^2\right] = 2(100 - s_i)e_i
+        C'(e_i) = 2d(s_{(k)},s_i)e_i
         '''
     )
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $(100 - s_i)$ is a positive constant, 
+        This first derivative shows the marginal cost of effort. Since $d(s_{(k)},s_i)>0$, 
         the marginal cost of effort increases linearly with $e_i$.
 
         The second derivative with respect to $e_i$ is:
@@ -106,13 +106,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = \frac{d^2}{de_i^2} \left[(100 - s_i)e_i^2\right)] = 2(100 - s_i)
+        C''(e_i) = 2d(s_{(k)},s_i)
         '''
     )
 
     st.write(
         '''
-        Since $2(100 - s_i) > 0$, the second derivative is positive, which means that the cost function
+        Since $d(s_{(k)},s_i)>0$, the second derivative is positive, which means that the cost function
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
