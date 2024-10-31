@@ -61,7 +61,7 @@ def UNIT2_2():
         '''
     )
 
-    st.latex(r'0 \leq s_{ij(k)} \leq 45')
+    st.latex(r'0 \leq s_{ij(k)} \leq 100')
 
     st.write(
         '''
