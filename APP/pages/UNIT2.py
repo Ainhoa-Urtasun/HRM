@@ -184,7 +184,7 @@ def UNIT2_4():
         s3j = st.number_input("$s_{3j}$", key="s3j",step=1)
         s4j = st.number_input("$s_{4j}$", key="s4j",step=1)
     
-    if st.button("Job evaluation"):
+    if st.button("Task difference"):
         ti = np.array([
             [s1i],
             [s2i],
