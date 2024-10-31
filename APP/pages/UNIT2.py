@@ -108,7 +108,7 @@ def UNIT2_3():
 
     st.latex(
         '''
-        
+        0 \leq  \|s_{1(k)}\| \leq 100
         '''
     )
 
