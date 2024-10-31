@@ -26,60 +26,21 @@ def UNIT7_1():
 def UNIT7_2():
 
     st.write(
-        """
-        We use the **difference-in-differences method** to evaluate the impact of training on $d$.
-        """
+        '''
+        Consider two employees, employee 1 and employee 2, competing for a prize $W$. The winner receives $W$, and the loser receives $L$. 
+        The probability of winning for Employee 1 is given by:
+        '''
     )
-
+    
     st.latex(
-        r"""
-        \text{ATT} = (d_{+1}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
-        """
+        r'''
+        p_1 = \frac{e_1}{e_1 + e_2}
+        '''
     )
 
-    st.write(
-        """
-        Where ATT stands for the Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
-        on the group that actually received it, compared to a similar, untreated group. In DiD, ATT is especially valuable for assessing the impact of a policy or 
-        intervention specifically on the population exposed to it, providing a clearer isolation of the effect within the treated group.
+  
 
-        In our case, on-the-job training serves as our treatment (or intervention). Training occurs at time 0, with −1 representing the period before training and 
-        +1 the period after training. For accurate application of the DiD technique, we compare two employees with similar characteristics: 
-        one who receives the training and one who does not. The Difference-in-Differences approach makes two primary comparisons: 
-        (1) the periods before and after training, and (2) trained versus non-trained employees. 
-        Combining these comparisons offers a robust method to infer counterfactuals and estimate causal effects accurately.
-        """
-    )
-
-    st.write("#### Counterfactual Outcomes")
-
-    st.write(
-        """
-        We distinguish two counterfactual outcomes:
-        - **Counterfactual change (CC)**: What the trained employee's effort would have been if they hadn't received training:
-        """
-    )
-
-    st.latex(
-        r"""
-        \text{CC} = d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}}
-        """
-    )
-
-    st.write(
-        """
-        - **Counterfactual effort (CE)**: How much the trained employee's effort would have 
-        changed if they hadn't received training:
-        """
-    )
-
-    st.latex(
-        r"""
-        \text{CE} = d_{-1}^{\text{trained}} + (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
-        """
-    )
-
-
+ 
 st.set_page_config(page_title="UNIT7", layout="wide")
 
 selected = option_menu(
