@@ -73,17 +73,30 @@ def UNIT5_2():
     st.text_input('Explain why you might end up recruiting the wrong job candidates:')
 
 def UNIT5_3():
-    st.write(r"The cost of effort for each job candidate is defined as:")
-    st.latex(
-        r'''
-        C(e_i) = (100 - s_i)e_i^2
+    st.write(
+        '''
+        Consider the following cost of effort for each job candidate:
         '''
     )
 
+    st.latex(
+            r'''
+            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
+            0 \leq s_i \leq 100
+            '''
+        )
+
     st.write(
         '''
-        Assuming two job candidates 1 and 2, $s_1 = 99$ and $s_2 = 0$ indicating a high-skill candidate, 
-        and a low-skill candidate. The cost of effort of the high-skill candidate is:
+        where $e_i$ represents the effort job candidate $i$ would exert if hired; $d(s_{(k)},s_i)$ is the Euclidean distance 
+        between $s_{(k)}$, the vector of skill norms required by the job job candidate $i$ would have to perform if hired, and the 
+        vector of skills that job candidate $i$ actually possesses. The greater the distance, the higher the 
+        cost of effort for the job candidate $i$. Remember, the vector of skill norms is derived from 
+        the job evaluation process.
+        
+        Assuming two job candidates, 1 and 2, where \( d_1 = 10 \) and \( d_2 = 90 \), 
+        this indicates a good-matching, high-skill candidate and a poor-matching, low-skill candidate, respectively. 
+        The cost of effort for the high-skill candidate is:
         '''
     )
     
