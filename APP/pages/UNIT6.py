@@ -17,25 +17,31 @@ def UNIT6_1():
         robots and artificial intelligence (AI).
 
         Here we focus on on-the-job training.
-        Given the cost of effort for each employee:
-        '''
-    )
-
-    st.latex(
-        '''
-        C(e_i) = (100-s_i)e_i^2
         '''
     )
 
     st.write(
         '''
-        Where $e_i$ is the effort exerted by employee $i$ and $s_i$ represents the skills
-        employee $i$ possesses. Training will target the 
-        development of $s_i$.
+        Consider the following cost of effort function:
+        '''
+    )
 
-        Employee $i$ exerts effort $e_i$ to successfuly carry out tasks. Effort includes factors such as time, 
-        willingness, involvement, and character. 
-        Effort is costly, but on-the-job training aims to provide employees with the necessary 
+    st.latex(
+            r'''
+            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
+            0 \leq s_i \leq 100
+            '''
+        )
+
+    st.write(
+        '''
+        where $e_i$ represents the effort exerted by employee $i$; $d(s_{(k)},s_i)$ is the Euclidean distance 
+        between $s_{(k)}$, the vector of skill norms required by the job employee $i$ must perform, and the 
+        vector of skills that employee $i$ actually possesses. The greater the distance, the higher the 
+        cost of effort for the employee $i$. Remember, the vector of skill norms is derived from 
+        the job evaluation process.
+        
+        On-the-job training aims to provide employees with the necessary 
         skills and competencies to complete tasks more efficiently, thereby reducing the cost of effort. 
         This reduction can enhance employee motivation, which in turn aligns with and positively impacts 
         the firm’s overall objectives.
