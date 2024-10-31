@@ -53,21 +53,27 @@ def UNIT6_2():
 
     st.write(
         """
-        We use the **difference-in-differences (DiD) method** to evaluate the impact of training on $d$.
+        We use the **difference-in-differences method** to evaluate the impact of training on $d$.
         """
     )
 
     st.latex(
         r"""
-        \text{DiD} = (d_{0}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{0}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
+        \text{ATT} = (d_{0}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{0}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
         """
     )
 
     st.write(
         """
-        Training occurs at time \(0\), so \(-1\) refers to the period before training, and \(+1\) refers to the period after training. 
-        This technique makes two comparisons: (1) before vs. after training, and (2) trained vs. non-trained employees. 
-        The combination of both comparisons offers a robust method to infer counterfactuals and determine causal effects.
+        Where ATT stands for the Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
+        on the group that actually received it, compared to a similar, untreated group. In DiD, ATT is especially valuable for assessing the impact of a policy or 
+        intervention specifically on the population exposed to it, providing a clearer isolation of the effect within the treated group.
+
+        In our case, on-the-job training serves as our treatment (or intervention). Training occurs at time 0, with −1 representing the period before training and 
+        +1 the period after training. For accurate application of the DiD technique, we compare two employees with similar characteristics: 
+        one who receives the training and one who does not. The Difference-in-Differences approach makes two primary comparisons: 
+        (1) the periods before and after training, and (2) trained versus non-trained employees. 
+        Combining these comparisons offers a robust method to infer counterfactuals and estimate causal effects accurately.
         """
     )
 
