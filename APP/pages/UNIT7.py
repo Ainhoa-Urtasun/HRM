@@ -27,7 +27,7 @@ def UNIT7_2():
 
     st.write(
         '''
-        Consider two employees, employee 1 and employee 2, competing for a prize $W$. The winner receives $W$, and the loser receives $L$. 
+        Consider two employees, employee 1 and employee 2, competing for a prize $w$. The winner receives $w$, and the loser receives $-w$. 
         The probability of winning for Employee 1 is given by:
         '''
     )
