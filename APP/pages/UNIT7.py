@@ -8,47 +8,21 @@ def UNIT7_1():
 
     st.write(
         '''
-        Firms have two options for skill development (or upskilling): 
-        
-        1. Hiring new employees
-        2. Training incumbent employees
-        
-        Upskilling may be necesary to adopt new technologies, such as 
-        robots and artificial intelligence (AI).
+        **Employment** refers to the number of employees, including both full-time and part-time workers. 
+        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
+        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
+        or involuntarily (layoffs, dismissals).
 
-        Here we focus on on-the-job training.
+        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
+        its retention and turnover rates, which are critical HRM metrics.
         '''
     )
 
-    st.write(
-        '''
-        Consider the following cost of effort function:
-        '''
-    )
-
-    st.latex(
-            r'''
-            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
-            '''
-        )
-
-    st.write(
-        '''
-        where $e_i$ represents the effort exerted by employee $i$; $d(s_{(k)},s_i)$ is the Euclidean distance 
-        between $s_{(k)}$, the vector of skill norms required by the job employee $i$ must perform, and the 
-        vector of skills that employee $i$ actually possesses. The greater the distance, the higher the 
-        cost of effort for the employee $i$. Remember, the vector of skill norms is derived from 
-        the job evaluation process.
-        
-        On-the-job training aims to provide employees with the necessary 
-        skills and competencies to complete tasks more efficiently. In other words, on-the-job training
-        aims to improve the match between the employee $i$ and the job they perform. This match is measured by
-        the Euclidean distance $d$, which on-the-job training seeks to reduce.
-        By minimizing $d$, the cost of effort for the employee decreases, which can
-        positively impact their motivation.
-        '''
-    )
-
+    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
+    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
+    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
+    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
+    
 def UNIT7_2():
 
     st.write(
@@ -119,29 +93,10 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Turnover":
-    UNIT6_1()
+    UNIT7_1()
 elif selected == "Tournament model":
-    UNIT6_2()
+    UNIT7_2()
 
 
-
-def UNIT7_1():
-
-    st.write(
-        '''
-        **Employment** refers to the number of employees, including both full-time and part-time workers. 
-        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
-        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals).
-
-        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
-        its retention and turnover rates, which are critical HRM metrics.
-        '''
-    )
-
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
-    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
-    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
-    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
     
    
