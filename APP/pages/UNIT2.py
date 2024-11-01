@@ -22,7 +22,7 @@ def UNIT2_1():
         A **skill**, denoted as $s_i$, is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
         There are many classifications of skills. For simplicty, we focus only on the 4 
-        most requested transversal skills and competences required in online job ads in the EU27 in 2023
+        most requested transversal skills and competences in online job ads in the EU27 in 2023
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
 
         - $s_1$: Demonstrating willingness to learn
@@ -32,7 +32,7 @@ def UNIT2_1():
 
         A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
-        emmployees need to possess 
+        employees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
         $s_3$: taking a proactive approach, and $s_4$: working efficiently). 
         
@@ -47,9 +47,7 @@ def UNIT2_2():
         By evaluating jobs, firms can establish equitable compensation structures and identify training 
         and development needs. 
 
-        As a job is a bundle of tasks and each task requires employees to possess skills, we can evaluate a job
-        by assessing the relative importance of the tasks it entails and the skills required to perform them
-        effectively. To do this, we represent a job as a matrix, where each column corresponds 
+        To evaluate a job, we represent it as a matrix, where each column corresponds 
         to one of the five tasks, and each row represents the extent to which one the four skills is required
         to perform each task within the job:
         '''
@@ -105,7 +103,7 @@ def UNIT2_2():
 
     st.write(
         '''
-        We scale down the **skill-set of a job** by 0.45 to keep its values within 0 a 100, making
+        We scale down the **skill-set of a job** by 0.45 to keep its values within 0 and 100, making
         it easier to interpret and compare across different jobs:
         '''
     )
