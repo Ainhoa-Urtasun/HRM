@@ -79,7 +79,7 @@ def UNIT2_3():
     st.write(
         '''
         Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
-        By evaluating jobs, organizations can 
+        By evaluating jobs, firm can 
         establish equitable compensation structures and identify training and development needs. 
         
         Since a job is a bundle of tasks, and each task requires multiple skills, one approach to job evaluation 
