@@ -9,7 +9,7 @@ def UNIT2_1():
     
     st.write(
         """
-        A **task** $t_j$ is an action performed by an employee that results in a specific output.
+        A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) 
         identifies 5 pillar tasks: 
         
@@ -19,7 +19,7 @@ def UNIT2_1():
         - $t_4$: Use of methods
         - $t_5$: Use of technology
         
-        A **skill** $s_i$ is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
+        A **skill**, denoted as $s_i$, is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
         There are many classifications of skills. 
         Here we consider the top 4 transversal skills and competences in 2023 in online job ads in the EU27 
@@ -42,7 +42,7 @@ def UNIT2_2():
 
     st.write(
         '''
-        Job evaluation is the process of assessing the relative worth of jobs within a firm.
+        **Job evaluation** is the process of assessing the relative worth of jobs within a firm.
         By evaluating jobs, firms can establish equitable compensation structures and identify training 
         and development needs. 
 
