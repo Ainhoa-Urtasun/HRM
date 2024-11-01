@@ -104,7 +104,8 @@ def UNIT2_2():
 
     st.write(
         '''
-        We scale down the **skill-set of a job** by 0.45 so that:
+        We scale down the **skill-set of a job** by 0.45 to keep its values within 0 a 100, making
+        it easier to interpret and compare across different jobs:
         '''
     )
 
