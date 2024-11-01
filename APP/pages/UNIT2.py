@@ -164,7 +164,7 @@ def UNIT2_2():
 def UNIT2_3():
     st.write(
         '''
-        The difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
+        The difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design, 
         helping the firm decide how to allocate tasks across jobs. This difference can be measured 
         by calculating the Euclidean distance of the skill-vectors for each task:
         '''
