@@ -88,14 +88,6 @@ def UNIT2_2():
         '''
     )
 
-    st.write(
-        '''
-        Since a job is a bundle of tasks, and each task requires multiple skills, one approach to job evaluation 
-        is to represent the job as a column-vector of skill norms, where each value represents
-        the norm of the corresponding row in the job matrix:
-        '''
-    )
-
     st.latex(r"""
     s_{(k)} = 0.45 \begin{pmatrix} 
     \|s_{1(k)}\| \\ 
@@ -112,7 +104,7 @@ def UNIT2_2():
 
     st.write(
         '''
-        We scale down the column-vector of skill norms by 0.45 so that:
+        We scale down the **skill-set of a job** by 0.45 so that:
         '''
     )
 
