@@ -28,6 +28,12 @@ def UNIT2_1():
         - $s_2$: Maintaining a positive attitude
         - $s_3$: Taking a proactive approach
         - $s_4$: Working efficiently
+
+        A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
+        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). Employees need to possess 
+        multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
+        $s_3$: taking a proactive approach, and $s_4$: working efficiently) to carry out each task. 
+        
         """
     )
     
@@ -35,13 +41,15 @@ def UNIT2_2():
 
     st.write(
         '''
-        A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
-        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). Employees need to possess 
-        multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
-        $s_3$: taking a proactive approach, and $s_4$: working efficiently) to carry out each task. 
-        Consequently, we can represent a job as a matrix, where each column corresponds to one of the five tasks, and 
-        each row represents the extent to which one the four skills is required
-        to perform each of the five tasks within the job:
+        Job evaluation is the process of assessing the relative worth of jobs within a firm.
+        By evaluating jobs, firms can establish equitable compensation structures and identify training 
+        and development needs. 
+
+        As a job is a bundle of tasks and each task requires employees to possess skills, we can evaluate a job
+        by assessing the relative importance of the tasks it entails and the skills required to perform them
+        effectively. To do this, we represent a job as a matrix, where each column corresponds 
+        to one of the five tasks, and each row represents the extent to which one the four skills is required
+        to perform each task within the job:
         '''
     )
              
@@ -74,14 +82,8 @@ def UNIT2_2():
         '''
     )
 
-def UNIT2_3():
-
     st.write(
         '''
-        Job evaluation is a systematic process used to assess the relative worth of jobs within a firm.
-        By evaluating jobs, firm can 
-        establish equitable compensation structures and identify training and development needs. 
-        
         Since a job is a bundle of tasks, and each task requires multiple skills, one approach to job evaluation 
         is to represent the job as a column-vector of skill norms, where each value represents
         the norm of the corresponding row in the job matrix:
@@ -161,7 +163,7 @@ def UNIT2_3():
         for norm in row_norms:
             st.write(norm)
 
-def UNIT2_4():
+def UNIT2_3():
     st.write(
         '''
         The difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design jobs, 
@@ -207,7 +209,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks and skills",'Jobs','Job evaluation','Task difference'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation','Task difference'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -217,12 +219,10 @@ selected = option_menu(
 # Call the selected section
 if selected == "Tasks and skills":
     UNIT2_1()
-elif selected == "Jobs":
+elif selected == "Jobs and job evaluation":
     UNIT2_2()
-elif selected == 'Job evaluation':
-    UNIT2_3()
 elif selected == "Task difference":
-    UNIT2_4()
+    UNIT2_3()
 
 
 
