@@ -40,7 +40,7 @@ def UNIT2_2():
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
         $s_3$: taking a proactive approach, and $s_4$: working efficiently) to carry out each task. 
         Consequently, we can represent a job as a matrix, where each column corresponds to one of the five tasks, and 
-        each row represents the extent to which employees require to possess one the four skills 
+        each row represents the extent to which one the four skills is required
         to perform each of the five tasks within the job:
         '''
     )
