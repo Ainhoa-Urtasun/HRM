@@ -6,6 +6,7 @@ import numpy as np
 from numpy.linalg import norm
 
 def UNIT2_1():
+    
     st.write(
         """
         A **task** $t_j$ is an action performed by an employee that results in a specific output.
@@ -217,9 +218,9 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Tasks and skills":
+if selected == "Tasks, skills, and jobs":
     UNIT2_1()
-elif selected == "Jobs and job evaluation":
+elif selected == "Job evaluation":
     UNIT2_2()
 elif selected == "Task difference":
     UNIT2_3()
