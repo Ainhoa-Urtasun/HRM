@@ -36,13 +36,12 @@ def UNIT2_2():
     st.write(
         '''
         A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
-        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). Employees require to possess 
+        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). Employees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
-        $s_3$: taking a proactive approach, and $s_4$: working efficiently)to carry out each task. 
-        Consequently, 
-        we can represent a job as a matrix, where each column corresponds to one of the five tasks, and 
-        each row represents the extent to which one the four skills is required to perform each of the five tasks
-        within the job:
+        $s_3$: taking a proactive approach, and $s_4$: working efficiently) to carry out each task. 
+        Consequently, we can represent a job as a matrix, where each column corresponds to one of the five tasks, and 
+        each row represents the extent to which employees require to possess one the four skills 
+        to perform each of the five tasks within the job:
         '''
     )
              
