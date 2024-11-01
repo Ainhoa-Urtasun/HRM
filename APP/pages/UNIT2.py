@@ -10,8 +10,8 @@ def UNIT2_1():
     st.write(
         """
         A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) 
-        identifies 5 pillar tasks: 
+        For simplicity, we assume any economic activity can be completed by carrying out the 5 pillar tasks listed in
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence): 
         
         - $t_1$: Intellectual
         - $t_2$: Physical
@@ -21,8 +21,8 @@ def UNIT2_1():
         
         A **skill**, denoted as $s_i$, is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-        There are many classifications of skills. 
-        Here we consider the top 4 transversal skills and competences in 2023 in online job ads in the EU27 
+        There are many classifications of skills. For simplicty, we focus only on the 4 
+        most requested transversal skills and competences required in online job ads in the EU27 in 2023
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
 
         - $s_1$: Demonstrating willingness to learn
@@ -31,9 +31,10 @@ def UNIT2_1():
         - $s_4$: Working efficiently
 
         A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
-        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). Employees need to possess 
+        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
+        emmployees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
-        $s_3$: taking a proactive approach, and $s_4$: working efficiently) to carry out each task. 
+        $s_3$: taking a proactive approach, and $s_4$: working efficiently). 
         
         """
     )
