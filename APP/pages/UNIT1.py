@@ -37,11 +37,11 @@ def UNIT1_2():
     st.write(
     '''
     Any firm, regardless of its size, structure, or legal form of ownership, 
-    produces an output (good or service) and engages in **economic activities** 
+    produces an output (good or service) and performs **economic activities** 
     to achieve this. Firms are classified into sectors (industries) based on the output 
-    they produce and the associated economic activities. 
+    they produce and the economic activities they perform. 
 
-    To execute these economic activities, firms decide which technologies to adopt
+    To perform these economic activities, firms decide which technologies to adopt
     and which jobs to post in the labor market.
     
     A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
@@ -56,7 +56,7 @@ def UNIT1_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
-    st.text_input('Select the sector into which you want your firm to be classified using NACE at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the industry name and economic activities:')
+    st.text_input('Select the sector of your firm using NACE at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the industry name and its economic activities:')
     st.text_input('Select 3 jobs for your firm using ISCO occupations at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the titles of the 3 jobs:',
                    placeholder="A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.")
     st.text_input('Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1). Qualification criteria: (1) The firm must be classified in the sector selected above; (2) The firm must have fewer than 25 employees. Write here the name of the firm:')
