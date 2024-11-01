@@ -150,7 +150,7 @@ def UNIT2_2():
         s35 = st.number_input("$s_{35}$", key="s35",step=1)
         s45 = st.number_input("$s_{45}$", key="s45",step=1)
     
-    if st.button("Job evaluation"):
+    if st.button("Skill-set of the job"):
         matrix = np.array([
             [s11, s12, s13, s14, s15],
             [s21, s22, s23, s24, s25],
