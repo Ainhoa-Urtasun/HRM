@@ -90,7 +90,7 @@ def UNIT1_3():
     )
 
     st.latex(r'''
-    \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
+    \alpha_i = \frac{\partial Q}{\partial e_i} \cdot \frac{e_i}{Q}
     ''')
 
     st.write(
