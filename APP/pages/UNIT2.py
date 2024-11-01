@@ -80,6 +80,11 @@ def UNIT2_2():
         If a job doesn't entail a particular task, 
         its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ represents a
         specific skill.
+
+        We can further summarize the information in the matrix by calculating the norm of each
+        row-vector. The result, which we refer to as **skill-set of a job** provides a quantitative
+        measure of the skill intensity required across tasks, offering another dimension for 
+        job evaluation:
         '''
     )
 
