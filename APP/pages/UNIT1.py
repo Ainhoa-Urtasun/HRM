@@ -60,9 +60,9 @@ def UNIT1_2():
     st.markdown(
         """
         Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1):
-        (1) The firm must be classified in the sector selected above
+        (1) The firm must be classified in the sector selected above;
         (2) Employees' segmentation in Spain: Senior manager, Support intellectuals and scientists, technicians 
-        and professionals, at least 5 women
+        and professionals, and at least 5 women
         """
      )
     firm_name = st.text_input("Write here the name of the firm:")
