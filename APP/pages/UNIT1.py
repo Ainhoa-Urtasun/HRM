@@ -59,8 +59,7 @@ def UNIT1_2():
     st.text_input('Select the sector of your firm using NACE at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the industry name and its economic activities:')
     st.markdown(
         """
-        Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1)
-        **Qualification criteria:**  
+        Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1):
         (1) The firm must be classified in the sector selected above
         (2) Employees' segmentation in Spain: Senior manager, Support intellectuals and scientists, technicians 
         and professionals, at least 5 women
