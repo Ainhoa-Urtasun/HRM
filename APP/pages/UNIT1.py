@@ -57,15 +57,15 @@ def UNIT1_2():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
     st.text_input('Select the sector of your firm using NACE at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the industry name and its economic activities:')
-    st.text_input(
+    st.markdown(
         """
-        Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1).
-        Qualification criteria:
-        (1) The firm must be classified in the sector selected above;
-        (2) Employees' segmentation in Spain: Senior manager. Support intellectuals and scientists, technicians and professionals. Women (min=5)
-        Write here the name of the firm:
+        Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1).  
+        **Qualification criteria:**  
+        (1) The firm must be classified in the sector selected above.  
+        (2) Employees' segmentation in Spain: Senior manager.  
         """
-    )
+     )
+    firm_name = st.text_input("Write here the name of the firm:")
     st.text_input('Select 3 jobs for your firm using ISCO occupations at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence). Write here the titles of the 3 jobs:',
                    placeholder="A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.")
     
