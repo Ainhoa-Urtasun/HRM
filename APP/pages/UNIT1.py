@@ -61,7 +61,7 @@ def UNIT1_2():
         Select the sector of your firm from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)
         '''
     )
-    st.text_input(, placeholder='Write here the industry name and its economic activities:')
+    st.text_input('', placeholder='Write here the industry name and its economic activities:')
     st.markdown(
         """
         Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1):
@@ -70,13 +70,13 @@ def UNIT1_2():
         and professionals, and at least 5 women
         """
      )
-    st.text_input(, placeholder='Write here the name of your firm:')
+    st.text_input('', placeholder='Write here the name of your firm:')
     st.markdown(
         '''
         From ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) precise the name of the 3 jobs at your firm
         '''
     )
-    st.text_input(, placeholder="A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.")
+    st.text_input('', placeholder="A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.")
     
 def UNIT1_3():
     st.write(
