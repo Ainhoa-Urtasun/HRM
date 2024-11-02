@@ -61,23 +61,23 @@ def UNIT1_2():
         Select the sector of your firm from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)
         '''
     )
-    st.text_input('', placeholder='Write here the the name of your industry and its economic activities')
+    st.text_input('', placeholder='Enter the name of your industry and its economic activities')
     st.markdown(
         """
-        Select a firm using [SABI](https://www.unavarra.es/biblioteca?languageId=1):
-        (1) The firm must be classified in the sector selected above;
+        Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
+        (1) Industry classification: The firm must be classified in the sector selected above;
         (2) Employees' segmentation in Spain: Senior manager, Support intellectuals and scientists, technicians 
         and professionals, and Sales representatives and similar; and at least 5 women
         """
      )
-    st.text_input('', placeholder='Write here the name of your firm')
+    st.text_input('', placeholder='Enter the name of your firm')
     st.markdown(
         '''
-        Find the names of your 3 jobs above from ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) precise the name of the 3 jobs at your firm
+        Match the names of your 3 jobs above with ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) precise the name of the 3 jobs at your firm
         Note: A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.
         '''
     )
-    st.text_input('', placeholder="Write here the names of your 3 jobs")
+    st.text_input('', placeholder="Enter the names of the 3 jobs in your firm")
     
 def UNIT1_3():
     st.write(
