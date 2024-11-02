@@ -73,7 +73,7 @@ def UNIT1_2():
     st.text_input('', placeholder='Enter the name of your firm')
     st.markdown(
         '''
-        Match the names of your 3 jobs above with ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) precise the name of the 3 jobs at your firm
+        Match the names of your 3 jobs above with ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence).
         Note: A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.
         '''
     )
