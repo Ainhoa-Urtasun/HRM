@@ -75,6 +75,7 @@ def UNIT1_2():
         '''
         From ISCO at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) precise the name of the 3 jobs at your firm
         '''
+    )
     st.text_input(placeholder="A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.")
     
 def UNIT1_3():
