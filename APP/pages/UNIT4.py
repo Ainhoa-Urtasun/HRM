@@ -66,15 +66,16 @@ def UNIT4_4():
 
     st.latex(
             r'''
-            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
+            C(e_i) = g \times e_i^2 \\[10pt]
             '''
         )
 
     st.write(
         '''
-        where $e_i$ represents the effort exerted by employee $i$; $d(s_{(k)},s_i)$ is the Euclidean distance 
-        between $s_{(k)}$, the **skill-set** of the job employee $i$ must perform, and $s_i$ the 
-        skills that employee $i$ actually possesses. The greater the distance, the higher the 
+        where $e_i$ represents the effort exerted by employee $i$; $g$ is the **skill gap** calculated as 
+        the Euclidean distance 
+        between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$ the 
+        **skill profile** of employee $i$. The greater the skill gap, the higher the 
         cost of effort for the employee $i$.
         '''
     )
