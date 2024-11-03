@@ -50,8 +50,7 @@ def UNIT4_3():
         r'''
         Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
         e_i \geq 0 \\[10pt]
-        \alpha_i = \frac{\partial f(e_1, e_2, \dots, e_i, \dots, e_L)}{\partial e_i} 
-        \cdot \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
+        \alpha_i = \frac{Q}{\partial e_i} \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
         '''
     )
 
@@ -66,7 +65,7 @@ def UNIT4_4():
 
     st.latex(
             r'''
-            C(e_i) = g_i \times e_i^2 \\[10pt]
+            C(e_i) = g_i e_i^2 \\[10pt]
             '''
         )
 
@@ -90,7 +89,7 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = 2g_i \times e_i
+        C'(e_i) = 2 g_i e_i
         '''
     )
 
@@ -105,7 +104,7 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = 2g_i
+        C''(e_i) = 2 g_i
         '''
     )
 
