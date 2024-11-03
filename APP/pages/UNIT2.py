@@ -79,7 +79,7 @@ def UNIT2_2():
         its corresponding column will be a vector of zeros.
 
         We can further summarize the information in the matrix by calculating the norm of each
-        row-vector. The result, which we refer to as **skill requirements for a job** provides a quantitative
+        row-vector. The result, which we refer to as **skill requirements** for a job provides a quantitative
         measure of the skill intensity required across tasks, offering another dimension for 
         job evaluation:
         '''
@@ -101,7 +101,7 @@ def UNIT2_2():
 
     st.write(
         '''
-        We scale down the **skill requirements for a job** by 0.45 to keep its values within 0 and 100, making
+        We scale down the **skill requirements** for a job by 0.45 to keep its values within 0 and 100, making
         it easier to interpret and compare across different jobs:
         '''
     )
