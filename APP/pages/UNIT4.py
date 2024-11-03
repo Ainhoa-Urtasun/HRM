@@ -66,14 +66,14 @@ def UNIT4_4():
 
     st.latex(
             r'''
-            C(e_i) = g \times e_i^2 \\[10pt]
+            C(e_i) = g_i \times e_i^2 \\[10pt]
             '''
         )
 
     st.write(
         '''
-        where $e_i$ represents the effort exerted by employee $i$; $g$ is the **skill gap** calculated as 
-        the Euclidean distance 
+        where $e_i$ represents the effort exerted by employee $i$; $g_i$ is the **skill gap** of employee
+        $i$ calculated as the Euclidean distance 
         between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$, the 
         **skill profile** of employee $i$. The greater the skill gap, the higher the 
         cost of effort for employee $i$.
@@ -90,13 +90,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = 2g \times e_i
+        C'(e_i) = 2g_i \times e_i
         '''
     )
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $g>0$, 
+        This first derivative shows the marginal cost of effort. Since $g_i>0$, 
         the marginal cost of effort increases linearly with $e_i$.
 
         The second derivative with respect to $e_i$ is:
@@ -105,13 +105,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = 2g
+        C''(e_i) = 2g_i
         '''
     )
 
     st.write(
         '''
-        Since $d(s_{(k)},s_i)>0$, the second derivative is positive, which means that the cost function
+        Since $g_i>0$, the second derivative is positive, which means that the cost function
         $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
         increases at an increasing rate as effort $e_i$ rises.
     
