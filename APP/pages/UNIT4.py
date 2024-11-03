@@ -74,9 +74,9 @@ def UNIT4_4():
         '''
         where $e_i$ represents the effort exerted by employee $i$; $g$ is the **skill gap** calculated as 
         the Euclidean distance 
-        between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$ the 
+        between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$, the 
         **skill profile** of employee $i$. The greater the skill gap, the higher the 
-        cost of effort for the employee $i$.
+        cost of effort for employee $i$.
         '''
     )
 
@@ -90,13 +90,13 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C'(e_i) = 2d(s_{(k)},s_i)e_i
+        C'(e_i) = 2g \times e_i
         '''
     )
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $d(s_{(k)},s_i)>0$, 
+        This first derivative shows the marginal cost of effort. Since $g>0$, 
         the marginal cost of effort increases linearly with $e_i$.
 
         The second derivative with respect to $e_i$ is:
@@ -105,7 +105,7 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C''(e_i) = 2d(s_{(k)},s_i)
+        C''(e_i) = 2g
         '''
     )
 
