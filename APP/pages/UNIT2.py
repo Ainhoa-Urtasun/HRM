@@ -26,9 +26,9 @@ def UNIT2_1():
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
 
         - $s_1$: Demonstrating willingness to learn
-        - $s_2$: Maintaining a positive attitude
-        - $s_3$: Taking a proactive approach
-        - $s_4$: Working efficiently
+        - $s_2$: Collaborating in teams and networks
+        - $s_3$: Working efficiently
+        - $s_4$: Taking a proactive approach
 
         A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
