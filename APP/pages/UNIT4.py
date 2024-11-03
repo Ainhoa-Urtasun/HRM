@@ -50,7 +50,7 @@ def UNIT4_3():
         r'''
         Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
         e_i \geq 0 \\[10pt]
-        \alpha_i = \frac{Q}{\partial e_i} \frac{e_i}{f(e_1, e_2, \dots, e_i, \dots, e_L)}
+        \alpha_i = \frac{Q}{\partial e_i} \frac{e_i}{Q}
         '''
     )
 
