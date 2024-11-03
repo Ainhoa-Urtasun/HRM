@@ -10,7 +10,7 @@ def UNIT2_1():
     st.write(
         """
         A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
-        For simplicity, we assume any economic activity can be completed by carrying out the 5 pillar tasks listed in
+        For simplicity, we assume any economic activity can be completed by carrying out the 5 core tasks listed in
         [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence): 
         
         - $t_1$: Intellectual
@@ -47,8 +47,8 @@ def UNIT2_2():
         By evaluating jobs, firms can establish equitable compensation structures and identify training 
         and development needs. 
 
-        To evaluate a job, we represent it as a matrix, where each column corresponds 
-        to one of the five tasks, and each row represents the extent to which one the four skills is required
+        To evaluate a job, we represent it as a **task-skill matrix**, where each column corresponds 
+        to one of the five core tasks, and each row represents the extent to which one the four skills is required
         to perform each task within the job:
         '''
     )
@@ -66,8 +66,7 @@ def UNIT2_2():
 
     st.write(
         '''
-        Each element of the matrix $s_{ij(k)}$ represents the extent to which skill $s_i$ is required
-        to perform $t_j$ in job $J_{(k)}$. We restrict $s_{ij(k)}$ to the following values:
+        We restrict $s_{ij(k)}$ to the following values:
         '''
     )
 
@@ -75,10 +74,9 @@ def UNIT2_2():
 
     st.write(
         '''
-        Each column of the matrix represents a task. A job doesn't necessarily entail all tasks. 
+        A job doesn't necessarily entail all tasks. 
         If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros. Each row in $J_{(k)}$ represents a
-        specific skill.
+        its corresponding column will be a vector of zeros.
 
         We can further summarize the information in the matrix by calculating the norm of each
         row-vector. The result, which we refer to as **skill-set of a job** provides a quantitative
