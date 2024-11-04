@@ -211,14 +211,17 @@ def UNIT5_4():
         $g_i$ is the **skill gap** of job candidate $i$ calculated as the Euclidean distance 
         between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
         **skill profile** of job candidate $i$. Well-matched job candidates will show 
-        a low $g_i$ whereas poorly-matched job candidates will show a high $g_i$. 
+        a low skill gap $g_i$ whereas poorly-matched job candidates will show a high skill gap $g_i$. 
         The greater the distance, the higher the 
         cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
 
-        To attract well-matched job candidates, the firm can specify in the job posting both the effort required and the 
-        corresponding salary that compensates well-matched job candidates. This approach will deter poorly-matched job candidates, as
-        their high cost of effort would require a significantly higher salary to make the job worthwhile.        
+        To attract well-matched job candidates, the firm can specify in the job posting both the required 
+        level of effort and the corresponding salary, which compensates well-matched candidates 
+        but not poorly-matched ones. This approach will deter poorly-matched candidates, 
+        as their high cost of effort would require a significantly higher salary to make the job worthwhile. 
+        By setting these conditions—a high level of required effort at a relatively low salary—during a probation period, 
+        the company can assess the candidate’s fit for the role and decide whether to offer a long-term job contract.
         '''
     )
     
