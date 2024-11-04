@@ -88,17 +88,17 @@ def UNIT3_1():
     col1, col2, col3 = st.columns(3)
     with col1:
         if st.button("$L_{(1,-1)}$"):
-            L1past = np.array([m11, m12, m13, s1])
+            L1past = np.array([m11, m12, m13, d1])
             L1past = np.sum(L1past)
             st.write(f"Employment in job 1 at -1: {L1past}")
     with col2:
         if st.button("$L_{(2,-1)}$"):
-            L2past = np.array([m21, m22, m23, s2])
+            L2past = np.array([m21, m22, m23, d2])
             L2past = np.sum(L2past)
             st.write(f"Employment in job 2 at -1: {L2past}")
     with col3:
         if st.button("$L_{(3,-1)}$"):
-            L3past = np.array([m31, m32, m33, s3])
+            L3past = np.array([m31, m32, m33, d3])
             L3past = np.sum(L3past)
             st.write(f"Employment in job 3 at -1: {L3past}")
     
@@ -115,9 +115,9 @@ def UNIT3_1():
             st.write(f"Employment in job 2 at 0: {L2present}")
     with col3:
         if st.button("$L_{(3,0)}$"):
-            L3future = np.array([m13, m23, m33, h3])
-            L3future = np.sum(L3future)
-            st.write(f"Employment in job 3 at 0: {L3future}")
+            L3present = np.array([m13, m23, m33, h3])
+            L3present = np.sum(L3present)
+            st.write(f"Employment in job 3 at 0: {L3present}")
 
 def UNIT3_2():
     st.write(
