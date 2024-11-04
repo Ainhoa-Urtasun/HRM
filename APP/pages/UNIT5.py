@@ -192,26 +192,28 @@ def UNIT5_3():
     st.text_input('Explain why you might unintentionally attract and hire the wrong candidates for the job:')
 
 def UNIT5_4():
+    
     st.write(
         '''
-        Consider the following cost of effort for each job candidate:
+        Consider the following **cost of effort** for the job candidate:
         '''
     )
 
     st.latex(
             r'''
-            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
+            C(e_i) = g_i e_i^2 \\[10pt]
             '''
         )
 
     st.write(
         '''
-        where $e_i$ represents the effort job candidate $i$ would exert if hired; $d(s_{(k)},s_i)$ is the Euclidean distance 
-        between $s_{(k)}$, the vector of skill norms required by the job job candidate $i$ would have to perform if hired, and the 
-        vector of skills that job candidate $i$ actually possesses. The value of $d$ measures the matching between 
-        the job candidate and the job they are supposed to perform if hired.
-        Well-matched job candidates will show a low $d$ whereas poorly-matched job candidates will show a high $d$.The greater the distance, the higher the 
-        cost of effort for the job candidate $i$. Remember, the vector of skill norms is derived from 
+        where $e_i$ represents the effort exerted by job candidate $i$ if hired; $g_i$ is the **skill gap** of employee
+        $i$ calculated as the Euclidean distance 
+        between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
+        **skill profile** of job candidate $i$. Well-matched job candidates will show 
+        a low $g_i$ whereas poorly-matched job candidates will show a high $g_i$. 
+        The greater the distance, the higher the 
+        cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
 
         To attract well-matched job candidates, the firm can specify in the job posting both the effort required and the 
