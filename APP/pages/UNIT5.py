@@ -64,6 +64,21 @@ def UNIT5_2():
     st.latex(r'L_{-1} = L_{(1,-1)} + L_{(2,-1)} + L_{(3,-1)}')
     st.latex(r'L_0 = L_{(1,0)} + L_{(2,0)} + L_{(3,0)}')
 
+    st.write(
+        '''
+        $L_{(-1)}$ and $L_{0}$ refers to employment in the firm at two consecutive points in time (e.g., years).
+        If we know employment at several points in time (for multiple years, for instance), we can calculate the compound annual growth rate (CAGR) 
+        of employment over $t$ years as follows:
+        '''
+    )
+
+    st.latex(
+        r'''
+        \text{CAGR} = \left( \frac{L_t}{L_0} \right)^{\frac{1}{t}} - 1
+        '''
+    )
+
+
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
     
@@ -132,16 +147,7 @@ def UNIT5_2():
             Lpresent = np.sum(Lpresent)
             st.write(f"Employment at your firm at 0: {Lpresent}")
 
-    st.write(
-        '''
-        We can calculate the compound annual growth rate (CAGR) of employment during $t$ years as follows:
-        '''
-    )
-
-    st.latex(r'''
-    \text{CAGR} = \left( \frac{L_t}{L_0} \right)^{\frac{1}{t}} - 1
-    ''')
-
+  
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
     
