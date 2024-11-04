@@ -37,8 +37,22 @@ def UNIT3_1():
         within the firm during the period from $(-1,0)$; and $d$ represents departures or 
         number of employees who have left the firm during the period $(-1,0)$,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
+
+        By adding up the values of the table row-wise, we get the employment in $J_{(k)}$
+        a year or a month ago within the firm:
         '''
     )
+
+    st.latex(r'L_{(k,-1)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
+
+    st.write(
+        '''
+        And by adding up the values of the table column-wise, 
+        we get the employment in $J_{(k)}$ at the present moment at the firm:
+        '''
+    )
+    
+    st.latex(r'L_{(k,0)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
@@ -63,27 +77,6 @@ def UNIT3_1():
         d1 = st.number_input("$d_{(1)}$", key="d1", step=1)
         d2 = st.number_input("$d_{(2)}$", key="d2", step=1)
         d3 = st.number_input("$d_{(3)}$", key="d3", step=1)
-
-    st.write(
-        '''
-        By adding up the values of the table row-wise, we get the employment in $J_{(k)}$
-        a year or a month ago within the firm:
-        '''
-    )
-
-    st.latex(r'L_{(k,-1)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
-
-    st.write(
-        '''
-        And by adding up the values of the table column-wise, 
-        we get the employment in $J_{(k)}$ at the present moment at the firm:
-        '''
-    )
-    
-    st.latex(r'L_{(k,0)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
-
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Employment in each job at the firm:')
 
     col1, col2, col3 = st.columns(3)
     with col1:
