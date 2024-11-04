@@ -52,7 +52,8 @@ def UNIT6_2():
 
     st.write(
         """
-        We use the **difference-in-differences method** to evaluate the impact of training on $g_i$:
+        We use the **Difference-in-Differences (DiD) method** to evaluate the impact of 
+        on-the-job training on the **average skill gap** $g$.
         """
     )
 
@@ -64,54 +65,58 @@ def UNIT6_2():
 
     st.write(
         """
-        Where ATT stands for Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
-        on the group that actually received it, compared to a similar, untreated group. ATT is especially valuable for assessing the impact of a policy or 
-        intervention. We use ATT for assessing the impact of on-the-job training on employees. 
+        Here, **ATT** stands for the **Average Treatment Effect on the Treated**. This metric captures 
+        the effect of training on employees who received it (trained group), 
+        compared to a similar group that did not receive the training (non-trained group). 
 
-        The difference-in-differences method makes two comparisons: 
+        The Difference-in-Differences (DiD) method achieves this by making two key comparisons:
         
-        - **Before and after training**: training occurs at time 0, −1 denotes before and 
-        +1 after
-        - **Trained versus non-trained employees**: $g^{trained}$ refers to the average skill gap 
-        of a group of employees who received the training; and 
-        $g^{non-trained}$ refers to the average skill gap of a group of employees who didn't receive any training
-        
-        The combination of the two comparisons offers a robust method to infer counterfactuals and estimate 
-        causal effects. The method is accurate if the non-trained (untreated or control) group is similar to the trained 
-        (treated) group.
-        """
-    )
+        - **Before and after training**: Training occurs at time 0, so −1 represents the period before training, and +1 represents the period after training.
+        - **Trained versus non-trained employees**: $g^{trained}$ denotes the average skill gap of employees who received training,
+        while $g^{non-trained}$ denotes the average skill gap of employees who did not.
 
-    st.write("#### Counterfactual Outcomes")
-
-    st.write(
-        """
-        We distinguish two counterfactual outcomes:
-        - **Counterfactual skill gap (CSG)**: What the skill gap of the trained group of employees
-        would have been if they hadn't received the training:
-        """
-    )
-
-    st.latex(
-        r"""
-        \text{CC} = g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}}
+        By combining these two comparisons, the DiD method helps estimate the causal impact of training on reducing the skill gap. 
+        Note: The method is valid if the **parallel trends assumption** holds—that is, if the trained and non-trained groups 
+        would have followed similar skill gap trends in the absence of training.
         """
     )
 
     st.write(
         """
-        - **Counterfactual skill gap change (CSGC)**: How much the skill gap of the trained grpup of employees
-        would have changed if they hadn't received training:
+        In DiD, we distinguish two key counterfactual outcomes:
+        
+        - **Counterfactual Skill Gap (CSG)**: This represents the skill gap the trained group 
+        of employees would have experienced if they had not received the training.
         """
     )
 
     st.latex(
         r"""
-        \text{CE} = g_{-1}^{\text{trained}} + (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
+        \text{CSG} = g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}}
         """
     )
 
+    st.write(
+        """
+        - **Counterfactual Skill Gap Change (CSGC)**: This represents how much the skill gap of the trained 
+        group of employees would have changed if they hadn’t received training.
+        """
+    )
 
+    st.latex(
+        r"""
+        \text{CSGC} = g_{-1}^{\text{trained}} + (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
+        """
+    )
+
+    st.write(
+        """
+        The use of these counterfactuals allows us to isolate the causal impact of training by 
+        estimating what would have happened in the absence of the intervention.
+        """
+    )
+
+  
 st.set_page_config(page_title="UNIT6", layout="wide")
 
 selected = option_menu(
