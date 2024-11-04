@@ -52,7 +52,7 @@ def UNIT6_2():
 
     st.write(
         """
-        We use the **difference-in-differences method** to evaluate the impact of training on $g_i$.
+        We use the **difference-in-differences method** to evaluate the impact of training on $g_i$:
         """
     )
 
@@ -65,14 +65,17 @@ def UNIT6_2():
     st.write(
         """
         Where ATT stands for the Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
-        on the group that actually received it, compared to a similar, untreated group. In DiD, ATT is especially valuable for assessing the impact of a policy or 
-        intervention specifically on the population exposed to it, providing a clearer isolation of the effect within the treated group.
+        on the group that actually received it, compared to a similar, untreated group. ATT is especially valuable for assessing the impact of a policy or 
+        intervention. We use ATT for assessing the impact of on-the-job training on employees. 
 
-        In our case, on-the-job training serves as our treatment (or intervention). Training occurs at time 0, with −1 representing the period before training and 
-        +1 the period after training. For accurate application of the DiD technique, we compare two employees with similar characteristics: 
-        one who receives the training and one who does not. The Difference-in-Differences approach makes two primary comparisons: 
-        (1) the periods before and after training, and (2) trained versus non-trained employees. 
-        Combining these comparisons offers a robust method to infer counterfactuals and estimate causal effects accurately.
+        The difference-in-differences method makes two comparisons: 
+        (1) Before and after training: Training occurs at time 0, −1 refers to the before the training and 
+        +1 after the training;
+        (2) Trained versus non-trained employees: $g^\text{trained}$ refers to the average skill gap of a group of employees who received the training; and 
+        $g^\text{non-trained}$ refers to the average skill gap of a group of employees who didn't receive any training.
+        
+        The combination of the two comparisons offers a robust method to infer counterfactuals and estimate 
+        causal effects accurately. 
         """
     )
 
