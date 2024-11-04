@@ -64,7 +64,7 @@ def UNIT6_2():
 
     st.write(
         """
-        Where ATT stands for the Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
+        Where ATT stands for Average Treatment Effect on the Treated. This metric represents the average effect of a treatment (or intervention) 
         on the group that actually received it, compared to a similar, untreated group. ATT is especially valuable for assessing the impact of a policy or 
         intervention. We use ATT for assessing the impact of on-the-job training on employees. 
 
