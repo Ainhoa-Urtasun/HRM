@@ -207,8 +207,8 @@ def UNIT5_4():
 
     st.write(
         '''
-        where $e_i$ represents the effort exerted by job candidate $i$ if hired; $g_i$ is the **skill gap** of employee
-        $i$ calculated as the Euclidean distance 
+        where $e_i$ represents the effort job candidate $i$ would exert if hired; 
+        $g_i$ is the **skill gap** of job candidate $i$ calculated as the Euclidean distance 
         between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
         **skill profile** of job candidate $i$. Well-matched job candidates will show 
         a low $g_i$ whereas poorly-matched job candidates will show a high $g_i$. 
