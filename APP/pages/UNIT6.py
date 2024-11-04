@@ -20,31 +20,30 @@ def UNIT6_1():
         '''
     )
 
-    st.write(
+   st.write(
         '''
-        Consider the following cost of effort function:
+        Consider the following **cost of effort** for the job candidate:
         '''
     )
 
     st.latex(
             r'''
-            C(e_i) = d(s_{(k)},s_i)e_i^2 \\[10pt]
+            C(e_i) = g_i e_i^2 \\[10pt]
             '''
         )
 
     st.write(
         '''
-        where $e_i$ represents the effort exerted by employee $i$; $d(s_{(k)},s_i)$ is the Euclidean distance 
-        between $s_{(k)}$, the vector of skill norms required by the job employee $i$ must perform, and the 
-        vector of skills that employee $i$ actually possesses. The greater the distance, the higher the 
-        cost of effort for the employee $i$. Remember, the vector of skill norms is derived from 
+        where $e_i$ represents the effort employee $i$ exerts; 
+        $g_i$ is the **skill gap** of employee $i$ calculated as the Euclidean distance 
+        between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
+        **skill profile** of employee $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
         
-        On-the-job training aims to provide employees with the necessary 
-        skills and competencies to complete tasks more efficiently. In other words, on-the-job training
-        aims to improve the match between the employee $i$ and the job they perform. This match is measured by
-        the Euclidean distance $d$, which on-the-job training seeks to reduce.
-        By minimizing $d$, the cost of effort for the employee decreases, which can
+        On-the-job training aims to provide employees with the 
+        skills and competencies needed to complete tasks more efficiently. In other words,     
+        on-the-job training aims to reduce the skill gap $g_i$.
+        By minimizing $g_i$, the cost of effort for the employee decreases, which can
         positively impact their motivation.
         '''
     )
