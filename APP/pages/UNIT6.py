@@ -20,7 +20,7 @@ def UNIT6_1():
         '''
     )
 
-   st.write(
+    st.write(
         '''
         Consider the following **cost of effort** for the job candidate:
         '''
