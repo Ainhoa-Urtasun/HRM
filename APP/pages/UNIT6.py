@@ -87,7 +87,7 @@ def UNIT6_2():
     st.write(
         """
         We distinguish two counterfactual outcomes:
-        - **Counterfactual change (CC)**: What the skill gap of the trained group of employees
+        - **Counterfactual skill gap (CSG)**: What the skill gap of the trained group of employees
         would have been if they hadn't received the training:
         """
     )
@@ -100,7 +100,7 @@ def UNIT6_2():
 
     st.write(
         """
-        - **Counterfactual effort (CE)**: How much the skill gap of the trained grpup of employees
+        - **Counterfactual skill gap change (CSGC)**: How much the skill gap of the trained grpup of employees
         would have changed if they hadn't received training:
         """
     )
