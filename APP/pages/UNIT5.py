@@ -88,10 +88,7 @@ def UNIT5_2():
         d2 = st.number_input("$d_{(2)}$", key="d2", step=1)
         d3 = st.number_input("$d_{(3)}$", key="d3", step=1)
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Employment in each job at the firm:')
-
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         if st.button("$L_{(1,-1)}$"):
             L1past = np.array([m11, m12, m13, s1])
@@ -107,8 +104,13 @@ def UNIT5_2():
             L3past = np.array([m31, m32, m33, s3])
             L3past = np.sum(L3past)
             st.write(f"Employment in job 3 at -1: {L3past}")
+    with col4:
+        if st.button("$L_{(-1)}$"):
+            Lpast = np.array([L1past, L2past, L3past])
+            Lpast = np.sum(Lpast)
+            st.write(f"Employment at your firm at -1: {Lpast}")
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         if st.button("$L_{(1,0)}$"):
             L1present = np.array([m11, m21, m23, h1])
@@ -121,9 +123,14 @@ def UNIT5_2():
             st.write(f"Employment in job 2 at 0: {L2present}")
     with col3:
         if st.button("$L_{(3,0)}$"):
-            L3future = np.array([m13, m23, m33, h3])
-            L3future = np.sum(L3future)
-            st.write(f"Employment in job 3 at 0: {L3future}")
+            L3present = np.array([m13, m23, m33, h3])
+            L3present = np.sum(L3present)
+            st.write(f"Employment in job 3 at 0: {L3present}")
+    with col4:
+        if st.button("$L_{(-1)}$"):
+            Lpresent = np.array([L1present, L2present, L3present])
+            Lpresent = np.sum(Lpresent)
+            st.write(f"Employment at your firm at 0: {Lpresent}")
 
     st.write(
         '''
