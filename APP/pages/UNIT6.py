@@ -52,13 +52,13 @@ def UNIT6_2():
 
     st.write(
         """
-        We use the **difference-in-differences method** to evaluate the impact of training on $d$.
+        We use the **difference-in-differences method** to evaluate the impact of training on $g_i$.
         """
     )
 
     st.latex(
         r"""
-        \text{ATT} = (d_{+1}^{\text{trained}} - d_{-1}^{\text{trained}}) - (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
+        \text{ATT} = (g_{+1}^{\text{trained}} - g_{-1}^{\text{trained}}) - (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
         """
     )
 
@@ -87,7 +87,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CC} = d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}}
+        \text{CC} = g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}}
         """
     )
 
@@ -100,7 +100,7 @@ def UNIT6_2():
 
     st.latex(
         r"""
-        \text{CE} = d_{-1}^{\text{trained}} + (d_{+1}^{\text{non-trained}} - d_{-1}^{\text{non-trained}})
+        \text{CE} = g_{-1}^{\text{trained}} + (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
         """
     )
 
