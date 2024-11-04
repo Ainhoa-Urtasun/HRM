@@ -160,8 +160,10 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Employment":
+if selected == "HRM in context":
     UNIT5_1()
+elif selected == "Employment":
+    UNIT5_2()
 elif selected == "Asymmetric information and adverse selection":
     UNIT5_2()
 elif selected == "Skill matching":
