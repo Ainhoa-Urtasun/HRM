@@ -64,6 +64,30 @@ def UNIT5_2():
     st.latex(r'L_{-1} = L_{(1,-1)} + L_{(2,-1)} + L_{(3,-1)}')
     st.latex(r'L_0 = L_{(1,0)} + L_{(2,0)} + L_{(3,0)}')
 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
+    
+    L1, L2, L3, D = st.columns(4)
+    with L1:
+        m11 = st.number_input("$m_{(1)(1)}$", key="m11", step=1)
+        m21 = st.number_input("$m_{(2)(1)}$", key="m21", step=1)
+        m31 = st.number_input("$m_{(3)(1)}$", key="m31", step=1)
+        h1 = st.number_input("$h_{(1)}$", key="h1", step=1)
+    with L2:
+        m12 = st.number_input("$m_{(1)(2)}$", key="m12", step=1)
+        m22 = st.number_input("$m_{(2)(2)}$", key="m22", step=1)
+        m32 = st.number_input("$m_{(3)(2)}$", key="m32", step=1)
+        h2 = st.number_input("$h_{(2)}$", key="h2", step=1)
+    with L3:
+        m13 = st.number_input("$m_{(1)(3)}$", key="m13", step=1)
+        m23 = st.number_input("$m_{(2)(3)}$", key="m23", step=1)
+        m33 = st.number_input("$m_{(3)(3)}$", key="m33", step=1)
+        h3 = st.number_input("$h_{(3)}$", key="h3", step=1)
+    with D:
+        d1 = st.number_input("$d_{(1)}$", key="d1", step=1)
+        d2 = st.number_input("$d_{(2)}$", key="d2", step=1)
+        d3 = st.number_input("$d_{(3)}$", key="d3", step=1)
+
     st.write(
         '''
         We can calculate the compound annual growth rate (CAGR) of employment during $t$ years as follows:
