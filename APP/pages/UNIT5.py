@@ -127,7 +127,7 @@ def UNIT5_2():
             L3present = np.sum(L3present)
             st.write(f"Employment in job 3 at 0: {L3present}")
     with col4:
-        if st.button("$L_{(-1)}$"):
+        if st.button("$L_{(0)}$"):
             Lpresent = np.array([L1present, L2present, L3present])
             Lpresent = np.sum(Lpresent)
             st.write(f"Employment at your firm at 0: {Lpresent}")
