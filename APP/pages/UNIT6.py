@@ -69,9 +69,10 @@ def UNIT6_2():
         intervention. We use ATT for assessing the impact of on-the-job training on employees. 
 
         The difference-in-differences method makes two comparisons: 
-        (1) Before and after training: Training occurs at time 0, −1 refers to the before the training and 
-        +1 after the training;
-        (2) Trained versus non-trained employees: $g^{trained}$ refers to the average skill gap of a group of employees who received the training; and 
+        
+        - **Before and after training**: training occurs at time 0, −1 refers to the before the training and 
+        +1 after the training
+        - **Trained versus non-trained employees**: $g^{trained}$ refers to the average skill gap of a group of employees who received the training; and 
         $g^{non-trained}$ refers to the average skill gap of a group of employees who didn't receive any training.
         
         The combination of the two comparisons offers a robust method to infer counterfactuals and estimate 
