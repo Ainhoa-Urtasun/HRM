@@ -148,9 +148,9 @@ def UNIT5_2():
             st.write(f"Employment at your firm at 0: {Lpresent}")
 
     with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-        L2019 = st.number_input("2019", step=1)
-        L2021 = st.number_input("2020", step=1)
-        L2022 = st.number_input("2020", step=1)
+        L2020 = st.number_input("2020", step=1)
+        L2021 = st.number_input("2021", step=1)
+        L2022 = st.number_input("2022", step=1)
 
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['2019','2020','2021'],[L2019,L2020,L2021],color='red')
