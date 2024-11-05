@@ -60,51 +60,47 @@ def UNIT3_1():
         L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
 
-    def initialize_matrix():
-        m11 = np.random.randint(0, L12022)
-        m12 = np.random.randint(0, L12022 - m11)
-        m13 = np.random.randint(0, L12022 - m11 - m12)
-        d1 = L12022 - (m11 + m12 + m13)  # Remaining to meet row sum
-        m21 = np.random.randint(0, L22022)
-        m22 = np.random.randint(0, L22022 - m21)
-        m23 = np.random.randint(0, L22022 - m21 - m22)
-        d2 = L22022 - (m21 + m22 + m23)
-        m31 = np.random.randint(0, L32022)
-        m32 = np.random.randint(0, L32022 - m31)
-        m33 = np.random.randint(0, L32022 - m31 - m32)
-        d3 = L32022 - (m31 + m32 + m33)
-        h1 = L12023 - (m11 + m21 + m31)
-        h2 = L22023 - (m12 + m22 + m32)
-        h3 = L32023 - (m13 + m23 + m33)
+    m11 = min(L12022,L12023) - 1
+    m22 = min(L22022,L22023) - 1
+    m33 = min(L32022,L32023) - 1
 
-        return np.array([
-            [m11, m12, m13, d1],
-            [m21, m22, m23, d2],
-            [m31, m32, m33, d3],
-            [h1,  h2,  h3,  np.nan]  # Use np.nan for the missing bottom-right cell
+   if L12022 > L12023:
+        m21 = m31 = 0  # No movement to Job 1
+        h1 = 1  # Minimum hire to meet 2023 requirement
+        m12 = m13 = 1  # Minimal movement out of Job 1
+        d1 = L12022 - m11 - m12 - m13  # Calculate separations to meet 2022 total
+    else:
+        m12 = m13 = 0  # No movement out of Job 1
+        d1 = 1  # Minimum separation
+        m21 = m31 = 1  # Minimal movement into Job 1
+        h1 = L12023 - m11 - m21 - m31  # Calculate hires to meet 2023 total
+
+    if L22022 > L22023:
+        m23 = 1  # Minimal movement from Job 2 to Job 3
+        d2 = L22022 - m22 - m23 - m21  # Calculate separations to meet 2022 total
+        m32 = 0  # No movement into Job 2
+        h2 = 0  # No hire needed for Job 2 in 2023
+    else:
+        m23 = d2 = 0  # No separations or movements out of Job 2
+        m12 = m32 = 1  # Minimal movement into Job 2
+        h2 = L22023 - m22 - m12 - m32  # Calculate hires to meet 2023 total
+
+    if L32022 > L32023:
+        d3 = L32022 - m31 - m32 - m33  # Calculate separations to meet 2022 total
+        h3 = 0  # No hire needed for Job 3 in 2023
+    else:
+        d3 = 0  # No separation needed for Job 3 in 2022
+        h3 = L32023 - m13 - m23 - m33  # Calculate hires to meet 2023 total
+
+    matrix = np.array([
+        [m11, m12, m13, d1],
+        [m21, m22, m23, d2],
+        [m31, m32, m33, d3],
+        [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
         ])
-
-    def is_valid(matrix):
-        row_sums_2022 = matrix[:3, :3].sum(axis=1) + matrix[:3, 3]  # Row sums for 2022 with separations
-        col_sums_2023 = matrix[:3, :3].sum(axis=0) + matrix[3, :3]  # Column sums for 2023 with hires
-
-        return (np.array([L12022, L22022, L32022]) == row_sums_2022).all() and \
-               (np.array([L12023, L22023, L32023]) == col_sums_2023).all()
-
+        
     if st.button("Data"):
-        attempts = 0
-        solution_found = False
-        while not solution_found and attempts < 10000:
-            matrix = initialize_matrix()
-            if is_valid(matrix):
-                solution_found = True
-            attempts += 1
-
-        if solution_found:
-            st.write("Solution found in", attempts, "attempts:")
-            st.write(matrix)
-        else:
-            st.write("No solution found within 10,000 attempts.")
+        st.write(matrix)
 
 def UNIT3_2():
     st.write(
