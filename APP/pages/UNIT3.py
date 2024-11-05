@@ -3,8 +3,6 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import scipy
-from scipy.linalg import solve
 
 def UNIT3_1():
     st.write(
@@ -74,7 +72,7 @@ def UNIT3_1():
     ])
 
     B = np.array([L12022,L22022,L32022,L12023,L22023,L32023])
-    solution = solve(A, B)
+    solution = np.linalg.solve(A, B)
     variable_names = ['m11', 'm12', 'm13', 'm21', 'm22', 'm23', 'm31', 'm32', 'm33', 'd1', 'd2', 'd3', 'h1', 'h2', 'h3']
     solution_dict = dict(zip(variable_names, solution))
 
