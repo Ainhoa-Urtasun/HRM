@@ -3,8 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-!pip install sympy
-from sympy import symbols, Eq, solve
+from scipy.linalg import solve
 
 def UNIT3_1():
     st.write(
@@ -61,22 +60,22 @@ def UNIT3_1():
         L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
 
-    m11, m12, m13 = symbols('m11 m12 m13')
-    m21, m22, m23 = symbols('m21 m22 m23')
-    m31, m32, m33 = symbols('m31 m32 m33')
-    d1, d2, d3 = symbols('d1 d2 d3')
-    h1, h2, h3 = symbols('h1 h2 h3')
+    A = np.array([
+    # Row constraints for 2022
+    [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],  # Job 1, 2022
+    [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0],  # Job 2, 2022
+    [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0],  # Job 3, 2022
+    
+    # Column constraints for 2023
+    [1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],  # Job 1, 2023
+    [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],  # Job 2, 2023
+    [0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1]   # Job 3, 2023
+    ])
 
-    equations = [
-        Eq(m11 + m12 + m13 + d1, L12022),
-        Eq(m21 + m22 + m23 + d2, L22022),
-        Eq(m31 + m32 + m33 + d3, L32022),
-        Eq(m11 + m21 + m31 + h1, L12023),
-        Eq(m12 + m22 + m32 + h2, L22023),
-        Eq(m13 + m23 + m33 + h3, L32023)
-    ]
-
-    solution = solve(equations, (m11, m12, m13, m21, m22, m23, m31, m32, m33, d1, d2, d3, h1, h2, h3))
+    B = np.array([L12022,L22022,L32022,L12023,L22023,L32023])
+    solution = solve(A, B)
+    variable_names = ['m11', 'm12', 'm13', 'm21', 'm22', 'm23', 'm31', 'm32', 'm33', 'd1', 'd2', 'd3', 'h1', 'h2', 'h3']
+    solution_dict = dict(zip(variable_names, solution))
 
     matrix = np.array([
             [m11, m12, m13, d1],
