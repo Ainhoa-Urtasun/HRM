@@ -12,8 +12,8 @@ def UNIT3_1():
         The primary goal is to anticipate potential employee shortages or surpluses. Latest available data 
         from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
 
-        - $L_{(k,2022)}$ The number of employees in job $J_{(k)}$ at year 2022
-        - $L_{(k,2023)}$ The number of employees in job $J_{(k)}$ at year 2023
+        - $L_{k,2022}$ The number of employees in job $J_k$ at year 2022
+        - $L_{k,2023}$ The number of employees in job $J_k$ at year 2023
         '''
     )
 
@@ -21,13 +21,13 @@ def UNIT3_1():
         r"""
         \begin{array}{|c|c|c|c|}
         \hline
-        m_{(1)(1)} & m_{(1)(2)} & m_{(1)(3)} & d_{(1)} \\
+        m_{11} & m_{12} & m_{13} & d_{1} \\
         \hline
-        m_{(2)(1)} & m_{(2)(2)} & m_{(2)(3)} & d_{(2)} \\
+        m_{21} & m_{(2)(2)} & m_{23} & d_{3} \\
         \hline
-        m_{(3)(1)} & m_{(3)(2)} & s_{(3)(3)} & d_{(3)} \\
+        m_{31} & m_{32} & s_{33} & d_{3} \\
         \hline
-        h_{(1)} & h_{(2)} & h_{(3)} & \\
+        h_{1} & h_{2} & h_{3} & \\
         \hline
         \end{array}
         """
@@ -35,8 +35,8 @@ def UNIT3_1():
 
     st.write(
         '''
-        - $m_{(i)(j)}$ represents employees who moved from $J_{(i)}$ to $J_{(j)}$ from 2022 to 2023
-        - $h_{(k)}$ represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
+        - $m_{ij}$ represents employees who moved from $J_i$ to $J_j$ from 2022 to 2023
+        - $h_{k}$ represents new hires or number of employees who have been recruited and started working in $J_i$ 
         from 2022 to 2023
         - $d$ represents departures or number of employees who have left the firm from 2022 to 2023,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
@@ -45,8 +45,8 @@ def UNIT3_1():
         '''
     )
 
-    st.latex(r'L_{(k,2022)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
-    st.latex(r'L_{(k,2023)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
+    st.latex(r'L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}')
+    st.latex(r'L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
