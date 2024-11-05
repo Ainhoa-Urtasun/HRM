@@ -149,8 +149,7 @@ def UNIT2_2():
         ])
     
     if st.button("$J_{(k)}$"):
-        for task in matrix:
-            st.write(task)
+        st.write(matrix)
 
     if st.button("Skill requirements for the job"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
