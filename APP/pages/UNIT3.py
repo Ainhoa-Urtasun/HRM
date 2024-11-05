@@ -57,8 +57,8 @@ def UNIT3_1():
         L2past = st.number_input("$L_{(2,-1)}$", key='L2past', step=1, min_value=10)
         L2present = st.number_input("$L_{(2,0)}$", key='L2present', step=1, min_value=10)
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
-        L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=10)
-        L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=10)
+        L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=5)
+        L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=5)
 
     def distribute_values(Lpast, Lpresent, seed):
         random.seed(seed)
