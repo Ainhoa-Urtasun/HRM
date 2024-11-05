@@ -169,19 +169,21 @@ def UNIT2_3():
     d(\mathbf{t}_i, \mathbf{t}_j) = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
     """)
 
-    ti, tj = st.columns(2)
-    with ti:
-        s1i = st.number_input("$s_{1i}$", key="s1i",step=1)
-        s2i = st.number_input("$s_{2i}$", key="s2i",step=1)
-        s3i = st.number_input("$s_{3i}$", key="s3i",step=1)
-        s4i = st.number_input("$s_{4i}$", key="s4i",step=1)
-    with tj:
-        s1j = st.number_input("$s_{1j}$", key="s1j",step=1)
-        s2j = st.number_input("$s_{2j}$", key="s2j",step=1)
-        s3j = st.number_input("$s_{3j}$", key="s3j",step=1)
-        s4j = st.number_input("$s_{4j}$", key="s4j",step=1)
-    
-    if st.button("Task difference"):
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
+    st.sidebar.write('Evaluate the job:')
+    with st.sidebar.expander("$t_i$"):
+        s1i = st.number_input("$s_{1i(k)}$ Demonstrating willigness to learn",key='s1i',step=1.0)
+        s2i = st.number_input("$s_{2i(k)}$ Collaborating in teams and networks",key='s2i',step=1.0)
+        s3i = st.number_input("$s_{3i(k)}$ Working efficiently",key='s3i',step=1.0)
+        s4i = st.number_input("$s_{4i(k)}$ Taking a proactive approach",key='s4i',step=1.0)
+    with st.sidebar.expander("$t_j$"):
+        s1j = st.number_input("$s_{1j(k)}$ Demonstrating willigness to learn",key='s1j',step=1.0)
+        s2j = st.number_input("$s_{2j(k)}$ Collaborating in teams and networks",key='s2j',step=1.0)
+        s3j = st.number_input("$s_{3j(k)}$ Working efficiently",key='s3j',step=1.0)
+        s4j = st.number_input("$s_{4j(k)}$ Taking a proactive approach",key='s4j',step=1.0)
+
+    if st.button("$d(t_i,t_j)$ Task difference"):
         ti = np.array([
             [s1i],
             [s2i],
