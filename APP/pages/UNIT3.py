@@ -67,7 +67,7 @@ def UNIT3_1():
         m3 = L2022 - m1 - m2 
         d = random.randint(1, m3)
         m3 -= d
-        assert m1 + m2 + m3 + d == L2022,
+        assert m1 + m2 + m3 + d == L2022
         h = L2023 - (m1 + m2 + m3)
         h = max(h, 1)
         return m1, m2, m3, d, h
