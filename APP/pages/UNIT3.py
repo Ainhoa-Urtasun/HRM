@@ -51,31 +51,31 @@ def UNIT3_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
     with st.sidebar.expander("$J_{(1)}$ Senior management"):
-        L1past = st.number_input("$L_{(1,-1)}$",key='L1past',step=1)
-        L1present = st.number_input("$L_{(1,0)}$",key='L1present',step=1)
+        L1past = st.number_input("$L_{(1,-1)}$", key='L1past', step=1, min_value=0)
+        L1present = st.number_input("$L_{(1,0)}$", key='L1present', step=1, min_value=0)
     with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
-        L2past = st.number_input("$L_{(2,-1)}$",key='L2past',step=1)
-        L2present = st.number_input("$L_{(2,0)}$",key='L2present',step=1)
+        L2past = st.number_input("$L_{(2,-1)}$", key='L2past', step=1, min_value=0)
+        L2present = st.number_input("$L_{(2,0)}$", key='L2present', step=1, min_value=0)
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
-        L3past = st.number_input("$L_{(3,-1)}$",key='L3past',step=1)
-        L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1)
-
+        L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=0)
+        L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=0)
+    
     random.seed(42)
-    m11 = random.randint(0, min(L1past - 1, L1present))
-    m21 = random.randint(0, min(L2past - 1, L2present))
-    m31 = random.randint(0, min(L3past - 1, L3present))
-    m12 = random.randint(0, min(L1past - m11 - 1, L1present - m11))
-    m22 = random.randint(0, min(L2past - m21 - 1, L2present - m21))
-    m32 = random.randint(0, min(L3past - m31 - 1, L3present - m31))
-    m13 = random.randint(0, min(L1past - m11 - m12 - 1, L1present - m11 - m12))
-    m23 = random.randint(0, min(L2past - m21 - m22 - 1, L2present - m21 - m22))
-    m33 = random.randint(0, min(L3past - m31 - m32 - 1, L3present - m31 - m32))
-    d1 = L1past - m11 - m12 - m13
-    d2 = L2past - m21 - m22 - m23
-    d3 = L3past - m31 - m32 - m33
-    h1 = L1present - m11 - m21 - m31
-    h2 = L2present - m12 - m22 - m32
-    h3 = L3present - m13 - m23 - m33
+    m11 = random.randint(0, L1present)
+    m12 = random.randint(0, L1present - m11)
+    m13 = L1present - m11 - m12
+    d1 = L1past - (m11 + m12 + m13)
+    m21 = random.randint(0, L2present)
+    m22 = random.randint(0, L2present - m21)
+    m23 = L2present - m21 - m22
+    d2 = L2past - (m21 + m22 + m23)
+    m31 = random.randint(0, L3present)
+    m32 = random.randint(0, L3present - m31)
+    m33 = L3present - m31 - m32
+    d3 = L3past - (m31 + m32 + m33)
+    h1 = L1present - (m11 + m21 + m31)
+    h2 = L2present - (m12 + m22 + m32)
+    h3 = L3present - (m13 + m23 + m33)
     
     matrix = np.array([
             [m11, m12, m13, d1],
