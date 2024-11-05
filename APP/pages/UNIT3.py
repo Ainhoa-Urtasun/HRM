@@ -62,12 +62,12 @@ def UNIT3_1():
     
     random.seed(1)
     m11 = L1past - random.sample(range(0, 3),1)[0]
-    m21 = random.sample(range(0, L1past - m11),1)[0]
+    m21 = random.sample(range(0, L1past - m11 + 1),1)[0]
     m31 = L1present - m11 - m21
     h1 = L1present - m11 - m21 - m31
     random.seed(2)
     m22 = L2past - random.sample(range(0, 3),1)[0]
-    m12 = random.sample(range(0, L2past - m22),1)[0]
+    m12 = random.sample(range(0, L2past - m22 + 1),1)[0]
     m32 = L2present - m12 - m22
     h2 = L2present - m12 - m22 - m32
     random.seed(3)
