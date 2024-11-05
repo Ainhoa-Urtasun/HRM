@@ -153,13 +153,13 @@ def UNIT1_4():
         C2021 = st.number_input("2021",key='C2021')
         C2022 = st.number_input("2022",key='C2022')
     with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-        OR2020 = st.number_input("2020",key='OR2020')
-        OR2021 = st.number_input("2021",key='OR2021')
-        OR2022 = st.number_input("2022",key='OR2022')
+        OR2020 = st.number_input("2020",key='OR2020',value=1.0)
+        OR2021 = st.number_input("2021",key='OR2021',value=1.0)
+        OR2022 = st.number_input("2022",key='OR2022',value=1.0)
     with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-        L2020 = st.number_input("2020",key='L2020')
-        L2021 = st.number_input("2021",key='L2021')
-        L2022 = st.number_input("2022",key='L2022')
+        L2020 = st.number_input("2020",key='L2020',value=1.0)
+        L2021 = st.number_input("2021",key='L2021',value=1.0)
+        L2022 = st.number_input("2022",key='L2022',value=1.0)
 
     LP = [OR2020/L2020,OR2021/L2021,OR2022/L2022]
     ULC = [C2020/OR2020,C2021/OR2021,C2022/OR2022]
