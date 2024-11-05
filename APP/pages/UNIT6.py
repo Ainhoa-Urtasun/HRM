@@ -118,13 +118,12 @@ def UNIT6_2():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Training assessment:')
-    gt, gn = st.columns(2)
-    with gt:
-        gtbefore = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
-        gtafter = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
-    with gn:
-        gnbefore = st.sidebar.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
-        gnafter = st.sidebar.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)     
+    with st.sidebar.expander("Trained Inputs"):
+        gtbefore = st.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
+        gtafter = st.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
+    with st.sidebar.expander("Non-trained Inputs"):
+        gnbefore = st.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
+        gnafter = st.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['Before','After'],[gtbefore,gtafter],color='red',label='Trained')
     plt.plot(['Before','After'],[gnbefore,gnafter],color='blue',label='Non-trained')
