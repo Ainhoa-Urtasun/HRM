@@ -47,7 +47,7 @@ def UNIT2_2():
         By evaluating jobs, firms can establish equitable compensation structures and identify training 
         and development needs. 
 
-        To evaluate a job, we represent it as a **task-skill matrix**, where each column corresponds 
+        To evaluate a job, we represent the job as a **task-skill matrix**, where each column corresponds 
         to one of the five core tasks, and each row represents the extent to which one the four skills is required
         to perform each task within the job:
         '''
@@ -148,10 +148,10 @@ def UNIT2_2():
             [s41, s42, s43, s44, s45]
         ])
     
-    if st.button("$J_{(k)}$"):
+    if st.button("$J_{(k)}$ Job evaluation"):
         st.write(matrix)
 
-    if st.button("Skill requirements for the job"):
+    if st.button("$s_{(k)$ Skill requirements for J_{(k)}}"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
