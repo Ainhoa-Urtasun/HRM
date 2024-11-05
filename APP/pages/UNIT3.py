@@ -59,7 +59,8 @@ def UNIT3_1():
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
         L3past = st.number_input("$L_{(3,-1)}$",key='L3past',step=1,min_value=3)
         L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1,min_value=3)
-    
+
+    random.seed(42)
     row1 = sorted(random.sample(range(0, L1past), 3))
     m11, m12, m13 = row1[0], row1[1] - row1[0], row1[2] - row1[1]
     d1 = L1past - row1[2]
