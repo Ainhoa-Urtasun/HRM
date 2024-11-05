@@ -62,12 +62,13 @@ def UNIT3_1():
 
     def distribute_values(L2022, L2023, seed):
         random.seed(seed)
-        m1 = random.randint(1, L2022 - 2) 
-        m2 = random.randint(1, L2022 - m1 - 1)
-        m3 = L2022 - m1 - m2 
-        d = random.randint(1, m3)
-        m3 -= d
-        assert m1 + m2 + m3 + d == L2022
+        if L2022 < 4:
+            m1, m2, m3, d = 1, 1, max(L2022 - 3, 1), 1
+        else:
+            m1 = random.randint(1, L2022 - 3)
+            m2 = random.randint(1, L2022 - m1 - 2)
+            m3 = L2022 - m1 - m2 - 1
+            d = 1
         h = L2023 - (m1 + m2 + m3)
         h = max(h, 1)
         return m1, m2, m3, d, h
