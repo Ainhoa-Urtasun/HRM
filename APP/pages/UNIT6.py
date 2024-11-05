@@ -116,6 +116,8 @@ def UNIT6_2():
         """
     )
 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+
   
 st.set_page_config(page_title="UNIT6", layout="wide")
 
