@@ -163,7 +163,7 @@ def UNIT3_2():
     
         predictions = T.T @ L
         for prediction in predictions:
-            st.write(prediction)
+            st.write(prediction[0])
 
     st.write(
     """
