@@ -113,6 +113,14 @@ def UNIT2_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.sidebar.write('Job at your firm ($J_{(k)}$):')
+    with st.sidebar.expander("$t_1$ Intellectual from [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)"):
+        s11 = st.number_input("$s_1$ Demonstrating willigness to learn",key='s11',step=1.0)
+        s21 = st.number_input("$s_2$ Demonstrating willigness to learn",key='s21',step=1.0)
+        s31 = st.number_input("$s_3$ Demonstrating willigness to learn",key='s31',step=1.0)
+        s31 = st.number_input("$s_4$ Demonstrating willigness to learn",key='s41',step=1.0)
+
+    
     st.write(
         '''
         Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to 
