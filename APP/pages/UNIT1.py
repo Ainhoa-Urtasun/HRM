@@ -58,7 +58,7 @@ def UNIT1_2():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
     st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)', placeholder='Enter the name of your industry and its economic activities')
-    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above; (2) **Employees' segmentation in Spain** Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees. At least 20 for each in 2022 and 20 or more in 2023",placeholder='Enter the name of your firm')
+    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above; (2) **Employees' segmentation in Spain** Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees. At least 20 for each in 2022 and the same or more in 2023",placeholder='Enter the name of your firm')
     
 def UNIT1_3():
     st.write(
