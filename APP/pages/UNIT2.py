@@ -30,7 +30,7 @@ def UNIT2_1():
         - $s_3$: Working efficiently
         - $s_4$: Taking a proactive approach
 
-        A **job**, denoted as $J_{(k)}$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
+        A **job**, denoted by $J_k$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
         employees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
@@ -55,22 +55,22 @@ def UNIT2_2():
              
     st.latex(
         r"""
-        J_{(k)} = \begin{pmatrix}
-        s_{11(k)} & s_{12(k)} & s_{13(k)} & s_{14(k)} & s_{15(k)} \\
-        s_{21(k)} & s_{22(k)} & s_{23(k)} & s_{24(k)} & s_{25(k)} \\
-        s_{31(k)} & s_{32(k)} & s_{33(k)} & s_{34(k)} & s_{35(k)} \\
-        s_{41(k)} & s_{42(k)} & s_{43(k)} & s_{44(k)} & s_{45(k)} \\
+        J_k = \begin{pmatrix}
+        s_{11k} & s_{12k} & s_{13k} & s_{14k} & s_{15k} \\
+        s_{21k} & s_{22k} & s_{23k} & s_{24k} & s_{25k} \\
+        s_{31k} & s_{32k} & s_{33k} & s_{34k} & s_{35k} \\
+        s_{41k} & s_{42k} & s_{43k} & s_{44k} & s_{45k} \\
         \end{pmatrix} \\[10pt]
         """
     )
 
     st.write(
         '''
-        We restrict $s_{ij(k)}$ to the following values:
+        We restrict $s_{ijk}$ to the following values:
         '''
     )
 
-    st.latex(r'0 \leq s_{ij(k)} \leq 100')
+    st.latex(r'0 \leq s_{ijk} \leq 100')
 
     st.write(
         '''
@@ -87,15 +87,15 @@ def UNIT2_2():
 
     st.latex(r"""
     s_{(k)} = 0.45 \begin{pmatrix} 
-    \|s_{1(k)}\| \\ 
-    \|s_{2(k)}\| \\ 
-    \|s_{3(k)}\| \\ 
-    \|s_{4(k)}\| 
+    \|s_{1k}\| \\ 
+    \|s_{2k}\| \\ 
+    \|s_{3k}\| \\ 
+    \|s_{4k}\| 
     \end{pmatrix} = 0.45 \begin{pmatrix} 
-    \sqrt{s_{11(k)}^2 + s_{12(k)}^2 + s_{13(k)}^2 + s_{14(k)}^2 + s_{15(k)}^2} \\[10pt] 
-    \sqrt{s_{21(k)}^2 + s_{22(k)}^2 + s_{23(k)}^2 + s_{24(k)}^2 + s_{25(k)}^2} \\[10pt] 
-    \sqrt{s_{31(k)}^2 + s_{32(k)}^2 + s_{33(k)}^2 + s_{34(k)}^2 + s_{35(k)}^2} \\[10pt] 
-    \sqrt{s_{41(k)}^2 + s_{42(k)}^2 + s_{43(k)}^2 + s_{44(k)}^2 + s_{45(k)}^2} 
+    \sqrt{s_{11k}^2 + s_{12k}^2 + s_{13k}^2 + s_{14k}^2 + s_{15k}^2} \\[10pt] 
+    \sqrt{s_{21k}^2 + s_{22k}^2 + s_{23k}^2 + s_{24k}^2 + s_{25k}^2} \\[10pt] 
+    \sqrt{s_{31k}^2 + s_{32k}^2 + s_{33k}^2 + s_{34k}^2 + s_{35k}^2} \\[10pt] 
+    \sqrt{s_{41k}^2 + s_{42k}^2 + s_{43k}^2 + s_{44k}^2 + s_{45k}^2} 
     \end{pmatrix}
     """)
 
@@ -108,7 +108,7 @@ def UNIT2_2():
 
     st.latex(
         '''
-        0 \leq  \|s_{i(k)}\| \leq 100
+        0 \leq  \|s_{ik}\| \leq 100
         '''
     )
 
@@ -116,30 +116,30 @@ def UNIT2_2():
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("$t_1$ Intellectual"):
-        s11 = st.number_input("$s_{11(k)}$ Demonstrating willigness to learn",key='s11',step=1.0)
-        s21 = st.number_input("$s_{21(k)}$ Collaborating in teams and networks",key='s21',step=1.0)
-        s31 = st.number_input("$s_{31(k)}$ Working efficiently",key='s31',step=1.0)
-        s41 = st.number_input("$s_{41(k)}$ Taking a proactive approach",key='s41',step=1.0)
+        s11 = st.number_input("$s_{11k}$ Demonstrating willigness to learn",key='s11',step=1.0)
+        s21 = st.number_input("$s_{21k}$ Collaborating in teams and networks",key='s21',step=1.0)
+        s31 = st.number_input("$s_{31k}$ Working efficiently",key='s31',step=1.0)
+        s41 = st.number_input("$s_{41k}$ Taking a proactive approach",key='s41',step=1.0)
     with st.sidebar.expander("$t_1$ Physical"):
-        s12 = st.number_input("$s_{12(k)}$ Demonstrating willigness to learn",key='s12',step=1.0)
-        s22 = st.number_input("$s_{22(k)}$ Collaborating in teams and networks",key='s22',step=1.0)
-        s32 = st.number_input("$s_{32(k)}$ Working efficiently",key='s32',step=1.0)
-        s42 = st.number_input("$s_{42(k)}$ Taking a proactive approach",key='s42',step=1.0)
+        s12 = st.number_input("$s_{12k}$ Demonstrating willigness to learn",key='s12',step=1.0)
+        s22 = st.number_input("$s_{22k}$ Collaborating in teams and networks",key='s22',step=1.0)
+        s32 = st.number_input("$s_{32k}$ Working efficiently",key='s32',step=1.0)
+        s42 = st.number_input("$s_{42k}$ Taking a proactive approach",key='s42',step=1.0)
     with st.sidebar.expander("$t_1$ Social"):
-        s13 = st.number_input("$s_{13(k)}$ Demonstrating willigness to learn",key='s13',step=1.0)
-        s23 = st.number_input("$s_{23(k)}$ Collaborating in teams and networks",key='s23',step=1.0)
-        s33 = st.number_input("$s_{33(k)}$ Working efficiently",key='s33',step=1.0)
-        s43 = st.number_input("$s_{43(k)}$ Taking a proactive approach",key='s43',step=1.0)
+        s13 = st.number_input("$s_{13k}$ Demonstrating willigness to learn",key='s13',step=1.0)
+        s23 = st.number_input("$s_{23k}$ Collaborating in teams and networks",key='s23',step=1.0)
+        s33 = st.number_input("$s_{33k}$ Working efficiently",key='s33',step=1.0)
+        s43 = st.number_input("$s_{43k}$ Taking a proactive approach",key='s43',step=1.0)
     with st.sidebar.expander("$t_1$ Use of methods"):
-        s14 = st.number_input("$s_{14(k)}$ Demonstrating willigness to learn",key='s14',step=1.0)
-        s24 = st.number_input("$s_{24(k)}$ Collaborating in teams and networks",key='s24',step=1.0)
-        s34 = st.number_input("$s_{34(k)}$ Working efficiently",key='s34',step=1.0)
-        s44 = st.number_input("$s_{44(k)}$ Taking a proactive approach",key='s44',step=1.0)
+        s14 = st.number_input("$s_{14k}$ Demonstrating willigness to learn",key='s14',step=1.0)
+        s24 = st.number_input("$s_{24k}$ Collaborating in teams and networks",key='s24',step=1.0)
+        s34 = st.number_input("$s_{34k}$ Working efficiently",key='s34',step=1.0)
+        s44 = st.number_input("$s_{44k}$ Taking a proactive approach",key='s44',step=1.0)
     with st.sidebar.expander("$t_1$ Use of technology"):
-        s15 = st.number_input("$s_{15(k)}$ Demonstrating willigness to learn",key='s15',step=1.0)
-        s25 = st.number_input("$s_{25(k)}$ Collaborating in teams and networks",key='s25',step=1.0)
-        s35 = st.number_input("$s_{35(k)}$ Working efficiently",key='s35',step=1.0)
-        s45 = st.number_input("$s_{45(k)}$ Taking a proactive approach",key='s45',step=1.0)
+        s15 = st.number_input("$s_{15k}$ Demonstrating willigness to learn",key='s15',step=1.0)
+        s25 = st.number_input("$s_{25k}$ Collaborating in teams and networks",key='s25',step=1.0)
+        s35 = st.number_input("$s_{35k}$ Working efficiently",key='s35',step=1.0)
+        s45 = st.number_input("$s_{45k}$ Taking a proactive approach",key='s45',step=1.0)
 
     matrix = np.array([
             [s11, s12, s13, s14, s15],
@@ -148,10 +148,10 @@ def UNIT2_2():
             [s41, s42, s43, s44, s45]
         ])
     
-    if st.button("$J_{(k)}$ Job evaluation"):
+    if st.button("$J_k$ Job evaluation"):
         st.write(matrix)
 
-    if st.button("$s_{(k)}$ Skill requirements for $J_{(k)}$"):
+    if st.button("$s_k$ Skill requirements for $J_k$"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
