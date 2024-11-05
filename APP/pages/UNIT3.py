@@ -59,34 +59,28 @@ def UNIT3_1():
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
         L3past = st.number_input("$L_{(3,-1)}$",key='L3past',step=1,min_value=3)
         L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1)
-
-    row1 = sorted(random.sample(range(0, L1past), 3))
-    m11 = row1[0]
-    m12 = row1[1] - row1[0]
-    m13 = row1[2] - row1[1]
-    d1 = L1past - row1[2]
-    row2 = sorted(random.sample(range(0, L2past), 3))
-    m21 = row2[0]
-    m22 = row2[1] - row2[0]
-    m23 = row2[2] - row2[1]
-    d2 = L2past - row2[2]
-    row3 = sorted(random.sample(range(0, L3past), 3))
-    m31 = row3[0]
-    m32 = row3[1] - row3[0]
-    m33 = row3[2] - row3[1]
-    d3 = L3past - row3[2]
-    h1 = L1present - m11 - m21 - m31
-    h2 = L2present - m12 - m22 - m32
-    h3 = L3present - m13 - m23- m33
+    try:
+        row1 = sorted(random.sample(range(0, L1past), 3))
+        m11, m12, m13 = row1[0], row1[1] - row1[0], row1[2] - row1[1]
+        d1 = L1past - row1[2]
+        row2 = sorted(random.sample(range(0, L2past), 3))
+        m21, m22, m23 = row2[0], row2[1] - row2[0], row2[2] - row2[1]
+        d2 = L2past - row2[2]
+        row3 = sorted(random.sample(range(0, L3past), 3))
+        m31, m32, m33 = row3[0], row3[1] - row3[0], row3[2] - row3[1]
+        d3 = L3past - row3[2]
+        h1 = L1present - m11 - m21 - m31
+        h2 = L2present - m12 - m22 - m32
+        h3 = L3present - m13 - m23 - m33
     
-    matrix = np.array([
+        matrix = np.array([
             [m11, m12, m13, d1],
             [m21, m22, m23, d2],
             [m31, m32, m33, d3]
         ])
     
-    if st.button("Data"):
-        st.write(matrix)
+        if st.button("Data"):
+            st.write(matrix)
 
 def UNIT3_2():
     st.write(
