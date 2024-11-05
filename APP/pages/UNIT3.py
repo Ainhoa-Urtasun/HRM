@@ -60,17 +60,17 @@ def UNIT3_1():
         L3past = st.number_input("$L_{(3,-1)}$",key='L3past',step=1)
         L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1)
 
-    row1 = sorted(random.sample(range(1, L1past), 3))
+    row1 = sorted(random.sample(range(0, L1past), 3))
     m11 = row1[0]
     m12 = row1[1] - row1[0]
     m13 = row1[2] - row1[1]
     d1 = L1past - row1[2]
-    row2 = sorted(random.sample(range(1, L2past), 3))
+    row2 = sorted(random.sample(range(0, L2past), 3))
     m21 = row2[0]
     m22 = row2[1] - row2[0]
     m23 = row2[2] - row2[1]
     d2 = L2past - row2[2]
-    row3 = sorted(random.sample(range(1, L3past), 3))
+    row3 = sorted(random.sample(range(0, L3past), 3))
     m31 = row3[0]
     m32 = row3[1] - row3[0]
     m33 = row3[2] - row3[1]
