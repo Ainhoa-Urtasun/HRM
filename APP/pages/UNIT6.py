@@ -120,23 +120,17 @@ def UNIT6_2():
     st.write('Training assessment:')
     gtrained, gn = st.columns(2)
     with gt:
-        gt0 = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
-        gt1 = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
+        gtbefore = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
+        gtafter = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
     with gn
-        gn0 = st.sidebar.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
-        gn1 = st.sidebar.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)
-        
-    df = pd.DataFrame({
-        "Year": ["2019", "2020", "2021"],
-        "Employment": employees,
-    })
-
-    fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
-    ax.set_xlabel('Year')
-    ax.set_ylabel('Metrics')
-    ax.set_title("Employment Over Time")
-    ax.legend()
+        gnbefore = st.sidebar.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
+        gnafter = st.sidebar.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)     
+    fig = plt.figure(figsize=(5,5),dpi=100)
+    plt.plot(['Before','After'],[gtbefore,gtafter],color='red',label='Trained')
+    plt.plot(['Before','After'],[gnbefore,gnafter],color='blue',label='Non-trained')
+    plt.plot(['Before','After'],[gtbefore,gtbefore+(gnafter-gnbefore)],color='blue',ls='-.',label='Counterfactual')
+    plt.title('Skill gap')
+    plt.legend()
     st.pyplot(fig)
   
 st.set_page_config(page_title="UNIT6", layout="wide")
