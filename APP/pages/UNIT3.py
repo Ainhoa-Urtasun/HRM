@@ -108,14 +108,6 @@ def UNIT3_1():
     else:
         print("No solution found within 10,000 attempts.")
 
-
-    matrix = np.array([
-            [m11, m12, m13, d1],
-            [m21, m22, m23, d2],
-            [m31, m32, m33, d3],
-            [h1, h2, h3, np.nan]
-    ])
-    
     if st.button("Data"):
         st.write(matrix)
 
