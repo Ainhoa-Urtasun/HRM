@@ -140,41 +140,6 @@ def UNIT2_2():
         s35 = st.number_input("$s_{35(k)}$ Working efficiently",key='s35',step=1.0)
         s45 = st.number_input("$s_{45(k)}$ Taking a proactive approach",key='s45',step=1.0)
 
-    
-    st.write(
-        '''
-        Use [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) to 
-        represent one of the 3 jobs in your firm as matrix of tasks and skill requirements:
-        '''
-    )
-    
-    t1, t2, t3, t4, t5 = st.columns(5)
-    with t1:
-        s11 = st.number_input("$s_{11}$", key="s11",step=1)
-        s21 = st.number_input("$s_{21}$", key="s21",step=1)
-        s31 = st.number_input("$s_{31}$", key="s31",step=1)
-        s41 = st.number_input("$s_{41}$", key="s41",step=1)
-    with t2:
-        s12 = st.number_input("$s_{12}$", key="s12",step=1)
-        s22 = st.number_input("$s_{22}$", key="s22",step=1)
-        s32 = st.number_input("$s_{32}$", key="s32",step=1)
-        s42 = st.number_input("$s_{42}$", key="s42",step=1)
-    with t3:
-        s13 = st.number_input("$s_{13}$", key="s13",step=1)
-        s23 = st.number_input("$s_{23}$", key="s23",step=1)
-        s33 = st.number_input("$s_{33}$", key="s33",step=1)
-        s43 = st.number_input("$s_{43}$", key="s43",step=1)
-    with t4:
-        s14 = st.number_input("$s_{14}$", key="s14",step=1)
-        s24 = st.number_input("$s_{24}$", key="s24",step=1)
-        s34 = st.number_input("$s_{34}$", key="s34",step=1)
-        s44 = st.number_input("$s_{44}$", key="s44",step=1)
-    with t5:
-        s15 = st.number_input("$s_{15}$", key="s15",step=1)
-        s25 = st.number_input("$s_{25}$", key="s25",step=1)
-        s35 = st.number_input("$s_{35}$", key="s35",step=1)
-        s45 = st.number_input("$s_{45}$", key="s45",step=1)
-    
     if st.button("Skill requirements for the job"):
         matrix = np.array([
             [s11, s12, s13, s14, s15],
@@ -182,7 +147,10 @@ def UNIT2_2():
             [s31, s32, s33, s34, s35],
             [s41, s42, s43, s44, s45]
         ])
-    
+
+        st.write("$J_{(k)}$")
+        st.table(matrix)  # or st.dataframe(matrix) for an interactive table
+
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
