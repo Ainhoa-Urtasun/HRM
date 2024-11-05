@@ -122,7 +122,7 @@ def UNIT6_2():
     with gt:
         gtbefore = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
         gtafter = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
-    with gn
+    with gn:
         gnbefore = st.sidebar.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
         gnafter = st.sidebar.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)     
     fig = plt.figure(figsize=(5,5),dpi=100)
