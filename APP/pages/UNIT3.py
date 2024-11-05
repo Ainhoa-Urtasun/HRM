@@ -72,7 +72,7 @@ def UNIT3_1():
     d3 = 1
     d1 = m13 = 0
     m12 = L12022 - m11
-    h2 = L12023 - m12 - m22 - m32
+    h2 = L22023 - m12 - m22 - m32
     h3 = L32023 - m13 - m23 - m33
 
     matrix = np.array([
