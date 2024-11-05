@@ -51,28 +51,45 @@ def UNIT3_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
     with st.sidebar.expander("$J_{(1)}$ Other managers"):
-        L12022 = st.number_input("$L_{(1,2022)}$", key='L12022', step=1, min_value=3)
-        L12023 = st.number_input("$L_{(1,2923)}$", key='L12023', step=1, min_value=3)
+        L12022 = st.number_input("$L_{(1,2022)}$", key='L12022', step=1, min_value=20)
+        L12023 = st.number_input("$L_{(1,2023)}$", key='L12023', step=1, min_value=20)
     with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
-        L22022 = st.number_input("$L_{(2,2022)}$", key='L22022', step=1, min_value=3)
-        L22023 = st.number_input("$L_{(2,2023)}$", key='L22023', step=1, min_value=3)
+        L22022 = st.number_input("$L_{(2,2022)}$", key='L22022', step=1, min_value=20)
+        L22023 = st.number_input("$L_{(2,2023)}$", key='L22023', step=1, min_value=20)
     with st.sidebar.expander("$J_{(3)}$ Administrative employees"):
-        L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=3)
-        L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=3)
-
+        L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
+        L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
     def distribute_values(L2022, L2023, seed):
         random.seed(seed)
-        m1 = random.randint(1, L2022 - 2)  # Ensure there's space for m2 and m3
-        m2 = random.randint(1, L2022 - m1 - 1)
-        m3 = L2022 - m1 - m2 - 1  # Ensure we leave 1 space for separations
-        d = 1  # Minimum value for separations
+        m1 = random.randint(1, L2022 - 3)
+        m2 = random.randint(1, L2022 - m1 - 2)
+        m3 = L2022 - m1 - m2 - 1
+        d = 1  # Minimum separations to meet constraints
         h = L2023 - (m1 + m2 + m3)
-        h = max(h, 0)  # Ensure hires are at least 1 if there’s a shortage
+        h = max(h, 1)   
         return m1, m2, m3, d, h
-        
+
     m11, m12, m13, d1, h1 = distribute_values(L12022, L12023, seed=1)
     m21, m22, m23, d2, h2 = distribute_values(L22022, L22023, seed=2)
     m31, m32, m33, d3, h3 = distribute_values(L32022, L32023, seed=3)
+
+    # Column-wise summation checks
+    col1_sum_2023 = m11 + m21 + m31 + h1
+    col2_sum_2023 = m12 + m22 + m32 + h2
+    col3_sum_2023 = m13 + m23 + m33 + h3
+
+    # Adjust to meet column-wise summation for L2023
+    if col1_sum_2023 != L12023:
+        h1 += L12023 - col1_sum_2023
+    if col2_sum_2023 != L22023:
+        h2 += L22023 - col2_sum_2023
+    if col3_sum_2023 != L32023:
+        h3 += L32023 - col3_sum_2023
+
+    # Ensure hires remain positive
+    h1 = max(h1, 1)
+    h2 = max(h2, 1)
+    h3 = max(h3, 1)
 
     matrix = np.array([
             [m11, m12, m13, d1],
