@@ -49,12 +49,15 @@ def UNIT3_1():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
-    with st.sidebar.expander("$J_{(1)} Senior management$"):
+    with st.sidebar.expander("$J_{(1)}$ Senior management"):
         L1past = st.number_input("$L_{(1,-1)}$",key='L1past',step=1.0)
         Lpresent = st.number_input("$L_{(1,0)}$",key='L1present',step=1.0)
-    with st.sidebar.expander("$J_{(2)} Support intellectuals and scientists, technicians and professionals$"):
+    with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
         L2past = st.number_input("$L_{(2,-1)}$",key='L2past',step=1.0)
         L2present = st.number_input("$L_{(2,0)}$",key='L2present',step=1.0)
+    with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
+        L3past = st.number_input("$L_{(3,-1)}$",key='L3past',step=1.0)
+        L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1.0)
 
     row1 = sorted(random.sample(range(1, L1past), 3))
     m11 = row1[0]
