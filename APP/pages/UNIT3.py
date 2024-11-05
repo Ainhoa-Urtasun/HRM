@@ -88,8 +88,8 @@ def UNIT3_1():
 def UNIT3_2():
     st.write(
         '''
-        HR planning relies on the transition matrix $T$ to make predictions of the future availability of employees at 
-        $t+1$ in each different job at the firm (internal supply of labor). The notation below illustrates
+        HR planning makes predictions on the future availability of employees using the transition matrix $T$.
+        The notation below illustrates
         the structure of the transition matrix $T$ and the calculations required to to make these predictions:
         '''
     )
@@ -98,25 +98,25 @@ def UNIT3_2():
         r'''
         T =
         \begin{pmatrix}
-        \frac{m_{(1)(1)}}{L_{(1,-1)}} & \frac{m_{(1)(2)}}{L_{1,-1}} & \frac{m_{(1)(3)}}{L_{1,-1}} \\ 
-        \frac{m_{(2)(1)}}{L_{(2,-1)}} & \frac{m_{(2)(2)}}{L_{2,-1}} & \frac{m_{(2)(3)}}{L_{2,-1}} \\ 
-        \frac{m_{(3)(1)}}{L_{(3,-1)}} & \frac{m_{(3)(2)}}{L_{3,-1}} & \frac{m_{(3)(3)}}{L_{3,-1}} \\  
+        \frac{m_{11}}{L_{1,2022}} & \frac{m_{12}}{L_{1,2022}} & \frac{m_{13}}{L_{1,2022}} \\ 
+        \frac{m_{21}}{L_{(2,2022)}} & \frac{m_{22}}{L_{2,2022}} & \frac{m_{23}}{L_{2,2022}} \\ 
+        \frac{m_{31}}{L_{(3,2022)}} & \frac{m_{32}}{L_{3,2022}} & \frac{m_{33}}{L_{3,2022}} \\  
         \end{pmatrix} \\[10pt]
         
         \begin{pmatrix}
-        \hat{L}_{(1)} \\
-        \hat{L}_{(2)} \\
-        \hat{L}_{(3)} \\
+        \hat{L}_1 \\
+        \hat{L}_2 \\
+        \hat{L}_3 \\
         \end{pmatrix} = 
         \begin{pmatrix}
-        \frac{m_{(1)(1)}}{L_{(1,-1)}} & \frac{m_{(1)(2)}}{L_{1,-1}} & \frac{m_{(1)(3)}}{L_{1,-1}} \\ 
-        \frac{m_{(2)(1)}}{L_{(2,-1)}} & \frac{m_{(2)(2)}}{L_{2,-1}} & \frac{m_{(2)(3)}}{L_{2,-1}} \\ 
-        \frac{m_{(3)(1)}}{L_{(3,-1)}} & \frac{m_{(3)(2)}}{L_{3,-1}} & \frac{m_{(3)(3)}}{L_{3,-1}} \\  
+        \frac{m_{11}}{L_{1,2022}} & \frac{m_{12}}{L_{1,2022}} & \frac{m_{13}}{L_{1,2022}} \\ 
+        \frac{m_{21}}{L_{(2,2022)}} & \frac{m_{22}}{L_{2,2022}} & \frac{m_{23}}{L_{2,2022}} \\ 
+        \frac{m_{31}}{L_{(3,2022)}} & \frac{m_{32}}{L_{3,2022}} & \frac{m_{33}}{L_{3,2022}} \\  
         \end{pmatrix}^T
         \begin{pmatrix} 
-        L_{(1,0)} \\ 
-        L_{(2,0)} \\ 
-        L_{(3,0)} \\ 
+        L_{1,2023} \\ 
+        L_{2,2023} \\ 
+        L_{3,2023} \\ 
         \end{pmatrix}
         '''
     )
