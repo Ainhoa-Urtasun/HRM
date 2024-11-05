@@ -61,17 +61,17 @@ def UNIT3_1():
         L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=0)
     
     random.seed(42)
-    m11 = random.randint(0, L1present)
-    m12 = random.randint(0, L1present - m11)
-    m13 = L1present - m11 - m12
+    def generate_m_values(Lpresent):
+        m1 = random.randint(0, Lpresent)
+        m2 = random.randint(0, Lpresent - m1)
+        m3 = Lpresent - m1 - m2  # Ensures m1 + m2 + m3 = Lpresent
+        return m1, m2, m3
+
+    m11, m12, m13 = generate_m_values(L1present)
+    m21, m22, m23 = generate_m_values(L2present)
+    m31, m32, m33 = generate_m_values(L3present)
     d1 = L1past - (m11 + m12 + m13)
-    m21 = random.randint(0, L2present)
-    m22 = random.randint(0, L2present - m21)
-    m23 = L2present - m21 - m22
     d2 = L2past - (m21 + m22 + m23)
-    m31 = random.randint(0, L3present)
-    m32 = random.randint(0, L3present - m31)
-    m33 = L3present - m31 - m32
     d3 = L3past - (m31 + m32 + m33)
     h1 = L1present - (m11 + m21 + m31)
     h2 = L2present - (m12 + m22 + m32)
