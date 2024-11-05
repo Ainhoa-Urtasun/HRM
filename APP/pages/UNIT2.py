@@ -140,17 +140,17 @@ def UNIT2_2():
         s35 = st.number_input("$s_{35(k)}$ Working efficiently",key='s35',step=1.0)
         s45 = st.number_input("$s_{45(k)}$ Taking a proactive approach",key='s45',step=1.0)
 
-    if st.button("Skill requirements for the job"):
-        matrix = np.array([
+    matrix = np.array([
             [s11, s12, s13, s14, s15],
             [s21, s22, s23, s24, s25],
             [s31, s32, s33, s34, s35],
             [s41, s42, s43, s44, s45]
         ])
+    
+    if st.button("$J_{(k)}$"):
+        st.table(matrix)
 
-        st.write("$J_{(k)}$")
-        st.table(matrix)  # or st.dataframe(matrix) for an interactive table
-
+    if st.button("Skill requirements for the job"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
