@@ -147,29 +147,28 @@ def UNIT1_4():
         and for your firm, visualize labor productivity and ULC:
         '''
     )
-  
-    cost_input = st.sidebar.text_input("Cost of employees (comma-separated for 2019, 2020, 2021):", "0,0,0")
-    revenue_input = st.sidebar.text_input("Operating revenue (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees_input = st.sidebar.text_input("Number of employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
 
-    costs = np.fromstring(cost_input, sep=',')
-    revenues = np.fromstring(revenue_input, sep=',')
-    employees = np.fromstring(employees_input, sep=',')
+    with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        C2020 = st.number_input("2020")
+        C2021 = st.number_input("2021")
+        C2022 = st.number_input("2022")
+    with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        OR2020 = st.number_input("2020")
+        OR2021 = st.number_input("2021")
+        OR2022 = st.number_input("2022")
+    with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        L2020 = st.number_input("2020")
+        L2021 = st.number_input("2021")
+        L2022 = st.number_input("2022")
 
-    labor_productivity = revenues / employees / 1000  # Convert to thousands
-    unit_labor_cost = costs / revenues
-        
-    df = pd.DataFrame({
-        "Year": ["2019", "2020", "2021"],
-        "Labor productivity (in thousands)": labor_productivity,
-        "ULC": unit_labor_cost
-    })
+    LP = [OR2020/L2020,OR2021/L2021,OR2022/L2022]
+    ULC = [C2020/OR2020,C2021/OR2021,C2022/OR2022]
 
-    fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], labor_productivity, marker='x', label='Labor productivity')
-    ax.plot(["2019", "2020", "2021"], unit_labor_cost, marker='o', label='ULC')        
-    ax.set_xlabel('Year')
-    ax.legend()
+    fig = plt.figure(figsize=(5,5),dpi=100)
+    plt.plot(['2020','2021','2022'],LP,color='red',label='Labor productivity')
+    plt.plot(['2020','2021','2022'],ULC,color='blue',label='ULC')
+    plt.title('HRM metrics over time')
+    plt.legend()
     st.pyplot(fig)
 
 # Set page configuration
