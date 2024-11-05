@@ -64,7 +64,7 @@ def UNIT3_1():
     m22 = min(L22022,L22023) - 1
     m33 = min(L32022,L32023) - 1
 
-   if L12022 > L12023:
+    if L12022 > L12023:
         m21 = m31 = 0  # No movement to Job 1
         h1 = 1  # Minimum hire to meet 2023 requirement
         m12 = m13 = 1  # Minimal movement out of Job 1
