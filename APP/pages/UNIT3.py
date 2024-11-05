@@ -51,7 +51,7 @@ def UNIT3_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
     with st.sidebar.expander("$J_{(1)}$ Senior management"):
-        L1past = st.number_input("$L_{(1,-1)}$", key='L1past', step=1, min_value=3)
+        L1past = st.number_input("$L_{(1,-1)}$", key='L1past', step=1, min_value=2)
         L1present = st.number_input("$L_{(1,0)}$", key='L1present', step=1, min_value=0)
     with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
         L2past = st.number_input("$L_{(2,-1)}$", key='L2past', step=1, min_value=10)
