@@ -75,6 +75,9 @@ def UNIT3_1():
     m13 = random.sample(range(0, L3present - m33 + 1),1)[0]
     m23 = L3present - m13 - m33
     h3 = L3present - m13 - m23 - m33
+    d1 = L1past - m11 - m12 - m13 
+    d2 = L2past - m21 - m22 - m23 
+    d3 = L3past - m31 - m32 - m33 
 
     matrix = np.array([
             [m11, m12, m13, d1],
