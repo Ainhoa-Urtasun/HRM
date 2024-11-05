@@ -9,11 +9,11 @@ def UNIT3_1():
     st.write(
         '''
         HR planning involves forecasting the availability of employees across different jobs within a firm. 
-        The primary goal is to anticipate potential employee shortages or surpluses. Effective HR planning requires the
-        following data:
+        The primary goal is to anticipate potential employee shortages or surpluses. Latest available data 
+        from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
 
-        - $L_{(k,-1)}$ The number of employees in job $J_{(k)}$ at time point -1 (representing the past)
-        - $L_{(k,0)}$ The number of employees in job $J_{(k)}$ at time point 0 (representing the present moment)
+        - $L_{(k,2022)}$ The number of employees in job $J_{(k)}$ at year 2022
+        - $L_{(k,2023)}$ The number of employees in job $J_{(k)}$ at year 2023
         '''
     )
 
@@ -35,46 +35,46 @@ def UNIT3_1():
 
     st.write(
         '''
-        - $m_{(i)(j)}$ represents employees who moved from $J_{(i)}$ to $J_{(j)}$ during the period $(-1,0)$
+        - $m_{(i)(j)}$ represents employees who moved from $J_{(i)}$ to $J_{(j)}$ from 2022 to 2023
         - $h_{(k)}$ represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
-        during the period $(-1,0)$
-        - $d$ represents departures or number of employees who have left the firm during the period $(-1,0)$,
+        from 2022 to 2023
+        - $d$ represents departures or number of employees who have left the firm from 2022 to 2023,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
 
         The table above should meet the following restrictions:
         '''
     )
 
-    st.latex(r'L_{(k,-1)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
-    st.latex(r'L_{(k,0)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
+    st.latex(r'L_{(k,2022)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
+    st.latex(r'L_{(k,2023)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
     with st.sidebar.expander("$J_{(1)}$ Senior management"):
-        L1past = st.number_input("$L_{(1,-1)}$", key='L1past', step=1, min_value=1)
-        L1present = st.number_input("$L_{(1,0)}$", key='L1present', step=1, min_value=0)
+        L1past = st.number_input("$L_{(1,2022)}$", key='L1past', step=1, min_value=1)
+        L1present = st.number_input("$L_{(1,2923)}$", key='L1present', step=1, min_value=0)
     with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
-        L2past = st.number_input("$L_{(2,-1)}$", key='L2past', step=1, min_value=1)
-        L2present = st.number_input("$L_{(2,0)}$", key='L2present', step=1, min_value=0)
+        L2past = st.number_input("$L_{(2,2022)}$", key='L2past', step=1, min_value=1)
+        L2present = st.number_input("$L_{(2,2023)}$", key='L2present', step=1, min_value=0)
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
-        L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=1)
-        L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=0)
+        L3past = st.number_input("$L_{(3,2022)}$", key='L3past', step=1, min_value=1)
+        L3present = st.number_input("$L_{(3,2023)}$", key='L3present', step=1, min_value=0)
 
-    def distribute_values(Lpast, Lpresent, seed):
+    def distribute_values(L2022, L2023, seed):
         random.seed(seed)
-        m1 = random.randint(1, Lpast - 2)  # Random initial distribution for movement within bounds
-        m2 = random.randint(1, Lpast - m1 - 1)
-        m3 = Lpast - m1 - m2  # Ensures that m1 + m2 + m3 + d = Lpast
-        d = random.randint(1, m3)  # Random value for separations
+        m1 = random.randint(1, L2022 - 2) 
+        m2 = random.randint(1, L2022 - m1 - 1)
+        m3 = L2022 - m1 - m2 
+        d = random.randint(1, m3)
         m3 -= d
-        assert m1 + m2 + m3 + d == Lpast, "Constraint on Lpast not met"
-        h = Lpresent - (m1 + m2 + m3)
-        h = max(h, 1)  # Ensures h is at least 1
+        assert m1 + m2 + m3 + d == L2022,
+        h = L2023 - (m1 + m2 + m3)
+        h = max(h, 1)
         return m1, m2, m3, d, h
         
-    m11, m12, m13, d1, h1 = distribute_values(L1past, L1present, seed=1)
-    m21, m22, m23, d2, h2 = distribute_values(L2past, L2present, seed=2)
-    m31, m32, m33, d3, h3 = distribute_values(L3past, L3present, seed=3)
+    m11, m12, m13, d1, h1 = distribute_values(L12022, L12023, seed=1)
+    m21, m22, m23, d2, h2 = distribute_values(L22022, L22023, seed=2)
+    m31, m32, m33, d3, h3 = distribute_values(L32022, L32023, seed=3)
 
     matrix = np.array([
             [m11, m12, m13, d1],
