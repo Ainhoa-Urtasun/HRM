@@ -148,15 +148,12 @@ def UNIT5_2():
             st.write(f"Employment at your firm at 0: {Lpresent}")
 
     st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
-    
     employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees = np.fromstring(employees_input, sep=',')
-        
+    employees = np.fromstring(employees_input, sep=',')       
     df = pd.DataFrame({
         "Year": ["2019", "2020", "2021"],
         "Employment": employees,
     })
-
     fig, ax = plt.subplots()
     ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
     ax.set_xlabel('Year')
