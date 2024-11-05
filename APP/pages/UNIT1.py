@@ -56,9 +56,8 @@ def UNIT1_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
-    st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence')
-    st.text_input('', placeholder='Enter the name of your industry and its economic activities')
-    st.text_input('Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** In the sector selected above;(2) **Employees segmentation in Spain** Senior management, Support intellectuals and scientists, technicians and professionals, and Sales representatives and similar. At least 5 women')
+    st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence', placeholder='Enter the name of your industry and its economic activities')
+    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above;(2) **Employees' segmentation in Spain** Senior management, Support intellectuals and scientists, technicians and professionals, and Sales representatives and similar. At least 5 women")
     st.text_input('', placeholder='Enter the name of your firm')
     st.text_input('Note: A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms', placeholder="Enter the names of the 3 jobs in your firm")
     
