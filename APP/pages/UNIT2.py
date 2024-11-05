@@ -113,7 +113,7 @@ def UNIT2_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.sidebar.text_input('$J_{(k)}$ job at your firm:')
+    st.sidebar.radio("Select a job of your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     with st.sidebar.expander("$t_1$ Intellectual"):
         s11 = st.number_input("$s_{11(k)}$ Demonstrating willigness to learn",key='s11',step=1.0)
         s21 = st.number_input("$s_{21(k)}$ Collaborating in teams and networks",key='s21',step=1.0)
