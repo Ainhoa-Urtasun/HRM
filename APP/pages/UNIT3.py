@@ -34,11 +34,10 @@ def UNIT3_1():
 
     st.write(
         '''
-        Where $m_{(i)(j)}$ represents employee mobility from $J_{(i)}$ to $J_{(j)}$ 
-        within the firm during the period $(-1,0)$; $h_{(k)}$ 
-        represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
-        within the firm during the period from $(-1,0)$; and $d$ represents departures or 
-        number of employees who have left the firm during the period $(-1,0)$,
+        - $m_{(i)(j)}$ represents employees who moved from $J_{(i)}$ to $J_{(j)}$ during the period $(-1,0)$
+        - $h_{(k)}$ represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
+        during the period from $(-1,0)$
+        - $d$ represents departures or number of employees who have left the firm during the period $(-1,0)$,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
 
         The table above should meet the following restrictions:
