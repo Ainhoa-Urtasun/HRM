@@ -68,9 +68,9 @@ def UNIT1_3():
     - $Q$ is the output the firm produces
     - $L$ number of employees at the firm
     - Jobs within the firm:
-        - $J_{(1)}$ Other managers
-        - $J_{(2)}$ Support intellectuals and scientists, technicians and professionals
-        - $J_{(3)}$ Administrative employees
+        - $J_1$ Other managers
+        - $J_2$ Support intellectuals and scientists, technicians and professionals
+        - $J_3$ Administrative employees
     - Tasks to be carried out by employees at the firm:
         - $t_1$: Intellectual
         - $t_2$: Physical
