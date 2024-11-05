@@ -7,51 +7,43 @@ import numpy as np
 def UNIT3_1():
     st.write(
         '''
-        HR planning involves predicting potential employee shortages or surpluses within the firm.
-        In this unit, we will learn a method for making these predictions using a transition matrix. 
-        The table below provides the historical data we need to build the transition matrix:
+        HR planning involves forecasting the availability of employees across different jobs within a firm. 
+        The primary goal is to anticipate potential employee shortages or surpluses. Effective HR planning requires the
+        following data:
+
+        - $L_{(k,-1)}$ The number of employees in job $J_{(k)}$ at time point -1 (representing the past)
+        - $L_{(k,0)}$ The number of employees in job $J_{(k)}$ at time point 0 (representing the present moment)
         '''
     )
-             
-    st.latex(r"""
-    \begin{array}{|c|c|c|c|}
-    \hline
-    m_{(1)(1)} & m_{(1)(2)} & m_{(1)(3)} & d_{(1)} \\
-    \hline
-    m_{(2)(1)} & m_{(2)(2)} & m_{(2)(3)} & d_{(2)} \\
-    \hline
-    m_{(3)(1)} & m_{(3)(2)} & s_{(3)(3)} & d_{(3)} \\
-    \hline
-    h_{(1)} & h_{(2)} & h_{(3)} & \\
-    \hline
-    \end{array}
-    """)
 
+        st.latex(r"""
+        \begin{array}{|c|c|c|c|}
+        \hline
+        m_{(1)(1)} & m_{(1)(2)} & m_{(1)(3)} & d_{(1)} \\
+        \hline
+        m_{(2)(1)} & m_{(2)(2)} & m_{(2)(3)} & d_{(2)} \\
+        \hline
+        m_{(3)(1)} & m_{(3)(2)} & s_{(3)(3)} & d_{(3)} \\
+        \hline
+        h_{(1)} & h_{(2)} & h_{(3)} & \\
+        \hline
+        \end{array}
+        """)
 
     st.write(
         '''
         Where $m_{(i)(j)}$ represents employee mobility from $J_{(i)}$ to $J_{(j)}$ 
-        within the firm during the period $(-1,0)$ where $0$ represents the present moment and -1 
-        represents the past, it could be a month ago or a year ago; $h_{(k)}$ 
+        within the firm during the period $(-1,0)$; $h_{(k)}$ 
         represents new hires or number of employees who have been recruited and started working in $J_{(i)}$ 
         within the firm during the period from $(-1,0)$; and $d$ represents departures or 
         number of employees who have left the firm during the period $(-1,0)$,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
 
-        By adding up the values of the table row-wise, we get the employment in $J_{(k)}$
-        a year or a month ago within the firm:
+        The table above should meet the following restrictions:
         '''
     )
 
     st.latex(r'L_{(k,-1)} = m_{(k)(1)} + m_{(k)(2)} + m_{(k)(3)} + d_{(k)}')
-
-    st.write(
-        '''
-        And by adding up the values of the table column-wise, 
-        we get the employment in $J_{(k)}$ at the present moment at the firm:
-        '''
-    )
-    
     st.latex(r'L_{(k,0)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
