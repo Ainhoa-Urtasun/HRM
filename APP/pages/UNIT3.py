@@ -60,37 +60,18 @@ def UNIT3_1():
         L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
 
-    m11 = min(L12022,L12023) - 1
-    m22 = min(L22022,L22023) - 1
-    m33 = min(L32022,L32023) - 1
+    m11 = L12022 - 1
+    m22 = L22022 - 2
+    m33 = L32022 - 3
 
-    if L12022 > L12023:
-        m21 = m31 = 0  # No movement to Job 1
-        h1 = 1  # Minimum hire to meet 2023 requirement
-        m12 = m13 = 1  # Minimal movement out of Job 1
-        d1 = L12022 - m11 - m12 - m13  # Calculate separations to meet 2022 total
-    else:
-        m12 = m13 = 0  # No movement out of Job 1
-        d1 = 1  # Minimum separation
-        m21 = m31 = 1  # Minimal movement into Job 1
-        h1 = L12023 - m11 - m21 - m31  # Calculate hires to meet 2023 total
-
-    if L22022 > L22023:
-        m23 = 1  # Minimal movement from Job 2 to Job 3
-        d2 = L22022 - m22 - m23 - m21  # Calculate separations to meet 2022 total
-        m32 = 0  # No movement into Job 2
-        h2 = 0  # No hire needed for Job 2 in 2023
-    else:
-        m23 = d2 = 0  # No separations or movements out of Job 2
-        m12 = m32 = 1  # Minimal movement into Job 2
-        h2 = L22023 - m22 - m12 - m32  # Calculate hires to meet 2023 total
-
-    if L32022 > L32023:
-        d3 = L32022 - m31 - m32 - m33  # Calculate separations to meet 2022 total
-        h3 = 0  # No hire needed for Job 3 in 2023
-    else:
-        d3 = 0  # No separation needed for Job 3 in 2022
-        h3 = L32023 - m13 - m23 - m33  # Calculate hires to meet 2023 total
+    h1 = L12023 - m11
+    m21 = m31 = 0
+    m23 = d2 = 1
+    m32 = 2
+    d3 = 1
+    d1 = m13 = 0
+    m12 = L12022 - m11
+    h2 = L12023 - m21 - m22 - m23
 
     matrix = np.array([
         [m11, m12, m13, d1],
