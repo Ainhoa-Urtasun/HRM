@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import random
 
 def UNIT3_1():
     st.write(
