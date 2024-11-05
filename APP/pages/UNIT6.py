@@ -118,7 +118,7 @@ def UNIT6_2():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.write('Training assessment:')
-    gtrained, gn = st.columns(2)
+    gt, gn = st.columns(2)
     with gt:
         gtbefore = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
         gtafter = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
