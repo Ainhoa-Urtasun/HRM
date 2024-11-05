@@ -67,7 +67,7 @@ def UNIT3_1():
         m3 = L2022 - m1 - m2 - 1  # Ensure we leave 1 space for separations
         d = 1  # Minimum value for separations
         h = L2023 - (m1 + m2 + m3)
-        h = max(h, 1)  # Ensure hires are at least 1 if there’s a shortage
+        h = max(h, 0)  # Ensure hires are at least 1 if there’s a shortage
         return m1, m2, m3, d, h
         
     m11, m12, m13, d1, h1 = distribute_values(L12022, L12023, seed=1)
