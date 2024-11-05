@@ -117,10 +117,14 @@ def UNIT6_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
-    
-    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees = np.fromstring(employees_input, sep=',')
+    st.write('Training assessment:')
+    gtrained, gn = st.columns(2)
+    with gt:
+        gt0 = st.sidebar.text_input("$g_{-1}^{trained}$", key="gt0", step=1)
+        gt1 = st.sidebar.text_input("$g_{+1}^{trained}$", key="gt1", step=1)
+    with gn
+        gn0 = st.sidebar.text_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
+        gn1 = st.sidebar.text_input("$g_{+1}^{non-trained}$", key="gn1", step=1)
         
     df = pd.DataFrame({
         "Year": ["2019", "2020", "2021"],
