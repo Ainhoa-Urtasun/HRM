@@ -99,7 +99,7 @@ def UNIT3_2():
         T =
         \begin{pmatrix}
         \frac{m_{11}}{L_{1,2022}} & \frac{m_{12}}{L_{1,2022}} & \frac{m_{13}}{L_{1,2022}} \\ 
-        \frac{m_{21}}{L_{(2,2022)}} & \frac{m_{22}}{L_{2,2022}} & \frac{m_{23}}{L_{2,2022}} \\ 
+        \frac{m_{21}}{L_{2,2022}} & \frac{m_{22}}{L_{2,2022}} & \frac{m_{23}}{L_{2,2022}} \\ 
         \frac{m_{31}}{L_{(3,2022)}} & \frac{m_{32}}{L_{3,2022}} & \frac{m_{33}}{L_{3,2022}} \\  
         \end{pmatrix} \\[10pt]
         
@@ -122,29 +122,32 @@ def UNIT3_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
-    
-    L1, L2, L3, D = st.columns(4)
-    with L1:
-        m11 = st.number_input("$m_{(1)(1)}$", key="m11", step=1)
-        m21 = st.number_input("$m_{(2)(1)}$", key="m21", step=1)
-        m31 = st.number_input("$m_{(3)(1)}$", key="m31", step=1)
-        h1 = st.number_input("$h_{(1)}$", key="h1", step=1)
-    with L2:
-        m12 = st.number_input("$m_{(1)(2)}$", key="m12", step=1)
-        m22 = st.number_input("$m_{(2)(2)}$", key="m22", step=1)
-        m32 = st.number_input("$m_{(3)(2)}$", key="m32", step=1)
-        h2 = st.number_input("$h_{(2)}$", key="h2", step=1)
-    with L3:
-        m13 = st.number_input("$m_{(1)(3)}$", key="m13", step=1)
-        m23 = st.number_input("$m_{(2)(3)}$", key="m23", step=1)
-        m33 = st.number_input("$m_{(3)(3)}$", key="m33", step=1)
-        h3 = st.number_input("$h_{(3)}$", key="h3", step=1)
-    with D:
-        d1 = st.number_input("$d_{(1)}$", key="d1", step=1)
-        d2 = st.number_input("$d_{(2)}$", key="d2", step=1)
-        d3 = st.number_input("$d_{(3)}$", key="d3", step=1)
+    st.sidebar.write('Data collection:')
+    with st.sidebar.expander("$J_1$ Other managers"):
+        L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
+        L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=20)
+    with st.sidebar.expander("$J_2$ Support intellectuals and scientists, technicians and professionals"):
+        L22022 = st.number_input("$L_{2,2022}$", key='L22022', step=1, min_value=20)
+        L22023 = st.number_input("$L_{2,2023}$", key='L22023', step=1, min_value=20)
+    with st.sidebar.expander("$J_3$ Administrative employees"):
+        L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
+        L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
 
+    m11 = L12022 - 1
+    m22 = L22022 - 4
+    m33 = L32022 - 3
+
+    h1 = L12023 - m11
+    m21 = m31 = 0
+    m23 = 1
+    d2 = L22022 - m21 - m22 - m23
+    m32 = 2
+    d3 = 1
+    d1 = m13 = 0
+    m12 = L12022 - m11
+    h2 = L22023 - m12 - m22 - m32
+    h3 = L32023 - m13 - m23 - m33
+   
     if st.button("HR planning"):
         T = np.array([
             [m11/(m11+m12+m13+d1), m12/(m11+m12+m13+d1), m13/(m11+m12+m13+d1)],
