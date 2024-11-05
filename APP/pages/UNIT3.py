@@ -59,25 +59,22 @@ def UNIT3_1():
     with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
         L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=10)
         L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=10)
-    
-    random.seed(1)
-    m11 = L1past - random.sample(range(0, 3),1)[0]
-    m21 = random.sample(range(0, L1past - m11 + 1),1)[0]
-    m31 = L1present - m11 - m21
-    h1 = L1present - m11 - m21 - m31
-    random.seed(2)
-    m22 = L2past - random.sample(range(0, 3),1)[0]
-    m12 = random.sample(range(0, L2past - m22 + 1),1)[0]
-    m32 = L2present - m12 - m22
-    h2 = L2present - m12 - m22 - m32
-    random.seed(3)
-    m33 = L3past - random.sample(range(0, 3),1)[0]
-    m13 = random.sample(range(0, L3past - m33 + 1),1)[0]
-    m23 = L3present - m13 - m33
-    h3 = L3present - m13 - m23 - m33
-    d1 = L1past - m11 - m12 - m13 
-    d2 = L2past - m21 - m22 - m23 
-    d3 = L3past - m31 - m32 - m33 
+
+    def distribute_values(Lpast, Lpresent, seed):
+        random.seed(seed)
+        m1 = random.randint(1, Lpast - 2)  # Random initial distribution for movement within bounds
+        m2 = random.randint(1, Lpast - m1 - 1)
+        m3 = Lpast - m1 - m2  # Ensures that m1 + m2 + m3 + d = Lpast
+        d = random.randint(1, m3)  # Random value for separations
+        m3 -= d
+        assert m1 + m2 + m3 + d == Lpast, "Constraint on Lpast not met"
+        h = Lpresent - (m1 + m2 + m3)
+        h = max(h, 1)  # Ensures h is at least 1
+        return m1, m2, m3, d, h
+        
+    m11, m12, m13, d1, h1 = distribute_values(L1past, L1present, seed=1)
+    m21, m22, m23, d2, h2 = distribute_values(L2past, L2present, seed=2)
+    m31, m32, m33, d3, h3 = distribute_values(L3past, L3present, seed=3)
 
     matrix = np.array([
             [m11, m12, m13, d1],
