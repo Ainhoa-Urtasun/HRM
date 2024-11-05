@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy
 from scipy.linalg import solve
 
 def UNIT3_1():
