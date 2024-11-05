@@ -60,22 +60,22 @@ def UNIT3_1():
         L3past = st.number_input("$L_{(3,-1)}$", key='L3past', step=1, min_value=0)
         L3present = st.number_input("$L_{(3,0)}$", key='L3present', step=1, min_value=0)
     
-    random.seed(42)
-    def generate_m_values(Lpresent):
-        m1 = random.randint(0, Lpresent)
-        m2 = random.randint(0, Lpresent - m1)
-        m3 = Lpresent - m1 - m2  # Ensures m1 + m2 + m3 = Lpresent
-        return m1, m2, m3
+    random.seed(1)
+    m11 = L1past - random.sample(5,1)[0]
+    m21 = random.sammple(L1present - m11,1)[0]
+    m31 = L1present - m11 - m21
+    h1 = L1present - m11 - m21 - m31
+    random.seed(2)
+    m22 = L2past - random.sample(5,1)[0]
+    m12 = random.sammple(L2present - m22,1)[0]
+    m32 = L2present - m12 - m22
+    h2 = L2present - m12 - m22 - m32
+    random.seed(3)
+    m33 = L3past - random.sample(5,1)[0]
+    m13 = random.sammple(L3present - m33,1)[0]
+    m23 = L3present - m13 - m33
+    h3 = L3present - m13 - m23 - m33
 
-    m11, m12, m13 = generate_m_values(L1present)
-    m21, m22, m23 = generate_m_values(L2present)
-    m31, m32, m33 = generate_m_values(L3present)
-    d1 = L1past - (m11 + m12 + m13)
-    d2 = L2past - (m21 + m22 + m23)
-    d3 = L3past - (m31 + m32 + m33)
-    h1 = L1present - (m11 + m21 + m31)
-    h2 = L2present - (m12 + m22 + m32)
-    h3 = L3present - (m13 + m23 + m33)
     
     matrix = np.array([
             [m11, m12, m13, d1],
