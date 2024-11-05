@@ -50,15 +50,15 @@ def UNIT3_1():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
-    with st.sidebar.expander("$J_{(1)}$ Senior management"):
-        L1past = st.number_input("$L_{(1,2022)}$", key='L1past', step=1, min_value=1)
-        L1present = st.number_input("$L_{(1,2923)}$", key='L1present', step=1, min_value=0)
+    with st.sidebar.expander("$J_{(1)}$ Other managers"):
+        L12022 = st.number_input("$L_{(1,2022)}$", key='L12022', step=1, min_value=1)
+        L12023 = st.number_input("$L_{(1,2923)}$", key='L12023', step=1, min_value=0)
     with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
-        L2past = st.number_input("$L_{(2,2022)}$", key='L2past', step=1, min_value=1)
-        L2present = st.number_input("$L_{(2,2023)}$", key='L2present', step=1, min_value=0)
-    with st.sidebar.expander("$J_{(3)}$ Sales representatives and similar"):
-        L3past = st.number_input("$L_{(3,2022)}$", key='L3past', step=1, min_value=1)
-        L3present = st.number_input("$L_{(3,2023)}$", key='L3present', step=1, min_value=0)
+        L22022 = st.number_input("$L_{(2,2022)}$", key='L22022', step=1, min_value=1)
+        L22023 = st.number_input("$L_{(2,2023)}$", key='L22023', step=1, min_value=0)
+    with st.sidebar.expander("$J_{(3)}$ Administrative employees"):
+        L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=1)
+        L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=0)
 
     def distribute_values(L2022, L2023, seed):
         random.seed(seed)
