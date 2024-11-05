@@ -74,14 +74,15 @@ def UNIT3_1():
     h1 = L1present - m11 - m21 - m31
     h2 = L2present - m12 - m22 - m32
     h3 = L3present - m13 - m23- m33
-
-    matrix = np.array(
-        [
+    
+    matrix = np.array([
+            [m11, m12, m13, d1],
+            [m21, m22, m23, d2],
+            [m31, m32, m33, d3]
+        ])
     
     if st.button("Data"):
         st.write(matrix)
-
- 
 
 def UNIT3_2():
     st.write(
