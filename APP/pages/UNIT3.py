@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-pip install sympy
+!pip install sympy
 from sympy import symbols, Eq, solve
 
 def UNIT3_1():
