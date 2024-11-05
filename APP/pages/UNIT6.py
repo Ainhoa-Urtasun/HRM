@@ -99,7 +99,7 @@ def UNIT6_2():
     st.write(
         """
         - **Counterfactual Skill Gap Change (CSGC)**: This represents how much the skill gap of the trained 
-        group of employees would have changed if they hadn’t received training.
+        group of employees would have changed if they hadn’t received the training.
         """
     )
 
