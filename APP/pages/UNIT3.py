@@ -16,7 +16,8 @@ def UNIT3_1():
         '''
     )
 
-        st.latex(r"""
+    st.latex(
+        r"""
         \begin{array}{|c|c|c|c|}
         \hline
         m_{(1)(1)} & m_{(1)(2)} & m_{(1)(3)} & d_{(1)} \\
@@ -28,7 +29,8 @@ def UNIT3_1():
         h_{(1)} & h_{(2)} & h_{(3)} & \\
         \hline
         \end{array}
-        """)
+        """
+    )
 
     st.write(
         '''
