@@ -147,19 +147,14 @@ def UNIT5_2():
             Lpresent = np.sum(Lpresent)
             st.write(f"Employment at your firm at 0: {Lpresent}")
 
-    st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
-    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
-    employees = np.fromstring(employees_input, sep=',')       
-    df = pd.DataFrame({
-        "Year": ["2019", "2020", "2021"],
-        "Employment": employees,
-    })
-    fig, ax = plt.subplots()
-    ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
-    ax.set_xlabel('Year')
-    ax.set_ylabel('Metrics')
-    ax.set_title("Employment Over Time")
-    ax.legend()
+    with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        L2019 = st.number_input("2019", step=1)
+        L2021 = st.number_input("2020", step=1)
+        L2022 = st.number_input("2020", step=1)
+
+    fig = plt.figure(figsize=(5,5),dpi=100)
+    plt.plot(['2019','2020','2021'],[L2019,L2020,L2021],color='red')
+    plt.title('Employment over time')
     st.pyplot(fig)
 
 def UNIT5_3():
