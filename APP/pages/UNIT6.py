@@ -117,7 +117,23 @@ def UNIT6_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+    st.write('From [SABI](https://www.unavarra.es/biblioteca?languageId=1) and for your firm, visualize employment:')
+    
+    employees_input = st.sidebar.text_input("Number of Employees (comma-separated for 2019, 2020, 2021):", "1,1,1")
+    employees = np.fromstring(employees_input, sep=',')
+        
+    df = pd.DataFrame({
+        "Year": ["2019", "2020", "2021"],
+        "Employment": employees,
+    })
 
+    fig, ax = plt.subplots()
+    ax.plot(["2019", "2020", "2021"], employees, marker='x', label='Employment')    
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Metrics')
+    ax.set_title("Employment Over Time")
+    ax.legend()
+    st.pyplot(fig)
   
 st.set_page_config(page_title="UNIT6", layout="wide")
 
