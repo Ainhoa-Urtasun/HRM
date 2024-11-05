@@ -23,7 +23,7 @@ def UNIT3_1():
         \hline
         m_{11} & m_{12} & m_{13} & d_{1} \\
         \hline
-        m_{21} & m_{(2)(2)} & m_{23} & d_{3} \\
+        m_{21} & m_{22} & m_{23} & d_{3} \\
         \hline
         m_{31} & m_{32} & s_{33} & d_{3} \\
         \hline
@@ -50,15 +50,15 @@ def UNIT3_1():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
-    with st.sidebar.expander("$J_{(1)}$ Other managers"):
-        L12022 = st.number_input("$L_{(1,2022)}$", key='L12022', step=1, min_value=20)
-        L12023 = st.number_input("$L_{(1,2023)}$", key='L12023', step=1, min_value=20)
-    with st.sidebar.expander("$J_{(2)}$ Support intellectuals and scientists, technicians and professionals"):
-        L22022 = st.number_input("$L_{(2,2022)}$", key='L22022', step=1, min_value=20)
-        L22023 = st.number_input("$L_{(2,2023)}$", key='L22023', step=1, min_value=20)
-    with st.sidebar.expander("$J_{(3)}$ Administrative employees"):
-        L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
-        L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
+    with st.sidebar.expander("$J_1$ Other managers"):
+        L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
+        L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=20)
+    with st.sidebar.expander("$J_2$ Support intellectuals and scientists, technicians and professionals"):
+        L22022 = st.number_input("$L_{2,2022}$", key='L22022', step=1, min_value=20)
+        L22023 = st.number_input("$L_{2,2023}$", key='L22023', step=1, min_value=20)
+    with st.sidebar.expander("$J_3$ Administrative employees"):
+        L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
+        L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
 
     m11 = L12022 - 1
     m22 = L22022 - 4
