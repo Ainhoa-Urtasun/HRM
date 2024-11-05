@@ -67,7 +67,7 @@ def UNIT1_3():
     - $e_i$ effort employee $i$ exerts at the firm
     - $Q$ is the output the firm produces
     - $L$ number of employees at the firm
-    - $J_{(k)}$ jobs within the firm:
+    - Jobs within the firm:
         - $J_{(1)}$ Senior management
         - $J_{(2)}$ Support intellectuals and scientists, technicians and professionals
         - $J_{(3)}$ Sales representative and similar
