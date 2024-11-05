@@ -117,11 +117,10 @@ def UNIT6_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Training assessment:')
-    with st.sidebar.expander("Trained Inputs"):
+    with st.sidebar.expander("Trained employees"):
         gtbefore = st.number_input("$g_{-1}^{trained}$", key="gt0", step=1)
         gtafter = st.number_input("$g_{+1}^{trained}$", key="gt1", step=1)
-    with st.sidebar.expander("Non-trained Inputs"):
+    with st.sidebar.expander("Non-trained employees"):
         gnbefore = st.number_input("$g_{-1}^{non-trained}$", key="gn0", step=1)
         gnafter = st.number_input("$g_{+1}^{non-trained}$", key="gn1", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
