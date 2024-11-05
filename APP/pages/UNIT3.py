@@ -81,6 +81,10 @@ def UNIT3_1():
     
         if st.button("Data"):
             st.write(matrix)
+    except ValueError as e:
+        st.error("Error: Please ensure the 'Lpast' values are greater than or equal to 3.")
+    except NameError as e:
+        st.error("Error: Please check all required inputs are filled correctly.")
 
 def UNIT3_2():
     st.write(
