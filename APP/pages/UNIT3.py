@@ -61,15 +61,17 @@ def UNIT3_1():
         L3present = st.number_input("$L_{(3,0)}$",key='L3present',step=1,min_value=3)
 
     random.seed(42)
-    row1 = sorted(random.sample(range(1, L1past), 3))
-    m11, m12, m13 = row1[0], row1[1] - row1[0], row1[2] - row1[1]
-    d1 = L1past - row1[2]
-    row2 = sorted(random.sample(range(1, L2past), 3))
-    m21, m22, m23 = row2[0], row2[1] - row2[0], row2[2] - row2[1]
-    d2 = L2past - row2[2]
-    row3 = sorted(random.sample(range(1, L3past), 3))
-    m31, m32, m33 = row3[0], row3[1] - row3[0], row3[2] - row3[1]
-    d3 = L3past - row3[2]
+    m11 = random.sample(range(0,L1past),1))
+    m12 = random.sample(range(0,L1past-m11),1))
+    m13 = random.sample(range(0,L1past-m11-m12),1))
+    d1 = L1past - m11 - m12 - m13
+    m21 = random.sample(range(0,L2past),1))
+    m22 = random.sample(range(0,L2past-m21),1))
+    m23 = random.sample(range(0,L2past-m21-m22),1))
+    d2 = L2past - m21 - m22 - m23
+    m31 = random.sample(range(0,L3past),1))
+    m32 = random.sample(range(0,L3past-m31),1))
+    m33 = random.sample(range(0,L3past-m31-m32),1))
     h1 = L1present - m11 - m21 - m31
     h2 = L2present - m12 - m22 - m32
     h3 = L3present - m13 - m23 - m33
