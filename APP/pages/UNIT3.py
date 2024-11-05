@@ -48,62 +48,40 @@ def UNIT3_1():
     st.latex(r'L_{(k,0)} = m_{(1)(k)} + m_{(2)(k)} + m_{(3)(k)} + h_{(k)}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.write('Fill in data for the 3 jobs at your firm (use made-up data):')
-    
-    L1, L2, L3, D = st.columns(4)
-    with L1:
-        m11 = st.number_input("$m_{(1)(1)}$", key="m11", step=1)
-        m21 = st.number_input("$m_{(2)(1)}$", key="m21", step=1)
-        m31 = st.number_input("$m_{(3)(1)}$", key="m31", step=1)
-        h1 = st.number_input("$h_{(1)}$", key="h1", step=1)
-    with L2:
-        m12 = st.number_input("$m_{(1)(2)}$", key="m12", step=1)
-        m22 = st.number_input("$m_{(2)(2)}$", key="m22", step=1)
-        m32 = st.number_input("$m_{(3)(2)}$", key="m32", step=1)
-        h2 = st.number_input("$h_{(2)}$", key="h2", step=1)
-    with L3:
-        m13 = st.number_input("$m_{(1)(3)}$", key="m13", step=1)
-        m23 = st.number_input("$m_{(2)(3)}$", key="m23", step=1)
-        m33 = st.number_input("$m_{(3)(3)}$", key="m33", step=1)
-        h3 = st.number_input("$h_{(3)}$", key="h3", step=1)
-    with D:
-        d1 = st.number_input("$d_{(1)}$", key="d1", step=1)
-        d2 = st.number_input("$d_{(2)}$", key="d2", step=1)
-        d3 = st.number_input("$d_{(3)}$", key="d3", step=1)
+    st.sidebar.write('Data collection:')
+    with st.sidebar.expander("$J_{(1)} Senior management$"):
+        L1past = st.number_input("$L_{(1,-1)}$",key='L1past',step=1.0)
+        Lpresent = st.number_input("$L_{(1,0)}$",key='L1present',step=1.0)
+    with st.sidebar.expander("$J_{(2)} Support intellectuals and scientists, technicians and professionals$"):
+        L2past = st.number_input("$L_{(2,-1)}$",key='L2past',step=1.0)
+        L2present = st.number_input("$L_{(2,0)}$",key='L2present',step=1.0)
 
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        if st.button("$L_{(1,-1)}$"):
-            L1past = np.array([m11, m12, m13, d1])
-            L1past = np.sum(L1past)
-            st.write(f"Employment in job 1 at -1: {L1past}")
-    with col2:
-        if st.button("$L_{(2,-1)}$"):
-            L2past = np.array([m21, m22, m23, d2])
-            L2past = np.sum(L2past)
-            st.write(f"Employment in job 2 at -1: {L2past}")
-    with col3:
-        if st.button("$L_{(3,-1)}$"):
-            L3past = np.array([m31, m32, m33, d3])
-            L3past = np.sum(L3past)
-            st.write(f"Employment in job 3 at -1: {L3past}")
+    row1 = sorted(random.sample(range(1, L1past), 3))
+    m11 = row1[0]
+    m12 = row1[1] - row1[0]
+    m13 = row1[2] - row1[1]
+    d1 = L1past - row1[2]
+    row2 = sorted(random.sample(range(1, L2past), 3))
+    m21 = row2[0]
+    m22 = row2[1] - row2[0]
+    m23 = row2[2] - row2[1]
+    d2 = L2past - row2[2]
+    row3 = sorted(random.sample(range(1, L3past), 3))
+    m31 = row3[0]
+    m32 = row3[1] - row3[0]
+    m33 = row3[2] - row3[1]
+    d2 = L2past - row2[2]
+    h1 = L1present - m11 - m21 - m31
+    h2 = L2present - m12 - m22 - m32
+    h3 = L3present - m13 - m23- m33
+
+    matrix = np.array(
+        [
     
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        if st.button("$L_{(1,0)}$"):
-            L1present = np.array([m11, m21, m23, h1])
-            L1present = np.sum(L1present)
-            st.write(f"Employment in job 1 at 0: {L1present}")
-    with col2:
-        if st.button("$L_{(2,0)}$"):
-            L2present = np.array([m12, m22, m32, h2])
-            L2present = np.sum(L2present)
-            st.write(f"Employment in job 2 at 0: {L2present}")
-    with col3:
-        if st.button("$L_{(3,0)}$"):
-            L3present = np.array([m13, m23, m33, h3])
-            L3present = np.sum(L3present)
-            st.write(f"Employment in job 3 at 0: {L3present}")
+    if st.button("Data"):
+        st.write(matrix)
+
+ 
 
 def UNIT3_2():
     st.write(
@@ -219,7 +197,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Data for transition matrix construction",'Making predictions using the transition matrix'],  # required
+    options=["Data collection",'Transition matrix'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -227,8 +205,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Data for transition matrix construction":
+if selected == "Data collection":
     UNIT3_1()
-elif selected == 'Making predictions using the transition matrix':
+elif selected == 'Transition matrix':
     UNIT3_2()
 
