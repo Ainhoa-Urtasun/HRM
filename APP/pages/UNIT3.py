@@ -76,6 +76,12 @@ def UNIT3_1():
     variable_names = ['m11', 'm12', 'm13', 'm21', 'm22', 'm23', 'm31', 'm32', 'm33', 'd1', 'd2', 'd3', 'h1', 'h2', 'h3']
     solution_dict = dict(zip(variable_names, solution))
 
+    m11, m12, m13 = solution_dict['m11'], solution_dict['m12'], solution_dict['m13']
+    m21, m22, m23 = solution_dict['m21'], solution_dict['m22'], solution_dict['m23']
+    m31, m32, m33 = solution_dict['m31'], solution_dict['m32'], solution_dict['m33']
+    d1, d2, d3 = solution_dict['d1'], solution_dict['d2'], solution_dict['d3']
+    h1, h2, h3 = solution_dict['h1'], solution_dict['h2'], solution_dict['h3']
+
     matrix = np.array([
             [m11, m12, m13, d1],
             [m21, m22, m23, d2],
