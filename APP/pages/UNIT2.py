@@ -113,7 +113,7 @@ def UNIT2_2():
     )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.sidebar.radio("Select a job of your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
+    st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("$t_1$ Intellectual"):
         s11 = st.number_input("$s_{11(k)}$ Demonstrating willigness to learn",key='s11',step=1.0)
@@ -149,7 +149,7 @@ def UNIT2_2():
         ])
     
     if st.button("$J_{(k)}$"):
-        st.table(matrix)
+        st.write(matrix)
 
     if st.button("Skill requirements for the job"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
