@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import random
 
 def UNIT3_1():
     st.write(
@@ -59,28 +60,54 @@ def UNIT3_1():
         L32022 = st.number_input("$L_{(3,2022)}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{(3,2023)}$", key='L32023', step=1, min_value=20)
 
-    A = np.array([
-    # Row constraints for 2022
-    [1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],  # Job 1, 2022
-    [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0],  # Job 2, 2022
-    [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0],  # Job 3, 2022
-    
-    # Column constraints for 2023
-    [1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],  # Job 1, 2023
-    [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],  # Job 2, 2023
-    [0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1]   # Job 3, 2023
-    ])
+    def initialize_matrix():
+        m11 = random.randint(0, L12022)
+        m12 = random.randint(0, L12022 - m11)
+        m13 = L12022 - m11 - m12
+        d1 = L12022 - (m11 + m12 + m13)
 
-    B = np.array([L12022,L22022,L32022,L12023,L22023,L32023])
-    solution, residuals, rank, s = np.linalg.lstsq(A, B, rcond=None)
-    variable_names = ['m11', 'm12', 'm13', 'm21', 'm22', 'm23', 'm31', 'm32', 'm33', 'd1', 'd2', 'd3', 'h1', 'h2', 'h3']
-    solution_dict = dict(zip(variable_names, solution))
+        m21 = random.randint(0, L22022)
+        m22 = random.randint(0, L22022 - m21)
+        m23 = L22022 - m21 - m22
+        d2 = L22022 - (m21 + m22 + m23)
 
-    m11, m12, m13 = solution_dict['m11'], solution_dict['m12'], solution_dict['m13']
-    m21, m22, m23 = solution_dict['m21'], solution_dict['m22'], solution_dict['m23']
-    m31, m32, m33 = solution_dict['m31'], solution_dict['m32'], solution_dict['m33']
-    d1, d2, d3 = solution_dict['d1'], solution_dict['d2'], solution_dict['d3']
-    h1, h2, h3 = solution_dict['h1'], solution_dict['h2'], solution_dict['h3']
+        m31 = random.randint(0, L32022)
+        m32 = random.randint(0, L32022 - m31)
+        m33 = L32022 - m31 - m32
+        d3 = L32022 - (m31 + m32 + m33)
+
+        h1 = L12023 - (m11 + m21 + m31)
+        h2 = L22023 - (m12 + m22 + m32)
+        h3 = L32023 - (m13 + m23 + m33)
+
+        return np.array([
+            [m11, m12, m13, d1],
+            [m21, m22, m23, d2],
+            [m31, m32, m33, d3],
+            [h1, h2, h3, np.nan]  # Use np.nan for missing bottom-right cell
+        ])
+
+    def is_valid(matrix):
+        row_sums_2022 = matrix[:3, :3].sum(axis=1) + matrix[:3, 3]  # Row sums for 2022 with separations
+        col_sums_2023 = matrix[:3, :3].sum(axis=0) + matrix[3, :3]  # Column sums for 2023 with hires
+
+        return (np.array([L12022, L22022, L32022]) == row_sums_2022).all() and \
+           (np.array([L12023, L22023, L32023]) == col_sums_2023).all()
+
+    attempts = 0
+    solution_found = False
+    while not solution_found and attempts < 10000:  # Limiting attempts to avoid infinite loops
+        matrix = initialize_matrix()
+        if is_valid(matrix):
+            solution_found = True
+        attempts += 1
+
+    if solution_found:
+        print("Solution found in", attempts, "attempts:")
+        print(matrix)
+    else:
+        print("No solution found within 10,000 attempts.")
+
 
     matrix = np.array([
             [m11, m12, m13, d1],
