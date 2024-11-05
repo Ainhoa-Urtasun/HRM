@@ -153,7 +153,7 @@ def UNIT5_2():
         L2022 = st.number_input("2022", step=1)
 
     fig = plt.figure(figsize=(5,5),dpi=100)
-    plt.plot(['2019','2020','2021'],[L2019,L2020,L2021],color='red')
+    plt.plot(['2020','2021','2022'],[L2020,L2021,L2022],color='red')
     plt.title('Employment over time')
     st.pyplot(fig)
 
