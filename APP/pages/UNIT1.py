@@ -97,8 +97,15 @@ def UNIT1_3():
 
     st.write(
         '''
-        This output elascticity indicates the percentage change in the output
+        This output elasticity indicates the percentage change in the output
         the firm produces when employee $i$ exerts 1% more effort.
+
+        In labor economics, a key distinction exists between the extensive and intensive margins. 
+        The extensive margin addresses participation in work activities, such as whether employees attend, 
+        take sick days, or work overtime. The intensive margin, however, focuses on the level of effort 
+        and productivity during those activities, examining how employees perform when they are working. 
+        In this HRM course, we will primarily explore the intensive margin—meaning 
+        the effort employees exert on the job—and its relationship to productivity, motivation, and performance management.
         '''
     )
 
