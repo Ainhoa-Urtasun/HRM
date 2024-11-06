@@ -12,8 +12,8 @@ def UNIT3_1():
         The primary goal is to anticipate potential employee shortages or surpluses. Latest available data 
         from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
 
-        - $L_{k,2022}$ The number of employees in job $J_k$ at year 2022
-        - $L_{k,2023}$ The number of employees in job $J_k$ at year 2023
+        - $L_{k,2022}$ The number of employees in job $J_k$ at the end of 2022
+        - $L_{k,2023}$ The number of employees in job $J_k$ at the end of 2023
         '''
     )
 
@@ -35,10 +35,10 @@ def UNIT3_1():
 
     st.write(
         '''
-        - $m_{ij}$ represents employees who moved from $J_i$ to $J_j$ from 2022 to 2023
+        - $m_{ij}$ represents employees who moved from $J_i$ to $J_j$ during 2023
         - $h_{k}$ represents new hires or number of employees who have been recruited and started working in $J_i$ 
-        from 2022 to 2023
-        - $d$ represents departures or number of employees who have left the firm from 2022 to 2023,
+        during 2023
+        - $d$ represents departures or number of employees who have left the firm during 2023,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
 
         The table above should meet the following restrictions:
