@@ -81,7 +81,7 @@ def UNIT3_1():
         [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
         ])
         
-    if st.button("Data"):
+    if st.button("Data collection"):
         st.write(matrix)
 
 def UNIT3_2():
