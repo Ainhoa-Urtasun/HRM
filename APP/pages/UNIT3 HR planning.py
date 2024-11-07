@@ -203,7 +203,7 @@ st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Data collection",'Transition matrix'],  # required
+    options=["Data collection",'Forecasting the availability of employees using the transition matrix'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -213,6 +213,6 @@ selected = option_menu(
 # Call the selected section
 if selected == "Data collection":
     UNIT3_1()
-elif selected == 'Transition matrix':
+elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
 
