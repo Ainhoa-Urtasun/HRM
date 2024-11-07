@@ -49,8 +49,8 @@ def UNIT1_2():
         - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, job roles, job evaluation, and skill requirements for each role.
         - **HR Planning** (UNIT 3): Focuses on forecasting employee availability using tools such as the transition matrix.
         - **Employee Performance Evaluation**: Addresses the intensive margin.
-        - **Recruitment**: Discusses employment, asymmetric information, adverse selection, and how to mitigate it.
-        - **On-the-Job Training**: to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
+        - **Recruitment**: Discusses employment, asymmetric information, adverse selection, and how to mitage it.
+        - **On-the-Job Training**: Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
         - **Compensation**: Explores pay-for-performance models and employee-ownership options.
         - **Career Development**: Introduces the tournament model as a framework for employee growth and progression.
         
