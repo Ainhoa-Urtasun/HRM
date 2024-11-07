@@ -11,7 +11,7 @@ def UNIT4_1():
         Performance evaluation assesses how well employees perform within the firm. 
         This can be done in two ways:
         - **On average**
-        - **Individually**, which is challenging but also more meaningful. 
+        - **Individually**, which is challenging but also more meaningful 
         
         Performance evaluation also distinguishes between:
         - **The extensive margin** addresses employee participation in tasks. Examples of extensive margin
@@ -124,12 +124,6 @@ def UNIT4_4():
         '''
     )
 
-    st.latex(
-        r"""
-        g_i = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
-        """
-    )
-
     st.write(
         '''
         We can analyze the properties of the cost of effort function
@@ -185,25 +179,11 @@ def UNIT4_4():
         '''
     )
 
-def UNIT4_5():
-    st.write(
-        '''
-        Another proxy to evaluate the effort or contribution an employee makes to the firm is by recording their
-        absenteeism. In a month, we can calculate the absenteeism of a particular employee as follows:
-        '''
-    )
-
-    st.latex(
-        r'''
-        A = \frac{\text{Days off}}{\text{Working days}}
-        '''
-    )
-
 st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Classification','Output elasticity of effort','Skill gap','Cost of effort','Abseteeism'],  # required
+    options=['Classification','Output elasticity of effort','Skill gap','Cost of effort'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -219,5 +199,3 @@ elif selected == "Skill gap":
     UNIT4_3()
 elif selected == "Cost of effort":
     UNIT4_4()
-elif selected == "Abseteeism":
-    UNIT4_5()
