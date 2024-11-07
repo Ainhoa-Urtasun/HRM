@@ -46,7 +46,7 @@ def UNIT1_2():
                                                                                                     
     st.write(
         '''
-        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, job roles, job evaluation, and skill requirements for each role.
+        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
         - **HR Planning** (UNIT 3): Focuses on forecasting employee availability using tools such as the transition matrix.
         - **Employee Performance Evaluation**: Addresses the intensive margin.
         - **Recruitment**: Discusses employment, asymmetric information, adverse selection, and how to mitage it.
