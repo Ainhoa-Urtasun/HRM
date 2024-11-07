@@ -19,11 +19,14 @@ def UNIT8_1():
     st.write(
         '''
         where:
-        - $w$ represents the rate of pay per unit of effort,
-        - $e_i$ is the effort exerted by the employee,
-        - $C(e_i)$ is the cost of effort, typically represented by $C(e_i) = d_i e_i^2$, where $d_i$ is a factor that increases with the difficulty of effort for the employee.
-
-        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$ such that the derivative of their utility with respect to effort is zero. 
+        - $w$ represents the rate of pay per unit of effort
+        - $e_i$ is the effort exerted by the employee
+        - $C(e_i)$ is the cost of effort, represented by $C(e_i) = g_i e_i^2$, where $g_i$ is the skill gap of employee
+        $i$ calculated as the Euclidean distance between $s_k$, the skill requirements for the job employee $i$ performs,
+        and $s_i$, the skill profile of employee $i$
+        
+        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$ 
+        such that the derivative of their utility with respect to effort is zero. 
         This derivative gives us the employee's **supply of effort**.
 
         Taking the derivative of the utility function with respect to effort $e_i$:
