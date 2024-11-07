@@ -152,7 +152,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Classification','Output elasticity of effort','Skill gap','Cost of effort','Abseteeism'],  # required
+    options=['Classification','Output elasticity of effort','Skill gap','Cost of effort','Abseteeism'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
