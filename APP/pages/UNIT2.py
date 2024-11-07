@@ -166,9 +166,18 @@ def UNIT2_3():
         '''
     )
 
-    st.latex(r"""
-    g_i = \sqrt{(\|s_{1k}\| - s_{1i})^2 + (\|s_{2k}\| - s_{2i})^2 + (\|s_{3k}\| - s_{3i})^2 + (\|s_{4k}\| - s_{4i})^2}
-    """)
+    st.latex(
+        r"""
+        g_i = \sqrt{(\|s_{1k}\| - s_{1i})^2 + (\|s_{2k}\| - s_{2i})^2 + (\|s_{3k}\| - s_{3i})^2 + (\|s_{4k}\| - s_{4i})^2}
+        """
+    )
+
+      st.write(
+        '''
+        As a performance evaluation metric, the **skill gap** is useful for decisions on
+        recruitment, training, and compensation.
+        '''
+    )
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
