@@ -43,11 +43,10 @@ def UNIT2_2():
 
     st.write(
         '''
-        **Job evaluation** is the process of assessing the relative worth of jobs within a firm.
-        By evaluating jobs, firms can establish equitable compensation structures and identify training 
-        and development needs. 
+        **Job evaluation** assesses the relative worth of jobs within a firm, helping in job design, 
+        setting recruitment standards, establishing fair compensation, and identifying training needs. 
 
-        To evaluate a job, we represent the job as a **task-skill matrix**, where each column corresponds 
+        The **task-skill matrix** is a tool for job evaluation, where each column corresponds 
         to one of the five core tasks, and each row represents the extent to which one the four skills is required
         to perform each task within the job:
         '''
@@ -159,7 +158,7 @@ def UNIT2_2():
 def UNIT2_3():
     st.write(
         '''
-        The difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design, 
+        The skill gap between the skill requirements for a job $s_k$difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design, 
         helping the firm decide how to allocate tasks across jobs. This difference can be measured 
         by calculating the Euclidean distance of the skill-vectors for each task:
         '''
@@ -183,7 +182,7 @@ def UNIT2_3():
         s3j = st.number_input("$s_{3j(k)}$ Working efficiently",key='s3j',step=1.0)
         s4j = st.number_input("$s_{4j(k)}$ Taking a proactive approach",key='s4j',step=1.0)
 
-    if st.button("$d(t_i,t_j)$ Task difference"):
+    if st.button("Skill gap"):
         ti = np.array([
             [s1i],
             [s2i],
@@ -204,7 +203,7 @@ st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs",'Job evaluation','Task difference'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation','Skill gap'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -216,7 +215,7 @@ if selected == "Tasks, skills, and jobs":
     UNIT2_1()
 elif selected == "Job evaluation":
     UNIT2_2()
-elif selected == "Task difference":
+elif selected == "Skill gap":
     UNIT2_3()
 
 
