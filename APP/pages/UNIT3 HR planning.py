@@ -164,40 +164,6 @@ def UNIT3_2():
         for prediction in predictions:
             st.write(prediction[0])
 
-    st.write(
-    """
-    ### Strategies for Predicted Skill Shortage:
-    
-    1. **Upskilling and Reskilling Employees**: Provide training programs to improve the skills of existing employees, focusing on critical areas needed for future roles.
-    
-    2. **Internal Mobility and Career Development**: Encourage internal transfers to roles that are in demand, offering clear career development paths and incentives.
-    
-    3. **External Recruitment**: Recruit externally to fill skill gaps, targeting skilled candidates through job fairs, headhunting, and specialized recruitment.
-    
-    4. **Collaboration with Educational Institutions**: Partner with universities and vocational schools to ensure a future pipeline of skilled graduates through internships and apprenticeship programs.
-    
-    5. **Use of Technology and Automation**: Automate tasks, especially in routine or manual work, to reduce reliance on human labor where skills are hard to find.
-    
-    6. **Improving Compensation and Benefits**: Offer competitive salaries and benefits to attract and retain skilled employees.
-    
-    ---
-    
-    ### Strategies for Predicted Skill Surplus:
-    
-    1. **Workforce Reduction Plans**: Implement downsizing strategies such as voluntary early retirement or severance packages for employees in surplus roles.
-    
-    2. **Redeployment**: Reassign employees to departments or roles with shortages, potentially offering additional training to align skills.
-    
-    3. **Flexible Work Arrangements**: Introduce part-time work, job sharing, or temporary layoffs to manage surplus labor while retaining valuable employees.
-    
-    4. **Cross-training Programs**: Offer cross-training to employees, enabling them to take on new tasks in other areas of the business, reducing surplus labor.
-    
-    5. **Strategic Use of Temporary Contracts**: Use temporary or project-based contracts for future hires to prevent long-term surplus labor.
-    
-    6. **Attrition Management**: Rely on natural attrition by not replacing employees who leave voluntarily, balancing the workforce over time.
-    """
-    )
-
 st.set_page_config(page_title="UNIT3", layout="wide")
 
 selected = option_menu(
