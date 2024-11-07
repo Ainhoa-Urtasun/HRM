@@ -121,7 +121,7 @@ def UNIT1_4():
         - $K$ is depreciation
 
         From the Income Statement of a firm, we can obtain two critical indicators of employee performance 
-        at the intensive margin:****
+        at the intensive margin:
         '''
     )
 
