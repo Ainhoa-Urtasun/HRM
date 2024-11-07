@@ -160,8 +160,9 @@ def UNIT2_2():
 def UNIT2_3():
     st.write(
         '''
-        The Euclidean distance between the **job skill requirements** $s_k$ and an **employee skill profile** $s_i$,
-        provides a useful measurement of the **skill gap ** between the job and the employee:
+        The **skill gap** between an employee and the job they are performing can be 
+        measured by he Euclidean distance between the **job skill requirements** $s_k$ 
+        and the **employee skill profile** $s_i = (s_{i1}, s_{i2}, s_{i3}, s_{i4})$:
         '''
     )
 
