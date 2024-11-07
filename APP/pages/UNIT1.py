@@ -43,19 +43,16 @@ def UNIT1_1():
     )
 
 def UNIT1_2():
-                                                                                                      
+                                                                                                    
     st.write(
-        '''
-        - **Job analysis and design**: tasks, skills, job, job evaluation, and job skill requirements
-        - **HR planning**: forecasting the availability of employees, transition matrix
-        - **Employee performance evaluation**: the extensive and intensive margins. 
-        The extensive margin addresses employee participation in tasks, such as attendance and absenteeism, while the 
-        intensive margin focuses on the level of effort and productivity during tasks, 
-        assessing how employees perform while working
-        - **Recruitment**: employment, asymmetric information, adverse selection, skill gap
-        - **On-the-job training**: skill gap, difference-in-differences
-        - **Compensation**: pay-for-performance, employee-ownership
-        - **Career development**: tournament model
+        """
+        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, job roles, job evaluation, and skill requirements for each role.
+        - **HR Planning** (UNIT 3): Focuses on forecasting employee availability using tools such as the transition matrix.
+        - **Employee Performance Evaluation**: Addresses the intensive margin.
+        - **Recruitment**: Discusses employment, asymmetric information, adverse selection, and how to mitigate it.
+        - **On-the-Job Training**: to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
+        - **Compensation**: Explores pay-for-performance models and employee-ownership options.
+        - **Career Development**: Introduces the tournament model as a framework for employee growth and progression.
         
         These practices are designed to maximize employee engagement, productivity, and job satisfaction.
         '''
