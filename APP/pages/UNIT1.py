@@ -6,99 +6,96 @@ import numpy as np
 
 def UNIT1_1():
 
-    st.write(
-    '''
-    This course takes an analytical approach to human resource management (HRM) practices, including:
-
-    - **Job analysis and design**
-    - **Human resource (HR) planning**
-    - **Recruitment**
-    - **Performance evaluation**
-    - **Training**
-    - **Career development**
-    - **Compensation**
-    
-    These practices are designed to maximize employee engagement, productivity, and job satisfaction.
-    '''
-    )
-
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
 
     st.write(
-    '''
-    - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
-    Development of Vocational Training)
-    - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
-    '''
+        '''
+        - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
+        Development of Vocational Training)
+        - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
+        '''
+    )
+
+    st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)', placeholder='Enter the name of your industry and its economic activities')
+    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above; (2) **Employees' segmentation in Spain** Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees. At least 20 for each in 2022 and the same or more in 2023",placeholder='Enter the name of your firm')
+                                                                                                   
+    st.write(
+        '''
+        Any firm, regardless of its size, structure, or legal form of ownership, 
+        produces an output (good or service) and performs **economic activities** 
+        to achieve this. Firms are classified into sectors (industries) based on the output 
+        they produce and the economic activities they perform. 
+
+        To perform these economic activities, firms decide which technologies to adopt
+        and which jobs to post in the labor market.
+    
+        A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
+        jobs are classified into occupations based on the tasks they entail. 
+        A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.
+
+        There are standard classifications for firms into sectors, 
+        such as NACE rev. 2, the European Classification of Economic Activities.
+        There are also standard classificationf for jobs into occupations, 
+        such as ISCO that stands for International Standard Classification 
+        of Occupations.
+        '''
     )
 
 def UNIT1_2():
-
+                                                                                                      
     st.write(
-    '''
-    Any firm, regardless of its size, structure, or legal form of ownership, 
-    produces an output (good or service) and performs **economic activities** 
-    to achieve this. Firms are classified into sectors (industries) based on the output 
-    they produce and the economic activities they perform. 
-
-    To perform these economic activities, firms decide which technologies to adopt
-    and which jobs to post in the labor market.
-    
-    A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
-    jobs are classified into occupations based on the tasks they entail. 
-    A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.
-
-    There are standard classifications for firms into sectors, 
-    such as NACE rev. 2, the European Classification of Economic Activities.
-    There are also standard classificationf for jobs into occupations, 
-    such as ISCO that stands for International Standard Classification 
-    of Occupations.
-    '''
+        '''
+        - **Job analysis and design**: tasks, skills, job, job evaluation, and job skill requirements
+        - **HR planning**: forecasting the availability of employees, transition matrix
+        - **Employee performance evaluation**: the extensive and intensive margins. 
+        The extensive margin addresses employee participation in tasks, such as attendance and absenteeism, while the 
+        intensive margin focuses on the level of effort and productivity during tasks, 
+        assessing how employees perform while working
+        - **Recruitment**: employment, asymmetric information, adverse selection, skill gap
+        - **On-the-job training**: skill gap, difference-in-differences
+        - **Compensation**: pay-for-performance, employee-ownership
+        - **Career development**: tournament model
+        
+        These practices are designed to maximize employee engagement, productivity, and job satisfaction.
+        '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics</h3>", unsafe_allow_html=True)
-    st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)', placeholder='Enter the name of your industry and its economic activities')
-    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above; (2) **Employees' segmentation in Spain** Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees. At least 20 for each in 2022 and the same or more in 2023",placeholder='Enter the name of your firm')
-    
 def UNIT1_3():
     st.write(
-    ''' 
-    - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
-    - $e_i$ effort employee $i$ exerts at the firm
-    - $Q$ is the output the firm produces
-    - $L$ number of employees at the firm
-    - Jobs within the firm:
-        - $J_1$ Other managers
-        - $J_2$ Support intellectuals and scientists, technicians and professionals
-        - $J_3$ Administrative employees
-    - Tasks to be carried out by employees at the firm:
-        - $t_1$: Intellectual
-        - $t_2$: Physical
-        - $t_3$: Social
-        - $t_4$: Use of methods
-        - $t_5$: Use of technology
-    - Skills to be possessed by employees at the firm:
-        - $s_1$: Demonstrating willigness to learn
-        - $s_2$: Collaborating in teams and networks
-        - $s_3$: Working efficiently
-        - $s_4$: Taking a proactive approach  
-    '''
+        ''' 
+        - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
+        - $e_i$ effort employee $i$ exerts at the firm
+        - $Q$ is the output the firm produces
+        - $L$ number of employees at the firm
+        - Jobs within the firm:
+            - $J_1$ Other managers
+            - $J_2$ Support intellectuals and scientists, technicians and professionals
+            - $J_3$ Administrative employees
+        - Tasks to be carried out by employees at the firm:
+            - $t_1$: Intellectual
+            - $t_2$: Physical
+            - $t_3$: Social
+            - $t_4$: Use of methods
+            - $t_5$: Use of technology
+        - Skills to be possessed by employees at the firm:
+            - $s_1$: Demonstrating willigness to learn
+            - $s_2$: Collaborating in teams and networks
+            - $s_3$: Working efficiently
+            - $s_4$: Taking a proactive approach  
+        '''
     )
 
     st.write(
         '''
-    HRM can focus on the intensive or the extensive margin. 
-    The extensive margin addresses employee participation in tasks, 
-    such as attendance and absenteeism, while the intensive margin focuses 
-    on the level of effort and productivity during tasks, 
-    assessing how employees perform while working. 
-    Output elasticity of effort is an example of a measure on the intensive margin:
+        Output elasticity of effort is an example of a measure on the intensive margin:
         '''
     )
 
-    st.latex(r'''
-    \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
-    ''')
+    st.latex(
+        r'''
+        \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
+        '''
+    )
 
     st.write(
         '''
@@ -157,7 +154,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Human Resource Management (HRM)','HRM in context','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
+    options=['HRM analytics','HRM practices','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -165,9 +162,9 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'Human Resource Management (HRM)':
+if selected == 'HRM analytics':
     UNIT1_1()
-elif selected == 'HRM in context':
+elif selected == 'HRM practices':
     UNIT1_2()
 elif selected == 'Notation for the course':
     UNIT1_3()
