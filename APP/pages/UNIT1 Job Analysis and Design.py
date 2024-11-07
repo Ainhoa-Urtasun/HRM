@@ -85,7 +85,10 @@ def UNIT1_3():
 
     st.write(
         '''
-        Output elasticity of effort is an example of a measure on the intensive margin:
+        There are two ways to evaluate employee performance: through the extensive margin or the intensive margin. 
+        The extensive margin focuses on participation in tasks, such as attendance and absenteeism. 
+        In contrast, the intensive margin evaluates the level of effort and productivity during tasks, 
+        assessing how employees perform while working. An example of an intensive margin measure is the output elasticity of effort:
         '''
     )
 
