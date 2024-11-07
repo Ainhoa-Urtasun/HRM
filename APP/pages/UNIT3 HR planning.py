@@ -8,8 +8,7 @@ import random
 def UNIT3_1():
     st.write(
         '''
-        HR planning involves forecasting the availability of employees across different jobs within a firm. 
-        The primary goal is to anticipate potential employee shortages or surpluses. Latest available data 
+        Latest available data 
         from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
 
         - $L_{k,2022}$ The number of employees in job $J_k$ at the end of 2022
