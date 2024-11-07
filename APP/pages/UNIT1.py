@@ -87,7 +87,12 @@ def UNIT1_3():
 
     st.write(
         '''
-        As a measure of the contribution of each employee to the firm, we can calculate the output elasticity of employee $i$ as follows:
+    HRM can focus on the intensive or the extensive margin. 
+    The extensive margin addresses employee participation in tasks, 
+    such as attendance and absenteeism, while the intensive margin focuses 
+    on the level of effort and productivity during tasks, 
+    assessing how employees perform while working. 
+    Output elasticity of effort is an example of a measure on the intensive margin:
         '''
     )
 
