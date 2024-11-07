@@ -85,10 +85,10 @@ def UNIT1_3():
 
     st.write(
         '''
-        There are two ways to evaluate employee performance: through the extensive margin or the intensive margin. 
+        This notation aims to evaluate employee performance, referring to both the extensive and intensive margins. 
         The extensive margin focuses on participation in tasks, such as attendance and absenteeism. 
-        In contrast, the intensive margin evaluates the level of effort and productivity during tasks, 
-        assessing how employees perform while working. An example of an intensive margin measure is the output elasticity of effort:
+        In contrast, the intensive margin evaluates effort and productivity during tasks, assessing actual performance during work.
+        An example of an intensive margin measure is the output elasticity of effort:
         '''
     )
 
