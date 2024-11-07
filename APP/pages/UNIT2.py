@@ -172,7 +172,7 @@ def UNIT2_3():
         """
     )
 
-      st.write(
+    st.write(
         '''
         As a performance evaluation metric, the **skill gap** is useful for decisions on
         recruitment, training, and compensation.
