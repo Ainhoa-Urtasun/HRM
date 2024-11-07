@@ -157,64 +157,12 @@ def UNIT2_2():
         for norm in row_norms:
             st.write(norm)
 
-def UNIT2_3():
-    st.write(
-        '''
-        The **skill gap** between an employee and the job they are performing can be 
-        measured by he Euclidean distance between the **job skill requirements** $s_k$ 
-        and the **employee skill profile** $s_i = (s_{i1}, s_{i2}, s_{i3}, s_{i4})$:
-        '''
-    )
-
-    st.latex(
-        r"""
-        g_i = \sqrt{(\|s_{1k}\| - s_{1i})^2 + (\|s_{2k}\| - s_{2i})^2 + (\|s_{3k}\| - s_{3i})^2 + (\|s_{4k}\| - s_{4i})^2}
-        """
-    )
-
-    st.write(
-        '''
-        As a performance evaluation metric, the **skill gap** is useful for decisions on
-        recruitment, training, and compensation.
-        '''
-    )
-
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
-    st.sidebar.write('Evaluate the job:')
-    with st.sidebar.expander("$t_i$"):
-        s1i = st.number_input("$s_{1i(k)}$ Demonstrating willigness to learn",key='s1i',step=1.0)
-        s2i = st.number_input("$s_{2i(k)}$ Collaborating in teams and networks",key='s2i',step=1.0)
-        s3i = st.number_input("$s_{3i(k)}$ Working efficiently",key='s3i',step=1.0)
-        s4i = st.number_input("$s_{4i(k)}$ Taking a proactive approach",key='s4i',step=1.0)
-    with st.sidebar.expander("$t_j$"):
-        s1j = st.number_input("$s_{1j(k)}$ Demonstrating willigness to learn",key='s1j',step=1.0)
-        s2j = st.number_input("$s_{2j(k)}$ Collaborating in teams and networks",key='s2j',step=1.0)
-        s3j = st.number_input("$s_{3j(k)}$ Working efficiently",key='s3j',step=1.0)
-        s4j = st.number_input("$s_{4j(k)}$ Taking a proactive approach",key='s4j',step=1.0)
-
-    if st.button("Skill gap"):
-        ti = np.array([
-            [s1i],
-            [s2i],
-            [s3i],
-            [s4i]
-        ])
-        tj = np.array([
-            [s1j],
-            [s2j],
-            [s3j],
-            [s4j]
-        ])
-        euclidean_distance = 0.45 * np.linalg.norm(ti - tj)
-        st.write(euclidean_distance)
-
 # Set page configuration
 st.set_page_config(page_title="UNIT2", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs",'Job evaluation','Skill gap'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -226,8 +174,6 @@ if selected == "Tasks, skills, and jobs":
     UNIT2_1()
 elif selected == "Job evaluation":
     UNIT2_2()
-elif selected == "Skill gap":
-    UNIT2_3()
 
 
 
