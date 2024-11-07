@@ -48,11 +48,11 @@ def UNIT1_2():
         '''
         - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
         - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
-        - **Employee Performance Evaluation**: Addresses the intensive margin.
-        - **Recruitment**: Discusses employment, asymmetric information, adverse selection, and how to mitage it.
-        - **On-the-Job Training**: Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
-        - **Compensation**: Explores pay-for-performance models and employee-ownership options.
-        - **Career Development**: Introduces the tournament model as a framework for employee growth and progression.
+        - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
+        - **Recruitment** (UNIT 5): Discusses employment, asymmetric information, adverse selection, and how to mitage it.
+        - **On-the-Job Training** (UNIT 6): Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
+        - **Compensation** (UNIT 7): Explores pay-for-performance models and employee-ownership options.
+        - **Career Development** (UNIT 8): Introduces the tournament model as a framework for employee growth and progression.
         
         These practices are designed to maximize employee engagement, productivity, and job satisfaction.
         '''
