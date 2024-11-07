@@ -78,29 +78,31 @@ def UNIT2_2():
         its corresponding column will be a vector of zeros.
 
         We can further summarize the information in the matrix by calculating the norm of each
-        row-vector. The result, which we refer to as **skill requirements** for a job provides a quantitative
-        measure of the skill intensity required across tasks, offering another dimension for 
+        row-vector. The result, which we refer to as **job skill requirements** provides a quantitative
+        measure of the skill intensity required across the tasks a job entails, offering another tool for 
         job evaluation:
         '''
     )
 
-    st.latex(r"""
-    s_{(k)} = 0.45 \begin{pmatrix} 
-    \|s_{1k}\| \\ 
-    \|s_{2k}\| \\ 
-    \|s_{3k}\| \\ 
-    \|s_{4k}\| 
-    \end{pmatrix} = 0.45 \begin{pmatrix} 
-    \sqrt{s_{11k}^2 + s_{12k}^2 + s_{13k}^2 + s_{14k}^2 + s_{15k}^2} \\[10pt] 
-    \sqrt{s_{21k}^2 + s_{22k}^2 + s_{23k}^2 + s_{24k}^2 + s_{25k}^2} \\[10pt] 
-    \sqrt{s_{31k}^2 + s_{32k}^2 + s_{33k}^2 + s_{34k}^2 + s_{35k}^2} \\[10pt] 
-    \sqrt{s_{41k}^2 + s_{42k}^2 + s_{43k}^2 + s_{44k}^2 + s_{45k}^2} 
-    \end{pmatrix}
-    """)
+    st.latex(
+        r"""
+        s_k = 0.45 \begin{pmatrix} 
+        \|s_{1k}\| \\ 
+        \|s_{2k}\| \\ 
+        \|s_{3k}\| \\ 
+        \|s_{4k}\| 
+        \end{pmatrix} = 0.45 \begin{pmatrix} 
+        \sqrt{s_{11k}^2 + s_{12k}^2 + s_{13k}^2 + s_{14k}^2 + s_{15k}^2} \\[10pt] 
+        \sqrt{s_{21k}^2 + s_{22k}^2 + s_{23k}^2 + s_{24k}^2 + s_{25k}^2} \\[10pt] 
+        \sqrt{s_{31k}^2 + s_{32k}^2 + s_{33k}^2 + s_{34k}^2 + s_{35k}^2} \\[10pt] 
+        \sqrt{s_{41k}^2 + s_{42k}^2 + s_{43k}^2 + s_{44k}^2 + s_{45k}^2} 
+        \end{pmatrix}
+        """
+    )
 
     st.write(
         '''
-        We scale down the **skill requirements** for a job by 0.45 to keep its values within 0 and 100, making
+        We scale down the **job skill requirements** by 0.45 to keep its values within 0 and 100, making
         it easier to interpret and compare across different jobs:
         '''
     )
@@ -150,7 +152,7 @@ def UNIT2_2():
     if st.button("$J_k$ Job evaluation"):
         st.write(matrix)
 
-    if st.button("$s_k$ Skill requirements for $J_k$"):
+    if st.button("$s_k$ Job skill requirements"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
@@ -158,14 +160,13 @@ def UNIT2_2():
 def UNIT2_3():
     st.write(
         '''
-        The skill gap between the skill requirements for a job $s_k$difference between two tasks $t_i$ and $t_j$, can be a useful HRM metric in job design, 
-        helping the firm decide how to allocate tasks across jobs. This difference can be measured 
-        by calculating the Euclidean distance of the skill-vectors for each task:
+        The Euclidean distance between the **job skill requirements** $s_k$ and an **employee skill profile** $s_i$,
+        provides a useful measurement of the **skill gap ** between the job and the employee:
         '''
     )
 
     st.latex(r"""
-    d(\mathbf{t}_i, \mathbf{t}_j) = \sqrt{(s_{1i} - s_{1j})^2 + (s_{2i} - s_{2j})^2 + (s_{3i} - s_{3j})^2 + (s_{4i} - s_{4j})^2}
+    g_i = \sqrt{(\|s_{1k}\| - s_{1i})^2 + (\|s_{2k}\| - s_{2i})^2 + (\|s_{3k}\| - s_{3i})^2 + (\|s_{4k}\| - s_{4i})^2}
     """)
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
