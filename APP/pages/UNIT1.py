@@ -24,7 +24,8 @@ def UNIT1_1():
         Any firm, regardless of its size, structure, or legal form of ownership, 
         produces an **output** (good or service) and performs **economic activities** 
         to achieve this. Firms are classified into sectors (industries) based on the output 
-        they produce and the economic activities they perform. 
+        they produce and the economic activities they perform. There are standard classifications for
+        firms into industries depending on the economic activities they perform.
         In this course, we use **NACE rev. 2, the European Classification of Economic Activities**.
 
         To perform these economic activities, firms decide which technologies to adopt
@@ -34,8 +35,8 @@ def UNIT1_1():
         A job is not the same as an occupation. Occupations are standardized, while jobs are more
         flexible as they are designed by firms.
 
-        As there are standard classifications for firms into sectors, 
-        such as NACE rev. 2, there are also standard classificationf for jobs into occupations, 
+        As there are standard classifications for firms into sectors,
+        there are also standard classifications for jobs into occupations, 
         such as **ISCO** that stands for **International Standard Classification 
         of Occupations**.
         '''
