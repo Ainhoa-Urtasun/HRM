@@ -119,6 +119,9 @@ def UNIT1_4():
         - $wL$ is cost of employees
         - $M$ are material costs
         - $K$ is depreciation
+
+        From the Income Statement of a firm, we can obtain two critical indicators of employee performance 
+        at the intensive margin:****
         '''
     )
 
