@@ -22,22 +22,22 @@ def UNIT1_1():
     st.write(
         '''
         Any firm, regardless of its size, structure, or legal form of ownership, 
-        produces an output (good or service) and performs **economic activities** 
+        produces an **output** (good or service) and performs **economic activities** 
         to achieve this. Firms are classified into sectors (industries) based on the output 
         they produce and the economic activities they perform. 
+        In this course, we use **NACE rev. 2, the European Classification of Economic Activities**.
 
         To perform these economic activities, firms decide which technologies to adopt
-        and which jobs to post in the labor market.
-    
-        A job consists of a bundle of tasks, and just as firms are classified into sectors (industries), 
+        and which jobs to post in the labor market. A job consists of a bundle of tasks, 
+        and just as firms are classified into sectors (industries), 
         jobs are classified into occupations based on the tasks they entail. 
-        A job is not the same as an occupation. Occupations are standardized, while jobs are defined by firms.
+        A job is not the same as an occupation. Occupations are standardized, while jobs are more
+        flexible as they are designed by firms.
 
-        There are standard classifications for firms into sectors, 
-        such as NACE rev. 2, the European Classification of Economic Activities.
-        There are also standard classificationf for jobs into occupations, 
-        such as ISCO that stands for International Standard Classification 
-        of Occupations.
+        As there are standard classifications for firms into sectors, 
+        such as NACE rev. 2, there are also standard classificationf for jobs into occupations, 
+        such as **ISCO** that stands for **International Standard Classification 
+        of Occupations**.
         '''
     )
 
