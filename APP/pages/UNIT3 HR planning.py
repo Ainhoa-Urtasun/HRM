@@ -35,7 +35,7 @@ def UNIT3_1():
 
         - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in $J_k$ at the end of 2022
         - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in $K_k$ at the end of 2023
-        - Jobs within the firm:
+        - Jobs, denoted as $J_k$, within the firm:
             - $J_1$ Other managers
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
