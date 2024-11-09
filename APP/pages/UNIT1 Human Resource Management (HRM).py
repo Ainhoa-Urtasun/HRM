@@ -65,18 +65,18 @@ def UNIT1_3():
         - $e_i$ effort employee $i$ exerts at the firm
         - $Q$ is the output the firm produces
         - $L$ number of employees at the firm
-        - Skills to be possessed by employees at the firm:
+        - Skills, denoted as $s_i$, to be possessed by employees at the firm:
             - $s_1$ Demonstrating willigness to learn
             - $s_2$ Collaborating in teams and networks
             - $s_3$ Working efficiently
             - $s_4$ Taking a proactive approach  
-        - Tasks to be carried out by employees at the firm:
+        - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
             - $t_1$ Intellectual
             - $t_2$ Physical
             - $t_3$ Social
             - $t_4$ Use of methods
             - $t_5$ Use of technology
-        - Jobs within the firm:
+        - Jobs, denoted as $K_k$, within the firm:
             - $J_1$ Other managers
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
