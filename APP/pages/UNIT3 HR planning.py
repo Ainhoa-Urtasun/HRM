@@ -33,7 +33,7 @@ def UNIT3_1():
 
         The table above should meet the following restrictions:
 
-        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$ Row-summation that results in the number of employees in $J_k$ Other managers at the end of 2022.
+        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$ Row-summation to get the number of employees in $J_k$ Other managers at the end of 2022.
         '''
     )
     st.latex(r'L_{1,2023} = m_{11} + m_{21} + m_{31} + h_{1}')
