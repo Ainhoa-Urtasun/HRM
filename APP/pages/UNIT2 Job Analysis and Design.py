@@ -9,16 +9,6 @@ def UNIT2_1():
     
     st.write(
         """
-        A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
-        For simplicity, we assume any economic activity can be completed by carrying out the 5 core tasks listed in
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence): 
-        
-        - $t_1$: Intellectual
-        - $t_2$: Physical
-        - $t_3$: Social
-        - $t_4$: Use of methods
-        - $t_5$: Use of technology
-        
         A **skill**, denoted as $s_i$, is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
         tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
         There are many classifications of skills. For simplicty, we focus only on the 4 
@@ -29,6 +19,16 @@ def UNIT2_1():
         - $s_2$: Collaborating in teams and networks
         - $s_3$: Working efficiently
         - $s_4$: Taking a proactive approach
+        
+        A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
+        For simplicity, we assume any economic activity can be completed by carrying out the 5 core tasks listed in
+        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence): 
+        
+        - $t_1$: Intellectual
+        - $t_2$: Physical
+        - $t_3$: Social
+        - $t_4$: Use of methods
+        - $t_5$: Use of technology
 
         A **job**, denoted by $J_k$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
