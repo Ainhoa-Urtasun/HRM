@@ -23,11 +23,52 @@ def UNIT4_1():
     )
 
 def UNIT4_2():
+    st.write(
+        '''
+        From the Income Statement of a firm: 
+        '''
+    )
+    st.latex(r'EBIT = pQ - wL - M - K')
+    st.write(
+        '''
+        - $p$ is the price of the output the firm produces
+        - $pQ$ represents operating revenue
+        - $w$ is the average salary paid by the firm to its employees
+        - $wL$ is cost of employees
+        - $M$ are material costs
+        - $K$ is depreciation
+
+        From the Income Statement of a firm, we can obtain two critical indicators of employee performance 
+        at the intensive margin:
+        '''
+    )
 
     st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
+    st.latex(r'\text{ULC} = \frac{wL}{pQ}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.text_input("Write here the labor productivity of your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
+    with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        C2020 = st.number_input("2020",key='C2020',step=1.0)
+        C2021 = st.number_input("2021",key='C2021',step=1.0)
+        C2022 = st.number_input("2022",key='C2022',step=1.0)
+    with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        OR2020 = st.number_input("2020",key='OR2020',value=1.0,step=1.0)
+        OR2021 = st.number_input("2021",key='OR2021',value=1.0,step=1.0)
+        OR2022 = st.number_input("2022",key='OR2022',value=1.0,step=1.0)
+    with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+        L2020 = st.number_input("2020",key='L2020',value=1.0,step=1.0)
+        L2021 = st.number_input("2021",key='L2021',value=1.0,step=1.0)
+        L2022 = st.number_input("2022",key='L2022',value=1.0,step=1.0)
+
+    LP = [OR2020/L2020,OR2021/L2021,OR2022/L2022]
+    ULC = [C2020/OR2020,C2021/OR2021,C2022/OR2022]
+
+    fig = plt.figure(figsize=(5,5),dpi=100)
+    plt.plot(['2020','2021','2022'],LP,color='red',label='Labor productivity')
+    plt.plot(['2020','2021','2022'],ULC,color='blue',label='ULC')
+    plt.title('HRM metrics over time')
+    plt.legend()
+    st.pyplot(fig)
     
 def UNIT4_3():
 
