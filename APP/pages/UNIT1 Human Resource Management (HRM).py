@@ -157,7 +157,7 @@ st.set_page_config(page_title="UNIT1", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM analytics','HRM practices','Notation for the course', 'Labor productivity and unit labor cost (ULC)'],  # required
+    options=['HRM analytics','HRM practices','Notation for the course', 'Labor productivity and ULC'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -171,6 +171,6 @@ elif selected == 'HRM practices':
     UNIT1_2()
 elif selected == 'Notation for the course':
     UNIT1_3()
-elif selected == 'Labor productivity and unit labor cost (ULC)':
+elif selected == 'Labor productivity and ULC':
     UNIT1_4()
 
