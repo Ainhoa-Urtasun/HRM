@@ -30,7 +30,7 @@ def UNIT2_1():
         - $t_4$ Use of methods
         - $t_5$ Use of technology
 
-        A **job**, denoted by $J_k$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
+        A **job**, denoted as $J_k$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
         employees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
