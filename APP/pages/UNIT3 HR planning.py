@@ -8,11 +8,12 @@ import random
 def UNIT3_1():
     st.write(
         '''
-        Latest available data 
-        from [SABI](https://www.unavarra.es/biblioteca?languageId=1):
-
-        - $L_{k,2022}$ The number of employees in job $J_k$ at the end of 2022
-        - $L_{k,2023}$ The number of employees in job $J_k$ at the end of 2023
+        - $L_{1,2022}$ Number of employees in job $J_1$ Other managers at the end of 2022
+        - $L_{1,2023}$ Number of employees in job $J_1$ Other managers at the end of 2023
+        - $L_{2,2022}$ Number of employees in job $J_2$ Support intellectuals and scientists, technicians and professionals
+        - $L_{2,2022}$ Number of employees in job $J_2$ Support intellectuals and scientists, technicians and professionals
+        - $L_{3,2022}$ Number of employees in job $J_3$ Administrative employees
+        - $L_{3,2022}$ Number of employees in job $J_3$ Administrative employees
         '''
     )
 
