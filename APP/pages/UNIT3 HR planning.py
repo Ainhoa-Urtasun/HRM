@@ -58,16 +58,16 @@ def UNIT3_1():
     m22 = np.minimum(L22022,L22023) - 4
     m33 = np.minimum(L32022,L32023) - 3
 
+    h1 = L12023 - m11
     m21 = m31 = 0
-    h1 = L12023 - m11 - m21 - m31
-    m12 = m13 = 0
-    d1 = L12022 - m11 - m12 - m13   
-    h2 = 0
-    m32 = 3
     m23 = 1
-    d2 = L22022 - m22 - 1
-    d3 = L32022 - m33 - 3
-    h3 = L32023 - m33 - 1
+    d2 = L22022 - m21 - m22 - m23
+    m32 = 2
+    d3 = 1
+    d1 = m13 = 0
+    m12 = L12022 - m11
+    h2 = L22023 - m12 - m22 - m32
+    h3 = L32023 - m13 - m23 - m33
 
     matrix = np.array([
         [m11, m12, m13, d1],
@@ -127,20 +127,7 @@ def UNIT3_2():
         L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
 
-    m11 = L12022 - 1
-    m22 = L22022 - 4
-    m33 = L32022 - 3
 
-    h1 = L12023 - m11
-    m21 = m31 = 0
-    m23 = 1
-    d2 = L22022 - m21 - m22 - m23
-    m32 = 2
-    d3 = 1
-    d1 = m13 = 0
-    m12 = L12022 - m11
-    h2 = L22023 - m12 - m22 - m32
-    h3 = L32023 - m13 - m23 - m33
    
     if st.button("HR planning"):
         T = np.array([
