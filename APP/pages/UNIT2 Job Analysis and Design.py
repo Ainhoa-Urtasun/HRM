@@ -34,8 +34,10 @@ def UNIT2_1():
         $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
         employees need to possess 
         multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
-        $s_3$: taking a proactive approach, and $s_4$: working efficiently). 
-        
+        $s_3$: taking a proactive approach, and $s_4$: working efficiently):
+        - $J_1$ Other managers
+        - $J_2$ Support intellectuals and scientists, technicians and professionals
+        - $J_3$ Administrative employees
         """
     )
     
