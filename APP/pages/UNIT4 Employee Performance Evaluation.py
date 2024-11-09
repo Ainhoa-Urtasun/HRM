@@ -8,27 +8,28 @@ def UNIT4_1():
 
     st.write(
         '''
-        Performance evaluation assesses how well employees perform within the firm. 
+        Employee performance evaluation assesses how well employees perform within the firm. 
         This can be done in two ways:
         - **On average**
         - **Individually**, which is challenging but also more meaningful 
         
-        Performance evaluation also distinguishes between:
-        - **The extensive margin** addresses employee participation in tasks. Examples of extensive margin
-        performance evaluation measures include attendance and absenteeism
-        - **The intensive margin** focuses on the level of effort and productivity during tasks, examining
-        how employees perform while working
-
-        A common average performance metric for the intensive margin is **labor productivity**:
+        Employee performance evaluation also distinguishes between:
+        - **The extensive margin** evaluates employee participation in tasks. Examples of extensive margin
+        evaluation include attendance and absenteeism
+        - **The intensive margin** evaluates the level of effort and productivity during tasks, examining
+        how employees perform while working. Examples of intensive margin evaluation include labor productivity,
+        ULC, output elasticity of labor, and the skill gap.
         '''
     )
+
+def UNIT4_2():
 
     st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.text_input("Write here the labor productivity of your firm using the latest information provided by [SABI](https://www.unavarra.es/biblioteca?languageId=1):")
     
-def UNIT4_2():
+def UNIT4_3():
 
     st.write(
         '''
@@ -46,7 +47,7 @@ def UNIT4_2():
         '''
     )
 
-def UNIT4_3():
+def UNIT4_4():
     
     st.write(
         '''
@@ -99,7 +100,7 @@ def UNIT4_3():
         euclidean_distance = 0.45 * np.linalg.norm(ti - tj)
         st.write(euclidean_distance)
 
-def UNIT4_4():
+def UNIT4_5():
 
     st.write(
         '''
@@ -183,7 +184,7 @@ st.set_page_config(page_title="UNIT4", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Classification','Output elasticity of effort','Skill gap','Cost of effort'],  # required
+    options=['Classification','Labor productivity and ULC','Output elasticity of effort','Skill gap','Cost of effort'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -193,9 +194,11 @@ selected = option_menu(
 # Call the selected section
 if selected == "Classification":
     UNIT4_1()
-elif selected == "Output elasticity of effort":
+elif selected == "Labor productivity and ULC":
     UNIT4_2()
-elif selected == "Skill gap":
+elif selected == "Output elasticity of effort":
     UNIT4_3()
-elif selected == "Cost of effort":
+elif selected == "Skill gap":
     UNIT4_4()
+elif selected == "Cost of effort":
+    UNIT4_5()
