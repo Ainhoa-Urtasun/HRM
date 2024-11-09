@@ -76,7 +76,7 @@ def UNIT1_3():
             - $t_3$ Social
             - $t_4$ Use of methods
             - $t_5$ Use of technology
-        - Jobs, denoted as $K_k$, within the firm:
+        - Jobs, denoted as $J_k$, within the firm:
             - $J_1$ Other managers
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
