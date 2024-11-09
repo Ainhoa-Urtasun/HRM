@@ -54,21 +54,20 @@ def UNIT3_1():
         L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
 
-    m11 = np.min(L12022,L12023) - 1
-    m22 = np.min(L22022,L22023) - 4
-    m33 = np.min(L32022,L32023) - 3
+    m11 = np.minimum(L12022,L12023) - 1
+    m22 = np.minimum(L22022,L22023) - 4
+    m33 = np.minimum(L32022,L32023) - 3
 
-    
     m21 = m31 = 0
-    m12 = L12022 - m11
-    m23 = 0   
-    m32 = 2
-    d1 = L12022 - m11 - m12 - m13
-    d2 = L22022 - m21 - m22 - m23
-    d3 = L33033 - m31 - m32 - m33
     h1 = L12023 - m11 - m21 - m31
-    h2 = L22023 - m12 - m22 - m32
-    h3 = L32023 - m13 - m23 - m33
+    m12 = m13 = 0
+    d1 = L12022 - m11 - m12 - m13   
+    h2 = 0
+    m32 = L22023 - m22
+    m23 = 1
+    d2 = L22022 - m22 - 1
+    d3 = L33033 - m31 - m32 - m33   
+    h3 = L32023 - 1 - m33
 
     matrix = np.array([
         [m11, m12, m13, d1],
