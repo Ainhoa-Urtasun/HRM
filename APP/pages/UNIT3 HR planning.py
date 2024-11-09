@@ -6,16 +6,6 @@ import numpy as np
 import random
 
 def UNIT3_1():
-    st.write(
-        '''
-        - $L_{1,2022}$ Number of employees in job $J_1$ Other managers at the end of 2022
-        - $L_{1,2023}$ Number of employees in job $J_1$ Other managers at the end of 2023
-        - $L_{2,2022}$ Number of employees in job $J_2$ Support intellectuals and scientists, technicians and professionals
-        - $L_{2,2022}$ Number of employees in job $J_2$ Support intellectuals and scientists, technicians and professionals
-        - $L_{3,2022}$ Number of employees in job $J_3$ Administrative employees
-        - $L_{3,2022}$ Number of employees in job $J_3$ Administrative employees
-        '''
-    )
 
     st.latex(
         r"""
@@ -46,7 +36,12 @@ def UNIT3_1():
     )
 
     st.latex(r'L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}')
-    st.latex(r'L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}')
+    st.write(
+        '''
+        - L_{k,2022} Number of employees in $J_k$ Other managers at the end of 2022. It results from row-wise summation.
+        '''
+    )
+    st.latex(r'L_{1,2023} = m_{11} + m_{21} + m_{31} + h_{1}')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
