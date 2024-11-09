@@ -80,8 +80,6 @@ def UNIT1_3():
             - $J_1$ Other managers
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
-
-
         '''
     )
 
