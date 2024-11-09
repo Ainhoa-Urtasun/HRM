@@ -33,10 +33,13 @@ def UNIT3_1():
 
         The table above should meet the following restrictions:
 
-        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$ Row-summation to get the number of employees in $J_k$ Other managers at the end of 2022.
+        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in $J_k$ at the end of 2022
+        - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in $K_k$ at the end of 2023
+        
+        
         '''
     )
-    st.latex(r'L_{1,2023} = m_{11} + m_{21} + m_{31} + h_{1}')
+    st.latex(r'')
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
