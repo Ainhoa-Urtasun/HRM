@@ -160,7 +160,7 @@ def UNIT2_2():
             st.write(norm)
 
 # Set page configuration
-st.set_page_config(page_title="UNIT2", layout="wide")
+st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
