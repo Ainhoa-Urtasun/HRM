@@ -153,7 +153,7 @@ def UNIT1_4():
     st.pyplot(fig)
 
 # Set page configuration
-st.set_page_config(page_title="UNIT1", layout="wide")
+st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
