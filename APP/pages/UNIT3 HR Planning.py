@@ -31,7 +31,7 @@ def UNIT3_1():
         - $d$ represents departures or number of employees who have left the firm during 2023,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
 
-        The table above should meet the following restrictions:
+        The table above should meet the following:
 
         - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in $J_k$ at the end of 2022
         - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in $K_k$ at the end of 2023
@@ -39,6 +39,16 @@ def UNIT3_1():
             - $J_1$ Other managers
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
+
+        With this data, two employee performance evaluation metrics at the extensive margin can be calculated for each job at the firm, retention at job $J_k$,
+        denoted as $R_k$, and turnover at job $J_k$, denoted as $T_k$:
+        '''
+    )
+
+    st.latex(
+        r'''
+        R_k = 100 \times \frac{m_{k,k}}{L_{k,2022}} \\
+        T_k = 100 - R_k
         '''
     )
 
