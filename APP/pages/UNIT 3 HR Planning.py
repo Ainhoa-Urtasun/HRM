@@ -47,7 +47,7 @@ def UNIT3_1():
 
     st.latex(
         r'''
-        R_k = 100 \times \frac{m_{k,k}}{L_{k,2022}} \\
+        R_k = 100 \times \frac{m_{k,k}}{L_{k,2022}} \\[10pt]
         T_k = 100 - R_k
         '''
     )
