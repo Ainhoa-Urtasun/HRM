@@ -8,6 +8,7 @@ def UNIT1_1():
                                                                                                     
     st.write(
         '''
+        Human Resource Management consists of HRM practices designed to maximize employee engagement, productivity, and job satisfaction. HRM practices include:
         - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
         - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
         - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
@@ -15,8 +16,6 @@ def UNIT1_1():
         - **On-the-Job Training** (UNIT 6): Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
         - **Compensation** (UNIT 7): Explores pay-for-performance models and employee-ownership options.
         - **Career Development** (UNIT 8): Introduces the tournament model as a framework for employee growth and progression.
-        
-        These practices are designed to maximize employee engagement, productivity, and job satisfaction.
         '''
     )
 
@@ -47,7 +46,7 @@ def UNIT1_2():
     '''
   )
 
-def UNIT1_3():
+def UNIT1_2():
   st.write(
     ''' 
     - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
