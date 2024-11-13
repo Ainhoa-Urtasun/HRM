@@ -100,19 +100,16 @@ def UNIT4_4():
     st.write(
         '''
         where:
-        - $e_i$ represents the effort exerted by employee $i$, $ e_i \geq 0 $
-        - $g_i$ is the **skill gap** of employee $i$ calculated as the Euclidean distance 
-        between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$, the 
-        **skill profile** of employee $i$. The greater the skill gap, the higher the 
+        - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
+        - $g_i$ is the **skill gap** of employee $i$. The greater their skill gap, the higher the 
         cost of effort for employee $i$.
         '''
     )
 
     st.write(
         '''
-        We can analyze the properties of the cost of effort function
-        by calculating its derivatives. Taking the first derivative with 
-        respect to effort $e_i$:
+        The first derivative of the cost of effort with respect to effort $e_i$, or marginal cost of effort, increases linearly
+        with $e_i$ since $g_i > 0$:
         '''
     )
 
@@ -124,10 +121,9 @@ def UNIT4_4():
 
     st.write(
         '''
-        This first derivative shows the marginal cost of effort. Since $g_i>0$, 
-        the marginal cost of effort increases linearly with $e_i$.
-
-        The second derivative with respect to $e_i$ is:
+        The second derivative with respect to $e_i$ is also positive, which means that the cost of effort function is a convex
+        function, or concave-up function. This convexity indicates that the cost of effort function increases at an
+        increasing rate as effort $e_i$ rises:
         '''
     )
 
@@ -139,10 +135,6 @@ def UNIT4_4():
 
     st.write(
         '''
-        Since $g_i>0$, the second derivative is positive, which means that the cost function
-        $C(e_i)$ is convex, or "concave-up". This convexity indicates that the cost of effort 
-        increases at an increasing rate as effort $e_i$ rises.
-    
         **Jensen's inequality** tells us that for a convex function such as $C(e_i)$, the expected cost of 
         effort is at least the cost of the expected effort. Mathematically:
         '''
