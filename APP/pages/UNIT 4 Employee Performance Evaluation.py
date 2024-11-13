@@ -108,8 +108,8 @@ def UNIT4_4():
 
     st.write(
         '''
-        The first derivative of the cost of effort with respect to effort $e_i$, or marginal cost of effort, increases linearly
-        with $e_i$ since $g_i > 0$:
+        The first derivative of the cost of effort with respect to effort, or marginal cost of effort, increases linearly
+        with effort since $g_i > 0$:
         '''
     )
 
@@ -123,7 +123,7 @@ def UNIT4_4():
         '''
         The second derivative with respect to $e_i$ is also positive, which means that the cost of effort function is a convex
         function, or concave-up function. This convexity indicates that the cost of effort function increases at an
-        increasing rate as effort $e_i$ rises:
+        increasing rate as effort rises:
         '''
     )
 
