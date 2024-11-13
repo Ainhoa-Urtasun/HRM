@@ -74,12 +74,13 @@ def UNIT4_3():
 
     st.write(
         '''
-        **Output elasticity of effort** measures the performance of an employee on the 
-        intensive margin, indicating the percentage change in the output the firm produces when employee
-        $i$ exerts 1% more effort.
+        In this course, we assume a **joint production function**, 
+        where the firm's output results from the **collective contribution of each employee's effort**.
+        The **output elasticity of effort** measures the impact of each employee's individual
+        effort on the firm's output:
         '''
     )
-    
+
     st.latex(
         r'''
         Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
@@ -88,6 +89,12 @@ def UNIT4_3():
         '''
     )
 
+    st.write(
+        '''
+        This output elasticity indicates the percentage change in the output
+        the firm produces when employee $i$ exerts 1% more effort.
+        '''
+    )
 def UNIT4_4():
     
     st.write(
