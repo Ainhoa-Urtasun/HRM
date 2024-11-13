@@ -21,51 +21,74 @@ def UNIT1_1():
     )
 
 def UNIT1_2():
-    st.write(
-        ''' 
-        - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
-        - $e_i$ effort employee $i$ exerts at the firm
-        - $Q$ is the output the firm produces
-        - $L$ number of employees at the firm
-        - Skills, denoted as $s_i$, to be possessed by employees at the firm:
-            - $s_1$ Demonstrating willigness to learn
-            - $s_2$ Collaborating in teams and networks
-            - $s_3$ Working efficiently
-            - $s_4$ Taking a proactive approach  
-        - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
-            - $t_1$ Intellectual
-            - $t_2$ Physical
-            - $t_3$ Social
-            - $t_4$ Use of methods
-            - $t_5$ Use of technology
-        - Jobs, denoted as $J_k$, within the firm:
-            - $J_1$ Other managers
-            - $J_2$ Support intellectuals and scientists, technicians and professionals
-            - $J_3$ Administrative employees
-        '''
-    )
+  
+  st.write(
+    '''
+    Any firm, regardless of its size, structure, or legal form of ownership, 
+    produces **output** (a good or a service) and performs **economic activities** 
+    necessary for that production. Firms are classified into sectors (industries) based on the output 
+    they produce and the economic activities they perform. There are standard classifications for 
+    economic activities, such as **NACE Rev. 2, the European Classification of Economic Activities**.
 
-    st.write(
-        '''
-        In this course, we assume a **joint production function**, 
-        where the firm's output results from the **collective contribution of each employee's effort**.
-        The **output elasticity of effort** measures the impact of each employee's individual
-        effort on the firm's output:
-        '''
-    )
+    These economic activities are carried out by both employees and technology.
+    Consequently, a firm's decisions on which technologies to adopt and which jobs to post
+    in the labor market will depend on the specific economic activities required.
+        
+    Just as firms are classified into industries based on the output
+    they produce and associated economic activities, jobs are classified into
+    occupations depending on the tasks they entail. Same as for economic activities, 
+    there are standard classifications for occupations, 
+    such as **ISCO (International Standard Classification 
+    of Occupations)**. 
+        
+    It is important to note that a job is not the same as an occupation. 
+    Occupations are standardized, while jobs are more
+    flexible as they are designed by firms. 
+    '''
+  )
 
-    st.latex(
-        r'''
-        \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
-        '''
-    )
+def UNIT1_3():
+  st.write(
+    ''' 
+    - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
+    - $e_i$ effort employee $i$ exerts at the firm, $e_i > 0$
+    - $Q$ is the output the firm produces
+    - $L$ number of employees at the firm
+    - Skills, denoted as $s_i$, to be possessed by employees at the firm:
+      - $s_1$ Demonstrating willigness to learn
+      - $s_2$ Collaborating in teams and networks
+      - $s_3$ Working efficiently
+      - $s_4$ Taking a proactive approach  
+    - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
+      - $t_1$ Intellectual
+      - $t_2$ Physical
+      - $t_3$ Social
+      - $t_4$ Use of methods
+      - $t_5$ Use of technology
+    - Jobs, denoted as $J_k$, within the firm:
+      - $J_1$ Other managers
+      - $J_2$ Support intellectuals and scientists, technicians and professionals
+      - $J_3$ Administrative employees
+    
+    In this course, we assume a **joint production function**, 
+    where the firm's output results from the **collective contribution of each employee's effort**.
+    The **output elasticity of effort** measures the impact of each employee's individual
+    effort on the firm's output:
+    '''
+  )
 
-    st.write(
-        '''
-        This output elasticity indicates the percentage change in the output
-        the firm produces when employee $i$ exerts 1% more effort.
-        '''
-    )
+  st.latex(
+    r'''
+    \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
+    '''
+  )
+
+  st.write(
+    '''
+    This output elasticity indicates the percentage change in the output
+    the firm produces when employee $i$ exerts 1% more effort.
+    '''
+  )
 
 def UNIT1_3():
   
@@ -92,9 +115,9 @@ def UNIT1_3():
   st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
   st.latex(r'\text{ULC} = \frac{wL}{pQ}')
 
-def UNIT1_4():
+def UNIT1_5():
   
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practices 9% (accumulated) </h3>", unsafe_allow_html=True)
+  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9% (accumulated) </h3>", unsafe_allow_html=True)
 
   st.write(
     '''
@@ -120,32 +143,6 @@ def UNIT1_4():
   st.text_input('', placeholder='Write here the name of your firm')
   st.text_input('Select your firm and then **Overview** under **Industry & overview**',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
                                                                                                    
-  st.write(
-    '''
-    Any firm, regardless of its size, structure, or legal form of ownership, 
-    produces **output** (a good or a service) and performs **economic activities** 
-    necessary for that production. Firms are classified into sectors (industries) based on the output 
-    they produce and the economic activities they perform. There are standard classifications for 
-    economic activities, such as **NACE Rev. 2, the European Classification of Economic Activities**.
-
-    These economic activities are carried out by both employees and technology.
-    Consequently, a firm's decisions on which technologies to adopt and which jobs to post
-    in the labor market will depend on the specific economic activities required.
-        
-    Just as firms are classified into industries based on the output
-    they produce and associated economic activities, jobs are classified into
-    occupations depending on the tasks they entail. Same as for economic activities, 
-    there are standard classifications for occupations, 
-    such as **ISCO (International Standard Classification 
-    of Occupations)**. 
-        
-    It is important to note that a job is not the same as an occupation. 
-    Occupations are standardized, while jobs are more
-    flexible as they are designed by firms. 
-    '''
-  )
-
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
   with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
     C2020 = st.number_input("2020",key='C2020',step=1.0)
     C2021 = st.number_input("2021",key='C2021',step=1.0)
@@ -174,7 +171,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','Notation for the course','Labor productivity and ULC','Practice 9% (accumulated)'],  # required
+    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 9% (accumulated)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -184,10 +181,12 @@ selected = option_menu(
 # Call the selected section
 if selected == 'HRM practices':
     UNIT1_1()
-elif selected == 'Notation for the course':
+elif selected == 'HRM in context':
     UNIT1_2()
-elif selected == 'Labor productivity and ULC':
+elif selected == 'Notation for the course':
     UNIT1_3()
-elif selected == 'Practice 9% (accumulated)':
+elif selected == 'Labor productivity and ULC':
     UNIT1_4()
+elif selected == 'Practice 9% (accumulated)':
+    UNIT1_5()
 
