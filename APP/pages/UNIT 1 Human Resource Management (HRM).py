@@ -37,9 +37,8 @@ def UNIT1_1():
         Any firm, regardless of its size, structure, or legal form of ownership, 
         produces **output** (a good or a service) and performs **economic activities** 
         necessary for that production. Firms are classified into sectors (industries) based on the output 
-        they produce and the economic activities they perform. Standard classifications, such as
-        **NACE Rev. 2, the European Classification of Economic Activities**, categorize firms into 
-        industries according to these activities.
+        they produce and the economic activities they perform. There are standard classifications for sectors 
+        (industries), such as **NACE Rev. 2, the European Classification of Economic Activities**.
 
         These economic activities are carried out by both employees and technology.
         Consequently, a firm's decisions on which technologies to adopt and which jobs to post
