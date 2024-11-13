@@ -14,11 +14,11 @@ def UNIT4_1():
         - **Individually**: Output elasticity of effort and the skill gap are individual measures that 
         assess each employee's specific contribution and capabilities
         
-        In the context of employee performance evaluation, it is also worth distinguishing between:
-        - **The extensive margin** evaluates employee participation in tasks. Examples of extensive margin
-        evaluation include attendance and absenteeism
-        - **The intensive margin** evaluates the level of effort and productivity during tasks, examining
-        how employees perform while working. Examples of intensive margin evaluation include labor productivity,
+        In the context of employee performance evaluation, it is helpful to distinguish between:
+        - **The extensive margin**: This evaluates employee participation in tasks, with metrics like
+        attendance and absenteeism providing insight into employee engagement and motivation.
+        - **The intensive margin**: This evaluates the level of effort and productivity during tasks, focusing on
+        how employees perform while working. Examples include labor productivity,
         ULC, output elasticity of labor, and the skill gap.
         '''
     )
@@ -100,7 +100,7 @@ def UNIT4_4():
     st.write(
         '''
         where:
-        - $e_i$ represents the effort exerted by employee $i$
+        - $e_i$ represents the effort exerted by employee $i$, $ e_i \geq 0 $
         - $g_i$ is the **skill gap** of employee $i$ calculated as the Euclidean distance 
         between $s_{(k)}$, the **skill requirements** for the job employee $i$ performs, and $s_i$, the 
         **skill profile** of employee $i$. The greater the skill gap, the higher the 
