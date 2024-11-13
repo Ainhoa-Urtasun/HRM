@@ -19,17 +19,18 @@ def UNIT1_1():
         2. In 'Personalizar' then 'Opciones Generales', change the language to English
         3. Firm qualification based on **Employees** criteria:
             - Minimum lastest number of employees of 750
-            - Employees' segmentation in Spain: 
+            - Employees' segmentation in Spain (last available year): 
                 - Other managers
                 - Support intellectuals and scientists, technicians and professionals
                 - Administrative employees
                 - At least 10 women
+        4. View list of results
         4. Select one firm from the firms that qualify
         '''
     )
 
     st.text_input('', placeholder='Write here the name of your firm')
-    st.text_input('Select **Overview** under Industry & overview',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
+    st.text_input('Select your firm and then **Overview** under **Industry & overview**',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
                                                                                                    
     st.write(
         '''
