@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT4_1():
-
     st.write(
         '''
         Employee performance evaluation assesses how well employees perform within the firm. 
@@ -162,7 +161,7 @@ def UNIT4_4():
         '''
     )
 
-def UNIT4_4():
+def UNIT4_5():
     
     st.write(
         '''
@@ -185,6 +184,8 @@ def UNIT4_4():
         '''
     )
 
+def UNIT4_6():
+    
     st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
     st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
     st.sidebar.write('Evaluate the job:')
