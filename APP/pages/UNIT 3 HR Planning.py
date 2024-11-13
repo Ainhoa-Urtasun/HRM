@@ -91,7 +91,7 @@ def UNIT3_2():
 def UNIT3_3():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11% (accumulated) </h3>", unsafe_allow_html=True)
-    st.sidebar.write('Data collection:')
+    st.sidebar.write('Input data:')
     with st.sidebar.expander("$J_1$ Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
         L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=20)
@@ -124,7 +124,7 @@ def UNIT3_3():
         [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
         ])
         
-    if st.button("Data collection"):
+    if st.button("Input data"):
         st.write(matrix)
    
     if st.button("HR planning"):
@@ -148,7 +148,7 @@ st.set_page_config(page_title="UNIT 3 HR Planning", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Data collection",'Forecasting the availability of employees using the transition matrix','Practice 11% (accumulated)'],  # required
+    options=["Input data",'Forecasting the availability of employees using the transition matrix','Practice 11% (accumulated)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -156,7 +156,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Data collection":
+if selected == "Input data":
     UNIT3_1()
 elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
