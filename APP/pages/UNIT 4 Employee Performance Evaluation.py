@@ -222,7 +222,7 @@ st.set_page_config(page_title="UNIT 4 Employee Performance Evaluation", layout="
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=['Classification','Labor productivity and ULC','Output elasticity of effort','Cost of effort','Skill gap','Practice 12% (accumulated)'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    icons=["house", "calculator", "calculator", "book", "calculator",'people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
