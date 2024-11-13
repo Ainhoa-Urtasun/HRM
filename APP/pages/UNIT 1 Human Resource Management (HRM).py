@@ -8,7 +8,7 @@ def UNIT1_1():
                                                                                                     
     st.write(
         '''
-        Human Resource Management consists of HRM practices designed to maximize employee engagement, productivity, and job satisfaction. HRM practices include:
+        Human Resource Management (HRM) consists of HRM practices designed to maximize employee engagement, productivity, and job satisfaction. HRM practices include:
         - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
         - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
         - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
