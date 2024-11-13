@@ -100,9 +100,10 @@ def UNIT1_3():
 
     st.write(
         '''
-        This notation focuses on evaluating employee performance at the intensive margin
-        assessing effort and productivity while performing tasks. The intensive margin looks closely at 
-        how employees perform while working with measures like output elasticity of effort:
+        In this course, we assume a **joint production function**, 
+        where the firm's output results from the **collective contribution of each employee's effort**.
+        The **output elasticity of effort** measures the impact of each employee's individual
+        effort on the firm's output:
         '''
     )
 
