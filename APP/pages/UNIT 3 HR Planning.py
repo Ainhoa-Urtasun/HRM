@@ -52,43 +52,6 @@ def UNIT3_1():
         '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
-    st.sidebar.write('Data collection:')
-    with st.sidebar.expander("$J_1$ Other managers"):
-        L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
-        L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=20)
-    with st.sidebar.expander("$J_2$ Support intellectuals and scientists, technicians and professionals"):
-        L22022 = st.number_input("$L_{2,2022}$", key='L22022', step=1, min_value=20)
-        L22023 = st.number_input("$L_{2,2023}$", key='L22023', step=1, min_value=20)
-    with st.sidebar.expander("$J_3$ Administrative employees"):
-        L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
-        L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
-
-    m11 = np.minimum(L12022,L12023) - 1
-    m22 = np.minimum(L22022,L22023) - 4
-    m33 = np.minimum(L32022,L32023) - 3
-
-    h1 = L12023 - m11
-    m21 = m31 = 0
-    m23 = 1
-    d2 = L22022 - m21 - m22 - m23
-    m32 = 2
-    d3 = 1
-    d1 = m13 = 0
-    m12 = L12022 - m11
-    h2 = L22023 - m12 - m22 - m32
-    h3 = L32023 - m13 - m23 - m33
-
-    matrix = np.array([
-        [m11, m12, m13, d1],
-        [m21, m22, m23, d2],
-        [m31, m32, m33, d3],
-        [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
-        ])
-        
-    if st.button("Data collection"):
-        st.write(matrix)
-
 def UNIT3_2():
     st.write(
         '''
@@ -125,7 +88,9 @@ def UNIT3_2():
         '''
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+def UNIT3_3():
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11% (accumulated) </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data collection:')
     with st.sidebar.expander("$J_1$ Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
@@ -137,7 +102,30 @@ def UNIT3_2():
         L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=20)
         L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=20)
 
+    m11 = np.minimum(L12022,L12023) - 1
+    m22 = np.minimum(L22022,L22023) - 4
+    m33 = np.minimum(L32022,L32023) - 3
 
+    h1 = L12023 - m11
+    m21 = m31 = 0
+    m23 = 1
+    d2 = L22022 - m21 - m22 - m23
+    m32 = 2
+    d3 = 1
+    d1 = m13 = 0
+    m12 = L12022 - m11
+    h2 = L22023 - m12 - m22 - m32
+    h3 = L32023 - m13 - m23 - m33
+
+    matrix = np.array([
+        [m11, m12, m13, d1],
+        [m21, m22, m23, d2],
+        [m31, m32, m33, d3],
+        [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
+        ])
+        
+    if st.button("Data collection"):
+        st.write(matrix)
    
     if st.button("HR planning"):
         T = np.array([
@@ -160,7 +148,7 @@ st.set_page_config(page_title="UNIT 3 HR Planning", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Data collection",'Forecasting the availability of employees using the transition matrix'],  # required
+    options=["Data collection",'Forecasting the availability of employees using the transition matrix','Practice 11% (accumulated)'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -172,4 +160,6 @@ if selected == "Data collection":
     UNIT3_1()
 elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
+elif selected == 'Practice 11% (accumulated)':
+    UNIT3_3()
 
