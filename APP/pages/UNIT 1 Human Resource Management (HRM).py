@@ -37,11 +37,12 @@ def UNIT1_1():
         produces an **output** (good or service) and performs **economic activities** 
         to achieve this. Firms are classified into sectors (industries) based on the output 
         they produce and the economic activities they perform. There are standard classifications for
-        firms into industries depending on the economic activities they perform.
-        In this course, we use **NACE rev. 2, the European Classification of Economic Activities**.
+        firms into industries depending on the economic activities they perform, such as
+        **NACE Rev. 2, the European Classification of Economic Activities**.
 
         To perform these economic activities, firms decide which technologies to adopt
-        and which jobs to post in the labor market. A job consists of a bundle of tasks, 
+        and which jobs to post in the labor market. A job consists of a bundle of tasks. So the decision by 
+        firms regarding which job , 
         and just as firms are classified into sectors (industries), 
         jobs are classified into occupations based on the tasks they entail. 
         A job is not the same as an occupation. Occupations are standardized, while jobs are more
