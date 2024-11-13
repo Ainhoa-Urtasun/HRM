@@ -7,12 +7,14 @@ from streamlit_option_menu import option_menu
 def UNIT4_1():
     st.write(
         '''
-        Employee performance evaluation assesses how well employees perform within the firm. 
-        This can be done in two ways:
-        - **On average**
-        - **Individually**, which is challenging but also more meaningful 
+        Employee performance evaluation assesses how effectively employees perform their jobs within the firm. 
+        Employee performance can be evaluated in two ways:
+        - **On average**: Labor productivity and unit labor cost (ULC) are average measures of employee performance
+        across the workforce
+        - **Individually**: Output elasticity of effort and the skill gap are individual measures that 
+        assess each employee's specific contribution and capabilities
         
-        Employee performance evaluation also distinguishes between:
+        In the context of employee performance evaluation, it is also worth distinguishing between:
         - **The extensive margin** evaluates employee participation in tasks. Examples of extensive margin
         evaluation include attendance and absenteeism
         - **The intensive margin** evaluates the level of effort and productivity during tasks, examining
