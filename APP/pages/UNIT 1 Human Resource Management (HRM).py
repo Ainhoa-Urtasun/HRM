@@ -5,8 +5,71 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
+                                                                                                    
+    st.write(
+        '''
+        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
+        - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
+        - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
+        - **Recruitment** (UNIT 5): Discusses employment, asymmetric information, adverse selection, and how to mitage it.
+        - **On-the-Job Training** (UNIT 6): Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
+        - **Compensation** (UNIT 7): Explores pay-for-performance models and employee-ownership options.
+        - **Career Development** (UNIT 8): Introduces the tournament model as a framework for employee growth and progression.
+        
+        These practices are designed to maximize employee engagement, productivity, and job satisfaction.
+        '''
+    )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+def UNIT1_2():
+    st.write(
+        ''' 
+        - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
+        - $e_i$ effort employee $i$ exerts at the firm
+        - $Q$ is the output the firm produces
+        - $L$ number of employees at the firm
+        - Skills, denoted as $s_i$, to be possessed by employees at the firm:
+            - $s_1$ Demonstrating willigness to learn
+            - $s_2$ Collaborating in teams and networks
+            - $s_3$ Working efficiently
+            - $s_4$ Taking a proactive approach  
+        - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
+            - $t_1$ Intellectual
+            - $t_2$ Physical
+            - $t_3$ Social
+            - $t_4$ Use of methods
+            - $t_5$ Use of technology
+        - Jobs, denoted as $J_k$, within the firm:
+            - $J_1$ Other managers
+            - $J_2$ Support intellectuals and scientists, technicians and professionals
+            - $J_3$ Administrative employees
+        '''
+    )
+
+    st.write(
+        '''
+        In this course, we assume a **joint production function**, 
+        where the firm's output results from the **collective contribution of each employee's effort**.
+        The **output elasticity of effort** measures the impact of each employee's individual
+        effort on the firm's output:
+        '''
+    )
+
+    st.latex(
+        r'''
+        \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
+        '''
+    )
+
+    st.write(
+        '''
+        This output elasticity indicates the percentage change in the output
+        the firm produces when employee $i$ exerts 1% more effort.
+        '''
+    )
+
+def UNIT1_3():
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practices 11% (accumulated) </h3>", unsafe_allow_html=True)
 
     st.write(
         '''
@@ -54,69 +117,6 @@ def UNIT1_1():
         It is important to note that a job is not the same as an occupation. 
         Occupations are standardized, while jobs are more
         flexible as they are designed by firms. 
-        '''
-    )
-
-def UNIT1_2():
-                                                                                                    
-    st.write(
-        '''
-        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
-        - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
-        - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
-        - **Recruitment** (UNIT 5): Discusses employment, asymmetric information, adverse selection, and how to mitage it.
-        - **On-the-Job Training** (UNIT 6): Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
-        - **Compensation** (UNIT 7): Explores pay-for-performance models and employee-ownership options.
-        - **Career Development** (UNIT 8): Introduces the tournament model as a framework for employee growth and progression.
-        
-        These practices are designed to maximize employee engagement, productivity, and job satisfaction.
-        '''
-    )
-
-def UNIT1_3():
-    st.write(
-        ''' 
-        - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
-        - $e_i$ effort employee $i$ exerts at the firm
-        - $Q$ is the output the firm produces
-        - $L$ number of employees at the firm
-        - Skills, denoted as $s_i$, to be possessed by employees at the firm:
-            - $s_1$ Demonstrating willigness to learn
-            - $s_2$ Collaborating in teams and networks
-            - $s_3$ Working efficiently
-            - $s_4$ Taking a proactive approach  
-        - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
-            - $t_1$ Intellectual
-            - $t_2$ Physical
-            - $t_3$ Social
-            - $t_4$ Use of methods
-            - $t_5$ Use of technology
-        - Jobs, denoted as $J_k$, within the firm:
-            - $J_1$ Other managers
-            - $J_2$ Support intellectuals and scientists, technicians and professionals
-            - $J_3$ Administrative employees
-        '''
-    )
-
-    st.write(
-        '''
-        In this course, we assume a **joint production function**, 
-        where the firm's output results from the **collective contribution of each employee's effort**.
-        The **output elasticity of effort** measures the impact of each employee's individual
-        effort on the firm's output:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
-        '''
-    )
-
-    st.write(
-        '''
-        This output elasticity indicates the percentage change in the output
-        the firm produces when employee $i$ exerts 1% more effort.
         '''
     )
 
@@ -173,7 +173,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM analytics','HRM practices','Notation for the course', 'Labor productivity and ULC'],  # required
+    options=['HRM practices','Notation for the course','Practices 11% (accumulated)','Labor productivity and ULC'],  # required
     icons=["house", "book", "calculator", "person", "globe"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -181,11 +181,11 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'HRM analytics':
+if selected == 'HRM practices':
     UNIT1_1()
-elif selected == 'HRM practices':
-    UNIT1_2()
 elif selected == 'Notation for the course':
+    UNIT1_2()
+elif selected == 'Practices 11% (accumulated)':
     UNIT1_3()
 elif selected == 'Labor productivity and ULC':
     UNIT1_4()
