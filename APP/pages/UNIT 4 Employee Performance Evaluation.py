@@ -72,7 +72,7 @@ def UNIT4_2():
     
 def UNIT4_3():
 
-        st.latex(
+    st.latex(
         r'''
         Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
         e_i \geq 0 \\[10pt]
