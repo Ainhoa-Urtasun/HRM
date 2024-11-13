@@ -35,24 +35,26 @@ def UNIT1_1():
     st.write(
         '''
         Any firm, regardless of its size, structure, or legal form of ownership, 
-        produces an **output** (good or service) and performs **economic activities** 
-        to achieve this. Firms are classified into sectors (industries) based on the output 
-        they produce and the economic activities they perform. There are standard classifications for
-        firms into industries depending on the economic activities they perform, such as
-        **NACE Rev. 2, the European Classification of Economic Activities**.
+        produces **output** (a good or a service) and performs **economic activities** 
+        necessary for that production. Firms are classified into sectors (industries) based on the output 
+        they produce and the economic activities they perform. Standard classifications, such as
+        **NACE Rev. 2, the European Classification of Economic Activities**, categorize firms into 
+        industries according to these activities.
 
-        To perform these economic activities, firms decide which technologies to adopt
-        and which jobs to post in the labor market. A job consists of a bundle of tasks. So the decision by 
-        firms regarding which job , 
-        and just as firms are classified into sectors (industries), 
-        jobs are classified into occupations based on the tasks they entail. 
-        A job is not the same as an occupation. Occupations are standardized, while jobs are more
-        flexible as they are designed by firms.
-
-        As there are standard classifications for firms into sectors,
-        there are also standard classifications for jobs into occupations, 
-        such as **ISCO** that stands for **International Standard Classification 
-        of Occupations**.
+        These economic activities are carried out by both employees and technology.
+        Consequently, a firm's decisions on which technologies to adopt and which jobs to post
+        in the labor market will depend on the specific economic activities required.
+        
+        Just as firms are classified into industries based on the output
+        they produce and associated economic activities, jobs are classified into
+        occupations depending on the tasks they entail. Same as for industries, 
+        there are standard classifications for occupations, 
+        such as **ISCO (International Standard Classification 
+        of Occupations)**. 
+        
+        It is important to note that a job is not the same as an occupation. 
+        Occupations are standardized, while jobs are more
+        flexible as they are designed by firms. 
         '''
     )
 
