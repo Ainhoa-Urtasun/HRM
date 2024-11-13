@@ -29,7 +29,7 @@ def UNIT1_1():
     )
 
     st.text_input('', placeholder='Write here the name of your firm')
-    st.text_input('Select **Overview** under Industry & overview',placeholder="Write here your firm's **NACE Rev. 2 Primary Code** and **English trade description**")
+    st.text_input('Select **Overview** under Industry & overview',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
                                                                                                    
     st.write(
         '''
