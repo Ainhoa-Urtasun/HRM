@@ -13,11 +13,23 @@ def UNIT1_1():
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
         Development of Vocational Training)
         - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
+
+        Follow these steps:
+        1. Access the SABI database through the UPNA Library
+        2. In 'Personalizar>Opciones Generales' change the language to English
+        3. Firm qualification based on **Employees** criteria:
+            - Minimum lastest number of employees 500
+            - Employees' segmentation in Spain: 
+                - Other managers
+                - Support intellectuals and scientists, technicians and professionals
+                - Administrative employees
+                - At least 10 women
+        4. Select one firm from the firms that qualify
         '''
     )
 
-    st.text_input('Select a sector from NACE rev. 2 at [Skills Intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence)', placeholder='Enter the name of your industry and its economic activities')
-    st.text_input("Select a firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1): (1) **Industry classification** Same sector above; (2) **Employees' segmentation in Spain** Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees. At least 20 for each in 2022 and the same or more in 2023",placeholder='Enter the name of your firm')
+    st.text_input('', placeholder='Write here the name of your firm')
+    st.text_input('Select **Overview** under Industry & overview',placeholder='Write here the English trade description')
                                                                                                    
     st.write(
         '''
