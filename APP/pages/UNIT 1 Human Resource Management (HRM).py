@@ -14,11 +14,11 @@ def UNIT1_1():
         Development of Vocational Training)
         - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
 
-        Follow these steps:
+        Choose your firm:
         1. Access the SABI database through the UPNA Library
-        2. In 'Personalizar>Opciones Generales' change the language to English
+        2. In 'Personalizar' then 'Opciones Generales', change the language to English
         3. Firm qualification based on **Employees** criteria:
-            - Minimum lastest number of employees 500
+            - Minimum lastest number of employees of 750
             - Employees' segmentation in Spain: 
                 - Other managers
                 - Support intellectuals and scientists, technicians and professionals
