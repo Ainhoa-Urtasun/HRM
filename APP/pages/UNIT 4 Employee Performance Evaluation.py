@@ -72,6 +72,13 @@ def UNIT4_2():
     
 def UNIT4_3():
 
+        st.latex(
+        r'''
+        Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
+        e_i \geq 0 \\[10pt]
+        '''
+    )
+
     st.write(
         '''
         In this course, we assume a **joint production function**, 
@@ -83,8 +90,6 @@ def UNIT4_3():
 
     st.latex(
         r'''
-        Q = f(e_1, e_2, \dots, e_i, \dots, e_L) \\[10pt]
-        e_i \geq 0 \\[10pt]
         \alpha_i = \frac{Q}{\partial e_i} \frac{e_i}{Q}
         '''
     )
