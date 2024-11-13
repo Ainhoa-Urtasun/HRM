@@ -171,7 +171,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 9% (accumulated)'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    icons=["house", "book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
