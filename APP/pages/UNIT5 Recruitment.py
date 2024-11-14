@@ -13,7 +13,7 @@ def UNIT5_1():
         \hline
         m_{21} & m_{22} & m_{23} & d_{3} \\
         \hline
-        m_{31} & m_{32} & s_{33} & d_{3} \\
+        m_{31} & m_{32} & m_{33} & d_{3} \\
         \hline
         h_{1} & h_{2} & h_{3} & \\
         \hline
@@ -32,6 +32,20 @@ def UNIT5_1():
 
     st.latex(r'L_{2022} = L_{(1,2022)} + L_{(2,2022)} + L_{(3,2022)}')
     st.latex(r'L_0 = L_{(1,2023)} + L_{(2,2023)} + L_{(3,2023)}')
+
+    st.write(
+        '''
+        Labor turnover and retention at the firm level during 2022,
+        denoted as $T$ and $R$, respectively:
+        '''
+    )
+
+    st.latex(
+        r'''
+        T = 100 \times \frac{d_1+d_2+d_3}{L_{2022}} \\[10pt]
+        R = 100 - T
+        '''
+    )
 
     st.write(
         '''
