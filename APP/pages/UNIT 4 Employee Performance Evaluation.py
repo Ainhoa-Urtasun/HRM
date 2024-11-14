@@ -147,7 +147,7 @@ def UNIT4_4():
         \geq
         C(p_1 \times e_1 + p_2 \times e_2 + \cdots + p_n \times e_n)\\[10pt]
         p_i \geq 0 \\[10pt]
-        \sum p_i = 1
+        \sum_{i=1}^n p_i = 1
         '''
     )
 
