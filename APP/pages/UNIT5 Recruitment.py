@@ -24,7 +24,8 @@ def UNIT5_1():
     st.write(
         '''
         Employment refers to the number of employees, including both full-time and part-time workers. 
-        From the above table, we can calculate the total employment of the firm at the end of 2022 and
+        From the above table, in the case of a firm that only contains the 3 jobs represented in
+        the table, we can calculate the total employment of the firm at the end of 2022 and
         at the end of 2023 as follows:
         '''
     )
