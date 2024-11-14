@@ -127,26 +127,16 @@ def UNIT5_4():
   st.text_input('', placeholder='Write here the name of your firm')
   st.text_input('Select your firm and then **Overview** under **Industry & overview**',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
                                                                                                    
-  with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-    C2020 = st.number_input("2020",key='C2020',step=1.0)
-    C2021 = st.number_input("2021",key='C2021',step=1.0)
-    C2022 = st.number_input("2022",key='C2022',step=1.0)
-  with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-    OR2020 = st.number_input("2020",key='OR2020',value=1.0,step=1.0)
-    OR2021 = st.number_input("2021",key='OR2021',value=1.0,step=1.0)
-    OR2022 = st.number_input("2022",key='OR2022',value=1.0,step=1.0)
   with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
     L2020 = st.number_input("2020",key='L2020',value=1.0,step=1.0)
     L2021 = st.number_input("2021",key='L2021',value=1.0,step=1.0)
     L2022 = st.number_input("2022",key='L2022',value=1.0,step=1.0)
 
-  LP = [OR2020/L2020,OR2021/L2021,OR2022/L2022]
-  ULC = [C2020/OR2020,C2021/OR2021,C2022/OR2022]
+  L = [L2020,L2021,L2022]
 
   fig = plt.figure(figsize=(5,5),dpi=100)
-  plt.plot(['2020','2021','2022'],LP,color='red',label='Labor productivity')
-  plt.plot(['2020','2021','2022'],ULC,color='blue',label='ULC')
-  plt.title('HRM metrics over time')
+  plt.plot(['2020','2021','2022'],L,color='red',label='Employment')
+  plt.title('Employment over time')
   plt.legend()
   st.pyplot(fig)
     
@@ -155,7 +145,7 @@ st.set_page_config(page_title="UNIT5 Recruitment", layout="wide")
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=["Employment","Asymmetric information and adverse selection",'Skill matching','Practice 22'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    icons=["house", "book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
