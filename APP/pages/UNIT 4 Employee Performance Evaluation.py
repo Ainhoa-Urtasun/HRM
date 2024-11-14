@@ -93,7 +93,7 @@ def UNIT4_4():
 
     st.latex(
             r'''
-            C(e_i) = g_i e_i^2 \\[10pt]
+            C(e_i) = g_i e_i^2
             '''
         )
 
