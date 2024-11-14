@@ -101,15 +101,15 @@ def UNIT4_4():
         '''
         where:
         - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
-        - $g_i$ is the **skill gap** of employee $i$. The greater their skill gap, the higher the 
+        - $g_i$ is the **skill gap** of employee $i$, with $g?i \geq 0$. The greater their skill gap, the higher the 
         cost of effort for employee $i$.
         '''
     )
 
     st.write(
         '''
-        The first derivative of the cost of effort with respect to effort, or marginal cost of effort, increases linearly
-        with effort since $g_i > 0$:
+        The cost of effort is not a linear function. Its first derivative, or marginal cost of effort, is positive
+        but not constant, it increases linearly with effort:
         '''
     )
 
@@ -121,8 +121,9 @@ def UNIT4_4():
 
     st.write(
         '''
-        The second derivative with respect to $e_i$ is also positive, which means that the cost of effort function is a convex
-        function, or concave-up function. This convexity indicates that the cost of effort function increases at an
+        The second derivative with respect to $e_i$ is also positive, 
+        which means that the cost of effort is a convex
+        function. This convexity indicates that the cost of effort function increases at an
         increasing rate as effort rises:
         '''
     )
@@ -136,13 +137,14 @@ def UNIT4_4():
     st.write(
         '''
         **Jensen's inequality** tells us that for a convex function such as $C(e_i)$, the expected cost of 
-        effort is at least the cost of the expected effort. Mathematically:
+        effort is at least the cost of the expected effort:
         '''
     )
 
     st.latex(
         r'''
-        E[C(e_i)] \geq C(E[e_i])
+        C(\beta_1 \times e_1 + \beta_2 \times e_2 + \cdot + \beta_n \times e_n) 
+        \leq \beta_1 \times C(e_1) + \beta_2 \times C(e_2) + \cdot + \beta_n \times C(e_n))
         '''
     )
 
