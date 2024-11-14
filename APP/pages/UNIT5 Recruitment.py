@@ -5,23 +5,36 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT5_1():
+    st.latex(
+        r"""
+        \begin{array}{|c|c|c|c|}
+        \hline
+        m_{11} & m_{12} & m_{13} & d_{1} \\
+        \hline
+        m_{21} & m_{22} & m_{23} & d_{3} \\
+        \hline
+        m_{31} & m_{32} & s_{33} & d_{3} \\
+        \hline
+        h_{1} & h_{2} & h_{3} & \\
+        \hline
+        \end{array}
+        """
+    )
 
     st.write(
         '''
         Employment refers to the number of employees, including both full-time and part-time workers. 
-        From employment in a firm at the job level, 
-        we can calculate the total employment of the firm at  and at 0 as follows:
+        From the above table, we can calculate the total employment of the firm at the end of 2022 and
+        at the end of 2023 as follows:
         '''
     )
 
-    st.latex(r'L_{-1} = L_{(1,-1)} + L_{(2,-1)} + L_{(3,-1)}')
-    st.latex(r'L_0 = L_{(1,0)} + L_{(2,0)} + L_{(3,0)}')
+    st.latex(r'L_{2022} = L_{(1,2022)} + L_{(2,2022)} + L_{(3,2022)}')
+    st.latex(r'L_0 = L_{(1,2023)} + L_{(2,2023)} + L_{(3,2023)}')
 
     st.write(
         '''
-        $L_{(-1)}$ and $L_{0}$ refers to employment in the firm at two consecutive points in time (e.g., years).
-        If we know employment at several points in time (for multiple years, for instance), we can calculate the compound annual growth rate (CAGR) 
-        of employment over $t$ years as follows:
+        The compound annual growth rate (CAGR) of employment over $t$ years is calculated as follows:
         '''
     )
 
