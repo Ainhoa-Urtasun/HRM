@@ -25,23 +25,23 @@ def UNIT3_1():
 
     st.write(
         '''
-        - $m_{ij}$ represents employees who moved from $J_i$ to $J_j$ during 2023
-        - $h_{k}$ represents new hires or number of employees who have been recruited and started working in $J_i$ 
-        during 2023
-        - $d$ represents departures or number of employees who have left the firm during 2023,
+        - $m_{ij}$ represents employees who moved from job $J_i$ to job $J_j$ during 2022
+        - $d_k$ represents departures or number of employees who were in job $J_k$ and left the firm during 2022,
         either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
+        - $h_{k}$ represents new hires or number of employees who have been recruited and started working in job $J_k$ 
+        during 2023
+  
 
         The table above should meet the following:
+        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in job $J_k$ at the end of 2022
+        - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in job $J_k$ at the end of 2023
+        
+        Jobs, denoted as $J_k$, within the firm:
+        - $J_1$ Other managers
+        - $J_2$ Support intellectuals and scientists, technicians and professionals
+        - $J_3$ Administrative employees
 
-        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in $J_k$ at the end of 2022
-        - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in $K_k$ at the end of 2023
-        - Jobs, denoted as $J_k$, within the firm:
-            - $J_1$ Other managers
-            - $J_2$ Support intellectuals and scientists, technicians and professionals
-            - $J_3$ Administrative employees
-
-        Using this data, two employee performance evaluation metrics at the extensive margin can be calculated for each job at the firm for 2022: retention in job $J_k$,
-        denoted as $R_k$, and turnover in job $J_k$, denoted as $T_k$:
+        Using this data, retention in job $J_k$, denoted as $R_k$, and turnover in job $J_k$, denoted as $T_k$:
         '''
     )
 
