@@ -148,7 +148,7 @@ st.set_page_config(page_title="UNIT 3 HR Planning", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Input data",'Forecasting the availability of employees using the transition matrix','Practice 11% (accumulated)'],  # required
+    options=["Input data",'Forecasting the availability of employees using the transition matrix','Practice 11'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -160,6 +160,6 @@ if selected == "Input data":
     UNIT3_1()
 elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
-elif selected == 'Practice 11% (accumulated)':
+elif selected == 'Practice 11':
     UNIT3_3()
 
