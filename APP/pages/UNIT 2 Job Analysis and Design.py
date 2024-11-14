@@ -117,7 +117,7 @@ def UNIT2_2():
 
 def UNIT2_3():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10% (accumulated) </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
