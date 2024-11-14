@@ -9,8 +9,8 @@ def UNIT5_1():
     st.write(
         '''
         Employment refers to the number of employees, including both full-time and part-time workers. 
-        If we have information of employment in a firm at the job level, 
-        we can calculate the total employment of the firm at -1 and at 0 as follows:
+        From employment in a firm at the job level, 
+        we can calculate the total employment of the firm at  and at 0 as follows:
         '''
     )
 
