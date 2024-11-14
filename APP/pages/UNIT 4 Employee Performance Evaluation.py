@@ -16,7 +16,7 @@ def UNIT4_1():
         
         In the context of employee performance evaluation, it is helpful to distinguish between:
         - **The extensive margin**: This evaluates employee participation in tasks, with metrics like
-        attendance and absenteeism providing insight into employee engagement and motivation.
+        attendance, absenteeism, turnover, and retention providing insights into employee engagement and motivation.
         - **The intensive margin**: This evaluates the level of effort and productivity during tasks, focusing on
         how employees perform while working. Examples include labor productivity,
         ULC, output elasticity of labor, and the skill gap.
