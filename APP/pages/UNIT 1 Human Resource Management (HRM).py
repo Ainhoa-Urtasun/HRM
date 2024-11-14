@@ -170,7 +170,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 9% (accumulated)'],  # required
+    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 9'],  # required
     icons=["house", "book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -186,6 +186,6 @@ elif selected == 'Notation for the course':
     UNIT1_3()
 elif selected == 'Labor productivity and ULC':
     UNIT1_4()
-elif selected == 'Practice 9% (accumulated)':
+elif selected == 'Practice 9':
     UNIT1_5()
 
