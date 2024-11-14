@@ -166,7 +166,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs",'Job evaluation and job skill requirements','Practice 10% (accumulated)'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation and job skill requirements','Practice 10'],  # required
     icons=["book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -178,7 +178,7 @@ if selected == "Tasks, skills, and jobs":
     UNIT2_1()
 elif selected == "Job evaluation and job skill requirements":
     UNIT2_2()
-elif selected == "Practice 10% (accumulated)":
+elif selected == "Practice 10":
     UNIT2_3()
 
 
