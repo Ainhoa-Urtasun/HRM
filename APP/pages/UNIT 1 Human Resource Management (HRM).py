@@ -116,7 +116,7 @@ def UNIT1_4():
 
 def UNIT1_5():
   
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9% (accumulated) </h3>", unsafe_allow_html=True)
+  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
 
   st.write(
     '''
