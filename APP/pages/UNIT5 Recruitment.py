@@ -68,7 +68,7 @@ def UNIT5_3():
     
     st.write(
         '''
-        Consider the following **cost of effort** for the job candidate:
+        Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
         '''
     )
 
