@@ -40,7 +40,7 @@ def UNIT3_1():
             - $J_2$ Support intellectuals and scientists, technicians and professionals
             - $J_3$ Administrative employees
 
-        Using this data, two employee performance evaluation metrics at the extensive margin can be calculated for each job at the firm: retention in job $J_k$,
+        Using this data, two employee performance evaluation metrics at the extensive margin can be calculated for each job at the firm for 2022: retention in job $J_k$,
         denoted as $R_k$, and turnover in job $J_k$, denoted as $T_k$:
         '''
     )
