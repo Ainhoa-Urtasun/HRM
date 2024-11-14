@@ -143,8 +143,11 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C(\beta_1 \times e_1 + \beta_2 \times e_2 + \cdots + \beta_n \times e_n) 
-        \leq \beta_1 \times C(e_1) + \beta_2 \times C(e_2) + \cdots + \beta_n \times C(e_n)
+        p_1 \times C(e_1) + p_2 \times C(e_2) + \cdots + p_n \times C(e_n)
+        \geq
+        C(p_1 \times e_1 + p_2 \times e_2 + \cdots + p_n \times e_n)\\[10pt]
+        p_i \geq 0 \\[10pt]
+        \sum p_i = 1
         '''
     )
 
