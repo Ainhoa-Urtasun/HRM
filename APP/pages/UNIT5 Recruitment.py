@@ -82,7 +82,7 @@ def UNIT5_3():
         '''
         where:
         - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
-        - $g_i$ is the **skill gap** of employee $i$, with $g?i \geq 0$. The greater their skill gap, the higher the 
+        - $g_i$ is the **skill gap** of employee $i$, with $g_i \geq 0$. The greater their skill gap, the higher the 
         cost of effort for employee $i$. Well-matched job candidates will show 
         a low skill gap $g_i$ whereas poorly-matched job candidates will show a high skill gap $g_i$. 
         The greater the distance, the higher the 
