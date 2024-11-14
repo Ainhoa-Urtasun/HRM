@@ -54,14 +54,13 @@ def UNIT5_2():
         Here’s how adverse selection occurs: to attract a pool of candidates, 
         the firm posts a job ad specifying the tasks, required skills, credentials, 
         and salary for the role. Due to limited information about each candidate’s true abilities, 
-        the employer offers an average salary for the position. 
-        This attracts candidates who meet the listed credentials, but these credentials, 
-        while signaling a certain level of qualification, do not fully reveal each candidate's suitability.
+        the employer may set a moderate salary for the position. 
+        This job posting will attract candidates who meet the listed credentials and are satisfied with the
+        offered salary. The credentials, while signaling a certain level of qualification, 
+        do not fully reveal each candidate's suitability.
     
-        However, this average salary might be too low for the 'good' candidates 
-        while still appealing to 'wrong' ones, 
-        resulting in adverse selection where primarily 'wrong' candidates apply.
-
+        If the salary offered in the job ad is too low for the 'good' candidates but sufficient for 'less qualified'
+        candidates, this will resulting in adverse selection, where primarily less suitable candidates apply.
         '''
     )
 
