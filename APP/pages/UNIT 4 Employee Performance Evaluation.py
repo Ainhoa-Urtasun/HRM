@@ -143,8 +143,8 @@ def UNIT4_4():
 
     st.latex(
         r'''
-        C(\beta_1 \times e_1 + \beta_2 \times e_2 + \cdot + \beta_n \times e_n) 
-        \leq \beta_1 \times C(e_1) + \beta_2 \times C(e_2) + \cdot + \beta_n \times C(e_n))
+        C(\beta_1 \times e_1 + \beta_2 \times e_2 + \cdots + \beta_n \times e_n) 
+        \leq \beta_1 \times C(e_1) + \beta_2 \times C(e_2) + \cdots + \beta_n \times C(e_n)
         '''
     )
 
