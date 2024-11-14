@@ -80,18 +80,19 @@ def UNIT5_3():
 
     st.write(
         '''
-        where $e_i$ represents the effort job candidate $i$ would exert if hired; 
-        $g_i$ is the **skill gap** of job candidate $i$ calculated as the Euclidean distance 
-        between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
-        **skill profile** of job candidate $i$. Well-matched job candidates will show 
+        where:
+        - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
+        - $g_i$ is the **skill gap** of employee $i$, with $g?i \geq 0$. The greater their skill gap, the higher the 
+        cost of effort for employee $i$. Well-matched job candidates will show 
         a low skill gap $g_i$ whereas poorly-matched job candidates will show a high skill gap $g_i$. 
         The greater the distance, the higher the 
         cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
-
-        To attract well-matched job candidates, the firm can specify in the job posting both the required 
-        level of effort and the corresponding salary, which compensates well-matched candidates 
-        but not poorly-matched ones. This approach will deter poorly-matched candidates, 
+        
+        To mitigate adverse selection when recruiting and attract 
+        well-matched job candidates, the firm can specify in the job posting not only the credentials        
+        but also the required skills, tasks, level of effort, and a salary that compensates 
+        well-matched candidates but not poorly-matched ones. This approach will deter poorly-matched candidates, 
         as their high cost of effort would require a significantly higher salary to make the job worthwhile. 
         By setting these conditions—a high level of required effort at a relatively low salary—during a probation period, 
         the company can assess the candidate’s fit for the role and decide whether to offer a long-term job contract.
