@@ -18,7 +18,7 @@ def UNIT6_1():
         and general management skills. Because these skills are valuable to many employers, 
         individuals with high general human capital have greater mobility in the labor market.
         
-        - **Specific human capital refers to skills and knowledge that are valuable only 
+        - **Specific human capital** refers to skills and knowledge that are valuable only 
         to a particular firm or job. Examples include mastery of proprietary processes, 
         familiarity with unique organizational structures,
         or job-specific technical expertise. These skills increase productivity within the specific 
@@ -75,7 +75,7 @@ def UNIT6_2():
         '''
     )
 
-def UNIT6_2():
+def UNIT6_3():
 
     st.write(
         """
@@ -143,7 +143,9 @@ def UNIT6_2():
         """
     )
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 HRM Analytics </h3>", unsafe_allow_html=True)
+def UNIT6_4():
+
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 23 </h3>", unsafe_allow_html=True)
     with st.sidebar.expander("Skill gap of trained employees"):
         gtbefore = st.number_input("Before", key="gt0", step=1)
         gtafter = st.number_input("After", key="gt1", step=1)
