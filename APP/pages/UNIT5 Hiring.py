@@ -111,32 +111,57 @@ def UNIT5_2():
 
 def UNIT5_3():
     st.write(
-        '''
-        **Asymmetric Information:** Job candidates have more information about their skills, abilities, and work ethic than the hiring firm.
+        """
+        Job candidates typically have more knowledge about their own skills, 
+        abilities, and work ethic than the hiring firm. This imbalance, known as **asymmetric information**, 
+        can lead to inefficiencies. In extreme cases, it results in **adverse selection**, 
+        where the firm unintentionally attracts and hires less qualified candidates, 
+        creating a workforce less capable than intended.
         
-        **Adverse Selection:** Due to this information asymmetry, the firm may unintentionally attract and hire less qualified candidates.
+        To address these issues, economics introduces the concepts of **screening** and **signaling**, 
+        which help mitigate the inefficiencies caused by asymmetric information.
         
-        **The Mechanism:**
-        1. **Average salary offer:** The firm, unsure of the true quality of candidates, offers a moderate salary.
-        2. **Attracting less qualified candidates:** Less qualified candidates, satisfied with the offered salary, are more likely to apply.
-        3. **Deterring highly qualified candidates:** Highly qualified candidates, seeking higher compensation for their skills, may be deterred.
-        4. **Skewed applicant pool:** As a result, the pool of applicants becomes skewed towards less qualified individuals.
-       
-        This leads to a situation where the firm ends up with a less desirable workforce than it intended.
+        - **Screening**: This strategy is used by the less informed party (the employer) to gather information 
+        and distinguish between different types of candidates. Employers use tools like 
+        well-crafted job advertisements, assessments, and interviews to identify the most qualified applicants.
+        - **Signaling**: This strategy is employed by the more informed party (the employee) 
+        to communicate their abilities to the employer. For instance, earning a degree from a 
+        prestigious institution signals competence. Signaling is effective when the cost of obtaining 
+        the signal (e.g., education) is high and varies between highly skilled and less skilled candidates. 
+        It works if acquiring the signal is less costly for highly skilled candidates.
 
-        **Screening** and **signaling** are concepts in economics that help to address information asymmetry, 
-        where one party in a transaction has more information than the other.
-
-        - **Screening**: This is a strategy used by the less informed party to gather information and distinguish 
-        between different types of individuals or products. For instance, a company might use a rigorous application process, 
-        including tests and interviews, to screen job candidates and identify the most qualified ones.
-        - **Signaling**: This is a strategy used by the more informed party to convey credible 
-        information to the less informed party. 
-        For example, a highly skilled worker might earn a prestigious degree to signal their abilities to potential employers.
-        '''
+        If screening and signaling fail, firms may end up hiring less desirable candidates. 
+        For example, an employer offering an average salary due to a luck of trust in signalling
+        may attract less qualified applicants who cannot secure find better opportunities, 
+        while deterring top talent with access to superior offers. In this line,
+        if a university degree fails to differentiate those willing to learn from those who are not, 
+        signaling may lose its effectiveness.
+        """
     )
 
 def UNIT5_4():
+    
+    st.write(
+        """
+        A **probationary period** is a specified time frame at the beginning of employment 
+        during which the employer assesses the new hire’s performance, suitability for the role, 
+        and alignment with company expectations. 
+        
+        Key Features:
+        - **Employee performance evaluation**: Employers use this period to evaluate the employee's skills, work ethic, and ability to meet job requirements.
+        - **Job security**: Employees may have reduced job security, as termination during this period often requires less formal process or notice.
+        - **Benefits**: Access to certain benefits, such as health insurance or retirement plans, might be limited until the probationary period is completed.
+
+        The length of a probationary period typically ranges from 1 to 6 months, 
+        depending on the employer and local labor laws. Upon successful completion, 
+        the employee is usually granted full employment status and benefits.
+
+        Probationary periods may or may not be mentioned in job advertisements. 
+        If disclosed, the ad might include a statement like: *"This position includes a 3-month probationary period."* 
+        Otherwise, details are often provided during the hiring process or in the employment contract.
+        """
+    )
+
     
     st.write(
         '''
@@ -220,7 +245,7 @@ st.set_page_config(page_title="UNIT5 Hiring", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Vacancy yield","Asymmetric information and adverse selection",'Skill matching','Practice 22'],  # required
+    options=["Employment","Vacancy yield","Asymmetric information and adverse selection",'Probationary period','Practice 22'],  # required
     icons=["calculator", "calculator", "book", "book","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -234,7 +259,7 @@ elif selected == "Vacancy yield":
     UNIT5_2()
 elif selected == "Asymmetric information and adverse selection":
     UNIT5_3()
-elif selected == "Skill matching":
+elif selected == "Probationary period:
     UNIT5_4()
 elif selected == "Practice 22":
     UNIT5_5()
