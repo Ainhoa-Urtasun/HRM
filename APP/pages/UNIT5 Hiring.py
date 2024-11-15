@@ -102,6 +102,9 @@ def UNIT5_2():
         to job vacancies $v$. It indicates how many times hires are made per job vacancy. A higher vacancy yield suggests the firm
         is more effective in filling open positions, while a lower yield might indicate challenges in attracting or selecting 
         suitable candidates.
+
+        Occupational vacancy rates in the labor market indicate a higher demand for workers in that occupation, suggesting better job opportunities
+        and potential for growth.
         '''
     )
         
@@ -123,6 +126,16 @@ def UNIT5_3():
     
         If the salary offered in the job ad is too low for the 'good' candidates but sufficient for 'less qualified'
         candidates, this will resulting in adverse selection, where primarily less suitable candidates apply.
+
+        **Screening** and **signaling** are concepts in economics that help to address information asymmetry, 
+        where one party in a transaction has more information than the other.
+
+        - **Screening**: This is a strategy used by the less informed party to gather information and distinguish 
+        between different types of individuals or products. For instance, a company might use a rigorous application process, 
+        including tests and interviews, to screen job candidates and identify the most qualified ones.
+        - **Signaling**: This is a strategy used by the more informed party to convey credible 
+        information to the less informed party. 
+        For example, a highly skilled worker might earn a prestigious degree to signal their abilities to potential employers.
         '''
     )
 
