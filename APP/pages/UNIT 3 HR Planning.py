@@ -33,15 +33,15 @@ def UNIT3_1():
   
 
         The table above should meet the following:
-        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$, where row-summation gives the number of employees in job $J_k$ at the end of 2022
-        - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$, where column-summation gives the number of employees in job $J_k$ at the end of 2023
+        - $L_{k,2022} = m_{k1} + m_{k2} + m_{k3} + d_{k}$ where row-summation gives the number of employees in job $J_k$ at the end of 2022
+        - $L_{k,2023} = m_{1k} + m_{2k} + m_{3k} + h_{k}$ where column-summation gives the number of employees in job $J_k$ at the end of 2023
         
         Jobs, denoted as $J_k$, within the firm:
         - $J_1$ Other managers
         - $J_2$ Support intellectuals and scientists, technicians and professionals
         - $J_3$ Administrative employees
 
-        Using this data, retention in job $J_k$, denoted as $R_k$, and turnover in job $J_k$, denoted as $T_k$:
+        Using this data, retention in and turnover in job $J_k$, respectively:
         '''
     )
 
