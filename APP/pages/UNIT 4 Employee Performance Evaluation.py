@@ -51,8 +51,9 @@ def UNIT4_3():
 
     st.write(
         '''
-        In this course, we assume a **joint production function**, 
-        where the firm's output results from the **collective contribution of each employee's effort**.
+        The production function of the firm is based on teamwork and collaboration as the
+        combined efforts of employees jointly contribute to the firm's total output making it 
+        challenging to measure individual contributions:
         '''
     )
 
