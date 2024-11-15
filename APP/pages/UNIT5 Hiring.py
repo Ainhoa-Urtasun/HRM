@@ -8,9 +8,9 @@ def UNIT5_1():
 
     st.write(
         '''
-        Employment refers to the number of employees, including both full-time and part-time workers. 
-        From the HR planning table, employment at the firm at the end of 2022 and
-        at the end of 2023 can be calculated as follows:
+        Employment refers to the number of employees, including both full-time and part-time workers.
+        Employment is an extensive margin metric as it doesn
+
         '''
     )
     st.latex(
