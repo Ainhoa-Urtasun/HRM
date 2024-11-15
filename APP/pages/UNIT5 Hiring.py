@@ -140,7 +140,8 @@ def UNIT5_4():
     
     st.write(
         '''
-        Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
+        Matching the job candidate's skills and the skills required for the job combines both screening and signaling to
+        mitigate adverse selection when hiring. Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
         '''
     )
 
