@@ -131,7 +131,7 @@ def UNIT6_2():
     plt.legend()
     st.pyplot(fig)
   
-st.set_page_config(page_title="UNIT6", layout="wide")
+st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
