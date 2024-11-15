@@ -57,7 +57,9 @@ def UNIT3_2():
         '''
         HR planning makes predictions on the future availability of employees using the transition matrix $T$.
         The notation below illustrates
-        the structure of the transition matrix $T$ and the calculations required to to make these predictions:
+        the structure of the transition matrix $T$ and the calculations required to use historical data from 2022 and 
+        2023 to predict the future (end of 2024) availability of employees in each job at the firm. To be able to use available data
+        from SABI, this analysis should be conducted before the end of 2024:
         '''
     )
 
@@ -71,9 +73,9 @@ def UNIT3_2():
         \end{pmatrix} \\[10pt]
         
         \begin{pmatrix}
-        \hat{L}_1 \\
-        \hat{L}_2 \\
-        \hat{L}_3 \\
+        \hat{L}_{2024} \\
+        \hat{L}_{2024} \\
+        \hat{L}_{2024} \\
         \end{pmatrix} = 
         \begin{pmatrix}
         \frac{m_{11}}{L_{1,2022}} & \frac{m_{12}}{L_{1,2022}} & \frac{m_{13}}{L_{1,2022}} \\ 
@@ -127,7 +129,7 @@ def UNIT3_3():
     if st.button("HR planning table"):
         st.write(matrix)
    
-    if st.button("HR planning"):
+    if st.button("HR planning for the end of 2024"):
         T = np.array([
             [m11/(m11+m12+m13+d1), m12/(m11+m12+m13+d1), m13/(m11+m12+m13+d1)],
             [m21/(m21+m22+m23+d2), m22/(m21+m22+m23+d2), m23/(m21+m22+m23+d2)],
