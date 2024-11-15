@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT5_1():
+
+    st.write(
+        '''
+        Employment refers to the number of employees, including both full-time and part-time workers. 
+        From the HR planning table, employment at the firm at the end of 2022 and
+        at the end of 2023 can be calculated as follows:
+        '''
+    )
     st.latex(
         r"""
         \begin{array}{|c|c|c|c|}
@@ -19,15 +27,6 @@ def UNIT5_1():
         \hline
         \end{array}
         """
-    )
-
-    st.write(
-        '''
-        Employment refers to the number of employees, including both full-time and part-time workers. 
-        From the above table, in the case of a firm that only contains the 3 jobs represented in
-        the table, we can calculate the total employment of the firm at the end of 2022 and
-        at the end of 2023 as follows:
-        '''
     )
 
     st.latex(r'L_{2022} = L_{1,2022} + L_{2,2022} + L_{3,2022}')
