@@ -42,7 +42,8 @@ def UNIT5_1():
     st.write(
         '''
         Labor turnover and retention at the firm level during 2022,
-        denoted as $T$ and $R$, respectively, are calculated as follows:
+        denoted as $T$ and $R$, respectively, are calculated as follows, where $d_k$ represents the departures or separations of employees who
+        were in job $J_k$ at the end of 2022 and left the firm during 2023, either voluntarily (e.g., quitting or retiring) or involuntarily (e.g., layoffs or dismissals):
         '''
     )
 
