@@ -29,13 +29,20 @@ def UNIT5_1():
         """
     )
 
+    st.write(
+        '''
+        From the HR planning table, employment at the end of 2022
+        and at the end of 2023 at the firm can be calculated as follows:
+        '''
+    )
+
     st.latex(r'L_{2022} = L_{1,2022} + L_{2,2022} + L_{3,2022}')
     st.latex(r'L_{2023} = L_{1,2023} + L_{2,2023} + L_{3,2023}')
 
     st.write(
         '''
         Labor turnover and retention at the firm level during 2022,
-        denoted as $T$ and $R$, respectively:
+        denoted as $T$ and $R$, respectively, are calculated as follows:
         '''
     )
 
