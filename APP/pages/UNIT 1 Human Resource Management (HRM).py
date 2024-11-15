@@ -115,7 +115,7 @@ def UNIT1_4():
 
 def UNIT1_5():
   
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
+  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10 </h3>", unsafe_allow_html=True)
 
   st.write(
     '''
@@ -126,9 +126,9 @@ def UNIT1_5():
     Choose your firm:
     1. Access the SABI database through the UPNA Library
     2. In 'Personalizar' then 'Opciones Generales', change the language to English
-    3. Firm qualification based on **Employees** criteria:
+    3. Firm qualification based on **Employees** criteria>
       - Minimum lastest number of employees of 750
-      - Employees' segmentation in Spain (last available year):
+      - Employees' segmentation in Spain (in 2023):
       - Other managers
       - Support intellectuals and scientists, technicians and professionals
       - Administrative employees
@@ -169,7 +169,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 9'],  # required
+    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 10'],  # required
     icons=["house", "book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
