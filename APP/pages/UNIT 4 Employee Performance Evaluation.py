@@ -186,7 +186,7 @@ def UNIT4_5():
 
 def UNIT4_6():
     
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 13 </h3>", unsafe_allow_html=True)
     st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("$t_i$"):
@@ -221,7 +221,7 @@ st.set_page_config(page_title="UNIT 4 Employee Performance Evaluation", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Classification','Labor productivity and ULC','Output elasticity of effort','Cost of effort','Skill gap','Practice 12'],  # required
+    options=['Classification','Labor productivity and ULC','Output elasticity of effort','Cost of effort','Skill gap','Practice 13'],  # required
     icons=["house", "calculator", "calculator", "book", "calculator",'people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -239,5 +239,5 @@ elif selected == "Cost of effort":
     UNIT4_4()
 elif selected == "Skill gap":
     UNIT4_5()
-elif selected == "Practice 12":
+elif selected == "Practice 13":
     UNIT4_6()
