@@ -7,19 +7,21 @@ from streamlit_option_menu import option_menu
 def UNIT4_1():
     st.write(
         '''
-        Employee performance evaluation assesses how effectively employees perform their jobs within the firm. 
-        Employee performance can be evaluated in two ways:
-        - **On average**: Labor productivity and unit labor cost (ULC) are average measures of employee performance
-        across the workforce
-        - **Individually**: Output elasticity of effort and the skill gap are individual measures that 
-        assess each employee's specific contribution and capabilities
+        Employee performance evaluation assesses how effectively employees perform their jobs within the firm. Evaluating
+        employee performance is challenging due to teamwork and collaboration among $L$ employees to produce output
+        represented as $Q=f(e_1,e_2,...,e_L)$. Direct assessment of employee performance require metrics at the **intensive margin**, 
+        or metrics that measure how effectively employees perform while working, such as effort level, productivity, ULC, output elasticity of effort,
+        and skill gap. 
         
-        In the context of employee performance evaluation, it is helpful to distinguish between:
-        - **The extensive margin**: This evaluates employee participation in tasks, with metrics like
-        attendance, absenteeism, turnover, and retention providing insights into employee engagement and motivation.
-        - **The intensive margin**: This evaluates the level of effort and productivity during tasks, focusing on
-        how employees perform while working. Examples include labor productivity,
-        ULC, output elasticity of labor, and the skill gap.
+        Metrics at the **extensive margin** evaluate employee participation in tasks, 
+        such as turnover, absenteeism, retention, attendance, 
+        or employment. While these extensive marging metrics are easier to compute, they do not directly assess employee performance. 
+        
+        Metrics at the intensive margin can be obtained in two ways:
+        - **On average**: Labor productivity and unit labor cost (ULC) are average measures of employee performance
+        across the workforce. They are easier to compute.
+        - **Individually**: Output elasticity of effort and the skill gap are individual measures that 
+        assess each employee's specific contribution and capabilities. They are harder to collect.
         '''
     )
 
