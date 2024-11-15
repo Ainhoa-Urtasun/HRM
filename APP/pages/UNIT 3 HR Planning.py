@@ -93,7 +93,7 @@ def UNIT3_2():
 def UNIT3_3():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
-    st.sidebar.write('Input data from the end of 2022 and the end of 2023:')
+    st.sidebar.write('Input historical data from the end of 2022 and the end of 2023:')
     with st.sidebar.expander("$J_1$ Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
         L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=0)
