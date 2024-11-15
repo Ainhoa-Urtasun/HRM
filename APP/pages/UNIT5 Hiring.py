@@ -220,7 +220,7 @@ st.set_page_config(page_title="UNIT5 Hiring", layout="wide")
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=["Employment","Vacancy yield","Asymmetric information and adverse selection",'Skill matching','Practice 22'],  # required
-    icons=["house", "book", "calculator", "person"],  # optional
+    icons=["calculator", "calculator", "book", "book","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
