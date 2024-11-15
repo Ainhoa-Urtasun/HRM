@@ -113,12 +113,14 @@ def UNIT5_3():
     st.write(
         '''
         **Asymmetric Information:** Job candidates have more information about their skills, abilities, and work ethic than the hiring firm.
+        
         **Adverse Selection:** Due to this information asymmetry, the firm may unintentionally attract and hire less qualified candidates.
+        
         **The Mechanism:**
-        1. **Moderate Salary Offer:** The firm, unsure of the true quality of candidates, offers a moderate salary.
-        2. **Attracting Less Qualified Candidates:** Less qualified candidates, satisfied with the offered salary, are more likely to apply.
-        3. **Deterring Highly Qualified Candidates:** Highly qualified candidates, seeking higher compensation for their skills, may be deterred.
-        4. **Skewed Applicant Pool:** As a result, the pool of applicants becomes skewed towards less qualified individuals.
+        1. **Average salary offer:** The firm, unsure of the true quality of candidates, offers a moderate salary.
+        2. **Attracting less qualified candidates:** Less qualified candidates, satisfied with the offered salary, are more likely to apply.
+        3. **Deterring highly qualified candidates:** Highly qualified candidates, seeking higher compensation for their skills, may be deterred.
+        4. **Skewed applicant pool:** As a result, the pool of applicants becomes skewed towards less qualified individuals.
        
         This leads to a situation where the firm ends up with a less desirable workforce than it intended.
 
