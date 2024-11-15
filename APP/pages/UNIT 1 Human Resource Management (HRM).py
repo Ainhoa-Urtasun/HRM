@@ -49,22 +49,23 @@ def UNIT1_2():
 def UNIT1_3():
   st.write(
     ''' 
-    - $Q = f(e_1, e_2,...,e_L)$ is the production function of the firm
-    - $e_i$ effort employee $i$ exerts at the firm, $e_i > 0$
-    - $Q$ is the output the firm produces
+    - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
+    combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
+    challenging to measure individual contributions.
+    - $e_i$ effort employee $i$ exerts at the firm with $e_i > 0$
     - $L$ number of employees at the firm
-    - Skills, denoted as $s_i$, to be possessed by employees at the firm:
+    - **Skills**, denoted as $s_i$, to be possessed by employees at the firm:
       - $s_1$ Demonstrating willigness to learn
       - $s_2$ Collaborating in teams and networks
       - $s_3$ Working efficiently
       - $s_4$ Taking a proactive approach  
-    - Tasks, denoted as $t_j$, to be carried out by employees at the firm:
+    - **Tasks**, denoted as $t_j$, to be carried out by employees at the firm:
       - $t_1$ Intellectual
       - $t_2$ Physical
       - $t_3$ Social
       - $t_4$ Use of methods
       - $t_5$ Use of technology
-    - Jobs, denoted as $J_k$, within the firm:
+    - **Jobs**, denoted as $J_k$, within the firm:
       - $J_1$ Other managers
       - $J_2$ Support intellectuals and scientists, technicians and professionals
       - $J_3$ Administrative employees
