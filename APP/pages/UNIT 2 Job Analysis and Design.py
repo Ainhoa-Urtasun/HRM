@@ -174,7 +174,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=["Tasks, skills, and jobs","Job evaluation","Job skill requirements","Practice 11"],  # required
-    icons=["book", "calculator", "person"],  # optional
+    icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
