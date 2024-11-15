@@ -16,6 +16,9 @@ def UNIT4_1():
         Metrics at the **extensive margin** evaluate employee participation in tasks, 
         such as turnover, absenteeism, retention, attendance, 
         or employment. While these extensive marging metrics are easier to compute, they do not directly assess employee performance. 
+        Metrics at the extensive margin assess employee performance only indirectly, 
+        as they measure participation factors like attendance or retention, 
+        which can influence performance but do not directly reflect how effectively employees perform their tasks.
         
         Metrics at the intensive margin can be obtained in two ways:
         - **On average**: Labor productivity and unit labor cost (ULC) are average measures of employee performance
