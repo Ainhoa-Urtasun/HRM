@@ -187,7 +187,7 @@ elif selected == "Job evaluation":
     UNIT2_2()
 elif selected == "Job skill requirements":
     UNIT2_3()
-elif selected == "Practice 10":
+elif selected == "Practice 11":
     UNIT2_4()
 
 
