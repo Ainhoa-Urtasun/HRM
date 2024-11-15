@@ -162,9 +162,8 @@ def UNIT5_4():
         cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
         
-        To mitigate adverse selection when recruiting and attract 
-        well-matched job candidates, the firm can specify in the job posting not only the credentials        
-        but also the required skills, tasks, level of effort, and a salary that compensates 
+        To mitigate adverse selection when recruiting and attract well-matched job candidates, the firm should specify the credentials,
+        required skills, tasks (proxies for effort), and a salary that compensates 
         well-matched candidates but not poorly-matched ones. This approach will deter poorly-matched candidates, 
         as their high cost of effort would require a significantly higher salary to make the job worthwhile. 
         By setting these conditions—a high level of required effort at a relatively low salary—during a probation period, 
