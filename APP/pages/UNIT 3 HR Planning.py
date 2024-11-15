@@ -124,7 +124,7 @@ def UNIT3_3():
         [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
         ])
         
-    if st.button("Input data"):
+    if st.button("HR planning table"):
         st.write(matrix)
    
     if st.button("HR planning"):
@@ -148,7 +148,7 @@ st.set_page_config(page_title="UNIT 3 HR Planning", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Input data",'Forecasting the availability of employees using the transition matrix','Practice 11'],  # required
+    options=["HR planning table",'Forecasting the availability of employees using the transition matrix','Practice 11'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -156,7 +156,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Input data":
+if selected == "HR planning data":
     UNIT3_1()
 elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
