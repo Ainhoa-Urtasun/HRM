@@ -95,6 +95,16 @@ def UNIT5_2():
         '''
     )
 
+    st.write(
+        '''
+        A firm's **vacancy yield** measures the efficiency of converting job vacancies into hires. It is the ratio of hires $h$ 
+        to job vacancies $v$. It indicates how many times hires are made per job vacancy. A higher vacancy yield suggests the firm
+        is more effective in filling open positions, while a lower yield might indicate challenges in attracting or selecting 
+        suitable candidates.
+        '''
+    )
+        
+
 def UNIT5_3():
     
     st.write(
