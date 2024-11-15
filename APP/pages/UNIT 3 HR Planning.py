@@ -156,7 +156,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "HR planning data":
+if selected == "HR planning table":
     UNIT3_1()
 elif selected == 'Forecasting the availability of employees using the transition matrix':
     UNIT3_2()
