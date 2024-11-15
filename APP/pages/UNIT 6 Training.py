@@ -32,46 +32,42 @@ def UNIT6_1():
     )
 
 def UNIT6_2():
-
+    
     st.write(
-        '''
-        Firms have two options for skill development (or upskilling): 
-        
-        1. Hiring new employees
-        2. Training incumbent employees
-        
-        Upskilling may be necesary to adopt new technologies, such as 
-        robots and artificial intelligence (AI).
+    '''
+    Firms aim to reduce the skill gap between the job skill requirements and an employee's skill profile. 
+    They have two primary options to achieve this:
 
-        Here we focus on on-the-job training.
-        '''
-    )
+    1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
+    2. **Training** incumbent employees to improve their skill profiles and align them with the job requirements.
 
-    st.write(
-        '''
-        Consider the following **cost of effort** for the job candidate:
-        '''
-    )
+    Skill development or upskilling may be necessary for adopting new technologies, such as robots 
+    and artificial intelligence (AI), to remain competitive in a rapidly evolving market.
 
+    Consider the following **cost of effort** for a job candidate:
+    '''
+   )
+    
     st.latex(
-            r'''
-            C(e_i) = g_i e_i^2 \\[10pt]
-            '''
-        )
+    r'''
+    C(e_i) = g_i e_i^2 \\[10pt]
+    '''
+    )
 
     st.write(
         '''
-        where $e_i$ represents the effort employee $i$ exerts; 
-        $g_i$ is the **skill gap** of employee $i$ calculated as the Euclidean distance 
-        between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
-        **skill profile** of employee $i$. Remember, $s_{(k)}$ is derived from 
-        the job evaluation process.
-        
-        On-the-job training aims to provide employees with the 
-        skills and competencies needed to complete tasks more efficiently. In other words,     
-        on-the-job training aims to reduce the skill gap $g_i$.
-        By minimizing $g_i$, the cost of effort for the employee decreases, which can
-        positively impact their motivation.
+        where:
+        - $e_i$ represents the effort or work ethic exerted by employee $i$, with $e_i \geq 0$.  
+        - $g_i$ is the **skill gap** of employee $i$, calculated as the Euclidean distance 
+          between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
+          **skill profile** of employee $i$. 
+
+        The job skill requirements $s_{(k)}$ are determined through a detailed job evaluation process.  
+        On-the-job training is one way to provide employees with the skills and competencies needed 
+        to complete tasks more efficiently. In essence, training reduces the skill gap $g_i$.
+
+        By minimizing $g_i$, the cost of effort for the employee decreases, leading to greater motivation 
+        and potentially improved performance. 
         '''
     )
 
