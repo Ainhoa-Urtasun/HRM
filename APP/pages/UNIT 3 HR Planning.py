@@ -90,7 +90,7 @@ def UNIT3_2():
 
 def UNIT3_3():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11 </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
     st.sidebar.write('Input data:')
     with st.sidebar.expander("$J_1$ Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=20)
