@@ -67,6 +67,35 @@ def UNIT5_1():
     )
 
 def UNIT5_2():
+
+    st.write(
+        '''
+        In the HR planning table, $h_k$ represents new hires or number of employees who have been recruited and started working in job $J_k$ during 2023.
+        Adding them up, we get total hires in 2023 by the firm:
+        '''
+    )
+
+    st.latex(r'h = h_1 + h_2 + h_3')
+
+    st.write(
+        '''
+        Hiring $h$ employees is not an immediate process, but it results from several steps: 
+        1. The firm has a number of job vacancies (same as job openings), representing jobs that need to be filled: $v$
+        2. To attract and recruit a pool of job candidates, the firm post the job vacancies. Today, online job postings are very common. The number of job postings
+        may differ from the number of job vacancies, but for simplicity, we assume they are the same
+        3. Finally, the firm selects or hires a number of job candidates: $h$
+
+        A firm's hiring rate results from multiplying the firm's vacancy rate and the firm's vacancy yield:
+        '''
+    )
+
+    st.latex(
+        '''
+        \frac{h}{L} = \frac{v}{L} \times \frac{h}{v}
+        '''
+    )
+
+def UNIT5_3():
     
     st.write(
         '''
@@ -86,7 +115,7 @@ def UNIT5_2():
         '''
     )
 
-def UNIT5_3():
+def UNIT5_4():
     
     st.write(
         '''
@@ -121,7 +150,7 @@ def UNIT5_3():
         '''
     )
 
-def UNIT5_4():
+def UNIT5_5():
   
   st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
 
@@ -166,7 +195,7 @@ st.set_page_config(page_title="UNIT5 Hiring", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Asymmetric information and adverse selection",'Skill matching','Practice 22'],  # required
+    options=["Employment","Vacancy yield","Asymmetric information and adverse selection",'Skill matching','Practice 22'],  # required
     icons=["house", "book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -176,10 +205,12 @@ selected = option_menu(
 # Call the selected section
 if selected == "Employment":
     UNIT5_1()
-elif selected == "Asymmetric information and adverse selection":
+elif selected == "Vacancy yield":
     UNIT5_2()
-elif selected == "Skill matching":
+elif selected == "Asymmetric information and adverse selection":
     UNIT5_3()
-elif selected == "Practice 22":
+elif selected == "Skill matching":
     UNIT5_4()
+elif selected == "Practice 22":
+    UNIT5_5()
 
