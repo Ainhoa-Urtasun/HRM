@@ -245,7 +245,7 @@ st.set_page_config(page_title="UNIT5 Hiring", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Employment","Vacancy yield","Asymmetric information and adverse selection",'Probationary period','Practice 22'],  # required
+    options=["Employment","Vacancy yield","Asymmetric information",'Probationary period','Practice 22'],  # required
     icons=["calculator", "calculator", "book", "book","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -257,9 +257,9 @@ if selected == "Employment":
     UNIT5_1()
 elif selected == "Vacancy yield":
     UNIT5_2()
-elif selected == "Asymmetric information and adverse selection":
+elif selected == "Asymmetric information":
     UNIT5_3()
-elif selected == "Probationary period:
+elif selected == "Probationary period":
     UNIT5_4()
 elif selected == "Practice 22":
     UNIT5_5()
