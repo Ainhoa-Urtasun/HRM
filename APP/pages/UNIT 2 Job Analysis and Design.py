@@ -122,7 +122,7 @@ def UNIT2_3():
         '''
     )
 
-def UNIT2_3():
+def UNIT2_4():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
