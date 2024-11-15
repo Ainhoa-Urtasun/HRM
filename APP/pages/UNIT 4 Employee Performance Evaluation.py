@@ -10,7 +10,7 @@ def UNIT4_1():
         Employee performance evaluation assesses how effectively employees perform their jobs within the firm. Evaluating
         employee performance is challenging due to teamwork and collaboration among $L$ employees to produce output
         represented as $Q=f(e_1,e_2,...,e_L)$. Direct assessment of employee performance require metrics at the **intensive margin**, 
-        or metrics that measure how effectively employees perform while working, such as effort level, productivity, ULC, output elasticity of effort,
+        or metrics that measure how effectively employees perform while working, such as productivity, ULC, output elasticity of effort,
         and skill gap. 
         
         Metrics at the **extensive margin** evaluate employee participation in tasks, 
