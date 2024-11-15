@@ -9,8 +9,8 @@ def UNIT5_1():
     st.write(
         '''
         Employment refers to the number of employees, including both full-time and part-time workers.
-        Employment is an extensive margin metric as it doesn
-
+        It is an extensive margin metric as it doesn't inform about employee performance, that is
+        how effectively employees are performing their jobs.
         '''
     )
     st.latex(
