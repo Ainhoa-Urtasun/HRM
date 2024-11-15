@@ -106,7 +106,7 @@ def UNIT4_4():
     st.write(
         '''
         where:
-        - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
+        - $e_i$ represents the effort or work ethic exerted by employee $i$, with $e_i \geq 0$
         - $g_i$ is the **skill gap** of employee $i$, with $g_i \geq 0$. The greater their skill gap, the higher the 
         cost of effort for employee $i$.
         '''
