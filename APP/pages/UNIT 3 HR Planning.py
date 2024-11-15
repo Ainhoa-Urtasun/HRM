@@ -26,8 +26,8 @@ def UNIT3_1():
     st.write(
         '''
         - $m_{ij}$ represents employees who moved from job $J_i$ to job $J_j$ during 2022
-        - $d_k$ represents departures or number of employees who were in job $J_k$ and left the firm during 2022,
-        either voluntarily (quitting or retiring) or involuntarily (layoffs, dismissals). 
+        - $d_k$ represents the departures or separations of employees who were in job $J_k$ at the end of 2022 and 
+        left the firm during 2023, either voluntarily (e.g., quitting or retiring) or involuntarily (e.g., layoffs or dismissals)
         - $h_{k}$ represents new hires or number of employees who have been recruited and started working in job $J_k$ 
         during 2023
   
