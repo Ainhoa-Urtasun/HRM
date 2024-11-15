@@ -70,8 +70,6 @@ def UNIT1_3():
       - $J_2$ Support intellectuals and scientists, technicians and professionals
       - $J_3$ Administrative employees
     
-    In this course, we assume a **joint production function**, 
-    where the firm's output results from the **collective contribution of each employee's effort**.
     The **output elasticity of effort** measures the impact of each employee's individual
     effort on the firm's output:
     '''
