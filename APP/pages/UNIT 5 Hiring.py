@@ -240,7 +240,7 @@ def UNIT5_5():
   plt.legend()
   st.pyplot(fig)
     
-st.set_page_config(page_title="UNIT5 Hiring", layout="wide")
+st.set_page_config(page_title="UNIT 5 Hiring", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
