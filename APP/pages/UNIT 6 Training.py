@@ -29,6 +29,7 @@ def UNIT6_1():
         Specific human capital has limited applicability outside the organization or context where it was developed.
         Employers often invest more in training related to specific human capital, while individuals bear the cost of acquiring general human capital, as it enhances their overall employability and earning potential.
         '''
+    )
 
 def UNIT6_2():
 
