@@ -117,7 +117,7 @@ def UNIT2_2():
 
 def UNIT2_3():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10 </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
@@ -166,7 +166,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs",'Job evaluation and job skill requirements','Practice 10'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation and job skill requirements','Practice 11'],  # required
     icons=["book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
