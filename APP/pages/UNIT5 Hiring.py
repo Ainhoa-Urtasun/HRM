@@ -160,15 +160,8 @@ def UNIT5_4():
         the ad might include a statement like: 
         *"This position includes a 3-month probationary period."* Otherwise, details are often 
         provided during later stages of the hiring process or in the employment contract.
-        """
-    )
 
-    
-    st.write(
-        '''
-        Identifying good matches between job candidates and jobs involves both both **screening** and **signaling**. 
-        This helps to minimize the risk of hiring less qualified candidtes (adverse selection).
-        Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
+        Same as for incumbent employees, consider the following **cost of effort** for ta job candidate:
         '''
     )
 
@@ -181,23 +174,28 @@ def UNIT5_4():
     st.write(
         '''
         where:
-        - $e_i$ represents the effort exerted by employee $i$, with $e_i \geq 0$
+        - $e_i$ represents the effort or work ethic exerted by employee $i$, with $e_i \geq 0$
         - $g_i$ is the **skill gap** of employee $i$, with $g_i \geq 0$. The greater their skill gap, the higher the 
-        cost of effort for employee $i$. Well-matched job candidates will show 
-        a low skill gap $g_i$ whereas poorly-matched job candidates will show a high skill gap $g_i$. 
-        The greater the distance, the higher the 
-        cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
-        the job evaluation process.
+        cost of effort for employee $i$. Well-matched job candidates will have 
+        a low skill gap $g_i$ whereas poorly-matched job candidates will have a high skill gap $g_i$. 
+        
+        The **skill gap** reflects the distance between a candidate's skills and the job skill requirements.
+        The greater this gap, the higher the cost of effort for the job candidate $i$ to perform the job effectively. 
+        Remember, $s_{(k)}$ is derived from the job evaluation process.
         
         Asymmetric information exists because employees are awared of their own skill gap, while employers only know
-        the job's skill requirements. However, since job candidates behave according to their cost of effort function,
-        firms might reduce asymmetric information by setting a **challenging probationary period with a low salary**. 
-        During this period, the candidate is expected to exert a high level of effort.
-
-        For poorly matched candidates with a high skill gap, the salary during the probationary period will not be sufficient to justify the high cost of effort, 
-        effectively deterring them from applying or continuing in the role. Meanwhile, conditions of employment, including salary and job responsibilities, 
-        will change after the probationary period for those who successfully meet the expectations. 
-        This ensures that well-matched candidates are retained and rewarded appropriately while filtering out less suitable applicants.
+        the job skill requirements. However, since job candidates behave according to their cost of effort function,
+        firms might reduce this asymmetry by setting a challenging **probationary period**. 
+        
+        During the probationary period, candidates are expected to exert a high level of effort and show
+        high work ethic standards. For poorly matched candidates with a high skill gap, the cost of effort 
+        during this period will likely outweigh the benefits, deterring them from applying or remaining in the role. 
+        Conversely, well-matched candidates with a low skill gap are more likely to meet the expectations 
+        and proceed successfully.
+        
+        After the probationary period, working conditions, including salary and job responsibilities, are adjusted to 
+        reflect the candidate’s proven abilities. This ensures that well-matched candidates are rewarded appropriately, 
+        while less suitable candidates are filtered out effectively.
         '''
     )
 
