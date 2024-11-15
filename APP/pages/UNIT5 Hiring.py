@@ -62,7 +62,7 @@ def UNIT5_1():
 
     st.latex(
         r'''
-        \text{CAGR} = \left( \frac{L_t}{L_0} \right)^{\frac{1}{t}} - 1
+        CAGR = frac{L_t}{L_0}^{\frac{1}{t}} - 1
         '''
     )
 
@@ -90,7 +90,7 @@ def UNIT5_2():
     )
 
     st.latex(
-        '''
+        r'''
         \frac{h}{L} = \frac{v}{L} \times \frac{h}{v}
         '''
     )
