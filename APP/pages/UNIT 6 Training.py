@@ -8,6 +8,32 @@ def UNIT6_1():
 
     st.write(
         '''
+        The skill profile of a person represents their human capital, which is the result of a 
+        long-term investment in skills, education, and experience. 
+        Human capital refers to the knowledge, abilities, and competencies that individuals 
+        bring to the workforce, contributing to productivity and economic value.
+        
+        - **General human capital** includes skills and knowledge that are transferable 
+        across different firms or industries. Examples include literacy, numeracy, problem-solving, 
+        and general management skills. Because these skills are valuable to many employers, 
+        individuals with high general human capital have greater mobility in the labor market.
+        
+        - **Specific human capital refers to skills and knowledge that are valuable only 
+        to a particular firm or job. Examples include mastery of proprietary processes, 
+        familiarity with unique organizational structures,
+        or job-specific technical expertise. These skills increase productivity within the specific 
+        firm but are less transferable to other employers.
+        
+        So, the primary difference between general and specific human capital lies in transferability: 
+        General human capital is portable and valued universally in the labor market. 
+        Specific human capital has limited applicability outside the organization or context where it was developed.
+        Employers often invest more in training related to specific human capital, while individuals bear the cost of acquiring general human capital, as it enhances their overall employability and earning potential.
+        '''
+
+def UNIT6_2():
+
+    st.write(
+        '''
         Firms have two options for skill development (or upskilling): 
         
         1. Hiring new employees
@@ -135,15 +161,19 @@ st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Skill development','Training evaluation'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    options=['Human capital','Skill development','Training evaluation','Practice 23'],  # required
+    icons=["book", "book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
 )
 
 # Call the selected section
-if selected == "Skill development":
+if selected == "Human capital":
     UNIT6_1()
-elif selected == "Training evaluation":
+elif selected == "Skill development":
     UNIT6_2()
+elif selected == "Training evaluation":
+    UNIT6_3()
+elif selected == "Practice 23":
+    UNIT6_4()
