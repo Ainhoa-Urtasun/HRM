@@ -140,7 +140,7 @@ def UNIT5_4():
     
     st.write(
         '''
-        Matching a job candidate's skills with the job requirements involves both both screening and signaling. 
+        Identifying good matches between job candidates and jobs involves both both **screening** and **signaling**. 
         This helps to minimize the risk of hiring less qualified candidtes (adverse selection).
         Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
         '''
@@ -163,15 +163,15 @@ def UNIT5_4():
         cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
         
-        To reduce the risk of hiring unqualified candidates (adverse selection) 
-        and attract the right people, firms should clearly outline the required 
-        qualifications, skills, and responsibilities in job postings. 
-        The offered salary should be competitive for well-matched candidates but not overly attractive 
-        to those who are less qualified.
+        Asymmetric information exists because employees are awared of their own skill gap, while employers only know
+        the job's skill requirements. However, since job candidates behave according to their cost of effort function,
+        firms might reduce asymmetric information by setting a **challenging probationary period with a low salary**. 
+        During this period, the candidate is expected to exert a high level of effort.
 
-        By setting challenging expectations during a probationary period, 
-        companies can assess a candidate's true abilities and commitment. 
-        This approach deters unqualified individuals who would struggle to meet the demands of the role.
+        For poorly matched candidates with a high skill gap, the salary during the probationary period will not be sufficient to justify the high cost of effort, 
+        effectively deterring them from applying or continuing in the role. Meanwhile, conditions of employment, including salary and job responsibilities, 
+        will change after the probationary period for those who successfully meet the expectations. 
+        This ensures that well-matched candidates are retained and rewarded appropriately while filtering out less suitable applicants.
         '''
     )
 
