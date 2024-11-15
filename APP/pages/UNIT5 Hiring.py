@@ -81,7 +81,8 @@ def UNIT5_2():
         '''
         Hiring $h$ employees is not an immediate process, but it results from several steps: 
         1. The firm has a number of job vacancies (same as job openings), representing jobs that need to be filled: $v$
-        2. To attract and recruit a pool of job candidates, the firm post the job vacancies. Today, online job postings are very common. The number of job postings
+        2. To attract and recruit a pool of job candidates, the firm post the job vacancies. Today, online job postings are very common. 
+        The number of job postings (same as job advertisements)
         may differ from the number of job vacancies, but for simplicity, we assume they are the same
         3. Finally, the firm selects or hires a number of job candidates: $h$
 
