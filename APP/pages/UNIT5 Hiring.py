@@ -110,17 +110,17 @@ def UNIT5_2():
         
 
 def UNIT5_3():
-    
     st.write(
         '''
-        In recruiting, **asymmetric information** arises because job candidates 
-        know more about their skills than the firm does. This can lead to **adverse selection**, 
-        where the firm may end up hiring less qualified candidates due to this information gap. 
-        Here’s how adverse selection occurs: The firm advertises a job with an **average salary** 
-        due to limited information about each candidate’s true abilities. 
-        This job posting will attract candidates who are satisfied with the
-        offered salary. If the salary offered in the job ad is too low for the 'good' candidates but sufficient for 'less qualified'
-        candidates, this will result in adverse selection, where primarily less suitable candidates apply.
+        **Asymmetric Information:** Job candidates have more information about their skills, abilities, and work ethic than the hiring firm.
+        **Adverse Selection:** Due to this information asymmetry, the firm may unintentionally attract and hire less qualified candidates.
+        **The Mechanism:**
+        1. **Moderate Salary Offer:** The firm, unsure of the true quality of candidates, offers a moderate salary.
+        2. **Attracting Less Qualified Candidates:** Less qualified candidates, satisfied with the offered salary, are more likely to apply.
+        3. **Deterring Highly Qualified Candidates:** Highly qualified candidates, seeking higher compensation for their skills, may be deterred.
+        4. **Skewed Applicant Pool:** As a result, the pool of applicants becomes skewed towards less qualified individuals.
+       
+        This leads to a situation where the firm ends up with a less desirable workforce than it intended.
 
         **Screening** and **signaling** are concepts in economics that help to address information asymmetry, 
         where one party in a transaction has more information than the other.
