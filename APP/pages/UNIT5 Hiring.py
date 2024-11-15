@@ -85,13 +85,13 @@ def UNIT5_2():
         may differ from the number of job vacancies, but for simplicity, we assume they are the same
         3. Finally, the firm selects or hires a number of job candidates: $h$
 
-        A firm's hiring rate results from multiplying the firm's vacancy rate and the firm's vacancy yield:
+        A firm's hiring rate results from two factors, the firm's vacancy yield and the firm's vacancy rate:
         '''
     )
 
     st.latex(
         r'''
-        \frac{h}{L} = \frac{v}{L} \times \frac{h}{v}
+        \frac{h}{L} = \frac{h}{v} \times \frac{v}{L}
         '''
     )
 
