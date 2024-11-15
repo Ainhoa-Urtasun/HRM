@@ -140,8 +140,9 @@ def UNIT5_4():
     
     st.write(
         '''
-        Matching the job candidate's skills and the skills required for the job combines both screening and signaling to
-        mitigate adverse selection when hiring. Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
+        Matching a job candidate's skills with the job requirements involves both both screening and signaling. 
+        This helps to minimize the risk of hiring less qualified candidtes (adverse selection).
+        Same as for incumbent employees, we consider the following **cost of effort** for the job candidate:
         '''
     )
 
@@ -162,12 +163,15 @@ def UNIT5_4():
         cost of effort for the job candidate $i$. Remember, $s_{(k)}$ is derived from 
         the job evaluation process.
         
-        To mitigate adverse selection when recruiting and attract well-matched job candidates, the firm should specify the credentials,
-        required skills, tasks (proxies for effort), and a salary that compensates 
-        well-matched candidates but not poorly-matched ones. This approach will deter poorly-matched candidates, 
-        as their high cost of effort would require a significantly higher salary to make the job worthwhile. 
-        By setting these conditions—a high level of required effort at a relatively low salary—during a probation period, 
-        the company can assess the candidate’s fit for the role and decide whether to offer a long-term job contract.
+        To reduce the risk of hiring unqualified candidates (adverse selection) 
+        and attract the right people, firms should clearly outline the required 
+        qualifications, skills, and responsibilities in job postings. 
+        The offered salary should be competitive for well-matched candidates but not overly attractive 
+        to those who are less qualified.
+
+        By setting challenging expectations during a probationary period, 
+        companies can assess a candidate's true abilities and commitment. 
+        This approach deters unqualified individuals who would struggle to meet the demands of the role.
         '''
     )
 
