@@ -45,11 +45,12 @@ def UNIT2_2():
 
     st.write(
         '''
-        **Job evaluation** assesses the relative worth of jobs within a firm, helping in job design, 
-        setting recruitment standards, establishing fair compensation, and identifying training needs. 
+        **Job evaluation** assesses the relative contribution of jobs to the value of the firm. It is
+        useful for job design, setting recruitment standards, identifying training needs, and 
+        establishing fair compensation. 
 
-        The **task-skill matrix** is a tool for job evaluation, where each column corresponds 
-        to one of the five core tasks, and each row represents the extent to which one the four skills is required
+        The **job task-skill matrix** is a way to evaluate jobs, with each column corresponding 
+        to one of the five core tasks, and each row representing the extent to which one the four skills is required
         to perform each task within the job:
         '''
     )
@@ -78,9 +79,15 @@ def UNIT2_2():
         A job doesn't necessarily entail all tasks. 
         If a job doesn't entail a particular task, 
         its corresponding column will be a vector of zeros.
+        '''
+    )
 
-        We can further summarize the information in the matrix by calculating the norm of each
-        row-vector. The result, which we refer to as **job skill requirements** provides a quantitative
+def UNIT2_3():
+
+    st.write(
+        '''
+        We can further summarize the information in the **job task-skill matrix** of a job by calculating the norm of each
+        row-vector. The result, which we refer to as **skill requirements of a job** provides a quantitative
         measure of the skill intensity required across the tasks a job entails, offering another tool for 
         job evaluation:
         '''
@@ -166,7 +173,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs",'Job evaluation and job skill requirements','Practice 11'],  # required
+    options=["Tasks, skills, and jobs",'Job evaluation","Job skill requirements",'Practice 11'],  # required
     icons=["book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -176,10 +183,12 @@ selected = option_menu(
 # Call the selected section
 if selected == "Tasks, skills, and jobs":
     UNIT2_1()
-elif selected == "Job evaluation and job skill requirements":
+elif selected == "Job evaluation":
     UNIT2_2()
-elif selected == "Practice 10":
+elif selected == "Job skill requirements":
     UNIT2_3()
+elif selected == "Practice 10":
+    UNIT2_4()
 
 
 
