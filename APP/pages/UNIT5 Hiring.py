@@ -144,21 +144,22 @@ def UNIT5_4():
     st.write(
         """
         A **probationary period** is a specified time frame at the beginning of employment 
-        during which the employer assesses the new hire’s performance, suitability for the role, 
+        during which the employer evaluates the new hire’s performance, suitability for the job, 
         and alignment with company expectations. 
         
-        Key Features:
-        - **Employee performance evaluation**: Employers use this period to evaluate the employee's skills, work ethic, and ability to meet job requirements.
-        - **Job security**: Employees may have reduced job security, as termination during this period often requires less formal process or notice.
-        - **Benefits**: Access to certain benefits, such as health insurance or retirement plans, might be limited until the probationary period is completed.
-
-        The length of a probationary period typically ranges from 1 to 6 months, 
+        Working conditions during this period are less favorable. Employees might have reduced
+        job security, as termination during this time typically requires less 
+        formal procedures. Access to certain benefits, such as health
+        insurance or retirement plans, might also be limited. 
+        
+        The length of a probationary period usually ranges from 1 to 6 months, 
         depending on the employer and local labor laws. Upon successful completion, 
         the employee is usually granted full employment status and benefits.
 
-        Probationary periods may or may not be mentioned in job advertisements. 
-        If disclosed, the ad might include a statement like: *"This position includes a 3-month probationary period."* 
-        Otherwise, details are often provided during the hiring process or in the employment contract.
+        Probationary periods maybe mentioned in job advertisements. If disclosed, 
+        the ad might include a statement like: 
+        *"This position includes a 3-month probationary period."* Otherwise, details are often 
+        provided during later stages of the hiring process or in the employment contract.
         """
     )
 
