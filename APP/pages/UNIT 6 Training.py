@@ -110,7 +110,7 @@ def UNIT6_3():
 
     st.write(
         """
-        We use the **Difference-in-Differences (DiD) method** to assess the impact of 
+        We use the **Difference-in-Differences (DiD) to assess the impact of 
         on-the-job training on a specific employee skill:
         """
     )
@@ -173,7 +173,7 @@ def UNIT6_4():
     plt.plot(['2024','2026'],[T2024,T2026],color='red',label='Tom')
     plt.plot(['2024','2026'],[N2024,N2026],color='blue',label='Noah')
     plt.plot(['2024','2026'],[T2024,T2024+(N2026-N2024)],color='green',ls='-.',label='Counterfactual')
-    plt.title('Training evaluation')
+    plt.title('Evaluating training')
     plt.legend()
     st.pyplot(fig)
   
@@ -181,7 +181,7 @@ st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Human capital','NPV of education','Training evaluation','Practice 23'],  # required
+    options=['Human capital','NPV of education','Evaluating training','Practice 23'],  # required
     icons=["book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -193,7 +193,7 @@ if selected == "Human capital":
     UNIT6_1()
 elif selected == "NPV of education":
     UNIT6_2()
-elif selected == "Training evaluation":
+elif selected == "Evaluating training":
     UNIT6_3()
 elif selected == "Practice 23":
     UNIT6_4()
