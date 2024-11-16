@@ -76,23 +76,17 @@ def UNIT6_2():
         NPV = \sum_{t=2025}^T \frac{w_{t,H}-w_{t,L}}{(1+r)^t} - (C_{2025}+F_{2025})
         '''
     )
-
+  
 def UNIT6_3():
-    
-    st.write(
-    '''
-    Firms aim to reduce the skill gap between the job skill requirements and an employee's skill profile. 
-    They have two primary options to achieve this:
-
-    1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
-    2. **On-the-job training** incumbent employees to improve their skill profiles and align them with the job requirements.
-    '''
-   )
-    
-def UNIT6_4():
 
     st.write(
         """
+        Firms aim to reduce the skill gap between the job skill requirements and an employee's skill profile. 
+        They have two primary options to achieve this:
+
+        1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
+        2. **On-the-job training** incumbent employees to improve their skill profiles and align them with the job requirements.
+        
         We use the **Difference-in-Differences (DiD) method** to evaluate the impact of 
         on-the-job training on the **employee skill profile** $s_i = (s_{i1},s_{i2},s_{i3},s_{i4})$. To simplify the analysis,
         we focus on just one skill of the employee skill profile $s_{ij}$
@@ -158,7 +152,7 @@ def UNIT6_4():
         """
     )
 
-def UNIT6_5():
+def UNIT6_4():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 23 </h3>", unsafe_allow_html=True)
     with st.sidebar.expander("Skill gap of trained employees"):
@@ -179,7 +173,7 @@ st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Human capital','NPV of education','Skill development','Training evaluation','Practice 23'],  # required
+    options=['Human capital','NPV of education','Training evaluation','Practice 23'],  # required
     icons=["book", "book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -191,9 +185,7 @@ if selected == "Human capital":
     UNIT6_1()
 elif selected == "NPV of education":
     UNIT6_2()
-elif selected == "Skill development":
-    UNIT6_3()
 elif selected == "Training evaluation":
-    UNIT6_4()
+    UNIT6_3()
 elif selected == "Practice 23":
-    UNIT6_5()
+    UNIT6_4()
