@@ -189,9 +189,9 @@ selected = option_menu(
 # Call the selected section
 if selected == "Human capital":
     UNIT6_1()
-elif selected == "Skill development":
-    UNIT6_2()
 elif selected == "NPV of education":
+    UNIT6_2()
+elif selected == "Skill development":
     UNIT6_3()
 elif selected == "Training evaluation":
     UNIT6_4()
