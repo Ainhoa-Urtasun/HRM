@@ -11,7 +11,8 @@ def UNIT6_1():
         The skill profile of a person represents their human capital, which is the result of a 
         long-term investment in skills, education, and experience. 
         Human capital refers to the knowledge, abilities, and competencies that individuals 
-        bring to the workforce, contributing to productivity and economic value.
+        bring to the workforce, contributing to productivity and economic value. There are two
+        types of human capital:
         
         - **General human capital** includes skills and knowledge that are transferable 
         across different firms or industries. Examples include literacy, numeracy, problem-solving, 
@@ -32,6 +33,51 @@ def UNIT6_1():
     )
 
 def UNIT6_2():
+    st.write(
+        '''
+        As an investment, education and on-the-job training can be analyzed just like any other type of investment. Supponse
+        that an individual is choosing whether to drop out or finish university this year, which we will call $t=2025$. Future
+        years will be $2026, 2027,...,T$, where $T$ is the last year of her career. If the student drops out now, her salary
+        in future years will be $w_{t,L}$, where the subscript $t$ refers to future periods. If she continues on in school, salary
+        in future years will be $w_{t,H}$, where $w_{t,H} \geq w_{t,L}$. Given this, the increased salary from finishing school is
+        $w_{t,H} - w_{t,L}$ each year.
+
+        Education provides many benefits beyond increased salary. One is the pure joy of learnig. Education may also make you 
+        more effective at home or leisure activities or increase your enjoyment of travel and literature. Here we focus on salary.
+
+        Suppose that the interest rate is $r$ per year. This means that an investment of €1 made today would be worth $(1+r)$ next
+        year, $(1+r)^2$ after two years, and so on. Similarly, €1 received next year is worth $1/(1+r)$ this year.
+
+        With these assumptions, the present value (PV) of the return on education investment is:
+        '''
+    )
+
+    st.latex(
+        r'''
+        PV = \sum_{t=2025}^T \frac{w_{t,H}-w_{t,L}}{(1+r)^t}
+        '''
+    )
+
+    st.write(
+        '''
+        There are two costs of investments in education. The first is the direct cost of tuition, textbooks, a laptop,
+        and other expenses. Denote this by $C_{2025}$. Direct costs are generally borne up fornt and do not need to be
+        discounted. The second cost is the opportunity cost of the time spent on education. For example, typical (full-time)
+        MBA students quit relatively high-paying jobs to go back to university for 21 months. When they do, they give up
+        salaries that in many cases are greater than the direct cost of tuition. Denote this by $F_{2025}$
+
+        The decision rule for any investment is that it should be made as long as the present value of the return
+        on the investment exceeds the present value of the cost of the investment. This net present value equals:
+        '''
+    )
+
+    st.latex(
+        r'''
+        NPV = \sum_{t=2025}^T \frac{w_{t,H}-w_{t,L}}{(1+r)^t} - (C_{2025}+F_{2025})
+        '''
+    )
+
+def UNIT6_3():
     
     st.write(
     '''
@@ -39,50 +85,23 @@ def UNIT6_2():
     They have two primary options to achieve this:
 
     1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
-    2. **Training** incumbent employees to improve their skill profiles and align them with the job requirements.
-
-    Skill development or upskilling may be necessary for adopting new technologies, such as robots 
-    and artificial intelligence (AI), to remain competitive in a rapidly evolving market.
-
-    Consider the following **cost of effort** for a job candidate:
+    2. **On-the-job training** incumbent employees to improve their skill profiles and align them with the job requirements.
     '''
    )
     
-    st.latex(
-    r'''
-    C(e_i) = g_i e_i^2 \\[10pt]
-    '''
-    )
-
-    st.write(
-        '''
-        where:
-        - $e_i$ represents the effort or work ethic exerted by employee $i$, with $e_i \geq 0$.  
-        - $g_i$ is the **skill gap** of employee $i$, calculated as the Euclidean distance 
-          between $s_{(k)}$, the **skill requirements** for the job, and $s_i$, the 
-          **skill profile** of employee $i$. 
-
-        The job skill requirements $s_{(k)}$ are determined through a detailed job evaluation process.  
-        On-the-job training is one way to provide employees with the skills and competencies needed 
-        to complete tasks more efficiently. In essence, training reduces the skill gap $g_i$.
-
-        By minimizing $g_i$, the cost of effort for the employee decreases, leading to greater motivation 
-        and potentially improved performance. 
-        '''
-    )
-
-def UNIT6_3():
+def UNIT6_4():
 
     st.write(
         """
         We use the **Difference-in-Differences (DiD) method** to evaluate the impact of 
-        on-the-job training on the **average skill gap** $g$.
+        on-the-job training on the **employee skill profile** $s_i = (s_{i1},s_{i2},s_{i3},s_{i4})$. To simplify the analysis,
+        we focus on just one skill of the employee skill profile $s_{ij}$
         """
     )
 
     st.latex(
         r"""
-        \text{ATT} = (g_{+1}^{\text{trained}} - g_{-1}^{\text{trained}}) - (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
+        \text{ATT} = (s_{ij,2025}^{\text{trained}} - g_{ij,2024}^{\text{trained}}) - (g_{ij,2025}^{\text{non-trained}} - g_{ij,2024}^{\text{non-trained}})
         """
     )
 
@@ -139,7 +158,7 @@ def UNIT6_3():
         """
     )
 
-def UNIT6_4():
+def UNIT6_5():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 23 </h3>", unsafe_allow_html=True)
     with st.sidebar.expander("Skill gap of trained employees"):
@@ -160,7 +179,7 @@ st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Human capital','Skill development','Training evaluation','Practice 23'],  # required
+    options=['Human capital','NPV of education','Skill development','Training evaluation','Practice 23'],  # required
     icons=["book", "book", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -172,7 +191,9 @@ if selected == "Human capital":
     UNIT6_1()
 elif selected == "Skill development":
     UNIT6_2()
-elif selected == "Training evaluation":
+elif selected == "NPV of education":
     UNIT6_3()
-elif selected == "Practice 23":
+elif selected == "Training evaluation":
     UNIT6_4()
+elif selected == "Practice 23":
+    UNIT6_5()
