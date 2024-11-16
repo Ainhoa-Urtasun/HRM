@@ -110,9 +110,8 @@ def UNIT6_3():
 
     st.write(
         """
-        We use the **Difference-in-Differences (DiD) method** to evaluate the impact of 
-        on-the-job training on the **employee skill profile** $s_i = (s_{i1},s_{i2},s_{i3},s_{i4})$. To simplify the analysis,
-        we focus on just one skill of the employee skill profile $s_{ij}$.
+        We use the **Difference-in-Differences (DiD) method** to assess the impact of 
+        on-the-job training on a specific employee skill:
         """
     )
 
@@ -124,28 +123,21 @@ def UNIT6_3():
 
     st.write(
         """
-        Here, **ATT** stands for the **Average Treatment Effect on the Treated**. This metric captures 
-        the effect of training on an employee who received it (Tom: trained employee), 
-        compared to a similar employee that did not receive the training (Noah: non-trained group). 
+        **ATT** stands for the **Average Treatment Effect on the Treated**. This metric captures 
+        the effect of training by comparing the employee who received it (Tom: trained employee), 
+        with another employee who did not receive the training (Noah: non-trained group). 
 
-        The Difference-in-Differences (DiD) makes two key comparisons:
+        The Difference-in-Differences (DiD) compares skills levels twice:
         
-        - **Before and after training**: Training occurs at the present year, 2025, so 2024 is before training, 
-        and 2026 is after training.
-        - **Training versus Non-training**: Tom receives the training whereas Noah doesn't receive any training.
-        
-        By combining these two comparisons, the DiD method helps estimate the causal impact of training on skills. 
-        Note: The method is valid if the **parallel trends assumption** holds—that is, if the trained and non-trained groups 
-        would have followed similar skill gap trends in the absence of training.
+        - Before (2024) and after training (2026)
+        - Between trained (Tom) and non-trained employees (Noah)
 
-        The DiD method relies on the concept of a **counterfactual**. A counterfactual is a hypothetical situation
-        that didn't actually happen. In the context of on-the-job training, we're interested in whay would
-        have happened to the trained employee if she hadn't been trained. The DiD method is a clever way to 
-        estimate this counterfactual. It leverages the idea, that, in the absence of training, the skill would have 
-        developed the same way that it did for the non-trained employee. We distinguish two key counterfactual outcomes:
+        The DiD method relies on the **counterfactual**: what would
+        have happened to the trained employee without the training. It assumes that, in the absence of training, 
+        the trained employee's skill would have evolved similarly to the non-trained employee's.
         
-        - **Counterfactual Skill Change (CSC)**: This represents how the skill of the trained employee
-        would have changed if she hadn't been trained:
+        - **Counterfactual Skill Change (CSC)**: is the hypothetical change in skill level the
+        trained employee would have experienced if they had not received the training:
         """
     )
 
@@ -157,8 +149,8 @@ def UNIT6_3():
 
     st.write(
         """
-        - **Counterfactual Skill (CS)**: This represents how much the skill level of the trained 
-        employee would have been if she hadn’t been trained:
+        - **Counterfactual Skill (CS)**: is the hypothetical skill the trained 
+        employee would have had if he had not received the training:
         """
     )
 
