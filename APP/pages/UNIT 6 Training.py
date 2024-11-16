@@ -95,7 +95,7 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{ATT} = (s_{ij,2025}^{\text{trained}} - g_{ij,2024}^{\text{trained}}) - (g_{ij,2025}^{\text{non-trained}} - g_{ij,2024}^{\text{non-trained}})
+        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024}^{\text{trained}}) - (s_{Noah,2026} - s_{Noah,2024}
         """
     )
 
@@ -107,10 +107,10 @@ def UNIT6_3():
 
         The Difference-in-Differences (DiD) method achieves this by making two key comparisons:
         
-        - **Before and after training**: Training occurs at time 0, so −1 represents the period before training, and +1 represents the period after training.
-        - **Trained versus non-trained employees**: $g^{trained}$ denotes the average skill gap of employees who received training,
-        while $g^{non-trained}$ denotes the average skill gap of employees who did not.
-
+        - **Before and After training**: Training occurs at the present year, 2025, so 2024 represents before training, 
+        and 2026 represents after training.
+        - **Training versus Non-training**: Tom receives the training whereas Noah doesn't receive any training.
+        
         By combining these two comparisons, the DiD method helps estimate the causal impact of training on reducing the skill gap. 
         Note: The method is valid if the **parallel trends assumption** holds—that is, if the trained and non-trained groups 
         would have followed similar skill gap trends in the absence of training.
@@ -121,14 +121,14 @@ def UNIT6_3():
         """
         In DiD, we distinguish two key counterfactual outcomes:
         
-        - **Counterfactual Skill Gap (CSG)**: This represents the skill gap the trained group 
-        of employees would have experienced if they had not received the training.
+        - **Counterfactual Skill Gap (CSG)**: This represents the skill gap the trained employee 
+        would have experienced if he had not received the training.
         """
     )
 
     st.latex(
         r"""
-        \text{CSG} = g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}}
+        \text{CSG} = s_{Noah,2026} - s_{Noah,2024}
         """
     )
 
@@ -141,7 +141,7 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{CSGC} = g_{-1}^{\text{trained}} + (g_{+1}^{\text{non-trained}} - g_{-1}^{\text{non-trained}})
+        \text{CSGC} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024}
         """
     )
 
