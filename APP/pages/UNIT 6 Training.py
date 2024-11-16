@@ -89,11 +89,11 @@ def UNIT6_2():
         '''
     )
 
-     st.write(
-         ''' 
-         - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
-         combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
-         challenging to measure individual contributions.
+    st.write(
+        ''' 
+        - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
+        combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
+        challenging to measure individual contributions.
         - $e_i$ represents the effort or work ethic exerted by employee $i$ at the firm, with $e_i > 0$
         - $L$ number of employees at the firm
         - **Skills**, denoted as $s_i$, to be possessed by employees at the firm:
