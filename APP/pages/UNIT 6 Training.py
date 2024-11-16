@@ -156,7 +156,7 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{CSGC} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024})
+        \text{CS} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024})
         """
     )
 
