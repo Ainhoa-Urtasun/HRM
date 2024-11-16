@@ -95,7 +95,7 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024} - (s_{Noah,2026} - s_{Noah,2024})
+        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024}) - (s_{Noah,2026} - s_{Noah,2024})
         """
     )
 
@@ -107,8 +107,8 @@ def UNIT6_3():
 
         The Difference-in-Differences (DiD) method achieves this by making two key comparisons:
         
-        - **Before and After training**: Training occurs at the present year, 2025, so 2024 represents before training, 
-        and 2026 represents after training.
+        - **Before and after training**: Training occurs at the present year, 2025, so 2024 is before training, 
+        and 2026 is after training.
         - **Training versus Non-training**: Tom receives the training whereas Noah doesn't receive any training.
         
         By combining these two comparisons, the DiD method helps estimate the causal impact of training on reducing the skill gap. 
