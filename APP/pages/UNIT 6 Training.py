@@ -85,7 +85,7 @@ def UNIT6_2():
 
     st.latex(
         r'''
-        S_n = a \frac{1 - r^n}{1 - r}, \quad \text{if } r \neq 1
+        S_n = a \frac{1 - i^n}{1 - i}, \quad \text{if } i \neq 1
         '''
     )
 
