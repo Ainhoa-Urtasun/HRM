@@ -110,7 +110,7 @@ def UNIT6_3():
 
     st.write(
         """
-        We use the **Difference-in-Differences (DiD) to assess the impact of 
+        We use the **Difference-in-Differences (DiD)** to assess the impact of 
         on-the-job training on a specific employee skill:
         """
     )
