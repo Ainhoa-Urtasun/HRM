@@ -155,16 +155,16 @@ def UNIT6_3():
 def UNIT6_4():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 23 </h3>", unsafe_allow_html=True)
-    with st.sidebar.expander("Skill gap of trained employees"):
-        gtbefore = st.number_input("Before", key="gt0", step=1)
-        gtafter = st.number_input("After", key="gt1", step=1)
-    with st.sidebar.expander("Skill gap of non-trained employees"):
-        gnbefore = st.number_input("Before", key="gn0", step=1)
-        gnafter = st.number_input("After", key="gn1", step=1)
+    with st.sidebar.expander("Tom's skill"):
+        T2024 = st.number_input("2024", key="T2024", step=1)
+        T2026 = st.number_input("2026", key="T2026", step=1)
+    with st.sidebar.expander("Noah's skill"):
+        N2024 = st.number_input("2024", key="N2024", step=1)
+        N2026 = st.number_input("2026", key="N2026", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
-    plt.plot(['Before','After'],[gtbefore,gtafter],color='red',label='Trained employees')
-    plt.plot(['Before','After'],[gnbefore,gnafter],color='blue',label='Non-trained employees')
-    plt.plot(['Before','After'],[gtbefore,gtbefore+(gnafter-gnbefore)],color='green',ls='-.',label='Counterfactual')
+    plt.plot(['2024','2026'],[T2024,T2026],color='red',label='Tom')
+    plt.plot(['2024','2026'],[N2024,N2026],color='blue',label='Noah')
+    plt.plot(['2024','2026'],[T2024,T2024+(N2026-N2024)],color='green',ls='-.',label='Counterfactual')
     plt.title('Training evaluation')
     plt.legend()
     st.pyplot(fig)
