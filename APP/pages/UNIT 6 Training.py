@@ -11,8 +11,9 @@ def UNIT6_1():
         The skill profile of a person represents their human capital, which is the result of a 
         long-term investment in skills, education, and experience. 
         Human capital refers to the knowledge, abilities, and competencies that individuals 
-        bring to the workforce, contributing to productivity and economic value. There are two
-        types of human capital:
+        bring to the workforce, contributing to productivity and economic value. 
+
+        There are two types of human capital:
         
         - **General human capital** includes skills and knowledge that are transferable 
         across different firms or industries. Examples include literacy, numeracy, problem-solving, 
@@ -28,7 +29,14 @@ def UNIT6_1():
         So, the primary difference between general and specific human capital lies in transferability: 
         General human capital is portable and valued universally in the labor market. 
         Specific human capital has limited applicability outside the organization or context where it was developed.
-        Employers often invest more in training related to specific human capital, while individuals bear the cost of acquiring general human capital, as it enhances their overall employability and earning potential.
+        Employers often invest more in training related to specific human capital, while individuals bear the cost of 
+        acquiring general human capital, as it enhances their overall employability and earning potential.
+
+        In any case, firms aim to develop the human capital of their workforce, aligning employees's skill profiles 
+        more closely with the skill requirements of the job, thus narrowing the skill gap. They have two primary options to achieve this:
+
+        1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
+        2. **On-the-job training** incumbent employees to improve their skill profiles and align them with the job requirements.
         '''
     )
 
@@ -102,15 +110,9 @@ def UNIT6_3():
 
     st.write(
         """
-        Firms aim to reduce the skill gap between the job skill requirements and an employee's skill profile. 
-        They have two primary options to achieve this:
-
-        1. **Hiring** new employees with skill profiles that closely match the job's requirements.  
-        2. **On-the-job training** incumbent employees to improve their skill profiles and align them with the job requirements.
-        
         We use the **Difference-in-Differences (DiD) method** to evaluate the impact of 
         on-the-job training on the **employee skill profile** $s_i = (s_{i1},s_{i2},s_{i3},s_{i4})$. To simplify the analysis,
-        we focus on just one skill of the employee skill profile $s_{ij}$
+        we focus on just one skill of the employee skill profile $s_{ij}$.
         """
     )
 
@@ -123,53 +125,46 @@ def UNIT6_3():
     st.write(
         """
         Here, **ATT** stands for the **Average Treatment Effect on the Treated**. This metric captures 
-        the effect of training on employees who received it (trained group), 
-        compared to a similar group that did not receive the training (non-trained group). 
+        the effect of training on an employee who received it (Tom: trained employee), 
+        compared to a similar employee that did not receive the training (Noah: non-trained group). 
 
-        The Difference-in-Differences (DiD) method achieves this by making two key comparisons:
+        The Difference-in-Differences (DiD) makes two key comparisons:
         
         - **Before and after training**: Training occurs at the present year, 2025, so 2024 is before training, 
         and 2026 is after training.
         - **Training versus Non-training**: Tom receives the training whereas Noah doesn't receive any training.
         
-        By combining these two comparisons, the DiD method helps estimate the causal impact of training on reducing the skill gap. 
+        By combining these two comparisons, the DiD method helps estimate the causal impact of training on skills. 
         Note: The method is valid if the **parallel trends assumption** holds—that is, if the trained and non-trained groups 
         would have followed similar skill gap trends in the absence of training.
-        """
-    )
 
-    st.write(
-        """
-        In DiD, we distinguish two key counterfactual outcomes:
+        The DiD method relies on the concept of a **counterfactual**. A counterfactual is a hypothetical situation
+        that didn't actually happen. In the context of on-the-job training, we're interested in whay would
+        have happened to the trained employee if she hadn't been trained. The DiD method is a clever way to 
+        estimate this counterfactual. It leverages the idea, that, in the absence of training, the skill would have 
+        developed the same way that it did for the non-trained employee. We distinguish two key counterfactual outcomes:
         
-        - **Counterfactual Skill Change (CSC)**: This represents the skill change the trained employee 
-        would have experienced if he had not received the training:
+        - **Counterfactual Skill Change (CSC)**: This represents how the skill of the trained employee
+        would have changed if she hadn't been trained:
         """
     )
 
     st.latex(
         r"""
-        \text{CSC} = s_{Noah,2026} - s_{Noah,2024}
+        CSC = s_{Noah,2026} - s_{Noah,2024}
         """
     )
 
     st.write(
         """
-        - **Counterfactual Skill Gap Change (CSGC)**: This represents how much the skill of the trained 
-        employee would have changed if he hadn’t received the training:
+        - **Counterfactual Skill (CS)**: This represents how much the skill level of the trained 
+        employee would have been if she hadn’t been trained:
         """
     )
 
     st.latex(
         r"""
         \text{CSGC} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024})
-        """
-    )
-
-    st.write(
-        """
-        The use of these counterfactuals allows us to isolate the causal impact of training by 
-        estimating what would have happened in the absence of the intervention.
         """
     )
 
