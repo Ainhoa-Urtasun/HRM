@@ -89,15 +89,16 @@ def UNIT6_2():
         '''
     )
 
-    st.write(
+     st.write(
+         ''' 
+         - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
+         combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
+         challenging to measure individual contributions.
+        - $e_i$ represents the effort or work ethic exerted by employee $i$ at the firm, with $e_i > 0$
+        - $L$ number of employees at the firm
+        - **Skills**, denoted as $s_i$, to be possessed by employees at the firm:
         '''
-        - $S_n$ The sum of the first $n$ terms of the geometric series
-        - $a$ The first term of the geometric series
-        - $r$ The common ratio, which is the factor by which each term is multiplied to get the next term
-        - $n$ The number of terms in the series
-        - The formula is valid for $r \neq 1$
-        '''
-    )
+     )
   
 def UNIT6_3():
 
