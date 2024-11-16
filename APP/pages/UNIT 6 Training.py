@@ -95,7 +95,7 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024}^{\text{trained}}) - (s_{Noah,2026} - s_{Noah,2024}
+        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024} - (s_{Noah,2026} - s_{Noah,2024})
         """
     )
 
@@ -122,7 +122,7 @@ def UNIT6_3():
         In DiD, we distinguish two key counterfactual outcomes:
         
         - **Counterfactual Skill Gap (CSG)**: This represents the skill gap the trained employee 
-        would have experienced if he had not received the training.
+        would have experienced if he had not received the training:
         """
     )
 
@@ -134,14 +134,14 @@ def UNIT6_3():
 
     st.write(
         """
-        - **Counterfactual Skill Gap Change (CSGC)**: This represents how much the skill gap of the trained 
-        group of employees would have changed if they hadn’t received the training.
+        - **Counterfactual Skill Gap Change (CSGC)**: This represents how much the skill of the trained 
+        employee would have changed if he hadn’t received the training:
         """
     )
 
     st.latex(
         r"""
-        \text{CSGC} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024}
+        \text{CSGC} = s_{Tom,2024} + (s_{Noah,2026} - s_{Noah,2024})
         """
     )
 
