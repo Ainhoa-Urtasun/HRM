@@ -76,6 +76,28 @@ def UNIT6_2():
         NPV = \sum_{t=2025}^T \frac{w_{t,H}-w_{t,L}}{(1+r)^t} - (C_{2025}+F_{2025})
         '''
     )
+
+    st.write(
+        '''
+        For a finite geometric series:
+        '''
+    )
+
+    st.latex(
+        '''
+        S_n = a \frac{1 - r^n}{1 - r}, \quad \text{if } r \neq 1
+        '''
+    )
+
+    st.write(
+        '''
+        - $S_n$ The sum of the first $n$ terms of the geometric series
+        - $a$ The first term of the geometric series
+        - $r$ The common ratio, which is the factor by which each term is multiplied to get the next term
+        - $n$ The number of terms in the series
+        - The formula is valid for $r \neq 1$
+        '''
+    )
   
 def UNIT6_3():
 
