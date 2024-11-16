@@ -174,7 +174,7 @@ st.set_page_config(page_title="UNIT 6 Training", layout="wide")
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=['Human capital','NPV of education','Training evaluation','Practice 23'],  # required
-    icons=["book", "book", "calculator", "person"],  # optional
+    icons=["book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
