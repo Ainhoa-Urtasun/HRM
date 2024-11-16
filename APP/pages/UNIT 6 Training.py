@@ -142,14 +142,14 @@ def UNIT6_3():
         """
         In DiD, we distinguish two key counterfactual outcomes:
         
-        - **Counterfactual Skill Gap (CSG)**: This represents the skill gap the trained employee 
+        - **Counterfactual Skill Change (CSC)**: This represents the skill change the trained employee 
         would have experienced if he had not received the training:
         """
     )
 
     st.latex(
         r"""
-        \text{CSG} = s_{Noah,2026} - s_{Noah,2024}
+        \text{CSC} = s_{Noah,2026} - s_{Noah,2024}
         """
     )
 
