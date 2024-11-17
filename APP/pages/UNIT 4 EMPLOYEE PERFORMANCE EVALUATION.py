@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT4_6():
+def UNIT4_1():
     
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
     st.sidebar.multiselect("Select two tasks of the job at your firm:",("Intellectual","Physical","Social","Use of methods","Use of technology"))
