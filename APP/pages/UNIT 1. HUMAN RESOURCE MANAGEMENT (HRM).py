@@ -56,7 +56,7 @@ def UNIT1_1():
   st.pyplot(fig)
 
 # Set page configuration
-st.set_page_config(page_title="UNIT 1 HUMAN RESOURCE MANAGEMENT (HRM)", layout="wide")
+st.set_page_config(page_title="UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
