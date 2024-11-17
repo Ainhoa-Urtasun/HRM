@@ -174,7 +174,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','HRM in context','Notation for the course','Output elascity of effort','Labor productivity and ULC','Practice 10'],  # required
+    options=['HRM practices','HRM in context','Notation for the course','Output elasticity of effort','Labor productivity and ULC','Practice 10'],  # required
     icons=["house", "book", "book", "book","calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -192,6 +192,6 @@ elif selected == 'Output elasticity of effort':
     UNIT1_4()
 elif selected == 'Labor productivity and ULC':
     UNIT1_5()
-elif selected == 'Practice 9':
+elif selected == 'Practice 10':
     UNIT1_6()
 
