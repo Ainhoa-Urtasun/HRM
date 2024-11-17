@@ -117,20 +117,16 @@ def UNIT6_3():
 
     st.latex(
         r"""
-        \text{ATT} = (s_{Tom,2026} - s_{Tom,2024}) - (s_{Noah,2026} - s_{Noah,2024})
+        ATT = (s_{trained,+1} - s_{trained,-1}) - (s_{non-trained,+1} - s_{non-trained,-1})
         """
     )
 
     st.write(
         """
-        **ATT** stands for the **Average Treatment Effect on the Treated**. This metric captures 
-        the effect of training by comparing the employee who received it (Tom: trained employee), 
-        with another employee who did not receive the training (Noah: non-trained group). 
-
-        The Difference-in-Differences (DiD) compares skills levels twice:
-        
-        - Before (2024) and after training (2026)
-        - Between trained (Tom) and non-trained employees (Noah)
+        where:
+        - ATT stands for the **Average Treatment Effect on the Treated**. This metric captures 
+        the effect of training by comparing a trained employee with a non-trained employee     
+        - on-the-job training takes place at 0, -1 is before and +1 is after and after training (2026)
 
         The DiD method relies on the **counterfactual**: what would
         have happened to the trained employee without the training. It assumes that, in the absence of training, 
