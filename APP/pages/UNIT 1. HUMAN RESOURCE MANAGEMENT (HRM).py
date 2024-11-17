@@ -59,7 +59,7 @@ def UNIT1_1():
 st.set_page_config(page_title="UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=['UNIT 1 HUMAN RESOURCE MANAGEMENT (HRM)'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
