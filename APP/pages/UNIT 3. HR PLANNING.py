@@ -64,7 +64,7 @@ def UNIT3_1():
 st.set_page_config(page_title="UNIT 3. HR PLANNING", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=['HR PLANNING'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
