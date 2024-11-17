@@ -69,9 +69,13 @@ def UNIT1_3():
       - $J_1$ Other managers
       - $J_2$ Support intellectuals and scientists, technicians and professionals
       - $J_3$ Administrative employees
+      '''
+  )
     
 def UNIT1_4():
 
+  st.write(
+    '''
     The **output elasticity of effort** measures the impact of each employee's individual
     effort on the firm's output:
     '''
@@ -172,7 +176,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 selected = option_menu(
     menu_title="Main Menu",  # required
     options=['HRM practices','HRM in context','Notation for the course','Output elascity of effort','Labor productivity and ULC','Practice 10'],  # required
-    icons=["house", "book", "calculator", "calculator", "person"],  # optional
+    icons=["house", "book", "book", "book","calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
