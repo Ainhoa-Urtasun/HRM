@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT8_1():
+def UNIT7_1():
 
     st.write(
         '''
@@ -80,7 +80,7 @@ def UNIT8_1():
     )
 
     
-def UNIT8_2():
+def UNIT7_2():
 
     st.write(
         '''
@@ -162,7 +162,7 @@ def UNIT8_2():
         '''
     )
 
-st.set_page_config(page_title="UNIT8", layout="wide")
+st.set_page_config(page_title="UNIT 7 Compensation", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
@@ -175,6 +175,6 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Pay-for-performance":
-    UNIT8_1()
+    UNIT7_1()
 elif selected == "Employee ownership":
-    UNIT8_2()
+    UNIT7_2()
