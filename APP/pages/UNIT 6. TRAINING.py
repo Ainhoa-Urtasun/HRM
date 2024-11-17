@@ -17,7 +17,7 @@ def UNIT6_1():
     plt.plot(['-1','+1'],[t0,t1],color='red',label="Trained employee's skill")
     plt.plot(['-1','+1'],[n0,n1],color='blue',label="Non-trained employee's skill")
     plt.plot(['-1','+1'],[t0,t0+(n1-n0)],color='green',ls='-.',label='Counterfactual')
-    plt.title('Evaluating training')
+    plt.title('Assessing Training Impact with DiD')
     plt.legend()
     st.pyplot(fig)
   
