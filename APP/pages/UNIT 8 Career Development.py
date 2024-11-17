@@ -4,26 +4,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT7_1():
+def UNIT8_1():
 
     st.write(
         '''
-        **Employment** refers to the number of employees, including both full-time and part-time workers. 
-        **New hires** refers to the number of employees who have recently been recruited and started working at the firm.
-        **Separations** refers to the number of employees who leave the firm, either voluntarily (quitting, retiring) 
-        or involuntarily (layoffs, dismissals).
+        Career development is an HRM practice that supports employees in achieving their career goals and advancing within
+        the organization. It typically includes training, mentoring, succession planning, and providing growth opportunities
+        such as promotions.
 
-        We can also calculate the total employment of the firm at $(t-1)$ and at $(t)$ as well as
-        its retention and turnover rates, which are critical HRM metrics.
+        Next we consider the tournament model to view career progression as a series of competitions
+        where employees compete for limited promotions or rewards at higher levels.
+
+        Rewards (e.g., salary increases, status, or power) increase with each level, incentivizing employees to
+        compete for advacement.
+
+        Employees at lower levels exert effort not only for their current compensation but also for the potential of winning the 
+        'tournament' and attaining a promotion.
+        
         '''
     )
-
-    st.latex(r'L_{(t-1)} = L_{1(t-1)}+ L_{2(t-1)} + L_{3(t-1)}')
-    st.latex(r'L_{(t)} = L_{1(t)}+ L_{2(t)} + L_{3(t-1)}')
-    st.latex(r'\text{Retention} = 100 \times \frac{m_{11(t-1,t)}+m_{22(t-1,t)}+m_{33(t-1,t)}}{L_{(t-1)}}')
-    st.latex(r'\text{Turnover} = 100 - \text{Retention}')
     
-def UNIT7_2():
+def UNIT8_2():
 
     st.write(
         '''
@@ -78,12 +79,12 @@ def UNIT7_2():
         '''
     )
 
-st.set_page_config(page_title="UNIT7", layout="wide")
+st.set_page_config(page_title="UNIT 8 Career Development", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Turnover','Tournament model'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    options=['Promotions','Tournament model'],  # required
+    icons=["book","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
