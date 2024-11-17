@@ -8,7 +8,10 @@ def UNIT7_1():
     
     st.write(
         '''
-        When an employee is compensated through pay-for-performance, her utility function is expressed as:
+        Pay-for-performance in the context of employee compensation implies that 
+        employees' pay is directly tied to the effort they exert or the results they achieve.
+        Therefore, when an employee is compensated through pay-for-performance, her utility function can 
+        be represented as:
         '''
     )
 
