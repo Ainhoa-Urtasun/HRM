@@ -126,7 +126,7 @@ def UNIT6_3():
         where:
         - ATT stands for the **Average Treatment Effect on the Treated**. This metric captures 
         the effect of training by comparing a trained employee with a non-trained employee     
-        - on-the-job training takes place at 0, -1 is before and +1 is after and after training (2026)
+        - On-the-job training takes place at 0, -1 is before and +1 is after
 
         The DiD method relies on the **counterfactual**: what would
         have happened to the trained employee without the training. It assumes that, in the absence of training, 
@@ -159,16 +159,16 @@ def UNIT6_3():
 def UNIT6_4():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 23 </h3>", unsafe_allow_html=True)
-    with st.sidebar.expander("Tom's skill"):
-        T2024 = st.number_input("2024", key="T2024", step=1)
-        T2026 = st.number_input("2026", key="T2026", step=1)
-    with st.sidebar.expander("Noah's skill"):
-        N2024 = st.number_input("2024", key="N2024", step=1)
-        N2026 = st.number_input("2026", key="N2026", step=1)
+    with st.sidebar.expander("Trained employee's skill"):
+        t0 = st.number_input("-1", key="t0", step=1)
+        t1 = st.number_input("+1", key="t1", step=1)
+    with st.sidebar.expander("Non-trained employee's skill"):
+        n0 = st.number_input("-1", key="n0", step=1)
+        n1 = st.number_input("+1", key="n1", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
-    plt.plot(['2024','2026'],[T2024,T2026],color='red',label='Tom')
-    plt.plot(['2024','2026'],[N2024,N2026],color='blue',label='Noah')
-    plt.plot(['2024','2026'],[T2024,T2024+(N2026-N2024)],color='green',ls='-.',label='Counterfactual')
+    plt.plot(['-1','+1'],[t0,t1],color='red',label='Trained employee')
+    plt.plot(['-1','+1'],[n0,nt],color='blue',label='Non-trained employee')
+    plt.plot(['-1','+1'],[t0,t0+(n1-n0)],color='green',ls='-.',label='Counterfactual')
     plt.title('Evaluating training')
     plt.legend()
     st.pyplot(fig)
