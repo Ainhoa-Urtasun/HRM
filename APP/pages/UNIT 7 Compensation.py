@@ -5,27 +5,27 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT7_1():
-
+    
     st.write(
         '''
-        When an employee receives pay-for-performance, her utility looks as follows:
+        When an employee is compensated through pay-for-performance, her utility function is expressed as:
         '''
     )
 
-    st.latex(r'''
-        u_i = w \times e_i - C(e_i) = w e_i - g_i e_i^2
-        ''')
+    st.latex(
+        r'''
+        u_i = w e_i - C(e_i) = w e_i - g_i e_i^2
+        '''
+    )
 
     st.write(
         '''
         where:
-        - $w$ represents the rate of pay per unit of effort
-        - $e_i$ is the effort and work ethic employee $i$ exerts at work
-        - $g_i$ is the skill gap of employee $i$
+        - $w$ is the pay rate per unit of effort
+        - $e_i$ represents the effort (or work ethic) exerted by employee $i$
+        - $g_i$ denotes the skill gap of employee $i$
         
-        To determine the optimal level of effort, the employee maximizes her utility by choosing $e_i$ 
-        such that the derivative of her utility with respect to effort is zero. 
-        This derivative gives us the employee's **supply of effort**:
+        To maximize utility, the employee chooses an effort level such that the derivative of utility with respect to effort is zero:
         '''
     )
 
@@ -37,30 +37,32 @@ def UNIT7_1():
 
     st.write(
         '''
-        Setting this derivative equal to zero to maximize utility, we get:
-        '''
-    )
-
-    st.latex(r'''
-        w - 2 d_i e_i = 0
-        ''')
-
-    st.write(
-        '''
-        Solving for $e_i$, the optimal supply of effort by the employee is:
+        Setting this derivative to zero to find the utility-maximizing effort level, we get:
         '''
     )
 
     st.latex(
         r'''
-        e_i^* = \frac{w}{2 d_i}
+        w - 2 g_i e_i = 0
         '''
     )
 
     st.write(
         '''
-        This shows that the employee's optimal effort level $e_i^*$ increases with the rate of pay $w$ and decreases with the cost factor $d_i$. 
-        In other words, a higher pay rate incentivizes more effort, while a higher cost of effort discourages it.
+        Solving for $e_i$, the employee's optimal effort is:
+        '''
+    )
+
+    st.latex(
+        r'''
+        e_i^* = \frac{w}{2 g_i}
+        '''
+    )
+
+    st.write(
+        '''
+        This result shows that the optimal effort level $e_i^*$ increases with the pay rate $w$ and decreases with the cost factor $g_i$. 
+        In other words, a higher pay rate motivates more effort, whereas a higher cost of effort discourages it. This represents the supply of effort.
         '''
     )
 
