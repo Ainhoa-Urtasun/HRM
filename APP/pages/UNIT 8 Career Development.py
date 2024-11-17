@@ -91,7 +91,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Turnover":
+if selected == "Promotions":
     UNIT8_1()
 elif selected == "Tournament model":
     UNIT8_2()
