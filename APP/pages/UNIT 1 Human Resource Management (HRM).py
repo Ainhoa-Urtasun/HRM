@@ -5,122 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
-                                                                                                    
-    st.write(
-        '''
-        Human Resource Management (HRM) is made up of HRM practices designed to maximize employee engagement, productivity, and job satisfaction. HRM practices include:
-        - **Job Analysis and Design** (UNIT 2): Covers tasks, skills, jobs, job evaluation, and skill requirements for each job.
-        - **HR Planning** (UNIT 3): Starts with data collection to show how to forecast employee availability using the transition matrix.
-        - **Employee Performance Evaluation** (UNIT 4): Addresses the intensive margin.
-        - **Recruitment** (UNIT 5): Discusses employment, asymmetric information, adverse selection, and how to mitage it.
-        - **On-the-Job Training** (UNIT 6): Presents training as a way to reduce the skill gap of incumbent workers and uses the difference-in-differences method to measure training impacts.
-        - **Compensation** (UNIT 7): Explores pay-for-performance models and employee-ownership options.
-        - **Career Development** (UNIT 8): Introduces the tournament model as a framework for employee growth and progression.
-        '''
-    )
-
-def UNIT1_2():
   
-  st.write(
-    '''
-    Any firm, regardless of its size, structure, or legal form of ownership, 
-    produces **output** (a good or a service) and performs **economic activities** 
-    necessary for that production. Firms are classified into sectors (industries) based on the output 
-    they produce and the economic activities they perform. There are standard classifications for 
-    economic activities, such as **NACE Rev. 2, the European Classification of Economic Activities**.
-
-    These economic activities are carried out by both employees and technology.
-    Consequently, a firm's decisions on which technologies to adopt and which jobs to post
-    in the labor market will depend on the specific economic activities required.
-        
-    Just as firms are classified into industries based on the output
-    they produce and associated economic activities, jobs are classified into
-    occupations depending on the tasks they entail. Same as for economic activities, 
-    there are standard classifications for occupations, 
-    such as **ISCO (International Standard Classification 
-    of Occupations)**. 
-        
-    It is important to note that a job is not the same as an occupation. 
-    Occupations are standardized, while jobs are more
-    flexible as they are designed by firms. 
-    '''
-  )
-
-def UNIT1_3():
-  st.write(
-    ''' 
-    - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
-    combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
-    challenging to measure individual contributions.
-    - $e_i$ represents the effort (or work ethic) exerted by employee $i$ at the firm, with $e_i > 0$
-    - $L$ number of employees at the firm
-    - **Skills**, denoted as $s_i$, to be possessed by employees at the firm:
-      - $s_1$ Demonstrating willigness to learn
-      - $s_2$ Collaborating in teams and networks
-      - $s_3$ Working efficiently
-      - $s_4$ Taking a proactive approach  
-    - **Tasks**, denoted as $t_j$, to be carried out by employees at the firm:
-      - $t_1$ Intellectual
-      - $t_2$ Physical
-      - $t_3$ Social
-      - $t_4$ Use of methods
-      - $t_5$ Use of technology
-    - **Jobs**, denoted as $J_k$, within the firm:
-      - $J_1$ Other managers
-      - $J_2$ Support intellectuals and scientists, technicians and professionals
-      - $J_3$ Administrative employees
-      '''
-  )
-    
-def UNIT1_4():
-  st.write(
-    '''
-    The **output elasticity of effort** measures the impact of each employee's individual
-    effort on the firm's output:
-    '''
-  )
-
-  st.latex(
-    r'''
-    \alpha_i = \frac{\partial Q}{\partial e_i} \frac{e_i}{Q}
-    '''
-  )
-
-  st.write(
-    '''
-    This output elasticity indicates the percentage change in the output
-    the firm produces when employee $i$ exerts 1% more effort.
-    '''
-  )
-
-def UNIT1_5():
-  
-  st.write(
-    '''
-    From the Income Statement of a firm: 
-    '''
-  )
-  st.latex(r'EBIT = pQ - wL - M - K')
-  st.write(
-    '''
-    - $p$ is the price of the output the firm produces
-    - $pQ$ represents operating revenue
-    - $w$ is the average salary paid by the firm to its employees
-    - $wL$ is cost of employees
-    - $M$ are material costs
-    - $K$ is depreciation
-
-    From the Income Statement of a firm, we can obtain two critical indicators of employee performance 
-    at the intensive margin:
-    '''
-  )
-
-  st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
-  st.latex(r'\text{ULC} = \frac{wL}{pQ}')
-
-def UNIT1_6():
-  
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10 </h3>", unsafe_allow_html=True)
+  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 3 </h3>", unsafe_allow_html=True)
 
   st.write(
     '''
@@ -174,24 +60,14 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','HRM in context','Notation for the course','Output elasticity of effort','Labor productivity and ULC','Practice 10'],  # required
-    icons=["house", "book", "book", "book","calculator","person"],  # optional
+    options=['Practice 3'],  # required
+    icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
 )
 
 # Call the selected section
-if selected == 'HRM practices':
+if selected == 'Practice 3':
     UNIT1_1()
-elif selected == 'HRM in context':
-    UNIT1_2()
-elif selected == 'Notation for the course':
-    UNIT1_3()
-elif selected == 'Output elasticity of effort':
-    UNIT1_4()
-elif selected == 'Labor productivity and ULC':
-    UNIT1_5()
-elif selected == 'Practice 10':
-    UNIT1_6()
 
