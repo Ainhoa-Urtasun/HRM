@@ -167,7 +167,7 @@ def UNIT6_4():
         n1 = st.number_input("+1", key="n1", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['-1','+1'],[t0,t1],color='red',label='Trained employee')
-    plt.plot(['-1','+1'],[n0,nt],color='blue',label='Non-trained employee')
+    plt.plot(['-1','+1'],[n0,n1],color='blue',label='Non-trained employee')
     plt.plot(['-1','+1'],[t0,t0+(n1-n0)],color='green',ls='-.',label='Counterfactual')
     plt.title('Evaluating training')
     plt.legend()
