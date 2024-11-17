@@ -7,7 +7,7 @@ from numpy.linalg import norm
 
 def UNIT2_1():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11 </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 6 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
@@ -56,7 +56,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Practice 6"],  # required
+    options=["UNIT 2 Job Analysis and Design"],  # required
     icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -64,7 +64,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Practice 6":
+if selected == "UNIT 2 Job Analysis and Design":
     UNIT2_1()
 
 
