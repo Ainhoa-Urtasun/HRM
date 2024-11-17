@@ -128,8 +128,7 @@ def UNIT7_2():
 
     st.latex(
         r'''
-        \frac{\partial u_i}{\partial e_i} = w + b \alpha \frac{Q}{e_i} - 2 g_i e_i = 0 \\[10pt]
-        e_i^* = \frac{w}{2 d_i}
+        e_i = \frac{w \pm \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
         '''
     )
 
