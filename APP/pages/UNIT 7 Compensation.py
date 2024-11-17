@@ -8,47 +8,32 @@ def UNIT7_1():
 
     st.write(
         '''
-        When an employee receives pay-for-performance, their utility looks as follows:
+        When an employee receives pay-for-performance, her utility looks as follows:
         '''
     )
 
     st.latex(r'''
-        u_i = w \times e_i - C(e_i)
+        u_i = w \times e_i - C(e_i) = w e_i - g_i e_i^2
         ''')
 
     st.write(
         '''
         where:
         - $w$ represents the rate of pay per unit of effort
-        - $e_i$ is the effort exerted by the employee
-        - $C(e_i)$ is the cost of effort, represented by $C(e_i) = g_i e_i^2$, where $g_i$ is the skill gap of employee
-        $i$ calculated as the Euclidean distance between $s_k$, the skill requirements for the job employee $i$ performs,
-        and $s_i$, the skill profile of employee $i$
+        - $e_i$ is the effort and work ethic employee $i$ exerts at work
+        - $g_i$ is the skill gap of employee $i$
         
-        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$ 
-        such that the derivative of their utility with respect to effort is zero. 
-        This derivative gives us the employee's **supply of effort**.
-
-        Taking the derivative of the utility function with respect to effort $e_i$:
+        To determine the optimal level of effort, the employee maximizes her utility by choosing $e_i$ 
+        such that the derivative of her utility with respect to effort is zero. 
+        This derivative gives us the employee's **supply of effort**:
         '''
     )
 
     st.latex(
         r'''
-        \frac{\partial u_i}{\partial e_i} = w - \frac{\partial C(e_i)}{\partial e_i}
+        \frac{\partial u_i}{\partial e_i} = w - \frac{\partial C(e_i)}{\partial e_i} = w - 2g_ie_i
         '''
     )
-
-    st.write(
-        '''
-        Substituting $C(e_i) = d_i e_i^2$:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial u_i}{\partial e_i} = w - 2 d_i e_i
-        ''')
 
     st.write(
         '''
