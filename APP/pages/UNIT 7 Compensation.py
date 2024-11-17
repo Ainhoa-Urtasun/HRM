@@ -122,13 +122,13 @@ def UNIT7_2():
 
     st.write(
         '''
-        Setting this expression to zero to maximize utility and solving for $e_i$:
+        Setting this expression to zero to maximize utility and solving for positive $e_i$:
         '''
     )
 
     st.latex(
         r'''
-        e_i^* = \frac{w \pm \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
+        e_i^* = \frac{w + \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
         '''
     )
 
