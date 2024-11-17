@@ -73,7 +73,6 @@ def UNIT1_3():
   )
     
 def UNIT1_4():
-
   st.write(
     '''
     The **output elasticity of effort** measures the impact of each employee's individual
