@@ -128,15 +128,17 @@ def UNIT7_2():
 
     st.latex(
         r'''
-        e_i = \frac{w \pm \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
+        e_i^* = \frac{w \pm \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
         '''
     )
 
     st.write(
         '''
-        This expression shows that the employee's optimal effort level $e_i^*$ depends not only on the pay rate $w$ but also on their ownership share $b$ 
-        in the production function, encouraging higher effort levels as the share in output increases. 
-        Conversely, a higher cost of effort $d_i$ discourages effort, balancing the incentives.
+        The expression for $e_i^*$ illustrates how pay, skill gap, ownership share, a
+        nd the employee's marginal contribution to production combine to influence the optimal level of effort. 
+        Higher pay and shared ownership motivate more effort, while higher skill gaps and effort costs reduce it. 
+        This framework provides a nuanced understanding of how to design effective pay-for-performance and 
+        ownership-based incentive structures.
         '''
     )
 
@@ -144,7 +146,7 @@ st.set_page_config(page_title="UNIT 7 Compensation", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Pay-for-performance','Employee ownership','Practice 24'],  # required
+    options=['Pay-for-performance','Ownership-based incentive structures','Practice 24'],  # required
     icons=["book", "book", "people"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -154,7 +156,7 @@ selected = option_menu(
 # Call the selected section
 if selected == "Pay-for-performance":
     UNIT7_1()
-elif selected == "Employee ownership":
+elif selected == "Ownership-based incentive structures":
     UNIT7_2()
 elif selected == "Practice 24":
     UNIT7_3()
