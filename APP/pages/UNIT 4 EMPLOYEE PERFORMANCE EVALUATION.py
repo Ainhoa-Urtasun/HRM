@@ -37,7 +37,7 @@ def UNIT4_1():
         st.write(euclidean_distance)
 
 
-st.set_page_config(page_title="UNIT 4 Employee Performance Evaluation", layout="wide")
+st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
