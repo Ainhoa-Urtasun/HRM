@@ -92,9 +92,9 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Turnover":
-    UNIT7_1()
+    UNIT8_1()
 elif selected == "Tournament model":
-    UNIT7_2()
+    UNIT8_2()
 
 
     
