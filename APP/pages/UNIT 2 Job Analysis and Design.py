@@ -6,123 +6,6 @@ import numpy as np
 from numpy.linalg import norm
 
 def UNIT2_1():
-    
-    st.write(
-        """
-        A **skill**, denoted as $s_i$, is an ability or competence that an individual possesses. Employees use their skills to effectively perform 
-        tasks. Skills themselves do not directly produce output; rather, they enable the completion of tasks. 
-        There are many classifications of skills. For simplicty, we focus only on the 4 
-        most requested transversal skills and competences in online job ads in the EU27 in 2023
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence):
-
-        - $s_1$ Demonstrating willingness to learn
-        - $s_2$ Collaborating in teams and networks
-        - $s_3$ Working efficiently
-        - $s_4$ Taking a proactive approach
-        
-        A **task**, denoted as $t_j$, is an action performed by an employee that results in a specific output.
-        For simplicity, we assume any economic activity can be completed by carrying out the 5 core tasks listed in
-        [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence): 
-        
-        - $t_1$ Intellectual
-        - $t_2$ Physical
-        - $t_3$ Social
-        - $t_4$ Use of methods
-        - $t_5$ Use of technology
-
-        A **job**, denoted as $J_k$, is a bundle of tasks ($t_1$: intellectual, $t_2$: physical,
-        $t_3$: social, $t_4$: use of methods, and $t_5$: use of technology). To carry out each task,
-        employees need to possess 
-        multiple skills ($s_1$: demostrating willigness to learn, $s_2$: maintaining a postive attitude, 
-        $s_3$: taking a proactive approach, and $s_4$: working efficiently):
-        - $J_1$ Other managers
-        - $J_2$ Support intellectuals and scientists, technicians and professionals
-        - $J_3$ Administrative employees
-        """
-    )
-    
-def UNIT2_2():
-
-    st.write(
-        '''
-        **Job evaluation** assesses the relative contribution of jobs to the value of the firm. It is
-        useful for job design, setting recruitment standards, identifying training needs, and 
-        establishing fair compensation. 
-
-        The **job task-skill matrix** is a way to evaluate jobs, with each column corresponding 
-        to one of the five core tasks, and each row representing the extent to which one the four skills is required
-        to perform each task within the job:
-        '''
-    )
-             
-    st.latex(
-        r"""
-        J_k = \begin{pmatrix}
-        s_{11k} & s_{12k} & s_{13k} & s_{14k} & s_{15k} \\
-        s_{21k} & s_{22k} & s_{23k} & s_{24k} & s_{25k} \\
-        s_{31k} & s_{32k} & s_{33k} & s_{34k} & s_{35k} \\
-        s_{41k} & s_{42k} & s_{43k} & s_{44k} & s_{45k} \\
-        \end{pmatrix} \\[10pt]
-        """
-    )
-
-    st.write(
-        '''
-        We restrict $s_{ijk}$ to the following values:
-        '''
-    )
-
-    st.latex(r'0 \leq s_{ijk} \leq 100')
-
-    st.write(
-        '''
-        A job doesn't necessarily entail all tasks. 
-        If a job doesn't entail a particular task, 
-        its corresponding column will be a vector of zeros.
-        '''
-    )
-
-def UNIT2_3():
-
-    st.write(
-        '''
-        We can further summarize the information in the **job task-skill matrix** of a job by calculating the norm of each
-        row-vector. The result, which we refer to as **skill requirements of a job** provides a quantitative
-        measure of the skill intensity required across the tasks a job entails, offering another tool for 
-        job evaluation:
-        '''
-    )
-
-    st.latex(
-        r"""
-        s_k = 0.45 \begin{pmatrix} 
-        \|s_{1k}\| \\ 
-        \|s_{2k}\| \\ 
-        \|s_{3k}\| \\ 
-        \|s_{4k}\| 
-        \end{pmatrix} = 0.45 \begin{pmatrix} 
-        \sqrt{s_{11k}^2 + s_{12k}^2 + s_{13k}^2 + s_{14k}^2 + s_{15k}^2} \\[10pt] 
-        \sqrt{s_{21k}^2 + s_{22k}^2 + s_{23k}^2 + s_{24k}^2 + s_{25k}^2} \\[10pt] 
-        \sqrt{s_{31k}^2 + s_{32k}^2 + s_{33k}^2 + s_{34k}^2 + s_{35k}^2} \\[10pt] 
-        \sqrt{s_{41k}^2 + s_{42k}^2 + s_{43k}^2 + s_{44k}^2 + s_{45k}^2} 
-        \end{pmatrix}
-        """
-    )
-
-    st.write(
-        '''
-        We scale down the **job skill requirements** by 0.45 to keep its values within 0 and 100, making
-        it easier to interpret and compare across different jobs:
-        '''
-    )
-
-    st.latex(
-        '''
-        0 \leq  \|s_{ik}\| \leq 100
-        '''
-    )
-
-def UNIT2_4():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 11 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
@@ -173,7 +56,7 @@ st.set_page_config(page_title="UNIT 2 Job Analysis and Design", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["Tasks, skills, and jobs","Job evaluation","Job skill requirements","Practice 11"],  # required
+    options=["Practice 6"],  # required
     icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -181,14 +64,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Tasks, skills, and jobs":
+if selected == "Practice 6":
     UNIT2_1()
-elif selected == "Job evaluation":
-    UNIT2_2()
-elif selected == "Job skill requirements":
-    UNIT2_3()
-elif selected == "Practice 11":
-    UNIT2_4()
 
 
 
