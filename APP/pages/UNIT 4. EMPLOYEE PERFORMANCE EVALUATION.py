@@ -40,7 +40,7 @@ def UNIT4_1():
 st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=['UNIT 4. EMPLOYEE PERFORMANCE EVALUATION'],  # required
     icons=["house", "calculator", "calculator", "book", "calculator",'people'],  # optional
     menu_icon="cast",  # optional
