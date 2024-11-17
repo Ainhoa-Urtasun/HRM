@@ -60,7 +60,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Practice 3'],  # required
+    options=['UNIT 1 Human Resource Management (HRM)'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -68,6 +68,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'Practice 3':
+if selected == 'UNIT 1 Human Resource Management (HRM)':
     UNIT1_1()
 
