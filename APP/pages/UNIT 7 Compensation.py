@@ -153,8 +153,8 @@ st.set_page_config(page_title="UNIT 7 Compensation", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['Pay-for-performance','Employee ownership'],  # required
-    icons=["house", "book", "calculator", "person", "globe"],  # optional
+    options=['Pay-for-performance','Employee ownership','Practice 24'],  # required
+    icons=["book", "book", "people"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
@@ -165,3 +165,5 @@ if selected == "Pay-for-performance":
     UNIT7_1()
 elif selected == "Employee ownership":
     UNIT7_2()
+elif selected == "Practice 24":
+    UNIT7_3()
