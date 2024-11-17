@@ -78,19 +78,21 @@ def UNIT7_2():
 
     st.latex(
         r'''
-        u_i = w \times e_i + b \times f(e_1, e_2, \dots) - C(e_i)
+        u_i = w e_i + b Q - C(e_i) = w e_i + b Q - g_i e_i^2
         ''')
 
     st.write(
         '''
         where:
-        - $w$ is the rate of pay per unit of effort,
-        - $e_i$ is the effort exerted by the employee,
-        - $b$ is the employee’s ownership share in the production output,
-        - $f(e_1, e_2, \dots)$ is the production function representing total output as a function of the efforts of all employees,
-        - $C(e_i)$ is the cost of effort, typically $C(e_i) = d_i e_i^2$, where $d_i$ reflects the costliness of exerting effort for the employee.
+        - $w$ is the rate of pay per unit of effort
+        - $e_i$ is the effort exerted by the employee
+        - $b$ is the employee’s ownership share in the production output
+        - $Q$ is the production function representing total output as a function of the efforts of all employees
+        - $g_i$ denotes the skill gap of employee $i$
 
-        To determine the optimal level of effort, the employee maximizes their utility by choosing \( e_i \) such that the derivative of their utility with respect to effort is zero. This derivative gives us the **supply of effort** considering both the pay and ownership share.
+        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$
+        such that the derivative of their utility with respect to effort is zero. 
+        This derivative gives us the **supply of effort** considering both the pay and ownership share.
         '''
     )
 
@@ -102,42 +104,32 @@ def UNIT7_2():
 
     st.latex(
         r'''
-        \frac{\partial u_i}{\partial e_i} = w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - \frac{\partial C(e_i)}{\partial e_i}
-        ''')
-
-    st.write(
-        '''
-        Substituting $C(e_i) = d_i e_i^2$:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial u_i}{\partial e_i} = w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - 2 d_i e_i
+        \frac{\partial u_i}{\partial e_i} = w + b \frac{\partial Q}{\partial e_i} - 2 g_i e_i
         '''
     )
 
     st.write(
         '''
-        Setting this derivative equal to zero to maximize utility, we get:
+        Substituting the expression of the output elasticity of effort:
         '''
     )
 
     st.latex(
         r'''
-        w + \alpha \frac{\partial f(e_1, e_2, \dots)}{\partial e_i} - 2 d_i e_i = 0
+        \frac{\partial u_i}{\partial e_i} = w + b \alpha \frac{Q}{e_i} - 2 g_i e_i
         '''
     )
 
     st.write(
         '''
-        Solving for $e_i$, the optimal supply of effort by the employee is:
+        Setting this expression to zero to maximize utility and solving for $e_i$:
         '''
     )
 
     st.latex(
         r'''
-        e_i^* = \frac{w + b \times \frac{\partial f(e_1, e_2, \dots)}{\partial e_i}}{2 d_i}
+        \frac{\partial u_i}{\partial e_i} = w + b \alpha \frac{Q}{e_i} - 2 g_i e_i = 0 \\[10pt]
+        e_i^* = \frac{w}{2 d_i}
         '''
     )
 
