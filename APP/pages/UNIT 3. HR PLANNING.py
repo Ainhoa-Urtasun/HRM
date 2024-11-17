@@ -61,7 +61,7 @@ def UNIT3_1():
         for prediction in predictions:
             st.write(prediction[0])
 
-st.set_page_config(page_title="UNIT 3 HR PLANNING", layout="wide")
+st.set_page_config(page_title="UNIT 3. HR PLANNING", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
