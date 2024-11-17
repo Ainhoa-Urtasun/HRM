@@ -50,7 +50,7 @@ def UNIT5_1():
 st.set_page_config(page_title="UNIT 5. HIRING", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=['UNIT 5. HIRING'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
@@ -59,6 +59,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Employment":
+if selected == 'UNIT 5. HIRING':
     UNIT5_1()
 
