@@ -7,7 +7,7 @@ import random
 
 def UNIT3_1():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
     st.sidebar.write('Input historical data from the end of 2022 and the end of 2023:')
     with st.sidebar.expander("$J_1$ Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
@@ -65,7 +65,7 @@ st.set_page_config(page_title="UNIT 3 HR PLANNING", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=["HR planning table",'Forecasting the availability of employees using the transition matrix','HR PLANNING'],  # required
+    options=['HR PLANNING'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
