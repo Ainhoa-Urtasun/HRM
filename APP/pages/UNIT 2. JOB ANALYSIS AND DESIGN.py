@@ -55,7 +55,7 @@ def UNIT2_1():
 st.set_page_config(page_title="UNIT 2. JOB ANALYSIS AND DESIGN", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=["UNIT 2 JOB ANALYSIS AND DESIGN"],  # required
     icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
