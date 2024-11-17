@@ -52,7 +52,7 @@ def UNIT1_3():
     - The production function of the firm, $Q = f(e_1, e_2,...,e_L)$, is based on teamwork and collaboration as the
     combined efforts of employees jointly contribute to the firm's total output, $Q$, making it 
     challenging to measure individual contributions.
-    - $e_i$ represents the effort or work ethic exerted by employee $i$ at the firm, with $e_i > 0$
+    - $e_i$ represents the effort (or work ethic) exerted by employee $i$ at the firm, with $e_i > 0$
     - $L$ number of employees at the firm
     - **Skills**, denoted as $s_i$, to be possessed by employees at the firm:
       - $s_1$ Demonstrating willigness to learn
@@ -70,6 +70,8 @@ def UNIT1_3():
       - $J_2$ Support intellectuals and scientists, technicians and professionals
       - $J_3$ Administrative employees
     
+def UNIT1_4():
+
     The **output elasticity of effort** measures the impact of each employee's individual
     effort on the firm's output:
     '''
@@ -88,7 +90,7 @@ def UNIT1_3():
     '''
   )
 
-def UNIT1_4():
+def UNIT1_5():
   
   st.write(
     '''
@@ -113,7 +115,7 @@ def UNIT1_4():
   st.latex(r'\text{Labor productivity} = \frac{pQ}{L}')
   st.latex(r'\text{ULC} = \frac{wL}{pQ}')
 
-def UNIT1_5():
+def UNIT1_6():
   
   st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 10 </h3>", unsafe_allow_html=True)
 
@@ -169,7 +171,7 @@ st.set_page_config(page_title="UNIT 1 Human Resource Management (HRM)", layout="
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['HRM practices','HRM in context','Notation for the course','Labor productivity and ULC','Practice 10'],  # required
+    options=['HRM practices','HRM in context','Notation for the course','Output elascity of effort','Labor productivity and ULC','Practice 10'],  # required
     icons=["house", "book", "calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -183,8 +185,10 @@ elif selected == 'HRM in context':
     UNIT1_2()
 elif selected == 'Notation for the course':
     UNIT1_3()
-elif selected == 'Labor productivity and ULC':
+elif selected == 'Output elasticity of effort':
     UNIT1_4()
-elif selected == 'Practice 9':
+elif selected == 'Labor productivity and ULC':
     UNIT1_5()
+elif selected == 'Practice 9':
+    UNIT1_6()
 
