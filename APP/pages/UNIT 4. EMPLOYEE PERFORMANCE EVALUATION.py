@@ -49,18 +49,15 @@ def UNIT4_1():
             [s41, s42, s43, s44, s45]
         ])
     
+    row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
+    gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
+    
     if st.button("Job evaluation"):
         st.write(matrix)
-
     if st.button("Job skill requirements"):
-        row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
-        st.write(row_norms.shape)
         for norm in row_norms:
-            st.write(norm)
-            
+            st.write(norm)          
     if st.button("Skill gap"):
-        st.write(np.array([s1,s2,s3,s4]).shape)
-        gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
         st.write(gap)
             
 st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
