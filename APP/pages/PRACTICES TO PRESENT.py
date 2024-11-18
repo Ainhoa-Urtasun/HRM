@@ -10,6 +10,7 @@ def UNIT0_1():
 
   st.write(
     '''
+    Practices 3, 6, 9, 12, 16, 19, 22, 25
     - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
     Development of Vocational Training)
     - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
