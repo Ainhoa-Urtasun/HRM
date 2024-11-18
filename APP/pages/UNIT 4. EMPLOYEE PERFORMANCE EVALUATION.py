@@ -54,11 +54,12 @@ def UNIT4_1():
 
     if st.button("Job skill requirements"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
-        row_norms = row_norms.reshape(-1, 1)
+        st.write(row_norms.shape)
         for norm in row_norms:
             st.write(norm)
             
     if st.button("Skill gap"):
+        st.write(np.array([s1,s2,s3,s4]))
         gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
         st.write(gap)
             
