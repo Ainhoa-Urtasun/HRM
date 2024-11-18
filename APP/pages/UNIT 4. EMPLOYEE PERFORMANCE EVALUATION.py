@@ -36,10 +36,10 @@ def UNIT4_1():
         s45 = st.number_input("taking a proactive approach",key='s45',min_value=0,max_value=100,step=1)
 
     st.sidebar.write('Skill profile:')
-        s1 = st.number_input("demonstrating willigness to learn",key='s1',min_value=0,max_value=100,step=1)
-        s2 = st.number_input("collaborating in teams and networks",key='s2',min_value=0,max_value=100,step=1)
-        s3 = st.number_input("working efficiently",key='s3',min_value=0,max_value=100,step=1)
-        s4 = st.number_input("taking a proactive approach",key='s4',min_value=0,max_value=100,step=1)
+    s1 = st.number_input("demonstrating willigness to learn",key='s1',min_value=0,max_value=100,step=1)
+    s2 = st.number_input("collaborating in teams and networks",key='s2',min_value=0,max_value=100,step=1)
+    s3 = st.number_input("working efficiently",key='s3',min_value=0,max_value=100,step=1)
+    s4 = st.number_input("taking a proactive approach",key='s4',min_value=0,max_value=100,step=1)
 
     matrix = np.array([
             [s11, s12, s13, s14, s15],
