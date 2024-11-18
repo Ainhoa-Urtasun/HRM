@@ -8,8 +8,12 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
+import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+
 def UNIT7_1():
- 
+    # Header for the page
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
     
     # Sidebar for selecting a job
@@ -18,18 +22,18 @@ def UNIT7_1():
         ("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar")
     )
     
-    # Number input for 'g' in the main layout
-    st.write("### Skill Gap Adjustment")
-    g = st.number_input(
-        "Adjust the value of g (Skill gap):",
-        key='g',
-        step=1,
-        min_value=1,  # Avoid division by zero by setting min_value to 1
-        max_value=100,
-        value=10  # Default value
-    )
+    # Sidebar expander for skill gap input
+    with st.sidebar.expander("Skill gap"):
+        g = st.number_input(
+            "Adjust the value of g (Skill gap):",
+            key='g',
+            step=1,
+            min_value=1,  # Avoid division by zero by setting min_value to 1
+            max_value=100,
+            value=10  # Default value
+        )
     
-    # Plot Effort Supply dynamically
+    # Display the rest of the visualization (keeps visible regardless of sidebar interaction)
     w = np.linspace(0.1, 10, 100)  # Positive values for w
     fig = plt.figure(figsize=(5, 5), dpi=100)
     plt.plot(w, 2 * w / g, color='red', label='Effort supply')
@@ -38,9 +42,9 @@ def UNIT7_1():
     plt.ylabel('Effort Supply')
     plt.legend()
     
-    # Display the plot
+    # Display the plot in the main area
     st.pyplot(fig)
-
+    
 st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
 
 selected = option_menu(
