@@ -18,7 +18,7 @@ def UNIT2_1():
     with st.sidebar.expander("Physical"):
         s12 = st.number_input("Demonstrating willigness to learn",key='s12',step=1.0,min_value=0,max_value=100)
         s22 = st.number_input("Collaborating in teams and networks",key='s22',step=1.0,min_value=0,max_value=100)
-        s32 = st.number_input("Working efficiently",key='s32',step=1.0,min_value=0,max_value=100
+        s32 = st.number_input("Working efficiently",key='s32',step=1.0,min_value=0,max_value=100)
         s42 = st.number_input("Taking a proactive approach",key='s42',step=1.0,min_value=0,max_value=100)
     with st.sidebar.expander("Social"):
         s13 = st.number_input("Demonstrating willigness to learn",key='s13',step=1.0,min_value=0,max_value=100)
