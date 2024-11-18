@@ -16,25 +16,25 @@ def UNIT2_1():
         s31 = st.number_input("Working efficiently",key='s31',min_value=0,max_value=100,step=1)
         s41 = st.number_input("Taking a proactive approach",key='s41',min_value=0,max_value=100,step=1)
     with st.sidebar.expander("Physical"):
-        s12 = st.number_input("Demonstrating willigness to learn",key='s12',min_value=0,max_value=100,step=1.0)
-        s22 = st.number_input("Collaborating in teams and networks",key='s22',min_value=0,max_value=100,step=1.0)
-        s32 = st.number_input("Working efficiently",key='s32',min_value=0,max_value=100,step=1.0)
-        s42 = st.number_input("Taking a proactive approach",key='s42',min_value=0,max_value=100,step=1.0)
+        s12 = st.number_input("Demonstrating willigness to learn",key='s12',min_value=0,max_value=100,step=1)
+        s22 = st.number_input("Collaborating in teams and networks",key='s22',min_value=0,max_value=100,step=1)
+        s32 = st.number_input("Working efficiently",key='s32',min_value=0,max_value=100,step=1)
+        s42 = st.number_input("Taking a proactive approach",key='s42',min_value=0,max_value=100,step=1)
     with st.sidebar.expander("Social"):
-        s13 = st.number_input("Demonstrating willigness to learn",key='s13',min_value=0,max_value=100,step=1.0)
-        s23 = st.number_input("Collaborating in teams and networks",key='s23',min_value=0,max_value=100,step=1.0)
-        s33 = st.number_input("Working efficiently",key='s33',min_value=0,max_value=100,step=1.0)
-        s43 = st.number_input("Taking a proactive approach",key='s43',min_value=0,max_value=100,step=1.0)
+        s13 = st.number_input("Demonstrating willigness to learn",key='s13',min_value=0,max_value=100,step=1)
+        s23 = st.number_input("Collaborating in teams and networks",key='s23',min_value=0,max_value=100,step=1)
+        s33 = st.number_input("Working efficiently",key='s33',min_value=0,max_value=100,step=1)
+        s43 = st.number_input("Taking a proactive approach",key='s43',min_value=0,max_value=100,step=1)
     with st.sidebar.expander("Use of methods"):
-        s14 = st.number_input("Demonstrating willigness to learn",key='s14',min_value=0,max_value=100,step=1.0)
-        s24 = st.number_input("Collaborating in teams and networks",key='s24',min_value=0,max_value=100,step=1.0)
-        s34 = st.number_input("Working efficiently",key='s34',min_value=0,max_value=100,step=1.0)
-        s44 = st.number_input("Taking a proactive approach",key='s44',min_value=0,max_value=100,step=1.0)
+        s14 = st.number_input("Demonstrating willigness to learn",key='s14',min_value=0,max_value=100,step=1)
+        s24 = st.number_input("Collaborating in teams and networks",key='s24',min_value=0,max_value=100,step=1)
+        s34 = st.number_input("Working efficiently",key='s34',min_value=0,max_value=100,step=1)
+        s44 = st.number_input("Taking a proactive approach",key='s44',min_value=0,max_value=100,step=1)
     with st.sidebar.expander("Use of technology"):
-        s15 = st.number_input("Demonstrating willigness to learn",key='s15',min_value=0,max_value=100,step=1.0)
-        s25 = st.number_input("Collaborating in teams and networks",key='s25',min_value=0,max_value=100,step=1.0)
-        s35 = st.number_input("Working efficiently",key='s35',min_value=0,max_value=100,step=1.0)
-        s45 = st.number_input("Taking a proactive approach",key='s45',min_value=0,max_value=100,step=1.0)
+        s15 = st.number_input("Demonstrating willigness to learn",key='s15',min_value=0,max_value=100,step=1)
+        s25 = st.number_input("Collaborating in teams and networks",key='s25',min_value=0,max_value=100,step=1)
+        s35 = st.number_input("Working efficiently",key='s35',min_value=0,max_value=100,step=1)
+        s45 = st.number_input("Taking a proactive approach",key='s45',min_value=0,max_value=100,step=1)
 
     matrix = np.array([
             [s11, s12, s13, s14, s15],
