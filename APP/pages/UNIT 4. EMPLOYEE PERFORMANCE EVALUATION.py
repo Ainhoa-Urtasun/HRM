@@ -58,7 +58,10 @@ def UNIT4_1():
         for norm in row_norms:
             st.write(norm)
             
-    
+    if st.button("Job skill requirements"):
+        gap = np.sqrt(np.sum((row_norms - input_vector) ** 2))
+        st.write(gap)
+            
 st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
 
 selected = option_menu(
