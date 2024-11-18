@@ -8,14 +8,14 @@ import random
 def UNIT3_1():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
-    st.sidebar.write('Input historical data from the end of 2022 and the end of 2023:')
-    with st.sidebar.expander("$J_1$ Other managers"):
+    st.sidebar.write('Data from the end of 2022 and the end of 2023:')
+    with st.sidebar.expander("$J_1$ other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
         L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=0)
-    with st.sidebar.expander("$J_2$ Support intellectuals and scientists, technicians and professionals"):
+    with st.sidebar.expander("$J_2$ support intellectuals and scientists, technicians and professionals"):
         L22022 = st.number_input("$L_{2,2022}$", key='L22022', step=1, min_value=0)
         L22023 = st.number_input("$L_{2,2023}$", key='L22023', step=1, min_value=0)
-    with st.sidebar.expander("$J_3$ Administrative employees"):
+    with st.sidebar.expander("$J_3$ administrative employees"):
         L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=0)
         L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=0)
 
