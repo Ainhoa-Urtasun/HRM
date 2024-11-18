@@ -9,7 +9,7 @@ def UNIT4_1():
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
 
 st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
-st.sidebar.write('Evaluate the job'):
+st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
         s11 = st.number_input("demonstrating willigness to learn",key='s11',min_value=0,max_value=100,step=1)
         s21 = st.number_input("collaborating in teams and networks",key='s21',min_value=0,max_value=100,step=1)
