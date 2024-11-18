@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT7_1():
-
-def UNIT4_1():
-    
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 12 </h3>", unsafe_allow_html=True)
+ 
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
