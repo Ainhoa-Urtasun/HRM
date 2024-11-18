@@ -145,11 +145,11 @@ def UNIT7_2():
         '''
     )
 
-st.set_page_config(page_title="UNIT 7 Compensation", layout="wide")
+st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
-    options=['Pay-for-performance','Ownership-based incentive structures','Practice 24'],  # required
+    menu_title="",  # required
+    options=['UNIT 7. COMPENSATION'],  # required
     icons=["book", "book", "people"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -157,9 +157,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Pay-for-performance":
+if selected == "UNIT 7. COMPENSATION":
     UNIT7_1()
-elif selected == "Ownership-based incentive structures":
-    UNIT7_2()
-elif selected == "Practice 24":
-    UNIT7_3()
