@@ -60,7 +60,7 @@ st.set_page_config(page_title="UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)", layout=
 
 selected = option_menu(
     menu_title="",  # required
-    options=['UNIT 1 HUMAN RESOURCE MANAGEMENT (HRM)'],  # required
+    options=['UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
