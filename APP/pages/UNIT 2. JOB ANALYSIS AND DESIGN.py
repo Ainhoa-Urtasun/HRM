@@ -12,7 +12,7 @@ def UNIT2_1():
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
         s11 = st.number_input("Demonstrating willigness to learn",key='s11',min_value=0,max_value=100,step=1.0)
-        s21 = st.number_input("Collaborating in teams and networks",step=1.0,min_value=0,max_value=100,step=1.0)
+        s21 = st.number_input("Collaborating in teams and networks",min_value=0,max_value=100,step=1.0)
         s31 = st.number_input("Working efficiently",key='s31',min_value=0,max_value=100,step=1.0)
         s41 = st.number_input("Taking a proactive approach",key='s41',min_value=0,max_value=100,step=1.0)
     with st.sidebar.expander("Physical"):
