@@ -54,7 +54,7 @@ def UNIT4_1():
 
     if st.button("Job skill requirements"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
-        st.write(f"row_norms shape: {row_norms.shape}")
+        row_norms_row = row_norms.reshape(1, -1)
         for norm in row_norms:
             st.write(norm)
             
