@@ -11,7 +11,7 @@ def UNIT2_1():
     st.sidebar.radio("Select a job at your firm:",("Senior management", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
     with st.sidebar.expander("Intellectual"):
-        s11 = st.number_input("Demonstrating willigness to learn",key='s11',min_value=0,max_value=100,step=1.0)
+        s11 = st.number_input("Demonstrating willigness to learn",key='s11',min_value=0,step=1)
         s21 = st.number_input("Collaborating in teams and networks",min_value=0,max_value=100,step=1.0)
         s31 = st.number_input("Working efficiently",key='s31',min_value=0,max_value=100,step=1.0)
         s41 = st.number_input("Taking a proactive approach",key='s41',min_value=0,max_value=100,step=1.0)
