@@ -59,7 +59,7 @@ def UNIT4_1():
             st.write(norm)
             
     if st.button("Skill gap"):
-        st.write(np.array([s1,s2,s3,s4]))
+        st.write(np.array([s1,s2,s3,s4]).shape)
         gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
         st.write(gap)
             
