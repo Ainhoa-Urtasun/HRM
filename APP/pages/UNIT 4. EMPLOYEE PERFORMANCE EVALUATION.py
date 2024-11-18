@@ -54,11 +54,10 @@ def UNIT4_1():
 
     if st.button("Job skill requirements"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
+        st.write(f"row_norms shape: {row_norms.shape}")
         for norm in row_norms:
             st.write(norm)
-
-st.write(f"row_norms shape: {row_norms.shape}")
-st.write(f"Input vector shape: {np.array([s1, s2, s3, s4]).shape}")
+            
     
 st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
 
