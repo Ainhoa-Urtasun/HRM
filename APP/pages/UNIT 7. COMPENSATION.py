@@ -12,6 +12,10 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
+import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+
 def UNIT7_1():
     # Header for the page
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
@@ -33,16 +37,27 @@ def UNIT7_1():
             value=10  # Default value
         )
     
-    # Display the rest of the visualization (keeps visible regardless of sidebar interaction)
+    # Store all previous g values in session state
+    if 'g_values' not in st.session_state:
+        st.session_state['g_values'] = []  # Initialize the list
+    
+    if g not in st.session_state['g_values']:
+        st.session_state['g_values'].append(g)  # Add the current g to the list if not already present
+
+    # Generate the plot
     w = np.linspace(0.1, 10, 100)  # Positive values for w
     fig = plt.figure(figsize=(5, 5), dpi=100)
-    plt.plot(w, 2 * w / g, color='red', label='Effort supply')
+    
+    # Plot for each g in the list
+    for g_val in st.session_state['g_values']:
+        plt.plot(w, 2 * w / g_val, label=f'g = {g_val}')
+    
     plt.title('Effort Supply Curve')
     plt.xlabel('Wages (w)')
     plt.ylabel('Effort Supply')
     plt.legend()
     
-    # Display the plot in the main area
+    # Display the plot
     st.pyplot(fig)
     
 st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
