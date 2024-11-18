@@ -67,7 +67,7 @@ st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout=
 selected = option_menu(
     menu_title="",  # required
     options=['UNIT 4. EMPLOYEE PERFORMANCE EVALUATION'],  # required
-    icons=["house", "calculator", "calculator", "book", "calculator",'people'],  # optional
+    icons=['people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
     orientation="vertical",
