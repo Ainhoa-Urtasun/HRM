@@ -58,7 +58,7 @@ def UNIT4_1():
         for norm in row_norms:
             st.write(norm)
             
-    if st.button("Job skill requirements"):
+    if st.button("Skill gap"):
         gap = np.sqrt(np.sum((row_norms - input_vector) ** 2))
         st.write(gap)
             
