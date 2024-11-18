@@ -43,10 +43,10 @@ def UNIT2_1():
             [s41, s42, s43, s44, s45]
         ])
     
-    if st.button("$J_k$ Job evaluation"):
+    if st.button("Job evaluation"):
         st.write(matrix)
 
-    if st.button("$s_k$ Job skill requirements"):
+    if st.button("Job skill requirements"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
