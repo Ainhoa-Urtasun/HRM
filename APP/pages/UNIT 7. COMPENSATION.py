@@ -5,21 +5,14 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def UNIT7_1():
- 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
-    with st.sidebar.expander("Rate of pay per unit of effort as the median monthly gross income from [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence"):
-      w = st.number_input("w",key='w',step=1,min_value=0)
-    with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
-      OR2020 = st.number_input("2020",key='OR2020',value=1.0,step=1.0)
+ st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
+ st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
+ with st.sidebar.expander("Skill gap"):
+   g = st.number_input("g",key='g',step=1,min_value=0,max_value=100)
 
-
-  LP = [OR2020/L2020,OR2021/L2021,OR2022/L2022]
-  ULC = [C2020/OR2020,C2021/OR2021,C2022/OR2022]
-
+  w = np.linespace(0.1,10,100)
   fig = plt.figure(figsize=(5,5),dpi=100)
-  plt.plot(['2020','2021','2022'],LP,color='red',label='Labor productivity')
-  plt.plot(['2020','2021','2022'],ULC,color='blue',label='ULC')
-  plt.title('HRM metrics over time')
+  plt.plot([w,2*w/g,color='red',label='Effort supply')
   plt.legend()
   st.pyplot(fig)
 
