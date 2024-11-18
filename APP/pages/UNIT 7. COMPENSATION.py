@@ -4,146 +4,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT7_1():
-    
-    st.write(
-        '''
-        Pay-for-performance in the context of employee compensation implies that 
-        employees' pay is directly tied to the effort they exert or the results they achieve.
-        Therefore, when an employee is compensated through pay-for-performance, her utility function can 
-        be represented as:
-        '''
-    )
+def UNIT6_1():
 
-    st.latex(
-        r'''
-        u_i = w e_i - C(e_i) = w e_i - g_i e_i^2
-        '''
-    )
-
-    st.write(
-        '''
-        where:
-        - $w$ is the pay rate per unit of effort
-        - $e_i$ represents the effort (or work ethic) exerted by employee $i$
-        - $g_i$ denotes the skill gap of employee $i$
-        
-        To maximize utility, the employee chooses an effort level such that the derivative of utility with respect to effort is zero:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial u_i}{\partial e_i} = w - \frac{\partial C(e_i)}{\partial e_i} = w - 2g_ie_i
-        '''
-    )
-
-    st.write(
-        '''
-        Setting this derivative to zero to find the utility-maximizing effort level, we get:
-        '''
-    )
-
-    st.latex(
-        r'''
-        w - 2 g_i e_i = 0
-        '''
-    )
-
-    st.write(
-        '''
-        Solving for $e_i$, the employee's optimal effort is:
-        '''
-    )
-
-    st.latex(
-        r'''
-        e_i^* = \frac{w}{2 g_i}
-        '''
-    )
-
-    st.write(
-        '''
-        This result shows that the optimal effort level $e_i^*$ increases with the pay rate $w$ and decreases with the cost factor $g_i$. 
-        In other words, a higher pay rate motivates more effort, whereas a higher cost of effort discourages it. This represents the supply of effort.
-        '''
-    )
-
-    
-def UNIT7_2():
-
-    st.write(
-        '''
-        When an employee receives pay-for-performance with a share of the production output, their utility function includes both their base pay and a portion of the output they help produce.
-        The utility function for an employee $i$ can be represented as:
-        '''
-    )
-
-    st.latex(
-        r'''
-        u_i = w e_i + b Q - C(e_i) = w e_i + b Q - g_i e_i^2
-        ''')
-
-    st.write(
-        '''
-        where:
-        - $w$ is the rate of pay per unit of effort
-        - $e_i$ is the effort exerted by the employee
-        - $b$ is the employee’s ownership share in the production output
-        - $Q$ is the production function representing total output as a function of the efforts of all employees
-        - $g_i$ denotes the skill gap of employee $i$
-
-        To determine the optimal level of effort, the employee maximizes their utility by choosing $e_i$
-        such that the derivative of their utility with respect to effort is zero. 
-        This derivative gives us the **supply of effort** considering both the pay and ownership share.
-        '''
-    )
-
-    st.write(
-        '''
-        Taking the derivative of the utility function with respect to effort $e_i$:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial u_i}{\partial e_i} = w + b \frac{\partial Q}{\partial e_i} - 2 g_i e_i
-        '''
-    )
-
-    st.write(
-        '''
-        Substituting the expression of the output elasticity of effort:
-        '''
-    )
-
-    st.latex(
-        r'''
-        \frac{\partial u_i}{\partial e_i} = w + b \alpha \frac{Q}{e_i} - 2 g_i e_i
-        '''
-    )
-
-    st.write(
-        '''
-        Setting this expression to zero to maximize utility and solving for positive $e_i$:
-        '''
-    )
-
-    st.latex(
-        r'''
-        e_i^* = \frac{w + \sqrt{w^2 + 8 g_i b \alpha Q}}{4 g_i}
-        '''
-    )
-
-    st.write(
-        '''
-        The expression for $e_i^*$ illustrates how pay, skill gap, ownership share, a
-        nd the employee's marginal contribution to production combine to influence the optimal level of effort. 
-        Higher pay and shared ownership motivate more effort, while higher skill gaps and effort costs reduce it. 
-        This framework provides a nuanced understanding of how to design effective pay-for-performance and 
-        ownership-based incentive structures.
-        '''
-    )
+    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
+    with st.sidebar.expander("Trained employee's skill"):
+        t0 = st.number_input("-1", key="t0", step=1)
+        t1 = st.number_input("+1", key="t1", step=1)
+    with st.sidebar.expander("Non-trained employee's skill"):
+        n0 = st.number_input("-1", key="n0", step=1)
+        n1 = st.number_input("+1", key="n1", step=1)
+    fig = plt.figure(figsize=(5,5),dpi=100)
+    plt.plot(['-1','+1'],[t0,t1],color='red',label="Trained employee's skill")
+    plt.plot(['-1','+1'],[n0,n1],color='blue',label="Non-trained employee's skill")
+    plt.plot(['-1','+1'],[t0,t0+(n1-n0)],color='green',ls='-.',label='Counterfactual')
+    plt.title('Assessing Training Impact with DiD')
+    plt.legend()
+    st.pyplot(fig)
 
 st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
 
