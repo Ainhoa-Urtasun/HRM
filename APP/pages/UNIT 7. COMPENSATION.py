@@ -9,11 +9,13 @@ def UNIT7_1():
  st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
  with st.sidebar.expander("Skill gap"):
    g = st.number_input("g",key='g',step=1,min_value=0,max_value=100)
-   w = np.linspace(0.1,10,100)
-   fig = plt.figure(figsize=(5,5),dpi=100)
-   plt.plot(w,2*w/g,color='red',label='Effort supply')
-   plt.legend()
-   st.pyplot(fig)
+
+
+ w = np.linspace(0.1,10,100)
+ fig = plt.figure(figsize=(5,5),dpi=100)
+ plt.plot(w,2*w/g,color='red',label='Effort supply')
+ plt.legend()
+ st.pyplot(fig)
 
 st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
 
