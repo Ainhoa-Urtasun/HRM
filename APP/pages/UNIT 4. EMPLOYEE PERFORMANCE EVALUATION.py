@@ -57,9 +57,8 @@ def UNIT4_1():
         for norm in row_norms:
             st.write(norm)
 
-    if st.button("Skill gap"):
-        gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
-        st.write(gap)
+st.write(f"row_norms shape: {row_norms.shape}")
+st.write(f"Input vector shape: {np.array([s1, s2, s3, s4]).shape}")
     
 st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
 
