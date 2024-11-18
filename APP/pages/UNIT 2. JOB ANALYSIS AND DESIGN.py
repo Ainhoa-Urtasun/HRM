@@ -23,7 +23,7 @@ def UNIT2_1():
     with st.sidebar.expander("Social"):
         s13 = st.number_input("Demonstrating willigness to learn",key='s13',min_value=0,max_value=100,step=1.0)
         s23 = st.number_input("Collaborating in teams and networks",key='s23',min_value=0,max_value=100,step=1.0)
-        s33 = st.number_input("Working efficiently",key='s33',step=1.0,min_value=0,max_value=100,step=1.0)
+        s33 = st.number_input("Working efficiently",key='s33',min_value=0,max_value=100,step=1.0)
         s43 = st.number_input("Taking a proactive approach",key='s43',min_value=0,max_value=100,step=1.0)
     with st.sidebar.expander("Use of methods"):
         s14 = st.number_input("Demonstrating willigness to learn",key='s14',min_value=0,max_value=100,step=1.0)
