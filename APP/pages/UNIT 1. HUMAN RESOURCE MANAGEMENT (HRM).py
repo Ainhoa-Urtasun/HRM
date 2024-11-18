@@ -68,6 +68,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'UNIT 1 HUMAN RESOURCE MANAGEMENT (HRM)':
+if selected == 'UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)':
     UNIT1_1()
 
