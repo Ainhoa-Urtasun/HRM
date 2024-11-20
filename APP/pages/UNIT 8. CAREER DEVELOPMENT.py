@@ -18,8 +18,8 @@ def UNIT8_1():
 
     # Plot the curve
     plt.figure(figsize=(8, 6))
-    plt.plot(e1_values, e2_values, label="Cobb-Douglas isoquant for Q = 100, Employee 1's uutput elasticity of effort = 0.5, Employee 2's output elasticity of effort = 0.3")
-    plt.scatter(e1, e2(e1), color='red', label=f"Selected e1: {e1}, e2: {e2(e1):.2f}")
+    plt.plot(e1_values, e2_values, label="Cobb-Douglas isoquant for Q = 100\nEmployee 1's output elasticity of effort = 0.5\nEmployee 2's output elasticity of effort = 0.3")
+    plt.scatter(e1, e2(e1), color='red', label=f"Decided e1: {e1}, e2: {e2(e1):.2f}")
     plt.title("Visualization of e2 as a function of e1")
     plt.xlabel("Level of effort exerted by employee 1")
     plt.ylabel("Level of effort exerted by employee 2")
