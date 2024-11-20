@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 def UNIT8_1():
     
     # Sidebar input for e1
-    e1 = st.sidebar.slider("Adjust e1", min_value=1.0, max_value=100.0, step=0.1)
+    e1 = st.sidebar.slider("Employee 1 decides how much effort to exert", min_value=1.0, max_value=100.0, step=0.1)
 
     # Generate e2 based on the formula
     e2 = lambda e1: (100 / e1**0.5)**(10/3)
@@ -18,11 +18,11 @@ def UNIT8_1():
 
     # Plot the curve
     plt.figure(figsize=(8, 6))
-    plt.plot(e1_values, e2_values, label="e2 = (100 / e1^0.5)^(10/3)")
-    plt.scatter(e1, e2(e1), color='red', label=f"Selected e1: {e1}, e2: {e2(e1):.2f}")
+    plt.plot(e1_values, e2_values, label="Isoquant for Q = 100, \alpha_1 = 0.5, \alpha_2 = 0.3")
+    plt.scatter(e1, e2, color='red', label=f"Selected e1: {e1}, e2: {e2(e1):.2f}")
     plt.title("Visualization of e2 as a function of e1")
-    plt.xlabel("e1")
-    plt.ylabel("e2")
+    plt.xlabel("Level of effort exerted by employee 1")
+    plt.ylabel("Level of effort exerted by employee 2")
     plt.legend()
     plt.grid()
 
