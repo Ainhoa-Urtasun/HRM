@@ -15,11 +15,11 @@ def UNIT0_1():
         - **Interactive Practices**: Hands-on tasks completed through an app, with students presenting their findings 
           out loud to enhance their communication skills. Students can work individually or in pairs.
 
-        Students will present the **interactive practices** in two stages:
-        - **Mid-Semester Presentations**: Practices 3, 6, 9, and 12.
-        - **End-of-Semester Presentations**: Practices 15, 18, 21, and 24.
+        Students will present the **Interactive Practices** in two stages:
+        - **Mid-Semester Presentations**: Practices 3, 6, 9, and 12
+        - **End-of-Semester Presentations**: Practices 15, 18, 21, and 24
 
-        Practice 25, at the end of the semester, will evaluate the **cohesiveness** and **connection** between all the interactive practices presented. This ensures students integrate their learnings effectively and present a coherent narrative.
+        Practice 25, at the end of the semester, will evaluate the **cohesiveness** and **connection** between all the Interactive Practices presented. This ensures students integrate their learnings effectively and present a coherent narrative.
 
         The table below summarizes the practices by unit and type:
         '''
@@ -37,7 +37,7 @@ def UNIT0_1():
         | Unit 6  | 16, 17                   | 18                                         |  
         | Unit 7  | 19, 20                   | 21                                         |       
         | Unit 8  | 22, 23                   | 24 (end-semester presentations: 15, 18, 21, 24)|    
-        | Final   |                          | 25 (evaluates cohesiveness and connection) |
+        |         |                          | 25 (evaluates cohesiveness and connection) |
 
         **Supporting Resources**:
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
