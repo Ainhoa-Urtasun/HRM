@@ -36,13 +36,12 @@ def UNIT0_1():
   
 st.set_page_config(page_title="PRACTICES TO PRESENT", layout="wide")
 selected = option_menu(
-    menu_title="",  # required
-    options=['PRACTICES TO PRESENT'],  # required
-    icons=['person'],  # optional
-    menu_icon="cast",  # optional
-    default_index=0,  # optional
-    orientation="vertical",
-  )
-  
-  if selected == 'PRACTICES TO PRESENT':
-    UNIT0_1()
+  menu_title="",  # required
+  options=['PRACTICES TO PRESENT'],  # required
+  icons=['person'],  # optional
+  menu_icon="cast",  # optional
+  default_index=0,  # optional
+  orientation="vertical",
+)
+if selected == 'PRACTICES TO PRESENT':
+  UNIT0_1()
