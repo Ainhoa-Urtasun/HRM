@@ -11,7 +11,7 @@ def UNIT0_1():
         In this course, students will complete **25 Practices**, each contributing 1% to their final grade. 
         These practices are divided into two main types and are completed regularly during class sessions:
         
-        - **Test & Quiz Practices**: Exam-like questions for each unit.
+        - **Tests & Quizzes Practices**: Exam-like questions for each unit.
         - **Interactive Practices**: Hands-on tasks completed through an app, with students presenting their findings 
           out loud to enhance their communication skills. Students can work individually or in pairs.
 
@@ -27,17 +27,17 @@ def UNIT0_1():
 
     st.markdown(
         '''
-        | Unit    |  Test & Quiz Practices   | Interactive Practices                       |
-        |---------|--------------------------|--------------------------------------------|
-        | Unit 1  | 1, 2                     | 3                                          |
-        | Unit 2  | 4, 5                     | 6                                          |  
-        | Unit 3  | 7, 8                     | 9                                          |       
-        | Unit 4  | 10, 11                   | 12 (mid-semester presentations: 3, 6, 9, 12)|    
-        | Unit 5  | 13, 14                   | 15                                         |
-        | Unit 6  | 16, 17                   | 18                                         |  
-        | Unit 7  | 19, 20                   | 21                                         |       
-        | Unit 8  | 22, 23                   | 24 (end-semester presentations: 15, 18, 21, 24)|    
-        |         |                          | 25 (evaluates cohesiveness and connection) |
+        | Unit    |  Tests & Quizzes Practices   | Interactive Practices                          |
+        |---------|------------------------------|------------------------------------------------|
+        | Unit 1  | 1, 2                         | 3                                              |
+        | Unit 2  | 4, 5                         | 6                                              |  
+        | Unit 3  | 7, 8                         | 9                                              |       
+        | Unit 4  | 10, 11                       | 12 (mid-semester presentations: 3, 6, 9, 12)   |    
+        | Unit 5  | 13, 14                       | 15                                             |
+        | Unit 6  | 16, 17                       | 18                                             |  
+        | Unit 7  | 19, 20                       | 21                                             |       
+        | Unit 8  | 22, 23                       | 24 (end-semester presentations: 15, 18, 21, 24)|    
+        |         |                              | 25 (evaluates cohesiveness and connection)     |
 
         **Supporting Resources**:
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
