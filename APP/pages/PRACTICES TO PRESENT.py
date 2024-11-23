@@ -34,8 +34,8 @@ def UNIT0_1():
     '''
   )
   
-  st.set_page_config(page_title="PRACTICES TO PRESENT", layout="wide")
-  selected = option_menu(
+st.set_page_config(page_title="PRACTICES TO PRESENT", layout="wide")
+selected = option_menu(
     menu_title="",  # required
     options=['PRACTICES TO PRESENT'],  # required
     icons=['person'],  # optional
