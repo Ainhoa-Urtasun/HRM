@@ -22,10 +22,12 @@ def UNIT0_1():
   
   st.markdown(
     '''
-    | Unit    |  Test & Quiz Practices   | Interactive Practices |
-    |---------|--------------------------|-----------------------|
-    | Unit 1  |  1, 2                    | 3                     |
-    |         | Unit 2                   | 4, 5                  |                     
+    | Unit    |  Test & Quiz Practices   | Interactive Practices         |
+    |---------|--------------------------|-------------------------------|
+    | Unit 1  | 1, 2                     | 3                             |
+    | Unit 2  | 4, 5                     | 6                             |  
+    | Unit 3  | 7, 8                     | 9                             |       
+    | Unit 4  | 10, 11                   | 12 (present 3, 6, 9, 12)      |       
 
 
     **Resources**:
