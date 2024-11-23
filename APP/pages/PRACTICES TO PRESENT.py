@@ -8,31 +8,26 @@ def UNIT0_1():
   
   st.markdown("<h3 style='color: #4CAF50;'>🚀 Practices to present </h3>", unsafe_allow_html=True)
 
-st.write(
+  st.write(
     '''
     In this course, students will complete **25 Practices**, each contributing 1% to their final grade. 
     These practices are divided into two types:
 
-    - *Test and Quiz Practices*: exam-like questions for each unit 
-    - *Interactive Practices*: selecting a firm and creating visuals through an app. Students will 
+    - **Test & Quiz Practices**: exam-like questions for each unit 
+    - **Interactive Practices**: selecting a firm and creating visuals through an app. Students will 
       also present their findings out loud, enhancing their communication skills.
 
-    The table below summarizes the practices by type and unit:
+    The table below summarizes the practices by unit and type:
     '''
 )
 
 st.markdown(
     '''
-    | Type                  | Unit      | Practices | Notes                                                                 |
-    |-----------------------|-----------|-----------|----------------------------------------------------------------------|
-    | Test and Quiz         | Unit 1    | 1, 2      | Exam-like questions                                                  |
-    |                       | Unit 2    | 4, 5      |                                                                      |
-    |                       | Unit 3    | 6, 7      |                                                                      |
-    |                       | Unit 4    | 9, 10     |                                                                      |
-    | Interactive Practices | Unit 3    | 6, 7      | Selecting a firm and creating visuals through an app                 |
-    |                       | Unit 6    | 12        |                                                                      |
-    |                       | Unit 8    | 19        |                                                                      |
-    |                       | Unit 12   | 25        | Presenting findings and communication skill enhancement              |
+    | Unit    |  Test & Quiz Practices   | Interactive Practices |
+    |---------|--------------------------|-----------------------|
+    | Unit 1  |  1, 2                    | 3                     |
+    |         | Unit 2                   | 4, 5                  |                     
+
 
     **Resources**:
     - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
