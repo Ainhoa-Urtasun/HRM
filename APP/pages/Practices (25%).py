@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT0_1():
-    st.markdown("<h3 style='color: #4CAF50;'>Consisting of 25 in-class activities, each contributing 1% to the final grade. Types:</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>Consisting of 25 in-class activities, each contributing 1% to the final grade:</h3>", unsafe_allow_html=True)
     st.write(
         '''
         - **In-class activities 1 to 8 and 13 to 19**: Exam-like questions for each unit
