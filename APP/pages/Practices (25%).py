@@ -16,7 +16,7 @@ def UNIT0_1():
         Students can do the presentations individually or in pairs
 
         **Online Resources**:
-        - [MiAulario](https://miaulario.unavarra.es/portal/site/2024_0_174404_81/page/9b199711-4fb6-46e7-b7de-a3e202b264f8)
+        - Course on [MiAulario](https://miaulario.unavarra.es/portal)
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
         - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from UPNA library
         '''
