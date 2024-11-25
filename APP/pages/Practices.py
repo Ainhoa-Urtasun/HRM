@@ -8,12 +8,12 @@ def UNIT0_1():
     st.markdown("<h3 style='color: #4CAF50;'>Consisting of 25 in-class activities, each contributing 1% to the final grade:</h3>", unsafe_allow_html=True)
     st.write(
         '''
-        - **In-class activities 1 to 8 and 13 to 19**: Exam-like questions for each unit
-        - **In-class activities 9 to 12**: Mid-semester presentations
-        - **In-class activities 20 to 24**: End-of-semester presentations
-        - **In-class activity 25** to evaluate the cohesiveness and connection between the presentations
+        - **In-class activities 1 to 8 and 13 to 19:** Exam-like questions for each unit
+        - **In-class activities 9 to 12:** Mid-semester presentations
+        - **In-class activities 20 to 24:** End-of-semester presentations
+        - **In-class activity 25:** Cohesiveness of the presentations
         
-        Students can do the presentations individually or in pairs
+        Students can do the presentations individually or in pairs.
 
         **Online Resources**:
         - [MiAulario](https://miaulario.unavarra.es/portal) from UPNA
