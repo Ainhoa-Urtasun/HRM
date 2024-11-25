@@ -45,7 +45,7 @@ def UNIT0_1():
         '''
     )
 
-st.set_page_config(page_title="Practices Overview", layout="wide")
+st.set_page_config(page_title="Practices (25%)", layout="wide")
 
 # Directly call the function since there's only one menu option for now.
 UNIT0_1()
