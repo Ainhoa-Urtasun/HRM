@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT0_1():
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practices Overview</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #4CAF50;'>Consisting of 25 in-class activities, each contributing 1% to the final grade. Types:</h3>", unsafe_allow_html=True)
     st.write(
         '''
         In this course, students will complete **25 Practices**, each contributing 1% to their final grade. 
