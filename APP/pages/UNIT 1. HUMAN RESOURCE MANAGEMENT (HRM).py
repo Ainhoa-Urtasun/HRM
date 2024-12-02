@@ -5,14 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def UNIT1_1():
-  
-  st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 3 </h3>", unsafe_allow_html=True)
 
   st.write(
     '''
-    - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the 
-    Development of Vocational Training)
-    - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from the library at UPNA
 
     Choose your firm:
     1. Access the SABI database through the UPNA Library
