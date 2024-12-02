@@ -15,6 +15,9 @@ def UNIT0_1():
         
         Students can do the presentations individually or in pairs.
 
+        The only requirement to participate in in-person activities is to be present in class. 
+        No exceptions or justifications for absences will be accepted, regardless of the reason (illness, sports, family, etc.).
+
         **Online Resources**:
         - [MiAulario](https://miaulario.unavarra.es/portal) from UPNA
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
