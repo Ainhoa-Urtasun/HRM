@@ -19,7 +19,7 @@ def UNIT0_1():
 
         **Online Resources**:
         - [MiAulario](https://miaulario.unavarra.es/portal) from UPNA
-        - [HRM App](https://curvp4nsnitb9ukuuholt9.streamlit.app/)
+        - [HRM app](https://curvp4nsnitb9ukuuholt9.streamlit.app/)
         - [Skills intelligence](https://www.cedefop.europa.eu/en/tools/skills-intelligence) from CEDEFOP (European Centre for the Development of Vocational Training)
         - [SABI](https://www.unavarra.es/biblioteca?languageId=1) from UPNA library
         - [Power BI](https://vdibroker.unavarra.es/uds/page/login) from UPNA virtual desktop infrastructure
