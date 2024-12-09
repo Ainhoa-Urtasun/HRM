@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def UNIT0_1():
+def practices():
     st.markdown("<h3 style='color: #4CAF50;'>25 in-person activities, each contributing 1% to the final grade:</h3>", unsafe_allow_html=True)
     st.write(
         '''        
@@ -26,7 +26,7 @@ def UNIT0_1():
         '''
     )
 
-st.set_page_config(page_title="Practices (25%)", layout="wide")
+st.set_page_config(page_title="In-person practices", layout="wide")
 
 # Directly call the function since there's only one menu option for now.
-UNIT0_1()
+practices()
