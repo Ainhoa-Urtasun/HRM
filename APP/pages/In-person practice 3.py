@@ -15,10 +15,10 @@ def practice_3():
     3. Firm qualification based on **Employees** criteria:
       - Minimum lastest number of employees of 750
       - Employees' segmentation in Spain (in 2023):
-      - Other managers
-      - Support intellectuals and scientists, technicians and professionals
-      - Administrative employees
-      - At least 10 women
+          - Other managers
+          - Support intellectuals and scientists, technicians and professionals
+          - Administrative employees
+          - At least 10 women
     4. View list of results
     5. Select one firm from the firms that qualify
     '''
