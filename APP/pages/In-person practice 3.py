@@ -12,7 +12,7 @@ def practice_3():
     Choose your firm:
     1. Access the SABI database through the UPNA Library
     2. In 'Personalizar' then 'Opciones Generales', change the language to English
-    3. Firm qualification based on **Employees** criteria>
+    3. Firm qualification based on **Employees** criteria:
       - Minimum lastest number of employees of 750
       - Employees' segmentation in Spain (in 2023):
       - Other managers
