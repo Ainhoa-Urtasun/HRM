@@ -4,29 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def practice_3():
-
-  st.write(
-    '''
-
-    Choose your firm:
-    1. Access the SABI database through the UPNA Library
-    2. In 'Personalizar' then 'Opciones Generales', change the language to English
-    3. Firm qualification based on **Employees** criteria:
-      - Minimum lastest number of employees of 750
-      - Employees' segmentation in Spain (in 2023):
-          - Other managers
-          - Support intellectuals and scientists, technicians and professionals
-          - Administrative employees
-          - At least 10 women
-    4. View list of results
-    5. Select one firm from the firms that qualify
-    '''
-  )
-
-  st.text_input('', placeholder='Write here the name of your firm')
-  st.text_input('Select your firm and then **Overview** under **Industry & overview**',placeholder="Write here your firm's NACE Rev. 2 Primary Code and English trade description")
-                                                                                                   
+def practice_03():
+  
   with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
     C2020 = st.number_input("2020",key='C2020',step=1.0)
     C2021 = st.number_input("2021",key='C2021',step=1.0)
@@ -51,11 +30,11 @@ def practice_3():
   st.pyplot(fig)
 
 # Set page configuration
-st.set_page_config(page_title="In-person practice 3", layout="wide")
+st.set_page_config(page_title="In-person practice 03", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-person practice 3'],  # required
+    options=['In-person practice 03'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -63,6 +42,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'In-person practice 3':
-    practice_3()
+if selected == 'In-person practice 03':
+    practice_03()
 
