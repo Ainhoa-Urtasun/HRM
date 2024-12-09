@@ -6,15 +6,15 @@ import numpy as np
 
 def practice_03():
   
-  with st.sidebar.expander("Cost of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+  with st.sidebar.expander("Cost of employees at your firm from SABI"):
     C2020 = st.number_input("2020",key='C2020',step=1.0)
     C2021 = st.number_input("2021",key='C2021',step=1.0)
     C2022 = st.number_input("2022",key='C2022',step=1.0)
-  with st.sidebar.expander("Operating revenue of your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+  with st.sidebar.expander("Operating revenue of your firm from SABI"):
     OR2020 = st.number_input("2020",key='OR2020',value=1.0,step=1.0)
     OR2021 = st.number_input("2021",key='OR2021',value=1.0,step=1.0)
     OR2022 = st.number_input("2022",key='OR2022',value=1.0,step=1.0)
-  with st.sidebar.expander("Number of employees at your firm from [SABI](https://www.unavarra.es/biblioteca?languageId=1)"):
+  with st.sidebar.expander("Number of employees at your firm from SABI"):
     L2020 = st.number_input("2020",key='L2020',value=1.0,step=1.0)
     L2021 = st.number_input("2021",key='L2021',value=1.0,step=1.0)
     L2022 = st.number_input("2022",key='L2022',value=1.0,step=1.0)
