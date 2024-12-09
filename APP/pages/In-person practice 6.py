@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.linalg import norm
 
-def UNIT2_1():
+def practice_6():
 
     st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 6 </h3>", unsafe_allow_html=True)
     st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
@@ -52,11 +52,11 @@ def UNIT2_1():
             st.write(norm)
 
 # Set page configuration
-st.set_page_config(page_title="UNIT 2. JOB ANALYSIS AND DESIGN", layout="wide")
+st.set_page_config(page_title="In-person practice 6", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=["UNIT 2 JOB ANALYSIS AND DESIGN"],  # required
+    options=["In-person practice 6"],  # required
     icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -64,8 +64,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "UNIT 2 JOB ANALYSIS AND DESIGN":
-    UNIT2_1()
+if selected == "In-person practice 6":
+    practice_6()
 
 
 
