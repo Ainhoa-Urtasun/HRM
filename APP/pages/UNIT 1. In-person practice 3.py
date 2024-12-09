@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def UNIT1_1():
+def practice_1():
 
   st.write(
     '''
@@ -51,11 +51,11 @@ def UNIT1_1():
   st.pyplot(fig)
 
 # Set page configuration
-st.set_page_config(page_title="UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)", layout="wide")
+st.set_page_config(page_title="In-person practice 1", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)'],  # required
+    options=['In-person practice 1'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -63,6 +63,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'UNIT 1. HUMAN RESOURCE MANAGEMENT (HRM)':
-    UNIT1_1()
+if selected == 'In-person practice 1':
+    practice_1()
 
