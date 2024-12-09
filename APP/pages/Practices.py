@@ -9,7 +9,7 @@ def UNIT0_1():
     st.write(
         '''        
         - **In-person activities 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23:** Exam-like questions
-        - **In-person activities 3, 6, 8, 12, 18, 21, 24:** presentations
+        - **In-person activities 3, 6, 9, 12, 18, 21, 24:** presentations
         - **In-person activities 15 to 25:** Power BI
         
         Students should do the presentations in pairs.
