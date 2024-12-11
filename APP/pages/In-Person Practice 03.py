@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def practice_03():
+def Practice_03():
   
   with st.sidebar.expander("Cost of employees at your firm from SABI"):
     C2020 = st.number_input("2020",key='C2020',step=1.0)
@@ -30,11 +30,11 @@ def practice_03():
   st.pyplot(fig)
 
 # Set page configuration
-st.set_page_config(page_title="In-person practice 03", layout="wide")
+st.set_page_config(page_title="In-Person Practice 03", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-person practice 03'],  # required
+    options=['In-Person Practice 03'],  # required
     icons=['person'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -42,6 +42,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'In-person practice 03':
+if selected == 'In-Person Practice 03':
     practice_03()
 
