@@ -47,7 +47,7 @@ def practice_06():
         st.write(matrix)
 
     if st.button("Euclidean norms of the task vectors scaled down so skills range from 0 to 100"):
-        row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
+        row_norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
         for norm in row_norms:
             st.write(norm)
 
