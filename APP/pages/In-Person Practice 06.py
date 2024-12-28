@@ -46,10 +46,10 @@ def practice_06():
     if st.button("Matrix of tasks and skills of the job"):
         st.write(matrix)
 
-    if st.button("Euclidean norms of the task vectors scaled down so skills range from 0 to 100"):
-        row_norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
-        for norm in row_norms:
-            st.write(norm)
+    if st.button("Euclidean norms of the column vectors scaled down so each skill ranges from 0 to 100"):
+        norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
+        st.write(norms)
+
 
 # Set page configuration
 st.set_page_config(page_title="In-Person Practice 6", layout="wide")
