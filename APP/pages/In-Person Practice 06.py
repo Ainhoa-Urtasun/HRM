@@ -49,7 +49,7 @@ def practice_06():
         st.session_state.show_norms = False
 
     # Button actions to toggle visibility
-    if st.button("Show Matrix of tasks and skills of the job"):
+    if st.button("Show matrix of tasks and skills of the job"):
         st.session_state.show_matrix = True
     if st.button("Show Euclidean norms of the column vectors scaled down so each skill ranges from 0 to 100"):
         st.session_state.show_norms = True
