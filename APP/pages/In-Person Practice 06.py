@@ -44,6 +44,7 @@ def practice_06():
         ])
     
     if st.button("Matrix of tasks and skills of the job"):
+        st.write('Hello')
         st.write(matrix)
 
     if st.button("Euclidean norms of the column vectors scaled down so each skill ranges from 0 to 100"):
