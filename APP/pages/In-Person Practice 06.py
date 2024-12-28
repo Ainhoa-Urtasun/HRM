@@ -60,8 +60,8 @@ def practice_06():
 
     # Calculate and display the norms
     if st.session_state.show_norms:
-        norms = np.linalg.norm(matrix, axis=0)
-        st.write(scaled_norms)
+        norms = (5**(-0.5))*np.linalg.norm(matrix, axis=0)
+        st.write(norms)
 
 # Set page configuration
 st.set_page_config(page_title="In-Person Practice 6", layout="wide")
