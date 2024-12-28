@@ -9,27 +9,27 @@ def practice_06():
 
     st.sidebar.radio("Select a job at your firm:",("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar"))
     st.sidebar.write('Evaluate the job:')
-    with st.sidebar.expander("Intellectual"):
+    with st.sidebar.expander("intellectual"):
         s11 = st.number_input("demonstrating willigness to learn",key='s11',min_value=0,max_value=100,step=1)
         s21 = st.number_input("collaborating in teams and networks",min_value=0,max_value=100,step=1)
         s31 = st.number_input("working efficiently",key='s31',min_value=0,max_value=100,step=1)
         s41 = st.number_input("taking a proactive approach",key='s41',min_value=0,max_value=100,step=1)
-    with st.sidebar.expander("Physical"):
+    with st.sidebar.expander("physical"):
         s12 = st.number_input("demonstrating willigness to learn",key='s12',min_value=0,max_value=100,step=1)
         s22 = st.number_input("collaborating in teams and networks",key='s22',min_value=0,max_value=100,step=1)
         s32 = st.number_input("working efficiently",key='s32',min_value=0,max_value=100,step=1)
         s42 = st.number_input("taking a proactive approach",key='s42',min_value=0,max_value=100,step=1)
-    with st.sidebar.expander("Social"):
+    with st.sidebar.expander("social"):
         s13 = st.number_input("demonstrating willigness to learn",key='s13',min_value=0,max_value=100,step=1)
         s23 = st.number_input("collaborating in teams and networks",key='s23',min_value=0,max_value=100,step=1)
         s33 = st.number_input("working efficiently",key='s33',min_value=0,max_value=100,step=1)
         s43 = st.number_input("taking a proactive approach",key='s43',min_value=0,max_value=100,step=1)
-    with st.sidebar.expander("Use of methods"):
+    with st.sidebar.expander("use of methods"):
         s14 = st.number_input("demonstrating willigness to learn",key='s14',min_value=0,max_value=100,step=1)
         s24 = st.number_input("collaborating in teams and networks",key='s24',min_value=0,max_value=100,step=1)
         s34 = st.number_input("working efficiently",key='s34',min_value=0,max_value=100,step=1)
         s44 = st.number_input("Ttaking a proactive approach",key='s44',min_value=0,max_value=100,step=1)
-    with st.sidebar.expander("Use of technology"):
+    with st.sidebar.expander("use of technology"):
         s15 = st.number_input("demonstrating willigness to learn",key='s15',min_value=0,max_value=100,step=1)
         s25 = st.number_input("collaborating in teams and networks",key='s25',min_value=0,max_value=100,step=1)
         s35 = st.number_input("working efficiently",key='s35',min_value=0,max_value=100,step=1)
@@ -42,10 +42,10 @@ def practice_06():
             [s41, s42, s43, s44, s45]
         ])
     
-    if st.button("Job evaluation"):
+    if st.button("Matrix of tasks and skills of the job"):
         st.write(matrix)
 
-    if st.button("Job skill requirements"):
+    if st.button("Euclidean norms of the task vectors scaled down so skills range from 0 to 100"):
         row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
         for norm in row_norms:
             st.write(norm)
