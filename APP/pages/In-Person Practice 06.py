@@ -43,14 +43,25 @@ def practice_06():
             [s51, s52, s53, s54],
         ])
     
-    if st.button("Matrix of tasks and skills of the job"):
-        st.write('Hello')
+    if "show_matrix" not in st.session_state:
+        st.session_state.show_matrix = False
+    if "show_norms" not in st.session_state:
+        st.session_state.show_norms = False
+
+    # Button actions to toggle visibility
+    if st.button("Show Matrix of tasks and skills of the job"):
+        st.session_state.show_matrix = True
+    if st.button("Show Euclidean norms of the column vectors scaled down so each skill ranges from 0 to 100"):
+        st.session_state.show_norms = True
+
+    # Display the matrix
+    if st.session_state.show_matrix:
         st.write(matrix)
 
-    if st.button("Euclidean norms of the column vectors scaled down so each skill ranges from 0 to 100"):
-        norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
-        st.write(norms)
-
+    # Calculate and display the norms
+    if st.session_state.show_norms:
+        norms = np.linalg.norm(matrix, axis=0)
+        st.write(scaled_norms)
 
 # Set page configuration
 st.set_page_config(page_title="In-Person Practice 6", layout="wide")
