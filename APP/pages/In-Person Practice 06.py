@@ -51,11 +51,11 @@ def practice_06():
             st.write(norm)
 
 # Set page configuration
-st.set_page_config(page_title="In-person practice 6", layout="wide")
+st.set_page_config(page_title="In-Person Practice 6", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=["In-person practice 06"],  # required
+    options=["In-Person Practice 06"],  # required
     icons=["book", "calculator", "calculator","person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -63,7 +63,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "In-person practice 06":
+if selected == "In-Person Practice 06":
     practice_06()
 
 
