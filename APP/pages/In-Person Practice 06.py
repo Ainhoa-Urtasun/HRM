@@ -60,7 +60,7 @@ def practice_06():
         st.session_state.show_norms = False
 
     # Button actions to toggle visibility
-    if st.button("Show matrix of tasks and required skills of the job"):
+    if st.button("Show matrix of tasks and required skills for the job"):
         st.session_state.show_matrix = True
     if st.button("Show vector of required skills for the job"):
         st.session_state.show_norms = True
