@@ -7,7 +7,6 @@ import random
 
 def UNIT3_1():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 9 </h3>", unsafe_allow_html=True)
     st.sidebar.write('Data from the end of 2022 and the end of 2023:')
     with st.sidebar.expander("$J_1$ other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
@@ -44,7 +43,7 @@ def UNIT3_1():
     if st.button("HR planning table"):
         st.write(matrix)
    
-    if st.button("HR planning for the end of 2024"):
+    if st.button("Predictions for the end of 2024"):
         T = np.array([
             [m11/(m11+m12+m13+d1), m12/(m11+m12+m13+d1), m13/(m11+m12+m13+d1)],
             [m21/(m21+m22+m23+d2), m22/(m21+m22+m23+d2), m23/(m21+m22+m23+d2)],
@@ -61,11 +60,11 @@ def UNIT3_1():
         for prediction in predictions:
             st.write(prediction[0])
 
-st.set_page_config(page_title="UNIT 3. HR PLANNING", layout="wide")
+st.set_page_config(page_title="In-Person Practice 09", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['HR PLANNING'],  # required
+    options=['In-Person Practice 09'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -73,6 +72,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "HR PLANNING":
+if selected == "In-Person Practice 09":
     UNIT3_1()
 
