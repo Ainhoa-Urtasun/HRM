@@ -9,7 +9,7 @@ st.set_page_config(page_title="In-Person Practice 12", layout="wide")
 
 def UNIT4_1():
     # Sidebar inputs for employee skills
-    st.sidebar.write("Vector of Skills Possessed by the Employee:")
+    st.sidebar.write("Vector of skills possessed by the employee:")
     with st.sidebar.expander("Vector of Skills Possessed by the Employee"):
         s1 = st.number_input("Demonstrating willingness to learn", key='s1_emp', min_value=0, max_value=100, step=1)
         s2 = st.number_input("Collaborating in teams and networks", key='s2_emp', min_value=0, max_value=100, step=1)
@@ -17,7 +17,7 @@ def UNIT4_1():
         s4 = st.number_input("Taking a proactive approach", key='s4_emp', min_value=0, max_value=100, step=1)
 
     # Sidebar inputs for required skills
-    st.sidebar.write("Vector of Required Skills:")
+    st.sidebar.write("Vector of required skills for the job:")
     with st.sidebar.expander("Vector of Required Skills"):
         s1k = st.number_input("Demonstrating willingness to learn", key='s1_req', min_value=0, max_value=100, step=1)
         s2k = st.number_input("Collaborating in teams and networks", key='s2_req', min_value=0, max_value=100, step=1)
