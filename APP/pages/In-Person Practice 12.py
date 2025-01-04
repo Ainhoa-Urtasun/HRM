@@ -60,11 +60,11 @@ def UNIT4_1():
     if st.button("Skill gap"):
         st.write(gap)
             
-st.set_page_config(page_title="UNIT 4. Employee Performance Evaluation", layout="wide")
+st.set_page_config(page_title="In-Person Practice 12", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['UNIT 4. EMPLOYEE PERFORMANCE EVALUATION'],  # required
+    options=['In-Person Practice 12'],  # required
     icons=['people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -72,5 +72,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "UNIT 4. EMPLOYEE PERFORMANCE EVALUATION":
+if selected == "In-Person Practice 12":
     UNIT4_1()
