@@ -56,7 +56,7 @@ def UNIT4_1():
     if st.button("Vector of Required Skills (Norms)"):
         for norm in row_norms:
             st.write(norm)          
-    if st.button("Skill Gap")
+    if st.button("Skill Gap"):
         st.write(gap)
             
 st.set_page_config(page_title="In-Person Practice 12", layout="wide")
