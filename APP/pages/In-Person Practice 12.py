@@ -48,15 +48,15 @@ def UNIT4_1():
             [s41, s42, s43, s44, s45]
         ])
     
-    row_norms = 0.45 * np.linalg.norm(matrix, axis=1)
-    gap = np.sqrt(np.sum((row_norms - np.array([s1,s2,s3,s4])) ** 2))
+    row_norms = (1/np.sqrt(5)) * np.linalg.norm(matrix, axis=1)
+    gap = np.sqrt(np.sum((row_norms - (1/np.sqrt(5))*np.array([s1,s2,s3,s4])) ** 2))
     
-    if st.button("Job evaluation"):
+    if st.button("Matrix of Tasks and Required Skills"):
         st.write(matrix)
-    if st.button("Job skill requirements"):
+    if st.button("Vector of Required Skills (Norms)"):
         for norm in row_norms:
             st.write(norm)          
-    if st.button("Skill gap"):
+    if st.button("Skill Gap")
         st.write(gap)
             
 st.set_page_config(page_title="In-Person Practice 12", layout="wide")
