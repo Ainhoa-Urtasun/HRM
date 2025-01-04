@@ -37,10 +37,9 @@ def UNIT4_1():
 
     # Plot the cost of effort
     fig = plt.figure(figsize=(5, 5), dpi=100)
-    plt.plot(e, cost_of_effort, color='red', label='Cost of Effort')
+    plt.plot(e, cost_of_effort, color='red')
     plt.xlabel("Effort (e)")
-    plt.ylabel("Cost of Effort")
-    plt.title("Cost of Effort Curve")
+    plt.title("Cost of Effort Function")
     plt.legend()
     st.pyplot(fig)
 
