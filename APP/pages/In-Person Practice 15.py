@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 def UNIT5_1():
 
   st.sidebar.header("Settings")
-  skill_gaps_input = st.sidebar.text_area("Enter skill gaps (e.g., 0.1, 0.5, 1.0):","0.1\n0.5\n1.0")
+  skill_gaps_input = st.sidebar.text_area("Enter skill gaps (e.g., 0.1, 0.5, 1.0):","")
   try:
     skill_gaps = [float(g.strip()) for g in skill_gaps_input.split("\n") if g.strip()]
   except ValueError:
