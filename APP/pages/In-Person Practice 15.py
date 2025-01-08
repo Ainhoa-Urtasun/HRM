@@ -20,7 +20,7 @@ def UNIT5_1():
   fig, ax = plt.subplots(figsize=(8, 6))
   for g in skill_gaps:
     y_values = g * e_values**2
-    ax.plot(e_values, y_values, label=f"C(e_i) = {g}e_i^2", linewidth=2)
+    ax.plot(e_values, y_values, label=f"Cost of effort if skill gap is: {g}", linewidth=2)
   ax.axhline(y=w_probation, color='red', linestyle='--', linewidth=2, label=f"Probation wage = {w_probation}")
   ax.set_xlabel("$e_i$", fontsize=14)
   ax.legend(fontsize=12)
