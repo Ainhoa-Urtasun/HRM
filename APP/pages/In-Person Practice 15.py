@@ -15,7 +15,7 @@ def UNIT5_1():
   except ValueError:
     st.error("Please enter valid numeric values for skill gaps.")
     skill_gaps = []
-  w_probation = st.sidebar.slider("Set probation wage (horizontal line):", 0.0, 50.0, 1.0, 0.1)
+  w_probation = st.sidebar.slider("Set probation wage (horizontal line):", 0.0, 100.0, 1.0, 0.1)
   e_values = np.linspace(0, 10, 500)
   fig, ax = plt.subplots(figsize=(8, 6))
   for g in skill_gaps:
