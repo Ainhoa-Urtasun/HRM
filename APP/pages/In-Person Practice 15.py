@@ -22,8 +22,8 @@ def UNIT5_1():
     y_values = g * e_values**2
     ax.plot(e_values, y_values, label=f"C(e_i) = {g}e_i^2", linewidth=2)
   ax.axhline(y=w_probation, color='red', linestyle='--', linewidth=2, label=f"w_probation = {w_probation}")
-  ax.set_xlabel("Effort ($e_i$)", fontsize=14)
-  ax.set_ylabel("Cost (C($e_i$))", fontsize=14)
+  ax.set_xlabel("$e_i$", fontsize=14)
+  ax.set_ylabel($C(e_i)$", fontsize=14)
   ax.legend(fontsize=12)
   ax.grid(True)
   st.pyplot(fig)
