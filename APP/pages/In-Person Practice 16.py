@@ -27,11 +27,11 @@ def UNIT5_1():
   ax.grid(True)
   st.pyplot(fig)
 
-st.set_page_config(page_title="In-Person Practice 15", layout="wide")
+st.set_page_config(page_title="In-Person Practice 16", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-Person Practice 15'],  # required
+    options=['In-Person Practice 16'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -39,6 +39,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'In-Person Practice 15':
+if selected == 'In-Person Practice 16':
     UNIT5_1()
-
