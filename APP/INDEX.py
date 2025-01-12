@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.markdown("# In-Person Practices (8%) ✓")
+st.markdown("# In-Person Practices App ✓")
 
