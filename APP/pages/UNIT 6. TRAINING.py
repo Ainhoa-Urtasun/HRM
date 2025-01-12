@@ -6,7 +6,6 @@ from streamlit_option_menu import option_menu
 
 def UNIT6_1():
 
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 19 </h3>", unsafe_allow_html=True)
     with st.sidebar.expander("Trained employee's skill"):
         t0 = st.number_input("-1", key="t0", step=1)
         t1 = st.number_input("+1", key="t1", step=1)
@@ -21,11 +20,11 @@ def UNIT6_1():
     plt.legend()
     st.pyplot(fig)
   
-st.set_page_config(page_title="UNIT 6. Training", layout="wide")
+st.set_page_config(page_title="In-Person Practice 19", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['UNIT 6. TRAINING'],  # required
+    options=['In-Person Practice 19'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -33,5 +32,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "UNIT 6. TRAINING":
+if selected == "In-Person Practice 19":
     UNIT6_1()
