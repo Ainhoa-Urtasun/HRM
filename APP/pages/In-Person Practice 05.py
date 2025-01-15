@@ -6,20 +6,8 @@ import numpy as np
 from numpy.linalg import norm
 
 def practice_05():
-
-# Text input box
+    
     user_text = st.text_area("Your text here:", placeholder="Type something...")
-
-    if st.button("Submit"):
-        if user_text:
-            st.success("Thank you for your submission!")
-            st.write("You wrote:")
-            st.write(user_text)
-        else:
-            st.warning("Please write something before submitting.")
-
-
-    # Sidebar job selection and evaluation
     st.sidebar.radio(
         "Select a job at your firm:",
         ("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar")
