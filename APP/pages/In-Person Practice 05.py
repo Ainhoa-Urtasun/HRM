@@ -104,4 +104,4 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "In-Person Practice 05":
-    practice_06()
+    practice_05()
