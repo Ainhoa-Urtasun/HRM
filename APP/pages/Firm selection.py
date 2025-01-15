@@ -6,7 +6,8 @@ import numpy as np
 from numpy.linalg import norm
 
 def firm_selection():
-  st.text_area("", placeholder="Type the name of the firm, its NACE Rev. Primary Code and English trade description...")
+  st.text_area("", placeholder="Type the name of your firm, its NACE Rev. Primary Code, and its English trade description...")
+  st.text_area("", placeholder="Type the economic activities of your firm...")
 
 st.set_page_config(page_title="Firm selection", layout="wide")
 selected = option_menu(
