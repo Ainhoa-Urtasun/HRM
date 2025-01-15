@@ -10,8 +10,6 @@ def report():
 
 st.set_page_config(page_title="HRM Report", layout="wide")
 
-# Call the selected section
-if selected == "HRM Report":
-    report()
+
 
 
