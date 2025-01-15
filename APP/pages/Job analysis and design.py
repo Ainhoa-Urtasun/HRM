@@ -5,8 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.linalg import norm
 
-def practice_06():
-    # Sidebar job selection and evaluation
+def job_analysis_and_design():
     st.sidebar.radio(
         "Select a job at your firm:",
         ("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar")
@@ -77,12 +76,12 @@ def practice_06():
         st.write(norms)
 
 # Set page configuration
-st.set_page_config(page_title="In-Person Practice 6", layout="wide")
+st.set_page_config(page_title="Job analysis and design", layout="wide")
 
 # Navigation menu
 selected = option_menu(
     menu_title="",  # No title for the menu
-    options=["In-Person Practice 06"],  # Menu options
+    options=["Job analysis and design"],  # Menu options
     icons=["book"],  # Icons for options
     menu_icon="cast",  # Icon for the menu
     default_index=0,  # Default selected option
@@ -90,8 +89,8 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "In-Person Practice 06":
-    practice_06()
+if selected == "Job analysis and design":
+    job_analysis_and_design()
 
 
 
