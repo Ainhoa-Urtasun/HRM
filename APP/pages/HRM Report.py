@@ -5,11 +5,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.linalg import norm
 
-    
+st.set_page_config(page_title="HRM Report", layout="wide")
 user_text = st.text_area("Your text here:", placeholder="Type something...")
     
-# Set page configuration
-st.set_page_config(page_title="HRM Report", layout="wide")
+
 
 # Navigation menu
 selected = option_menu(
