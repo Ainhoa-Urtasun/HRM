@@ -51,7 +51,6 @@ def job_analysis_and_design():
         [s41, s42, s43, s44],
         [s51, s52, s53, s54],
     ])
-    
     st.write(matrix)
     norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
     st.write(norms)
