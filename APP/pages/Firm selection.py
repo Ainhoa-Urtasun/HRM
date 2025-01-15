@@ -6,11 +6,9 @@ import numpy as np
 from numpy.linalg import norm
 
 def firm_selection():
-  user_text = st.text_area("Your text here:", placeholder="Type something...")
+  st.text_area("About your firm:", placeholder="Type its name, NACE Rev. Primary Code, and English trade description...")
 
 st.set_page_config(page_title="Firm selection", layout="wide")
-
-# Navigation menu
 selected = option_menu(
     menu_title="",  # No title for the menu
     options=["Firm selection"],  # Menu options
@@ -19,8 +17,6 @@ selected = option_menu(
     default_index=0,  # Default selected option
     orientation="vertical",
 )
-
-# Call the selected section
 if selected == "Firm selection":
     firm_selection()
 
