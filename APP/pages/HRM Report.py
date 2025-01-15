@@ -8,18 +8,7 @@ from numpy.linalg import norm
 def report():
   user_text = st.text_area("Your text here:", placeholder="Type something...")
 
-
-st.set_page_config(page_title="In-Person Practice 6", layout="wide")
-
-# Navigation menu
-selected = option_menu(
-    menu_title="",  # No title for the menu
-    options=["HRM Report"],  # Menu options
-    icons=["book"],  # Icons for options
-    menu_icon="cast",  # Icon for the menu
-    default_index=0,  # Default selected option
-    orientation="vertical",
-)
+st.set_page_config(page_title="HRM Report", layout="wide")
 
 # Call the selected section
 if selected == "HRM Report":
