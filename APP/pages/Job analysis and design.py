@@ -52,33 +52,12 @@ def job_analysis_and_design():
         [s51, s52, s53, s54],
     ])
     
-    # Initialize session state variables
-    if "show_matrix" not in st.session_state:
-        st.session_state.show_matrix = False
-    if "show_norms" not in st.session_state:
-        st.session_state.show_norms = False
 
-    # Button actions to toggle visibility
-    if st.button("Show matrix of tasks and required skills for the job"):
-        st.session_state.show_matrix = True
-    if st.button("Show vector of required skills for the job"):
-        st.session_state.show_norms = True
+    st.write(matrix)
+    norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
+    st.write(norms)
 
-    # Display the matrix
-    if st.session_state.show_matrix:
-        st.write("Matrix of Tasks and Required Skills:")
-        st.write(matrix)
-
-    # Calculate and display the norms
-    if st.session_state.show_norms:
-        norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
-        st.write("Vector of Required Skills (Norms):")
-        st.write(norms)
-
-# Set page configuration
 st.set_page_config(page_title="Job analysis and design", layout="wide")
-
-# Navigation menu
 selected = option_menu(
     menu_title="",  # No title for the menu
     options=["Job analysis and design"],  # Menu options
@@ -87,7 +66,6 @@ selected = option_menu(
     default_index=0,  # Default selected option
     orientation="vertical",
 )
-
 # Call the selected section
 if selected == "Job analysis and design":
     job_analysis_and_design()
