@@ -10,14 +10,13 @@ def practice_05():
 # Text input box
 user_text = st.text_area("Your text here:", placeholder="Type something...")
 
-# Button to submit text
-if st.button("Submit"):
-    if user_text:
-        st.success("Thank you for your submission!")
-        st.write("You wrote:")
-        st.write(user_text)
-    else:
-        st.warning("Please write something before submitting.")
+    if st.button("Submit"):
+        if user_text:
+            st.success("Thank you for your submission!")
+            st.write("You wrote:")
+            st.write(user_text)
+        else:
+            st.warning("Please write something before submitting.")
 
 
     # Sidebar job selection and evaluation
