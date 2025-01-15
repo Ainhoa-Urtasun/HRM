@@ -8,7 +8,7 @@ from numpy.linalg import norm
 def practice_05():
 
 # Text input box
-user_text = st.text_area("Your text here:", placeholder="Type something...")
+    user_text = st.text_area("Your text here:", placeholder="Type something...")
 
     if st.button("Submit"):
         if user_text:
