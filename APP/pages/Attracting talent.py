@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 
 
-def UNIT5_1():
+def attracting_talent():
 
   st.sidebar.header("Designing probation")
   skill_gaps_input = st.sidebar.text_area("Enter possible skill gaps (e.g., 0.1, 0.5, 1.0):","")
@@ -27,7 +27,7 @@ def UNIT5_1():
   ax.grid(True)
   st.pyplot(fig)
 
-st.set_page_config(page_title="In-Person Practice 16", layout="wide")
+st.set_page_config(page_title="Attracting talent", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
@@ -39,5 +39,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'In-Person Practice 16':
-    UNIT5_1()
+if selected == 'Attracting talent':
+    attracting_talent()
