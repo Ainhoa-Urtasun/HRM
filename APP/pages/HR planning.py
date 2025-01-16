@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
-def UNIT3_1():
+def HR_planning():
 
     st.sidebar.write('Data from the end of 2022 and the end of 2023:')
     with st.sidebar.expander("$J_1$ other managers"):
@@ -60,11 +60,11 @@ def UNIT3_1():
         for prediction in predictions:
             st.write(prediction[0])
 
-st.set_page_config(page_title="In-Person Practice 09", layout="wide")
+st.set_page_config(page_title="HR planning", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-Person Practice 09'],  # required
+    options=['HR planning'],  # required
     icons=["calculator", "calculator", "person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -72,6 +72,6 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "In-Person Practice 09":
-    UNIT3_1()
+if selected == "HR planning":
+    HR_planning()
 
