@@ -31,7 +31,7 @@ st.set_page_config(page_title="Attracting talent", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-Person Practice 16'],  # required
+    options=['Attracting talent'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
