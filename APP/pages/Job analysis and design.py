@@ -8,7 +8,7 @@ from numpy.linalg import norm
 def job_analysis_and_design():
     st.sidebar.radio(
         "Select a job at your firm:",
-        ("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar")
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar")
     )
     st.sidebar.write("Evaluate the job:")
     
