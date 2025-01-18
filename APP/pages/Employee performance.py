@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 # Page configuration must be at the top
-st.set_page_config(page_title="In-Person Practice 12", layout="wide")
+st.set_page_config(page_title="Employee performance", layout="wide")
 
-def UNIT4_1():
+def Employee_performance():
     # Sidebar inputs for employee skills
     st.sidebar.write("Vector of skills possessed by the employee:")
     with st.sidebar.expander("Vector of Skills Possessed by the Employee"):
@@ -46,7 +46,7 @@ def UNIT4_1():
 # Option menu
 selected = option_menu(
     menu_title="",  # required
-    options=['In-Person Practice 12'],  # required
+    options=['Employee performance'],  # required
     icons=['people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -54,5 +54,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "In-Person Practice 12":
-    UNIT4_1()
+if selected == "Employee performance":
+    Employee_performance()
