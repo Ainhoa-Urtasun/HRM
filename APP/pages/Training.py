@@ -33,4 +33,4 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Training":
-    UNIT6_1()
+    Training()
