@@ -16,14 +16,12 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-def UNIT7_1():
-    # Header for the page
-    st.markdown("<h3 style='color: #4CAF50;'>🚀 Practice 22 </h3>", unsafe_allow_html=True)
+def Compensation():
     
     # Sidebar for selecting a job
     st.sidebar.radio(
         "Select a job at your firm:",
-        ("other managers", "support intellectuals and scientists, technicians and professionals", "sales representatives and similar")
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar")
     )
     
     # Sidebar expander for skill gap input
@@ -60,11 +58,11 @@ def UNIT7_1():
     # Display the plot
     st.pyplot(fig)
     
-st.set_page_config(page_title="UNIT 7. COMPENSATION", layout="wide")
+st.set_page_config(page_title="Compensation", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['UNIT 7. COMPENSATION'],  # required
+    options=['Compensation'],  # required
     icons=["book", "book", "people"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -72,5 +70,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "UNIT 7. COMPENSATION":
-    UNIT7_1()
+if selected == "Compensation":
+    Compensation()
