@@ -42,7 +42,7 @@ selected = option_menu(
 
 # Call the selected section
 if selected == "Career development":
-    UNIT8_1()
+    Career_development()
 
 
     
