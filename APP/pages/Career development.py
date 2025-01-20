@@ -32,7 +32,7 @@ def Career_development():
 st.set_page_config(page_title="Career development", layout="wide")
 
 selected = option_menu(
-    menu_title="Main Menu",  # required
+    menu_title="",  # required
     options=['Career development'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
