@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT8_1():
+def Career_development():
     
     # Sidebar input for e1
     e1 = st.sidebar.slider("Employee 1 decides how much effort to exert", min_value=1.0, max_value=100.0, step=0.1)
@@ -29,11 +29,11 @@ def UNIT8_1():
     # Display the plot in Streamlit
     st.pyplot(plt)
 
-st.set_page_config(page_title="UNIT 8. CAREER DEVELOPMENT Career", layout="wide")
+st.set_page_config(page_title="Career development", layout="wide")
 
 selected = option_menu(
     menu_title="Main Menu",  # required
-    options=['UNIT 8. CAREER DEVELOPMENT'],  # required
+    options=['Career development'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -41,7 +41,7 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "UNIT 8. CAREER DEVELOPMENT":
+if selected == "Career development":
     UNIT8_1()
 
 
