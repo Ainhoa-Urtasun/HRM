@@ -21,7 +21,7 @@ def Compensation():
     # Sidebar for selecting a job
     st.sidebar.radio(
         "Select a job at your firm:",
-        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar")
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
     
     # Sidebar expander for skill gap input
