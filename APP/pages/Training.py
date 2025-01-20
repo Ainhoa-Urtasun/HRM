@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def UNIT6_1():
+def Training():
 
     with st.sidebar.expander("Trained employee's skill"):
         t0 = st.number_input("-1", key="t0", step=1)
@@ -20,11 +20,11 @@ def UNIT6_1():
     plt.legend()
     st.pyplot(fig)
   
-st.set_page_config(page_title="In-Person Practice 19", layout="wide")
+st.set_page_config(page_title="Training", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['In-Person Practice 19'],  # required
+    options=['Training'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -32,5 +32,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "In-Person Practice 19":
+if selected == "Training":
     UNIT6_1()
