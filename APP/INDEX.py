@@ -1,3 +1,3 @@
 import streamlit as st
-st.markdown("# HRM Report ✓")
+st.markdown("# HRM Dashboard ✓")
 
