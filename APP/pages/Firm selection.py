@@ -6,10 +6,26 @@ import numpy as np
 from numpy.linalg import norm
 
 def firm_selection():
-  st.text_area("", placeholder="Type the name of your firm, its NACE Rev. Primary Code, and its English trade description...")
-  st.text_area("", placeholder="Type the economic activities of your firm...")
+    st.title("Firm Selection")
+    st.write("""
+    **Instructions to use Open SABI (UPNA)**:
+    1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
+    2. In **Employees** -> **Employees' segmentation in Spain**:
+       - In **Type of employee**, select:
+         - Other managers
+         - Support intellectuals and scientists
+         - Technicians and professionals
+         - Administrative employees
+       - In **Select periods** -> **Absolute years**, select **2022** and **2023**.
+       - In **Criteria to be valid**, ensure **All selected years** is chosen.
+       - In **Select the gender**, set a minimum of **250 Women**.
+    3. Choose **one firm** from the resulting 7 firms.
+    """)
+    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. Primary Code, and its English trade description...")
+    st.text_area("", placeholder="Type the economic activities of your firm...")
 
-st.set_page_config(page_title="Firm selection", layout="wide")
+st.set_page_config(page_title="Firm Selection", layout="wide")
+
 selected = option_menu(
     menu_title="",  # No title for the menu
     options=["Firm selection"],  # Menu options
@@ -18,9 +34,8 @@ selected = option_menu(
     default_index=0,  # Default selected option
     orientation="vertical",
 )
+
 if selected == "Firm selection":
     firm_selection()
-
-
 
 
