@@ -52,8 +52,8 @@ def job_analysis_and_design():
     max_values = np.max(matrix, axis=0)
     st.write("Skill requirements of the job:", max_values)
 
-    # Text area for job evaluation
     st.text_area("", placeholder="Describe the connection between your firm and the evaluated job")
+    st.text_area("", placeholder="What would be the skill gap of an employee with 25 of Demonstrating willingness to learn, 50 of Collaborating in teams and networks, 12 of Working efficiently, and 5 of Taking a proactive approach? Explain the characteristics and effects of such skill gap")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
