@@ -43,7 +43,6 @@ def job_analysis_and_design():
         s53 = st.number_input("Working efficiently", key='s53', min_value=0, max_value=100, step=1)
         s54 = st.number_input("Taking a proactive approach", key='s54', min_value=0, max_value=100, step=1)
 
-    # Constructing the skill matrix
     matrix = np.array([
         [s11, s12, s13, s14],
         [s21, s22, s23, s24],
@@ -54,6 +53,8 @@ def job_analysis_and_design():
     st.write(matrix)
     norms = (5**(-0.5)) * np.linalg.norm(matrix, axis=0)
     st.write(norms)
+
+    st.text_area("", placeholder="Explain the connection between your firm and a job in your firm based on your job evaluation", layout="wide")
 
 st.set_page_config(page_title="Job analysis and design", layout="wide")
 selected = option_menu(
