@@ -19,8 +19,8 @@ def firm_selection():
        - In **Select the gender**, set a minimum of **250 Women**.
     3. Choose **one firm** from the resulting firms.
     """)
-    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. Primary Code, and its English trade description...")
-    st.text_area("", placeholder="List, with your own words, the economic activities of your firm...")
+    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. Primary Code, and its English trade description")
+    st.text_area("", placeholder="List, with your own words, the economic activities of your firm")
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
