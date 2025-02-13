@@ -1,8 +1,3 @@
-
-
-
-
-
 import streamlit as st
 from streamlit_option_menu import option_menu
 import numpy as np
@@ -53,12 +48,12 @@ def job_analysis_and_design():
         [s41, s42, s43, s44],
         [s51, s52, s53, s54],
     ])
-    st.write("Skill Matrix:", matrix)
+    st.write("Task skill matrix of the job:", matrix)
     max_values = np.max(matrix, axis=0)
-    st.write("Maximum values for each skill dimension:", max_values)
+    st.write("Skill requirements of the job:", max_values)
 
     # Text area for job evaluation
-    st.text_area("Describe the connection between your firm and the evaluated job:", placeholder="Explain here...")
+    st.text_area("", placeholder="Describe the connection between your firm and the evaluated job")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
