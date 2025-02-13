@@ -6,7 +6,6 @@ import numpy as np
 from numpy.linalg import norm
 
 def firm_selection():
-    st.title("Firm Selection")
     st.write("""
     **Instructions to use Open SABI (UPNA)**:
     1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
