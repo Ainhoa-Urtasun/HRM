@@ -5,7 +5,7 @@ import numpy as np
 def job_analysis_and_design():
     st.sidebar.radio(
         "Select a job at your firm:",
-        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Sales representatives and similar")
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
     st.sidebar.write("Evaluate the job:")
     
