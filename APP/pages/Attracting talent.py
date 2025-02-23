@@ -4,8 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-
-
 def hiring():
 
   st.sidebar.header("Designing probation")
@@ -27,7 +25,7 @@ def hiring():
   ax.grid(True)
   st.pyplot(fig)
 
-st.set_page_config(page_title="Attracting talent", layout="wide")
+st.set_page_config(page_title="Hiring", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
