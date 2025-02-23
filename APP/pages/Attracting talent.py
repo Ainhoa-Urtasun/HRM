@@ -6,10 +6,10 @@ from streamlit_option_menu import option_menu
 
 
 
-def attracting_talent():
+def hiring():
 
   st.sidebar.header("Designing probation")
-  skill_gaps_input = st.sidebar.text_area("Enter possible skill gaps (e.g., 0.1, 0.5, 1.0):","")
+  skill_gaps_input = st.sidebar.text_area("Enter possible skill gaps (one per row, without commas):","")
   try:
     skill_gaps = [float(g.strip()) for g in skill_gaps_input.split("\n") if g.strip()]
   except ValueError:
@@ -31,7 +31,7 @@ st.set_page_config(page_title="Attracting talent", layout="wide")
 
 selected = option_menu(
     menu_title="",  # required
-    options=['Attracting talent'],  # required
+    options=['Hiring'],  # required
     icons=["person"],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -39,5 +39,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == 'Attracting talent':
+if selected == 'Hiringt':
     attracting_talent()
