@@ -38,4 +38,4 @@ selected = option_menu(
 
 # Call the selected section
 if selected == 'Hiring':
-    attracting_talent()
+    hiring()
