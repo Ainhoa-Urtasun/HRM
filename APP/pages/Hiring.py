@@ -13,7 +13,7 @@ def hiring():
   except ValueError:
     st.error("Please enter valid numeric values for skill gaps.")
     skill_gaps = []
-  w_probation = st.sidebar.slider("Set probation wage (horizontal line):", 0, 5000, 1, 1)
+  w_probation = st.sidebar.slider("Set probation wage:", 0, 5000, 1, 1)
   
   st.text_area("", placeholder="Explain signaling as an HRM practice")
   st.text_area("", placeholder="Explain screening as an HRM practice")
