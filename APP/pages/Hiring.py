@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 def hiring():
 
   st.sidebar.header("Designing probation")
-  skill_gaps_input = st.sidebar.text_area("Enter several possible skill gaps (one per row, without commas):","")
+  skill_gaps_input = st.sidebar.text_area("Enter several possible skill gaps (each between 0 and 100). Write one per line and press Enter after each):","")
   try:
     skill_gaps = [float(g.strip()) for g in skill_gaps_input.split("\n") if g.strip()]
   except ValueError:
