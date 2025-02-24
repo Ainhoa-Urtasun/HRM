@@ -14,6 +14,12 @@ def hiring():
     st.error("Please enter valid numeric values for skill gaps.")
     skill_gaps = []
   w_probation = st.sidebar.slider("Set probation wage (horizontal line):", 0.0, 100.0, 1.0, 0.1)
+  
+  st.text_area("", placeholder="Explain signaling as an HRM practice")
+  st.text_area("", placeholder="Explain screening as an HRM practice")
+  st.text_area("", placeholder="Explain how probation functions as both a signalling and screening mechanism")
+  st.text_area("", placeholder="Explain how your firm should design probation to attract job candidates with a small skill gap")
+
   e_values = np.linspace(0, 10, 500)
   fig, ax = plt.subplots(figsize=(8, 6))
   for g in skill_gaps:
