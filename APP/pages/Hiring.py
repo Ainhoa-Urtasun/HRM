@@ -7,19 +7,13 @@ from streamlit_option_menu import option_menu
 def hiring():
 
   st.sidebar.header("Setting probation")
-  skill_gaps_input = st.sidebar.text_area("Enter the skill gap you have just calculated, along with a lower skill gap and a higher skill gap (each between 0 and 100). Enter each skill gap on a separate line by pressing Enter after each one):","")
+  skill_gaps_input = st.sidebar.text_area("Enter the skill gap you have just calculated, along with a lower skill gap and a higher skill gap (each between 0 and 100). Enter each skill gap on a separate line by pressing Enter after each one:","")
   try:
     skill_gaps = [float(g.strip()) for g in skill_gaps_input.split("\n") if g.strip()]
   except ValueError:
     st.error("Please enter valid numeric values for skill gaps.")
     skill_gaps = []
   w_probation = st.sidebar.slider("Set probation wage:", 0, 5000, 1, 1)
-  
-  st.text_area("", placeholder="Explain signaling as an HRM practice")
-  st.text_area("", placeholder="Explain screening as an HRM practice")
-  st.text_area("", placeholder="Explain how probation functions as both a signalling and screening mechanism")
-  st.text_area("", placeholder="Explain how your firm should design probation to attract job candidates with a small skill gap")
-
   e_values = np.linspace(0, 10, 500)
   fig, ax = plt.subplots(figsize=(8, 6))
   for g in skill_gaps:
@@ -30,6 +24,8 @@ def hiring():
   ax.legend(fontsize=12)
   ax.grid(True)
   st.pyplot(fig)
+
+  st.text_area("", placeholder="Explain how your firm should design probation period to prevent job candidates with the skill gap you have calculated from applying")
 
 st.set_page_config(page_title="Hiring", layout="wide")
 
