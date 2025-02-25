@@ -25,7 +25,7 @@ def hiring():
   ax.grid(True)
   st.pyplot(fig)
 
-  st.text_area("", placeholder="Explain how your firm should design probation period to prevent job candidates with the skill gap you have calculated from applying")
+  st.text_area("", placeholder="Explain how your firm should design a probation period to prevent job candidates with the skill gap you have calculated from applying")
 
 st.set_page_config(page_title="Hiring", layout="wide")
 
