@@ -25,7 +25,7 @@ def hiring():
   ax.grid(True)
   st.pyplot(fig)
 
-  st.text_area("", placeholder="Write a job ad for 'Other managers' at your firm containing: (1) Job title; (2) List of tasks; (3) List of skills; (4) Education; (5) Probation that prevents job candidates with a skill gap like Max from applying")
+  st.text_area("", placeholder="Write here a job ad for 'Other managers' at your firm. The job ad should include: (1) Job title; (2) List of tasks the job entails (job description); (3) List of skills the worker is required to possess (job specification); (4) Education requirements; (5) Probation that prevents job candidates with Max's skill gap or higher from applying")
 
 st.set_page_config(page_title="Hiring", layout="wide")
 
