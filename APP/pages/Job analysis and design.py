@@ -48,11 +48,11 @@ def job_analysis_and_design():
         [s41, s42, s43, s44],
         [s51, s52, s53, s54],
     ])
-    st.write("Task skill matrix of the job:", matrix)
+    st.write("Task skill matrix for 'Other managers':", matrix)
     max_values = np.max(matrix, axis=0)
-    st.write("Skill requirements of the job:", max_values)
+    st.write("Skill requirements for 'Other managers':", max_values)
 
-    st.text_area("", placeholder="Calculate the skill gap of an employee with 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
+    st.text_area("", placeholder="Calculate the skill gap of Max who is working at your firm and possesses the following skill set: 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
