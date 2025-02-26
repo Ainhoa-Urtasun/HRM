@@ -25,7 +25,15 @@ def hiring():
   ax.grid(True)
   st.pyplot(fig)
 
-  st.text_area("", placeholder="Write here a job ad for 'Other managers' at your firm. The job ad should include: (1) Job title; (2) List of tasks the job entails (job description); (3) List of skills the worker is required to possess (job specification); (4) Education requirements; (5) Probation that prevents job candidates with Max's skill gap or higher from applying")
+  st.write("""
+    **Write a professional job ad for the position of 'Other managers' at your firm. The job ad should contain**:
+    1. **Job Title** – Clearly state the position being advertised.
+    2. **Job Description** – Outline the key tasks and responsibilities associated with the role.
+    3. **Job Specification** – List the essential skills and competencies required for the position.
+    4. **Education Requirements** – Specify the necessary qualifications and experience.
+    5. **Probation Period** – Include a probation clause that prevents candidates with significant skill gaps (like Max) from applying or progressing past the probation period.
+    """)
+  st.text_area("", placeholder="Write the job ad here")
 
 st.set_page_config(page_title="Hiring", layout="wide")
 
