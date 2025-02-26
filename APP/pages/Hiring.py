@@ -26,12 +26,12 @@ def hiring():
   st.pyplot(fig)
 
   st.write("""
-    **Write a professional job ad for the position of 'Other managers' at your firm. The job ad should contain**:
+    **Write a job ad for the position of 'Other managers' at your firm. The job ad should contain**:
     1. **Job Title** – Clearly state the position being advertised.
-    2. **Job Description** – Outline the key tasks and responsibilities associated with the role.
-    3. **Job Specification** – List the essential skills and competencies required for the position.
-    4. **Education Requirements** – Specify the necessary qualifications and experience.
-    5. **Probation Period** – Include a probation clause that prevents candidates with significant skill gaps (like Max) from applying or progressing past the probation period.
+    2. **Job Description** – Outline the key tasks and responsibilities of the job.
+    3. **Job Specification** – List the essential skills the candidate should possess.
+    4. **Education and Experience Requirements** – Specify the necessary qualifications and experience.
+    5. **Probation Period** – Include a probation clause that prevents candidates with significant skill gaps (like Max) from applying.
     """)
   st.text_area("", placeholder="Write the job ad here")
 
