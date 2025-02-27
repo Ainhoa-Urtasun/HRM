@@ -52,7 +52,7 @@ def job_analysis_and_design():
     max_values = np.max(matrix, axis=0)
     st.write("Skill requirements for 'Other managers' at your firm:", max_values)
 
-    st.text_area("", placeholder="Calculate the skill gap of Max who is working at your firm and possesses the following skill set: 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
+    st.text_area("", placeholder="Calculate Clara's skill gap while working full-time as an 'Other Managers' at your firm, given her current skill set: 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
