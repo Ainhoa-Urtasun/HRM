@@ -20,7 +20,7 @@ def firm_selection():
     3. Choose **one firm** from the resulting firms.
     """)
     st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, and its English trade description")
-    st.text_area("", placeholder="Number of 'Other managers' in 2022 and in 2023")
+    st.text_area("", placeholder="Number of 'Other managers' in 2022 and in 2023 and compound annual growth rate (CAGR)")
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
