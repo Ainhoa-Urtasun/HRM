@@ -31,7 +31,7 @@ def hiring():
     2. **Job Description** – Outline the key tasks and responsibilities of the job.
     3. **Job Specification** – List the essential skills the candidate should possess.
     4. **Education and Experience Requirements** – Specify the necessary qualifications and experience.
-    5. **Probation Period** – Include a probation clause that prevents candidates with significant skill gaps (like Max) from applying.
+    5. **Probation Period** – Include a probation clause that prevents candidates with significant skill gaps (like Clara) from applying.
     """)
   st.text_area("", placeholder="Write the job ad here")
 
