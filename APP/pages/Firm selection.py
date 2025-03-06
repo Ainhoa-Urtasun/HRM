@@ -19,7 +19,7 @@ def firm_selection():
        - In **Select the gender**, set a minimum of **250 Women**.
     3. Choose **one firm** from the resulting firms.
     """)
-    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, and its legal form, and date of establishment")
+    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, its legal form, and date of establishment")
     st.text_area("", placeholder="Compound annual growth rate (CAGR) from 2022 to 2023 for the sum of Other managers, Support intellectuals and scientists, technicians and professionals, and Administrative employees")
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
