@@ -7,7 +7,7 @@ import random
 
 def HR_planning():
 
-    st.sidebar.write('Data from the end of 2022 and the end of 2023:')
+    st.sidebar.write('Number of workers at end of 2022 and the end of 2023:')
     with st.sidebar.expander("Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
         L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=0)
