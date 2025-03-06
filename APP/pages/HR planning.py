@@ -76,7 +76,14 @@ def HR_planning():
         for prediction in predictions:
             st.write(prediction[0])
 
-    st.text_area("", placeholder="Predict there is a shortage or surplus of Administrative employees, assuming the firm: (1) produces according to a Cobb-Douglas production function where  Q = L_1^0.1 (1) sold 10,000 units of its product in 2023; (2) pays Administrative employees the yearly gross income for Clerks in EU in 2023 from Skills intelligence, and (3) uses 1 of capital")
+      st.write("""
+    **Consider that your firm**:
+    1. Has sold 10,000 units of output in 2023 produced according to $Q=L_1^0.1L_2^0.25L_3^0.01K^0.25$
+    2. Pays Administrative employees the yearly gross income for Clerks in the EU in 2023 from Skills Intelligence
+    3. Uses 1 unit of capital
+    """)
+    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, its legal form, and date of establishment")
+    st.text_area("", placeholder="Predict wether to expect a shortage or surplus of Administrative employees")
 
 st.set_page_config(page_title="HR planning", layout="wide")
 
