@@ -18,25 +18,48 @@ def HR_planning():
         L32022 = st.number_input("$L_{3,2022}$", key='L32022', step=1, min_value=0)
         L32023 = st.number_input("$L_{3,2023}$", key='L32023', step=1, min_value=0)
 
-    m11 = np.minimum(L12022,L12023) - 1
-    m22 = np.minimum(L22022,L22023) - 4
-    m33 = np.minimum(L32022,L32023) - 3
+    m12 = m13 = m31 = m32 = 0
+    
+    if (L12022 = 0) | (L32022 = 0):
+        h1 = h3 = t1 = t3 = 0
+        m11 = m33 = m21 = m23 = 0
+        m22 = min(L22022,L22023)
+        if L22022 > L22023:
+            h2 = 0
+            t2 = L22023 - L2022
+        else:
+            t2 = 0
+            h2 = L22023 - L22022
+    else:        
+        m21 = 1
+        m23 = 2
+        m11 = np.min(L12022,L12023) - 1
+        m22 = np.min(L22022,L22023) - 3
+        m33 = np.min(L32022,L32023) - 1
+       if L12022 > L12023:
+            h1 = 0
+            t1 = L12023 - L12022
+        else:
+            t1 = 0
+            h1 = L12023 - L12022
+        if L22022 > L22023:
+            h2 = 0
+            t2 = L22023 - L2022
+        else:
+            t2 = 0
+            h2 = L22023 - L22022
+        if L32022 > L32023:
+            h3 = 0
+            t3 = L32023 - L3022
+        else:
+            t3 = 0
+            h3 = L32023 - L32022
 
-    h1 = L12023 - m11
-    m21 = m31 = 0
-    m23 = 1
-    d2 = L22022 - m21 - m22 - m23
-    m32 = 2
-    d3 = 1
-    d1 = m13 = 0
-    m12 = L12022 - m11
-    h2 = L22023 - m12 - m22 - m32
-    h3 = L32023 - m13 - m23 - m33
 
     matrix = np.array([
-        [m11, m12, m13, d1],
-        [m21, m22, m23, d2],
-        [m31, m32, m33, d3],
+        [m11, m12, m13, t1],
+        [m21, m22, m23, t2],
+        [m31, m32, m33, t3],
         [h1,  h2,  h3,  np.nan]  # np.nan for the bottom-right cell
         ])
         
