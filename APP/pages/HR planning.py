@@ -81,9 +81,9 @@ def HR_planning():
    
     if st.button("Predictions for the end of 2024"):
         T = np.array([
-            [m11/(m11+m12+m13+d1), m12/(m11+m12+m13+d1), m13/(m11+m12+m13+d1)],
-            [m21/(m21+m22+m23+d2), m22/(m21+m22+m23+d2), m23/(m21+m22+m23+d2)],
-            [m31/(m31+m32+m33+d3), m32/(m31+m32+m33+d3), m33/(m31+m32+m33+d3)],
+            [m11/(m11+m12+m13+t1), m12/(m11+m12+m13+t1), m13/(m11+m12+m13+t1)],
+            [m21/(m21+m22+m23+t2), m22/(m21+m22+m23+t2), m23/(m21+m22+m23+t2)],
+            [m31/(m31+m32+m33+t3), m32/(m31+m32+m33+t3), m33/(m31+m32+m33+t3)],
         ])
 
         L = np.array([
