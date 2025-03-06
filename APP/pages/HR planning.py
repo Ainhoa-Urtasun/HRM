@@ -28,7 +28,7 @@ def HR_planning():
         m11 = L12022 - 2
         t1 = 2
         h1 = L12023 - m11 - 1
-    elif:
+    else:
         m11 = L12023 - 1
         h1 = 0
         t1 = L12022 - m11
@@ -36,7 +36,7 @@ def HR_planning():
         m22 = L22022 - 3
         t2 = 3
         h2 = L12023 - m22
-    elif:
+    else:
         m22 = L22023
         h2 = 0
         t2 = L22022 - m22 - 3
@@ -44,7 +44,7 @@ def HR_planning():
         m33 = L32022 - 1
         t3 = 1
         h3 = L32023 - m33 - 2
-    elif:
+    else:
         m33 = L32023 - 2
         h3 = 0
         t3 = L32022 - m33
