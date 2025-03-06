@@ -78,12 +78,11 @@ def HR_planning():
 
     st.write("""
     **Consider that your firm**:
-    1. Produces according to $Q=L_1^0.1L_2^0.25L_3^0.01K^0.25$
+    1. Produces according to $Q=L_1^{0.1}L_2^{0.25}L_3^{0.01}K^{0.25}$
     2. Sold 1,000 units of its product in 2023 
     2. Pays Administrative employees the yearly gross income for Clerks in the EU in 2023 from Skills Intelligence
     3. Uses 1 unit of capital
     """)
-    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, its legal form, and date of establishment")
     st.text_area("", placeholder="Predict wether to expect a shortage or surplus of Administrative employees")
 
 st.set_page_config(page_title="HR planning", layout="wide")
