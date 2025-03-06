@@ -83,7 +83,7 @@ def HR_planning():
     2. Pays Administrative employees the yearly gross income for Clerks in the EU in 2023 from Skills Intelligence
     3. Uses 1 unit of capital
     """)
-    st.text_area("", placeholder="Predict wether to expect a shortage or surplus of Administrative employees")
+    st.text_area("", placeholder="Predict shortage or surplus of Administrative employees")
 
 st.set_page_config(page_title="HR planning", layout="wide")
 
