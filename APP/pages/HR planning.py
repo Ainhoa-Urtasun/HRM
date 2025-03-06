@@ -76,9 +76,10 @@ def HR_planning():
         for prediction in predictions:
             st.write(prediction[0])
 
-      st.write("""
+    st.write("""
     **Consider that your firm**:
-    1. Has sold 10,000 units of output in 2023 produced according to $Q=L_1^0.1L_2^0.25L_3^0.01K^0.25$
+    1. Produces according to $Q=L_1^0.1L_2^0.25L_3^0.01K^0.25$
+    2. Sold 1,000 units of its product in 2023 
     2. Pays Administrative employees the yearly gross income for Clerks in the EU in 2023 from Skills Intelligence
     3. Uses 1 unit of capital
     """)
