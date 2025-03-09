@@ -7,7 +7,7 @@ import random
 
 def HR_planning():
 
-    st.sidebar.write('Number of workers at end of 2022 and the end of 2023:')
+    st.sidebar.write('Number of workers at end of 2022 and the end of 2023 (just numbers, no commas or dots):')
     with st.sidebar.expander("Other managers"):
         L12022 = st.number_input("$L_{1,2022}$", key='L12022', step=1, min_value=0)
         L12023 = st.number_input("$L_{1,2023}$", key='L12023', step=1, min_value=0)
@@ -25,27 +25,21 @@ def HR_planning():
     m22 = np.min([L22022,L22023]) - 3  
     m33 = np.min([L32022,L32023]) - 2
     if L12022 < L12023: 
-        m11 = L12022 - 2
-        t1 = 2
+        t1 = 1
         h1 = L12023 - m11 - 1
     else:
-        m11 = L12023 - 1
         h1 = 0
         t1 = L12022 - m11
     if L22022 < L22023: 
-        m22 = L22022 - 3
         t2 = 3
         h2 = L12023 - m22
     else:
-        m22 = L22023
         h2 = 0
-        t2 = L22022 - m22 - 3
+        t2 = L22022 - m22
     if L32022 < L32023: 
-        m33 = L32022 - 1
-        t3 = 1
+        t3 = 2
         h3 = L32023 - m33 - 2
     else:
-        m33 = L32023 - 2
         h3 = 0
         t3 = L32022 - m33
         
