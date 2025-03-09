@@ -53,7 +53,7 @@ def HR_planning():
     if st.button("HR planning table"):
         st.write(matrix)
    
-    if st.button("Predictions for the end of 2024"):
+    if st.button("Predictions for May 2025"):
         T = np.array([
             [m11/(m11+m12+m13+t1), m12/(m11+m12+m13+t1), m13/(m11+m12+m13+t1)],
             [m21/(m21+m22+m23+t2), m22/(m21+m22+m23+t2), m23/(m21+m22+m23+t2)],
