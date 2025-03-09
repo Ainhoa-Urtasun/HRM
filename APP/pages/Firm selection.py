@@ -22,7 +22,7 @@ def firm_selection():
     4. Choose **one firm** from the resulting firms
     """)
     st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, its legal form, and date of establishment")
-    st.text_area("", placeholder="Show the percentage change in employmen from 2022 to 2023 for Other managers; Support intellectuals and scientists, technicians and professionals; and Administrative employees (adding up women and men)")
+    st.text_area("", placeholder="Show the percentage change in employment from 2022 to 2023 separately for Other managers; Support intellectuals and scientists, technicians and professionals; and Administrative employees (adding up women and men)")
     st.text_area("", placeholder="Comment here on gender differences in the number of employees across occupations and their growth over time")
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
