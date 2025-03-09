@@ -72,12 +72,13 @@ def HR_planning():
 
     st.write("""
     **Consider that your firm**:
-    1. Produces according to $Q=L_1^{0.1}L_2^{0.25}L_3^{0.01}K^{0.25}$
+    1. Produces according to $Q=L_1^{0.1}L_2^{0.72}L_3^{0.05}K^{0.11}$
     2. Sold 1,000 units of its product in 2023 
-    2. Pays Administrative employees the yearly gross income for Clerks in the EU in 2023 from Skills Intelligence
+    2. Pays Administrative employees the yearly gross income for Professionals in the EU in 2023 from Skills Intelligence
     3. Uses 1 unit of capital
     """)
-    st.text_area("", placeholder="Predict shortage or surplus of Administrative employees")
+    st.text_area("", placeholder="Estimate the precise shortage or surplus of Support intellectuals and scientists, technicians and professionals for May 2025")
+    st.text_area("", placeholder="Recommend the strategy the firm should follow to prevent labor mismatch. In the case of a shortage, provide an estimate of the vacancy yield")
 
 st.set_page_config(page_title="HR planning", layout="wide")
 
