@@ -32,7 +32,7 @@ def HR_planning():
         t1 = L12022 - m11
     if L22022 < L22023: 
         t2 = 3
-        h2 = L12023 - m22
+        h2 = L22023 - m22
     else:
         h2 = 0
         t2 = L22022 - m22
