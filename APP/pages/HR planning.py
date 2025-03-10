@@ -74,7 +74,7 @@ def HR_planning():
     **Consider that your firm**:
     1. Produces according to $Q=L_1^{0.1}L_2^{0.72}L_3^{0.05}K^{0.11}$
     2. Sold 1,000 units of its product in 2023 
-    2. Pays Administrative employees the yearly gross income for Professionals in the EU in 2023 from Skills Intelligence
+    2. Pays Support intellectuals and scientists, technicians and professionals 14 times per year the monthly gross income for Professionals in the EU in 2023 reported in Skills Intelligence
     3. Uses 1 unit of capital
     """)
     st.text_area("", placeholder="Estimate the precise shortage or surplus of Support intellectuals and scientists, technicians and professionals for May 2025")
