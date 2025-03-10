@@ -77,7 +77,7 @@ def HR_planning():
     2. Pays Support intellectuals and scientists, technicians and professionals 14 times per year the monthly gross income for Professionals in the EU in 2023 reported in Skills Intelligence
     3. Uses 1 unit of capital
     """)
-    st.text_area("", placeholder="Estimate the precise shortage or surplus of Support intellectuals and scientists, technicians and professionals for May 2025")
+    st.text_area("", placeholder="Write here the predicted availability of workers, as integers, as well as the predicted shortage or surplus of Support intellectuals and scientists, technicians and professionals for May 2025")
     st.text_area("", placeholder="Recommend the strategy the firm should follow to prevent labor mismatch. In the case of a shortage, provide an estimate of the vacancy yield")
 
 st.set_page_config(page_title="HR planning", layout="wide")
