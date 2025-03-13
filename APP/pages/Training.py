@@ -6,12 +6,12 @@ from streamlit_option_menu import option_menu
 
 def Training():
 
-    with st.sidebar.expander("Trained employee's skill"):
-        t0 = st.number_input("-1", key="t0", step=1)
-        t1 = st.number_input("+1", key="t1", step=1)
-    with st.sidebar.expander("Non-trained employee's skill"):
-        n0 = st.number_input("-1", key="n0", step=1)
-        n1 = st.number_input("+1", key="n1", step=1)
+    with st.sidebar.expander("Skill value (0-10) of the trained 'Support intellectuals and scientists, technicians and professionals'):
+        t0 = st.number_input("Before training", key="t0", step=1)
+        t1 = st.number_input("After training", key="t1", step=1)
+    with st.sidebar.expander("Skill value (0-100) of the non-trained 'Support intellectuals and scientists, technicians and professionals'):
+        n0 = st.number_input("Before training", key="n0", step=1)
+        n1 = st.number_input("Before training", key="n1", step=1)
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['-1','+1'],[t0,t1],color='red',label="Trained employee's skill")
     plt.plot(['-1','+1'],[n0,n1],color='blue',label="Non-trained employee's skill")
