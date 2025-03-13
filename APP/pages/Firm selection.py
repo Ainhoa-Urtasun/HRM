@@ -7,7 +7,7 @@ from numpy.linalg import norm
 
 def firm_selection():
     st.write("""
-    **Instructions to use SABI (UPNA Library)**:
+    ### Instructions to use SABI (UPNA Library) ###:
     1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
     2. In **Employees** -> **Employees' segmentation in Spain**:
        - In **Type of employee**, select:
@@ -25,14 +25,14 @@ def firm_selection():
     st.write("""
     ### On-the-Job Training  
 
-    To successfully implement Power BI, employees need specific skills that they may not yet have.  
+    To successfully implement Power BI, 'Support intellectuals and scientists, technicians and professionals' need specific skills that they may not yet have.  
 
     #### Step 1: Identify the Key Skill  
     Choose one skill that the on-the-job training should focus on:  
-    - **Willingness to learn** – Adapting to new tools and technologies  
-    - **Collaboration** – Working effectively in teams and networks  
-    - **Efficiency** – Using Power BI to streamline workflows  
-    - **Proactive approach** – Taking initiative in data-driven decision-making  
+    - **Demonstrating willingness to learn** – Adapting to new tools and technologies  
+    - **Collaborating in teams and networks** – Working effectively in teams and networks  
+    - **Working efficiently** – Using Power BI to streamline workflows  
+    - **Taking a proactive approach** – Taking initiative in data-driven decision-making  
 
     #### Step 2: Design a Training Program  
     Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
