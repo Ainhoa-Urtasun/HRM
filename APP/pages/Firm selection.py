@@ -38,7 +38,7 @@ def firm_selection():
     Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
     """)  
 
-st.text_area("", placeholder="Write your training plan here.")  
+    st.text_area("", placeholder="Write your training plan here.")  
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
