@@ -14,22 +14,16 @@ def Training():
         n1 = st.number_input("After training", key="n1", step=1)
 
     st.write("""
-    ### Instructions to use SABI (UPNA Library):
-    1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
-    2. In **Employees** -> **Employees' segmentation in Spain**:
-       - In **Type of employee**, select:
-         - Other managers
-         - Support intellectuals and scientists, technicians and professionals
-         - Administrative employees
-       - In **Select periods** -> **Absolute years**, select **2022** and **2023**
-       - In **Criteria to be valid**, ensure **All selected years** is chosen
-       - In **Select the gender**, set a minimum of **250 Women**
-    3. Choose **one firm** from the resulting firms
-    """)
-    st.text_area("", placeholder="Type the name of your firm, NACE Rev. 2 Primary Code, and English trade description")
-    st.text_area("", placeholder="The firm is about to implement Power BI. Explain how Power BI can benefit your company.")  
-  
+    ### Showcase the Impact of Your On-the-Job Training!
+    
+    🚀 **Make your case compelling:**  
+    1. Use the values on your left to highlight the effectiveness of your training program.  
+    2. Leverage the visual to provide strong evidence of its success.  
+    3. Craft a persuasive pitch that convinces others of the value your training delivers!  
+    """)  
 
+st.text_area("", placeholder="Make your pitch compelling...") 
+  
     st.text_area("", placeholder="Write your training plan here.")  
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['-1','+1'],[t0,t1],color='red',label="Trained employee's skill")
