@@ -13,16 +13,22 @@ def Training():
         n0 = st.number_input("Before training", key="n0", step=1)
         n1 = st.number_input("After training", key="n1", step=1)
 
-    #### Step 1: Identify the Key Skill  
-    Choose one skill, out of the following four, that this on-the-job training should focus on:  
-    - **Demonstrating willingness to learn**
-    - **Collaborating in teams and networks**
-    - **Working efficiently**
-    - **Taking a proactive approach**
-
-    #### Step 2: Design a Training Program  
-    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
-    """)  
+    st.write("""
+    ### Instructions to use SABI (UPNA Library):
+    1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
+    2. In **Employees** -> **Employees' segmentation in Spain**:
+       - In **Type of employee**, select:
+         - Other managers
+         - Support intellectuals and scientists, technicians and professionals
+         - Administrative employees
+       - In **Select periods** -> **Absolute years**, select **2022** and **2023**
+       - In **Criteria to be valid**, ensure **All selected years** is chosen
+       - In **Select the gender**, set a minimum of **250 Women**
+    3. Choose **one firm** from the resulting firms
+    """)
+    st.text_area("", placeholder="Type the name of your firm, NACE Rev. 2 Primary Code, and English trade description")
+    st.text_area("", placeholder="The firm is about to implement Power BI. Explain how Power BI can benefit your company.")  
+  
 
     st.text_area("", placeholder="Write your training plan here.")  
     fig = plt.figure(figsize=(5,5),dpi=100)
