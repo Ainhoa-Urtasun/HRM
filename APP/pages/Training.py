@@ -11,7 +11,20 @@ def Training():
         t1 = st.number_input("After training", key="t1", step=1)
     with st.sidebar.expander("Skill value (0-100) of the non-trained 'Support intellectuals and scientists, technicians and professionals'"):
         n0 = st.number_input("Before training", key="n0", step=1)
-        n1 = st.number_input("Before training", key="n1", step=1)
+        n1 = st.number_input("After training", key="n1", step=1)
+
+    #### Step 1: Identify the Key Skill  
+    Choose one skill, out of the following four, that this on-the-job training should focus on:  
+    - **Demonstrating willingness to learn**
+    - **Collaborating in teams and networks**
+    - **Working efficiently**
+    - **Taking a proactive approach**
+
+    #### Step 2: Design a Training Program  
+    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
+    """)  
+
+    st.text_area("", placeholder="Write your training plan here.")  
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['-1','+1'],[t0,t1],color='red',label="Trained employee's skill")
     plt.plot(['-1','+1'],[n0,n1],color='blue',label="Non-trained employee's skill")
