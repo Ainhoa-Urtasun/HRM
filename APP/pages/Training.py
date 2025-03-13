@@ -22,7 +22,7 @@ def Training():
     3. Craft a persuasive pitch that convinces others of the value your training delivers!  
     """)  
 
-st.text_area("", placeholder="Make your pitch compelling...") 
+    st.text_area("", placeholder="Make your pitch compelling...") 
   
     st.text_area("", placeholder="Write your training plan here.")  
     fig = plt.figure(figsize=(5,5),dpi=100)
