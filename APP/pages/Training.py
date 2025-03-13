@@ -29,7 +29,7 @@ def Training():
     plt.plot(['Before training','After training'],[n0,n1],color='blue',label="Skill Level of Non-Trained Employees (Scale: 0-100)")
     plt.plot(['Before training','After training'],[t0,t0+(n1-n0)],color='green',ls='-.',label='Counterfactual')
     plt.title('Assessing Training Impact with DiD')
-    plt.legend()
+    plt.legend(fontsize=8)
     st.pyplot(fig)
   
 st.set_page_config(page_title="Training", layout="wide")
