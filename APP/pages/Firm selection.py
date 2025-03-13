@@ -28,14 +28,14 @@ def firm_selection():
     To successfully implement Power BI, 'Support intellectuals and scientists, technicians and professionals' need specific skills that they may not yet have.  
 
     #### Step 1: Identify the Key Skill  
-    Choose one or more skill(s) that the on-the-job training should focus on:  
+    Choose one skill, out of the following four, that this on-the-job training should focus on:  
     - **Demonstrating willingness to learn**
     - **Collaborating in teams and networks**
     - **Working efficiently**
     - **Taking a proactive approach**
 
     #### Step 2: Design a Training Program  
-    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill(s) and ensure a smooth Power BI implementation.  
+    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
     """)  
 
     st.text_area("", placeholder="Write your training plan here.")  
