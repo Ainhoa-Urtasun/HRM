@@ -17,13 +17,28 @@ def firm_selection():
        - In **Select periods** -> **Absolute years**, select **2022** and **2023**
        - In **Criteria to be valid**, ensure **All selected years** is chosen
        - In **Select the gender**, set a minimum of **250 Women**
-    3. In **Industry** -> **Industry classifications**, select:
-        - NACE Rev. 2 (Primary codes only): 6209, 6910, 8730  
-    4. Choose **one firm** from the resulting firms
+    3. Choose **one firm** from the resulting firms
     """)
-    st.text_area("", placeholder="Type the name of your firm, its NACE Rev. 2 Primary Code, its legal form, and date of establishment")
-    st.text_area("", placeholder="Show the percentage change in employment from 2022 to 2023 separately for Other managers; Support intellectuals and scientists, technicians and professionals; and Administrative employees (adding up women and men)")
-    st.text_area("", placeholder="Comment here on gender differences in the number of employees across occupations and their growth over time")
+    st.text_area("", placeholder="Type the name of your firm, NACE Rev. 2 Primary Code, and English trade description")
+    st.text_area("", placeholder="The firm is about to implement Power BI. Explain how Power BI can benefit your company.")  
+
+    st.write("""
+    ### On-the-Job Training  
+
+    To successfully implement Power BI, employees need specific skills that they may not yet have.  
+
+    #### Step 1: Identify the Key Skill  
+    Choose one skill that the on-the-job training should focus on:  
+    - **Willingness to learn** – Adapting to new tools and technologies  
+    - **Collaboration** – Working effectively in teams and networks  
+    - **Efficiency** – Using Power BI to streamline workflows  
+    - **Proactive approach** – Taking initiative in data-driven decision-making  
+
+    #### Step 2: Design a Training Program  
+    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
+    """)  
+
+st.text_area("", placeholder="Write your training plan here.")  
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
