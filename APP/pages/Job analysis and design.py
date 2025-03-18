@@ -67,4 +67,7 @@ selected = option_menu(
     orientation="vertical",
 )
 
+# Call the selected section
+if selected == "Job analysis and design":
+    job_analysis_and_design()
 
