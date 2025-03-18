@@ -14,11 +14,10 @@ def Training():
         n1 = st.number_input("After training", key="n1", step=1)
 
     st.write("""
-    ### Showcase the Impact of Your On-the-Job Training!
+    ### Designing On-the-Job Training
     
-    🚀 **Make your case compelling:**  
-    1. Use the values on your left to highlight the effectiveness of your training program.  
-    2. Leverage the visual to provide strong evidence of its success.  
+    1. Describe what the values on your left represent  
+    2. Leverage the visual to provide strong evidence of the expected success of on-the-job training
     3. Craft a persuasive pitch that convinces others of the value your training delivers!  
     """)  
 
