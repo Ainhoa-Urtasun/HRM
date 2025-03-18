@@ -4,10 +4,10 @@ import numpy as np
 
 def job_analysis_and_design():
     st.sidebar.radio(
-        "Select the job of 'Other managers' at your firm:",
+        "Select the job of 'Support intellectuals and scientists, technicians and professionals' at your firm:",
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
-    st.sidebar.write("Design the job of 'Other managers' at your firm:")
+    st.sidebar.write("Redesign the job of 'Support intellectuals and scientists, technicians and professionals' at your firm considering the implementation of Power-BI:")
     
     # Input sections for different skill categories
     with st.sidebar.expander("Intellectual"):
