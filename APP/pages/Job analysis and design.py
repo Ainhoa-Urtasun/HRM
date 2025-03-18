@@ -52,7 +52,7 @@ def job_analysis_and_design():
     max_values = np.max(matrix, axis=0)
     st.write("Skill requirements for 'Other managers' at your firm:", max_values)
 
-    st.text_area("", placeholder="he implementation of Power BI will widen the skill gap for those in the role of 'supporting intellectuals, scientists, technicians, and professionals' at your firm. What measures can you take to close this gap?")
+    st.text_area("", placeholder="The implementation of Power BI will widen the skill gap for those in the role of 'supporting intellectuals, scientists, technicians, and professionals' at your firm. What measures can you take to close this gap?")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
