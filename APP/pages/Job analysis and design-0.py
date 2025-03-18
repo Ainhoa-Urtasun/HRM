@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import numpy as np
 
-def job_analysis_and_design():
+def job_analysis_and_design-0():
     st.sidebar.radio(
         "Select the job of 'Other managers' at your firm:",
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
@@ -53,21 +53,4 @@ def job_analysis_and_design():
     st.write("Skill requirements for 'Other managers' at your firm:", max_values)
 
     st.text_area("", placeholder="Calculate Clara's skill gap while working full-time as an 'Other Managers' at your firm, given her current skill set: 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
-
-# Streamlit page setup
-st.set_page_config(page_title="Job Analysis and Design", layout="wide")
-
-# Option menu
-selected = option_menu(
-    menu_title="",  # No title for the menu
-    options=["Job analysis and design"],  # Menu options
-    icons=["book"],  # Icons for options
-    menu_icon="cast",  # Icon for the menu
-    default_index=0,  # Default selected option
-    orientation="vertical",
-)
-
-# Call the selected section
-if selected == "Job analysis and design":
-    job_analysis_and_design()
 
