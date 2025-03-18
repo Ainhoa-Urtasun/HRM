@@ -20,25 +20,12 @@ def firm_selection():
     3. Choose **one firm** from the resulting firms
     """)
     st.text_area("", placeholder="Type the name of your firm, NACE Rev. 2 Primary Code, and English trade description")
-    st.text_area("", placeholder="The firm is about to implement Power BI. Explain how Power BI can benefit your company.")  
-
+     
     st.write("""
-    ### On-the-Job Training  
+    ### New technology: Power BI
+    """)
+    st.text_area("", placeholder="Your firm is about to implement Power BI. Explain, with your own words, how Power BI can benefit your company.") 
 
-    To successfully implement Power BI, 'Support intellectuals and scientists, technicians and professionals' need specific skills that they may not yet have.  
-
-    #### Step 1: Identify the Key Skill  
-    Choose one skill, out of the following four, that this on-the-job training should focus on:  
-    - **Demonstrating willingness to learn**
-    - **Collaborating in teams and networks**
-    - **Working efficiently**
-    - **Taking a proactive approach**
-
-    #### Step 2: Design a Training Program  
-    Develop an on-the-job training plan for 'Support intellectuals and scientists, technicians, and professionals' to strengthen the selected skill and ensure a smooth Power BI implementation.  
-    """)  
-
-    st.text_area("", placeholder="Write your training plan here.")  
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
