@@ -48,11 +48,11 @@ def job_analysis_and_design():
         [s41, s42, s43, s44],
         [s51, s52, s53, s54],
     ])
-    st.write("Task skill matrix for 'Other managers at your firm':", matrix)
+    st.write("Task skill matrix for 'Support intellectuals and scientists, technicians and professionals' at your firm:", matrix)
     max_values = np.max(matrix, axis=0)
     st.write("Skill requirements for 'Other managers' at your firm:", max_values)
 
-    st.text_area("", placeholder="Calculate Clara's skill gap while working full-time as an 'Other Managers' at your firm, given her current skill set: 25 of Demonstrating willingness to learn, 25 of Collaborating in teams and networks, 25 of Working efficiently, and 25 of Taking a proactive approach in relation to the job you have just designed")
+    st.text_area("", placeholder="he implementation of Power BI will widen the skill gap for those in the role of 'supporting intellectuals, scientists, technicians, and professionals' at your firm. What measures can you take to close this gap?")
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
