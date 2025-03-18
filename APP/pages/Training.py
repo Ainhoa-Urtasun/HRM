@@ -18,10 +18,10 @@ def Training():
     
     1. Describe what the values on your left represent  
     2. Leverage the visual to provide strong evidence of the expected success of on-the-job training 
-    3. Craft a persuasive pitch that convinces others of the value your training delivers!  
+    3. Explain the counterfactual skill change, counterfactual skill, and DiD to effectively demonstrate the impact of your training
     """)  
 
-    st.text_area("", placeholder="Make your pitch compelling...") 
+    st.text_area("", placeholder="Writte here...") 
   
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['Before training','After training'],[t0,t1],color='red',label="Skill Level of Trained Employees (Scale: 0-100)")
