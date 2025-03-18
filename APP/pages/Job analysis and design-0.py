@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import numpy as np
 
-def job_analysis_and_design-0():
+
     st.sidebar.radio(
         "Select the job of 'Other managers' at your firm:",
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
