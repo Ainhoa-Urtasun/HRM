@@ -23,8 +23,10 @@ def firm_selection():
      
     st.write("""
     ### New technology: Power BI
+    1. Explain what Power BI is
+    2. Your firm has decided to implement Power BI. Explain how Power BI can benefit your firm
     """)
-    st.text_area("", placeholder="Your firm is about to implement Power BI. Explain, with your own words, how Power BI can benefit your company.") 
+    st.text_area("", placeholder="Write here if necessary...") 
 
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
