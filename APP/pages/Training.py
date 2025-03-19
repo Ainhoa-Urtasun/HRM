@@ -15,8 +15,8 @@ def Training():
 
     st.write("""
     ### On-the-Job Training
-    1. Persuasively present your proposed on-the-job training by leveraging visuals to provide compelling evidence of its expected success
-    2. Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) method to effectively demonstrate the impact of your training
+    1. Persuasively present your proposed on-the-job training by leveraging the visual to provide compelling evidence of its expected success
+    2. Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to effectively demonstrate the impact of your training
     """)  
 
     st.text_area("", placeholder="Writte here...") 
