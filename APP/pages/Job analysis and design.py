@@ -3,11 +3,17 @@ from streamlit_option_menu import option_menu
 import numpy as np
 
 def job_analysis_and_design():
-    st.sidebar.radio(
-        "Select the job of 'Support intellectuals and scientists, technicians and professionals' at your firm:",
+
+    st.write("""
+    ### How a new technology affects job analysis and design
+    1. On your left, evaluate the job of 'Support intellectuals and scientists, technicians and professionals' after the implementation of Power BI
+    2. What skill has changed the most?
+    3. Suggest a training program to close the skill gap of your workers
+    """)
+    st.text_area("", placeholder="Write here if necessary...") 
+    st.sidebar.radio(,
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
-    st.sidebar.write("Redesign the job of 'Support intellectuals and scientists, technicians and professionals' at your firm considering the implementation of Power-BI:")
     
     # Input sections for different skill categories
     with st.sidebar.expander("Intellectual"):
