@@ -22,9 +22,8 @@ def firm_selection():
      
     st.write("""
     ### New technology: Power BI
-    1. Describe the economic activities of your firm
-    2. Explain what Power BI is
-    3. Your firm has decided to implement Power BI. Explain how Power BI can benefit your firm
+    ## 1. Explain what Power BI is
+    ## 2. Explain how Power BI can help your company perform its economic activities
     """)
     st.text_area("", placeholder="Write here if necessary...") 
 
