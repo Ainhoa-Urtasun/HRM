@@ -47,10 +47,10 @@ def job_analysis_and_design():
     ])
     
     st.write("""
-    ### How does the implementation of a new technology affect job analysis and design?
-    1. On your left, evaluate the job of 'Support intellectuals and scientists, technicians and professionals' after the implementation of Power BI
-    2. Based on the matrix below, explain what skill requirement has changed the most
-    3. Suggest a training program to close your workers' skill gap
+    ## How does Power BI affect job analysis and design?
+    ### 3. On your left, evaluate the task within the job of 'Support intellectuals and scientists, technicians and professionals' that you believe will change the most
+    ### 4. Does the implementation of Power BI widen the workers' skill gap? Why or why not?
+    ### 5. Which skill should on-the-job training focus on?
     """)
     st.write("", matrix)
     st.text_area("", placeholder="Write here if necessary...") 
