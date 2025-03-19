@@ -5,17 +5,8 @@ import numpy as np
 def job_analysis_and_design():
 
     st.write("""
-    ### How a new technology affects job analysis and design
+    ### How does a new technology affect job analysis and design?
     1. On your left, evaluate the job of 'Support intellectuals and scientists, technicians and professionals' after the implementation of Power BI
-    2. What skill has changed the most?
-    3. Suggest a training program to close the skill gap of your workers
-    """)
-    st.text_area("", placeholder="Write here if necessary...") 
-    st.sidebar.radio("",
-        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
-    )
-    
-    # Input sections for different skill categories
     with st.sidebar.expander("Intellectual"):
         s11 = st.number_input("Demonstrating willingness to learn", key='s11', min_value=0, max_value=100, step=1)
         s12 = st.number_input("Collaborating in teams and networks", key='s12', min_value=0, max_value=100, step=1)
@@ -46,7 +37,6 @@ def job_analysis_and_design():
         s53 = st.number_input("Working efficiently", key='s53', min_value=0, max_value=100, step=1)
         s54 = st.number_input("Taking a proactive approach", key='s54', min_value=0, max_value=100, step=1)
 
-    # Create matrix and calculate maximum values
     matrix = np.array([
         [s11, s12, s13, s14],
         [s21, s22, s23, s24],
@@ -55,10 +45,15 @@ def job_analysis_and_design():
         [s51, s52, s53, s54],
     ])
     st.write("Task skill matrix for 'Support intellectuals and scientists, technicians and professionals' at your firm:", matrix)
-    max_values = np.max(matrix, axis=0)
-    st.write("Skill requirements for 'Other managers' at your firm:", max_values)
 
-    st.text_area("", placeholder="The implementation of Power BI will widen the skill gap for those in the role of 'supporting intellectuals, scientists, technicians, and professionals' at your firm. What measures can you take to close this gap?")
+    2. What skill has changed the most?
+    3. Suggest a training program to close your workers' skill gap
+    """)
+    st.text_area("", placeholder="Write here if necessary...") 
+    st.sidebar.radio("",
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
+    )
+    
 
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
