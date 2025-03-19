@@ -14,11 +14,9 @@ def Training():
         n1 = st.number_input("After training", key="n1", step=1)
 
     st.write("""
-    ### Designing On-the-Job Training
-    
-    1. Describe what the values on your left represent  
-    2. Leverage the visual to provide strong evidence of the expected success of on-the-job training 
-    3. Explain the counterfactual skill change, counterfactual skill, and DiD to effectively demonstrate the impact of your training
+    ### On-the-Job Training
+    1. Persuasively present your proposed on-the-job training by leveraging visuals to provide compelling evidence of its expected success
+    2. Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) method to effectively demonstrate the impact of your training
     """)  
 
     st.text_area("", placeholder="Writte here...") 
