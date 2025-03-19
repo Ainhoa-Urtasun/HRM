@@ -11,7 +11,7 @@ def job_analysis_and_design():
     3. Suggest a training program to close the skill gap of your workers
     """)
     st.text_area("", placeholder="Write here if necessary...") 
-    st.sidebar.radio(,
+    st.sidebar.radio("",
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
     
