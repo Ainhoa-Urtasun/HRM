@@ -19,12 +19,12 @@ def firm_selection():
        - In **Select the gender**, set a minimum of **250 Women**
     3. Choose **one firm** from the resulting firms
     """)
-    st.text_area("", placeholder="Type the name of your firm, NACE Rev. 2 Primary Code, and English trade description")
      
     st.write("""
     ### New technology: Power BI
-    1. Explain what Power BI is
-    2. Your firm has decided to implement Power BI. Explain how Power BI can benefit your firm
+    1. Describe the economic activities of your firm
+    2. Explain what Power BI is
+    3. Your firm has decided to implement Power BI. Explain how Power BI can benefit your firm
     """)
     st.text_area("", placeholder="Write here if necessary...") 
 
