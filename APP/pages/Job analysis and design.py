@@ -3,6 +3,10 @@ from streamlit_option_menu import option_menu
 import numpy as np
 
 def job_analysis_and_design():
+
+    st.sidebar.radio("",
+        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
+    )
     
     with st.sidebar.expander("Intellectual"):
         s11 = st.number_input("Demonstrating willingness to learn", key='s11', min_value=0, max_value=100, step=1)
@@ -41,17 +45,16 @@ def job_analysis_and_design():
         [s41, s42, s43, s44],
         [s51, s52, s53, s54],
     ])
+    
     st.write("""
-    ### How does a new technology affect job analysis and design?
+    ### How does the implementation of a new technology affect job analysis and design?
     1. On your left, evaluate the job of 'Support intellectuals and scientists, technicians and professionals' after the implementation of Power BI
-    2. What skill has changed the most?
+    2. Based on the matrix below, explain what skill requirement has changed the most
     3. Suggest a training program to close your workers' skill gap
     """)
-    st.write("Task skill matrix for 'Support intellectuals and scientists, technicians and professionals' at your firm:", matrix)
+    st.write("", matrix)
     st.text_area("", placeholder="Write here if necessary...") 
-    st.sidebar.radio("",
-        ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
-    )
+ 
     
 
 # Streamlit page setup
