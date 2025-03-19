@@ -7,7 +7,7 @@ from numpy.linalg import norm
 
 def firm_selection():
     st.write("""
-    ### Instructions to use SABI (UPNA Library):
+    ## Instructions to use SABI (UPNA Library):
     1. In **Personalizar** -> **Opciones generales**, set **Idioma** to English.
     2. In **Employees** -> **Employees' segmentation in Spain**:
        - In **Type of employee**, select:
@@ -21,9 +21,9 @@ def firm_selection():
     """)
      
     st.write("""
-    ### New technology: Power BI
-    ## 1. Explain what Power BI is
-    ## 2. Explain how Power BI can help your company perform its economic activities
+    ## New technology: Power BI
+    ### 1. Explain what Power BI is
+    ### 2. Explain how Power BI can help your company perform its economic activities
     """)
     st.text_area("", placeholder="Write here if necessary...") 
 
