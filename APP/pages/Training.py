@@ -14,12 +14,17 @@ def Training():
         n1 = st.number_input("After training", key="n1", step=1)
 
     st.write("""
-    ## On-the-Job Training
-    ### 6. Fill in the values on your left and present your training proposal persuasively by leveraging the visual
-    ### 7. Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to effectively demonstrate the impact of the training
+    #### Question 5:
+    Fill in the values on your left with made-up data so that the visual demonstrates the effectiveness of the training. Explain what these values mean
+    """)
+    st.text_area("", placeholder="Writte your response to Question 5 here...") 
+
+    st.write("""
+    #### Question 6:
+    Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to demonstrate the impact of the training
     """)  
 
-    st.text_area("", placeholder="Writte here...") 
+    
   
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['Before training','After training'],[t0,t1],color='red',label="Skill Level of Trained Employees (Scale: 0-100)")
