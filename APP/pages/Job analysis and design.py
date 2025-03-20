@@ -52,6 +52,12 @@ def job_analysis_and_design():
     """)
     st.write("", matrix)
     st.text_area("", placeholder="Write the answer to Question 3 here...") 
+
+    st.write("""
+    #### Question 4: 
+    What will be the effects of the implementation of the new technology on the workers' skill gap? Explain
+    """)
+    st.text_area("", placeholder="Write the answer to Question 4 here...") 
  
     
 
