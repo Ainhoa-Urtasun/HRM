@@ -55,7 +55,7 @@ def job_analysis_and_design():
 
     st.write("""
     #### Question 4: 
-    What will be the effects of the implementation of the new technology on the workers' skill gap? Is there something the firm should do? Explain
+    Why does implementing Power BI widen the workers' skill gap? What measures should the firm take to bridge this gap?
     """)
     st.text_area("", placeholder="Write the answer to Question 4 here...") 
  
