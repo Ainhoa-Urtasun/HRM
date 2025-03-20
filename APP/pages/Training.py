@@ -23,9 +23,8 @@ def Training():
     #### Question 6:
     Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to demonstrate the impact of the training
     """)  
+    st.text_area("", placeholder="Writte your response to Question 6 here...") 
 
-    
-  
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['Before training','After training'],[t0,t1],color='red',label="Skill Level of Trained Employees (Scale: 0-100)")
     plt.plot(['Before training','After training'],[n0,n1],color='blue',label="Skill Level of Non-Trained Employees (Scale: 0-100)")
