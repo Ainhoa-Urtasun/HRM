@@ -47,10 +47,7 @@ def job_analysis_and_design():
     ])
     
     st.write("""
-    ## How does Power BI affect job analysis and design?
-    ### 3. On your left, evaluate the task within the job of 'Support intellectuals and scientists, technicians and professionals' that you believe will change the most
-    ### 4. Does the implementation of Power BI widen the workers' skill gap? Why or why not?
-    ### 5. Which skill should on-the-job training focus on?
+    ### Question 3: On your left, select the job that should master Power BI and evaluate the task that it will need to change the most
     """)
     st.write("", matrix)
     st.text_area("", placeholder="Write here if necessary...") 
