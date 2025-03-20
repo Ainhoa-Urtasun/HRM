@@ -30,7 +30,7 @@ def firm_selection():
     #### Question 2:
     Which job within your firm should master the new technology? Why?
     """)
-    st.text_area("Question 2: ", placeholder="Write here...") 
+    st.text_area("", placeholder="Write here...") 
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
