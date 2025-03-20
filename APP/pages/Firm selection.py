@@ -21,11 +21,13 @@ def firm_selection():
     """)
      
     st.write("""
-    ## New technology: Power BI
-    ### 1. Explain what Power BI is
-    ### 2. Explain how Power BI can help your company perform its economic activities
+    ### 1. Power BI, a highly demanded software developed by Microsoft, enables businesses to make data-driven decisions by seamlessly integrating and visualizing data. 
+    Your firm has decided to implement this powerful tool. Describe how Power BI can support your firm in the performance of its economic activities activities.
     """)
-    st.text_area("", placeholder="Write here if necessary...") 
+    st.text_area("", placeholder="Write here...") 
+    ### 2. Which job within your firm, do you think, should master the new technology? Why?
+    """)
+    st.text_area("", placeholder="Write here...") 
 
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
