@@ -25,12 +25,12 @@ def firm_selection():
     Power BI, a highly demanded software developed by Microsoft, enables businesses to make data-driven decisions by seamlessly integrating and visualizing data. 
     Your firm has decided to implement this powerful tool. Describe how Power BI can support your firm in the performance of its economic activities activities
     """)
-    st.text_area("", placeholder="Write here your response to Question 1...")
+    st.text_area("", placeholder="Write your response to Question 1 here...")
     st.write("""
     #### Question 2:
     Which job within your firm should master the new technology? Why?
     """)
-    st.text_area("", placeholder="Write here your response to Question 2...") 
+    st.text_area("", placeholder="Write your response to Question 2 here...") 
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
 
