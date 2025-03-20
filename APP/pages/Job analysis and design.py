@@ -59,8 +59,6 @@ def job_analysis_and_design():
     """)
     st.text_area("", placeholder="Write the answer to Question 4 here...") 
  
-    
-
 # Streamlit page setup
 st.set_page_config(page_title="Job Analysis and Design", layout="wide")
 
