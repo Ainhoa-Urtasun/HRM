@@ -19,12 +19,6 @@ def Training():
     """)
     st.text_area("", placeholder="Writte your response to Question 5 here...") 
 
-    st.write("""
-    #### Question 6:
-    Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to demonstrate the impact of the training
-    """)  
-    st.text_area("", placeholder="Writte your response to Question 6 here...") 
-
     fig = plt.figure(figsize=(5,5),dpi=100)
     plt.plot(['Before training','After training'],[t0,t1],color='red',label="Skill Level of Trained Employees (Scale: 0-100)")
     plt.plot(['Before training','After training'],[n0,n1],color='blue',label="Skill Level of Non-Trained Employees (Scale: 0-100)")
@@ -32,6 +26,12 @@ def Training():
     plt.title('Assessing Training Impact with DiD')
     plt.legend(fontsize=8)
     st.pyplot(fig)
+
+    st.write("""
+    #### Question 6:
+    Clearly explain the counterfactual skill change, counterfactual skill, and Difference-in-Differences (DiD) values to demonstrate the impact of the training
+    """)  
+    st.text_area("", placeholder="Writte your response to Question 6 here...") 
   
 st.set_page_config(page_title="Training", layout="wide")
 
