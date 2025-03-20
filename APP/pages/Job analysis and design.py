@@ -48,7 +48,7 @@ def job_analysis_and_design():
     
     st.write("""
     #### Question 3: 
-    On your left, select the job that should master Power BI and evaluate the task that it will need to change the most. Explain the changes
+    Select on your left the job that should master Power BI and evaluate the task that it will need to change the most. Explain the changes
     """)
     st.write("", matrix)
     st.text_area("", placeholder="Write the answer to Question 3 here...") 
