@@ -25,6 +25,7 @@ def firm_selection():
     Your firm has decided to implement this powerful tool. Describe how Power BI can support your firm in the performance of its economic activities activities.
     """)
     st.text_area("", placeholder="Write here...") 
+    st.write("""
     ### 2. Which job within your firm, do you think, should master the new technology? Why?
     """)
     st.text_area("", placeholder="Write here...") 
