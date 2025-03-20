@@ -20,8 +20,7 @@ def firm_selection():
     3. Choose **one firm** from the resulting firms
     """)
      
-    st.text_area("Question 1: Power BI, a highly demanded software developed by Microsoft, enables businesses to make data-driven decisions by seamlessly integrating and visualizing data. 
-    Your firm has decided to implement this powerful tool. Describe how Power BI can support your firm in the performance of its economic activities activities.", placeholder="Write here...") 
+    st.text_area("Question 1: Power BI, a highly demanded software developed by Microsoft, enables businesses to make data-driven decisions by seamlessly integrating and visualizing data. Your firm has decided to implement this powerful tool. Describe how Power BI can support your firm in the performance of its economic activities activities", placeholder="Write here...") 
     st.text_area("Question 2: Which job within your firm, do you think, should master the new technology? Why?", placeholder="Write here...") 
 
 st.set_page_config(page_title="Firm Selection", layout="wide")
