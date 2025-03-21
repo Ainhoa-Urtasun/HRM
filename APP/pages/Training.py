@@ -6,10 +6,10 @@ from streamlit_option_menu import option_menu
 
 def Training():
 
-    with st.sidebar.expander("Skill Level of Trained 'Support intellectuals and scientists, technicians and professionals' (Scale: 0-100)"):
+    with st.sidebar.expander("Skill level of trained employees (Scale: 0-100)"):
         t0 = st.number_input("Before training", key="t0", step=1)
         t1 = st.number_input("After training", key="t1", step=1)
-    with st.sidebar.expander("Skill Level of Non-Trained 'Support intellectuals and scientists, technicians and professionals' (Scale: 0-100)"):
+    with st.sidebar.expander("Skill level of non-trained employees' (Scale: 0-100)"):
         n0 = st.number_input("Before training", key="n0", step=1)
         n1 = st.number_input("After training", key="n1", step=1)
 
