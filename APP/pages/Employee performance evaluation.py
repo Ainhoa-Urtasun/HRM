@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 # Page configuration must be at the top
-st.set_page_config(page_title="Employee performance", layout="wide")
+st.set_page_config(page_title="Employee performance evaluation", layout="wide")
 
 def Employee_performance():
     # Sidebar inputs for employee skills
@@ -46,7 +46,7 @@ def Employee_performance():
 # Option menu
 selected = option_menu(
     menu_title="",  # required
-    options=['Employee performance'],  # required
+    options=['Employee performance evaluation'],  # required
     icons=['people'],  # optional
     menu_icon="cast",  # optional
     default_index=0,  # optional
@@ -54,5 +54,5 @@ selected = option_menu(
 )
 
 # Call the selected section
-if selected == "Employee performance":
+if selected == "Employee performance evaluation":
     Employee_performance()
