@@ -8,40 +8,26 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Employee performance evaluation", layout="wide")
 
 def Employee_performance():
-    # Sidebar inputs for employee skills
-    st.sidebar.write("Vector of skills possessed by the employee:")
-    with st.sidebar.expander("Vector of Skills Possessed by the Employee"):
-        s1 = st.number_input("Demonstrating willingness to learn", key='s1_emp', min_value=0, max_value=100, step=1)
-        s2 = st.number_input("Collaborating in teams and networks", key='s2_emp', min_value=0, max_value=100, step=1)
-        s3 = st.number_input("Working efficiently", key='s3_emp', min_value=0, max_value=100, step=1)
-        s4 = st.number_input("Taking a proactive approach", key='s4_emp', min_value=0, max_value=100, step=1)
 
-    # Sidebar inputs for required skills
-    st.sidebar.write("Vector of required skills for the job:")
-    with st.sidebar.expander("Vector of Required Skills"):
-        s1k = st.number_input("Demonstrating willingness to learn", key='s1_req', min_value=0, max_value=100, step=1)
-        s2k = st.number_input("Collaborating in teams and networks", key='s2_req', min_value=0, max_value=100, step=1)
-        s3k = st.number_input("Working efficiently", key='s3_req', min_value=0, max_value=100, step=1)
-        s4k = st.number_input("Taking a proactive approach", key='s4_req', min_value=0, max_value=100, step=1)
+    st.title("Real Unit Labor Cost (RULC) Visualization")
+    st.write("Please enter your firm's RULC for the following years:")
 
-    # Calculate skill gap
-    employee_skills = np.array([s1, s2, s3, s4]) / np.sqrt(5)
-    required_skills = np.array([s1k, s2k, s3k, s4k]) / np.sqrt(5)
-    gap = np.sqrt(np.sum((required_skills - employee_skills) ** 2))
+    r2021 = st.number_input("RULC for 2021", min_value=0.0, step=0.01, format="%.2f")
+    r2022 = st.number_input("RULC for 2022", min_value=0.0, step=0.01, format="%.2f")
+    r2023 = st.number_input("RULC for 2023", min_value=0.0, step=0.01, format="%.2f")
 
-    st.write(f"Skill Gap: {gap:.2f}")
+    if r2021 and r2022 and r2023:
+        years = [2021, 2022, 2023]
+        values = [r2021, r2022, r2023]
 
-    # Define effort levels and calculate cost of effort
-    e = np.linspace(1, 10, 100)  # Example effort levels
-    cost_of_effort = gap * e**2
+        fig, ax = plt.subplots(figsize=(6, 4))
+        ax.plot(years, values, marker='o', linestyle='-', color='blue')
+        ax.set_title("RULC Over Time")
+        ax.set_xlabel("Year")
+        ax.set_ylabel("RULC")
+        ax.grid(True)
+        st.pyplot(fig)
 
-    # Plot the cost of effort
-    fig = plt.figure(figsize=(5, 5), dpi=100)
-    plt.plot(e, cost_of_effort, color='red')
-    plt.xlabel("Effort (e)")
-    plt.title("Cost of Effort Function")
-    plt.legend()
-    st.pyplot(fig)
 
 # Option menu
 selected = option_menu(
