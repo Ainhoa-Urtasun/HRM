@@ -28,6 +28,20 @@ def Employee_performance():
         ax.grid(True)
         st.pyplot(fig)
 
+    st.title("Production Function: Q = A · L⁰·²")
+    A = st.number_input("Enter the value of A (productivity parameter):", min_value=0.1, step=0.1, format="%.2f")
+
+    if A:
+        L = np.linspace(1, 100, 100)
+        Q = A * L**0.2
+
+        fig, ax = plt.subplots(figsize=(6, 4))
+        ax.plot(L, Q, color='green')
+        ax.set_title("Production Function: Q = A · L⁰·²")
+        ax.set_xlabel("Labor (L)")
+        ax.set_ylabel("Output (Q)")
+        ax.grid(True)
+        st.pyplot(fig)
 
 # Option menu
 selected = option_menu(
