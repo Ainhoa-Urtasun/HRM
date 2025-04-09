@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
@@ -22,11 +21,15 @@ def Employee_performance():
 
         fig, ax = plt.subplots(figsize=(6, 4))
         ax.plot(years, values, marker='o', linestyle='-', color='blue')
+        ax.set_xticks(years)  # Only show 2021, 2022, 2023
         ax.set_title("RULC Over Time")
         ax.set_xlabel("Year")
         ax.set_ylabel("RULC")
         ax.grid(True)
         st.pyplot(fig)
+
+        # Ask students to explain
+        st.text_area("📝 Explain what you observe in the RULC trend:")
 
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
     A = st.number_input(
@@ -40,21 +43,25 @@ def Employee_performance():
         fig, ax = plt.subplots(figsize=(6, 4))
         ax.plot(L, Q, color='green')
         ax.set_title("Production Function")
-        ax.set_xlabel("Labor (L_{2})")
-        ax.set_ylabel("Output (Q)")
+        ax.set_xlabel("Labor ($L_2$)")
+        ax.set_ylabel("Output ($Q$)")
         ax.grid(True)
         st.pyplot(fig)
 
+        # Ask students to explain
+        st.text_area("📝 Explain the shape of the production function and what it means:")
+
 # Option menu
 selected = option_menu(
-    menu_title="",  # required
-    options=['Employee performance evaluation'],  # required
-    icons=['people'],  # optional
-    menu_icon="cast",  # optional
-    default_index=0,  # optional
+    menu_title="",
+    options=['Employee performance evaluation'],
+    icons=['people'],
+    menu_icon="cast",
+    default_index=0,
     orientation="vertical",
 )
 
 # Call the selected section
 if selected == "Employee performance evaluation":
     Employee_performance()
+
