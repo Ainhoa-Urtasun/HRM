@@ -31,6 +31,10 @@ def Employee_performance():
         #### Question 1: Explain what you observe in the RULC trend:""")
         st.text_area("", placeholder = "Write your response to Question 1 here...")
 
+        st.write("""
+        #### Question 2: Classify RULC both as an output- or input-based KPI, and as a KPI reflecting the intensive or extensive margin:""")
+        st.text_area("", placeholder = "Write your response to Question 2 here...")
+
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
     A = st.number_input(
         "Enter here the value for $L_{1}^{0.15} L_{3}^{0.05} K^{0.2}$ using 2023 SABI data for $L_1$, $L_3$, and $K$ (assume each technology depreciates €1M yearly):",
@@ -49,8 +53,12 @@ def Employee_performance():
         st.pyplot(fig)
 
         st.write("""
-        #### Question 2: Explain what the output elasticity of $L_{2}$:""")
-        st.text_area("", placeholder = "Write your response to Question 2 here...")
+        #### Question 3: Evaluate the output elasticity of $L_{2}$ at different points of the production function:""")
+        st.text_area("", placeholder = "Write your response to Question 3 here...")
+
+        st.write("""
+        #### Question 4: Classify the output elasticity of $L_2$ both as an output- or input-based KPI, and as a KPI reflecting the intensive or extensive margin::""")
+        st.text_area("", placeholder = "Write your response to Question 4 here...")
 
 # Option menu
 selected = option_menu(
