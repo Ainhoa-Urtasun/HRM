@@ -27,7 +27,9 @@ def Employee_performance():
         ax.grid(True)
         st.pyplot(fig)
 
-        st.text_area("📝 Explain what you observe in the RULC trend:")
+        st.write("""
+        #### Question 1: Explain what you observe in the RULC trend:""")
+        st.text_area("📝, placeholder = "Write your response to Question 1 here...")
 
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
     A = st.number_input(
