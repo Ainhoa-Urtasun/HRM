@@ -39,8 +39,8 @@ def Employee_performance():
 
         fig, ax = plt.subplots(figsize=(6, 4))
         ax.plot(L, Q, color='green')
-        ax.set_title("Production Function: Q = A · L⁰·²")
-        ax.set_xlabel("Labor (L)")
+        ax.set_title("Production Function")
+        ax.set_xlabel("Labor (L_{2})")
         ax.set_ylabel("Output (Q)")
         ax.grid(True)
         st.pyplot(fig)
