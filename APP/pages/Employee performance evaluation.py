@@ -48,7 +48,9 @@ def Employee_performance():
         ax.grid(True)
         st.pyplot(fig)
 
-        st.text_area("📝 Explain the shape of the production function and what it means:")
+        st.write("""
+        #### Question 2: Explain what the output elasticity of $L_{2}$:""")
+        st.text_area("", placeholder = "Write your response to Question 2 here...")
 
 # Option menu
 selected = option_menu(
