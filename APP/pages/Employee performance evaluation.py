@@ -29,7 +29,9 @@ def Employee_performance():
         st.pyplot(fig)
 
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
-    A = st.number_input("Enter here the value for $L_{1}^{0.15} L_{3}^{0.05} K^{0.2}$" using 2023 SABI data for $L_1$, $L_3$, and $K$ (assume each technology depreciates €1M yearly):", min_value=0.1, step=0.1, format="%.2f")
+    A = st.number_input(
+        "Enter here the value for $L_{1}^{0.15} L_{3}^{0.05} K^{0.2}$ using 2023 SABI data for $L_1$, $L_3$, and $K$ (assume each technology depreciates €1M yearly):",
+        min_value=0.1, step=0.1, format="%.2f")
 
     if A:
         L = np.linspace(1, 100, 100)
