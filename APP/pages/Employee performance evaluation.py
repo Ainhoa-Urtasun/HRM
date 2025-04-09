@@ -3,11 +3,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-# Page configuration must be at the top
+# Page configuration
 st.set_page_config(page_title="Employee performance evaluation", layout="wide")
 
-def Employee_performance():
+# Inject CSS to increase font size
+st.markdown("""
+    <style>
+        /* Increase font size of labels, inputs, and text */
+        div.stNumberInput label, div.stTextArea label {
+            font-size: 18px !important;
+        }
+        div.stTextArea textarea, div.stNumberInput input {
+            font-size: 18px !important;
+        }
+        /* Increase font size of general text */
+        .stMarkdown p {
+            font-size: 18px !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
+def Employee_performance():
     st.title("Real Unit Labor Cost (RULC) Visualization")
     st.write("Please enter your firm's RULC for the following years:")
 
@@ -21,14 +37,13 @@ def Employee_performance():
 
         fig, ax = plt.subplots(figsize=(6, 4))
         ax.plot(years, values, marker='o', linestyle='-', color='blue')
-        ax.set_xticks(years)  # Only show 2021, 2022, 2023
+        ax.set_xticks(years)
         ax.set_title("RULC Over Time")
         ax.set_xlabel("Year")
         ax.set_ylabel("RULC")
         ax.grid(True)
         st.pyplot(fig)
 
-        # Ask students to explain
         st.text_area("📝 Explain what you observe in the RULC trend:")
 
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
@@ -48,7 +63,6 @@ def Employee_performance():
         ax.grid(True)
         st.pyplot(fig)
 
-        # Ask students to explain
         st.text_area("📝 Explain the shape of the production function and what it means:")
 
 # Option menu
@@ -61,7 +75,7 @@ selected = option_menu(
     orientation="vertical",
 )
 
-# Call the selected section
 if selected == "Employee performance evaluation":
     Employee_performance()
+
 
