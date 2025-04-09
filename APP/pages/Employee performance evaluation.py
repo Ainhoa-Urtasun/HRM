@@ -28,7 +28,7 @@ def Employee_performance():
         ax.grid(True)
         st.pyplot(fig)
 
-    st.title("Production Function: Q = A · L⁰·²")
+    st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.2}$")
     A = st.number_input("Enter the value of A (productivity parameter):", min_value=0.1, step=0.1, format="%.2f")
 
     if A:
