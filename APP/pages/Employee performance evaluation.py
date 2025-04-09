@@ -6,23 +6,6 @@ from streamlit_option_menu import option_menu
 # Page configuration
 st.set_page_config(page_title="Employee performance evaluation", layout="wide")
 
-# Inject CSS to increase font size
-st.markdown("""
-    <style>
-        /* Increase font size of labels, inputs, and text */
-        div.stNumberInput label, div.stTextArea label {
-            font-size: 18px !important;
-        }
-        div.stTextArea textarea, div.stNumberInput input {
-            font-size: 18px !important;
-        }
-        /* Increase font size of general text */
-        .stMarkdown p {
-            font-size: 18px !important;
-        }
-    </style>
-    """, unsafe_allow_html=True)
-
 def Employee_performance():
     st.title("Real Unit Labor Cost (RULC) Visualization")
     st.write("Please enter your firm's RULC for the following years:")
