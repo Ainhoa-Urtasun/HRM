@@ -16,7 +16,7 @@ def Employee_performance():
     r2022 = st.number_input("RULC for 2022", min_value=0.0, step=0.01, format="%.2f")
     r2023 = st.number_input("RULC for 2023", min_value=0.0, step=0.01, format="%.2f")
 
-    if r2021 and r2022 and r2023:
+    if all(v is not None for v in [r2021, r2022, r2023]):
         years = [2021, 2022, 2023]
         values = [r2021, r2022, r2023]
 
