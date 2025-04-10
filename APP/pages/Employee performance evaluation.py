@@ -37,7 +37,7 @@ def Employee_performance():
 
     st.title("Production Function: $Q = L_{1}^{0.15} L_{2}^{0.25} L_{3}^{0.05} K^{0.2}$")
     A = st.number_input(
-        "Enter here the value for $L_{1}^{0.15} L_{3}^{0.05} K^{0.2}$ using 2023 SABI data for $L_1$, $L_3$, and $K$ (assume each technology depreciates €1M yearly):",
+        "Enter the value for $L_{1}^{0.15} L_{3}^{0.05} K^{0.2}$ using 2023 SABI data, by adding up women and men in $L_1$, and in $L_3$, and assuming, for $K$ that each technology depreciates by €500,000 yearly):",
         min_value=0.1, step=0.1, format="%.2f")
 
     if A:
