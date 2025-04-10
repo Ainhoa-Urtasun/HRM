@@ -63,7 +63,7 @@ def Compensation():
     st.text_area("", placeholder = "Write your response to Question 5 here...")
 
     st.write("""
-    #### Question 6: Which type of motivation--intrinsic or extrinsic--does pay-for-performance trigger?:""")
+    #### Question 6: Which type of motivation—intrinsic or extrinsic—does pay-for-performance trigger?:""")
     st.text_area("", placeholder = "Write your response to Question 6 here...")
     
 st.set_page_config(page_title="Compensation", layout="wide")
