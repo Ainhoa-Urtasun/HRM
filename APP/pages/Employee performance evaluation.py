@@ -48,7 +48,7 @@ def Employee_performance():
         ax.plot(L, Q, color='green')
         ax.set_title("Production Function")
         ax.set_xlabel("$L_2$ (Support intellectuals and scientists, technicians and professionals)")
-        ax.set_ylabel("Output ($Q$)")
+        ax.set_ylabel("$Q$ (Output)")
         ax.grid(True)
         st.pyplot(fig)
 
