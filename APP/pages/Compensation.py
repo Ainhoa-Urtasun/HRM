@@ -57,6 +57,14 @@ def Compensation():
     
     # Display the plot
     st.pyplot(fig)
+
+    st.write("""
+    #### Question 5: Explain the meaning of the supply of effort function:""")
+    st.text_area("", placeholder = "Write your response to Question 5 here...")
+
+    st.write("""
+    #### Question 6: Which type of motivation--intrinsic or extrinsic--does pay-for-performance trigger?:""")
+    st.text_area("", placeholder = "Write your response to Question 6 here...")
     
 st.set_page_config(page_title="Compensation", layout="wide")
 
