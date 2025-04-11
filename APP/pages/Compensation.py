@@ -39,7 +39,7 @@ def Compensation():
     plt.plot(w, 2 * w / g2, label=f'g₂ = {g2}', color='orange')
     
     plt.title('Effort Supply Curve')
-    plt.xlabel('Wage (w)')
+    plt.xlabel('Incentive rate')
     plt.ylabel('Effort')
     plt.legend()
     
@@ -47,7 +47,7 @@ def Compensation():
     st.pyplot(fig)
 
     st.write("""
-    #### Question 5: Explain the meaning of the supply of effort function:""")
+    #### Question 5: Who is more likely to increase effort in response to incentives? Why?:""")
     st.text_area("", placeholder="Write your response to Question 5 here...")
 
     st.write("""
