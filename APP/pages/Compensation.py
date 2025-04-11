@@ -1,20 +1,7 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
-
-import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
-
-import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
-
-import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
 
 def Compensation():
     
@@ -24,33 +11,36 @@ def Compensation():
         ("Other managers", "Support intellectuals and scientists, technicians and professionals", "Administrative employees")
     )
     
-    # Sidebar expander for skill gap input
-    with st.sidebar.expander("Skill gap"):
-        g = st.number_input(
-            "Adjust the value of g (Skill gap):",
-            key='g',
+    # Sidebar expander for skill gap inputs
+    with st.sidebar.expander("Skill gaps"):
+        g1 = st.number_input(
+            "Enter value for skill gap 1 (g₁):",
+            key='g1',
             step=1,
-            min_value=1,  # Avoid division by zero by setting min_value to 1
+            min_value=1,
             max_value=100,
-            value=10  # Default value
+            value=10
+        )
+        g2 = st.number_input(
+            "Enter value for skill gap 2 (g₂):",
+            key='g2',
+            step=1,
+            min_value=1,
+            max_value=100,
+            value=20
         )
     
-    # Store all previous g values in session state
-    if 'g_values' not in st.session_state:
-        st.session_state['g_values'] = []  # Initialize the list
-    
-    if g not in st.session_state['g_values']:
-        st.session_state['g_values'].append(g)  # Add the current g to the list if not already present
-
     # Generate the plot
-    w = np.linspace(0.1, 10, 100)  # Positive values for w
+    w = np.linspace(0.1, 10, 100)
     fig = plt.figure(figsize=(5, 5), dpi=100)
     
-    # Plot for each g in the list
-    for g_val in st.session_state['g_values']:
-        plt.plot(w, 2 * w / g_val, label=f'g = {g_val}')
+    # Plot lines for both g1 and g2
+    plt.plot(w, 2 * w / g1, label=f'g₁ = {g1}', color='blue')
+    plt.plot(w, 2 * w / g2, label=f'g₂ = {g2}', color='orange')
     
     plt.title('Effort Supply Curve')
+    plt.xlabel('Wage (w)')
+    plt.ylabel('Effort')
     plt.legend()
     
     # Display the plot
@@ -58,23 +48,23 @@ def Compensation():
 
     st.write("""
     #### Question 5: Explain the meaning of the supply of effort function:""")
-    st.text_area("", placeholder = "Write your response to Question 5 here...")
+    st.text_area("", placeholder="Write your response to Question 5 here...")
 
     st.write("""
     #### Question 6: Which type of motivation—intrinsic or extrinsic—does pay-for-performance trigger?:""")
-    st.text_area("", placeholder = "Write your response to Question 6 here...")
-    
+    st.text_area("", placeholder="Write your response to Question 6 here...")
+
 st.set_page_config(page_title="Compensation", layout="wide")
 
 selected = option_menu(
-    menu_title="",  # required
-    options=['Compensation'],  # required
-    icons=["book", "book", "people"],  # optional
-    menu_icon="cast",  # optional
-    default_index=0,  # optional
+    menu_title="",
+    options=['Compensation'],
+    icons=["book", "book", "people"],
+    menu_icon="cast",
+    default_index=0,
     orientation="vertical",
 )
 
-# Call the selected section
 if selected == "Compensation":
     Compensation()
+
