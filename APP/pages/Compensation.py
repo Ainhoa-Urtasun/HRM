@@ -51,8 +51,6 @@ def Compensation():
         plt.plot(w, 2 * w / g_val, label=f'g = {g_val}')
     
     plt.title('Effort Supply Curve')
-    plt.xlabel('Wages (w)')
-    plt.ylabel('Effort Supply')
     plt.legend()
     
     # Display the plot
