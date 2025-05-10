@@ -23,11 +23,10 @@ def firm_selection():
     st.write("""
     #### Question 1: 
     At the end of 2023, your firm promoted 1 woman and 1 man from the job category 'Support Intellectuals and Scientists, Technicians, and 
-    Professionals' to 'Other Managers'. 
-    Additionally, during 2023, 2 women and 3 men from this job left the firm. Assume
+    Professionals' to 'Other Managers'. Additionally, during 2023, 2 women and 3 men from this job left the firm. Assume
     there were no other workforce movements.
-    (1) Calculate the turnover rate for this job category by gender.
-    (2) Explain the formula you used for the calculation.
+    1. Calculate the turnover rate for this job category by gender.
+    2. Explain the formula you used for the calculation.
     """)
     st.text_area("", placeholder="Write your response to Question 1 here...")
     st.write("""
