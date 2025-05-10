@@ -38,6 +38,7 @@ def Career_development():
     plt.title("Symmetric Marginal Revenue and Different Marginal Costs")
     plt.legend()
     plt.grid(True)
+    plt.xlim(0, 5)
     plt.ylim(0, 100)
 
     st.pyplot(plt)
