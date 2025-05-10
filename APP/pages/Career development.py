@@ -7,11 +7,9 @@ def Career_development():
     st.title("Tournament Model: Marginal Revenue and Marginal Cost")
 
     # Sidebar inputs for parameters
-    w = st.sidebar.slider("Salary Increase (w)", min_value=10.0, max_value=200.0, value=70.0, step=1.0)
-    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g1)", min_value=0.1, max_value=5.0, value=0.6, step=0.1)
-    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g2)", min_value=0.1, max_value=5.0, value=1.2, step=0.1)
-    R_1 = st.sidebar.slider("Risk Aversion - Employee 1 (R1)", min_value=0.0, max_value=0.01, value=0.0001, step=0.0001)
-    R_2 = st.sidebar.slider("Risk Aversion - Employee 2 (R2)", min_value=0.0, max_value=0.01, value=0.0005, step=0.0001)
+    w = st.sidebar.slider("Salary Increase (w)", min_value=1.0, max_value=200.0, step=1.0)
+    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g1)", min_value=0.1, max_value=5.0, step=0.1)
+    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g2)", min_value=0.1, max_value=5.0, step=0.1)
 
     # Constants for the error term ξ
     E_xi = 0.2
