@@ -21,10 +21,10 @@ def Career_development():
     e_range = np.linspace(0.1, 20, 300)
 
     # Calculate Marginal Revenue and Marginal Cost for both employees
-    mr_1 = w * (e_range * np.sqrt(g_1/g_2) / (e_range + e_range * np.sqrt(g_1/g_2))**2) 
+    mr_1 = w * np.sqrt(g_1/g_2) / e_range * (1 + np.sqrt(g_1/g_2))**2 
     mc_1 = 2 * g_1 * e_range
 
-    mr_2 = w * (e_range * np.sqrt(g_2/g_1) / (e_range + e_range * np.sqrt(g_2/g_1))**2)
+    mr_2 = w * np.sqrt(g_2/g_1) / e_range * (1 + np.sqrt(g_2/g_1))**2 
     mc_2 = 2 * g_2 * e_range
 
     # Plotting Marginal Revenue and Cost
@@ -41,18 +41,6 @@ def Career_development():
     plt.legend()
     plt.grid(True)
     st.pyplot(plt)
-
-    # Calculate Optimal Efforts based on MR = MC
-    opt_e1 = round(w / (2 * g_1), 2)
-    opt_e2 = round(w / (2 * g_2), 2)
-
-    # Calculate Utilities
-    def utility(w, e_i, e_j, E_xi, R, Var_xi, g):
-        prob = e_i / (e_i + e_j) + E_xi
-        return w * prob - R * w**2 * Var_xi - g * e_i**2
-
-    U_1 = round(utility(w, opt_e1, opt_e2, E_xi, R_1, Var_xi, g_1), 2)
-    U_2 = round(utility(w, opt_e2, opt_e1, E_xi, R_2, Var_xi, g_2), 2)
 
     # Display Results
     st.subheader("Calculated Optimal Efforts and Utilities")
