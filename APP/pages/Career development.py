@@ -7,7 +7,7 @@ def Career_development():
     st.title("Tournament Model: Symmetric Marginal Revenue and Different Marginal Costs")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("Salary Increase (w)", min_value=1.0, max_value=70.0, value=20.0, step=1.0)
+    w = st.sidebar.slider("Salary Increase (w)", min_value=1.0, max_value=50.0, value=20.0, step=1.0)
     g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
     g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.1, max_value=1.0, value=0.8, step=0.1)
 
