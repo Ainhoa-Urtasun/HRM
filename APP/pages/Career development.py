@@ -42,11 +42,6 @@ def Career_development():
     plt.grid(True)
     st.pyplot(plt)
 
-    # Display Results
-    st.subheader("Calculated Optimal Efforts and Utilities")
-    st.write(f"Employee 1 Optimal Effort: {opt_e1}, Utility: {U_1}")
-    st.write(f"Employee 2 Optimal Effort: {opt_e2}, Utility: {U_2}")
-
 # Streamlit Page Configuration
 st.set_page_config(page_title="Career Development", layout="wide")
 
