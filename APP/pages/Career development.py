@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def Career_development():
-    st.title("Tournament Model: Symmetric Marginal Revenue and Different Marginal Costs")
+    st.title("Tournament Model")
 
     # Sidebar: Parameters
     w = st.sidebar.slider("Salary Increase (w)", min_value=1.0, max_value=50.0, step=1.0)
@@ -34,8 +34,6 @@ def Career_development():
 
     # Plot Settings
     plt.xlabel("Effort Level (e)")
-    plt.ylabel("Value")
-    plt.title("Symmetric Marginal Revenue and Different Marginal Costs")
     plt.legend()
     plt.grid(True)
     plt.xlim(0, 5)
