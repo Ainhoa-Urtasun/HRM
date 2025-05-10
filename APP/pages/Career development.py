@@ -52,11 +52,6 @@ def Career_development():
 
     st.pyplot(plt)
 
-    # ---------------------
-    # Questions Section
-    # ---------------------
-    st.subheader("Questions")
-
     # Question 3
     st.markdown("**Question 3:** Calculate the marginal revenue of Employee 1 and Employee 2 for the selected skill gaps.")
 
