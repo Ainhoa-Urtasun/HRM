@@ -11,48 +11,35 @@ def Career_development():
     g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
     g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.1, max_value=1.0, value=0.8, step=0.1)
 
-    # Effort ranges for each employee
+    # Effort range for Employee 1
     e1_range = np.linspace(0.1, 20, 300)
-    e2_range = np.linspace(0.1, 20, 300)
 
-    # Employee 1 MR and MC (function of e1)
-    ratio_1 = np.sqrt(g_1 / g_2)
-    e2_equilibrium = ratio_1 * e1_range
+    # Calculate Marginal Revenue (MR) and Marginal Cost (MC) for Employee 1
+    ratio = np.sqrt(g_1 / g_2)
+    e2_equilibrium = ratio * e1_range
     mr_1 = w * e2_equilibrium / (e1_range + e2_equilibrium) ** 2
     mc_1 = 2 * g_1 * e1_range
 
-    # Employee 2 MR and MC (function of e2)
-    ratio_2 = np.sqrt(g_2 / g_1)
-    e1_equilibrium = ratio_2 * e2_range
-    mr_2 = w * e1_equilibrium / (e2_range + e1_equilibrium) ** 2
-    mc_2 = 2 * g_2 * e2_range
-
-    # Optimal Effort Levels
+    # Optimal Effort for Employee 1
     opt_e1 = w / (2 * g_1)
-    opt_e2 = w / (2 * g_2)
 
     # Plotting
     plt.figure(figsize=(10, 6))
 
-    # Employee 1
-    plt.plot(e1_range, mr_1, '--', label="MR - Employee 1 (Own Effort e₁)")
-    plt.plot(e1_range, mc_1, label="MC - Employee 1 (Own Effort e₁)")
+    # MR and MC curves
+    plt.plot(e1_range, mr_1, '--', label="Marginal Revenue (MR)")
+    plt.plot(e1_range, mc_1, label="Marginal Cost (MC)")
 
-    # Employee 2
-    plt.plot(e2_range, mr_2, '--', label="MR - Employee 2 (Own Effort e₂)")
-    plt.plot(e2_range, mc_2, label="MC - Employee 2 (Own Effort e₂)")
-
-    # Mark Optimal Effort Levels
-    plt.axvline(opt_e1, color='blue', linestyle=':', label=f"Optimal e₁ = {opt_e1:.2f}")
-    plt.axvline(opt_e2, color='red', linestyle=':', label=f"Optimal e₂ = {opt_e2:.2f}")
+    # Mark Optimal Effort Level
+    plt.axvline(opt_e1, color='blue', linestyle=':', label=f"Optimal Effort e₁ = {opt_e1:.2f}")
 
     # Layout
-    plt.xlabel("Effort Level (e₁ or e₂)")
+    plt.xlabel("Effort Level (e₁)")
     plt.ylabel("Value")
-    plt.title("Marginal Revenue and Cost: Showing Optimal Effort Choices")
+    plt.title("Marginal Revenue and Cost for Employee 1")
     plt.legend()
     plt.grid(True)
-    plt.ylim(0, 100)
+    plt.ylim(0, 100)  # Adjust for better visibility
 
     st.pyplot(plt)
 
@@ -71,6 +58,7 @@ selected = option_menu(
 
 if selected == "Career development":
     Career_development()
+
 
 
 
