@@ -6,59 +6,57 @@ from streamlit_option_menu import option_menu
 def Career_development():
     st.title("Tournament Model: Marginal Revenue and Marginal Cost")
 
-    # Sidebar inputs for model parameters
+    # Sidebar: Parameter Inputs
     w = st.sidebar.slider("Salary Increase (w)", min_value=1.0, max_value=70.0, value=20.0, step=1.0)
     g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
     g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.1, max_value=1.0, value=0.8, step=0.1)
 
-    # Effort ranges
-    e1_range = np.linspace(0.1, 20, 300)
-    e2_range = np.linspace(0.1, 20, 300)
+    # Common effort range for both employees
+    e_range = np.linspace(0.1, 20, 300)
 
-    # Calculate efforts in equilibrium
-    e2_equilibrium = np.sqrt(g_1 / g_2) * e1_range
-    e1_equilibrium = np.sqrt(g_2 / g_1) * e2_range
+    # Calculate Marginal Revenue (MR) for Employee 1
+    ratio_1 = np.sqrt(g_1 / g_2)
+    mr_1 = w * ratio_1 / (e_range * (1 + ratio_1) ** 2)
+    mc_1 = 2 * g_1 * e_range
 
-    # Marginal Revenue calculations
-    mr_1 = w * e2_equilibrium / (e1_range + e2_equilibrium) ** 2
-    mc_1 = 2 * g_1 * e1_range
+    # Calculate Marginal Revenue (MR) for Employee 2
+    ratio_2 = np.sqrt(g_2 / g_1)
+    mr_2 = w * ratio_2 / (e_range * (1 + ratio_2) ** 2)
+    mc_2 = 2 * g_2 * e_range
 
-    mr_2 = w * e1_equilibrium / (e2_range + e1_equilibrium) ** 2
-    mc_2 = 2 * g_2 * e2_range
-
-    # Optimal effort levels
+    # Calculate Optimal Efforts (where MR = MC)
     opt_e1 = w / (2 * g_1)
     opt_e2 = w / (2 * g_2)
 
     # Plotting
     plt.figure(figsize=(10, 6))
 
-    # Employee 1 curves
-    plt.plot(e1_range, mr_1, '--', label="MR - Employee 1")
-    plt.plot(e1_range, mc_1, label="MC - Employee 1")
+    # Employee 1 Curves
+    plt.plot(e_range, mr_1, '--', label="MR - Employee 1 (Lower Skill Gap)")
+    plt.plot(e_range, mc_1, label="MC - Employee 1 (Lower Skill Gap)")
 
-    # Employee 2 curves
-    plt.plot(e2_range, mr_2, '--', label="MR - Employee 2")
-    plt.plot(e2_range, mc_2, label="MC - Employee 2")
+    # Employee 2 Curves
+    plt.plot(e_range, mr_2, '--', label="MR - Employee 2 (Higher Skill Gap)")
+    plt.plot(e_range, mc_2, label="MC - Employee 2 (Higher Skill Gap)")
 
-    # Optimal Effort Markers
+    # Mark Optimal Effort Levels
     plt.axvline(opt_e1, color='blue', linestyle=':', label=f"Optimal e₁ = {opt_e1:.2f}")
     plt.axvline(opt_e2, color='red', linestyle=':', label=f"Optimal e₂ = {opt_e2:.2f}")
 
-    # Labels and Layout
+    # Plot Annotations and Layout
     plt.xlabel("Effort Level")
     plt.ylabel("Value")
-    plt.title("Marginal Revenue and Marginal Cost for Both Employees")
+    plt.title("Marginal Revenue and Cost - Visualizing Optimal Effort Levels")
     plt.legend()
     plt.grid(True)
-    plt.ylim(0, 100)  # Adjust Y-axis limit if needed for visibility
+    plt.ylim(0, 100)  # Adjust Y-axis if needed
 
     st.pyplot(plt)
 
-# Streamlit Page Configuration
+# Streamlit App Setup
 st.set_page_config(page_title="Career Development", layout="wide")
 
-# Menu Selection
+# Navigation Menu
 selected = option_menu(
     menu_title="",
     options=["Career development"],
@@ -68,9 +66,9 @@ selected = option_menu(
     orientation="vertical"
 )
 
-# Call the selected section
 if selected == "Career development":
     Career_development()
+
 
 
 
