@@ -21,10 +21,10 @@ def Career_development():
     e_range = np.linspace(0.1, 20, 300)
 
     # Calculate Marginal Revenue and Marginal Cost for both employees
-    mr_1 = w * (e_range / (e_range + e_range)**2)  # Simplified assuming e1 = e2 for visualization
+    mr_1 = w * (e_range * np.sqrt(g_1/g_2) / (e_range + e_range * np.sqrt(g_1/g_2))**2) 
     mc_1 = 2 * g_1 * e_range
 
-    mr_2 = w * (e_range / (e_range + e_range)**2)
+    mr_2 = w * (e_range * np.sqrt(g_2/g_1) / (e_range + e_range * np.sqrt(g_2/g_1))**2)
     mc_2 = 2 * g_2 * e_range
 
     # Plotting Marginal Revenue and Cost
