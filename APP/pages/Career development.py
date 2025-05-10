@@ -7,9 +7,9 @@ def Career_development():
     st.title("Tournament Model")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("Δw (Salary Increase)", min_value=1.0, max_value=50.0, step=1.0)
-    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.1, max_value=10.0, step=0.1)
-    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.1, max_value=10.0, step=0.1)
+    w = st.sidebar.slider("Δw (Salary Increase)", min_value=1.0, max_value=50.0, value=20.0, step=1.0)
+    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.1, max_value=10.0, value=1.0, step=0.1)
+    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.1, max_value=10.0, value=2.0, step=0.1)
 
     # Effort range (common for comparison)
     e_range = np.linspace(0.1, 20, 300)
@@ -22,13 +22,24 @@ def Career_development():
     mc_1 = 2 * g_1 * e_range
     mc_2 = 2 * g_2 * e_range
 
+    # Optimal Efforts
+    opt_e1 = w / (2 * g_1)
+    opt_e2 = w / (2 * g_2)
+
+    # Calculate Marginal Revenue at Optimal Efforts
+    e2_equilibrium = np.sqrt(g_1 / g_2) * opt_e1
+    mr_1_at_opt = w * e2_equilibrium / (opt_e1 + e2_equilibrium) ** 2
+
+    e1_equilibrium = np.sqrt(g_2 / g_1) * opt_e2
+    mr_2_at_opt = w * e1_equilibrium / (opt_e2 + e1_equilibrium) ** 2
+
     # Plotting
     plt.figure(figsize=(10, 6))
 
     # Marginal Revenue (same for both employees)
     plt.plot(e_range, mr_common, '--', color='black', label="Marginal Revenue (Same for Both)")
 
-    # Marginal Costs for each employee
+    # Marginal Costs
     plt.plot(e_range, mc_1, label="Marginal Cost - Employee 1 (g₁)")
     plt.plot(e_range, mc_2, label="Marginal Cost - Employee 2 (g₂)")
 
@@ -40,6 +51,26 @@ def Career_development():
     plt.ylim(0, 100)
 
     st.pyplot(plt)
+
+    # ---------------------
+    # Questions Section
+    # ---------------------
+    st.subheader("Questions")
+
+    # Question 3
+    st.markdown("**Question 3:** Calculate the marginal revenue of Employee 1 and Employee 2 for the selected skill gaps.")
+
+    st.write(f"- Marginal Revenue for Employee 1 at optimal effort: **{mr_1_at_opt:.2f}**")
+    st.write(f"- Marginal Revenue for Employee 2 at optimal effort: **{mr_2_at_opt:.2f}**")
+
+    # Question 4
+    st.markdown("**Question 4:** Who makes more effort, and why?")
+    if opt_e1 > opt_e2:
+        st.write(f"- Employee 1 makes more effort (**e₁ = {opt_e1:.2f}**) than Employee 2 (**e₂ = {opt_e2:.2f}**) because their skill gap (g₁ = {g_1}) is lower.")
+    elif opt_e1 < opt_e2:
+        st.write(f"- Employee 2 makes more effort (**e₂ = {opt_e2:.2f}**) than Employee 1 (**e₁ = {opt_e1:.2f}**) because their skill gap (g₂ = {g_2}) is lower.")
+    else:
+        st.write("- Both employees exert the same effort.")
 
 # Streamlit App Setup
 st.set_page_config(page_title="Career Development", layout="wide")
