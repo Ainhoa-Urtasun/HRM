@@ -31,7 +31,10 @@ def firm_selection():
     st.text_area("", placeholder="Write your response to Question 1 here...")
     st.write("""
     #### Question 2:
-    Which job within your firm should master the new technology? Why?
+    Your firm follows and Internal Labor Market (ILM) strategy by hiring externally only for entry-level positions within each
+    job and relying on internal promotions to fill higher-level roles, either within the same job or across jobs.
+    1. What are the advantages and disadvantages of this approach for the firm and for its employees?
+    2. To what extent does this approach support career development for employees?
     """)
     st.text_area("", placeholder="Write your response to Question 2 here...") 
 
