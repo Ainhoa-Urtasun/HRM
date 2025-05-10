@@ -27,6 +27,7 @@ def Career_development():
 
     # Plotting Marginal Revenue and Cost
     plt.figure(figsize=(8, 6))
+    plt.ylim(0, 100)
     plt.plot(e_range, mr_1, label="Marginal Revenue - Employee 1", linestyle="--")
     plt.plot(e_range, mc_1, label="Marginal Cost - Employee 1")
 
