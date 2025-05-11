@@ -6,16 +6,18 @@ from streamlit_option_menu import option_menu
 
 def Training():
 
-    with st.sidebar.expander("Skill level of trained employees (Scale: 0-100)"):
+    with st.sidebar.expander("Skill level of promoted employee (Scale: 0-100)"):
         t0 = st.number_input("Before training", key="t0", step=1)
         t1 = st.number_input("After training", key="t1", step=1)
-    with st.sidebar.expander("Skill level of non-trained employees' (Scale: 0-100)"):
+    with st.sidebar.expander("Skill level of non-promoted employee' (Scale: 0-100)"):
         n0 = st.number_input("Before training", key="n0", step=1)
         n1 = st.number_input("After training", key="n1", step=1)
 
     st.write("""
     #### Question 5:
-    Fill in the values on your left with made-up data so that the visual demonstrates the effectiveness of the training. Explain what these values mean
+    The promoted employee must complete a training course to better meet the skill requirements of their new job. Adjust the 
+    parameters on your left to create a scenario where the training is effective. Then, explain how training fits into career development
+    and list other possible career development options.
     """)
     st.text_area("", placeholder="Writte your response to Question 5 here...") 
 
