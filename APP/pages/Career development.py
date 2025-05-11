@@ -52,20 +52,15 @@ def Career_development():
 
     st.pyplot(plt)
 
-    # Question 3
-    st.markdown("**Question 3:** Calculate the marginal revenue of Employee 1 and Employee 2 for the selected skill gaps.")
-
-    st.write(f"- Marginal Revenue for Employee 1 at optimal effort: **{mr_1_at_opt:.2f}**")
-    st.write(f"- Marginal Revenue for Employee 2 at optimal effort: **{mr_2_at_opt:.2f}**")
-
-    # Question 4
-    st.markdown("**Question 4:** Who makes more effort, and why?")
-    if opt_e1 > opt_e2:
-        st.write(f"- Employee 1 makes more effort (**e₁ = {opt_e1:.2f}**) than Employee 2 (**e₂ = {opt_e2:.2f}**) because their skill gap (g₁ = {g_1}) is lower.")
-    elif opt_e1 < opt_e2:
-        st.write(f"- Employee 2 makes more effort (**e₂ = {opt_e2:.2f}**) than Employee 1 (**e₁ = {opt_e1:.2f}**) because their skill gap (g₂ = {g_2}) is lower.")
-    else:
-        st.write("- Both employees exert the same effort.")
+    st.write("""
+    #### Question 1: 
+    At the end of 2023, your firm promoted 1 woman and 1 man from the job category 'Support Intellectuals and Scientists, Technicians, and 
+    Professionals' to 'Other Managers'. Additionally, during 2023, 2 women and 3 men from this job left the firm. Assume
+    there were no other workforce movements.
+    1. Calculate the turnover rate for this job category by gender.
+    2. Explain the formula you used for the calculation.
+    """)
+    st.text_area("", placeholder="Write your response to Question 1 here...")
 
 # Streamlit App Setup
 st.set_page_config(page_title="Career Development", layout="wide")
