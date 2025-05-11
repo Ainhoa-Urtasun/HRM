@@ -7,9 +7,9 @@ def Career_development():
     st.title("Tournament Model")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("Δw (Salary Increase)", min_value=1.0, max_value=50.0, value=20.0, step=1.0)
-    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.01, max_value=10.0, step=0.01)
-    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.01, max_value=10.0, step=0.01)
+    w = st.sidebar.slider("Δw (Salary Increase)", min_value=1.0, max_value=20.0, value=20.0, step=1.0)
+    g_1 = st.sidebar.slider("Skill Gap - Employee 1 (g₁)", min_value=0.01, max_value=5.0, step=0.01)
+    g_2 = st.sidebar.slider("Skill Gap - Employee 2 (g₂)", min_value=0.01, max_value=5.0, step=0.01)
 
     # Effort range (common for comparison)
     e_range = np.linspace(0.1, 20, 300)
@@ -48,7 +48,7 @@ def Career_development():
     plt.legend()
     plt.grid(True)
     plt.xlim(0, 5)
-    plt.ylim(0, 100)
+    plt.ylim(0, 25)
 
     st.pyplot(plt)
 
