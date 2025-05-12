@@ -25,14 +25,13 @@ def firm_selection():
     During 2024, your firm promoted 1 employee from the job 'Support Intellectuals and Scientists, Technicians, and 
     Professionals' to 'Other Managers'. Additionally, 2 employees in 'Support Intellectuals and Scientists, Technicians, and 
     Professionals' left the firm. Assume no one else left this job during 2024.
-    1. Calculate the 2024's turnover rate for this job.
+    1. Calculate the 2024's retention rate for this job.
+    2. Does your firm follow an Internal Labor Market (ILM) strategy?
     """)
     st.text_area("", placeholder="Write your response to Question 1 here...")
     st.write("""
     #### Question 2:
-    Your firm follows and Internal Labor Market (ILM) strategy by hiring externally only for entry-level positions within each
-    job and relying on internal promotions to fill higher-level roles, either within the same job or across jobs.
-    1. What are the advantages and disadvantages of this approach for the firm and for its employees?
+    1. What are the advantages and disadvantages of the ILM approach for the firm and for its employees?
     2. To what extent does this approach support career development for employees?
     """)
     st.text_area("", placeholder="Write your response to Question 2 here...") 
