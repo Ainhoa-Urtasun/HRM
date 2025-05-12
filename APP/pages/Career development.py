@@ -54,8 +54,8 @@ def Career_development():
 
     st.write("""
     #### Question 3: 
-    Calculate the value of the marginal revenue at the optimal effort level for each of the two employees. Explain its economic meaning
-    and why it is the same or different between them.
+    Calculate the value of the marginal revenue and of the marginal cost for each employee as a function of their
+    respective level of effort.
     """)
     st.text_area("", placeholder="Write your response to Question 3 here...")
 
