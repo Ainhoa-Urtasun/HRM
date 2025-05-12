@@ -26,7 +26,6 @@ def firm_selection():
     Professionals' to 'Other Managers'. Additionally, 2 employees in 'Support Intellectuals and Scientists, Technicians, and 
     Professionals' left the firm. Assume no one else left this job during 2024.
     1. Calculate the 2024's turnover rate for this job.
-    2. Explain the formula you used for the calculation.
     """)
     st.text_area("", placeholder="Write your response to Question 1 here...")
     st.write("""
