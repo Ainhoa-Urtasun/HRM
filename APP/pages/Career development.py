@@ -54,8 +54,8 @@ def Career_development():
 
     st.write("""
     #### Question 3: 
-    Calculate the value of the marginal revenue and of the marginal cost for each employee as a function of their
-    respective level of effort.
+    Compute the marginal revenue and marginal cost for each employee, 
+    expressed solely as a function of their individual level of effort.
     """)
     st.text_area("", placeholder="Write your response to Question 3 here...")
 
