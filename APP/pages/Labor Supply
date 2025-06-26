@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def Career_development():
-    st.title("Tournament Model")
+def Labor_Supply():
+    st.title("Isoquants")
 
     # Sidebar: Parameters
     w = st.sidebar.slider("Δw (Salary Increase)", min_value=1.0, max_value=20.0, value=20.0, step=1.0)
@@ -66,17 +66,17 @@ def Career_development():
     st.text_area("", placeholder="Write your response to Question 4 here...")
 
 # Streamlit App Setup
-st.set_page_config(page_title="Career Development", layout="wide")
+st.set_page_config(page_title="Labor Supply", layout="wide")
 
 # Navigation
 selected = option_menu(
     menu_title="",
-    options=["Career development"],
+    options=["Labor Supply"],
     icons=["person"],
     menu_icon="cast",
     default_index=0,
     orientation="vertical"
 )
 
-if selected == "Career development":
-    Career_development()
+if selected == "Labor Supply":
+    Labor_Supply()
