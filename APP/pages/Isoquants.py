@@ -33,7 +33,7 @@ def Isoquants():
     st.pyplot(plt)
 
 # Streamlit App Setup
-st.set_page_config(page_title="Labor Supply", layout="wide")
+st.set_page_config(page_title="Isoquants", layout="wide")
 
 # Navigation
 selected = option_menu(
