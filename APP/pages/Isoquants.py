@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 def Isoquants():
-    st.title("Isoquants")
+    st.title("Supply of Labor")
 
     # Sidebar: Parameters
     w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
