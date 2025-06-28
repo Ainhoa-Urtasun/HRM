@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-def Isoquants():
+def isoquants():
     st.title("Supply of Labor")
 
     # Sidebar: Parameters
@@ -46,4 +46,4 @@ selected = option_menu(
 )
 
 if selected == "Isoquants":
-    Isoquants()
+    isoquants()
