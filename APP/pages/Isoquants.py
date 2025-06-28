@@ -7,39 +7,39 @@ def Isoquants():
     st.title("Isoquants")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.0, max_value=1.0, value=0.1, step=0.1)
+    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
 
-    # Days off
+    # Hours off (leisure time)
     H = np.linspace(1, 10, 200)
+    L = 24 - H  # Working hours
 
-    # Plot setup
-    plt.figure(figsize=(9, 6))
+    # Initialize figure
+    fig, ax = plt.subplots(figsize=(9, 6))
 
-    # Isoquants
-    plt.plot(H, 9 - np.log(H), label=f'Isoquant: U=9')
-    plt.plot(H, 10 - np.log(H), label=f'Isoquant: U=10')
-    plt.plot(H, 11 - np.log(H), label=f'Isoquant: U=11')
-            
-    # Time restriction:
-    plt.plot(H, w * (24 - H), label=f'Time restriction')
+    # Isoquants: U = Income + ln(H) → Income = U - ln(H)
+    for U in [9, 10, 11]:
+        ax.plot(H, U - np.log(H), label=f'Isoquant: U={U}')
 
-    # Final touches
-    plt.xlabel('Hours off (H)')
-    plt.ylabel('Income (wL)')
-    plt.grid(True)
-    plt.legend()
-    plt.xlim(0, 10)
+    # Time restriction line: Income = w * L = w * (24 - H)
+    ax.plot(H, w * L, label=f'Time constraint: w={w}', linestyle='--')
 
-    st.pyplot(plt)
+    # Labels and legends
+    ax.set_xlabel('Hours of Leisure (H)')
+    ax.set_ylabel('Income = wL')
+    ax.legend()
+    ax.grid(True)
+    ax.set_xlim(0, 10)
 
-# Streamlit App Setup
+    st.pyplot(fig)
+
+# Streamlit Setup
 st.set_page_config(page_title="Isoquants", layout="wide")
 
 # Navigation
 selected = option_menu(
     menu_title="",
     options=["Isoquants"],
-    icons=["person"],
+    icons=["graph-up"],
     menu_icon="cast",
     default_index=0,
     orientation="vertical"
