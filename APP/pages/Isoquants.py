@@ -7,7 +7,7 @@ def Isoquants():
     st.title("Isoquants")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.0, max_value=1.0, value=0.0, step=0.1)
+    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.0, max_value=1.0, value=0.1, step=0.1)
 
     # Days off
     H = np.linspace(1, 10, 200)
