@@ -7,7 +7,7 @@ def Isoquants():
     st.title("Isoquants")
 
     # Sidebar: Parameters
-    w = st.sidebar.slider("w (Pay per hour of work)", min_value=1.0, max_value=20.0, value=20.0, step=1.0)
+    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.0, max_value=1.0, value=1.0, step=0.1)
 
     # Days off
     H = np.linspace(1, 10, 200)
@@ -21,8 +21,7 @@ def Isoquants():
     plt.plot(H, 11 - np.log(H), label=f'Isoquant: U=11')
             
     # Time restriction:
-    w = 0.4
-    plt.plot(H, w * (24 - H), label=f'Time restriction w = 0.4')
+    plt.plot(H, w * (24 - H), label=f'Time restriction')
 
     # Final touches
     plt.xlabel('Hours off (H)')
