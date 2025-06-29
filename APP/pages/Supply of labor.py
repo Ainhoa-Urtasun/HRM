@@ -32,7 +32,7 @@ def isoquants():
     plt.grid(True)
     plt.legend()
     plt.xlim(0, 10)
-    st.pyplot(fig)
+    st.pyplot(plt)
 
 # Navigation
 selected = option_menu(
