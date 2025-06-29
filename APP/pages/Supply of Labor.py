@@ -3,8 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
+# Streamlit Setup
+st.set_page_config(page_title="Supply of labor", layout="wide")
+
 def isoquants():
-    st.title("Supply of Labor")
+    st.title("Isoquants")
 
     # Sidebar: Parameters
     w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
@@ -32,9 +35,6 @@ def isoquants():
 
     st.pyplot(fig)
 
-# Streamlit Setup
-st.set_page_config(page_title="Isoquants", layout="wide")
-
 # Navigation
 selected = option_menu(
     menu_title="",
@@ -45,5 +45,5 @@ selected = option_menu(
     orientation="vertical"
 )
 
-if selected == "Isoquants":
+if selected == "Supply of labor":
     isoquants()
