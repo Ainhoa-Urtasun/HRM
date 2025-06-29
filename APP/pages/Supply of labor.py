@@ -3,38 +3,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-# Streamlit Setup
 st.set_page_config(page_title="Supply of labor", layout="wide")
 
 def isoquants():
-    st.title("Isoquants")
+    st.title("Isoquants: Supply of Labor")
 
-    # Sidebar: Parameters
+    # Interactive wage
     w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
-    
+
     H = np.linspace(1, 10, 200)
-    
-    # Plot setup
-    plt.figure(figsize=(9, 6))
-    
-    # Isoquants
-    plt.plot(H, 9 - np.log(H), label=f'Isoquant: U=9')
-    plt.plot(H, 10 - np.log(H), label=f'Isoquant: U=10')
-    plt.plot(H, 11 - np.log(H), label=f'Isoquant: U=11')
 
-    # Time restriction:
-    w = 0.4
-    plt.plot(H, w * (24 - H), label=f'Time restriction w = 0.4')
+    # Plot
+    fig, ax = plt.subplots(figsize=(9, 6))
 
-    # Final touches
-    plt.xlabel('Hours off (H)')
-    plt.ylabel('Income (wL)')
-    plt.grid(True)
-    plt.legend()
-    plt.xlim(0, 10)
-    st.pyplot(plt)
+    for U in [9, 10, 11]:
+        ax.plot(H, U - np.log(H), label=f'Isoquant: U={U}')
 
-# Navigation
+    ax.plot(H, w * (24 - H), '--', label=f'Time restriction: w={w:.2f}')
+
+    ax.set_xlabel('Hours of Leisure (H)')
+    ax.set_ylabel('Income = wL')
+    ax.legend()
+    ax.grid(True)
+    ax.set_xlim(0, 10)
+
+    st.pyplot(fig)
+
 selected = option_menu(
     menu_title="",
     options=["Supply of labor"],
