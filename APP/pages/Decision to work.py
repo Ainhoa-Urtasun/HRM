@@ -16,7 +16,7 @@ def isoquants():
     # Plot
     fig, ax = plt.subplots(figsize=(9, 6))
 
-    for U in [9, 10, 11]:
+    for U in [9, 10, 11, 12, 13, 14, 15]:
         ax.plot(H, U - np.log(H), label=f'Isoquant: U={U}')
 
     ax.plot(H, w * (24 - H), '--', label=f'Time restriction: w={w:.2f}')
