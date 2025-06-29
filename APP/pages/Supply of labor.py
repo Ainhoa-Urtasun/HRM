@@ -38,7 +38,7 @@ def isoquants():
 # Navigation
 selected = option_menu(
     menu_title="",
-    options=["Isoquants"],
+    options=["Supply of labor"],
     icons=["graph-up"],
     menu_icon="cast",
     default_index=0,
