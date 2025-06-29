@@ -11,28 +11,27 @@ def isoquants():
 
     # Sidebar: Parameters
     w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
-
-    # Hours off (leisure time)
+    
     H = np.linspace(1, 10, 200)
-    L = 24 - H  # Working hours
+    
+    # Plot setup
+    plt.figure(figsize=(9, 6))
+    
+    # Isoquants
+    plt.plot(H, 9 - np.log(H), label=f'Isoquant: U=9')
+    plt.plot(H, 10 - np.log(H), label=f'Isoquant: U=10')
+    plt.plot(H, 11 - np.log(H), label=f'Isoquant: U=11')
 
-    # Initialize figure
-    fig, ax = plt.subplots(figsize=(9, 6))
+    # Time restriction:
+    w = 0.4
+    plt.plot(H, w * (24 - H), label=f'Time restriction w = 0.4')
 
-    # Isoquants: U = Income + ln(H) → Income = U - ln(H)
-    for U in [9, 10, 11]:
-        ax.plot(H, U - np.log(H), label=f'Isoquant: U={U}')
-
-    # Time restriction line: Income = w * L = w * (24 - H)
-    ax.plot(H, w * L, label=f'Time constraint: w={w}', linestyle='--')
-
-    # Labels and legends
-    ax.set_xlabel('Hours of Leisure (H)')
-    ax.set_ylabel('Income = wL')
-    ax.legend()
-    ax.grid(True)
-    ax.set_xlim(0, 10)
-
+    # Final touches
+    plt.xlabel('Hours off (H)')
+    plt.ylabel('Income (wL)')
+    plt.grid(True)
+    plt.legend()
+    plt.xlim(0, 10)
     st.pyplot(fig)
 
 # Navigation
