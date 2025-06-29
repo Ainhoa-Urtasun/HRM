@@ -9,7 +9,7 @@ def isoquants():
     st.title("Isoquants: Supply of Labor")
 
     # Interactive wage
-    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.1, max_value=1.0, value=0.5, step=0.1)
+    w = st.sidebar.slider("w (Pay per hour of work)", min_value=0.0, max_value=1.0, step=0.01)
 
     H = np.linspace(1, 10, 200)
 
